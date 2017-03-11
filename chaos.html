@@ -32,6 +32,11 @@
 		font-size: 8pt;
 	}
 	
+	p.mini2 {
+		font-family: arial, tahoma, sans-serif;
+		font-size: 5pt;
+	}
+	
 	p.kindasmall {
 		font-family: arial, tahoma, sans-serif;
 		font-size: 10pt;
@@ -52,14 +57,26 @@
 		color: #9E9E9E;
 		font-size: 15pt;
 	}
+	
+	p.scriptnotify {
+		font-family: arial, tahoma, sans-serif;
+		color: red;
+		font-size: 12pt;
+	}
 
 	</style>
 </head>
 <body>
-
+<div id="wrapper">
 <h1>Comparing Singularity (Build: 1127018) to Chaos (Build: 1126523)</h1>
-<p class="mini">Generated @ 2017-03-10 12:26:50 CET</p>
-<iframe src="nav.html" style="border:none;" height="40px" width="800px"> </iframe>
+<p class="mini">Generated @ 2017-03-11 15:03:58 CET</p>
+<noscript>
+	<p class="scriptnotify">You've disabled javascript. This made the navigation menu so sad that it self-destructed. I hope you're happy now.</p>
+</noscript>
+<iframe id="navMenu" src="nav.html" style="border:none; display:none;" height="40px" width="800px"> </iframe>
+<script>
+  document.getElementById("navMenu").style.display = "block";
+</script>
 <p class="mini">Note: Chaos is an internal development server containing many odd projects and changes, many of which may never actually make it to TQ. Speculate responsibly.</p>
 <p class="kindasmall">Click the categories below to expand them!</p>
 
@@ -40245,5 +40262,6 @@
 
 <!-- [[changedPythonFiles]] -->
 
+<p class="mini2">Made by Inomares. I don't want your donations. Leave me alone.</p>
 </body>
 </html>
