@@ -32,6 +32,10 @@
 		font-size: 8pt;
 	}
 	
+	p {
+		font-family: arial, tahoma, sans-serif;
+	}
+	
 	p.mini2 {
 		font-family: arial, tahoma, sans-serif;
 		font-size: 5pt;
@@ -80,7 +84,7 @@
 </head>
 <body>
 <h1>Comparing Tranquility (Build: 1128147) to Singularity (Build: 1128147)</h1>
-<p class="mini">Generated @ 2017-03-14 14:46:00 EVE Time (UTC)</p>
+<p class="mini">Generated @ 2017-03-14 18:49:04 EVE Time (UTC)</p>
 <noscript>
 	<nobr>
 		<p class="scriptnotify" style="display:inline;">You've disabled javascript. This made the menu so sad that it self-destructed. I hope you're happy now.</p>
@@ -206,6 +210,17 @@
 
 <!--<h2 id="newfiles">New Files</h2>-->
 
+<script>
+	function displayMedia(doc) {
+		nodes = doc.children
+		for (i=0; i < nodes.length; i++) {
+			node = nodes[i]
+			if (node.hasAttribute("data-src") && node.getAttribute("src") == "") {
+				node.setAttribute("src", node.getAttribute("data-src"))
+			}
+		}
+	}
+</script>
 <details id="newfiles">
 	<summary class="bigsum_disabled" onclick="return false">New Files (0 Entries)</summary>
 	<table>
