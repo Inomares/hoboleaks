@@ -1,0 +1,2017 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hoboleaks: Chaos_Previous (Build: 1130417) to Chaos_Next (Build: 1131149)</title>
+	<meta name="title" content="Client Comparison: Chaos_Previous (Build: 1130417) to Chaos_Next (Build: 1131149) | Hoboleaks">
+	<meta name="description" content="Generated @ 2017-03-23 18:21:41 EVE Time">
+	<meta charset="UTF-8">
+	<style>
+		table {
+			width:1280px;
+			font-family: arial, tahoma, sans-serif;
+			font-size: 10pt;
+			border-collapse: collapse;
+		}
+
+		td, th {
+			border: 1px solid black;
+			text-align: left;
+			padding: 8px;
+		}
+
+		tr:nth-child(even) {
+			background-color: #DBDBDB;
+		}
+		
+		tr.unimportant {
+			opacity: 0.4;
+			font-size: 8pt;
+		}
+
+		td.mini {
+			font-size: 8pt;
+		}
+
+		p.mini {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 8pt;
+		}
+		
+		p {
+			font-family: arial, tahoma, sans-serif;
+		}
+		
+		p.mini2 {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 5pt;
+		}
+		
+		p.mini3 {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 5pt;
+			color: gray;
+		}
+		
+		p.kindasmall {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 10pt;
+			margin: 5px 0px 5px 0px;
+		}
+
+		h1, h2, h3 {
+			font-family: arial, tahoma, sans-serif;
+		}
+
+		summary.bigsum {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 15pt;
+		}		
+
+		summary.bigsum_disabled {
+			font-family: arial, tahoma, sans-serif;
+			color: #9E9E9E;
+			font-size: 15pt;
+		}
+		
+		summary.smallsum {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 10pt;
+		}
+		
+		p.scriptnotify {
+			font-family: arial, tahoma, sans-serif;
+			color: red;
+			font-size: 12pt;
+		}
+		
+		p.scriptnotifysmall {
+			font-family: arial, tahoma, sans-serif;
+			color: red;
+			font-size: 9pt;
+		}
+		
+		p.scriptnotifysmaller {
+			font-family: arial, tahoma, sans-serif;
+			color: red;
+			font-size: 5pt;
+		}
+		
+		div.simplebox {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 10pt;
+			padding: 5px;
+			margin: 2px;
+			border-left-style: dotted;
+		}
+		
+		ul {
+			padding-left:20px;
+		}
+		
+		div.footer {
+		   position: fixed;
+		   bottom: 20px;
+		   height: 20px;
+		   width: 20px;
+		   border-style: none;
+		}
+		
+		div.footer1 {
+		   left: 20px;
+		}
+		
+		div.footer2 {
+		   right: 20px;
+		   visibility: hidden;
+		}
+		
+		div.footer:hover {
+			border-style: dotted;
+			border-color: #F2F2F2;
+		}
+
+		/* IE 6 */
+		* html #footer {
+		   position:absolute;
+		   top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
+		}
+	</style>
+	<script type="text/javascript">
+	    function selectText(containerid, hasWaited) {
+			hasWaited = hasWaited || false
+			if (hasWaited == false) {
+				window.setTimeout(function(){selectText(containerid, true)}, 50); /* I'm sure I'm in the wrong here somehow and not Chrome, but this is how we're fixing it soooooooo yeah. */
+				return
+			}
+			var node = document.getElementById(containerid);
+			if (document.selection) {
+				var range = document.body.createTextRange();
+				range.moveToElementText(node);
+				range.select();
+			} else if (window.getSelection) {
+				var range = document.createRange();
+				range.selectNodeContents(node);
+				window.getSelection().removeAllRanges();
+				window.getSelection().addRange(range);
+			}
+		}
+	</script>
+</head>
+<body>
+<h1>Comparing Chaos_Previous (Build: 1130417) to Chaos_Next (Build: 1131149)</h1>
+<!-- <iframe id="timer" src="timerSection.html?version=1&timer=1489606234.803" style="border:none;" height="40px" width="800px"> </iframe> -->
+<p class="mini">Generated @ 2017-03-23 18:21:41 EVE Time (UTC)</p>
+<noscript>
+	<nobr>
+		<p class="scriptnotify" style="display:inline;">You've disabled javascript. This made the menu so sad that it self-destructed. I hope you're happy now.</p>
+		<p class="scriptnotifysmaller" style="display:inline;">You monster.</p>
+	</nobr>
+	<p class="scriptnotifysmall">This page should still kinda work though.</p>
+</noscript>
+<iframe id="navMenu" src="nav.html" style="border:none; display:none;" height="40px" width="800px"> </iframe>
+<script>
+  document.getElementById("navMenu").style.display = "block";
+</script>
+<p class="mini">Note: Chaos is an internal development server containing many odd projects and changes, many of which may never actually make it to TQ. Speculate responsibly.</p>
+<p class="kindasmall">Click the categories below to expand them!</p>
+
+<!--<h2 id="items">Items</h2>-->
+
+<details id="newitems">
+	<summary class="bigsum">New Items (6 Entries)</summary>
+	<table>
+	  <tr>
+		<!--<th>[[title4]]</th>-->
+		<th>TypeID & Name</th>
+		<th>Description</th>
+		<th>Group</th>
+		<th>Attributes</th>
+	  </tr>
+	<details>
+	<summary class="smallsum" onClick="selectText('newItemsNotepad')">Show/Hide EVE notepad list for in-game viewing.</summary><div class="simplebox" id="newItemsNotepad">&lt;url=showinfo:45056&gt;♦ Apocalypse&lt;/url&gt;<br>&lt;url=showinfo:45057&gt;Amarr CA Cruiser&lt;/url&gt;<br>&lt;url=showinfo:45060&gt;Vintage Frigate Blueprints&lt;/url&gt;<br>&lt;url=showinfo:45061&gt;Subspace Energy & You&lt;/url&gt;<br>&lt;url=showinfo:45062&gt;Replica Gold Magnate Decorative Plating&lt;/url&gt;<br>&lt;url=showinfo:45055&gt;♦ Bhaalgorn&lt;/url&gt;<br></div></details><tr>
+		<td>45056 - <b>♦ Apocalypse</b></td>
+		<td>In days past, only those in high favor with the Emperor could hope to earn the reward of commanding one of the majestic and powerful Apocalypse class battleships. In latter years, even though now in full market circulation, these golden, metallic monstrosities are still feared and respected as enduring symbols of Amarrian might.</td>
+		<td>♦ Battleship</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 63 attributes.</summary>	<b>Mass:</b> 102350000.0<br>	<b>Shield Capacity:</b> 7500.0<br>	<b>Structure Hitpoints:</b> 8750.0<br>	<b>Armor EM Damage Resistance:</b> 0.425<br>	<b>Armor Explosive Damage Resistance:</b> 0.34<br>	<b>Armor Kinetic Damage Resistance:</b> 0.31875<br>	<b>Armor Thermal Damage Resistance:</b> 0.5525<br>	<b>Shield EM Damage Resistance:</b> 0.875<br>	<b>Shield Explosive Damage Resistance:</b> 0.4375<br>	<b>Shield Kinetic Damage Resistance:</b> 0.525<br>	<b>Shield Thermal Damage Resistance:</b> 0.7<br>	<b>graphicID:</b> 2121<br>	<b>Maximum Velocity:</b> 134.1875<br>	<b>Capacity:</b> 675.0<br>	<b>Signature Radius:</b> 380.0<br>	<b>entityFactionLoss:</b> 0.0<br>	<b>Rate of fire:</b> 4172.66979<br>	<b>Scan Resolution:</b> 154.375<br>	<b>behaviorMicroWarpDriveDischarge:</b> 210.0<br>	<b>Armor Hitpoints:</b> 22500.0<br>	<b>behaviorMicroWarpDriveMassAddition:</b> 50000000.0<br>	<b>behaviorMicroWarpDriveSignatureRadiusBonus:</b> 500.0<br>	<b>behaviorMicroWarpDriveSpeedFactor:</b> 631.25<br>	<b>behaviorMicroWarpDriveSpeedBoostFactor:</b> 150000000.0<br>	<b>Damage Modifier:</b> 37.54954326<br>	<b>Optimal Range:</b> 149428.125<br>	<b>Inertia Modifier:</b> 0.080325<br>	<b>Capacitor Recharge time:</b> 600000.0<br>	<b>Maximum Targeting Range:</b> 184067.4552<br>	<b>Signature Resolution:</b> 40000.0<br>	<b>Structure Kinetic Damage Resistance:</b> 0.402<br>	<b>Structure Thermal Damage Resistance:</b> 0.402<br>	<b>Structure Explosive Damage Resistance:</b> 0.402<br>	<b>Structure EM Damage Resistance:</b> 0.402<br>	<b>EM damage:</b> 20.0<br>	<b>Explosive damage:</b> 0.0<br>	<b>Kinetic damage:</b> 0.0<br>	<b>Thermal damage:</b> 12.0<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 1814<br>	<b>typeNameID:</b> 525626<br>	<b>Accuracy falloff :</b> 19500.0<br>	<b>Turret Tracking:</b> 0.751953125<br>	<b>typeID:</b> 45056<br>	<b>radius:</b> 400.0<br>	<b>soundID:</b> 20061<br>	<b>wreckTypeID:</b> 26470<br>	<b>published:</b> False<br>	<b>Maximum Locked Targets:</b> 7.0<br>	<b>raceID:</b> 4<br>	<b>Volume:</b> 495000.0<br>	<b>behaviorMicroWarpDriveDuration:</b> 10000.0<br>	<b>RADAR Sensor Strength:</b> 35.52<br>	<b>Ladar Sensor Strength:</b> 0.0<br>	<b>Magnetometric Sensor Strength:</b> 0.0<br>	<b>Gravimetric Sensor Strength:</b> 0.0<br>	<b>Shield recharge time:</b> 1875000.0<br>	<b>descriptionID:</b> 525627<br>	<b>Bounty:</b> 0.0<br>	<b>Capacitor Capacity:</b> 6562.5<br>	<b>gfxTurretID:</b> 2985.0<br>	<b>gfxBoosterID:</b> 394.0<br>	<b>basePrice:</b> 0.0<br></details></td>
+	</tr>
+	<tr>
+		<td>45057 - <b>Amarr CA Cruiser</b></td>
+		<td>A cruiser of the Amarr empire.</td>
+		<td>Mission Amarr Empire Cruiser</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 75 attributes.</summary>	<b>Mass:</b> 12000000.0<br>	<b>Shield Capacity:</b> 600.0<br>	<b>Structure Hitpoints:</b> 400.0<br>	<b>Armor EM Damage Resistance:</b> 0.79<br>	<b>Armor Explosive Damage Resistance:</b> 0.49<br>	<b>Armor Kinetic Damage Resistance:</b> 0.59<br>	<b>Armor Thermal Damage Resistance:</b> 0.69<br>	<b>Shield EM Damage Resistance:</b> 0.79<br>	<b>Shield Explosive Damage Resistance:</b> 0.49<br>	<b>Shield Kinetic Damage Resistance:</b> 0.59<br>	<b>Shield Thermal Damage Resistance:</b> 0.69<br>	<b>entityBracketColour:</b> 1.0<br>	<b>graphicID:</b> 1065<br>	<b>Maximum Velocity:</b> 100.0<br>	<b>Capacity:</b> 450.0<br>	<b>Signature Radius:</b> 105.0<br>	<b>entityFactionLoss:</b> 0.0<br>	<b>Rate of fire:</b> 12000.0<br>	<b>Scan Resolution:</b> 290.0<br>	<b>Optimal Range:</b> 20000.0<br>	<b>Armor Hitpoints:</b> 600.0<br>	<b>Ignore Drones Below This Size:</b> 50.0<br>	<b>Damage Modifier:</b> 4.8<br>	<b>entityChaseMaxDelay:</b> 10000.0<br>	<b>entityChaseMaxDelayChance:</b> 0.2<br>	<b>entityChaseMaxDuration:</b> 10000.0<br>	<b>entityChaseMaxDurationChance:</b> 1.0<br>	<b>armorUniformity:</b> 0.75<br>	<b>Capacitor Recharge time:</b> 1000000.0<br>	<b>structureUniformity:</b> 1.0<br>	<b>Disallows Assistance:</b> 1.0<br>	<b>Signature Resolution:</b> 50.0<br>	<b>Threat Target Switch:</b> 1.0<br>	<b>Use Signature Radius:</b> 1.0<br>	<b>Chance to not change targets:</b> 0.0<br>	<b>use effect monitoring:</b> 1.0<br>	<b>entityArmorRepairDuration:</b> 10000.0<br>	<b>entityArmorRepairAmount:</b> 130.0<br>	<b>Drone Tanking Modifier:</b> 0.7<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 668<br>	<b>typeNameID:</b> 525631<br>	<b>entityChaseMaxDistance:</b> 11500.0<br>	<b>Accuracy falloff :</b> 10000.0<br>	<b>Turret Tracking:</b> 0.081<br>	<b>typeID:</b> 45057<br>	<b>radius:</b> 150.0<br>	<b>EM damage:</b> 8.0<br>	<b>wreckTypeID:</b> 27051<br>	<b>published:</b> False<br>	<b>Maximum Locked Targets:</b> 1.0<br>	<b>maxAttackTargets:</b> 1.0<br>	<b>raceID:</b> 4<br>	<b>Thermal damage:</b> 8.0<br>	<b>Volume:</b> 120000.0<br>	<b>entityEquipmentMin:</b> -4.0<br>	<b>entityEquipmentMax:</b> 3.0<br>	<b>entityAttackRange:</b> 50000.0<br>	<b>RADAR Sensor Strength:</b> 14.0<br>	<b>entityReactionFactor:</b> 0.52<br>	<b>entityFlyRange:</b> 20000.0<br>	<b>propulsionGraphicID:</b> 397.0<br>	<b>entityAttackDelayMin:</b> 5475.0<br>	<b>entityAttackDelayMax:</b> 21900.0<br>	<b>Shield recharge time:</b> 1000000.0<br>	<b>descriptionID:</b> 525632<br>	<b>Capacitor Capacity:</b> 625.0<br>	<b>Shield Uniformity:</b> 0.75<br>	<b>entityOverviewShipGroupId:</b> 26.0<br>	<b>entityArmorRepairDelayChanceMedium:</b> 0.41<br>	<b>gfxTurretID:</b> 454.0<br>	<b>gfxBoosterID:</b> 397.0<br>	<b>basePrice:</b> 0.0<br>	<b>entityLootCountMin:</b> 1.0<br>	<b>Orbit Velocity:</b> 180.0<br></details></td>
+	</tr>
+	<tr>
+		<td>45060 - <b>Vintage Frigate Blueprints</b></td>
+		<td>This set of blueprints was almost lost to the ages, and is now very valuable in certain circles. Only partially complete due to data degradation, it details an Imperial frigate of unknown class, roughly the same dimensions and mass as the Punisher. Also included are partial details on a proprietary antimatter reactor design, as well as instructions for proper radioactive decontamination and disposal of slaves used to construct and install it in the vessel's chassis.</td>
+		<td>Special Edition Commodities</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 13 attributes.</summary>	<b>descriptionID:</b> 525638<br>	<b>typeID:</b> 45060<br>	<b>radius:</b> 1<br>	<b>Mass:</b> 0.0<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.01<br>	<b>typeNameID:</b> 525637<br>	<b>iconID:</b> 2853<br>	<b>published:</b> True<br>	<b>marketGroupID:</b> 1661<br>	<b>basePrice:</b> 0.0<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 1194<br></details></td>
+	</tr>
+	<tr>
+		<td>45061 - <b>Subspace Energy & You</b></td>
+		<td>This instructional holoreel package details the finer points of working with the conversion of subspace energy, and provides relevant health and safety recommendations to reduce potential exposure to harmful electromagnetic fields. For full clarification, the package also includes examples of what may happen should those with metallic augmentations be careless around ultra high voltage electrical equipment and strong magnetic fields. Viewer discretion is advised.</td>
+		<td>Special Edition Commodities</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 13 attributes.</summary>	<b>descriptionID:</b> 525640<br>	<b>typeID:</b> 45061<br>	<b>radius:</b> 1<br>	<b>Mass:</b> 0.0<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.01<br>	<b>typeNameID:</b> 525639<br>	<b>iconID:</b> 1177<br>	<b>published:</b> True<br>	<b>marketGroupID:</b> 1661<br>	<b>basePrice:</b> 0.0<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 1194<br></details></td>
+	</tr>
+	<tr>
+		<td>45062 - <b>Replica Gold Magnate Decorative Plating</b></td>
+		<td>This is a scale model of a section of decorative plating designed for the port side propulsion pod of a Gold Magnate. As intricately detailed as the real thing, it comes with its own stand for display. With only 1337 numbered issues of this piece produced in celebration of the ascension of Her Holiness Empress Catiz I to the throne, each one is highly valued by collectors across the cluster. Laser cut from the finest pure gold the Empire has to offer, these pieces of art are crafted from left over materials from the production of actual decorative plating now in service on Gold Magnates with the Imperial Guard.</td>
+		<td>Special Edition Commodities</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 13 attributes.</summary>	<b>descriptionID:</b> 525642<br>	<b>typeID:</b> 45062<br>	<b>radius:</b> 1<br>	<b>Mass:</b> 0.0<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.01<br>	<b>typeNameID:</b> 525641<br>	<b>iconID:</b> 21062<br>	<b>published:</b> True<br>	<b>marketGroupID:</b> 1661<br>	<b>basePrice:</b> 0.0<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 1194<br></details></td>
+	</tr>
+	<tr>
+		<td>45055 - <b>♦ Bhaalgorn</b></td>
+		<td>Named after a child-devouring demon of Amarrian legend, the Bhaalgorn is the pride and joy of the Blood Raider cabal. Though it is known to be based on an Armageddon blueprint, the design's origin remains shrouded in mystery. Those of a superstitious persuasion whisper in the dark of eldritch ceremonies and arcane rituals, but for most people, the practical aspect of the matter will more than suffice: you see one of these blood-red horrors looming on the horizon, it's time to make yourself scarce.</td>
+		<td>♦ Battleship</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 73 attributes.</summary>	<b>Mass:</b> 102725000.0<br>	<b>Shield Capacity:</b> 11043.75<br>	<b>Structure Hitpoints:</b> 11625.0<br>	<b>Armor EM Damage Resistance:</b> 0.425<br>	<b>Armor Explosive Damage Resistance:</b> 0.34<br>	<b>Armor Kinetic Damage Resistance:</b> 0.31875<br>	<b>Armor Thermal Damage Resistance:</b> 0.5525<br>	<b>Shield EM Damage Resistance:</b> 0.875<br>	<b>Shield Explosive Damage Resistance:</b> 0.4375<br>	<b>Shield Kinetic Damage Resistance:</b> 0.525<br>	<b>Shield Thermal Damage Resistance:</b> 0.7<br>	<b>Maximum Velocity Bonus:</b> -55.0<br>	<b>graphicID:</b> 2122<br>	<b>Maximum Velocity:</b> 114.7254961<br>	<b>Capacity:</b> 675.0<br>	<b>Signature Radius:</b> 400.0<br>	<b>entityFactionLoss:</b> 0.0<br>	<b>Rate of fire:</b> 7244.218385<br>	<b>Scan Resolution:</b> 125.0<br>	<b>behaviorMicroWarpDriveDischarge:</b> 210.0<br>	<b>Armor Hitpoints:</b> 36810.0<br>	<b>behaviorMicroWarpDriveMassAddition:</b> 50000000.0<br>	<b>behaviorMicroWarpDriveSignatureRadiusBonus:</b> 500.0<br>	<b>behaviorMicroWarpDriveSpeedFactor:</b> 631.25<br>	<b>behaviorMicroWarpDriveSpeedBoostFactor:</b> 150000000.0<br>	<b>Damage Modifier:</b> 84.48647234<br>	<b>Optimal Range:</b> 136620.0<br>	<b>Inertia Modifier:</b> 0.084375<br>	<b>Capacitor Recharge time:</b> 865500.0<br>	<b>Maximum Targeting Range:</b> 181545.9832<br>	<b>Neutralization Amount:</b> 1050.0<br>	<b>Signature Resolution:</b> 40000.0<br>	<b>Structure Kinetic Damage Resistance:</b> 0.402<br>	<b>Structure Thermal Damage Resistance:</b> 0.402<br>	<b>Structure Explosive Damage Resistance:</b> 0.402<br>	<b>Structure EM Damage Resistance:</b> 0.402<br>	<b>EM damage:</b> 20.0<br>	<b>Explosive damage:</b> 0.0<br>	<b>Kinetic damage:</b> 0.0<br>	<b>Thermal damage:</b> 12.0<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 1814<br>	<b>typeNameID:</b> 525624<br>	<b>behaviorWebifierDuration:</b> 5000.0<br>	<b>Accuracy falloff :</b> 32500.0<br>	<b>Turret Tracking:</b> 0.435015625<br>	<b>typeID:</b> 45055<br>	<b>radius:</b> 400.0<br>	<b>soundID:</b> 20112<br>	<b>wreckTypeID:</b> 26470<br>	<b>published:</b> False<br>	<b>Maximum Locked Targets:</b> 8.0<br>	<b>raceID:</b> 4<br>	<b>behaviorWebifierRange:</b> 30000.0<br>	<b>behaviorWebifierFalloff:</b> 0.0<br>	<b>behaviorWebifierDischarge:</b> 3.75<br>	<b>Volume:</b> 486000.0<br>	<b>behaviorMicroWarpDriveDuration:</b> 10000.0<br>	<b>RADAR Sensor Strength:</b> 33.6<br>	<b>Ladar Sensor Strength:</b> 0.0<br>	<b>Magnetometric Sensor Strength:</b> 0.0<br>	<b>Gravimetric Sensor Strength:</b> 0.0<br>	<b>behaviorEnergyNeutralizerDuration:</b> 24000.0<br>	<b>behaviorEnergyNeutralizerRange:</b> 24000.0<br>	<b>behaviorEnergyNeutralizerFalloff:</b> 12000.0<br>	<b>behaviorEnergyNeutralizerDischarge:</b> 375.0<br>	<b>Shield recharge time:</b> 1875000.0<br>	<b>descriptionID:</b> 525625<br>	<b>Bounty:</b> 0.0<br>	<b>Capacitor Capacity:</b> 8554.6875<br>	<b>gfxTurretID:</b> 3065.0<br>	<b>gfxBoosterID:</b> 397.0<br>	<b>basePrice:</b> 0.0<br></details></td>
+	</tr>
+	</table>
+</details>
+
+<details id="removeditems">
+	<summary class="bigsum_disabled" onclick="return false">Removed Items (0 Entries)</summary>
+	<table>
+	  <tr>
+		<th>Name</th>
+		<th>Description</th>
+		<th>Group</th>
+		<th>Attributes</th>
+	  </tr>
+	
+	</table>
+</details>
+
+<br>
+
+<details id="bonuschanges">
+	<summary class="bigsum">Changed Traits (12 Entries)</summary>
+	<table>
+	  <tr>
+		<th>TypeID, Group, & Name</th>
+		<th>Chaos_Previous</th>
+		<th>Chaos_Next</th>
+		<th>Diff</th>
+		<!-- <th>[[title4]]</th> -->
+	  </tr>
+	<tr>
+		<td style="text-align:center;" width="130px">671 - <b>Erebus</b><br>(Titan)</td>
+		<td width="355px"><b>Gallente Titan bonuses (per skill level):</b><ul><li>180% bonus to &lt;a href=showinfo:21666&gt;Capital Hybrid Turret&lt;/a&gt; damage</li><li>5% bonus to &lt;a href=showinfo:21666&gt;Capital Hybrid Turret&lt;/a&gt; rate of fire</li><li>10+ bonus to ship warp core strength</li></ul><br><br><b>Role Bonus:</b><ul><li> Can fit &lt;a href=showinfo:24563&gt;Doomsday&lt;/a&gt; devices</li><li> Can fit &lt;a href=showinfo:23953&gt;Jump Portal Generator&lt;/a&gt;</li><li> Can fit &lt;a href=showinfo:23735&gt;Clone Vat Bay&lt;/a&gt;</li><li> Can use three &lt;a href=showinfo:3348&gt;Command Burst&lt;/a&gt; modules</li><li>200% bonus to &lt;a href=showinfo:3348&gt;Command Burst&lt;/a&gt; area of effect range</li><li>500% bonus to Armor Plates and Shield Extenders</li><li>80% bonus to Sensor Dampener resistance</li><li>80% bonus to Weapon Disruption resistance</li><li>80% bonus to Stasis effect resistance</li><li>80% increase to Remote Electronic Assistance impedance</li><li>5x penalty to &lt;a href=showinfo:34593&gt;Entosis Link&lt;/a&gt; duration</li><li> Can fit one &lt;a href=showinfo:43662&gt;Phenomena Generator&lt;/a&gt; module</li><ul></td>
+		<td width="355px"><b>Gallente Titan bonuses (per skill level):</b><ul><li>180% bonus to &lt;a href=showinfo:21666&gt;Capital Hybrid Turret&lt;/a&gt; damage</li><li>5% bonus to &lt;a href=showinfo:21666&gt;Capital Hybrid Turret&lt;/a&gt; rate of fire</li><li>10+ bonus to ship warp core strength</li></ul><br><br><b>Role Bonus:</b><ul><li> Can fit a &lt;a href=showinfo:24563&gt;Doomsday&lt;/a&gt; module</li><li> Can fit a &lt;a href=showinfo:43662&gt;Phenomena Generator&lt;/a&gt; module</li><li> Can fit a &lt;a href=showinfo:23953&gt;Jump Portal Generator&lt;/a&gt; module</li><li> Can fit a &lt;a href=showinfo:23735&gt;Clone Vat Bay&lt;/a&gt; module</li><li> Can use three &lt;a href=showinfo:3348&gt;Command Burst&lt;/a&gt; modules</li><li>200% bonus to &lt;a href=showinfo:3348&gt;Command Burst&lt;/a&gt; area of effect range</li><li>500% bonus to Armor Plates and Shield Extenders</li><li>80% bonus to Sensor Dampener resistance</li><li>80% bonus to Weapon Disruption resistance</li><li>80% bonus to Stasis effect resistance</li><li>80% increase to Remote Electronic Assistance impedance</li><li>5x penalty to &lt;a href=showinfo:34593&gt;Entosis Link&lt;/a&gt; duration</li><ul></td>
+		<td><span>Gallente Titan bonuses (per skill level):<br>180% bonus to &lt;a href=showinfo:21666&gt;Capital Hybrid Turret&lt;/a&gt; damage<br>5% bonus to &lt;a href=showinfo:21666&gt;Capital Hybrid Turret&lt;/a&gt; rate of fire<br>10+ bonus to ship warp core strength<br><br>Role Bonus:<br> Can fit </span><ins style="background:#e6ffe6;">a </ins><span>&lt;a href=showinfo:24563&gt;Doomsday&lt;/a&gt; </span><del style="background:#ffe6e6;">devices</del><ins style="background:#e6ffe6;">module<br> Can fit a &lt;a href=showinfo:43662&gt;Phenomena Generator&lt;/a&gt; module</ins><span><br> Can fit </span><ins style="background:#e6ffe6;">a </ins><span>&lt;a href=showinfo:23953&gt;Jump Portal Generator&lt;/a&gt;</span><ins style="background:#e6ffe6;"> module</ins><span><br> Can fit </span><ins style="background:#e6ffe6;">a </ins><span>&lt;a href=showinfo:23735&gt;Clone Vat Bay&lt;/a&gt;</span><ins style="background:#e6ffe6;"> module</ins><span><br> Can use three &lt;a href=showinfo:3348&gt;Command Burst&lt;/a&gt; modules<br>200% bonus to &lt;a href=showinfo:3348&gt;Command Burst&lt;/a&gt; area of effect range<br>500% bonus to Armor Plates and Shield Extenders<br>80% bonus to Sensor Dampener resistance<br>80% bonus to Weapon Disruption resistance<br>80% bonus to Stasis effect resistance<br>80% increase to Remote Electronic Assistance impedance<br>5x penalty to &lt;a href=showinfo:34593&gt;Entosis Link&lt;/a&gt; duration</span><del style="background:#ffe6e6;"><br> Can fit one &lt;a href=showinfo:43662&gt;Phenomena Generator&lt;/a&gt; module</del></td>
+	</tr>
+	<tr>
+		<td style="text-align:center;" width="130px">3764 - <b>Leviathan</b><br>(Titan)</td>
+		<td width="355px"><b>Caldari Titan bonuses (per skill level):</b><ul><li>50% bonus to kinetic &lt;a href=showinfo:32435&gt;XL Cruise&lt;/a&gt;, &lt;a href=showinfo:21668&gt;XL Torpedo&lt;/a&gt; and &lt;a href=showinfo:3325&gt;Torpedo&lt;/a&gt; damage</li><li>40% bonus to EM, explosive and thermal &lt;a href=showinfo:32435&gt;XL Cruise&lt;/a&gt;, &lt;a href=showinfo:21668&gt;XL Torpedo&lt;/a&gt; and &lt;a href=showinfo:3325&gt;Torpedo&lt;/a&gt; damage</li><li>15% bonus to &lt;a href=showinfo:32435&gt;XL Cruise Missile Launchers&lt;/a&gt;, &lt;a href=showinfo:21668&gt;XL Torpedo Launchers&lt;/a&gt; and &lt;a href=showinfo:3325&gt;Rapid Torpedo Launcher&lt;/a&gt; rate of fire</li><li>10+ bonus to ship warp core strength</li></ul><br><br><b>Role Bonus:</b><ul><li> Can fit &lt;a href=showinfo:24563&gt;Doomsday&lt;/a&gt; devices</li><li> Can fit &lt;a href=showinfo:23953&gt;Jump Portal Generator&lt;/a&gt;</li><li> Can fit &lt;a href=showinfo:23735&gt;Clone Vat Bay&lt;/a&gt;</li><li> Can use three &lt;a href=showinfo:3348&gt;Command Burst&lt;/a&gt; modules</li><li>200% bonus to &lt;a href=showinfo:3348&gt;Command Burst&lt;/a&gt; area of effect range</li><li>500% bonus to Armor Plates and Shield Extenders</li><li>100% bonus to &lt;a href=showinfo:3325&gt;Torpedo&lt;/a&gt; Velocity</li><li>80% bonus to Sensor Dampener resistance</li><li>80% bonus to Weapon Disruption resistance</li><li>80% bonus to Stasis effect resistance</li><li>80% increase to Remote Electronic Assistance impedance</li><li> Can fit one &lt;a href=showinfo:43660&gt;Phenomena Generator&lt;/a&gt; module</li><li>5x penalty to &lt;a href=showinfo:34593&gt;Entosis Link&lt;/a&gt; duration</li><ul></td>
+		<td width="355px"><b>Caldari Titan bonuses (per skill level):</b><ul><li>50% bonus to kinetic &lt;a href=showinfo:32435&gt;XL Cruise&lt;/a&gt;, &lt;a href=showinfo:21668&gt;XL Torpedo&lt;/a&gt; and &lt;a href=showinfo:3325&gt;Torpedo&lt;/a&gt; damage</li><li>40% bonus to EM, explosive and thermal &lt;a href=showinfo:32435&gt;XL Cruise&lt;/a&gt;, &lt;a href=showinfo:21668&gt;XL Torpedo&lt;/a&gt; and &lt;a href=showinfo:3325&gt;Torpedo&lt;/a&gt; damage</li><li>15% bonus to &lt;a href=showinfo:32435&gt;XL Cruise Missile Launchers&lt;/a&gt;, &lt;a href=showinfo:21668&gt;XL Torpedo Launchers&lt;/a&gt; and &lt;a href=showinfo:3325&gt;Rapid Torpedo Launcher&lt;/a&gt; rate of fire</li><li>10+ bonus to ship warp core strength</li></ul><br><br><b>Role Bonus:</b><ul><li> Can fit a &lt;a href=showinfo:24563&gt;Doomsday&lt;/a&gt; module</li><li> Can fit a &lt;a href=showinfo:43662&gt;Phenomena Generator&lt;/a&gt; module</li><li> Can fit a &lt;a href=showinfo:23953&gt;Jump Portal Generator&lt;/a&gt; module</li><li> Can fit a &lt;a href=showinfo:23735&gt;Clone Vat Bay&lt;/a&gt; module</li><li> Can use three &lt;a href=showinfo:3348&gt;Command Burst&lt;/a&gt; modules</li><li>200% bonus to &lt;a href=showinfo:3348&gt;Command Burst&lt;/a&gt; area of effect range</li><li>500% bonus to Armor Plates and Shield Extenders</li><li>100% bonus to &lt;a href=showinfo:3325&gt;Torpedo&lt;/a&gt; Velocity</li><li>80% bonus to Sensor Dampener resistance</li><li>80% bonus to Weapon Disruption resistance</li><li>80% bonus to Stasis effect resistance</li><li>80% increase to Remote Electronic Assistance impedance</li><li>5x penalty to &lt;a href=showinfo:34593&gt;Entosis Link&lt;/a&gt; duration</li><ul></td>
+		<td><span>Caldari Titan bonuses (per skill level):<br>50% bonus to kinetic &lt;a href=showinfo:32435&gt;XL Cruise&lt;/a&gt;, &lt;a href=showinfo:21668&gt;XL Torpedo&lt;/a&gt; and &lt;a href=showinfo:3325&gt;Torpedo&lt;/a&gt; damage<br>40% bonus to EM, explosive and thermal &lt;a href=showinfo:32435&gt;XL Cruise&lt;/a&gt;, &lt;a href=showinfo:21668&gt;XL Torpedo&lt;/a&gt; and &lt;a href=showinfo:3325&gt;Torpedo&lt;/a&gt; damage<br>15% bonus to &lt;a href=showinfo:32435&gt;XL Cruise Missile Launchers&lt;/a&gt;, &lt;a href=showinfo:21668&gt;XL Torpedo Launchers&lt;/a&gt; and &lt;a href=showinfo:3325&gt;Rapid Torpedo Launcher&lt;/a&gt; rate of fire<br>10+ bonus to ship warp core strength<br><br>Role Bonus:<br> Can fit </span><ins style="background:#e6ffe6;">a </ins><span>&lt;a href=showinfo:24563&gt;Doomsday&lt;/a&gt; </span><del style="background:#ffe6e6;">devices</del><ins style="background:#e6ffe6;">module<br> Can fit a &lt;a href=showinfo:43662&gt;Phenomena Generator&lt;/a&gt; module</ins><span><br> Can fit </span><ins style="background:#e6ffe6;">a </ins><span>&lt;a href=showinfo:23953&gt;Jump Portal Generator&lt;/a&gt;</span><ins style="background:#e6ffe6;"> module</ins><span><br> Can fit </span><ins style="background:#e6ffe6;">a </ins><span>&lt;a href=showinfo:23735&gt;Clone Vat Bay&lt;/a&gt;</span><ins style="background:#e6ffe6;"> module</ins><span><br> Can use three &lt;a href=showinfo:3348&gt;Command Burst&lt;/a&gt; modules<br>200% bonus to &lt;a href=showinfo:3348&gt;Command Burst&lt;/a&gt; area of effect range<br>500% bonus to Armor Plates and Shield Extenders<br>100% bonus to &lt;a href=showinfo:3325&gt;Torpedo&lt;/a&gt; Velocity<br>80% bonus to Sensor Dampener resistance<br>80% bonus to Weapon Disruption resistance<br>80% bonus to Stasis effect resistance<br>80% increase to Remote Electronic Assistance impedance<br></span><del style="background:#ffe6e6;"> Can fit one &lt;a href=showinfo:43660&gt;Phenomena Generator&lt;/a&gt; module<br></del><span>5x penalty to &lt;a href=showinfo:34593&gt;Entosis Link&lt;/a&gt; duration</span></td>
+	</tr>
+	<tr>
+		<td style="text-align:center;" width="130px">11567 - <b>Avatar</b><br>(Titan)</td>
+		<td width="355px"><b>Amarr Titan bonuses (per skill level):</b><ul><li>180% bonus to &lt;a href=showinfo:20327&gt;Capital Energy Turret&lt;/a&gt; damage</li><li>10% reduction in &lt;a href=showinfo:20327&gt;Capital Energy Turret&lt;/a&gt; activation cost</li><li>10+ bonus to ship warp core strength</li></ul><br><br><b>Role Bonus:</b><ul><li> Can fit &lt;a href=showinfo:24563&gt;Doomsday&lt;/a&gt; devices</li><li> Can fit &lt;a href=showinfo:23953&gt;Jump Portal Generator&lt;/a&gt;</li><li> Can fit &lt;a href=showinfo:23735&gt;Clone Vat Bay&lt;/a&gt;</li><li> Can use three &lt;a href=showinfo:3348&gt;Command Burst&lt;/a&gt; modules</li><li>200% bonus to &lt;a href=showinfo:3348&gt;Command Burst&lt;/a&gt; area of effect range</li><li>500% bonus to Armor Plates and Shield Extenders</li><li>80% bonus to Sensor Dampener resistance</li><li>80% bonus to Weapon Disruption resistance</li><li>80% bonus to Stasis effect resistance</li><li>80% increase to Remote Electronic Assistance impedance</li><li>5x penalty to &lt;a href=showinfo:34593&gt;Entosis Link&lt;/a&gt; duration</li><li> Can fit one &lt;a href=showinfo:43658&gt;Phenomena Generator&lt;/a&gt; module</li><ul></td>
+		<td width="355px"><b>Amarr Titan bonuses (per skill level):</b><ul><li>180% bonus to &lt;a href=showinfo:20327&gt;Capital Energy Turret&lt;/a&gt; damage</li><li>10% reduction in &lt;a href=showinfo:20327&gt;Capital Energy Turret&lt;/a&gt; activation cost</li><li>10+ bonus to ship warp core strength</li></ul><br><br><b>Role Bonus:</b><ul><li> Can fit a &lt;a href=showinfo:24563&gt;Doomsday&lt;/a&gt; module</li><li> Can fit a &lt;a href=showinfo:43662&gt;Phenomena Generator&lt;/a&gt; module</li><li> Can fit a &lt;a href=showinfo:23953&gt;Jump Portal Generator&lt;/a&gt; module</li><li> Can fit a &lt;a href=showinfo:23735&gt;Clone Vat Bay&lt;/a&gt; module</li><li> Can use three &lt;a href=showinfo:3348&gt;Command Burst&lt;/a&gt; modules</li><li>200% bonus to &lt;a href=showinfo:3348&gt;Command Burst&lt;/a&gt; area of effect range</li><li>500% bonus to Armor Plates and Shield Extenders</li><li>80% bonus to Sensor Dampener resistance</li><li>80% bonus to Weapon Disruption resistance</li><li>80% bonus to Stasis effect resistance</li><li>80% increase to Remote Electronic Assistance impedance</li><li>5x penalty to &lt;a href=showinfo:34593&gt;Entosis Link&lt;/a&gt; duration</li><ul></td>
+		<td><span>Amarr Titan bonuses (per skill level):<br>180% bonus to &lt;a href=showinfo:20327&gt;Capital Energy Turret&lt;/a&gt; damage<br>10% reduction in &lt;a href=showinfo:20327&gt;Capital Energy Turret&lt;/a&gt; activation cost<br>10+ bonus to ship warp core strength<br><br>Role Bonus:<br> Can fit </span><ins style="background:#e6ffe6;">a </ins><span>&lt;a href=showinfo:24563&gt;Doomsday&lt;/a&gt; </span><del style="background:#ffe6e6;">devices</del><ins style="background:#e6ffe6;">module<br> Can fit a &lt;a href=showinfo:43662&gt;Phenomena Generator&lt;/a&gt; module</ins><span><br> Can fit </span><ins style="background:#e6ffe6;">a </ins><span>&lt;a href=showinfo:23953&gt;Jump Portal Generator&lt;/a&gt;</span><ins style="background:#e6ffe6;"> module</ins><span><br> Can fit </span><ins style="background:#e6ffe6;">a </ins><span>&lt;a href=showinfo:23735&gt;Clone Vat Bay&lt;/a&gt;</span><ins style="background:#e6ffe6;"> module</ins><span><br> Can use three &lt;a href=showinfo:3348&gt;Command Burst&lt;/a&gt; modules<br>200% bonus to &lt;a href=showinfo:3348&gt;Command Burst&lt;/a&gt; area of effect range<br>500% bonus to Armor Plates and Shield Extenders<br>80% bonus to Sensor Dampener resistance<br>80% bonus to Weapon Disruption resistance<br>80% bonus to Stasis effect resistance<br>80% increase to Remote Electronic Assistance impedance<br>5x penalty to &lt;a href=showinfo:34593&gt;Entosis Link&lt;/a&gt; duration</span><del style="background:#ffe6e6;"><br> Can fit one &lt;a href=showinfo:43658&gt;Phenomena Generator&lt;/a&gt; module</del></td>
+	</tr>
+	<tr>
+		<td style="text-align:center;" width="130px">19720 - <b>Revelation</b><br>(Dreadnought)</td>
+		<td width="355px"><b>Amarr Dreadnought bonuses (per skill level):</b><ul><li>5% bonus to &lt;a href=showinfo:20327&gt;Capital Energy Turret&lt;/a&gt; damage</li><li>4% bonus to all armor resistances</li><li>10% reduction in &lt;a href=showinfo:20327&gt;Capital Energy Turret&lt;/a&gt; activation cost</li></ul><br><br><b>Role Bonus:</b><ul><li> Can fit &lt;a href=showinfo:20280&gt;Siege modules&lt;/a&gt;</li><li>5x penalty to &lt;a href=showinfo:34593&gt;Entosis Link&lt;/a&gt; cycle time</li><ul></td>
+		<td width="355px"><b>Amarr Dreadnought bonuses (per skill level):</b><ul><li>5% bonus to &lt;a href=showinfo:20327&gt;Capital Energy Turret&lt;/a&gt; damage</li><li>4% bonus to all armor resistances</li><li>10% reduction in &lt;a href=showinfo:20327&gt;Capital Energy Turret&lt;/a&gt; activation cost</li></ul><br><br><b>Role Bonus:</b><ul><li> Can fit a &lt;a href=showinfo:20280&gt;Siege module&lt;/a&gt;</li><li>5x penalty to &lt;a href=showinfo:34593&gt;Entosis Link&lt;/a&gt; cycle time</li><ul></td>
+		<td><span>Amarr Dreadnought bonuses (per skill level):<br>5% bonus to &lt;a href=showinfo:20327&gt;Capital Energy Turret&lt;/a&gt; damage<br>4% bonus to all armor resistances<br>10% reduction in &lt;a href=showinfo:20327&gt;Capital Energy Turret&lt;/a&gt; activation cost<br><br>Role Bonus:<br> Can fit </span><ins style="background:#e6ffe6;">a </ins><span>&lt;a href=showinfo:20280&gt;Siege module</span><del style="background:#ffe6e6;">s</del><span>&lt;/a&gt;<br>5x penalty to &lt;a href=showinfo:34593&gt;Entosis Link&lt;/a&gt; cycle time</span></td>
+	</tr>
+	<tr>
+		<td style="text-align:center;" width="130px">19722 - <b>Naglfar</b><br>(Dreadnought)</td>
+		<td width="355px"><b>Minmatar Dreadnought bonuses (per skill level):</b><ul><li>5% bonus to &lt;a href=showinfo:21667&gt;Capital Projectile Turret&lt;/a&gt; damage</li><li>5% bonus to &lt;a href=showinfo:21667&gt;Capital Projectile Turret&lt;/a&gt; rate of fire</li><li>5% bonus to &lt;a href=showinfo:3416&gt;Shield Booster&lt;/a&gt; cycle time</li></ul><br><br><b>Role Bonus:</b><ul><li> Can fit &lt;a href=showinfo:20280&gt;Siege modules&lt;/a&gt;</li><li>5x penalty to &lt;a href=showinfo:34593&gt;Entosis Link&lt;/a&gt; cycle time</li><ul></td>
+		<td width="355px"><b>Minmatar Dreadnought bonuses (per skill level):</b><ul><li>5% bonus to &lt;a href=showinfo:21667&gt;Capital Projectile Turret&lt;/a&gt; damage</li><li>5% bonus to &lt;a href=showinfo:21667&gt;Capital Projectile Turret&lt;/a&gt; rate of fire</li><li>5% bonus to &lt;a href=showinfo:3416&gt;Shield Booster&lt;/a&gt; cycle time</li></ul><br><br><b>Role Bonus:</b><ul><li> Can fit a &lt;a href=showinfo:20280&gt;Siege module&lt;/a&gt;</li><li>5x penalty to &lt;a href=showinfo:34593&gt;Entosis Link&lt;/a&gt; cycle time</li><ul></td>
+		<td><span>Minmatar Dreadnought bonuses (per skill level):<br>5% bonus to &lt;a href=showinfo:21667&gt;Capital Projectile Turret&lt;/a&gt; damage<br>5% bonus to &lt;a href=showinfo:21667&gt;Capital Projectile Turret&lt;/a&gt; rate of fire<br>5% bonus to &lt;a href=showinfo:3416&gt;Shield Booster&lt;/a&gt; cycle time<br><br>Role Bonus:<br> Can fit </span><ins style="background:#e6ffe6;">a </ins><span>&lt;a href=showinfo:20280&gt;Siege module</span><del style="background:#ffe6e6;">s</del><span>&lt;/a&gt;<br>5x penalty to &lt;a href=showinfo:34593&gt;Entosis Link&lt;/a&gt; cycle time</span></td>
+	</tr>
+	<tr>
+		<td style="text-align:center;" width="130px">19724 - <b>Moros</b><br>(Dreadnought)</td>
+		<td width="355px"><b>Gallente Dreadnought bonuses (per skill level):</b><ul><li>5% bonus to &lt;a href=showinfo:21666&gt;Capital Hybrid Turret&lt;/a&gt; damage</li><li>5% bonus to &lt;a href=showinfo:21666&gt;Capital Hybrid Turret&lt;/a&gt; rate of fire</li><li>5% bonus to &lt;a href=showinfo:3393&gt;Armor Repairer&lt;/a&gt; cycle time</li></ul><br><br><b>Role Bonus:</b><ul><li> Can fit &lt;a href=showinfo:20280&gt;Siege modules&lt;/a&gt;</li><li>5x penalty to &lt;a href=showinfo:34593&gt;Entosis Link&lt;/a&gt; cycle time</li><ul></td>
+		<td width="355px"><b>Gallente Dreadnought bonuses (per skill level):</b><ul><li>5% bonus to &lt;a href=showinfo:21666&gt;Capital Hybrid Turret&lt;/a&gt; damage</li><li>5% bonus to &lt;a href=showinfo:21666&gt;Capital Hybrid Turret&lt;/a&gt; rate of fire</li><li>5% bonus to &lt;a href=showinfo:3393&gt;Armor Repairer&lt;/a&gt; cycle time</li></ul><br><br><b>Role Bonus:</b><ul><li> Can fit a &lt;a href=showinfo:20280&gt;Siege module&lt;/a&gt;</li><li>5x penalty to &lt;a href=showinfo:34593&gt;Entosis Link&lt;/a&gt; cycle time</li><ul></td>
+		<td><span>Gallente Dreadnought bonuses (per skill level):<br>5% bonus to &lt;a href=showinfo:21666&gt;Capital Hybrid Turret&lt;/a&gt; damage<br>5% bonus to &lt;a href=showinfo:21666&gt;Capital Hybrid Turret&lt;/a&gt; rate of fire<br>5% bonus to &lt;a href=showinfo:3393&gt;Armor Repairer&lt;/a&gt; cycle time<br><br>Role Bonus:<br> Can fit </span><ins style="background:#e6ffe6;">a </ins><span>&lt;a href=showinfo:20280&gt;Siege module</span><del style="background:#ffe6e6;">s</del><span>&lt;/a&gt;<br>5x penalty to &lt;a href=showinfo:34593&gt;Entosis Link&lt;/a&gt; cycle time</span></td>
+	</tr>
+	<tr>
+		<td style="text-align:center;" width="130px">19726 - <b>Phoenix</b><br>(Dreadnought)</td>
+		<td width="355px"><b>Caldari Dreadnought bonuses (per skill level):</b><ul><li>5% bonus to &lt;a href=showinfo:32435&gt;XL Cruise&lt;/a&gt;, &lt;a href=showinfo:21668&gt;XL Torpedo&lt;/a&gt; and &lt;a href=showinfo:3325&gt;Torpedo&lt;/a&gt; damage</li><li>4% bonus to all shield resistances</li><li>10% reduction in &lt;a href=showinfo:3319&gt;missile launcher&lt;/a&gt; reload time</li></ul><br><br><b>Role Bonus:</b><ul><li> Can fit &lt;a href=showinfo:20280&gt;Siege modules&lt;/a&gt;</li><li>5x penalty to &lt;a href=showinfo:34593&gt;Entosis Link&lt;/a&gt; cycle time</li><ul></td>
+		<td width="355px"><b>Caldari Dreadnought bonuses (per skill level):</b><ul><li>5% bonus to &lt;a href=showinfo:32435&gt;XL Cruise&lt;/a&gt;, &lt;a href=showinfo:21668&gt;XL Torpedo&lt;/a&gt; and &lt;a href=showinfo:3325&gt;Torpedo&lt;/a&gt; damage</li><li>4% bonus to all shield resistances</li><li>10% reduction in &lt;a href=showinfo:3319&gt;missile launcher&lt;/a&gt; reload time</li></ul><br><br><b>Role Bonus:</b><ul><li> Can fit a &lt;a href=showinfo:20280&gt;Siege module&lt;/a&gt;</li><li>5x penalty to &lt;a href=showinfo:34593&gt;Entosis Link&lt;/a&gt; cycle time</li><ul></td>
+		<td><span>Caldari Dreadnought bonuses (per skill level):<br>5% bonus to &lt;a href=showinfo:32435&gt;XL Cruise&lt;/a&gt;, &lt;a href=showinfo:21668&gt;XL Torpedo&lt;/a&gt; and &lt;a href=showinfo:3325&gt;Torpedo&lt;/a&gt; damage<br>4% bonus to all shield resistances<br>10% reduction in &lt;a href=showinfo:3319&gt;missile launcher&lt;/a&gt; reload time<br><br>Role Bonus:<br> Can fit </span><ins style="background:#e6ffe6;">a </ins><span>&lt;a href=showinfo:20280&gt;Siege module</span><del style="background:#ffe6e6;">s</del><span>&lt;/a&gt;<br>5x penalty to &lt;a href=showinfo:34593&gt;Entosis Link&lt;/a&gt; cycle time</span></td>
+	</tr>
+	<tr>
+		<td style="text-align:center;" width="130px">23773 - <b>Ragnarok</b><br>(Titan)</td>
+		<td width="355px"><b>Minmatar Titan bonuses (per skill level):</b><ul><li>180% bonus to &lt;a href=showinfo:21667&gt;Capital Projectile Turret&lt;/a&gt; damage</li><li>5% bonus to &lt;a href=showinfo:21667&gt;Capital Projectile Turret&lt;/a&gt; rate of fire</li><li>10+ bonus to ship warp core strength</li></ul><br><br><b>Role Bonus:</b><ul><li> Can fit &lt;a href=showinfo:24563&gt;Doomsday&lt;/a&gt; devices</li><li> Can fit &lt;a href=showinfo:23953&gt;Jump Portal Generator&lt;/a&gt;</li><li> Can fit &lt;a href=showinfo:23735&gt;Clone Vat Bay&lt;/a&gt;</li><li> Can use three &lt;a href=showinfo:3348&gt;Command Burst&lt;/a&gt; modules</li><li>200% bonus to &lt;a href=showinfo:3348&gt;Command Burst&lt;/a&gt; area of effect range</li><li>500% bonus to Armor Plates and Shield Extenders</li><li>80% bonus to Sensor Dampener resistance</li><li>80% bonus to Weapon Disruption resistance</li><li>80% bonus to Stasis effect resistance</li><li>80% increase to Remote Electronic Assistance impedance</li><li>5x penalty to &lt;a href=showinfo:34593&gt;Entosis Link&lt;/a&gt; duration</li><li> Can fit one &lt;a href=showinfo:43664&gt;Phenomena Generator&lt;/a&gt; module</li><ul></td>
+		<td width="355px"><b>Minmatar Titan bonuses (per skill level):</b><ul><li>180% bonus to &lt;a href=showinfo:21667&gt;Capital Projectile Turret&lt;/a&gt; damage</li><li>5% bonus to &lt;a href=showinfo:21667&gt;Capital Projectile Turret&lt;/a&gt; rate of fire</li><li>10+ bonus to ship warp core strength</li></ul><br><br><b>Role Bonus:</b><ul><li> Can fit a &lt;a href=showinfo:24563&gt;Doomsday&lt;/a&gt; module</li><li> Can fit a &lt;a href=showinfo:43662&gt;Phenomena Generator&lt;/a&gt; module</li><li> Can fit a &lt;a href=showinfo:23953&gt;Jump Portal Generator&lt;/a&gt; module</li><li> Can fit a &lt;a href=showinfo:23735&gt;Clone Vat Bay&lt;/a&gt; module</li><li> Can use three &lt;a href=showinfo:3348&gt;Command Burst&lt;/a&gt; modules</li><li>200% bonus to &lt;a href=showinfo:3348&gt;Command Burst&lt;/a&gt; area of effect range</li><li>500% bonus to Armor Plates and Shield Extenders</li><li>80% bonus to Sensor Dampener resistance</li><li>80% bonus to Weapon Disruption resistance</li><li>80% bonus to Stasis effect resistance</li><li>80% increase to Remote Electronic Assistance impedance</li><li>5x penalty to &lt;a href=showinfo:34593&gt;Entosis Link&lt;/a&gt; duration</li><ul></td>
+		<td><span>Minmatar Titan bonuses (per skill level):<br>180% bonus to &lt;a href=showinfo:21667&gt;Capital Projectile Turret&lt;/a&gt; damage<br>5% bonus to &lt;a href=showinfo:21667&gt;Capital Projectile Turret&lt;/a&gt; rate of fire<br>10+ bonus to ship warp core strength<br><br>Role Bonus:<br> Can fit </span><ins style="background:#e6ffe6;">a </ins><span>&lt;a href=showinfo:24563&gt;Doomsday&lt;/a&gt; </span><del style="background:#ffe6e6;">devices</del><ins style="background:#e6ffe6;">module<br> Can fit a &lt;a href=showinfo:43662&gt;Phenomena Generator&lt;/a&gt; module</ins><span><br> Can fit </span><ins style="background:#e6ffe6;">a </ins><span>&lt;a href=showinfo:23953&gt;Jump Portal Generator&lt;/a&gt;</span><ins style="background:#e6ffe6;"> module</ins><span><br> Can fit </span><ins style="background:#e6ffe6;">a </ins><span>&lt;a href=showinfo:23735&gt;Clone Vat Bay&lt;/a&gt;</span><ins style="background:#e6ffe6;"> module</ins><span><br> Can use three &lt;a href=showinfo:3348&gt;Command Burst&lt;/a&gt; modules<br>200% bonus to &lt;a href=showinfo:3348&gt;Command Burst&lt;/a&gt; area of effect range<br>500% bonus to Armor Plates and Shield Extenders<br>80% bonus to Sensor Dampener resistance<br>80% bonus to Weapon Disruption resistance<br>80% bonus to Stasis effect resistance<br>80% increase to Remote Electronic Assistance impedance<br>5x penalty to &lt;a href=showinfo:34593&gt;Entosis Link&lt;/a&gt; duration</span><del style="background:#ffe6e6;"><br> Can fit one &lt;a href=showinfo:43664&gt;Phenomena Generator&lt;/a&gt; module</del></td>
+	</tr>
+	<tr>
+		<td style="text-align:center;" width="130px">42124 - <b>Vehement</b><br>(Dreadnought)</td>
+		<td width="355px"><b>Gallente Dreadnought bonuses (per skill level):</b><ul><li>5% bonus to &lt;a href=showinfo:21666&gt;Capital Hybrid Turret&lt;/a&gt; rate of fire</li></ul><br><br><b>Minmatar Dreadnought bonuses (per skill level):</b><ul><li>10% bonus to &lt;a href=showinfo:526&gt;Stasis Webifier&lt;/a&gt; effectiveness</li></ul><br><br><b>Role Bonus:</b><ul><li> Can fit &lt;a href=showinfo:20280&gt;Siege modules&lt;/a&gt;</li><li>37.5% bonus to &lt;a href=showinfo:21666&gt;Capital Hybrid Turret&lt;/a&gt; damage</li><li>5x penalty to &lt;a href=showinfo:34593&gt;Entosis Link&lt;/a&gt; cycle time</li><ul></td>
+		<td width="355px"><b>Gallente Dreadnought bonuses (per skill level):</b><ul><li>5% bonus to &lt;a href=showinfo:21666&gt;Capital Hybrid Turret&lt;/a&gt; rate of fire</li></ul><br><br><b>Minmatar Dreadnought bonuses (per skill level):</b><ul><li>10% bonus to &lt;a href=showinfo:526&gt;Stasis Webifier&lt;/a&gt; effectiveness</li></ul><br><br><b>Role Bonus:</b><ul><li> Can fit a &lt;a href=showinfo:20280&gt;Siege module&lt;/a&gt;</li><li>37.5% bonus to &lt;a href=showinfo:21666&gt;Capital Hybrid Turret&lt;/a&gt; damage</li><li>5x penalty to &lt;a href=showinfo:34593&gt;Entosis Link&lt;/a&gt; cycle time</li><ul></td>
+		<td><span>Gallente Dreadnought bonuses (per skill level):<br>5% bonus to &lt;a href=showinfo:21666&gt;Capital Hybrid Turret&lt;/a&gt; rate of fire<br><br>Minmatar Dreadnought bonuses (per skill level):<br>10% bonus to &lt;a href=showinfo:526&gt;Stasis Webifier&lt;/a&gt; effectiveness<br><br>Role Bonus:<br> Can fit </span><ins style="background:#e6ffe6;">a </ins><span>&lt;a href=showinfo:20280&gt;Siege module</span><del style="background:#ffe6e6;">s</del><span>&lt;/a&gt;<br>37.5% bonus to &lt;a href=showinfo:21666&gt;Capital Hybrid Turret&lt;/a&gt; damage<br>5x penalty to &lt;a href=showinfo:34593&gt;Entosis Link&lt;/a&gt; cycle time</span></td>
+	</tr>
+	<tr>
+		<td style="text-align:center;" width="130px">42126 - <b>Vanquisher</b><br>(Titan)</td>
+		<td width="355px"><b>Gallente Titan bonuses (per skill level):</b><ul><li>5% bonus to &lt;a href=showinfo:21666&gt;Capital Hybrid Turret&lt;/a&gt; rate of fire</li><li>6+ bonus to ship warp core strength</li></ul><br><br><b>Minmatar Titan bonuses (per skill level):</b><ul><li>10% bonus to &lt;a href=showinfo:526&gt;Stasis Webifier&lt;/a&gt; effectiveness</li><li>6+ bonus to ship warp core strength</li></ul><br><br><b>Role Bonus:</b><ul><li> Can fit &lt;a href=showinfo:24563&gt;Doomsday&lt;/a&gt; devices</li><li> Can fit &lt;a href=showinfo:23953&gt;Jump Portal Generator&lt;/a&gt;</li><li> Can fit &lt;a href=showinfo:23735&gt;Clone Vat Bay&lt;/a&gt;</li><li> Can fit three &lt;a href=showinfo:3348&gt;Command Burst&lt;/a&gt; modules</li><li>200% bonus to &lt;a href=showinfo:3348&gt;Command Burst&lt;/a&gt; area of effect range</li><li>1000% bonus to &lt;a href=showinfo:21666&gt;Capital Hybrid Turret&lt;/a&gt; damage</li><li>500% bonus to Armor Plates and Shield Extenders</li><li>80% bonus to Sensor Dampener resistance</li><li>80% bonus to Weapon Disruption resistance</li><li>80% increase to Remote Electronic Assistance impedance</li><li>5x penalty to &lt;a href=showinfo:34593&gt;Entosis Link&lt;/a&gt; duration</li><li> Can fit one &lt;a href=showinfo:43664&gt;Minmatar&lt;/a&gt; or &lt;a href=showinfo:43662&gt;Gallente&lt;/a&gt; Phenomena Generator module</li><ul></td>
+		<td width="355px"><b>Gallente Titan bonuses (per skill level):</b><ul><li>5% bonus to &lt;a href=showinfo:21666&gt;Capital Hybrid Turret&lt;/a&gt; rate of fire</li><li>6+ bonus to ship warp core strength</li></ul><br><br><b>Minmatar Titan bonuses (per skill level):</b><ul><li>10% bonus to &lt;a href=showinfo:526&gt;Stasis Webifier&lt;/a&gt; effectiveness</li><li>6+ bonus to ship warp core strength</li></ul><br><br><b>Role Bonus:</b><ul><li> Can fit a &lt;a href=showinfo:24563&gt;Doomsday&lt;/a&gt; module</li><li> Can fit a &lt;a href=showinfo:43662&gt;Phenomena Generator&lt;/a&gt; module</li><li> Can fit a &lt;a href=showinfo:23953&gt;Jump Portal Generator&lt;/a&gt; module</li><li> Can fit a &lt;a href=showinfo:23735&gt;Clone Vat Bay&lt;/a&gt; module</li><li> Can use three &lt;a href=showinfo:3348&gt;Command Burst&lt;/a&gt; modules</li><li>200% bonus to &lt;a href=showinfo:3348&gt;Command Burst&lt;/a&gt; area of effect range</li><li>500% bonus to Armor Plates and Shield Extenders</li><li>1000% bonus to &lt;a href=showinfo:21666&gt;Capital Hybrid Turret&lt;/a&gt; damage</li><li>80% bonus to Sensor Dampener resistance</li><li>80% bonus to Weapon Disruption resistance</li><li>80% bonus to Stasis effect resistance</li><li>80% increase to Remote Electronic Assistance impedance</li><li>5x penalty to &lt;a href=showinfo:34593&gt;Entosis Link&lt;/a&gt; duration</li><ul></td>
+		<td><span>Gallente Titan bonuses (per skill level):<br>5% bonus to &lt;a href=showinfo:21666&gt;Capital Hybrid Turret&lt;/a&gt; rate of fire<br>6+ bonus to ship warp core strength<br><br>Minmatar Titan bonuses (per skill level):<br>10% bonus to &lt;a href=showinfo:526&gt;Stasis Webifier&lt;/a&gt; effectiveness<br>6+ bonus to ship warp core strength<br><br>Role Bonus:<br> Can fit </span><ins style="background:#e6ffe6;">a </ins><span>&lt;a href=showinfo:24563&gt;Doomsday&lt;/a&gt; </span><del style="background:#ffe6e6;">devices</del><ins style="background:#e6ffe6;">module<br> Can fit a &lt;a href=showinfo:43662&gt;Phenomena Generator&lt;/a&gt; module</ins><span><br> Can fit </span><ins style="background:#e6ffe6;">a </ins><span>&lt;a href=showinfo:23953&gt;Jump Portal Generator&lt;/a&gt;</span><ins style="background:#e6ffe6;"> module</ins><span><br> Can fit </span><ins style="background:#e6ffe6;">a </ins><span>&lt;a href=showinfo:23735&gt;Clone Vat Bay&lt;/a&gt;</span><ins style="background:#e6ffe6;"> module</ins><span><br> Can </span><del style="background:#ffe6e6;">fit</del><ins style="background:#e6ffe6;">use</ins><span> three &lt;a href=showinfo:3348&gt;Command Burst&lt;/a&gt; modules<br>200% bonus to &lt;a href=showinfo:3348&gt;Command Burst&lt;/a&gt; area of effect range\</span><ins style="background:#e6ffe6;">n500% bonus to Armor Plates and Shield Extenders\</ins><span>n1000% bonus to &lt;a href=showinfo:21666&gt;Capital Hybrid Turret&lt;/a&gt; damage<br></span><del style="background:#ffe6e6;">50</del><ins style="background:#e6ffe6;">8</ins><span>0% bonus to </span><del style="background:#ffe6e6;">Armor Plates and Shield Extenders<br>80% bonus to </del><span></span><ins style="background:#e6ffe6;"></ins><span>Sensor Dampener resistance<br>80% bonus to Weapon Disruption resistance<br>80%</span><ins style="background:#e6ffe6;"> bonus to Stasis effect resistance<br>80%</ins><span> increase to Remote Electronic Assistance impedance<br>5x penalty to &lt;a href=showinfo:34593&gt;Entosis Link&lt;/a&gt; duration</span><del style="background:#ffe6e6;"><br> Can fit one &lt;a href=showinfo:43664&gt;Minmatar&lt;/a&gt; or &lt;a href=showinfo:43662&gt;Gallente&lt;/a&gt; Phenomena Generator module</del></td>
+	</tr>
+	<tr>
+		<td style="text-align:center;" width="130px">42241 - <b>Molok</b><br>(Titan)</td>
+		<td width="355px"></td>
+		<td width="355px"><b>Minmatar Titan bonuses (per skill level):</b><ul><li>20% bonus to &lt;a href=showinfo:526&gt;Stasis Webifier&lt;/a&gt; optimal range</li><li>6+ bonus to ship warp core strength</li></ul><br><br><b>Amarr Titan bonuses (per skill level):</b><ul><li>15% bonus to &lt;a href=showinfo:3423&gt;Energy Nosferatu&lt;/a&gt; and &lt;a href=showinfo:3423&gt;Energy Neutralizer&lt;/a&gt; drain amount</li><li>6+ bonus to ship warp core strength</li></ul><br><br><b>Role Bonus:</b><ul><li> Can fit a &lt;a href=showinfo:24563&gt;Doomsday&lt;/a&gt; module</li><li> Can fit a &lt;a href=showinfo:43662&gt;Phenomena Generator&lt;/a&gt; module</li><li> Can fit a &lt;a href=showinfo:23953&gt;Jump Portal Generator&lt;/a&gt; module</li><li> Can fit a &lt;a href=showinfo:23735&gt;Clone Vat Bay&lt;/a&gt; module</li><li> Can use three &lt;a href=showinfo:3348&gt;Command Burst&lt;/a&gt; modules</li><li> &lt;a href=showinfo:3423&gt;Energy Nosferatu&lt;/a&gt; fitted to this ship will drain targeted ship's capacitor regardless of your own capacitor level</li><li>200% bonus to &lt;a href=showinfo:3348&gt;Command Burst&lt;/a&gt; area of effect range</li><li>500% bonus to Armor Plates and Shield Extenders</li><li>1400% bonus to &lt;a href=showinfo:20327&gt;Capital Energy Turret&lt;/a&gt; damage</li><li>80% bonus to Sensor Dampener resistance</li><li>80% bonus to Weapon Disruption resistance</li><li>80% bonus to Stasis effect resistance</li><li>80% increase to Remote Electronic Assistance impedance</li><li>5x penalty to &lt;a href=showinfo:34593&gt;Entosis Link&lt;/a&gt; duration</li><ul></td>
+		<td><ins style="background:#e6ffe6;">Minmatar Titan bonuses (per skill level):<br>20% bonus to &lt;a href=showinfo:526&gt;Stasis Webifier&lt;/a&gt; optimal range<br>6+ bonus to ship warp core strength<br><br>Amarr Titan bonuses (per skill level):<br>15% bonus to &lt;a href=showinfo:3423&gt;Energy Nosferatu&lt;/a&gt; and &lt;a href=showinfo:3423&gt;Energy Neutralizer&lt;/a&gt; drain amount<br>6+ bonus to ship warp core strength<br><br>Role Bonus:<br> Can fit a &lt;a href=showinfo:24563&gt;Doomsday&lt;/a&gt; module<br> Can fit a &lt;a href=showinfo:43662&gt;Phenomena Generator&lt;/a&gt; module<br> Can fit a &lt;a href=showinfo:23953&gt;Jump Portal Generator&lt;/a&gt; module<br> Can fit a &lt;a href=showinfo:23735&gt;Clone Vat Bay&lt;/a&gt; module<br> Can use three &lt;a href=showinfo:3348&gt;Command Burst&lt;/a&gt; modules<br> &lt;a href=showinfo:3423&gt;Energy Nosferatu&lt;/a&gt; fitted to this ship will drain targeted ship's capacitor regardless of your own capacitor level<br>200% bonus to &lt;a href=showinfo:3348&gt;Command Burst&lt;/a&gt; area of effect range<br>500% bonus to Armor Plates and Shield Extenders<br>1400% bonus to &lt;a href=showinfo:20327&gt;Capital Energy Turret&lt;/a&gt; damage<br>80% bonus to Sensor Dampener resistance<br>80% bonus to Weapon Disruption resistance<br>80% bonus to Stasis effect resistance<br>80% increase to Remote Electronic Assistance impedance<br>5x penalty to &lt;a href=showinfo:34593&gt;Entosis Link&lt;/a&gt; duration</ins></td>
+	</tr>
+	<tr>
+		<td style="text-align:center;" width="130px">42243 - <b>Chemosh</b><br>(Dreadnought)</td>
+		<td width="355px"></td>
+		<td width="355px"><b>Amarr Dreadnought bonuses (per skill level):</b><ul><li>15% bonus to &lt;a href=showinfo:3423&gt;Energy Nosferatu&lt;/a&gt; and &lt;a href=showinfo:3423&gt;Energy Neutralizer&lt;/a&gt; drain amount</li></ul><br><br><b>Minmatar Dreadnought bonuses (per skill level):</b><ul><li>20% bonus to &lt;a href=showinfo:526&gt;Stasis Webifier&lt;/a&gt; optimal range</li></ul><br><br><b>Role Bonus:</b><ul><li> Can fit a &lt;a href=showinfo:24563&gt;Doomsday&lt;/a&gt; module</li><li> &lt;a href=showinfo:3423&gt;Energy Nosferatu&lt;/a&gt; fitted to this ship will drain targeted ship's capacitor regardless of your own capacitor level</li><li>25% bonus to &lt;a href=showinfo:20327&gt;Capital Energy Turret&lt;/a&gt; damage</li><li>5x penalty to &lt;a href=showinfo:34593&gt;Entosis Link&lt;/a&gt; cycle time</li><ul></td>
+		<td><ins style="background:#e6ffe6;">Amarr Dreadnought bonuses (per skill level):<br>15% bonus to &lt;a href=showinfo:3423&gt;Energy Nosferatu&lt;/a&gt; and &lt;a href=showinfo:3423&gt;Energy Neutralizer&lt;/a&gt; drain amount<br><br>Minmatar Dreadnought bonuses (per skill level):<br>20% bonus to &lt;a href=showinfo:526&gt;Stasis Webifier&lt;/a&gt; optimal range<br><br>Role Bonus:<br> Can fit a &lt;a href=showinfo:24563&gt;Doomsday&lt;/a&gt; module<br> &lt;a href=showinfo:3423&gt;Energy Nosferatu&lt;/a&gt; fitted to this ship will drain targeted ship's capacitor regardless of your own capacitor level<br>25% bonus to &lt;a href=showinfo:20327&gt;Capital Energy Turret&lt;/a&gt; damage<br>5x penalty to &lt;a href=showinfo:34593&gt;Entosis Link&lt;/a&gt; cycle time</ins></td>
+	</tr>
+	</table>
+</details>
+
+
+
+<!--<h2 id="attributes">Attributes</h2>-->
+
+<details id="dgmattribs">
+	<summary class="bigsum">Changes to Attributes (8 Entries)</summary>
+	<table>
+	  <tr>
+		<th>Attribute Name</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Diff</th>
+	  </tr>
+	<tr>
+		<td>2616 - behaviorMicroWarpDriveMassAddition</td>
+		<td><b>attributeCategory:</b> None <b>=></b> 5<br><b>attributeID:</b> None <b>=></b> 2616<br><b>attributeName:</b> None <b>=></b> behaviorMicroWarpDriveMassAddition<br><b>categoryID:</b> None <b>=></b> 42<br><b>defaultValue:</b> None <b>=></b> 0.0<br><b>description:</b> None <b>=></b> <br><b>displayName:</b> None <b>=></b> <br><b>highIsGood:</b> None <b>=></b> True<br><b>published:</b> None <b>=></b> False<br><b>stackable:</b> None <b>=></b> True<br><b>unitID:</b> None <b>=></b> 2<br></td>
+	</tr>
+	<tr>
+		<td>2467 - specialCorpseHoldCapacity</td>
+		<td><b>categoryID:</b> 4 <b>=></b> 40<br></td>
+	</tr>
+	<tr>
+		<td>2594 - attributeEngRigMatBonus</td>
+		<td><b>highIsGood:</b> True <b>=></b> False<br></td>
+	</tr>
+	<tr>
+		<td>2614 - behaviorMicroWarpDriveDischarge</td>
+		<td><b>attributeCategory:</b> None <b>=></b> 5<br><b>attributeID:</b> None <b>=></b> 2614<br><b>attributeName:</b> None <b>=></b> behaviorMicroWarpDriveDischarge<br><b>categoryID:</b> None <b>=></b> 42<br><b>defaultValue:</b> None <b>=></b> 0.0<br><b>description:</b> None <b>=></b> <br><b>displayName:</b> None <b>=></b> <br><b>highIsGood:</b> None <b>=></b> True<br><b>published:</b> None <b>=></b> False<br><b>stackable:</b> None <b>=></b> True<br><b>unitID:</b> None <b>=></b> 114<br></td>
+	</tr>
+	<tr>
+		<td>2617 - behaviorMicroWarpDriveSignatureRadiusBonus</td>
+		<td><b>attributeCategory:</b> None <b>=></b> 5<br><b>attributeID:</b> None <b>=></b> 2617<br><b>attributeName:</b> None <b>=></b> behaviorMicroWarpDriveSignatureRadiusBonus<br><b>categoryID:</b> None <b>=></b> 42<br><b>defaultValue:</b> None <b>=></b> 0.0<br><b>description:</b> None <b>=></b> <br><b>displayName:</b> None <b>=></b> <br><b>highIsGood:</b> None <b>=></b> True<br><b>published:</b> None <b>=></b> False<br><b>stackable:</b> None <b>=></b> True<br><b>unitID:</b> None <b>=></b> 124<br></td>
+	</tr>
+	<tr>
+		<td>2615 - behaviorMicroWarpDriveDuration</td>
+		<td><b>attributeCategory:</b> None <b>=></b> 5<br><b>attributeID:</b> None <b>=></b> 2615<br><b>attributeName:</b> None <b>=></b> behaviorMicroWarpDriveDuration<br><b>categoryID:</b> None <b>=></b> 42<br><b>defaultValue:</b> None <b>=></b> 0.0<br><b>description:</b> None <b>=></b> <br><b>displayName:</b> None <b>=></b> <br><b>highIsGood:</b> None <b>=></b> True<br><b>published:</b> None <b>=></b> False<br><b>stackable:</b> None <b>=></b> True<br><b>unitID:</b> None <b>=></b> 101<br></td>
+	</tr>
+	<tr>
+		<td>2618 - behaviorMicroWarpDriveSpeedFactor</td>
+		<td><b>attributeCategory:</b> None <b>=></b> 5<br><b>attributeID:</b> None <b>=></b> 2618<br><b>attributeName:</b> None <b>=></b> behaviorMicroWarpDriveSpeedFactor<br><b>categoryID:</b> None <b>=></b> 42<br><b>defaultValue:</b> None <b>=></b> 0.0<br><b>description:</b> None <b>=></b> <br><b>displayName:</b> None <b>=></b> <br><b>highIsGood:</b> None <b>=></b> True<br><b>published:</b> None <b>=></b> False<br><b>stackable:</b> None <b>=></b> True<br><b>unitID:</b> None <b>=></b> 124<br></td>
+	</tr>
+	<tr>
+		<td>2619 - behaviorMicroWarpDriveSpeedBoostFactor</td>
+		<td><b>attributeCategory:</b> None <b>=></b> 5<br><b>attributeID:</b> None <b>=></b> 2619<br><b>attributeName:</b> None <b>=></b> behaviorMicroWarpDriveSpeedBoostFactor<br><b>categoryID:</b> None <b>=></b> 42<br><b>defaultValue:</b> None <b>=></b> 0.0<br><b>description:</b> None <b>=></b> <br><b>displayName:</b> None <b>=></b> <br><b>highIsGood:</b> None <b>=></b> True<br><b>published:</b> None <b>=></b> False<br><b>stackable:</b> None <b>=></b> True<br><b>unitID:</b> None <b>=></b> 125<br></td>
+	</tr>
+	</table>
+</details>
+
+<details id="typeattribs">
+	<summary class="bigsum">Attribute Changes per Type (20 Entries)</summary>
+	<table>
+	  <tr>
+		<th>TypeID, Name, and Group</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Diff</th>
+	  </tr>
+	<tr>
+		<td>45056 - <b>♦ Apocalypse</b> (♦ Battleship)</td>
+		<td><details>
+	<summary>Click to toggle showing the 63 attributes.</summary><b>mass:</b> None <b>=></b> 102350000.0<br><b>hp:</b> None <b>=></b> 8750.0<br><b>maxVelocity:</b> None <b>=></b> 134.1875<br><b>capacity:</b> None <b>=></b> 675.0<br><b>speed:</b> None <b>=></b> 4172.66979<br><b>maxRange:</b> None <b>=></b> 149428.125<br><b>rechargeRate:</b> None <b>=></b> 600000.0<br><b>damageMultiplier:</b> None <b>=></b> 37.54954326<br><b>agility:</b> None <b>=></b> 0.080325<br><b>maxTargetRange:</b> None <b>=></b> 184067.4552<br><b>kineticDamageResonance:</b> None <b>=></b> 0.402<br><b>thermalDamageResonance:</b> None <b>=></b> 0.402<br><b>explosiveDamageResonance:</b> None <b>=></b> 0.402<br><b>emDamageResonance:</b> None <b>=></b> 0.402<br><b>emDamage:</b> None <b>=></b> 20.0<br><b>explosiveDamage:</b> None <b>=></b> 0.0<br><b>kineticDamage:</b> None <b>=></b> 0.0<br><b>thermalDamage:</b> None <b>=></b> 12.0<br><b>falloff:</b> None <b>=></b> 19500.0<br><b>trackingSpeed:</b> None <b>=></b> 0.751953125<br><b>volume:</b> None <b>=></b> 495000.0<br><b>radius:</b> None <b>=></b> 400.0<br><b>maxLockedTargets:</b> None <b>=></b> 7.0<br><b>raceID:</b> None <b>=></b> 4<br><b>scanRadarStrength:</b> None <b>=></b> 35.52<br><b>scanLadarStrength:</b> None <b>=></b> 0.0<br><b>scanMagnetometricStrength:</b> None <b>=></b> 0.0<br><b>scanGravimetricStrength:</b> None <b>=></b> 0.0<br><b>gfxTurretID:</b> None <b>=></b> 2985.0<br><b>gfxBoosterID:</b> None <b>=></b> 394.0<br><b>shieldCapacity:</b> None <b>=></b> 7500.0<br><b>armorHP:</b> None <b>=></b> 22500.0<br><b>armorEmDamageResonance:</b> None <b>=></b> 0.425<br><b>armorExplosiveDamageResonance:</b> None <b>=></b> 0.34<br><b>armorKineticDamageResonance:</b> None <b>=></b> 0.31875<br><b>armorThermalDamageResonance:</b> None <b>=></b> 0.5525<br><b>shieldEmDamageResonance:</b> None <b>=></b> 0.875<br><b>shieldExplosiveDamageResonance:</b> None <b>=></b> 0.4375<br><b>shieldKineticDamageResonance:</b> None <b>=></b> 0.525<br><b>shieldThermalDamageResonance:</b> None <b>=></b> 0.7<br><b>shieldRechargeRate:</b> None <b>=></b> 1875000.0<br><b>entityKillBounty:</b> None <b>=></b> 0.0<br><b>capacitorCapacity:</b> None <b>=></b> 6562.5<br><b>signatureRadius:</b> None <b>=></b> 380.0<br><b>entityFactionLoss:</b> None <b>=></b> 0.0<br><b>scanResolution:</b> None <b>=></b> 154.375<br><b>optimalSigRadius:</b> None <b>=></b> 40000.0<br><b>published:</b> None <b>=></b> False<br><b>behaviorMicroWarpDriveDischarge:</b> None <b>=></b> 210.0<br><b>behaviorMicroWarpDriveDuration:</b> None <b>=></b> 10000.0<br><b>behaviorMicroWarpDriveMassAddition:</b> None <b>=></b> 50000000.0<br><b>behaviorMicroWarpDriveSignatureRadiusBonus:</b> None <b>=></b> 500.0<br><b>behaviorMicroWarpDriveSpeedFactor:</b> None <b>=></b> 631.25<br><b>behaviorMicroWarpDriveSpeedBoostFactor:</b> None <b>=></b> 150000000.0<br><b>basePrice:</b> None <b>=></b> 0.0<br><b>descriptionID:</b> None <b>=></b> 525627<br><b>graphicID:</b> None <b>=></b> 2121<br><b>groupID:</b> None <b>=></b> 1814<br><b>portionSize:</b> None <b>=></b> 1<br><b>soundID:</b> None <b>=></b> 20061<br><b>typeID:</b> None <b>=></b> 45056<br><b>typeNameID:</b> None <b>=></b> 525626<br><b>wreckTypeID:</b> None <b>=></b> 26470<br></details></td>
+	</tr>
+	<tr>
+		<td>42241 - <b>Molok</b> (Titan)</td>
+		<td><details>
+	<summary>Click to toggle showing the 30 attributes.</summary><b>hp:</b> 390000.0 <b>=></b> 580000.0<br><b>powerOutput:</b> 1250000.0 <b>=></b> 1375000.0<br><b>medSlots:</b> 5.0 <b>=></b> 6.0<br><b>maxVelocity:</b> 60.0 <b>=></b> 65.0<br><b>capacity:</b> 11250.0 <b>=></b> 12400.0<br><b>cpuOutput:</b> 815.0 <b>=></b> 900.0<br><b>agility:</b> 0.034 <b>=></b> 0.03<br><b>turretSlotsLeft:</b> 6.0 <b>=></b> 4.0<br><b>scanRadarStrength:</b> 225.0 <b>=></b> 240.0<br><b>shieldCapacity:</b> 260000.0 <b>=></b> 390000.0<br><b>armorHP:</b> 630000.0 <b>=></b> 950000.0<br><b>capacitorCapacity:</b> 135000.0 <b>=></b> 145000.0<br><b>signatureRadius:</b> 22760.0 <b>=></b> 24000.0<br><b>scanResolution:</b> 70.0 <b>=></b> 75.0<br><b>metaLevel:</b> 0.0 <b>=></b> 8.0<br><b>upgradeCapacity:</b> 400.0 <b>=></b> 350.0<br><b>heatAttenuationHi:</b> 0.82 <b>=></b> 0.820335356<br><b>heatAttenuationMed:</b> 0.71 <b>=></b> 0.757858283<br><b>heatAttenuationLow:</b> 0.82 <b>=></b> 0.820335356<br><b>metaGroupID:</b> None <b>=></b> 4.0<br><b>nosOverride:</b> None <b>=></b> 1.0<br><b>published:</b> False <b>=></b> True<br><b>shipBonusRole3:</b> None <b>=></b> 1400.0<br><b>shipBonusTitanA1:</b> 180.0 <b>=></b> 15.0<br><b>shipBonusTitanA2:</b> -10.0 <b>=></b> None<br><b>shipBonusTitanA3:</b> -10.0 <b>=></b> -6.0<br><b>shipBonusTitanM1:</b> None <b>=></b> 20.0<br><b>shipBonusTitanM3:</b> None <b>=></b> -6.0<br><b>specialCorpseHoldCapacity:</b> None <b>=></b> 200000.0<br><b>marketGroupID:</b> None <b>=></b> 2287<br></details></td>
+	</tr>
+	<tr>
+		<td>42243 - <b>Chemosh</b> (Dreadnought)</td>
+		<td><details>
+	<summary>Click to toggle showing the 27 attributes.</summary><b>hp:</b> 113000.0 <b>=></b> 169000.0<br><b>powerOutput:</b> 780000.0 <b>=></b> 858000.0<br><b>hiSlots:</b> 5.0 <b>=></b> 6.0<br><b>maxVelocity:</b> 75.0 <b>=></b> 80.0<br><b>cpuOutput:</b> 650.0 <b>=></b> 715.0<br><b>agility:</b> 0.044 <b>=></b> 0.04<br><b>scanRadarStrength:</b> 41.0 <b>=></b> 45.0<br><b>shieldCapacity:</b> 78100.0 <b>=></b> 118000.0<br><b>armorHP:</b> 113000.0 <b>=></b> 169000.0<br><b>capacitorCapacity:</b> 60000.0 <b>=></b> 66000.0<br><b>signatureRadius:</b> 11100.0 <b>=></b> 11800.0<br><b>scanResolution:</b> 80.0 <b>=></b> 85.0<br><b>metaLevel:</b> 0.0 <b>=></b> 8.0<br><b>upgradeCapacity:</b> 400.0 <b>=></b> 350.0<br><b>heatAttenuationHi:</b> 0.71 <b>=></b> 0.757858283<br><b>heatAttenuationMed:</b> 0.63 <b>=></b> 0.629960525<br><b>heatAttenuationLow:</b> 0.82 <b>=></b> 0.820335356<br><b>metaGroupID:</b> None <b>=></b> 4.0<br><b>nosOverride:</b> None <b>=></b> 1.0<br><b>published:</b> False <b>=></b> True<br><b>shipBonusDreadnoughtA1:</b> 5.0 <b>=></b> 15.0<br><b>shipBonusDreadnoughtA2:</b> -4.0 <b>=></b> None<br><b>shipBonusDreadnoughtA3:</b> -10.0 <b>=></b> None<br><b>shipBonusDreadnoughtM1:</b> None <b>=></b> 20.0<br><b>shipBonusRole3:</b> None <b>=></b> 25.0<br><b>specialCorpseHoldCapacity:</b> None <b>=></b> 20000.0<br><b>marketGroupID:</b> None <b>=></b> 2288<br></details></td>
+	</tr>
+	<tr>
+		<td>45057 - <b>Amarr CA Cruiser</b> (Mission Amarr Empire Cruiser)</td>
+		<td><details>
+	<summary>Click to toggle showing the 75 attributes.</summary><b>mass:</b> None <b>=></b> 12000000.0<br><b>hp:</b> None <b>=></b> 400.0<br><b>maxVelocity:</b> None <b>=></b> 100.0<br><b>capacity:</b> None <b>=></b> 450.0<br><b>speed:</b> None <b>=></b> 12000.0<br><b>maxRange:</b> None <b>=></b> 20000.0<br><b>rechargeRate:</b> None <b>=></b> 1000000.0<br><b>damageMultiplier:</b> None <b>=></b> 4.8<br><b>emDamage:</b> None <b>=></b> 8.0<br><b>thermalDamage:</b> None <b>=></b> 8.0<br><b>falloff:</b> None <b>=></b> 10000.0<br><b>trackingSpeed:</b> None <b>=></b> 0.081<br><b>volume:</b> None <b>=></b> 120000.0<br><b>radius:</b> None <b>=></b> 150.0<br><b>maxLockedTargets:</b> None <b>=></b> 1.0<br><b>maxAttackTargets:</b> None <b>=></b> 1.0<br><b>raceID:</b> None <b>=></b> 4<br><b>scanRadarStrength:</b> None <b>=></b> 14.0<br><b>propulsionGraphicID:</b> None <b>=></b> 397.0<br><b>gfxTurretID:</b> None <b>=></b> 454.0<br><b>gfxBoosterID:</b> None <b>=></b> 397.0<br><b>entityAttackRange:</b> None <b>=></b> 50000.0<br><b>entityLootCountMin:</b> None <b>=></b> 1.0<br><b>shieldCapacity:</b> None <b>=></b> 600.0<br><b>armorHP:</b> None <b>=></b> 600.0<br><b>armorEmDamageResonance:</b> None <b>=></b> 0.79<br><b>armorExplosiveDamageResonance:</b> None <b>=></b> 0.49<br><b>armorKineticDamageResonance:</b> None <b>=></b> 0.59<br><b>armorThermalDamageResonance:</b> None <b>=></b> 0.69<br><b>shieldEmDamageResonance:</b> None <b>=></b> 0.79<br><b>shieldExplosiveDamageResonance:</b> None <b>=></b> 0.49<br><b>shieldKineticDamageResonance:</b> None <b>=></b> 0.59<br><b>shieldThermalDamageResonance:</b> None <b>=></b> 0.69<br><b>entityFlyRange:</b> None <b>=></b> 20000.0<br><b>entityEquipmentMin:</b> None <b>=></b> -4.0<br><b>entityEquipmentMax:</b> None <b>=></b> 3.0<br><b>entityReactionFactor:</b> None <b>=></b> 0.52<br><b>entityAttackDelayMin:</b> None <b>=></b> 5475.0<br><b>entityAttackDelayMax:</b> None <b>=></b> 21900.0<br><b>shieldRechargeRate:</b> None <b>=></b> 1000000.0<br><b>capacitorCapacity:</b> None <b>=></b> 625.0<br><b>shieldUniformity:</b> None <b>=></b> 0.75<br><b>entityCruiseSpeed:</b> None <b>=></b> 180.0<br><b>armorUniformity:</b> None <b>=></b> 0.75<br><b>structureUniformity:</b> None <b>=></b> 1.0<br><b>signatureRadius:</b> None <b>=></b> 105.0<br><b>entityFactionLoss:</b> None <b>=></b> 0.0<br><b>scanResolution:</b> None <b>=></b> 290.0<br><b>entityChaseMaxDelay:</b> None <b>=></b> 10000.0<br><b>entityChaseMaxDelayChance:</b> None <b>=></b> 0.2<br><b>entityChaseMaxDuration:</b> None <b>=></b> 10000.0<br><b>entityChaseMaxDurationChance:</b> None <b>=></b> 1.0<br><b>optimalSigRadius:</b> None <b>=></b> 50.0<br><b>entityArmorRepairDuration:</b> None <b>=></b> 10000.0<br><b>entityArmorRepairAmount:</b> None <b>=></b> 130.0<br><b>entityChaseMaxDistance:</b> None <b>=></b> 11500.0<br><b>entityBracketColour:</b> None <b>=></b> 1.0<br><b>disallowAssistance:</b> None <b>=></b> 1.0<br><b>entityArmorRepairDelayChanceMedium:</b> None <b>=></b> 0.41<br><b>AI_ShouldUseTargetSwitching:</b> None <b>=></b> 1.0<br><b>AI_ShouldUseSignatureRadius:</b> None <b>=></b> 1.0<br><b>AI_ChanceToNotTargetSwitch:</b> None <b>=></b> 0.0<br><b>AI_ShouldUseEffectMultiplier:</b> None <b>=></b> 1.0<br><b>AI_TankingModifierDrone:</b> None <b>=></b> 0.7<br><b>entityOverviewShipGroupId:</b> None <b>=></b> 26.0<br><b>AI_IgnoreDronesBelowSignatureRadius:</b> None <b>=></b> 50.0<br><b>published:</b> None <b>=></b> False<br><b>basePrice:</b> None <b>=></b> 0.0<br><b>descriptionID:</b> None <b>=></b> 525632<br><b>graphicID:</b> None <b>=></b> 1065<br><b>groupID:</b> None <b>=></b> 668<br><b>portionSize:</b> None <b>=></b> 1<br><b>typeID:</b> None <b>=></b> 45057<br><b>typeNameID:</b> None <b>=></b> 525631<br><b>wreckTypeID:</b> None <b>=></b> 27051<br></details></td>
+	</tr>
+	<tr>
+		<td>43658 - <b>Amarr Phenomena Generator</b> (Titan Phenomena Generator)</td>
+		<td><b>canFitShipType2:</b> None <b>=></b> 42241.0<br></td>
+	</tr>
+	<tr>
+		<td>42126 - <b>Vanquisher</b> (Titan)</td>
+		<td><b>certificateTemplate:</b> 88 <b>=></b> None<br></td>
+	</tr>
+	<tr>
+		<td>43664 - <b>Minmatar Phenomena Generator</b> (Titan Phenomena Generator)</td>
+		<td><b>canFitShipType3:</b> None <b>=></b> 42241.0<br></td>
+	</tr>
+	<tr>
+		<td>37808 - <b>Women's CONCORD Test Pilot T-Shirt</b> (Tops)</td>
+		<td><b>published:</b> False <b>=></b> True<br><b>marketGroupID:</b> None <b>=></b> 1398<br></td>
+	</tr>
+	<tr>
+		<td>37809 - <b>Men's CONCORD Test Pilot T-Shirt</b> (Tops)</td>
+		<td><b>published:</b> False <b>=></b> True<br><b>marketGroupID:</b> None <b>=></b> 1398<br></td>
+	</tr>
+	<tr>
+		<td>40631 - <b>‘Holy Destiny’ Electromagnetic Lance</b> (Super Weapon)</td>
+		<td><b>canFitShipType2:</b> None <b>=></b> 42241.0<br></td>
+	</tr>
+	<tr>
+		<td>40632 - <b>‘Divine Harvest’ Electromagnetic Reaper</b> (Super Weapon)</td>
+		<td><b>canFitShipType2:</b> None <b>=></b> 42241.0<br></td>
+	</tr>
+	<tr>
+		<td>37818 - <b>Men's CONCORD 'Solitaire' Survival Suit</b> (Outer)</td>
+		<td><b>published:</b> False <b>=></b> True<br><b>marketGroupID:</b> None <b>=></b> 1399<br></td>
+	</tr>
+	<tr>
+		<td>37601 - <b>Women's CONCORD 'Solitaire' Survival Suit</b> (Outer)</td>
+		<td><b>published:</b> False <b>=></b> True<br><b>marketGroupID:</b> None <b>=></b> 1399<br></td>
+	</tr>
+	<tr>
+		<td>23674 - <b>'Gjallarhorn' Explosive Doomsday</b> (Super Weapon)</td>
+		<td><b>canFitShipType3:</b> None <b>=></b> 42241.0<br></td>
+	</tr>
+	<tr>
+		<td>41441 - <b>‘Geiravor’ Explosive Lance</b> (Super Weapon)</td>
+		<td><b>canFitShipType3:</b> None <b>=></b> 42241.0<br></td>
+	</tr>
+	<tr>
+		<td>41444 - <b>‘Jormungandr’ Explosive Reaper</b> (Super Weapon)</td>
+		<td><b>canFitShipType3:</b> None <b>=></b> 42241.0<br></td>
+	</tr>
+	<tr>
+		<td>24550 - <b>'Judgment' Electromagnetic Doomsday</b> (Super Weapon)</td>
+		<td><b>canFitShipType2:</b> None <b>=></b> 42241.0<br></td>
+	</tr>
+	<tr>
+		<td>45050 - <b>Amarr CA Frigate</b> (Mission Amarr Empire Frigate)</td>
+		<td><b>hp:</b> 150.0 <b>=></b> 100.0<br><b>maxVelocity:</b> 300.0 <b>=></b> 350.0<br></td>
+	</tr>
+	<tr>
+		<td>45051 - <b>Amarr CA Destroyer</b> (Mission Amarr Empire Destroyer)</td>
+		<td><details>
+	<summary>Click to toggle showing the 16 attributes.</summary><b>hp:</b> 400.0 <b>=></b> 250.0<br><b>maxVelocity:</b> 200.0 <b>=></b> 250.0<br><b>warpScrambleRange:</b> 0.0 <b>=></b> None<br><b>trackingSpeed:</b> 0.1 <b>=></b> 0.4<br><b>entitySecurityStatusKillBonus:</b> 0.0 <b>=></b> None<br><b>shieldCapacity:</b> 500.0 <b>=></b> 350.0<br><b>armorHP:</b> 500.0 <b>=></b> 350.0<br><b>entityDefenderChance:</b> 0.0 <b>=></b> None<br><b>entityWarpScrambleChance:</b> 0.0 <b>=></b> None<br><b>missileLaunchDuration:</b> 1.0 <b>=></b> None<br><b>entityArmorRepairDuration:</b> 10000.0 <b>=></b> None<br><b>entityArmorRepairAmount:</b> 65.0 <b>=></b> None<br><b>entityShieldBoostDuration:</b> 5000.0 <b>=></b> None<br><b>missileEntityAoeCloudSizeMultiplier:</b> 0.9468 <b>=></b> None<br><b>entityShieldBoostDelayChanceSmall:</b> 0.25 <b>=></b> None<br><b>entityArmorRepairDelayChanceSmall:</b> 0.25 <b>=></b> None<br></details></td>
+	</tr>
+	<tr>
+		<td>45055 - <b>♦ Bhaalgorn</b> (♦ Battleship)</td>
+		<td><details>
+	<summary>Click to toggle showing the 73 attributes.</summary><b>mass:</b> None <b>=></b> 102725000.0<br><b>hp:</b> None <b>=></b> 11625.0<br><b>speedFactor:</b> None <b>=></b> -55.0<br><b>maxVelocity:</b> None <b>=></b> 114.7254961<br><b>capacity:</b> None <b>=></b> 675.0<br><b>speed:</b> None <b>=></b> 7244.218385<br><b>maxRange:</b> None <b>=></b> 136620.0<br><b>rechargeRate:</b> None <b>=></b> 865500.0<br><b>damageMultiplier:</b> None <b>=></b> 84.48647234<br><b>agility:</b> None <b>=></b> 0.084375<br><b>maxTargetRange:</b> None <b>=></b> 181545.9832<br><b>energyNeutralizerAmount:</b> None <b>=></b> 1050.0<br><b>kineticDamageResonance:</b> None <b>=></b> 0.402<br><b>thermalDamageResonance:</b> None <b>=></b> 0.402<br><b>explosiveDamageResonance:</b> None <b>=></b> 0.402<br><b>emDamageResonance:</b> None <b>=></b> 0.402<br><b>emDamage:</b> None <b>=></b> 20.0<br><b>explosiveDamage:</b> None <b>=></b> 0.0<br><b>kineticDamage:</b> None <b>=></b> 0.0<br><b>thermalDamage:</b> None <b>=></b> 12.0<br><b>falloff:</b> None <b>=></b> 32500.0<br><b>trackingSpeed:</b> None <b>=></b> 0.435015625<br><b>volume:</b> None <b>=></b> 486000.0<br><b>radius:</b> None <b>=></b> 400.0<br><b>maxLockedTargets:</b> None <b>=></b> 8.0<br><b>raceID:</b> None <b>=></b> 4<br><b>scanRadarStrength:</b> None <b>=></b> 33.6<br><b>scanLadarStrength:</b> None <b>=></b> 0.0<br><b>scanMagnetometricStrength:</b> None <b>=></b> 0.0<br><b>scanGravimetricStrength:</b> None <b>=></b> 0.0<br><b>gfxTurretID:</b> None <b>=></b> 3065.0<br><b>gfxBoosterID:</b> None <b>=></b> 397.0<br><b>shieldCapacity:</b> None <b>=></b> 11043.75<br><b>armorHP:</b> None <b>=></b> 36810.0<br><b>armorEmDamageResonance:</b> None <b>=></b> 0.425<br><b>armorExplosiveDamageResonance:</b> None <b>=></b> 0.34<br><b>armorKineticDamageResonance:</b> None <b>=></b> 0.31875<br><b>armorThermalDamageResonance:</b> None <b>=></b> 0.5525<br><b>shieldEmDamageResonance:</b> None <b>=></b> 0.875<br><b>shieldExplosiveDamageResonance:</b> None <b>=></b> 0.4375<br><b>shieldKineticDamageResonance:</b> None <b>=></b> 0.525<br><b>shieldThermalDamageResonance:</b> None <b>=></b> 0.7<br><b>shieldRechargeRate:</b> None <b>=></b> 1875000.0<br><b>entityKillBounty:</b> None <b>=></b> 0.0<br><b>capacitorCapacity:</b> None <b>=></b> 8554.6875<br><b>signatureRadius:</b> None <b>=></b> 400.0<br><b>entityFactionLoss:</b> None <b>=></b> 0.0<br><b>scanResolution:</b> None <b>=></b> 125.0<br><b>optimalSigRadius:</b> None <b>=></b> 40000.0<br><b>published:</b> None <b>=></b> False<br><b>behaviorWebifierDuration:</b> None <b>=></b> 5000.0<br><b>behaviorWebifierRange:</b> None <b>=></b> 30000.0<br><b>behaviorWebifierFalloff:</b> None <b>=></b> 0.0<br><b>behaviorWebifierDischarge:</b> None <b>=></b> 3.75<br><b>behaviorEnergyNeutralizerDuration:</b> None <b>=></b> 24000.0<br><b>behaviorEnergyNeutralizerRange:</b> None <b>=></b> 24000.0<br><b>behaviorEnergyNeutralizerFalloff:</b> None <b>=></b> 12000.0<br><b>behaviorEnergyNeutralizerDischarge:</b> None <b>=></b> 375.0<br><b>behaviorMicroWarpDriveDischarge:</b> None <b>=></b> 210.0<br><b>behaviorMicroWarpDriveDuration:</b> None <b>=></b> 10000.0<br><b>behaviorMicroWarpDriveMassAddition:</b> None <b>=></b> 50000000.0<br><b>behaviorMicroWarpDriveSignatureRadiusBonus:</b> None <b>=></b> 500.0<br><b>behaviorMicroWarpDriveSpeedFactor:</b> None <b>=></b> 631.25<br><b>behaviorMicroWarpDriveSpeedBoostFactor:</b> None <b>=></b> 150000000.0<br><b>basePrice:</b> None <b>=></b> 0.0<br><b>descriptionID:</b> None <b>=></b> 525625<br><b>graphicID:</b> None <b>=></b> 2122<br><b>groupID:</b> None <b>=></b> 1814<br><b>portionSize:</b> None <b>=></b> 1<br><b>soundID:</b> None <b>=></b> 20112<br><b>typeID:</b> None <b>=></b> 45055<br><b>typeNameID:</b> None <b>=></b> 525624<br><b>wreckTypeID:</b> None <b>=></b> 26470<br></details></td>
+	</tr>
+	</table>
+</details>
+
+<br>
+
+<!--<h2 id="effectchanges">Effect Changes</h2>-->
+
+<details id="dgmeffects">
+	<summary class="bigsum">Changes to Effects (15 Entries)</summary>
+	<table>
+	  <tr>
+		<th>Effect Name</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Diff</th>
+	  </tr>
+	<tr>
+		<td>6864 - npcBehaviorMicroWarpDrive</td>
+		<td><b>disallowAutoRepeat:</b> None <b>=></b> False<br><b>dischargeAttributeID:</b> None <b>=></b> 2614<br><b>displayName:</b> None <b>=></b> <br><b>durationAttributeID:</b> None <b>=></b> 2615<br><b>effectCategory:</b> None <b>=></b> 1<br><b>effectID:</b> None <b>=></b> 6864<br><b>effectName:</b> None <b>=></b> npcBehaviorMicroWarpDrive<br><b>electronicChance:</b> None <b>=></b> False<br><b>guid:</b> None <b>=></b> effects.MicroWarpDrive<br><b>isAssistance:</b> None <b>=></b> False<br><b>isOffensive:</b> None <b>=></b> False<br><b>isWarpSafe:</b> None <b>=></b> False<br><b>modifierInfo:</b> None <b>=></b> <br><b>postExpression:</b> None <b>=></b> 59<br><b>preExpression:</b> None <b>=></b> 59<br><b>propulsionChance:</b> None <b>=></b> False<br><b>published:</b> None <b>=></b> False<br><b>rangeChance:</b> None <b>=></b> False<br><b>resistanceID:</b> None <b>=></b> 0<br></td>
+	</tr>
+	<tr>
+		<td>6853 - shipBonusTitanA1EnergyWarfareAmountBonus</td>
+		<td><b>disallowAutoRepeat:</b> None <b>=></b> False<br><b>displayName:</b> None <b>=></b> <br><b>effectCategory:</b> None <b>=></b> 0<br><b>effectID:</b> None <b>=></b> 6853<br><b>effectName:</b> None <b>=></b> shipBonusTitanA1EnergyWarfareAmountBonus<br><b>electronicChance:</b> None <b>=></b> False<br><b>guid:</b> None <b>=></b> <br><b>isAssistance:</b> None <b>=></b> False<br><b>isOffensive:</b> None <b>=></b> False<br><b>isWarpSafe:</b> None <b>=></b> False<br><b>modifierInfo:</b> None <b>=></b> - domain: shipID<br>  func: LocationGroupModifier<br>  groupID: 71<br>  modifiedAttributeID: 97<br>  modifyingAttributeID: 2406<br>  operator: 6<br>- domain: shipID<br>  func: LocationGroupModifier<br>  groupID: 68<br>  modifiedAttributeID: 90<br>  modifyingAttributeID: 2406<br>  operator: 6<br><br><b>postExpression:</b> None <b>=></b> 59<br><b>preExpression:</b> None <b>=></b> 59<br><b>propulsionChance:</b> None <b>=></b> False<br><b>published:</b> None <b>=></b> False<br><b>rangeChance:</b> None <b>=></b> False<br><b>resistanceID:</b> None <b>=></b> 0<br></td>
+	</tr>
+	<tr>
+		<td>6855 - shipBonusDreadnoughtA1EnergyWarfareAmountBonus</td>
+		<td><b>disallowAutoRepeat:</b> None <b>=></b> False<br><b>displayName:</b> None <b>=></b> <br><b>effectCategory:</b> None <b>=></b> 0<br><b>effectID:</b> None <b>=></b> 6855<br><b>effectName:</b> None <b>=></b> shipBonusDreadnoughtA1EnergyWarfareAmountBonus<br><b>electronicChance:</b> None <b>=></b> False<br><b>guid:</b> None <b>=></b> <br><b>isAssistance:</b> None <b>=></b> False<br><b>isOffensive:</b> None <b>=></b> False<br><b>isWarpSafe:</b> None <b>=></b> False<br><b>modifierInfo:</b> None <b>=></b> - domain: shipID<br>  func: LocationGroupModifier<br>  groupID: 71<br>  modifiedAttributeID: 97<br>  modifyingAttributeID: 2283<br>  operator: 6<br>- domain: shipID<br>  func: LocationGroupModifier<br>  groupID: 68<br>  modifiedAttributeID: 90<br>  modifyingAttributeID: 2283<br>  operator: 6<br><br><b>postExpression:</b> None <b>=></b> 59<br><b>preExpression:</b> None <b>=></b> 59<br><b>propulsionChance:</b> None <b>=></b> False<br><b>published:</b> None <b>=></b> False<br><b>rangeChance:</b> None <b>=></b> False<br><b>resistanceID:</b> None <b>=></b> 0<br></td>
+	</tr>
+	<tr>
+		<td>6856 - shipBonusDreadnoughtM1WebRangeBonus</td>
+		<td><b>disallowAutoRepeat:</b> None <b>=></b> False<br><b>displayName:</b> None <b>=></b> <br><b>effectCategory:</b> None <b>=></b> 0<br><b>effectID:</b> None <b>=></b> 6856<br><b>effectName:</b> None <b>=></b> shipBonusDreadnoughtM1WebRangeBonus<br><b>electronicChance:</b> None <b>=></b> False<br><b>guid:</b> None <b>=></b> <br><b>isAssistance:</b> None <b>=></b> False<br><b>isOffensive:</b> None <b>=></b> False<br><b>isWarpSafe:</b> None <b>=></b> False<br><b>modifierInfo:</b> None <b>=></b> - domain: shipID<br>  func: LocationGroupModifier<br>  groupID: 65<br>  modifiedAttributeID: 54<br>  modifyingAttributeID: 2292<br>  operator: 6<br><br><b>postExpression:</b> None <b>=></b> 59<br><b>preExpression:</b> None <b>=></b> 59<br><b>propulsionChance:</b> None <b>=></b> False<br><b>published:</b> None <b>=></b> False<br><b>rangeChance:</b> None <b>=></b> False<br><b>resistanceID:</b> None <b>=></b> 0<br></td>
+	</tr>
+	<tr>
+		<td>6641 - shipBonusRole2ArmorPlates&ShieldExtendersBonus</td>
+		<td><b>effectName:</b> shipBonusTitanRole2ArmorShieldModuleBonus <b>=></b> shipBonusRole2ArmorPlates&ShieldExtendersBonus<br><b>resistanceID:</b> None <b>=></b> 0<br></td>
+	</tr>
+	<tr>
+		<td>6711 - shipBonusRole3CapitalHybridDamageBonus</td>
+		<td><b>effectName:</b> shipBonusTitanRole3DamageBonus <b>=></b> shipBonusRole3CapitalHybridDamageBonus<br><b>resistanceID:</b> None <b>=></b> 0<br></td>
+	</tr>
+	<tr>
+		<td>6709 - shipBonusRole1CapitalHybridDamageBonus</td>
+		<td><b>effectName:</b> shipBonusDreadnoughtRole1DamageBonus <b>=></b> shipBonusRole1CapitalHybridDamageBonus<br><b>resistanceID:</b> None <b>=></b> 0<br></td>
+	</tr>
+	<tr>
+		<td>6743 - npcBehaviorWebifier</td>
+		<td><b>effectName:</b> behaviorWebifier <b>=></b> npcBehaviorWebifier<br></td>
+	</tr>
+	<tr>
+		<td>6710 - shipBonusDreadnoughtM1WebStrengthBonus</td>
+		<td><b>effectName:</b> shipBonusDreadnoughtM1WebBonus <b>=></b> shipBonusDreadnoughtM1WebStrengthBonus<br><b>resistanceID:</b> None <b>=></b> 0<br></td>
+	</tr>
+	<tr>
+		<td>6756 - npcBehaviorEnergyNeutralizer</td>
+		<td><b>effectName:</b> behaviorEnergyNeutralizer <b>=></b> npcBehaviorEnergyNeutralizer<br></td>
+	</tr>
+	<tr>
+		<td>6640 - shipBonusRole1NumWarfareLinks</td>
+		<td><b>effectName:</b> shipBonusTitanRole1NumWarfareLinks <b>=></b> shipBonusRole1NumWarfareLinks<br><b>modifierInfo:</b> - domain: shipID<br>  func: LocationRequiredSkillModifier<br>  modifiedAttributeID: 763<br>  modifyingAttributeID: 2298<br>  operator: 2<br>  skillTypeID: 3348<br>- domain: shipID<br>  func: LocationRequiredSkillModifier<br>  modifiedAttributeID: 978<br>  modifyingAttributeID: 2298<br>  operator: 2<br>  skillTypeID: 3348<br> <b>=></b> - domain: shipID<br>  func: LocationRequiredSkillModifier<br>  modifiedAttributeID: 763<br>  modifyingAttributeID: 2298<br>  operator: 2<br>  skillTypeID: 3348<br>- domain: shipID<br>  func: LocationRequiredSkillModifier<br>  modifiedAttributeID: 978<br>  modifyingAttributeID: 2298<br>  operator: 2<br>  skillTypeID: 3348<br><br></td>
+	</tr>
+	<tr>
+		<td>6852 - shipBonusTitanM1WebRangeBonus</td>
+		<td><b>disallowAutoRepeat:</b> None <b>=></b> False<br><b>displayName:</b> None <b>=></b> <br><b>effectCategory:</b> None <b>=></b> 0<br><b>effectID:</b> None <b>=></b> 6852<br><b>effectName:</b> None <b>=></b> shipBonusTitanM1WebRangeBonus<br><b>electronicChance:</b> None <b>=></b> False<br><b>guid:</b> None <b>=></b> <br><b>isAssistance:</b> None <b>=></b> False<br><b>isOffensive:</b> None <b>=></b> False<br><b>isWarpSafe:</b> None <b>=></b> False<br><b>modifierInfo:</b> None <b>=></b> - domain: shipID<br>  func: LocationGroupModifier<br>  groupID: 65<br>  modifiedAttributeID: 54<br>  modifyingAttributeID: 2418<br>  operator: 6<br><br><b>postExpression:</b> None <b>=></b> 59<br><b>preExpression:</b> None <b>=></b> 59<br><b>propulsionChance:</b> None <b>=></b> False<br><b>published:</b> None <b>=></b> False<br><b>rangeChance:</b> None <b>=></b> False<br><b>resistanceID:</b> None <b>=></b> 0<br></td>
+	</tr>
+	<tr>
+		<td>6848 - shipModuleFocusedWarpScramblingScript</td>
+		<td><b>modifierInfo:</b> - domain: targetID<br>  func: ItemModifier<br>  modifiedAttributeID: 104<br>  modifyingAttributeID: 105<br>  operator: 2<br>- domain: targetID<br>  func: LocationRequiredSkillModifier<br>  modifiedAttributeID: 1349<br>  modifyingAttributeID: 1350<br>  operator: 2<br>  skillTypeID: 3454<br>- domain: targetID<br>  func: ItemModifier<br>  modifiedAttributeID: 1470<br>  modifyingAttributeID: 1470<br>  operator: 7<br>- func: EffectStopper<br>  domain: target<br>  effectID: 6441<br>- func: EffectStopper<br>  domain: target<br>  effectID: 6442<br>- domain: targetID<br>  func: ItemModifier<br>  modifiedAttributeID: 1973<br>  modifyingAttributeID: 1974<br>  operator: 2<br> <b>=></b> #Modifies warpScrambleStatus on target with attribute warpScrambleStrength<br>- domain: targetID<br>  func: ItemModifier<br>  modifiedAttributeID: 104<br>  modifyingAttributeID: 105<br>  operator: 2<br>#Modifies activationBlocked on on all items located in target requiring skill High Speed Maneuvering with attribute activationBlockedStrenght<br>- domain: targetID<br>  func: LocationRequiredSkillModifier<br>  modifiedAttributeID: 1349<br>  modifyingAttributeID: 1350<br>  operator: 2<br>  skillTypeID: 3454<br>#Modifies activationBlocked on on all items located in target requiring skill Micro Jump Drive Operation with attribute activationBlockedStrenght<br>- domain: targetID<br>  func: LocationRequiredSkillModifier<br>  modifiedAttributeID: 1349<br>  modifyingAttributeID: 1350<br>  operator: 2<br>  skillTypeID: 4385<br>#Modifies maxVelocityMultiplier on target with attribute maxVelocityMultiplier<br>- domain: targetID<br>  func: ItemModifier<br>  modifiedAttributeID: 1470<br>  modifyingAttributeID: 1470<br>  operator: 7<br>#Forcibly stops effect fighterAbilityMicroWarpDrive<br>- func: EffectStopper<br>  domain: target<br>  effectID: 6441<br>#Forcibly stops effect fighterAbilityMicroJumpDrive<br>- func: EffectStopper<br>  domain: target<br>  effectID: 6442<br>#Forcibly stops effect microJumpDrive<br>- func: EffectStopper<br>  domain: target<br>  effectID: 4921<br>#Forcibly stops effect microJumpPortalDrive<br>- func: EffectStopper<br>  domain: target<br>  effectID: 6208<br>#Modifies gateScrambleStatus on target with attribute gateScrambleStrength<br>- domain: targetID<br>  func: ItemModifier<br>  modifiedAttributeID: 1973<br>  modifyingAttributeID: 1974<br>  operator: 2<br><br></td>
+	</tr>
+	<tr>
+		<td>6851 - shipBonusRole3CapitalEnergyDamageBonus</td>
+		<td><b>disallowAutoRepeat:</b> None <b>=></b> False<br><b>displayName:</b> None <b>=></b> <br><b>effectCategory:</b> None <b>=></b> 0<br><b>effectID:</b> None <b>=></b> 6851<br><b>effectName:</b> None <b>=></b> shipBonusRole3CapitalEnergyDamageBonus<br><b>electronicChance:</b> None <b>=></b> False<br><b>guid:</b> None <b>=></b> <br><b>isAssistance:</b> None <b>=></b> False<br><b>isOffensive:</b> None <b>=></b> False<br><b>isWarpSafe:</b> None <b>=></b> False<br><b>modifierInfo:</b> None <b>=></b> - domain: shipID<br>  func: LocationRequiredSkillModifier<br>  modifiedAttributeID: 64<br>  modifyingAttributeID: 2300<br>  operator: 6<br>  skillTypeID: 20327<br><b>postExpression:</b> None <b>=></b> 59<br><b>preExpression:</b> None <b>=></b> 59<br><b>propulsionChance:</b> None <b>=></b> False<br><b>published:</b> None <b>=></b> False<br><b>rangeChance:</b> None <b>=></b> False<br><b>resistanceID:</b> None <b>=></b> 0<br></td>
+	</tr>
+	<tr>
+		<td>6712 - shipBonusTitanM1WebStrengthBonus</td>
+		<td><b>effectName:</b> shipBonusTitanM1WebBonus <b>=></b> shipBonusTitanM1WebStrengthBonus<br><b>resistanceID:</b> None <b>=></b> 0<br></td>
+	</tr>
+	</table>
+</details>
+
+<details id="typeeffects">
+	<summary class="bigsum">Effect Changes per Type (5 Entries)</summary>
+	<table>
+	  <tr>
+		<th>TypeID, Name, and Group</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Effects Changes</th>
+	  </tr>
+	<tr>
+		<td>45056 - <b>♦ Apocalypse</b> (♦ Battleship)</td>
+		<td><b><u>Added Effects:</u></b><br><b>targetAttack:</b> None <b>=></b> False <br><b>npcBehaviorMicroWarpDrive:</b> None <b>=></b> False <br></td>
+	</tr>
+	<tr>
+		<td>42241 - <b>Molok</b> (Titan)</td>
+		<td><b><u>Added Effects:</u></b><br><b>shipBonusNosOverride:</b> None <b>=></b> False <br><b>shipBonusTitanM3WarpStrength:</b> None <b>=></b> False <br><b>shipBonusRole3CapitalEnergyDamageBonus:</b> None <b>=></b> False <br><b>shipBonusTitanM1WebRangeBonus:</b> None <b>=></b> False <br><b>shipBonusTitanA1EnergyWarfareAmountBonus:</b> None <b>=></b> False <br><b><u>Removed Effects:</u></b><br><b>shipBonusTitanA1DamageBonus:</b> False <b>=></b> None <br><b>shipBonusTitanA2CapNeed:</b> False <b>=></b> None <br></td>
+	</tr>
+	<tr>
+		<td>42243 - <b>Chemosh</b> (Dreadnought)</td>
+		<td><b><u>Added Effects:</u></b><br><b>shipBonusNosOverride:</b> None <b>=></b> False <br><b>shipBonusRole3CapitalEnergyDamageBonus:</b> None <b>=></b> False <br><b>shipBonusDreadnoughtA1EnergyWarfareAmountBonus:</b> None <b>=></b> False <br><b>shipBonusDreadnoughtM1WebRangeBonus:</b> None <b>=></b> False <br><b><u>Removed Effects:</u></b><br><b>shipBonusDreadnoughtA1DamageBonus:</b> False <b>=></b> None <br><b>shipBonusDreadnoughtA2ArmorResists:</b> False <b>=></b> None <br><b>shipBonusDreadnoughtA3CapNeed:</b> False <b>=></b> None <br></td>
+	</tr>
+	<tr>
+		<td>45057 - <b>Amarr CA Cruiser</b> (Mission Amarr Empire Cruiser)</td>
+		<td><b><u>Added Effects:</u></b><br><b>targetAttack:</b> None <b>=></b> True <br><b>entityArmorRepairingMedium:</b> None <b>=></b> False <br></td>
+	</tr>
+	<tr>
+		<td>45055 - <b>♦ Bhaalgorn</b> (♦ Battleship)</td>
+		<td><b><u>Added Effects:</u></b><br><b>targetAttack:</b> None <b>=></b> False <br><b>npcBehaviorWebifier:</b> None <b>=></b> False <br><b>npcBehaviorEnergyNeutralizer:</b> None <b>=></b> False <br><b>npcBehaviorMicroWarpDrive:</b> None <b>=></b> False <br></td>
+	</tr>
+	</table>
+</details>
+
+<br>
+
+<!--<h2 id="stringchanges">String Changes</h2>-->
+
+<details id="stringchanges">
+	<summary class="bigsum">String Changes (68 Entries)</summary>
+	<table>
+	  <tr>
+		<th>Key</th>
+		<th>Chaos_Previous</th>
+		<th>Chaos_Next</th>
+		<th>Diff</th>
+		<th>Notes</th>
+	  </tr>
+	<tr class="">
+		<td>501059</td>
+		<td width="355px">Can fit &lt;a href=showinfo:23735&gt;Clone Vat Bay&lt;/a&gt;</td>
+		<td width="355px">Can fit a &lt;a href=showinfo:23735&gt;Clone Vat Bay&lt;/a&gt; module</td>
+		<td><span>Can fit </span><ins style="background:#e6ffe6;">a </ins><span>&lt;a href=showinfo:23735&gt;Clone Vat Bay&lt;/a&gt;</span><ins style="background:#e6ffe6;"> module</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="">
+		<td>501060</td>
+		<td width="355px">Can fit &lt;a href=showinfo:23953&gt;Jump Portal Generator&lt;/a&gt;</td>
+		<td width="355px">Can fit a &lt;a href=showinfo:23953&gt;Jump Portal Generator&lt;/a&gt; module</td>
+		<td><span>Can fit </span><ins style="background:#e6ffe6;">a </ins><span>&lt;a href=showinfo:23953&gt;Jump Portal Generator&lt;/a&gt;</span><ins style="background:#e6ffe6;"> module</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="">
+		<td>501061</td>
+		<td width="355px">Can fit &lt;a href=showinfo:24563&gt;Doomsday&lt;/a&gt; devices</td>
+		<td width="355px">Can fit a &lt;a href=showinfo:24563&gt;Doomsday&lt;/a&gt; module</td>
+		<td><span>Can fit </span><ins style="background:#e6ffe6;">a </ins><span>&lt;a href=showinfo:24563&gt;Doomsday&lt;/a&gt; </span><del style="background:#ffe6e6;">devices</del><ins style="background:#e6ffe6;">module</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="">
+		<td>501294</td>
+		<td width="355px">Can fit &lt;a href=showinfo:23735&gt;Clone Vat Bay&lt;/a&gt;</td>
+		<td width="355px">Can fit a &lt;a href=showinfo:23735&gt;Clone Vat Bay&lt;/a&gt; module</td>
+		<td><span>Can fit </span><ins style="background:#e6ffe6;">a </ins><span>&lt;a href=showinfo:23735&gt;Clone Vat Bay&lt;/a&gt;</span><ins style="background:#e6ffe6;"> module</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="">
+		<td>501295</td>
+		<td width="355px">Can fit &lt;a href=showinfo:23953&gt;Jump Portal Generator&lt;/a&gt;</td>
+		<td width="355px">Can fit a &lt;a href=showinfo:23953&gt;Jump Portal Generator&lt;/a&gt; module</td>
+		<td><span>Can fit </span><ins style="background:#e6ffe6;">a </ins><span>&lt;a href=showinfo:23953&gt;Jump Portal Generator&lt;/a&gt;</span><ins style="background:#e6ffe6;"> module</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="">
+		<td>501296</td>
+		<td width="355px">Can fit &lt;a href=showinfo:24563&gt;Doomsday&lt;/a&gt; devices</td>
+		<td width="355px">Can fit a &lt;a href=showinfo:24563&gt;Doomsday&lt;/a&gt; module</td>
+		<td><span>Can fit </span><ins style="background:#e6ffe6;">a </ins><span>&lt;a href=showinfo:24563&gt;Doomsday&lt;/a&gt; </span><del style="background:#ffe6e6;">devices</del><ins style="background:#e6ffe6;">module</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="">
+		<td>501511</td>
+		<td width="355px">Can fit &lt;a href=showinfo:23735&gt;Clone Vat Bay&lt;/a&gt;</td>
+		<td width="355px">Can fit a &lt;a href=showinfo:23735&gt;Clone Vat Bay&lt;/a&gt; module</td>
+		<td><span>Can fit </span><ins style="background:#e6ffe6;">a </ins><span>&lt;a href=showinfo:23735&gt;Clone Vat Bay&lt;/a&gt;</span><ins style="background:#e6ffe6;"> module</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="">
+		<td>501512</td>
+		<td width="355px">Can fit &lt;a href=showinfo:23953&gt;Jump Portal Generator&lt;/a&gt;</td>
+		<td width="355px">Can fit a &lt;a href=showinfo:23953&gt;Jump Portal Generator&lt;/a&gt; module</td>
+		<td><span>Can fit </span><ins style="background:#e6ffe6;">a </ins><span>&lt;a href=showinfo:23953&gt;Jump Portal Generator&lt;/a&gt;</span><ins style="background:#e6ffe6;"> module</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="">
+		<td>501513</td>
+		<td width="355px">Can fit &lt;a href=showinfo:24563&gt;Doomsday&lt;/a&gt; devices</td>
+		<td width="355px">Can fit a &lt;a href=showinfo:24563&gt;Doomsday&lt;/a&gt; module</td>
+		<td><span>Can fit </span><ins style="background:#e6ffe6;">a </ins><span>&lt;a href=showinfo:24563&gt;Doomsday&lt;/a&gt; </span><del style="background:#ffe6e6;">devices</del><ins style="background:#e6ffe6;">module</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="">
+		<td>501740</td>
+		<td width="355px">Can fit &lt;a href=showinfo:23735&gt;Clone Vat Bay&lt;/a&gt;</td>
+		<td width="355px">Can fit a &lt;a href=showinfo:23735&gt;Clone Vat Bay&lt;/a&gt; module</td>
+		<td><span>Can fit </span><ins style="background:#e6ffe6;">a </ins><span>&lt;a href=showinfo:23735&gt;Clone Vat Bay&lt;/a&gt;</span><ins style="background:#e6ffe6;"> module</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="">
+		<td>501741</td>
+		<td width="355px">Can fit &lt;a href=showinfo:23953&gt;Jump Portal Generator&lt;/a&gt;</td>
+		<td width="355px">Can fit a &lt;a href=showinfo:23953&gt;Jump Portal Generator&lt;/a&gt; module</td>
+		<td><span>Can fit </span><ins style="background:#e6ffe6;">a </ins><span>&lt;a href=showinfo:23953&gt;Jump Portal Generator&lt;/a&gt;</span><ins style="background:#e6ffe6;"> module</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="">
+		<td>501742</td>
+		<td width="355px">Can fit &lt;a href=showinfo:24563&gt;Doomsday&lt;/a&gt; devices</td>
+		<td width="355px">Can fit a &lt;a href=showinfo:24563&gt;Doomsday&lt;/a&gt; module</td>
+		<td><span>Can fit </span><ins style="background:#e6ffe6;">a </ins><span>&lt;a href=showinfo:24563&gt;Doomsday&lt;/a&gt; </span><del style="background:#ffe6e6;">devices</del><ins style="background:#e6ffe6;">module</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="">
+		<td>501932</td>
+		<td width="355px">Can fit &lt;a href=showinfo:20280&gt;Siege modules&lt;/a&gt;</td>
+		<td width="355px">Can fit a &lt;a href=showinfo:20280&gt;Siege module&lt;/a&gt;</td>
+		<td><span>Can fit </span><ins style="background:#e6ffe6;">a </ins><span>&lt;a href=showinfo:20280&gt;Siege module</span><del style="background:#ffe6e6;">s</del><span>&lt;/a&gt;</span></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="">
+		<td>501933</td>
+		<td width="355px">Can fit &lt;a href=showinfo:20280&gt;Siege modules&lt;/a&gt;</td>
+		<td width="355px">Can fit a &lt;a href=showinfo:20280&gt;Siege module&lt;/a&gt;</td>
+		<td><span>Can fit </span><ins style="background:#e6ffe6;">a </ins><span>&lt;a href=showinfo:20280&gt;Siege module</span><del style="background:#ffe6e6;">s</del><span>&lt;/a&gt;</span></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="">
+		<td>501934</td>
+		<td width="355px">Can fit &lt;a href=showinfo:20280&gt;Siege modules&lt;/a&gt;</td>
+		<td width="355px">Can fit a &lt;a href=showinfo:20280&gt;Siege module&lt;/a&gt;</td>
+		<td><span>Can fit </span><ins style="background:#e6ffe6;">a </ins><span>&lt;a href=showinfo:20280&gt;Siege module</span><del style="background:#ffe6e6;">s</del><span>&lt;/a&gt;</span></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="">
+		<td>501935</td>
+		<td width="355px">Can fit &lt;a href=showinfo:20280&gt;Siege modules&lt;/a&gt;</td>
+		<td width="355px">Can fit a &lt;a href=showinfo:20280&gt;Siege module&lt;/a&gt;</td>
+		<td><span>Can fit </span><ins style="background:#e6ffe6;">a </ins><span>&lt;a href=showinfo:20280&gt;Siege module</span><del style="background:#ffe6e6;">s</del><span>&lt;/a&gt;</span></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="">
+		<td>517511</td>
+		<td width="355px">Can fit &lt;a href=showinfo:24563&gt;Doomsday&lt;/a&gt; devices</td>
+		<td width="355px">Can fit a &lt;a href=showinfo:24563&gt;Doomsday&lt;/a&gt; module</td>
+		<td><span>Can fit </span><ins style="background:#e6ffe6;">a </ins><span>&lt;a href=showinfo:24563&gt;Doomsday&lt;/a&gt; </span><del style="background:#ffe6e6;">devices</del><ins style="background:#e6ffe6;">module</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="">
+		<td>517512</td>
+		<td width="355px">Can fit &lt;a href=showinfo:23953&gt;Jump Portal Generator&lt;/a&gt;</td>
+		<td width="355px">Can fit a &lt;a href=showinfo:23953&gt;Jump Portal Generator&lt;/a&gt; module</td>
+		<td><span>Can fit </span><ins style="background:#e6ffe6;">a </ins><span>&lt;a href=showinfo:23953&gt;Jump Portal Generator&lt;/a&gt;</span><ins style="background:#e6ffe6;"> module</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="">
+		<td>517513</td>
+		<td width="355px">Can fit &lt;a href=showinfo:23735&gt;Clone Vat Bay&lt;/a&gt;</td>
+		<td width="355px">Can fit a &lt;a href=showinfo:23735&gt;Clone Vat Bay&lt;/a&gt; module</td>
+		<td><span>Can fit </span><ins style="background:#e6ffe6;">a </ins><span>&lt;a href=showinfo:23735&gt;Clone Vat Bay&lt;/a&gt;</span><ins style="background:#e6ffe6;"> module</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="">
+		<td>517514</td>
+		<td width="355px">Can fit three &lt;a href=showinfo:3348&gt;Command Burst&lt;/a&gt; modules</td>
+		<td width="355px">Can use three &lt;a href=showinfo:3348&gt;Command Burst&lt;/a&gt; modules</td>
+		<td><span>Can </span><del style="background:#ffe6e6;">fit</del><ins style="background:#e6ffe6;">use</ins><span> three &lt;a href=showinfo:3348&gt;Command Burst&lt;/a&gt; modules</span></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="">
+		<td>517536</td>
+		<td width="355px">Can fit &lt;a href=showinfo:20280&gt;Siege modules&lt;/a&gt;</td>
+		<td width="355px">Can fit a &lt;a href=showinfo:20280&gt;Siege module&lt;/a&gt;</td>
+		<td><span>Can fit </span><ins style="background:#e6ffe6;">a </ins><span>&lt;a href=showinfo:20280&gt;Siege module</span><del style="background:#ffe6e6;">s</del><span>&lt;/a&gt;</span></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="">
+		<td>522343</td>
+		<td width="355px">No Fighters Simulated</td>
+		<td width="355px">No Fighters Simulated in Fighter Bay</td>
+		<td><span>No Fighters Simulated</span><ins style="background:#e6ffe6;"> in Fighter Bay</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="">
+		<td>522897</td>
+		<td width="355px">Can fit one &lt;a href=showinfo:43658&gt;Phenomena Generator&lt;/a&gt; module</td>
+		<td width="355px">Can fit a &lt;a href=showinfo:43662&gt;Phenomena Generator&lt;/a&gt; module</td>
+		<td><span>Can fit </span><del style="background:#ffe6e6;">one</del><ins style="background:#e6ffe6;">a</ins><span> &lt;a href=showinfo:436</span><del style="background:#ffe6e6;">58</del><ins style="background:#e6ffe6;">62</ins><span>&gt;Phenomena Generator&lt;/a&gt; module</span></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="">
+		<td>522898</td>
+		<td width="355px">Can fit one &lt;a href=showinfo:43664&gt;Phenomena Generator&lt;/a&gt; module</td>
+		<td width="355px">Can fit a &lt;a href=showinfo:43662&gt;Phenomena Generator&lt;/a&gt; module</td>
+		<td><span>Can fit </span><del style="background:#ffe6e6;">one</del><ins style="background:#e6ffe6;">a</ins><span> &lt;a href=showinfo:4366</span><del style="background:#ffe6e6;">4</del><ins style="background:#e6ffe6;">2</ins><span>&gt;Phenomena Generator&lt;/a&gt; module</span></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="">
+		<td>522899</td>
+		<td width="355px">Can fit one &lt;a href=showinfo:43660&gt;Phenomena Generator&lt;/a&gt; module</td>
+		<td width="355px">Can fit a &lt;a href=showinfo:43662&gt;Phenomena Generator&lt;/a&gt; module</td>
+		<td><span>Can fit </span><del style="background:#ffe6e6;">one</del><ins style="background:#e6ffe6;">a</ins><span> &lt;a href=showinfo:4366</span><del style="background:#ffe6e6;">0</del><ins style="background:#e6ffe6;">2</ins><span>&gt;Phenomena Generator&lt;/a&gt; module</span></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="">
+		<td>522900</td>
+		<td width="355px">Can fit one &lt;a href=showinfo:43662&gt;Phenomena Generator&lt;/a&gt; module</td>
+		<td width="355px">Can fit a &lt;a href=showinfo:43662&gt;Phenomena Generator&lt;/a&gt; module</td>
+		<td><span>Can fit </span><del style="background:#ffe6e6;">one</del><ins style="background:#e6ffe6;">a</ins><span> &lt;a href=showinfo:43662&gt;Phenomena Generator&lt;/a&gt; module</span></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="">
+		<td>523048</td>
+		<td width="355px">Can fit one &lt;a href=showinfo:43664&gt;Minmatar&lt;/a&gt; or &lt;a href=showinfo:43662&gt;Gallente&lt;/a&gt; Phenomena Generator module</td>
+		<td width="355px">Can fit a &lt;a href=showinfo:43662&gt;Phenomena Generator&lt;/a&gt; module</td>
+		<td><span>Can fit </span><del style="background:#ffe6e6;">one &lt;a href=showinfo:43664&gt;Minmatar&lt;/a&gt; or</del><ins style="background:#e6ffe6;">a</ins><span> &lt;a href=showinfo:43662&gt;</span><del style="background:#ffe6e6;">Gallente&lt;/a&gt; </del><span>Phenomena Generator</span><ins style="background:#e6ffe6;">&lt;/a&gt;</ins><span> module</span></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="">
+		<td>525624</td>
+		<td width="355px"></td>
+		<td width="355px">♦ Bhaalgorn</td>
+		<td><ins style="background:#e6ffe6;">♦ Bhaalgorn</ins></td>
+		<td class="mini">Item name for typeID 45055 (♦ Battleship)</td>
+	</tr>
+	<tr class="">
+		<td>525625</td>
+		<td width="355px"></td>
+		<td width="355px">Named after a child-devouring demon of Amarrian legend, the Bhaalgorn is the pride and joy of the Blood Raider cabal. Though it is known to be based on an Armageddon blueprint, the design's origin remains shrouded in mystery. Those of a superstitious persuasion whisper in the dark of eldritch ceremonies and arcane rituals, but for most people, the practical aspect of the matter will more than suffice: you see one of these blood-red horrors looming on the horizon, it's time to make yourself scarce.</td>
+		<td><ins style="background:#e6ffe6;">Named after a child-devouring demon of Amarrian legend, the Bhaalgorn is the pride and joy of the Blood Raider cabal. Though it is known to be based on an Armageddon blueprint, the design's origin remains shrouded in mystery. Those of a superstitious persuasion whisper in the dark of eldritch ceremonies and arcane rituals, but for most people, the practical aspect of the matter will more than suffice: you see one of these blood-red horrors looming on the horizon, it's time to make yourself scarce.</ins></td>
+		<td class="mini">Item description for "♦ Bhaalgorn" (typeID 45055)</td>
+	</tr>
+	<tr class="">
+		<td>525626</td>
+		<td width="355px"></td>
+		<td width="355px">♦ Apocalypse</td>
+		<td><ins style="background:#e6ffe6;">♦ Apocalypse</ins></td>
+		<td class="mini">Item name for typeID 45056 (♦ Battleship)</td>
+	</tr>
+	<tr class="">
+		<td>525627</td>
+		<td width="355px"></td>
+		<td width="355px">In days past, only those in high favor with the Emperor could hope to earn the reward of commanding one of the majestic and powerful Apocalypse class battleships. In latter years, even though now in full market circulation, these golden, metallic monstrosities are still feared and respected as enduring symbols of Amarrian might.</td>
+		<td><ins style="background:#e6ffe6;">In days past, only those in high favor with the Emperor could hope to earn the reward of commanding one of the majestic and powerful Apocalypse class battleships. In latter years, even though now in full market circulation, these golden, metallic monstrosities are still feared and respected as enduring symbols of Amarrian might.</ins></td>
+		<td class="mini">Item description for "♦ Apocalypse" (typeID 45056)</td>
+	</tr>
+	<tr class="">
+		<td>525628</td>
+		<td width="355px"></td>
+		<td width="355px">Manage Fighters</td>
+		<td><ins style="background:#e6ffe6;">Manage Fighters</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="">
+		<td>525629</td>
+		<td width="355px"></td>
+		<td width="355px">{[numeric]numSquadrons, decimalPlaces=0} {[numeric]numSquadrons -&gt; "Full Squadron", "Full Squadrons"}</td>
+		<td><ins style="background:#e6ffe6;">{[numeric]numSquadrons, decimalPlaces=0} {[numeric]numSquadrons -&gt; "Full Squadron", "Full Squadrons"}</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="">
+		<td>525630</td>
+		<td width="355px"></td>
+		<td width="355px">{[numeric]numSquadrons, decimalPlaces=0} {[numeric]numSquadrons -&gt; "Partial Squadron", "Partial Squadrons"}</td>
+		<td><ins style="background:#e6ffe6;">{[numeric]numSquadrons, decimalPlaces=0} {[numeric]numSquadrons -&gt; "Partial Squadron", "Partial Squadrons"}</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="">
+		<td>525631</td>
+		<td width="355px"></td>
+		<td width="355px">Amarr CA Cruiser</td>
+		<td><ins style="background:#e6ffe6;">Amarr CA Cruiser</ins></td>
+		<td class="mini">Item name for typeID 45057 (Mission Amarr Empire Cruiser)</td>
+	</tr>
+	<tr class="">
+		<td>525632</td>
+		<td width="355px"></td>
+		<td width="355px">A cruiser of the Amarr empire.</td>
+		<td><ins style="background:#e6ffe6;">A cruiser of the Amarr empire.</ins></td>
+		<td class="mini">Item description for "Amarr CA Cruiser" (typeID 45057)</td>
+	</tr>
+	<tr class="">
+		<td>525633</td>
+		<td width="355px"></td>
+		<td width="355px">Simulated</td>
+		<td><ins style="background:#e6ffe6;">Simulated</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="">
+		<td>525637</td>
+		<td width="355px"></td>
+		<td width="355px">Vintage Frigate Blueprints</td>
+		<td><ins style="background:#e6ffe6;">Vintage Frigate Blueprints</ins></td>
+		<td class="mini">Item name for typeID 45060 (Special Edition Commodities)</td>
+	</tr>
+	<tr class="">
+		<td>525638</td>
+		<td width="355px"></td>
+		<td width="355px">This set of blueprints was almost lost to the ages, and is now very valuable in certain circles. Only partially complete due to data degradation, it details an Imperial frigate of unknown class, roughly the same dimensions and mass as the Punisher. Also included are partial details on a proprietary antimatter reactor design, as well as instructions for proper radioactive decontamination and disposal of slaves used to construct and install it in the vessel's chassis.</td>
+		<td><ins style="background:#e6ffe6;">This set of blueprints was almost lost to the ages, and is now very valuable in certain circles. Only partially complete due to data degradation, it details an Imperial frigate of unknown class, roughly the same dimensions and mass as the Punisher. Also included are partial details on a proprietary antimatter reactor design, as well as instructions for proper radioactive decontamination and disposal of slaves used to construct and install it in the vessel's chassis.</ins></td>
+		<td class="mini">Item description for "Vintage Frigate Blueprints" (typeID 45060)</td>
+	</tr>
+	<tr class="">
+		<td>525639</td>
+		<td width="355px"></td>
+		<td width="355px">Subspace Energy & You</td>
+		<td><ins style="background:#e6ffe6;">Subspace Energy &amp; You</ins></td>
+		<td class="mini">Item name for typeID 45061 (Special Edition Commodities)</td>
+	</tr>
+	<tr class="">
+		<td>525640</td>
+		<td width="355px"></td>
+		<td width="355px">This instructional holoreel package details the finer points of working with the conversion of subspace energy, and provides relevant health and safety recommendations to reduce potential exposure to harmful electromagnetic fields. For full clarification, the package also includes examples of what may happen should those with metallic augmentations be careless around ultra high voltage electrical equipment and strong magnetic fields. Viewer discretion is advised.</td>
+		<td><ins style="background:#e6ffe6;">This instructional holoreel package details the finer points of working with the conversion of subspace energy, and provides relevant health and safety recommendations to reduce potential exposure to harmful electromagnetic fields. For full clarification, the package also includes examples of what may happen should those with metallic augmentations be careless around ultra high voltage electrical equipment and strong magnetic fields. Viewer discretion is advised.</ins></td>
+		<td class="mini">Item description for "Subspace Energy & You" (typeID 45061)</td>
+	</tr>
+	<tr class="">
+		<td>525641</td>
+		<td width="355px"></td>
+		<td width="355px">Replica Gold Magnate Decorative Plating</td>
+		<td><ins style="background:#e6ffe6;">Replica Gold Magnate Decorative Plating</ins></td>
+		<td class="mini">Item name for typeID 45062 (Special Edition Commodities)</td>
+	</tr>
+	<tr class="">
+		<td>525642</td>
+		<td width="355px"></td>
+		<td width="355px">This is a scale model of a section of decorative plating designed for the port side propulsion pod of a Gold Magnate. As intricately detailed as the real thing, it comes with its own stand for display. With only 1337 numbered issues of this piece produced in celebration of the ascension of Her Holiness Empress Catiz I to the throne, each one is highly valued by collectors across the cluster. Laser cut from the finest pure gold the Empire has to offer, these pieces of art are crafted from left over materials from the production of actual decorative plating now in service on Gold Magnates with the Imperial Guard.</td>
+		<td><ins style="background:#e6ffe6;">This is a scale model of a section of decorative plating designed for the port side propulsion pod of a Gold Magnate. As intricately detailed as the real thing, it comes with its own stand for display. With only 1337 numbered issues of this piece produced in celebration of the ascension of Her Holiness Empress Catiz I to the throne, each one is highly valued by collectors across the cluster. Laser cut from the finest pure gold the Empire has to offer, these pieces of art are crafted from left over materials from the production of actual decorative plating now in service on Gold Magnates with the Imperial Guard.</ins></td>
+		<td class="mini">Item description for "Replica Gold Magnate Decorative Plating" (typeID 45062)</td>
+	</tr>
+	<tr class="">
+		<td>525644</td>
+		<td width="355px"></td>
+		<td width="355px">bonus to Stasis effect resistance</td>
+		<td><ins style="background:#e6ffe6;">bonus to Stasis effect resistance</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="">
+		<td>525645</td>
+		<td width="355px"></td>
+		<td width="355px">Can fit a &lt;a href=showinfo:24563&gt;Doomsday&lt;/a&gt; module</td>
+		<td><ins style="background:#e6ffe6;">Can fit a &lt;a href=showinfo:24563&gt;Doomsday&lt;/a&gt; module</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="">
+		<td>525646</td>
+		<td width="355px"></td>
+		<td width="355px">Can fit a &lt;a href=showinfo:43662&gt;Phenomena Generator&lt;/a&gt; module</td>
+		<td><ins style="background:#e6ffe6;">Can fit a &lt;a href=showinfo:43662&gt;Phenomena Generator&lt;/a&gt; module</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="">
+		<td>525647</td>
+		<td width="355px"></td>
+		<td width="355px">Can fit a &lt;a href=showinfo:23953&gt;Jump Portal Generator&lt;/a&gt; module</td>
+		<td><ins style="background:#e6ffe6;">Can fit a &lt;a href=showinfo:23953&gt;Jump Portal Generator&lt;/a&gt; module</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="">
+		<td>525648</td>
+		<td width="355px"></td>
+		<td width="355px">Can fit a &lt;a href=showinfo:23735&gt;Clone Vat Bay&lt;/a&gt; module</td>
+		<td><ins style="background:#e6ffe6;">Can fit a &lt;a href=showinfo:23735&gt;Clone Vat Bay&lt;/a&gt; module</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="">
+		<td>525649</td>
+		<td width="355px"></td>
+		<td width="355px">Can use three &lt;a href=showinfo:3348&gt;Command Burst&lt;/a&gt; modules</td>
+		<td><ins style="background:#e6ffe6;">Can use three &lt;a href=showinfo:3348&gt;Command Burst&lt;/a&gt; modules</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="">
+		<td>525650</td>
+		<td width="355px"></td>
+		<td width="355px">bonus to &lt;a href=showinfo:3348&gt;Command Burst&lt;/a&gt; area of effect range</td>
+		<td><ins style="background:#e6ffe6;">bonus to &lt;a href=showinfo:3348&gt;Command Burst&lt;/a&gt; area of effect range</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="">
+		<td>525651</td>
+		<td width="355px"></td>
+		<td width="355px">bonus to Armor Plates and Shield Extenders</td>
+		<td><ins style="background:#e6ffe6;">bonus to Armor Plates and Shield Extenders</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="">
+		<td>525652</td>
+		<td width="355px"></td>
+		<td width="355px">bonus to &lt;a href=showinfo:20327&gt;Capital Energy Turret&lt;/a&gt; damage</td>
+		<td><ins style="background:#e6ffe6;">bonus to &lt;a href=showinfo:20327&gt;Capital Energy Turret&lt;/a&gt; damage</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="">
+		<td>525653</td>
+		<td width="355px"></td>
+		<td width="355px">bonus to Sensor Dampener resistance</td>
+		<td><ins style="background:#e6ffe6;">bonus to Sensor Dampener resistance</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="">
+		<td>525654</td>
+		<td width="355px"></td>
+		<td width="355px">bonus to Weapon Disruption resistance</td>
+		<td><ins style="background:#e6ffe6;">bonus to Weapon Disruption resistance</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="">
+		<td>525655</td>
+		<td width="355px"></td>
+		<td width="355px">bonus to Stasis effect resistance</td>
+		<td><ins style="background:#e6ffe6;">bonus to Stasis effect resistance</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="">
+		<td>525656</td>
+		<td width="355px"></td>
+		<td width="355px">increase to Remote Electronic Assistance impedance</td>
+		<td><ins style="background:#e6ffe6;">increase to Remote Electronic Assistance impedance</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="">
+		<td>525658</td>
+		<td width="355px"></td>
+		<td width="355px">&lt;a href=showinfo:3423&gt;Energy Nosferatu&lt;/a&gt; fitted to this ship will drain targeted ship's capacitor regardless of your own capacitor level</td>
+		<td><ins style="background:#e6ffe6;">&lt;a href=showinfo:3423&gt;Energy Nosferatu&lt;/a&gt; fitted to this ship will drain targeted ship's capacitor regardless of your own capacitor level</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="">
+		<td>525659</td>
+		<td width="355px"></td>
+		<td width="355px">penalty to &lt;a href=showinfo:34593&gt;Entosis Link&lt;/a&gt; duration</td>
+		<td><ins style="background:#e6ffe6;">penalty to &lt;a href=showinfo:34593&gt;Entosis Link&lt;/a&gt; duration</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="">
+		<td>525660</td>
+		<td width="355px"></td>
+		<td width="355px">bonus to &lt;a href=showinfo:3423&gt;Energy Nosferatu&lt;/a&gt; and &lt;a href=showinfo:3423&gt;Energy Neutralizer&lt;/a&gt; drain amount</td>
+		<td><ins style="background:#e6ffe6;">bonus to &lt;a href=showinfo:3423&gt;Energy Nosferatu&lt;/a&gt; and &lt;a href=showinfo:3423&gt;Energy Neutralizer&lt;/a&gt; drain amount</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="">
+		<td>525661</td>
+		<td width="355px"></td>
+		<td width="355px">bonus to ship warp core strength</td>
+		<td><ins style="background:#e6ffe6;">bonus to ship warp core strength</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="">
+		<td>525662</td>
+		<td width="355px"></td>
+		<td width="355px">bonus to &lt;a href=showinfo:526&gt;Stasis Webifier&lt;/a&gt; optimal range</td>
+		<td><ins style="background:#e6ffe6;">bonus to &lt;a href=showinfo:526&gt;Stasis Webifier&lt;/a&gt; optimal range</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="">
+		<td>525663</td>
+		<td width="355px"></td>
+		<td width="355px">bonus to ship warp core strength</td>
+		<td><ins style="background:#e6ffe6;">bonus to ship warp core strength</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="">
+		<td>525681</td>
+		<td width="355px"></td>
+		<td width="355px">bonus to &lt;a href=showinfo:20327&gt;Capital Energy Turret&lt;/a&gt; damage</td>
+		<td><ins style="background:#e6ffe6;">bonus to &lt;a href=showinfo:20327&gt;Capital Energy Turret&lt;/a&gt; damage</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="">
+		<td>525682</td>
+		<td width="355px"></td>
+		<td width="355px">Can fit a &lt;a href=showinfo:24563&gt;Doomsday&lt;/a&gt; module</td>
+		<td><ins style="background:#e6ffe6;">Can fit a &lt;a href=showinfo:24563&gt;Doomsday&lt;/a&gt; module</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="">
+		<td>525683</td>
+		<td width="355px"></td>
+		<td width="355px">&lt;a href=showinfo:3423&gt;Energy Nosferatu&lt;/a&gt; fitted to this ship will drain targeted ship's capacitor regardless of your own capacitor level</td>
+		<td><ins style="background:#e6ffe6;">&lt;a href=showinfo:3423&gt;Energy Nosferatu&lt;/a&gt; fitted to this ship will drain targeted ship's capacitor regardless of your own capacitor level</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="">
+		<td>525684</td>
+		<td width="355px"></td>
+		<td width="355px">penalty to &lt;a href=showinfo:34593&gt;Entosis Link&lt;/a&gt; cycle time</td>
+		<td><ins style="background:#e6ffe6;">penalty to &lt;a href=showinfo:34593&gt;Entosis Link&lt;/a&gt; cycle time</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="">
+		<td>525685</td>
+		<td width="355px"></td>
+		<td width="355px">bonus to &lt;a href=showinfo:3423&gt;Energy Nosferatu&lt;/a&gt; and &lt;a href=showinfo:3423&gt;Energy Neutralizer&lt;/a&gt; drain amount</td>
+		<td><ins style="background:#e6ffe6;">bonus to &lt;a href=showinfo:3423&gt;Energy Nosferatu&lt;/a&gt; and &lt;a href=showinfo:3423&gt;Energy Neutralizer&lt;/a&gt; drain amount</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="">
+		<td>525686</td>
+		<td width="355px"></td>
+		<td width="355px">bonus to &lt;a href=showinfo:526&gt;Stasis Webifier&lt;/a&gt; optimal range</td>
+		<td><ins style="background:#e6ffe6;">bonus to &lt;a href=showinfo:526&gt;Stasis Webifier&lt;/a&gt; optimal range</ins></td>
+		<td class="mini"></td>
+	</tr>
+	</table>
+</details>
+
+<br>
+
+<!--<h2 id="newfiles">New Files</h2>-->
+
+<script>
+	function displayMedia(doc) {
+		nodes = doc.children
+		for (i=0; i < nodes.length; i++) {
+			node = nodes[i]
+			if (node.hasAttribute("data-src") && node.getAttribute("src") == "") {
+				node.setAttribute("src", node.getAttribute("data-src"))
+			}
+		}
+	}
+</script>
+<details id="newfiles">
+	<summary class="bigsum">New Files (23 Entries)</summary>
+	<table>
+	  <tr>
+		<th>File Name</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Size in kb (Decompressed)</th>
+	  </tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/ef/efe84ce077080371_891d4c0e44368a7aaa2df71d52a6cc51">dx9/model/decal/concord/marking_conaero_01_at.dds</a><br></td>
+		<td>43</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/06/062d6bc2047272fd_1982975e3112c472d5d8a6b6d88ad3cd">dx9/model/ship/concord/decal/decal_isdlogo_d.dds</a><br></td>
+		<td>21</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/cb/cbae14cf314c2715_030358c1a6c0a8380a8ca8d514bc27b4">dx9/model/ship/concord/decal/decal_5778-cn_d.dds</a><br></td>
+		<td>11</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/09/097d5c46b1878a86_57af9c40c1dab321710d6f6fbd475653">dx9/model/decal/concord/marking_conaero_01_nr.dds</a><br></td>
+		<td>21</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/ce/ce9fcdf27d51a901_89c491252c775b682f993556fac3a0e3">dx9/model/ship/concord/decal/decal_concordlogo_d.dds</a><br></td>
+		<td>21</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/54/544ede8396222169_455e281c6aad221b2a72ce5bfafd8261">dx9/model/ship/concord/decal/decal_concordtext_d.dds</a><br></td>
+		<td>11</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/b5/b505cf4c89659dbf_56e475f7d3398d71c2bdc10a8f4f97e7">dx9/model/decal/concord/logo_conaero_01_at.dds</a><br></td>
+		<td>21</td>
+	</tr>
+	<tr>
+		<td><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/d0/d07fc8a49bb11e3f_2dbc055c8eaa1ff1c114c94b46da4a30">res:/ui/texture/classes/carrierbay/simulatetube3.png</a>
+    		</summary>
+    		<img data-src="http://res.eveprobe.ccpgames.com/d0/d07fc8a49bb11e3f_2dbc055c8eaa1ff1c114c94b46da4a30" src="" />
+		</details></td>
+		<td>15</td>
+	</tr>
+	<tr>
+		<td><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/d9/d9d50bdba2f378f7_6a4eb834b7336d439741e515a3f6fb1d">res:/dx9/model/ship/concord/cruiser/conc1/icons/21489_128.png</a>
+    		</summary>
+    		<img data-src="http://res.eveprobe.ccpgames.com/d9/d9d50bdba2f378f7_6a4eb834b7336d439741e515a3f6fb1d" src="" />
+		</details></td>
+		<td>20</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/13/1329f6d5cbfc9969_170f777d63fccf6e2c5693d7fd04686f">dx9/model/ship/concord/decal/decal_isdtext02_n.dds</a><br></td>
+		<td>5</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/4e/4e858e6b22fc4d84_0f9cda0460b57805d0e064c0f45ae8a4">dx9/model/decal/concord/logo_conaero_01_f.dds</a><br></td>
+		<td>11</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/6f/6fc2448a93522006_8cf41257e69879f894165a66b090ea84">dx9/model/decal/concord/marking_conaero_01_f.dds</a><br></td>
+		<td>21</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/f6/f60f2963b837d789_75a5ef2f5a362589cff80474ee5293f3">dx9/model/ship/concord/decal/decal_isdlogo02_n.dds</a><br></td>
+		<td>11</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/51/51925edafd9162c5_e3d299dd6ddc9996b2921e5a1e508652">dx9/model/ship/concord/decal/decal_concordtext02_n.dds</a><br></td>
+		<td>5</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/67/67c07f8dad93edcc_9550d8696a3eb1b7392a072c89188caf">dx9/model/decal/concord/logo_conaero_01_nr.dds</a><br></td>
+		<td>11</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/a9/a9c5cc1403982813_95d7ddfa4b760b3525ce371a962a0bb8">dx9/model/ship/concord/decal/decal_ecaidlogo02_n.dds</a><br></td>
+		<td>5</td>
+	</tr>
+	<tr>
+		<td><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/e6/e66e8f0b49dd96d8_9c0cabc22eb3504c3cc52153d2a18546">res:/dx9/model/ship/concord/cruiser/conc1/icons/21489_64.png</a>
+    		</summary>
+    		<img data-src="http://res.eveprobe.ccpgames.com/e6/e66e8f0b49dd96d8_9c0cabc22eb3504c3cc52153d2a18546" src="" />
+		</details></td>
+		<td>6</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/ad/ad358cd220570bf9_05b2ecce78084f296deb5a4610a71182">dx9/model/ship/concord/decal/decal_57631-cs_d.dds</a><br></td>
+		<td>11</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/8d/8dd3881e9231c028_f2870a6d57a7706b3651f61fba28f24a">dx9/model/ship/concord/decal/decal_dedlogo_n.dds</a><br></td>
+		<td>11</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/c3/c3b1be3f2082f48d_1ae0d64183271017d0bc6ede8da82eaa">dx9/model/ship/concord/decal/decal_concordlogo02_n.dds</a><br></td>
+		<td>11</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/fb/fbece3a36ed36ddd_5a542232c11254e37c29664f4d254b84">dx9/model/ship/concord/decal/decal_isdtext_d.dds</a><br></td>
+		<td>11</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/d1/d18d9b1158ace544_b4fcf9a4765bc319295f3f70eecc538a">dx9/model/ship/concord/decal/decal_dedtext_n.dds</a><br></td>
+		<td>5</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/4f/4fa6368f3dcd6256_a0b1ec1c313b56c70cb7d3c7e1c10b2d">dx9/model/ship/concord/decal/decal_trimline_d.dds</a><br></td>
+		<td>11</td>
+	</tr>
+	</table>
+</details>
+<script>
+	function test123() {
+		document.getElementById("footer1").style.display = "none";
+		document.getElementById("footer2").style.visibility = "visible";
+		document.getElementById("footer2").onclick = function() {document.location = "http://i.imgur.com/3Kd6ruW.jpg"}
+	}
+</script>
+<!--<h2 id="changedfiles">Changed Files</h2>-->
+
+<details id="changedfiles">
+	<summary class="bigsum">Changed Files (168 Entries)</summary>
+	<table>
+	  <tr>
+		<th>File Name</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Size in kb (Decompressed)</th>
+	  </tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/61/61e4f3091016e61b_f582e01e434739d9f4b79fc57225e221">staticdata/fighterabilitiesbytype.static</a><br></td>
+		<td>14 -> 14</td>
+	</tr>
+	<tr>
+		<td><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/0f/0fcabe81e028cca0_ff12b2db175501d6151b5b51d4f12b49">res:/dx9/model/ship/concord/cruiser/conc1/icons/conc1_t1_isis.png</a>
+    		</summary>
+    		<img data-src="http://res.eveprobe.ccpgames.com/0f/0fcabe81e028cca0_ff12b2db175501d6151b5b51d4f12b49" src="" />
+		</details></td>
+		<td>4 -> 4</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/27/2748e27101c52517_32559e76157c4c1a945eb98183ef6202">dx9/model/ship/minmatar/industrial/mi3/nefantar/mi3_t1_nefantar_pmdg_mediumdetail.dds</a><br></td>
+		<td>21 -> 21</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/27/27516a0d2f99c8af_76d12819c3395f01ae38596593234f6b">dx9/model/ship/concord/decal/decal_concordlogo02_d.dds</a><br></td>
+		<td>22 -> 21</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/f1/f1230147c9d892ea_c013fa091280f0404d7259c3384eb66d">dx9/model/spaceobjectfactory/factions/khanid.black</a><br></td>
+		<td>3 -> 3</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/e9/e987101714026334_5df06f0c21d395677563efb8a4efe04e">graphics/character/male/paperdoll/hair/headwear_beret_m01/types/headwear_beret_gallentem01.type</a><br></td>
+		<td>0 -> 0</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/48/48fbd7325768203a_9e071a3b9cadece943dde8b5f98166f3">graphics/character/male/paperdoll/hair/headwear_beret_m01/types/headwear_beret_caldarim01.type</a><br></td>
+		<td>0 -> 0</td>
+	</tr>
+	<tr>
+		<td><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/44/44703def0ae82915_7a73db3ef84bb86765f873bf85280ff5">res:/dx9/model/ship/minmatar/industrial/mi3/icons/310_128.png</a>
+    		</summary>
+    		<img data-src="http://res.eveprobe.ccpgames.com/44/44703def0ae82915_7a73db3ef84bb86765f873bf85280ff5" src="" />
+		</details></td>
+		<td>20 -> 20</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/f0/f016514b481ba503_fceb4e125489189a5ab0a20e2baecb39">staticdata/blueprints.static</a><br></td>
+		<td>4333 -> 4335</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/bb/bbeb63c1f10e895a_2ae6dcf0a9ba632d109b0f7e2a37eb38">dx9/model/ship/concord/decal/decal_u7tagmarker_d.dds</a><br></td>
+		<td>22 -> 21</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/90/90e9615dd8d6dc25_f26d8d6813b2ad30697e89a4256820b1">dx9/model/ship/minmatar/industrial/mi3/thukker/mi3_t1_thukker_pmdg_mediumdetail.dds</a><br></td>
+		<td>21 -> 21</td>
+	</tr>
+	<tr>
+		<td><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/39/39bca4c344c1c28a_4fc157fa55fce06c3f66f7388fa27453">res:/dx9/model/ship/concord/cruiser/conc1/icons/1052_64.png</a>
+    		</summary>
+    		<img data-src="http://res.eveprobe.ccpgames.com/39/39bca4c344c1c28a_4fc157fa55fce06c3f66f7388fa27453" src="" />
+		</details></td>
+		<td>6 -> 6</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/e0/e094cff96a83048e_3f99b00ccfa6733e08662163e4b6921a">dx9/model/spaceobjectfactory/factions/kador.black</a><br></td>
+		<td>3 -> 3</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/9e/9e2d9aa33bb0d931_28d7322e82696c484a27b5ee039ef2cb">dx9/model/celestial/sun/sun_yellow_01c.black</a><br></td>
+		<td>13 -> 13</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/f6/f6e65455f425e51f_90baa779635d8bcdd9f7d4b122b7c6a4">dx9/model/ship/concord/cruiser/conc1/conc1_t1_pmdg_lowdetail.dds</a><br></td>
+		<td>1 -> 1</td>
+	</tr>
+	<tr>
+		<td><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/ee/ee2cdc59ec5a5596_77774f79e686bad6c6c990a81f640ce8">res:/dx9/model/ship/concord/cruiser/conc1/icons/1056_64.png</a>
+    		</summary>
+    		<img data-src="http://res.eveprobe.ccpgames.com/ee/ee2cdc59ec5a5596_77774f79e686bad6c6c990a81f640ce8" src="" />
+		</details></td>
+		<td>6 -> 6</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/60/6054fe650f5e8713_b8883fae029389853d43547243f1b772">dx9/model/spaceobjectfactory/hulls/af4_t1.black</a><br></td>
+		<td>8 -> 8</td>
+	</tr>
+	<tr>
+		<td><a href="https://binaries.eveonline.com/1a/1a48a0969136daa1_d194573ba1bd01722a57ea7d4a30773b">manifest.dat</a><br></td>
+		<td>13 -> 13</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/e6/e6e507a69f5be8c8_9d15d645010a7fa77702edf877ae2172">dx9/model/spaceobjectfactory/factions/tournament-ix.black</a><br></td>
+		<td>2 -> 2</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/a0/a0a71a08c9f20ca0_317cb72a8b2e6ec263a0f229c0010649">dx9/model/ship/concord/cruiser/conc1/conc1_t1_no_lowdetail.dds</a><br></td>
+		<td>1 -> 1</td>
+	</tr>
+	<tr>
+		<td><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/1d/1d5b60292e910d93_14ff22db476e6fb826ff900a304238f6">res:/dx9/model/ship/concord/cruiser/conc1/icons/1050_128.png</a>
+    		</summary>
+    		<img data-src="http://res.eveprobe.ccpgames.com/1d/1d5b60292e910d93_14ff22db476e6fb826ff900a304238f6" src="" />
+		</details></td>
+		<td>19 -> 19</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/4d/4decfab44edc3df8_a424eba65bd63bef17aadd6a2ee004ee">dx9/model/spaceobjectfactory/factions/eom.black</a><br></td>
+		<td>3 -> 3</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/c0/c0ef6b361919c2a5_f71e2a025f597c210ba8c82f18b772ae">dx9/model/ship/concord/decal/decal_68244-ca_d.dds</a><br></td>
+		<td>11 -> 11</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/a7/a7f914e5b044e761_ae1c414b8cdc1f88d8fd89fe173eff59">dx9/model/ship/concord/decal/ccplogo_d.dds</a><br></td>
+		<td>22 -> 21</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/b4/b4dc4b2e70032657_d8808047b0bce7e268887a5bb2d16deb">dx9/model/ship/concord/decal/decal_concordtext02_d.dds</a><br></td>
+		<td>11 -> 11</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/63/63849ce25bb8204b_7e5c33896930abc71b2d50f281e9a677">dx9/model/ship/concord/cruiser/conc1/conc1_t1_pmdg.dds</a><br></td>
+		<td>1398 -> 1398</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/d2/d22c17c83a8736b0_89e2dabc0f49a630e0c3bf28bda47b51">dx9/model/ship/minmatar/industrial/mi3/mi3_t1_mediumdetail.gr2</a><br></td>
+		<td>87 -> 88</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/d6/d6c1b1eae96bd984_e1d48670c932b598271620d755b440f0">dx9/model/ship/minmatar/industrial/mi3/mi3_t1_pmdg.dds</a><br></td>
+		<td>1398 -> 1398</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/85/85c4996070e89919_f2b5ca3b7ed2ff6b84c8b31c03fa722b">dx9/model/decal/concord/marking_ded_01_at.dds</a><br></td>
+		<td>11 -> 11</td>
+	</tr>
+	<tr>
+		<td><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/a7/a76195838592cd44_1f4adfc9590e36f508f198578250b7b3">res:/dx9/model/ship/minmatar/industrial/mi3/icons/2714_64_bpc.png</a>
+    		</summary>
+    		<img data-src="http://res.eveprobe.ccpgames.com/a7/a76195838592cd44_1f4adfc9590e36f508f198578250b7b3" src="" />
+		</details></td>
+		<td>7 -> 7</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/03/03edbd30d2a1bf01_39392e106b210a540fd77b52e99bc64d">dx9/model/spaceobjectfactory/factions/sarum.black</a><br></td>
+		<td>3 -> 3</td>
+	</tr>
+	<tr>
+		<td><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/98/985501658dde23bb_b92c140a5a5b4ff6dfce0c2c08ed6a84">res:/dx9/model/ship/minmatar/industrial/mi3/icons/2714_128.png</a>
+    		</summary>
+    		<img data-src="http://res.eveprobe.ccpgames.com/98/985501658dde23bb_b92c140a5a5b4ff6dfce0c2c08ed6a84" src="" />
+		</details></td>
+		<td>21 -> 21</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/a3/a3fc7a48b46c835e_5298bc2032f132ee7778261550c38232">dx9/model/decal/concord/marking_ded_01_nr.dds</a><br></td>
+		<td>5 -> 5</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/e2/e23207435ff33ae3_86b62081d2c82375c13cdad77f8a2d32">dx9/model/celestial/sun/sun_blue_01a.black</a><br></td>
+		<td>13 -> 13</td>
+	</tr>
+	<tr>
+		<td><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/f0/f03a55cede71d6ef_6290fb48ea12832ad3a53dded96dff16">res:/dx9/model/ship/minmatar/industrial/mi3/icons/mi3_t2c_isis.png</a>
+    		</summary>
+    		<img data-src="http://res.eveprobe.ccpgames.com/f0/f03a55cede71d6ef_6290fb48ea12832ad3a53dded96dff16" src="" />
+		</details></td>
+		<td>3 -> 3</td>
+	</tr>
+	<tr>
+		<td><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/1e/1eeed89f27de3f64_fcc57236f6f0801f06243c4263293a57">res:/dx9/model/ship/minmatar/industrial/mi3/icons/2714_64.png</a>
+    		</summary>
+    		<img data-src="http://res.eveprobe.ccpgames.com/1e/1eeed89f27de3f64_fcc57236f6f0801f06243c4263293a57" src="" />
+		</details></td>
+		<td>6 -> 6</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/79/79a473897ae5f3b0_b9fec8334e592c53354a2be1c7339684">localizationfsd/localization_fsd_main.pickle</a><br></td>
+		<td>2066 -> 2066</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/b1/b1fccf7414b1ee93_546683a9a43c4b948f815cf82b705f83">dx9/model/decal/concord/logo_ded_01_at.dds</a><br></td>
+		<td>21 -> 21</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/d6/d690756ea80a255b_d8a59b4521e0c0d5e7610a4aa0013516">dx9/model/celestial/sun/sun_blue_small_01a.black</a><br></td>
+		<td>13 -> 13</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/ee/ee8be85f1266bec3_4c5d65eecdfe44e3c5c48fcdd11c9c2e">audio/interface.bnk</a><br></td>
+		<td>8616 -> 8622</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/9a/9adf983d033ba1a3_95f549f26041161dcdf9cfe6637bb150">staticdata/evecategories.static</a><br></td>
+		<td>10 -> 10</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/5c/5ce40a9f2e613d72_66ee8f4b90ccca3aa95ab47cf8a00399">dx9/model/celestial/sun/sun_orange_01b.black</a><br></td>
+		<td>13 -> 13</td>
+	</tr>
+	<tr>
+		<td><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/14/14bc40309e9204c9_865168df388cc89237f7c8edf3f2b78d">res:/dx9/model/ship/concord/cruiser/conc1/icons/1056_128.png</a>
+    		</summary>
+    		<img data-src="http://res.eveprobe.ccpgames.com/14/14bc40309e9204c9_865168df388cc89237f7c8edf3f2b78d" src="" />
+		</details></td>
+		<td>19 -> 19</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/d8/d8401983a0f7ed89_1a87c3b36965ef7c5f060774f171f002">dx9/model/celestial/sun/sun_orange_sun_01b.black</a><br></td>
+		<td>13 -> 13</td>
+	</tr>
+	<tr>
+		<td><a href="https://binaries.eveonline.com/1d/1d34143a37d4b739_def0fb41974fc668f3eaba2bfdba3dc3">resfileindex.txt</a><br></td>
+		<td>11474 -> 11477</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/f4/f403f73780272240_411d639b10461b1cf9294fe8a9e58895">dx9/model/decal/concord/logo_ded_01_nr.dds</a><br></td>
+		<td>11 -> 11</td>
+	</tr>
+	<tr>
+		<td><a href="https://binaries.eveonline.com/f0/f032ac16b88d97a4_8381562eedd4462b396d5f564a25fd0d">code.ccp</a><br></td>
+		<td>16578 -> 16596</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/09/097de9381fe7929b_f2a9c0b655c86b118b539e81e55e71e9">staticdata/environmenttemplates.static</a><br></td>
+		<td>20 -> 20</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/63/6314466d4f072c29_fe692d0e75295da5de1240ffc79d2f3b">dx9/model/celestial/sun/sun_orange_radiating_01c.black</a><br></td>
+		<td>13 -> 13</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/73/73f77e0422aa3676_90017a3280d8056289091268a887d9db">graphics/character/female/paperdoll/hair/headwear_beret_f01/types/headwear_beret_amarrf01.type</a><br></td>
+		<td>0 -> 0</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/bb/bb782c79cf44be5a_36d729aefc31a61075ca800318672345">dx9/model/ui/scancone.black</a><br></td>
+		<td>4 -> 4</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/ff/ffaee6f3ca70f116_c06bbe90c3a7b37c6f9b57f6d4dcb1da">dx9/model/spaceobjectfactory/factions/amarrnavy.black</a><br></td>
+		<td>3 -> 3</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/01/016d9c922c962976_5b3f2923ca6ae9ae43dccc5ac6641797">dx9/model/spaceobjectfactory/factions/imperial.black</a><br></td>
+		<td>3 -> 3</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/8c/8c9a50cb247d3ec8_1cdb797d4e04b52eb3294539c6c0d1c5">dx9/model/celestial/sun/sun_blue_sun_01a.black</a><br></td>
+		<td>13 -> 13</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/58/58f5e7777890d531_f5569c8e39ce3d71d6d8c37eba8837f6">dx9/model/ui/scanconesphere.black</a><br></td>
+		<td>4 -> 4</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/ba/baa4f7ff1ae4932c_9b81a68ce70d375b809cabed3ee92232">dx9/model/spaceobjectfactory/factions/tash-murkon.black</a><br></td>
+		<td>3 -> 3</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/13/13b46222b25dcb08_f4b9fc2310bf7ca5ce67bfb308657135">dx9/model/celestial/sun/sun_pink_hazy_01a.black</a><br></td>
+		<td>13 -> 13</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/ef/ef47bd898870429a_d4d33b51e6028376f6d61898d7932715">dx9/model/spaceobjectfactory/factions/tournament-xiv.black</a><br></td>
+		<td>3 -> 3</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/a1/a11f5d3d6db50da9_2237becf6c5760788d80f6e585520964">dx9/model/ship/concord/decal/decal_7serialtag_d.dds</a><br></td>
+		<td>11 -> 11</td>
+	</tr>
+	<tr>
+		<td><a href="https://binaries.eveonline.com/34/34cee7939079398b_1216150da12f350c73808cd8f9c13a2a">bin/_trinity_dx9_deploy.dll</a><br></td>
+		<td>14116 -> 14140</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/46/467df4b681087298_dd761306c905f1cd3c57b420c313e9de">dx9/model/celestial/sun/sun_blue_01b.black</a><br></td>
+		<td>13 -> 13</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/4a/4a2aa744df2b8287_5af5a7094d4cabd89a9b471030edd8d8">dx9/model/ship/minmatar/industrial/mi3/mi3_t1_pmdg_mediumdetail.dds</a><br></td>
+		<td>21 -> 21</td>
+	</tr>
+	<tr>
+		<td><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/e4/e429013b09001e65_821bdab565a6bfe37395875c751a43b3">res:/dx9/model/ship/concord/cruiser/conc1/icons/1052_128.png</a>
+    		</summary>
+    		<img data-src="http://res.eveprobe.ccpgames.com/e4/e429013b09001e65_821bdab565a6bfe37395875c751a43b3" src="" />
+		</details></td>
+		<td>19 -> 20</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/29/299d63199a8131b3_97ebcb70d5101ebd30ceb60ed1010e5f">audio/planets.bnk</a><br></td>
+		<td>731 -> 1842</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/c4/c45bd88e9f9ba1ca_bb8e54775c69e9e364a3b001afe42d25">dx9/model/ui/scanconehalfsphere.black</a><br></td>
+		<td>4 -> 4</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/f6/f67f509944259e6b_2f7a300247b37f863ea575d35cd030c6">dx9/model/ship/concord/cruiser/conc1/conc1_t1_ar_mediumdetail.dds</a><br></td>
+		<td>21 -> 21</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/72/72385725daac28cb_6ff1120eaf286b7148fce059ff078e9e">dx9/model/celestial/sun/sun_white_tiny_01a.black</a><br></td>
+		<td>13 -> 13</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/07/07112e1472f01b17_1804134b20c4772da82b402a95d07e35">dx9/model/celestial/sun/sun_yellow_small_01a.black</a><br></td>
+		<td>13 -> 13</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/e9/e9083916726af9e5_a8d2e99f0c15a6d12dd1c1868f41d287">dx9/model/celestial/sun/sun_blue_01c.black</a><br></td>
+		<td>13 -> 13</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/46/46263045f4816fc1_8d4d2971fe2096eb0e94cd1e3922030e">dx9/model/ship/concord/decal/decal_ecaidlogo02_d.dds</a><br></td>
+		<td>11 -> 11</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/e2/e20487cf9e14c3ba_7ffd1aea51a48125f4175fc9fcf48125">dx9/model/celestial/sun/sun_orange_sun_01a.black</a><br></td>
+		<td>13 -> 13</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/47/473418c838631fc7_8d9dad12bd64e5ed637cf209765c2e38">dx9/model/ship/concord/decal/decal_yserialtag_d.dds</a><br></td>
+		<td>11 -> 11</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/c3/c32359747c085f8c_85662c6c844dcbc91879afe8d80d19a8">dx9/model/celestial/sun/sun_yellow_small_01b.black</a><br></td>
+		<td>13 -> 13</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/b8/b8b853f771f9c40a_dd9b2343653a98edc72ac6cd5298a018">dx9/model/ship/concord/cruiser/conc1/conc1_t1_pmdg_mediumdetail.dds</a><br></td>
+		<td>21 -> 21</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/f5/f5458e9cde93a649_726bd30bd3c36e93ccd12c9786ff328f">dx9/model/spaceobjectfactory/factions/amarrbase.black</a><br></td>
+		<td>3 -> 3</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/ad/adf6f005d843256a_0e898cdad1bc7d6b127ce833a2669c8a">dx9/model/spaceobjectfactory/hulls/conc1_t1.black</a><br></td>
+		<td>13 -> 13</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/1e/1e31bb5551221e98_b2df7925e0726b95a6796963af33b2c6">dx9/model/ship/minmatar/industrial/mi3/mi3_t1_pmdg_lowdetail.dds</a><br></td>
+		<td>1 -> 1</td>
+	</tr>
+	<tr>
+		<td><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/f3/f3dc95869475bc26_bf091e73d47430bbe8a8067645f04d9b">res:/dx9/model/ship/concord/cruiser/conc1/icons/1051_128.png</a>
+    		</summary>
+    		<img data-src="http://res.eveprobe.ccpgames.com/f3/f3dc95869475bc26_bf091e73d47430bbe8a8067645f04d9b" src="" />
+		</details></td>
+		<td>21 -> 21</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/f1/f1732beca14886d2_cb47dd7f0b45e24e43db9b32fa424695">dx9/model/ship/concord/decal/decal_dedlogo_d.dds</a><br></td>
+		<td>22 -> 21</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/0b/0ba77a4f75dd8c60_1a42bd3b3e3d0087e37d3f308559ab8e">dx9/model/decal/concord/logo_ded_01_f.dds</a><br></td>
+		<td>11 -> 11</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/d4/d40170d436e80669_6bd9eac3c09d9ca4a04fbee79f51de01">dx9/model/spaceobjectfactory/hulls/mi3_t1.black</a><br></td>
+		<td>7 -> 7</td>
+	</tr>
+	<tr>
+		<td><a href="https://binaries.eveonline.com/bc/bc5fff279c5cae06_e42342da15ceea02c28b5e1303365581">bulkdata/800006.cache2</a><br></td>
+		<td>6712 -> 6714</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/e7/e7bbee3a0f10e4b0_2ee87a88713722eb2eeffe5d83099f4f">dx9/model/ship/minmatar/industrial/mi3/brutor/mi3_t1_brutor_pmdg.dds</a><br></td>
+		<td>1398 -> 1398</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/4a/4a2d3f8fdea01bca_f2e1783caf789d81d8a7ba370e1e1ee3">staticdata/fighterabilities.static</a><br></td>
+		<td>13 -> 13</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/c0/c02684ecbeb56aef_fbbc4d842b228dd43f9954c96ee0dd0e">dx9/model/ship/concord/cruiser/conc1/conc1_t1_no_mediumdetail.dds</a><br></td>
+		<td>21 -> 21</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/12/12b0cf2df8648c6c_6a1084e0dda360802a7bf8e274605df9">dx9/model/celestial/sun/sun_red_01a.black</a><br></td>
+		<td>13 -> 13</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/17/1712ac1eef395447_ba6aca88e67fb2c32060494e04aa4a61">dx9/model/celestial/sun/sun_pink_sun_small_01b.black</a><br></td>
+		<td>13 -> 13</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/cc/cce0017fe032d234_1aae88ef6ed8c96af040e8dd89cc7170">dx9/model/ship/minmatar/industrial/mi3/brutor/mi3_t1_brutor_pmdg_lowdetail.dds</a><br></td>
+		<td>1 -> 1</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/fe/feedd76b44f0e915_c4e33350f70954161f69a1ee5032c7f1">dx9/model/ship/minmatar/industrial/mi3/mi3_t1.gr2</a><br></td>
+		<td>124 -> 126</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/d0/d045e75099a6a47c_fa9860e6d714b5c8255bd0f4af868077">dx9/model/spaceobjectfactory/factions/ammatar.black</a><br></td>
+		<td>3 -> 3</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/45/45dce5b68f1bac6b_9abc5c514139bf6a4776c4049d5d9c2f">dx9/model/ship/concord/decal/decal_isdlogo02_d.dds</a><br></td>
+		<td>22 -> 21</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/fa/fac1e7e7a4377008_03b94f462588bd43b12b7b258cde9140">dx9/model/ship/minmatar/industrial/mi3/nefantar/mi3_t1_nefantar_pmdg_lowdetail.dds</a><br></td>
+		<td>1 -> 1</td>
+	</tr>
+	<tr>
+		<td><a href="https://binaries.eveonline.com/56/5610a6eb8b5a4975_71d2017a6404d065add782601f9ecdd4">resfileindex_prefetch.txt</a><br></td>
+		<td>1115 -> 1115</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/c4/c47603ed079bf32f_d5e1886c027fe36ec6556491026c4d98">dx9/model/ship/concord/decal/decal_ecaidlogo_d.dds</a><br></td>
+		<td>11 -> 11</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/e3/e338257cd3e3f364_cfbe2a365ed4cd70e56e41aac0ddd9bb">dx9/model/ship/minmatar/industrial/mi3/navy/mi3_t1_navy_pmdg_lowdetail.dds</a><br></td>
+		<td>1 -> 1</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/ca/cae113e8659eb4db_dd4903f457a7c1aa4ffe966d853ce17b">dx9/model/ship/concord/decal/swat_d.dds</a><br></td>
+		<td>11 -> 11</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/54/5405a90c5ce355e7_b1fab82f315fef7ccb094b43591de674">dx9/model/ship/minmatar/industrial/mi3/mi3_t1_no.dds</a><br></td>
+		<td>1398 -> 1398</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/72/72a69a840f79a5b2_8981145092eab85e635c16478eae3eb9">dx9/model/ship/concord/decal/shared_s.dds</a><br></td>
+		<td>11 -> 11</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/48/48bfcdb412b77e16_fa4d48a66ad211337b522679f9e8d57b">dx9/model/celestial/sun/sun_white_01a.black</a><br></td>
+		<td>13 -> 13</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/db/dbf2d4f724b2bc3c_1c04f6d562c82f13bea4c438c5e11536">dx9/model/ship/concord/cruiser/conc1/conc1_t1_no.dds</a><br></td>
+		<td>1398 -> 1398</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/67/671695e3a499baf0_48ce4f2361b47c8182b008f32d0f1b2d">staticdata/evetypes.static</a><br></td>
+		<td>12393 -> 12399</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/0c/0c590e5720fb7557_7b3bd8b8aece7d7404b57a8767b87f4c">dx9/model/celestial/sun/sun_orange_radiating_01a.black</a><br></td>
+		<td>13 -> 13</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/7c/7c53cc05a063880a_39b8593999dfc134f99c96ac5bd15efe">audio/init.bnk</a><br></td>
+		<td>11 -> 11</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/d0/d0b956d5a8015f2a_38aaf2a30271d1ca8710b32b2e1353bd">dx9/model/ship/concord/decal/decal_shared02_s.dds</a><br></td>
+		<td>5 -> 5</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/32/3230b7df3db42eb2_939eb081c54a721a4c150b851b5588bd">dx9/model/spaceobjectfactory/factions/amarrinfested.black</a><br></td>
+		<td>1 -> 1</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/47/471d91da315d70d4_442b4528e5f56c857a73aa70708d23da">dx9/model/ship/minmatar/industrial/mi3/nefantar/mi3_t1_nefantar_pmdg.dds</a><br></td>
+		<td>1398 -> 1398</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/68/680a1c82b037ee16_7ccfaaef152373b01c0cfa60d0527a59">dx9/model/spaceobjectfactory/factions/amarrofficer.black</a><br></td>
+		<td>2 -> 2</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/1f/1fe5951645e3d1d4_684318a03863a7508e67515d07541d9c">dx9/model/ship/concord/cruiser/conc1/conc1_t1_ar_lowdetail.dds</a><br></td>
+		<td>1 -> 1</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/22/22a31cbe06c6d693_e6c4e03a441bb86164f3cdd640264e69">dx9/model/spaceobjectfactory/factions/chamberlain.black</a><br></td>
+		<td>3 -> 3</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/fa/fadda85ef477eb7c_96f769e6280d450926edbb0257bf80b0">dx9/model/celestial/sun/sun_pink_sun_small_01a.black</a><br></td>
+		<td>13 -> 13</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/e3/e3fc2b896c4deb0a_10a3185e383bbd70f9fbcab547db64d1">dx9/model/spaceobjectfactory/factions/imperialarmaments.black</a><br></td>
+		<td>3 -> 3</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/dc/dcd6270db3137cce_88d10d629fb37e0081501b015433ae81">graphics/character/female/paperdoll/hair/headwear_beret_f01/types/headwear_beret_minmatarf01.type</a><br></td>
+		<td>0 -> 0</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/f6/f628e3e138ee80cb_360c60533fe4cf29b3e994cbdcfc91b7">dx9/model/ship/minmatar/industrial/mi3/brutor/mi3_t1_brutor_pmdg_mediumdetail.dds</a><br></td>
+		<td>21 -> 21</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/1b/1b8939b23f3032cc_4abe4feaaec39a65fa11043cf1be3f49">dx9/model/celestial/sun/sun_orange_radiating_01b.black</a><br></td>
+		<td>13 -> 13</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/ba/ba2ad7faa4aed397_75878ccea0b18e438fc474f4344ffba9">dx9/model/spaceobjectfactory/factions/amarrstory.black</a><br></td>
+		<td>2 -> 2</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/51/51cb9f873d3d4f0b_9d3d2a14f40f399766e58dd40c918dd3">graphics/character/male/paperdoll/hair/headwear_beret_m01/types/headwear_beret_minmatarm01.type</a><br></td>
+		<td>0 -> 0</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/5f/5f91b3289ffd444b_dfc7a42e8d761aa95c99717b4c90c237">dx9/model/ship/concord/decal/decal_isdtext02_d.dds</a><br></td>
+		<td>11 -> 11</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/0c/0c35cd51d7245e12_2285e35587cf9faef4bbf6a283142da3">dx9/model/spaceobjectfactory/factions/kor-azor.black</a><br></td>
+		<td>3 -> 3</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/50/50d939ac3edf9aa0_a0b1ec1c313b56c70cb7d3c7e1c10b2d">dx9/model/ship/concord/decal/trimline_d.dds</a><br></td>
+		<td>11 -> 11</td>
+	</tr>
+	<tr>
+		<td><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/3b/3be7b0634b32ceba_c2ffe7fd624750d7b3e89733374b89bc">res:/dx9/model/ship/minmatar/industrial/mi3/icons/310_64.png</a>
+    		</summary>
+    		<img data-src="http://res.eveprobe.ccpgames.com/3b/3be7b0634b32ceba_c2ffe7fd624750d7b3e89733374b89bc" src="" />
+		</details></td>
+		<td>6 -> 6</td>
+	</tr>
+	<tr>
+		<td><a href="https://binaries.eveonline.com/ba/ba1aa4f3fb71b2da_80cf34bef7389197bb7017a4c4eeb9bf">bin/_trinity_dx11_deploy.dll</a><br></td>
+		<td>14217 -> 14240</td>
+	</tr>
+	<tr>
+		<td><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/66/66dc4017962b4ca9_67a36264409b2e5ad3fe1942c65ef04e">res:/dx9/model/ship/minmatar/industrial/mi3/icons/310_64_bp.png</a>
+    		</summary>
+    		<img data-src="http://res.eveprobe.ccpgames.com/66/66dc4017962b4ca9_67a36264409b2e5ad3fe1942c65ef04e" src="" />
+		</details></td>
+		<td>7 -> 7</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/c8/c81c0edde7f7e627_9a1ccb557025c50f150bd1dec3b3ef77">graphics/character/female/paperdoll/hair/headwear_beret_f01/types/headwear_beret_caldarif01.type</a><br></td>
+		<td>0 -> 0</td>
+	</tr>
+	<tr>
+		<td><a href="https://binaries.eveonline.com/1e/1ef674def6229546_4c44a039e218e85babb4b05037b88f8d">bulkdata/version</a><br></td>
+		<td>0 -> 0</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/a7/a73bd6322ce13407_448ef35d6fd8fe501551490a9f8b31da">dx9/model/ship/concord/decal/lightbarspulse_d.dds</a><br></td>
+		<td>22 -> 21</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/98/9899ff2612ab6980_f857b256c684615017656ca94bbe7c1a">dx9/model/celestial/sun/sun_white_tiny_01b.black</a><br></td>
+		<td>13 -> 13</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/ce/cec004c2671c15a6_424cb5a4d22dd406331db399e313ae3c">dx9/model/spaceobjectfactory/factions/tournament-i.black</a><br></td>
+		<td>2 -> 2</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/82/82afe2bbeb0b452e_c01d9fd6bd5e09dc17712d5541757829">dx9/model/celestial/sun/sun_purple_sun_01a.black</a><br></td>
+		<td>13 -> 13</td>
+	</tr>
+	<tr>
+		<td><a href="https://binaries.eveonline.com/ee/eea80354bae9a691_a913ed11814437d0341b600062cbe4fb">resfiledependencies.yaml</a><br></td>
+		<td>3456 -> 3456</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/95/9519c3e65029aca5_f4b505a27869ee1f73fea3a89d776598">dx9/model/celestial/sun/sun_white_01b.black</a><br></td>
+		<td>13 -> 13</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/1e/1ee96489b298647a_b5f3873b9eec049606bc489555bf0ba8">dx9/model/ship/concord/decal/decal_71hatchtag_d.dds</a><br></td>
+		<td>22 -> 21</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/34/34d7bf64cb1f07be_f61c38e141abcab3ae6fa515a3ae1bad">dx9/model/ship/concord/decal/decal_dedtext_d.dds</a><br></td>
+		<td>11 -> 11</td>
+	</tr>
+	<tr>
+		<td><a href="https://binaries.eveonline.com/e3/e3cd8a97159e6321_0310e99f0960827f08dd5a6887e72de3">start.ini</a><br></td>
+		<td>0 -> 0</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/eb/eb27156c7577063f_a9bc01a28f3eadd75eb11cdc7d99571a">staticdata/spacecomponents.static</a><br></td>
+		<td>128 -> 128</td>
+	</tr>
+	<tr>
+		<td><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/a5/a58bd23f9ae53223_aef576dfe186839dd7d8d9fc47b0514a">res:/dx9/model/ship/minmatar/industrial/mi3/icons/mi3_t1_isis.png</a>
+    		</summary>
+    		<img data-src="http://res.eveprobe.ccpgames.com/a5/a58bd23f9ae53223_aef576dfe186839dd7d8d9fc47b0514a" src="" />
+		</details></td>
+		<td>2 -> 2</td>
+	</tr>
+	<tr>
+		<td><a href="https://binaries.eveonline.com/aa/aa0b8b0323d24f50_535a568f4f2710b376a1bb4d0e151ea1">bulkdata/metadata.yaml</a><br></td>
+		<td>0 -> 0</td>
+	</tr>
+	<tr>
+		<td><a href="https://binaries.eveonline.com/dc/dc8783696da17ecc_2a98aff8a6acdff0e6c76592001a75ca">bulkdata/800004.cache2</a><br></td>
+		<td>196 -> 196</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/65/65e034d4352498b5_151998f5d1aa859b55d28498be1ca56f">graphics/character/female/paperdoll/hair/headwear_beret_f01/types/headwear_beret_gallentef01.type</a><br></td>
+		<td>0 -> 0</td>
+	</tr>
+	<tr>
+		<td><a href="https://binaries.eveonline.com/a0/a0411270de1e7503_4826d4ec2dd21917a2441472870d6f96">bulkdata/800005.cache2</a><br></td>
+		<td>471 -> 473</td>
+	</tr>
+	<tr>
+		<td><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/7d/7dbe902918d63c2e_f0c3bc9827e81a4ed1fe60570d82a33c">res:/dx9/model/ship/minmatar/industrial/mi3/icons/310_64_bpc.png</a>
+    		</summary>
+    		<img data-src="http://res.eveprobe.ccpgames.com/7d/7dbe902918d63c2e_f0c3bc9827e81a4ed1fe60570d82a33c" src="" />
+		</details></td>
+		<td>7 -> 7</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/00/00b2cc967e3fb0a2_5570007948c9eda27a6111bf7468b809">dx9/model/spaceobjectfactory/factions/ardishapur.black</a><br></td>
+		<td>3 -> 3</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/21/21e69dcb3d849e4f_1de70a80b0e657ff78c11de96b3c43ac">dx9/model/celestial/sun/sun_orange_01c.black</a><br></td>
+		<td>13 -> 13</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/ac/ac86c1a1cd1f5e83_a8d32e38724790ca5898b8134e629655">graphics/character/male/paperdoll/hair/headwear_beret_m01/types/headwear_beret_amarrm01.type</a><br></td>
+		<td>0 -> 0</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/d1/d16f676629491840_ff226e09c3e08d1c6c32e61373b086c6">dx9/model/ship/minmatar/industrial/mi3/navy/mi3_t1_navy_pmdg.dds</a><br></td>
+		<td>1398 -> 1398</td>
+	</tr>
+	<tr>
+		<td><a href="https://binaries.eveonline.com/50/50ea3456c14ebd15_b4c2cfdfed8f419b71bc6e1367cbb1fe">bulkdata/800007.cache2</a><br></td>
+		<td>390 -> 391</td>
+	</tr>
+	<tr>
+		<td><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/a2/a268361fa703d447_32a2b8ee31a9250847b01a83e53ca45f">res:/dx9/model/ship/minmatar/industrial/mi3/icons/2714_64_bp.png</a>
+    		</summary>
+    		<img data-src="http://res.eveprobe.ccpgames.com/a2/a268361fa703d447_32a2b8ee31a9250847b01a83e53ca45f" src="" />
+		</details></td>
+		<td>7 -> 7</td>
+	</tr>
+	<tr>
+		<td><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/9e/9eb3f22122b9e5fc_cb281a60455d1097f68c451ec885d6c6">res:/dx9/model/ship/concord/cruiser/conc1/icons/1050_64.png</a>
+    		</summary>
+    		<img data-src="http://res.eveprobe.ccpgames.com/9e/9eb3f22122b9e5fc_cb281a60455d1097f68c451ec885d6c6" src="" />
+		</details></td>
+		<td>6 -> 6</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/2c/2c3038b3c38e91a1_7e4be962002778f8ca7a14e1dc48640c">localizationfsd/localization_fsd_en-us.pickle</a><br></td>
+		<td>11395 -> 11402</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/39/396c4a741c0bac34_6b5c5fc2db593d1fed9fe23eeffc43fc">dx9/model/ship/concord/decal/decal_shared_s.dds</a><br></td>
+		<td>11 -> 21</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/c4/c4305d3ff59772aa_b4e5e85850311c79d7a9662cf6fa3e96">dx9/model/ship/minmatar/industrial/mi3/thukker/mi3_t1_thukker_pmdg_lowdetail.dds</a><br></td>
+		<td>1 -> 1</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/bf/bfa907e5c80a5da3_c0e30b94559478fb78542c85acad7c32">dx9/model/spaceobjectfactory/hulls/af4_t2a.black</a><br></td>
+		<td>9 -> 9</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/0b/0b577d4609680827_9e70b54058dee2618c2128695d9ab184">staticdata/evegroups.static</a><br></td>
+		<td>387 -> 387</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/55/554a8d89fd468701_ceeaa2e74c9596f9cf7da468f191c04a">dx9/model/celestial/sun/sun_orange_01a.black</a><br></td>
+		<td>13 -> 13</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/27/27175da5716462d4_b948f0dfa1b121c624ab951cdd15ae39">dx9/model/celestial/sun/sun_yellow_01b.black</a><br></td>
+		<td>13 -> 13</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/ed/ed0268cb4080cbff_b7077ebf14c74cd666bd5a00e318acb1">dx9/model/celestial/sun/sun_yellow_01a.black</a><br></td>
+		<td>13 -> 13</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/a8/a8a90e942f977477_0093ec99f1af80bb4fde5e8a74094d0f">dx9/model/celestial/sun/sun_red_01b.black</a><br></td>
+		<td>13 -> 13</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/1d/1d9154714807113e_995fdfe069f4f3a09be732f8c15058c7">dx9/model/decal/concord/marking_ded_01_f.dds</a><br></td>
+		<td>5 -> 5</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/fa/fade0fc260d02985_b5eeff4fbcb8b13f91abfa6664d6f75f">staticdata/graphicids.static</a><br></td>
+		<td>417 -> 417</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/07/07df8a3489660b9e_44e3eede8c55a401046d89f8b236aa90">staticdata/infobubbles.static</a><br></td>
+		<td>214 -> 216</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/12/12415bf750b9071a_4250455d200ba2e93635dbef34c97152">dx9/model/ship/minmatar/industrial/mi3/thukker/mi3_t1_thukker_pmdg.dds</a><br></td>
+		<td>1398 -> 1398</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/ff/ff6090512f1f8110_d8d0bcd455fbb9786f64d8a3146e1aa2">dx9/model/ship/concord/cruiser/conc1/conc1_t1_ar.dds</a><br></td>
+		<td>1398 -> 1398</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/5f/5f1d6b142c91e4e8_5f03b098ce0edcc3f8ea3223c62b6120">dx9/model/spaceobjectfactory/factions/bloodraider.black</a><br></td>
+		<td>3 -> 3</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/35/350cf81f2f26b64b_9bf078d9aaa9b3ecddb6e89ca1f45c25">dx9/model/spaceobjectfactory/data.black</a><br></td>
+		<td>12023 -> 12023</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/ba/baa51471b41827db_aa013618303e699aa20e09cb50fdb18e">dx9/model/ship/minmatar/industrial/mi3/navy/mi3_t1_navy_pmdg_mediumdetail.dds</a><br></td>
+		<td>21 -> 21</td>
+	</tr>
+	<tr>
+		<td><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/82/8254fefeef82b697_e1d7f1883cff19876f0a6e909870bc19">res:/dx9/model/ship/concord/cruiser/conc1/icons/1051_64.png</a>
+    		</summary>
+    		<img data-src="http://res.eveprobe.ccpgames.com/82/8254fefeef82b697_e1d7f1883cff19876f0a6e909870bc19" src="" />
+		</details></td>
+		<td>7 -> 6</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/24/240fbf89542272ed_5e2d0fd83130d9f5052f11c3d7ed34b3">dx9/model/ship/minmatar/industrial/mi3/mi3_t1_lowdetail.gr2</a><br></td>
+		<td>37 -> 39</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/23/23f4f558e91f9658_d3fd72c28fd4cafa524fb488f8587f12">dx9/model/spaceobjectfactory/hulls/af4_t2b.black</a><br></td>
+		<td>9 -> 9</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/85/850567fab0001c53_657e6f1d0ffa6c5c374d834ef647bb53">dx9/model/celestial/sun/sun_pink_hazy_01b.black</a><br></td>
+		<td>13 -> 13</td>
+	</tr>
+	</table>
+</details>
+
+<!--<h2 id="changedfiles">Removed Files</h2>-->
+
+<!-- [[removedFilesSection]] -->
+
+<!--<h2 id="changedpythonfiles">Changed Python Files</h2>-->
+
+<!-- [[changedPythonFiles]] -->
+
+<p class="mini2">Made by Inomares. I don't want your donations. I don't read EVE mails. Leave me alone.</p>
+<p class="mini3">I guess contact me on <a href="https://tweetfleet.slack.com/messages/@inomares/">Tweetfleet Slack</a> if you really need to.</p>
+<div class="footer1 footer" id="footer1" onClick="test123();"></div>
+<div class="footer2 footer" id="footer2"></div>
+</body>
+</html>

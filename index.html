@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Hoboleaks: Tranquility (Build: 1130153) to Singularity (Build: 1129961)</title>
-	<meta name="title" content="Client Comparison: Tranquility (Build: 1130153) to Singularity (Build: 1129961) | Hoboleaks">
-	<meta name="description" content="Generated @ 2017-03-22 05:37:50 EVE Time">
+	<title>Hoboleaks: Tranquility (Build: 1130687) to Singularity (Build: 1130803)</title>
+	<meta name="title" content="Client Comparison: Tranquility (Build: 1130687) to Singularity (Build: 1130803) | Hoboleaks">
+	<meta name="description" content="Generated @ 2017-03-23 18:22:09 EVE Time">
 	<meta charset="UTF-8">
 	<style>
 		table {
@@ -65,12 +65,17 @@
 		summary.bigsum {
 			font-family: arial, tahoma, sans-serif;
 			font-size: 15pt;
-		}
+		}		
 
 		summary.bigsum_disabled {
 			font-family: arial, tahoma, sans-serif;
 			color: #9E9E9E;
 			font-size: 15pt;
+		}
+		
+		summary.smallsum {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 10pt;
 		}
 		
 		p.scriptnotify {
@@ -91,15 +96,71 @@
 			font-size: 5pt;
 		}
 		
+		div.simplebox {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 10pt;
+			padding: 5px;
+			margin: 2px;
+			border-left-style: dotted;
+		}
+		
 		ul {
 			padding-left:20px;
 		}
+		
+		div.footer {
+		   position: fixed;
+		   bottom: 20px;
+		   height: 20px;
+		   width: 20px;
+		   border-style: none;
+		}
+		
+		div.footer1 {
+		   left: 20px;
+		}
+		
+		div.footer2 {
+		   right: 20px;
+		   visibility: hidden;
+		}
+		
+		div.footer:hover {
+			border-style: dotted;
+			border-color: #F2F2F2;
+		}
+
+		/* IE 6 */
+		* html #footer {
+		   position:absolute;
+		   top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
+		}
 	</style>
+	<script type="text/javascript">
+	    function selectText(containerid, hasWaited) {
+			hasWaited = hasWaited || false
+			if (hasWaited == false) {
+				window.setTimeout(function(){selectText(containerid, true)}, 50); /* I'm sure I'm in the wrong here somehow and not Chrome, but this is how we're fixing it soooooooo yeah. */
+				return
+			}
+			var node = document.getElementById(containerid);
+			if (document.selection) {
+				var range = document.body.createTextRange();
+				range.moveToElementText(node);
+				range.select();
+			} else if (window.getSelection) {
+				var range = document.createRange();
+				range.selectNodeContents(node);
+				window.getSelection().removeAllRanges();
+				window.getSelection().addRange(range);
+			}
+		}
+	</script>
 </head>
 <body>
-<h1>Comparing Tranquility (Build: 1130153) to Singularity (Build: 1129961)</h1>
+<h1>Comparing Tranquility (Build: 1130687) to Singularity (Build: 1130803)</h1>
 <!-- <iframe id="timer" src="timerSection.html?version=1&timer=1489606234.803" style="border:none;" height="40px" width="800px"> </iframe> -->
-<p class="mini">Generated @ 2017-03-22 05:37:50 EVE Time (UTC)</p>
+<p class="mini">Generated @ 2017-03-23 18:22:09 EVE Time (UTC)</p>
 <noscript>
 	<nobr>
 		<p class="scriptnotify" style="display:inline;">You've disabled javascript. This made the menu so sad that it self-destructed. I hope you're happy now.</p>
@@ -313,11 +374,17 @@
 	
 	</table>
 </details>
-
+<script>
+	function test123() {
+		document.getElementById("footer1").style.display = "none";
+		document.getElementById("footer2").style.visibility = "visible";
+		document.getElementById("footer2").onclick = function() {document.location = "http://i.imgur.com/3Kd6ruW.jpg"}
+	}
+</script>
 <!--<h2 id="changedfiles">Changed Files</h2>-->
 
 <details id="changedfiles">
-	<summary class="bigsum">Changed Files (63 Entries)</summary>
+	<summary class="bigsum">Changed Files (66 Entries)</summary>
 	<table>
 	  <tr>
 		<th>File Name</th>
@@ -350,7 +417,7 @@
 		<td>180 -> 181</td>
 	</tr>
 	<tr>
-		<td><a href="https://binaries.eveonline.com/1a/1a48a0969136daa1_c745f70da0fd523b2d53683051fccdf9">manifest.dat</a><br></td>
+		<td><a href="https://binaries.eveonline.com/1a/1a48a0969136daa1_c8afabaac0598eb7e543663986e85f52">manifest.dat</a><br></td>
 		<td>13 -> 13</td>
 	</tr>
 	<tr>
@@ -374,12 +441,20 @@
 		<td>195 -> 195</td>
 	</tr>
 	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/4b/4ba32af50b80bf9a_b7f5f98062ec8618b8d39586bd9ed21e">audio/soundbanksinfo.xml</a><br></td>
+		<td>3171 -> 3179</td>
+	</tr>
+	<tr>
 		<td><a href="http://res.eveprobe.ccpgames.com/f7/f781e479bccfd00e_5be5acac3ab69ee781deca0dea719755">localizationfsd/localization_fsd_de.pickle</a><br></td>
 		<td>12537 -> 12538</td>
 	</tr>
 	<tr>
 		<td><a href="https://binaries.eveonline.com/c5/c56a4712b94261f4_fa1b5d9d8109863511a009669e38b20a">bin/_videoplayer.dll</a><br></td>
 		<td>1801 -> 1801</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/ee/ee8be85f1266bec3_4c5d65eecdfe44e3c5c48fcdd11c9c2e">audio/interface.bnk</a><br></td>
+		<td>8618 -> 8622</td>
 	</tr>
 	<tr>
 		<td><a href="http://res.eveprobe.ccpgames.com/cb/cb291acd32af7f27_503f7e39514a5e05f18c88296acaadc5">staticdata/skins.static</a><br></td>
@@ -398,11 +473,11 @@
 		<td>10 -> 10</td>
 	</tr>
 	<tr>
-		<td><a href="https://binaries.eveonline.com/1d/1d34143a37d4b739_3759caf309ee2f91068addb8e7be6b1c">resfileindex.txt</a><br></td>
+		<td><a href="https://binaries.eveonline.com/1d/1d34143a37d4b739_e3a6d898297bd71ebd36ea5191a8212f">resfileindex.txt</a><br></td>
 		<td>11435 -> 11434</td>
 	</tr>
 	<tr>
-		<td><a href="https://binaries.eveonline.com/f0/f032ac16b88d97a4_5dd17370be288cececfb9e7655b62497">code.ccp</a><br></td>
+		<td><a href="https://binaries.eveonline.com/f0/f032ac16b88d97a4_308ad866f70a47943aafdc68018c1444">code.ccp</a><br></td>
 		<td>16553 -> 16555</td>
 	</tr>
 	<tr>
@@ -452,6 +527,10 @@
 	<tr>
 		<td><a href="http://res.eveprobe.ccpgames.com/67/671695e3a499baf0_ee0180687f3c5bdbc46f0183e00a865c">staticdata/evetypes.static</a><br></td>
 		<td>12382 -> 12382</td>
+	</tr>
+	<tr>
+		<td><a href="http://res.eveprobe.ccpgames.com/7c/7c53cc05a063880a_39b8593999dfc134f99c96ac5bd15efe">audio/init.bnk</a><br></td>
+		<td>12 -> 11</td>
 	</tr>
 	<tr>
 		<td><a href="http://res.eveprobe.ccpgames.com/93/93f4e110bfdf1ece_2d8e29051b8854bef3a5927ad363736f">localization/localization_zh.pickle</a><br></td>
@@ -514,11 +593,11 @@
 		<td>5622 -> 5617</td>
 	</tr>
 	<tr>
-		<td><a href="https://binaries.eveonline.com/e3/e3cd8a97159e6321_72176dec72e4cc4d0672bf59636e1635">start.ini</a><br></td>
+		<td><a href="https://binaries.eveonline.com/e3/e3cd8a97159e6321_2d69821a686805368ba3624a69e4f3b2">start.ini</a><br></td>
 		<td>0 -> 0</td>
 	</tr>
 	<tr>
-		<td><a href="https://binaries.eveonline.com/aa/aa0b8b0323d24f50_b6fbd193e2dae6eeeabb7349f484d9b4">bulkdata/metadata.yaml</a><br></td>
+		<td><a href="https://binaries.eveonline.com/aa/aa0b8b0323d24f50_218fe61b337da87b136f7f34f048ef8c">bulkdata/metadata.yaml</a><br></td>
 		<td>0 -> 0</td>
 	</tr>
 	<tr>
@@ -590,5 +669,7 @@
 
 <p class="mini2">Made by Inomares. I don't want your donations. I don't read EVE mails. Leave me alone.</p>
 <p class="mini3">I guess contact me on <a href="https://tweetfleet.slack.com/messages/@inomares/">Tweetfleet Slack</a> if you really need to.</p>
+<div class="footer1 footer" id="footer1" onClick="test123();"></div>
+<div class="footer2 footer" id="footer2"></div>
 </body>
 </html>
