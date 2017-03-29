@@ -3,14 +3,14 @@
 <head>
 	<title>Hoboleaks: Tranquility (Build: 1130687) to Singularity (Build: 1132503)</title>
 	<meta name="title" content="Client Comparison: Tranquility (Build: 1130687) to Singularity (Build: 1132503) | Hoboleaks">
-	<meta name="description" content="Generated @ 2017-03-29 09:05:10 EVE Time">
+	<meta name="description" content="Generated @ 2017-03-29 12:50:24 EVE Time">
 	
 	<meta name="og:title" content="Hoboleaks: Tranquility (Build: 1130687) -> Singularity (Build: 1132503)">
-	<meta name="og:description" content="Generated @ 2017-03-29 09:05:10 EVE Time">
+	<meta name="og:description" content="Generated @ 2017-03-29 12:50:24 EVE Time">
 	<meta name="og:image" content="http://hoboleaks.space/sitepreview.png">
 	
 	<meta name="twitter:title" content="Hoboleaks: Tranquility (Build: 1130687) -> Singularity (Build: 1132503)">
-	<meta name="twitter:description" content="Generated @ 2017-03-29 09:05:10 EVE Time">
+	<meta name="twitter:description" content="Generated @ 2017-03-29 12:50:24 EVE Time">
 	<meta name="twitter:image" content="http://hoboleaks.space/sitepreview.png">
 	<meta charset="UTF-8">
 	<style>
@@ -153,6 +153,8 @@
 		}
 	</style>
 	<script type="text/javascript">
+		genTime = "gen" + 1490791825.0
+	
 	    function selectText(containerid, hasWaited) {
 			hasWaited = hasWaited || false
 			if (hasWaited == false) {
@@ -172,17 +174,27 @@
 			}
 		}
 		
-		
 		function hasClass(node, className) {
 			return (node.className && node.className.indexOf(className) != -1)
 		}
 		
 		function getHashValues() {
 			hashValues = window.location.hash.slice(1).split(",")
+			if (!isHashValid(hashValues)) {
+				console.log("Hash is invalid.")
+				return [genTime]
+			}
 			if (hashValues.length == 1 && hashValues[0] == "") {
-				return [] /* ugh */
+				return [genTime]
 			}
 			return hashValues
+		}
+		
+		function isHashValid(hashValues) {
+			if (hashValues[0] == genTime) {
+				return true
+			}
+			return false
 		}
 		
 		function hashHasID(nodeID) {
@@ -251,12 +263,7 @@
 			else {
 				hashValues.splice(idPos, 1)
 			}
-			if (hashValues.length == 0) {
-				window.location.hash = "-1"
-			}
-			else {
-				window.location.hash = hashValues.join()
-			}
+			window.location.hash = hashValues.join()
 		}
 		
 		function getSelectableNode(node) {
@@ -298,7 +305,7 @@
 <body>
 <h1>Comparing Tranquility (Build: 1130687) to Singularity (Build: 1132503)</h1>
 <!-- <iframe id="timer" src="timerSection.html?version=1&timer=1489606234.803" style="border:none;" height="40px" width="800px"> </iframe> -->
-<p class="mini">Generated @ 2017-03-29 09:05:10 EVE Time (UTC)</p>
+<p class="mini">Generated @ 2017-03-29 12:50:24 EVE Time (UTC)</p>
 <noscript>
 	<nobr>
 		<p class="scriptnotify" style="display:inline;">You've disabled javascript. This made the menu so sad that it self-destructed. I hope you're happy now.</p>
@@ -316,7 +323,7 @@
 <!--<h2 id="items">Items</h2>-->
 
 <details id="newitems">
-	<summary class="bigsum_disabled" onclick="return false selectParent">New Items (0 Entries)</summary>
+	<summary class="selectParent bigsum_disabled" onclick="return false">New Items (0 Entries)</summary>
 	<table>
 	
 	  <tr>
@@ -331,7 +338,7 @@
 </details>
 
 <details id="removeditems">
-	<summary class="bigsum_disabled" onclick="return false">Removed Items (0 Entries)</summary>
+	<summary class="selectParent bigsum_disabled" onclick="return false">Removed Items (0 Entries)</summary>
 	<table>
 	  <tr>
 		<th>Name</th>
@@ -344,7 +351,7 @@
 </details>
 
 <details id="changedblueprints">
-	<summary class="bigsum_disabled" onclick="return false selectParent">Changed Blueprints BETA (0 Entries)</summary>
+	<summary class="selectParent bigsum_disabled" onclick="return false">Changed Blueprints BETA (0 Entries)</summary>
 	<table>
 	  <tr>
 		<th>Blueprint Name</th>
@@ -359,7 +366,7 @@
 <br>
 
 <details id="bonuschanges">
-	<summary class="bigsum_disabled" onclick="return false selectParent">Changed Traits (0 Entries)</summary>
+	<summary class="selectParent bigsum_disabled" onclick="return false">Changed Traits (0 Entries)</summary>
 	<table>
 	  <tr>
 		<th>TypeID, Group, & Name</th>
@@ -375,7 +382,7 @@
 <!--<h2 id="attributes">Attributes</h2>-->
 
 <details id="dgmattribs">
-	<summary class="bigsum_disabled" onclick="return false selectParent">Changes to Attributes (0 Entries)</summary>
+	<summary class="selectParent bigsum_disabled" onclick="return false">Changes to Attributes (0 Entries)</summary>
 	<table>
 	  <tr>
 		<th>Attribute Name</th>
@@ -388,7 +395,7 @@
 </details>
 
 <details id="typeattribs">
-	<summary class="bigsum_disabled" onclick="return false selectParent">Attribute Changes per Type (0 Entries)</summary>
+	<summary class="selectParent bigsum_disabled" onclick="return false">Attribute Changes per Type (0 Entries)</summary>
 	<table>
 	  <tr>
 		<th>TypeID, Name, and Group</th>
@@ -405,7 +412,7 @@
 <!--<h2 id="effectchanges">Effect Changes</h2>-->
 
 <details id="dgmeffects">
-	<summary class="bigsum_disabled" onclick="return false selectParent">Changes to Effects (0 Entries)</summary>
+	<summary class="selectParent bigsum_disabled" onclick="return false">Changes to Effects (0 Entries)</summary>
 	<table>
 	  <tr>
 		<th>Effect Name</th>
@@ -418,7 +425,7 @@
 </details>
 
 <details id="typeeffects">
-	<summary class="bigsum_disabled" onclick="return false selectParent">Effect Changes per Type (0 Entries)</summary>
+	<summary class="selectParent bigsum_disabled" onclick="return false">Effect Changes per Type (0 Entries)</summary>
 	<table>
 	  <tr>
 		<th>TypeID, Name, and Group</th>
@@ -435,7 +442,7 @@
 <!--<h2 id="stringchanges">String Changes</h2>-->
 
 <details id="stringchanges">
-	<summary class="bigsum selectParent">String Changes (5 Entries)</summary>
+	<summary class="selectParent bigsum">String Changes (5 Entries)</summary>
 	<table>
 	  <tr>
 		<th>Key</th>
@@ -498,7 +505,7 @@
 	}
 </script>
 <details id="newfiles">
-	<summary class="bigsum_disabled" onclick="return false selectParent">New Files (0 Entries)</summary>
+	<summary class="selectParent bigsum_disabled" onclick="return false">New Files (0 Entries)</summary>
 	<table>
 	  <tr>
 		<th>File Name</th>
@@ -519,7 +526,7 @@
 <!--<h2 id="changedfiles">Changed Files</h2>-->
 
 <details id="changedfiles">
-	<summary class="bigsum selectParent">Changed Files (74 Entries)</summary>
+	<summary class="selectParent bigsum">Changed Files (74 Entries)</summary>
 	<table>
 	  <tr>
 		<th>File Name</th>
