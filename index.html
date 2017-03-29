@@ -3,14 +3,14 @@
 <head>
 	<title>Hoboleaks: Tranquility (Build: 1130687) to Singularity (Build: 1132503)</title>
 	<meta name="title" content="Client Comparison: Tranquility (Build: 1130687) to Singularity (Build: 1132503) | Hoboleaks">
-	<meta name="description" content="Generated @ 2017-03-28 18:21:43 EVE Time">
+	<meta name="description" content="Generated @ 2017-03-29 09:05:10 EVE Time">
 	
 	<meta name="og:title" content="Hoboleaks: Tranquility (Build: 1130687) -> Singularity (Build: 1132503)">
-	<meta name="og:description" content="Generated @ 2017-03-28 18:21:43 EVE Time">
+	<meta name="og:description" content="Generated @ 2017-03-29 09:05:10 EVE Time">
 	<meta name="og:image" content="http://hoboleaks.space/sitepreview.png">
 	
 	<meta name="twitter:title" content="Hoboleaks: Tranquility (Build: 1130687) -> Singularity (Build: 1132503)">
-	<meta name="twitter:description" content="Generated @ 2017-03-28 18:21:43 EVE Time">
+	<meta name="twitter:description" content="Generated @ 2017-03-29 09:05:10 EVE Time">
 	<meta name="twitter:image" content="http://hoboleaks.space/sitepreview.png">
 	<meta charset="UTF-8">
 	<style>
@@ -137,6 +137,14 @@
 			border-style: dotted;
 			border-color: #F2F2F2;
 		}
+		
+		.selected {
+			background-color: #C4F0FF;
+		}
+		
+		tr.selected:nth-child(even) {
+			background-color: #C4F0FF;
+		}
 
 		/* IE 6 */
 		* html #footer {
@@ -163,12 +171,134 @@
 				window.getSelection().addRange(range);
 			}
 		}
+		
+		
+		function hasClass(node, className) {
+			return (node.className && node.className.indexOf(className) != -1)
+		}
+		
+		function getHashValues() {
+			hashValues = window.location.hash.slice(1).split(",")
+			if (hashValues.length == 1 && hashValues[0] == "") {
+				return [] /* ugh */
+			}
+			return hashValues
+		}
+		
+		function hashHasID(nodeID) {
+			hashValues = getHashValues()
+			idPos = hashValues.indexOf(nodeID)
+			ret = (idPos != -1)
+			return 
+		}
+		
+		function updateSelectablesFromHash() {
+			hashValues = getHashValues()
+			oldSelected = document.getElementsByClassName("selected")
+			for (var i=oldSelected.length-1; i >= 0; i--) {
+				node = oldSelected[i]
+				if (!hashHasID(getNodeID(node))) {
+					deselectNode(node)
+				}
+			}
+			for (var i=0; i < hashValues.length; i++) {
+				currentID = hashValues[i]
+				idName = "cid-" + currentID
+				node = document.getElementById(idName)
+				if (node != null) {
+					selectNode(node)
+					updateInheritance(node)
+				}					
+			}
+		}
+		
+		function updateInheritance(node, isDetail) {
+			isDetail = isDetail || false
+			if (node == null || node.tagName == "BODY") {
+				return
+			}
+			if (hasClass(node, "selectParent")) {
+				node.classList.add("selected")
+			}
+			if (node.tagName == "DETAILS") {
+				updateInheritance(node.firstElementChild, true)
+			}
+			if (!isDetail) {
+				return updateInheritance(node.parentNode)
+			}
+		}
+		
+		function selectNode(node) {
+			node.classList.add("selected")
+		}
+		
+		function deselectNode(node) {
+			node.classList.remove("selected")
+		}
+		
+		function getNodeID(node) {
+			nodeID = node.id.slice(4)
+			return nodeID
+		}
+		
+		function toggleNodeHash(node) {
+			nodeID = node.id.slice(4)
+			hashValues = getHashValues()
+			idPos = hashValues.indexOf(nodeID)
+			if (idPos == -1) {
+				hashValues.push(nodeID)
+			}
+			else {
+				hashValues.splice(idPos, 1)
+			}
+			if (hashValues.length == 0) {
+				window.location.hash = "-1"
+			}
+			else {
+				window.location.hash = hashValues.join()
+			}
+		}
+		
+		function getSelectableNode(node) {
+		/* We recursively iterate our way up the tree to see if any part of it is selectable. */
+			if (node == null) {
+				return null
+			}
+			if (hasClass(node, "selectable")) {
+				return node
+			}
+			return getSelectableNode(node.parentNode)			
+		}
+		
+		window.onhashchange = function() {
+			updateSelectablesFromHash()
+		}
+		
+		window.onload = function() {
+			document.body.onclick = function(e){
+				if (!e.altKey) {
+					return
+				}
+				if (window.event) {
+					clickedNode = event.srcElement;
+				}
+				else {
+					clickedNode = e.target
+				}
+				selectableNode = getSelectableNode(clickedNode)
+				if (selectableNode != null) {
+					toggleNodeHash(selectableNode)
+					return false
+				}
+			}
+			updateSelectablesFromHash()
+		}
 	</script>
 </head>
 <body>
 <h1>Comparing Tranquility (Build: 1130687) to Singularity (Build: 1132503)</h1>
 <!-- <iframe id="timer" src="timerSection.html?version=1&timer=1489606234.803" style="border:none;" height="40px" width="800px"> </iframe> -->
-<p class="mini">Generated @ 2017-03-28 18:21:43 EVE Time (UTC)</p>
+<p class="mini">Generated @ 2017-03-29 09:05:10 EVE Time (UTC)</p>
 <noscript>
 	<nobr>
 		<p class="scriptnotify" style="display:inline;">You've disabled javascript. This made the menu so sad that it self-destructed. I hope you're happy now.</p>
@@ -186,8 +316,9 @@
 <!--<h2 id="items">Items</h2>-->
 
 <details id="newitems">
-	<summary class="bigsum_disabled" onclick="return false">New Items (0 Entries)</summary>
+	<summary class="bigsum_disabled" onclick="return false selectParent">New Items (0 Entries)</summary>
 	<table>
+	
 	  <tr>
 		<!--<th>[[title4]]</th>-->
 		<th>TypeID & Name</th>
@@ -213,7 +344,7 @@
 </details>
 
 <details id="changedblueprints">
-	<summary class="bigsum_disabled" onclick="return false">Changed Blueprints BETA (0 Entries)</summary>
+	<summary class="bigsum_disabled" onclick="return false selectParent">Changed Blueprints BETA (0 Entries)</summary>
 	<table>
 	  <tr>
 		<th>Blueprint Name</th>
@@ -228,7 +359,7 @@
 <br>
 
 <details id="bonuschanges">
-	<summary class="bigsum_disabled" onclick="return false">Changed Traits (0 Entries)</summary>
+	<summary class="bigsum_disabled" onclick="return false selectParent">Changed Traits (0 Entries)</summary>
 	<table>
 	  <tr>
 		<th>TypeID, Group, & Name</th>
@@ -244,7 +375,7 @@
 <!--<h2 id="attributes">Attributes</h2>-->
 
 <details id="dgmattribs">
-	<summary class="bigsum_disabled" onclick="return false">Changes to Attributes (0 Entries)</summary>
+	<summary class="bigsum_disabled" onclick="return false selectParent">Changes to Attributes (0 Entries)</summary>
 	<table>
 	  <tr>
 		<th>Attribute Name</th>
@@ -257,7 +388,7 @@
 </details>
 
 <details id="typeattribs">
-	<summary class="bigsum_disabled" onclick="return false">Attribute Changes per Type (0 Entries)</summary>
+	<summary class="bigsum_disabled" onclick="return false selectParent">Attribute Changes per Type (0 Entries)</summary>
 	<table>
 	  <tr>
 		<th>TypeID, Name, and Group</th>
@@ -274,7 +405,7 @@
 <!--<h2 id="effectchanges">Effect Changes</h2>-->
 
 <details id="dgmeffects">
-	<summary class="bigsum_disabled" onclick="return false">Changes to Effects (0 Entries)</summary>
+	<summary class="bigsum_disabled" onclick="return false selectParent">Changes to Effects (0 Entries)</summary>
 	<table>
 	  <tr>
 		<th>Effect Name</th>
@@ -287,7 +418,7 @@
 </details>
 
 <details id="typeeffects">
-	<summary class="bigsum_disabled" onclick="return false">Effect Changes per Type (0 Entries)</summary>
+	<summary class="bigsum_disabled" onclick="return false selectParent">Effect Changes per Type (0 Entries)</summary>
 	<table>
 	  <tr>
 		<th>TypeID, Name, and Group</th>
@@ -304,7 +435,7 @@
 <!--<h2 id="stringchanges">String Changes</h2>-->
 
 <details id="stringchanges">
-	<summary class="bigsum">String Changes (5 Entries)</summary>
+	<summary class="bigsum selectParent">String Changes (5 Entries)</summary>
 	<table>
 	  <tr>
 		<th>Key</th>
@@ -313,35 +444,35 @@
 		<th>Diff</th>
 		<th>Notes</th>
 	  </tr>
-	<tr class="unimportant">
+	<tr class="unimportant selectable" id="cid-1">
 		<td>298186</td>
 		<td width="355px">Sentinel</td>
 		<td width="355px">Heavy</td>
 		<td><del style="background:#ffe6e6;">Sentinel</del><ins style="background:#e6ffe6;">Heavy</ins></td>
 		<td class="mini"></td>
 	</tr>
-	<tr class="">
+	<tr class="selectable" id="cid-2">
 		<td>525411</td>
 		<td width="355px"></td>
 		<td width="355px">Are you sure you would like to delete the {filterName} filter?</td>
 		<td><ins style="background:#e6ffe6;">Are you sure you would like to delete the {filterName} filter?</ins></td>
 		<td class="mini"></td>
 	</tr>
-	<tr class="">
+	<tr class="selectable" id="cid-3">
 		<td>525412</td>
 		<td width="355px"></td>
 		<td width="355px">Delete filter?</td>
 		<td><ins style="background:#e6ffe6;">Delete filter?</ins></td>
 		<td class="mini"></td>
 	</tr>
-	<tr class="">
+	<tr class="selectable" id="cid-4">
 		<td>525413</td>
 		<td width="355px"></td>
 		<td width="355px">Are you sure you want to delete the {formationName} formation?</td>
 		<td><ins style="background:#e6ffe6;">Are you sure you want to delete the {formationName} formation?</ins></td>
 		<td class="mini"></td>
 	</tr>
-	<tr class="">
+	<tr class="selectable" id="cid-5">
 		<td>525414</td>
 		<td width="355px"></td>
 		<td width="355px">Delete formation?</td>
@@ -367,7 +498,7 @@
 	}
 </script>
 <details id="newfiles">
-	<summary class="bigsum_disabled" onclick="return false">New Files (0 Entries)</summary>
+	<summary class="bigsum_disabled" onclick="return false selectParent">New Files (0 Entries)</summary>
 	<table>
 	  <tr>
 		<th>File Name</th>
@@ -388,7 +519,7 @@
 <!--<h2 id="changedfiles">Changed Files</h2>-->
 
 <details id="changedfiles">
-	<summary class="bigsum">Changed Files (74 Entries)</summary>
+	<summary class="bigsum selectParent">Changed Files (74 Entries)</summary>
 	<table>
 	  <tr>
 		<th>File Name</th>
@@ -396,299 +527,299 @@
 		<th>[[title2]]</th>-->
 		<th>Size in kb (Decompressed)</th>
 	  </tr>
-	<tr>
+	<tr class="selectable" id="cid-6">
 		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/61/61e4f3091016e61b_df18e8948cef6a9fa05704dbb79db49d">staticdata/fighterabilitiesbytype.static</a><br></td>
 		<td>14 -> 14</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-7">
 		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/76/76866e7375d7765c_b81af6a06be855a2fa8a91b5ed6302f1">bin/_vivox.dll</a><br></td>
 		<td>107 -> 107</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-8">
 		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/e9/e987101714026334_5df06f0c21d395677563efb8a4efe04e">graphics/character/male/paperdoll/hair/headwear_beret_m01/types/headwear_beret_gallentem01.type</a><br></td>
 		<td>0 -> 0</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-9">
 		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/48/48fbd7325768203a_9e071a3b9cadece943dde8b5f98166f3">graphics/character/male/paperdoll/hair/headwear_beret_m01/types/headwear_beret_caldarim01.type</a><br></td>
 		<td>0 -> 0</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-10">
 		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/f0/f016514b481ba503_cc78619056301b242e43d6c7443da44b">staticdata/blueprints.static</a><br></td>
 		<td>4333 -> 4333</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-11">
 		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/d5/d5dab9df889d46cd_aa9adb9b292220cc784b485e0804dfe2">bin/pyFSD.dll</a><br></td>
 		<td>787 -> 788</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-12">
 		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/e9/e9bad7ecd80e0d2c_4c15faa3750b47bd5ba99e57fd91c1c6">staticdata/dialogs.static</a><br></td>
 		<td>270 -> 270</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-13">
 		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/37/37f1ff3feeb6e7a7_ea20e7133605ffe9a621870e5edfd4a4">bin/_PlanetResources.dll</a><br></td>
 		<td>180 -> 181</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-14">
 		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/1a/1a48a0969136daa1_92218d88ff462150e69fe4d2c51cc9df">manifest.dat</a><br></td>
 		<td>13 -> 13</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-15">
 		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/67/67a0de55b44678f7_c8ed085f280c60c9c3fe115f1e05fb3f">localization/localization_de.pickle</a><br></td>
 		<td>12896 -> 12896</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-16">
 		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/26/26abe7dc325e393d_71e60bc5c62d9f10a4f05bad128784d5">localization/localization_it.pickle</a><br></td>
 		<td>798 -> 797</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-17">
 		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/d6/d650a8ea71b2f13c_0f09d89bddaa71bcdcbcfc233f6f37e4">staticdata/clonegrades.static</a><br></td>
 		<td>20 -> 20</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-18">
 		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/04/04fe8caf2896e754_ba0eadfdc17b8cefac482f09a1090a9f">staticdata/skinmaterials.static</a><br></td>
 		<td>22 -> 22</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-19">
 		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/79/793eabc55b8f7528_30d90374d8591fefa4d8072805f440eb">bin/geo2.dll</a><br></td>
 		<td>195 -> 195</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-20">
 		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/4b/4ba32af50b80bf9a_137cac711fbe585bba195ab1575e375f">audio/soundbanksinfo.xml</a><br></td>
 		<td>3171 -> 3171</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-21">
 		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/f7/f781e479bccfd00e_5be5acac3ab69ee781deca0dea719755">localizationfsd/localization_fsd_de.pickle</a><br></td>
 		<td>12537 -> 12538</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-22">
 		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/c5/c56a4712b94261f4_fa1b5d9d8109863511a009669e38b20a">bin/_videoplayer.dll</a><br></td>
 		<td>1801 -> 1801</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-23">
 		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/ee/ee8be85f1266bec3_532b02cffbb36d13c03d77f2fbc3eb77">audio/interface.bnk</a><br></td>
 		<td>8618 -> 8617</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-24">
 		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/cb/cb291acd32af7f27_503f7e39514a5e05f18c88296acaadc5">staticdata/skins.static</a><br></td>
 		<td>1399 -> 1399</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-25">
 		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/4c/4c56e191aaa0e618_ca220589e91ff8ef38becf388dea21fb">localizationfsd/localization_fsd_ru.pickle</a><br></td>
 		<td>44999 -> 45000</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-26">
 		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/08/081c4b2e8ee17ae8_c64f61e681f2b2992401da376292900d">localization/localization_fr.pickle</a><br></td>
 		<td>13474 -> 13474</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-27">
 		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/9a/9adf983d033ba1a3_df9de0a12e75e75a1bb8cb26f4598799">staticdata/evecategories.static</a><br></td>
 		<td>10 -> 10</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-28">
 		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/1d/1d34143a37d4b739_92c515a60ebfb4dd53f2c0518698dcc8">resfileindex.txt</a><br></td>
 		<td>11435 -> 11434</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-29">
 		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/f0/f032ac16b88d97a4_753571858d1ce56a016802c9ff83c9a1">code.ccp</a><br></td>
 		<td>16553 -> 16555</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-30">
 		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/73/73f77e0422aa3676_90017a3280d8056289091268a887d9db">graphics/character/female/paperdoll/hair/headwear_beret_f01/types/headwear_beret_amarrf01.type</a><br></td>
 		<td>0 -> 0</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-31">
 		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/fa/faf9702f957c2401_a5abd01fcd9b3cb6dff77526ac083bc1">localization/localization_ru.pickle</a><br></td>
 		<td>17873 -> 17872</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-32">
 		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/34/34cee7939079398b_2e76aab6af0665fff2f28b72c15b13fb">bin/_trinity_dx9_deploy.dll</a><br></td>
 		<td>14130 -> 14131</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-33">
 		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/b7/b7d347d34259b521_eff6fd237d736940fd8ca5175296deee">bin/_ime.dll</a><br></td>
 		<td>68 -> 68</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-34">
 		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/c5/c57ec45bccb817c6_b0a8ae9de7c0f5d2b789165767bff34e">localization/localization_en-us.pickle</a><br></td>
 		<td>11857 -> 11857</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-35">
 		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/dd/ddec335c5166e1ce_825175968bdc3f260990de2de6fd8e39">staticdata/skinlicenses.static</a><br></td>
 		<td>1078 -> 1078</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-36">
 		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/4a/4a2d3f8fdea01bca_5d3114be02c7422ddbbf09edf02b9216">staticdata/fighterabilities.static</a><br></td>
 		<td>13 -> 13</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-37">
 		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/92/9299cb77f6cae635_6e61c98ebf535519b0618767451668ac">staticdata/industry_activity_target_filters.static</a><br></td>
 		<td>8 -> 8</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-38">
 		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/8f/8fc0107a8acdb92c_77ee4d9aba5b368cb7b1940a7cadb857">bin/python27.dll</a><br></td>
 		<td>3881 -> 3881</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-39">
 		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/48/484283789a4b08cf_f620046a5a7f69bf90a9441f7267de7d">bin/unicodedata.pyd</a><br></td>
 		<td>690 -> 690</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-40">
 		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/56/5610a6eb8b5a4975_3740b7257165de748194104a4a913b70">resfileindex_prefetch.txt</a><br></td>
 		<td>1116 -> 1115</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-41">
 		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/67/671695e3a499baf0_ee0180687f3c5bdbc46f0183e00a865c">staticdata/evetypes.static</a><br></td>
 		<td>12382 -> 12382</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-42">
 		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/93/93f4e110bfdf1ece_2d8e29051b8854bef3a5927ad363736f">localization/localization_zh.pickle</a><br></td>
 		<td>10571 -> 10561</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-43">
 		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/8d/8d0a225a112080f4_431a7b04c11fc10cc6f31882e3d6c454">staticdata/industry_activity_modifier_sources.static</a><br></td>
 		<td>25 -> 25</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-44">
 		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/6b/6bded8290003eb11_83f4aab458f12ad66d99f9214a42b52d">eve.exe</a><br></td>
 		<td>548 -> 548</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-45">
 		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/f0/f0eab0ecb51e058b_f75c230fb57fdd7fbbcb4dd0c5d798a6">bin/pyexpat.pyd</a><br></td>
 		<td>130 -> 130</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-46">
 		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/dc/dcd6270db3137cce_88d10d629fb37e0081501b015433ae81">graphics/character/female/paperdoll/hair/headwear_beret_f01/types/headwear_beret_minmatarf01.type</a><br></td>
 		<td>0 -> 0</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-47">
 		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/ed/ed941bbe3dcdb8c8_990d77dfb17b7c270737174653322cff">bin/_yaml.pyd</a><br></td>
 		<td>205 -> 205</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-48">
 		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/23/232ed1ecf0fed41d_e4ca9af70172ae9bcad2fa7621adcdb1">localization/localization_ja.pickle</a><br></td>
 		<td>14754 -> 14754</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-49">
 		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/08/086c8ddb05e6679b_c511993d7dff00296b9dfe6283421aad">bin/exefile.exe</a><br></td>
 		<td>545 -> 545</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-50">
 		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/7c/7cd3782fa5f1d4e4_d4d71e46ba2755bb787396d01f5d2a9d">localization/localization_es.pickle</a><br></td>
 		<td>848 -> 848</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-51">
 		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/51/51cb9f873d3d4f0b_9d3d2a14f40f399766e58dd40c918dd3">graphics/character/male/paperdoll/hair/headwear_beret_m01/types/headwear_beret_minmatarm01.type</a><br></td>
 		<td>0 -> 0</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-52">
 		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/ba/ba1aa4f3fb71b2da_26633748fe3a88d5bc37cba8df0eb794">bin/_trinity_dx11_deploy.dll</a><br></td>
 		<td>14234 -> 14233</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-53">
 		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/31/3180e648a99b3387_1da0ff308d735bf0409ebbab32f7cdf1">bin/blue.dll</a><br></td>
 		<td>3761 -> 3760</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-54">
 		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/c8/c81c0edde7f7e627_9a1ccb557025c50f150bd1dec3b3ef77">graphics/character/female/paperdoll/hair/headwear_beret_f01/types/headwear_beret_caldarif01.type</a><br></td>
 		<td>0 -> 0</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-55">
 		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/9d/9dda27afa02a904b_7d611cd686f96d3accdab5be59908f5c">bin/_ctypes.pyd</a><br></td>
 		<td>82 -> 82</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-56">
 		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/b1/b1ba33e51fb68ec7_79319ce495790d5894bcda3c43cc9090">staticdata/crates.static</a><br></td>
 		<td>21 -> 21</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-57">
 		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/1e/1ef674def6229546_3d154b0bc646c2bba5746f80d0b3980c">bulkdata/version</a><br></td>
 		<td>0 -> 0</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-58">
 		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/fc/fc134c3dff273f7d_01a59116b576a233e0fd0a53a330e4e9">localization/localization_main.pickle</a><br></td>
 		<td>752 -> 752</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-59">
 		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/1a/1afa3f2b81f52348_eb97389082ed3905ed858b34f4d3bf81">staticdata/evetypelists.static</a><br></td>
 		<td>1 -> 1</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-60">
 		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/b4/b460d4ae7bbe2450_62ee04f7c7890e3878414a4e9fef3c24">bin/_GameWorld.dll</a><br></td>
 		<td>5622 -> 5617</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-61">
 		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/e3/e3cd8a97159e6321_f218280e507e35b7351f509b2ecc84c9">start.ini</a><br></td>
 		<td>0 -> 0</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-62">
 		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/aa/aa0b8b0323d24f50_369539a0876e158b28ace650a11c5892">bulkdata/metadata.yaml</a><br></td>
 		<td>0 -> 0</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-63">
 		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/65/65e034d4352498b5_151998f5d1aa859b55d28498be1ca56f">graphics/character/female/paperdoll/hair/headwear_beret_f01/types/headwear_beret_gallentef01.type</a><br></td>
 		<td>0 -> 0</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-64">
 		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/2c/2ccf7b5a121a1f06_647713e45b7c320d0b693d0515fa1141">bin/nvapi.pyd</a><br></td>
 		<td>726 -> 727</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-65">
 		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/ac/ac86c1a1cd1f5e83_a8d32e38724790ca5898b8134e629655">graphics/character/male/paperdoll/hair/headwear_beret_m01/types/headwear_beret_amarrm01.type</a><br></td>
 		<td>0 -> 0</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-66">
 		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/4a/4a0f5fe70b667169_652f872d24a5f00ea355c8ba57aa3e93">localizationfsd/localization_fsd_fr.pickle</a><br></td>
 		<td>12561 -> 12562</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-67">
 		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/a9/a93c4f04ac83ab10_9437d959da844d9723b707b2f36b0373">bin/_destiny.dll</a><br></td>
 		<td>693 -> 693</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-68">
 		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/2c/2c3038b3c38e91a1_27498022a6d733c0b9c2e60af6641bfb">localizationfsd/localization_fsd_en-us.pickle</a><br></td>
 		<td>11378 -> 11379</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-69">
 		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/db/dbf0a361f082816d_205e230c24f4f2c7b6eed0fad5b597b9">bin/db.dll</a><br></td>
 		<td>255 -> 255</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-70">
 		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/0f/0f69699dcd6744fb_371991f5acfcf1cdbd77e4f81d278861">bin/_ssl.pyd</a><br></td>
 		<td>992 -> 992</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-71">
 		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/c5/c5a6d4c28b97c1ab_8c87f4a63b1d6bdd02e15806918ffe35">bin/_twitch.dll</a><br></td>
 		<td>150 -> 150</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-72">
 		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/54/544c5f8e1b39050d_486f7bf9d2f4a6fa96259269763b237e">graphics/character/paperdollcache.pickle</a><br></td>
 		<td>3815 -> 3841</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-73">
 		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/0d/0da8395e8680d5c1_cc7592bdd6c4e26da8792eef6025ea44">bin/pyEvePathfinder.dll</a><br></td>
 		<td>674 -> 674</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-74">
 		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/0b/0b577d4609680827_dffa4e81a1c1f5285fd5ee300c1db594">staticdata/evegroups.static</a><br></td>
 		<td>387 -> 387</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-75">
 		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/96/960ceec6e6614863_df906f1f9e3f3118b167e7c1631a8bd8">bin/_evelocalization.dll</a><br></td>
 		<td>248 -> 249</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-76">
 		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/07/07df8a3489660b9e_93954b00c7760383448d955d4f6aab2c">staticdata/infobubbles.static</a><br></td>
 		<td>214 -> 214</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-77">
 		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/fd/fd64e5270a98c9d2_2beaa151c18f3388d7bbcfaf2cf7a65a">bin/_audio2.dll</a><br></td>
 		<td>1749 -> 1750</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-78">
 		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/f9/f9f241d8c3a11761_113f21d786a612fcb191d4c73039c493">staticdata/dbuffcollections.static</a><br></td>
 		<td>36 -> 36</td>
 	</tr>
-	<tr>
+	<tr class="selectable" id="cid-79">
 		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/bd/bda7724745ed6198_af5d8d4a7e88500649b94063c5828f07">bin/staticdata/mapObjects.db</a><br></td>
 		<td>35788 -> 35788</td>
 	</tr>
