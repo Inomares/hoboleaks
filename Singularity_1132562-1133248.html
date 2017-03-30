@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hoboleaks: Singularity_Previous (Build: 1132562) to Singularity_Next (Build: 1133248)</title>
+	<meta name="title" content="Client Comparison: Singularity_Previous (Build: 1132562) to Singularity_Next (Build: 1133248) | Hoboleaks">
+	<meta name="description" content="Generated @ 2017-03-30 15:16:37 EVE Time">
+	
+	<meta name="og:title" content="Hoboleaks: Singularity_Previous (Build: 1132562) -> Singularity_Next (Build: 1133248)">
+	<meta name="og:description" content="Generated @ 2017-03-30 15:16:37 EVE Time">
+	<meta name="og:image" content="http://hoboleaks.space/sitepreview.png">
+	
+	<meta name="twitter:title" content="Hoboleaks: Singularity_Previous (Build: 1132562) -> Singularity_Next (Build: 1133248)">
+	<meta name="twitter:description" content="Generated @ 2017-03-30 15:16:37 EVE Time">
+	<meta name="twitter:image" content="http://hoboleaks.space/sitepreview.png">
+	<meta charset="UTF-8">
+	<style>
+		table {
+			width:1280px;
+			font-family: arial, tahoma, sans-serif;
+			font-size: 10pt;
+			border-collapse: collapse;
+		}
+
+		td, th {
+			border: 1px solid black;
+			text-align: left;
+			padding: 8px;
+		}
+
+		tr:nth-child(even) {
+			background-color: #DBDBDB;
+		}
+		
+		tr.unimportant {
+			opacity: 0.4;
+			font-size: 8pt;
+		}
+
+		td.mini {
+			font-size: 8pt;
+		}
+
+		p.mini {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 8pt;
+		}
+		
+		p {
+			font-family: arial, tahoma, sans-serif;
+		}
+		
+		p.mini2 {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 5pt;
+		}
+		
+		p.mini3 {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 5pt;
+			color: gray;
+		}
+		
+		p.kindasmall {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 10pt;
+			margin: 5px 0px 5px 0px;
+		}
+
+		h1, h2, h3 {
+			font-family: arial, tahoma, sans-serif;
+		}
+
+		summary.bigsum {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 15pt;
+		}		
+
+		summary.bigsum_disabled {
+			font-family: arial, tahoma, sans-serif;
+			color: #9E9E9E;
+			font-size: 15pt;
+		}
+		
+		summary.smallsum {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 10pt;
+		}
+		
+		p.scriptnotify {
+			font-family: arial, tahoma, sans-serif;
+			color: red;
+			font-size: 12pt;
+		}
+		
+		p.scriptnotifysmall {
+			font-family: arial, tahoma, sans-serif;
+			color: red;
+			font-size: 9pt;
+		}
+		
+		p.scriptnotifysmaller {
+			font-family: arial, tahoma, sans-serif;
+			color: red;
+			font-size: 5pt;
+		}
+		
+		div.simplebox {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 10pt;
+			padding: 5px;
+			margin: 2px;
+			border-left-style: dotted;
+		}
+		
+		ul {
+			padding-left:20px;
+		}
+		
+		div.footer {
+		   position: fixed;
+		   bottom: 20px;
+		   height: 20px;
+		   width: 20px;
+		   border-style: none;
+		}
+		
+		div.footer1 {
+		   right: 20px;
+		}
+		
+		div.footer2 {
+		   left: 20px;
+		   visibility: hidden;
+		}
+		
+		div.footer:hover {
+			border-style: dotted;
+			border-color: #F2F2F2;
+		}
+		
+		.selected {
+			background-color: #C4F0FF;
+		}
+		
+		tr.selected:nth-child(even) {
+			background-color: #C4F0FF;
+		}
+
+		/* IE 6 */
+		* html #footer {
+		   position:absolute;
+		   top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
+		}
+	</style>
+	<script type="text/javascript">
+		genTime = "highlight" + 1490886997.0
+	
+	    function selectText(containerid, hasWaited) {
+			hasWaited = hasWaited || false
+			if (hasWaited == false) {
+				window.setTimeout(function(){selectText(containerid, true)}, 50); /* I'm sure I'm in the wrong here somehow and not Chrome, but this is how we're fixing it soooooooo yeah. */
+				return
+			}
+			var node = document.getElementById(containerid);
+			if (document.selection) {
+				var range = document.body.createTextRange();
+				range.moveToElementText(node);
+				range.select();
+			} else if (window.getSelection) {
+				var range = document.createRange();
+				range.selectNodeContents(node);
+				window.getSelection().removeAllRanges();
+				window.getSelection().addRange(range);
+			}
+		}
+		
+		function hasClass(node, className) {
+			return (node.className && node.className.indexOf(className) != -1)
+		}
+		
+		function getHashValues() {
+			hashValues = window.location.hash.slice(1).split(",")
+			if (!isHashValid(hashValues)) {
+				console.log("Hash is invalid.")
+				return [genTime]
+			}
+			if (hashValues.length == 1 && hashValues[0] == "") {
+				return [genTime]
+			}
+			return hashValues
+		}
+		
+		function isHashValid(hashValues) {
+			if (hashValues[0] == genTime) {
+				return true
+			}
+			return false
+		}
+		
+		function hashHasID(nodeID) {
+			hashValues = getHashValues()
+			idPos = hashValues.indexOf(nodeID)
+			ret = (idPos != -1)
+			return 
+		}
+		
+		function updateSelectablesFromHash() {
+			hashValues = getHashValues()
+			oldSelected = document.getElementsByClassName("selected")
+			for (var i=oldSelected.length-1; i >= 0; i--) {
+				node = oldSelected[i]
+				if (!hashHasID(getNodeID(node))) {
+					deselectNode(node)
+				}
+			}
+			for (var i=0; i < hashValues.length; i++) {
+				currentID = hashValues[i]
+				idName = "cid-" + currentID
+				node = document.getElementById(idName)
+				if (node != null) {
+					selectNode(node)
+					updateInheritance(node)
+				}					
+			}
+		}
+		
+		function updateInheritance(node, isDetail) {
+			isDetail = isDetail || false
+			if (node == null || node.tagName == "BODY") {
+				return
+			}
+			if (hasClass(node, "selectParent")) {
+				node.classList.add("selected")
+			}
+			if (node.tagName == "DETAILS") {
+				updateInheritance(node.firstElementChild, true)
+			}
+			if (!isDetail) {
+				return updateInheritance(node.parentNode)
+			}
+		}
+		
+		function selectNode(node) {
+			node.classList.add("selected")
+		}
+		
+		function deselectNode(node) {
+			node.classList.remove("selected")
+		}
+		
+		function getNodeID(node) {
+			nodeID = node.id.slice(4)
+			return nodeID
+		}
+		
+		function toggleNodeHash(node) {
+			nodeID = node.id.slice(4)
+			hashValues = getHashValues()
+			idPos = hashValues.indexOf(nodeID)
+			if (idPos == -1) {
+				hashValues.push(nodeID)
+			}
+			else {
+				hashValues.splice(idPos, 1)
+			}
+			window.location.hash = hashValues.join()
+		}
+		
+		function getSelectableNode(node) {
+		/* We recursively iterate our way up the tree to see if any part of it is selectable. */
+			if (node == null) {
+				return null
+			}
+			if (hasClass(node, "selectable")) {
+				return node
+			}
+			return getSelectableNode(node.parentNode)			
+		}
+		
+		window.onhashchange = function() {
+			updateSelectablesFromHash()
+		}
+		
+		window.onload = function() {
+			document.body.onclick = function(e){
+				if (!e.altKey) {
+					return
+				}
+				if (window.event) {
+					clickedNode = event.srcElement;
+				}
+				else {
+					clickedNode = e.target
+				}
+				selectableNode = getSelectableNode(clickedNode)
+				if (selectableNode != null) {
+					toggleNodeHash(selectableNode)
+					return false
+				}
+			}
+			updateSelectablesFromHash()
+		}
+	</script>
+</head>
+<body>
+<h1>Comparing Singularity_Previous (Build: 1132562) to Singularity_Next (Build: 1133248)</h1>
+<!-- <iframe id="timer" src="timerSection.html?version=1&timer=1489606234.803" style="border:none;" height="40px" width="800px"> </iframe> -->
+<p class="mini">Generated @ 2017-03-30 15:16:37 EVE Time (UTC)</p>
+<noscript>
+	<nobr>
+		<p class="scriptnotify" style="display:inline;">You've disabled javascript. This made the menu so sad that it self-destructed. I hope you're happy now.</p>
+		<p class="scriptnotifysmaller" style="display:inline;">You monster.</p>
+	</nobr>
+	<p class="scriptnotifysmall">This page should still kinda work though.</p>
+</noscript>
+<iframe id="navMenu" src="nav.html" style="border:none; display:none;" height="40px" width="800px"> </iframe>
+<script>
+  document.getElementById("navMenu").style.display = "block";
+</script>
+<p class="mini"></p>
+<p class="kindasmall">Click the categories below to expand them! <a href="confused.html">Confused?</a></p>
+
+<!--<h2 id="items">Items</h2>-->
+
+<details id="newitems">
+	<summary class="selectParent bigsum">New Items (3 Entries)</summary>
+	<table>
+	<details>
+	<summary class="smallsum" onClick="selectText('newItemsNotepad')">Show/Hide EVE notepad list for in-game viewing.</summary><div class="simplebox" id="newItemsNotepad">&lt;url=showinfo:45480&gt;Enforcer CONCORD Aerospace 'Prototype' SKIN (Permanent)&lt;/url&gt;<br>&lt;url=showinfo:45481&gt;Pacifier CONCORD Aerospace 'Prototype' SKIN (Permanent)&lt;/url&gt;<br>&lt;url=showinfo:45482&gt;Capsule YC119 Capsuleer Day SKIN (Permanent)&lt;/url&gt;<br></div></details>
+	  <tr>
+		<!--<th>[[title4]]</th>-->
+		<th>TypeID & Name</th>
+		<th>Description</th>
+		<th>Group</th>
+		<th>Attributes</th>
+	  </tr>
+	<tr class="selectable" id="cid-1">
+		<td>45480 - <b>Enforcer CONCORD Aerospace 'Prototype' SKIN (Permanent)</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Super Kerr-Induced Nanocoatings</td>
+		<td width="300px">	<b>typeID:</b> 45480<br>	<b>radius:</b> 1<br>	<b>Mass:</b> 0.0<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.01<br>	<b>typeNameID:</b> 526154<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 1311<br></td>
+	</tr>
+	<tr class="selectable" id="cid-2">
+		<td>45481 - <b>Pacifier CONCORD Aerospace 'Prototype' SKIN (Permanent)</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Super Kerr-Induced Nanocoatings</td>
+		<td width="300px">	<b>typeID:</b> 45481<br>	<b>radius:</b> 1<br>	<b>Mass:</b> 0.0<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.01<br>	<b>typeNameID:</b> 526155<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 1311<br></td>
+	</tr>
+	<tr class="selectable" id="cid-3">
+		<td>45482 - <b>Capsule YC119 Capsuleer Day SKIN (Permanent)</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Super Kerr-Induced Nanocoatings</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 12 attributes.</summary>	<b>typeID:</b> 45482<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 16<br>	<b>Mass:</b> 0.0<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.01<br>	<b>typeNameID:</b> 526160<br>	<b>published:</b> True<br>	<b>marketGroupID:</b> 2285<br>	<b>basePrice:</b> 0.0<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 1311<br></details></td>
+	</tr>
+	</table>
+</details>
+
+<details id="removeditems">
+	<summary class="selectParent bigsum_disabled" onclick="return false">Removed Items (0 Entries)</summary>
+	<table>
+	  <tr>
+		<th>Name</th>
+		<th>Description</th>
+		<th>Group</th>
+		<th>Attributes</th>
+	  </tr>
+	
+	</table>
+</details>
+
+<details id="changedblueprints">
+	<summary class="selectParent bigsum_disabled" onclick="return false">Changed Blueprints BETA (0 Entries)</summary>
+	<table>
+	  <tr>
+		<th>Blueprint Name</th>
+		<th>Old BP Data</th>
+		<th>New BP Data</th>
+		<th>Raw Diff</th>
+	  </tr>
+	
+	</table>
+</details>
+
+<br>
+
+<details id="bonuschanges">
+	<summary class="selectParent bigsum_disabled" onclick="return false">Changed Traits (0 Entries)</summary>
+	<table>
+	  <tr>
+		<th>TypeID, Group, & Name</th>
+		<th>Singularity_Previous</th>
+		<th>Singularity_Next</th>
+		<th>Diff</th>
+		<!-- <th>[[title4]]</th> -->
+	  </tr>
+	
+	</table>
+</details>
+
+<!--<h2 id="attributes">Attributes</h2>-->
+
+<details id="dgmattribs">
+	<summary class="selectParent bigsum_disabled" onclick="return false">Changes to Attributes (0 Entries)</summary>
+	<table>
+	  <tr>
+		<th>Attribute Name</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Diff</th>
+	  </tr>
+	
+	</table>
+</details>
+
+<details id="typeattribs">
+	<summary class="selectParent bigsum">Attribute Changes per Type (4 Entries)</summary>
+	<table>
+	  <tr>
+		<th>TypeID, Name, and Group</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Diff</th>
+	  </tr>
+	<tr class="selectable" id="cid-4">
+		<td>45461 - <b>Caldari CA Frigate</b> (Mission Caldari State Frigate)</td>
+		<td><b>maxTargetRange:</b> 62500.0 <b>=></b> 20000.0<br><b>missileDamageMultiplier:</b> 0.8 <b>=></b> 0.4<br><b>entityBracketColour:</b> None <b>=></b> 1.0<br></td>
+	</tr>
+	<tr class="selectable" id="cid-5">
+		<td>45464 - <b>Gallente CA Frigate</b> (Mission Gallente Federation Frigate)</td>
+		<td><b>maxTargetRange:</b> 50000.0 <b>=></b> 20000.0<br><b>entityBracketColour:</b> None <b>=></b> 1.0<br></td>
+	</tr>
+	<tr class="selectable" id="cid-6">
+		<td>45050 - <b>Amarr CA Frigate</b> (Mission Amarr Empire Frigate)</td>
+		<td><b>maxTargetRange:</b> 50000.0 <b>=></b> 20000.0<br></td>
+	</tr>
+	<tr class="selectable" id="cid-7">
+		<td>45467 - <b>Minmatar CA Frigate</b> (Mission Minmatar Republic Frigate)</td>
+		<td><b>maxTargetRange:</b> 28125.0 <b>=></b> 20000.0<br><b>entityBracketColour:</b> None <b>=></b> 1.0<br></td>
+	</tr>
+	</table>
+</details>
+
+<br>
+
+<!--<h2 id="effectchanges">Effect Changes</h2>-->
+
+<details id="dgmeffects">
+	<summary class="selectParent bigsum_disabled" onclick="return false">Changes to Effects (0 Entries)</summary>
+	<table>
+	  <tr>
+		<th>Effect Name</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Diff</th>
+	  </tr>
+	
+	</table>
+</details>
+
+<details id="typeeffects">
+	<summary class="selectParent bigsum">Effect Changes per Type (3 Entries)</summary>
+	<table>
+	  <tr>
+		<th>TypeID, Name, and Group</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Effects Changes</th>
+	  </tr>
+	<tr class="selectable" id="cid-8">
+		<td>45461 - <b>Caldari CA Frigate</b> (Mission Caldari State Frigate)</td>
+		<td><b><u>Added Effects:</u></b><br><b>targetAttack:</b> None <b>=></b> True <br></td>
+	</tr>
+	<tr class="selectable" id="cid-9">
+		<td>45464 - <b>Gallente CA Frigate</b> (Mission Gallente Federation Frigate)</td>
+		<td><b><u>Changed Effects:</u></b><br><b>targetAttack:</b> False <b>=></b> True <br></td>
+	</tr>
+	<tr class="selectable" id="cid-10">
+		<td>45467 - <b>Minmatar CA Frigate</b> (Mission Minmatar Republic Frigate)</td>
+		<td><b><u>Changed Effects:</u></b><br><b>targetAttack:</b> False <b>=></b> True <br></td>
+	</tr>
+	</table>
+</details>
+
+<br>
+
+<!--<h2 id="stringchanges">String Changes</h2>-->
+
+<details id="stringchanges">
+	<summary class="selectParent bigsum">String Changes (11 Entries)</summary>
+	<table>
+	  <tr>
+		<th>Key</th>
+		<th>Singularity_Previous</th>
+		<th>Singularity_Next</th>
+		<th>Diff</th>
+		<th>Notes</th>
+	  </tr>
+	<tr class="selectable" id="cid-11">
+		<td>239200</td>
+		<td width="355px">Buy PLEX</td>
+		<td width="355px"></td>
+		<td><del style="background:#ffe6e6;">Buy PLEX</del></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-12">
+		<td>239201</td>
+		<td width="355px">Pilot License Extension</td>
+		<td width="355px"></td>
+		<td><del style="background:#ffe6e6;">Pilot License Extension</del></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-13">
+		<td>239202</td>
+		<td width="355px">Pilot license certification is good for a limited time. Retesting is not needed, even when renewing an expired license. Extensions and the associated fees can be registered with CONCORD on an automatic renewal system or by direct application of PLEX.</td>
+		<td width="355px"></td>
+		<td><del style="background:#ffe6e6;">Pilot license certification is good for a limited time. Retesting is not needed, even when renewing an expired license. Extensions and the associated fees can be registered with CONCORD on an automatic renewal system or by direct application of PLEX.</del></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-14">
+		<td>239203</td>
+		<td width="355px">View Market for Pilot License Extensions</td>
+		<td width="355px"></td>
+		<td><del style="background:#ffe6e6;">View Market for Pilot License Extensions</del></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-15">
+		<td>519376</td>
+		<td width="355px">These natural phenomenon that rumor says will hurtle those that come too close to faraway places.  Wary travelers stay away from them as some that have ventured too close have never been seen again.</td>
+		<td width="355px">This uncanny rift is similar to rare spatial phenomena that are thought to hurl those who come too close to faraway places. Wary travelers stay away from them, as some that have ventured too close have never been seen again.</td>
+		<td><span>Th</span><del style="background:#ffe6e6;">ese natur</del><ins style="background:#e6ffe6;">is uncanny rift is similar to rare spati</ins><span>al phenomen</span><del style="background:#ffe6e6;">on</del><ins style="background:#e6ffe6;">a</ins><span> that </span><del style="background:#ffe6e6;">rumor says will</del><ins style="background:#e6ffe6;">are thought to</ins><span> hur</span><del style="background:#ffe6e6;">tle</del><ins style="background:#e6ffe6;">l</ins><span> those </span><del style="background:#ffe6e6;">that</del><ins style="background:#e6ffe6;">who</ins><span> come too close to faraway places.</span><del style="background:#ffe6e6;"> </del><span> Wary travelers stay away from them</span><ins style="background:#e6ffe6;">,</ins><span> as some that have ventured too close have never been seen again.</span></td>
+		<td class="mini">Item description for "Spatial Rift (Precise)" (typeID 42902)</td>
+	</tr>
+	<tr class="selectable" id="cid-16">
+		<td>525694</td>
+		<td width="355px">{[numeric]value, useGrouping, decimalPlaces=0} ISK est. value</td>
+		<td width="355px">Est. {[numeric]value, useGrouping, decimalPlaces=0} ISK</td>
+		<td><ins style="background:#e6ffe6;">Est. </ins><span>{[numeric]value, useGrouping, decimalPlaces=0} ISK</span><del style="background:#ffe6e6;"> est. value</del></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-17">
+		<td>526153</td>
+		<td width="355px"></td>
+		<td width="355px">CONCORD Aerospace 'Prototype'</td>
+		<td><ins style="background:#e6ffe6;">CONCORD Aerospace 'Prototype'</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-18">
+		<td>526154</td>
+		<td width="355px"></td>
+		<td width="355px">Enforcer CONCORD Aerospace 'Prototype' SKIN (Permanent)</td>
+		<td><ins style="background:#e6ffe6;">Enforcer CONCORD Aerospace 'Prototype' SKIN (Permanent)</ins></td>
+		<td class="mini">Item name for typeID 45480 (Super Kerr-Induced Nanocoatings)</td>
+	</tr>
+	<tr class="selectable" id="cid-19">
+		<td>526155</td>
+		<td width="355px"></td>
+		<td width="355px">Pacifier CONCORD Aerospace 'Prototype' SKIN (Permanent)</td>
+		<td><ins style="background:#e6ffe6;">Pacifier CONCORD Aerospace 'Prototype' SKIN (Permanent)</ins></td>
+		<td class="mini">Item name for typeID 45481 (Super Kerr-Induced Nanocoatings)</td>
+	</tr>
+	<tr class="selectable" id="cid-20">
+		<td>526159</td>
+		<td width="355px"></td>
+		<td width="355px">YC119 Capsuleer Day</td>
+		<td><ins style="background:#e6ffe6;">YC119 Capsuleer Day</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-21">
+		<td>526160</td>
+		<td width="355px"></td>
+		<td width="355px">Capsule YC119 Capsuleer Day SKIN (Permanent)</td>
+		<td><ins style="background:#e6ffe6;">Capsule YC119 Capsuleer Day SKIN (Permanent)</ins></td>
+		<td class="mini">Item name for typeID 45482 (Super Kerr-Induced Nanocoatings)</td>
+	</tr>
+	</table>
+</details>
+
+<br>
+
+<!--<h2 id="newfiles">New Files</h2>-->
+
+<script>
+	function displayMedia(doc) {
+		nodes = doc.children
+		for (i=0; i < nodes.length; i++) {
+			node = nodes[i]
+			if (node.hasAttribute("data-src") && node.getAttribute("src") == "") {
+				node.setAttribute("src", node.getAttribute("data-src"))
+			}
+		}
+	}
+</script>
+<details id="newfiles">
+	<summary class="selectParent bigsum">New Files (2 Entries)</summary>
+	<table>
+	  <tr>
+		<th>File Name</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Size in kb (Decompressed)</th>
+	  </tr>
+	<tr class="selectable" id="cid-22">
+		<td><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/fe/feb5ed7e7d0a5742_faa3e8cb1c8433829cb73a84b956a381">res:/ui/texture/classes/skins/icons/173.png</a>
+    		</summary>
+    		<img data-src="http://res.eveprobe.ccpgames.com/fe/feb5ed7e7d0a5742_faa3e8cb1c8433829cb73a84b956a381" src="" />
+		</details></td>
+		<td>4</td>
+	</tr>
+	<tr class="selectable" id="cid-23">
+		<td><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/a8/a8179965c7d449e5_f09b64933ca602b51db5cc2b3ba27e71">res:/ui/texture/classes/skins/icons/174.png</a>
+    		</summary>
+    		<img data-src="http://res.eveprobe.ccpgames.com/a8/a8179965c7d449e5_f09b64933ca602b51db5cc2b3ba27e71" src="" />
+		</details></td>
+		<td>4</td>
+	</tr>
+	</table>
+</details>
+<script>
+	function test123() {
+		document.getElementById("footer1").style.display = "none";
+		document.getElementById("footer2").style.visibility = "visible";
+		document.getElementById("footer2").onclick = function() {document.location = "http://i.imgur.com/3Kd6ruW.jpg"}
+	}
+</script>
+<!--<h2 id="changedfiles">Changed Files</h2>-->
+
+<details id="changedfiles">
+	<summary class="selectParent bigsum">Changed Files (97 Entries)</summary>
+	<table>
+	  <tr>
+		<th>File Name</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Size in kb (Decompressed)</th>
+	  </tr>
+	<tr class="selectable" id="cid-24">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/61/61e4f3091016e61b_c30852e245d18292a943e7e21cf9ba40">staticdata/fighterabilitiesbytype.static</a><br></td>
+		<td>14 -> 14</td>
+	</tr>
+	<tr class="selectable" id="cid-25">
+		<td style="text-align: middle;"><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/0f/0fcabe81e028cca0_6d8ebe2b199407307f4650cad871fde7">res:/dx9/model/ship/concord/cruiser/conc1/icons/conc1_t1_isis.png</a>
+    		</summary>
+    		<img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/0f/0fcabe81e028cca0_e949bf29a2b173931b777be31641c34d" src="" /> -> <img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/0f/0fcabe81e028cca0_6d8ebe2b199407307f4650cad871fde7" src="" />
+		</details></td>
+		<td>4 -> 4</td>
+	</tr>
+	<tr class="selectable" id="cid-26">
+		<td style="text-align: middle;"><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/e6/e69e97c8b7f30aa8_fa6320bd059413fb8850818a7db43184">res:/dx9/model/deployables/generic/citadel/xl/cxl1/icons/21139_64_bp.png</a>
+    		</summary>
+    		<img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/e6/e69e97c8b7f30aa8_89ec846f7c434d99b7228d52f57fd5a4" src="" /> -> <img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/e6/e69e97c8b7f30aa8_fa6320bd059413fb8850818a7db43184" src="" />
+		</details></td>
+		<td>7 -> 7</td>
+	</tr>
+	<tr class="selectable" id="cid-27">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/75/751f94e18c64709e_b68a7abfbf5b34b3d27fbdf8086f44be">graphics/effect.dx9/managed/space/postprocess/tonemapping.sm_lo</a><br></td>
+		<td>9 -> 9</td>
+	</tr>
+	<tr class="selectable" id="cid-28">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/f0/f016514b481ba503_d5520ea86586102d2b8886f2f629c2f0">staticdata/blueprints.static</a><br></td>
+		<td>4342 -> 4342</td>
+	</tr>
+	<tr class="selectable" id="cid-29">
+		<td style="text-align: middle;"><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/39/39bca4c344c1c28a_2962099ebb59ac8651594a221077d9da">res:/dx9/model/ship/concord/cruiser/conc1/icons/1052_64.png</a>
+    		</summary>
+    		<img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/39/39bca4c344c1c28a_6d769ea1446ecea2b0339c7e8930b442" src="" /> -> <img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/39/39bca4c344c1c28a_2962099ebb59ac8651594a221077d9da" src="" />
+		</details></td>
+		<td>6 -> 6</td>
+	</tr>
+	<tr class="selectable" id="cid-30">
+		<td style="text-align: middle;"><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/2f/2f816fe39c2baa0c_ba346004b3974ddc635bbaf1ed60d22a">res:/dx9/model/ship/concord/frigate/conf1/icons/1049_64.png</a>
+    		</summary>
+    		<img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/2f/2f816fe39c2baa0c_8d2e6c26d77b90a70a6d8938f0c52226" src="" /> -> <img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/2f/2f816fe39c2baa0c_ba346004b3974ddc635bbaf1ed60d22a" src="" />
+		</details></td>
+		<td>6 -> 6</td>
+	</tr>
+	<tr class="selectable" id="cid-31">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/f6/f6e65455f425e51f_1e585997e1f16bb0be8b25247569c9fc">dx9/model/ship/concord/cruiser/conc1/conc1_t1_pmdg_lowdetail.dds</a><br></td>
+		<td>1 -> 1</td>
+	</tr>
+	<tr class="selectable" id="cid-32">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/b8/b8efe23150d6f26f_fc8351631ebc9ea64b2438d300e9f82e">staticdata/bracketsbytype.static</a><br></td>
+		<td>7 -> 7</td>
+	</tr>
+	<tr class="selectable" id="cid-33">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/cc/cc5f4416db644d40_acad9c6d563627dcb80f8ece5686cce9">graphics/effect.dx9/managed/space/postprocess/tonemapping.sm_depth</a><br></td>
+		<td>9 -> 9</td>
+	</tr>
+	<tr class="selectable" id="cid-34">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/89/892f664ccbb214b8_15c6ba5c33b099ddd137e596f8da84a2">graphics/effect.gles2/managed/space/postprocess/tonemapping.sm_depth</a><br></td>
+		<td>22 -> 22</td>
+	</tr>
+	<tr class="selectable" id="cid-35">
+		<td style="text-align: middle;"><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/ee/ee2cdc59ec5a5596_2131557ed5ef4603913c8fdad1908234">res:/dx9/model/ship/concord/cruiser/conc1/icons/1056_64.png</a>
+    		</summary>
+    		<img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/ee/ee2cdc59ec5a5596_24d15649d2490331bcff82e49f922a91" src="" /> -> <img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/ee/ee2cdc59ec5a5596_2131557ed5ef4603913c8fdad1908234" src="" />
+		</details></td>
+		<td>6 -> 6</td>
+	</tr>
+	<tr class="selectable" id="cid-36">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/1a/1a48a0969136daa1_ccfdffbd7e58cf583ead40f0c7cf0986">manifest.dat</a><br></td>
+		<td>13 -> 13</td>
+	</tr>
+	<tr class="selectable" id="cid-37">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/a0/a0a71a08c9f20ca0_2b734b5065f702d3d60948bd28ba1507">dx9/model/ship/concord/cruiser/conc1/conc1_t1_no_lowdetail.dds</a><br></td>
+		<td>1 -> 1</td>
+	</tr>
+	<tr class="selectable" id="cid-38">
+		<td style="text-align: middle;"><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/1d/1d5b60292e910d93_d481be054d3bb84436e03660183c3048">res:/dx9/model/ship/concord/cruiser/conc1/icons/1050_128.png</a>
+    		</summary>
+    		<img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/1d/1d5b60292e910d93_81bbdae9e72f1358455d411c741763de" src="" /> -> <img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/1d/1d5b60292e910d93_d481be054d3bb84436e03660183c3048" src="" />
+		</details></td>
+		<td>19 -> 19</td>
+	</tr>
+	<tr class="selectable" id="cid-39">
+		<td style="text-align: middle;"><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/8f/8f5636a20d096afb_b88f79a8894810355107ad6f21d2f464">res:/dx9/model/ship/concord/frigate/conf1/icons/21490_128.png</a>
+    		</summary>
+    		<img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/8f/8f5636a20d096afb_d7c52e30cb6554cf188b6104133a940a" src="" /> -> <img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/8f/8f5636a20d096afb_b88f79a8894810355107ad6f21d2f464" src="" />
+		</details></td>
+		<td>19 -> 19</td>
+	</tr>
+	<tr class="selectable" id="cid-40">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/63/63849ce25bb8204b_bee14538d1fbb7b964dbedfe907115ea">dx9/model/ship/concord/cruiser/conc1/conc1_t1_pmdg.dds</a><br></td>
+		<td>1398 -> 1398</td>
+	</tr>
+	<tr class="selectable" id="cid-41">
+		<td style="text-align: middle;"><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/c7/c70b15116c971a2c_69489fabb7f5dd1f943e3eda03afb53d">res:/dx9/model/deployables/generic/citadel/xl/cxl1/icons/21315_64_bp.png</a>
+    		</summary>
+    		<img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/c7/c70b15116c971a2c_18062f78f8cfe6d4de353ff3fa15748a" src="" /> -> <img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/c7/c70b15116c971a2c_69489fabb7f5dd1f943e3eda03afb53d" src="" />
+		</details></td>
+		<td>6 -> 6</td>
+	</tr>
+	<tr class="selectable" id="cid-42">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/d6/d650a8ea71b2f13c_0ff7c3cb146b4efe5eb3769104edd7bb">staticdata/clonegrades.static</a><br></td>
+		<td>20 -> 20</td>
+	</tr>
+	<tr class="selectable" id="cid-43">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/04/04fe8caf2896e754_641aa3b9a9a67269e2eb1c76b592946e">staticdata/skinmaterials.static</a><br></td>
+		<td>22 -> 26</td>
+	</tr>
+	<tr class="selectable" id="cid-44">
+		<td style="text-align: middle;"><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/ed/edb0a0f0eda4480e_7c83d570917d6209f52e4f5044368d3b">res:/dx9/model/ship/concord/frigate/conf1/icons/1054_64.png</a>
+    		</summary>
+    		<img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/ed/edb0a0f0eda4480e_1691011da1c4cb7b8b7c6312249c1e22" src="" /> -> <img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/ed/edb0a0f0eda4480e_7c83d570917d6209f52e4f5044368d3b" src="" />
+		</details></td>
+		<td>6 -> 6</td>
+	</tr>
+	<tr class="selectable" id="cid-45">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/69/6964e258418569dd_7ab9aa41edfaa80b50f4ca12ba4429a0">graphics/effect.dx11/managed/space/postprocess/tonemapping.sm_hi</a><br></td>
+		<td>27 -> 27</td>
+	</tr>
+	<tr class="selectable" id="cid-46">
+		<td style="text-align: middle;"><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/a6/a6a842701fc90eb8_d75f9e7a1c65407bdd79451198ddf9f8">res:/ui/texture/icons/plex.png</a>
+    		</summary>
+    		<img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/a6/a6a842701fc90eb8_d9100ef25c07b03b437d1d3491220287" src="" /> -> <img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/a6/a6a842701fc90eb8_d75f9e7a1c65407bdd79451198ddf9f8" src="" />
+		</details></td>
+		<td>27 -> 4</td>
+	</tr>
+	<tr class="selectable" id="cid-47">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/79/79a473897ae5f3b0_4c2221c8ce6355730d531dcf30c6521b">localizationfsd/localization_fsd_main.pickle</a><br></td>
+		<td>2068 -> 2067</td>
+	</tr>
+	<tr class="selectable" id="cid-48">
+		<td style="text-align: middle;"><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/e6/e66e8f0b49dd96d8_5d5c6da656656b4540985da551fbccde">res:/dx9/model/ship/concord/cruiser/conc1/icons/21489_64.png</a>
+    		</summary>
+    		<img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/e6/e66e8f0b49dd96d8_1fd73a221d5211ab01e91001e52365b7" src="" /> -> <img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/e6/e66e8f0b49dd96d8_5d5c6da656656b4540985da551fbccde" src="" />
+		</details></td>
+		<td>6 -> 6</td>
+	</tr>
+	<tr class="selectable" id="cid-49">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/f7/f781e479bccfd00e_c2de7f0beb741d8dbd6fe0af7240f4dd">localizationfsd/localization_fsd_de.pickle</a><br></td>
+		<td>12535 -> 12534</td>
+	</tr>
+	<tr class="selectable" id="cid-50">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/cb/cb291acd32af7f27_0d3ae3189e97f3b31239e0b5d2d8c8bd">staticdata/skins.static</a><br></td>
+		<td>1402 -> 1401</td>
+	</tr>
+	<tr class="selectable" id="cid-51">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/4c/4c56e191aaa0e618_d803da6fbbb2440c27942b9e6464fa24">localizationfsd/localization_fsd_ru.pickle</a><br></td>
+		<td>44988 -> 44986</td>
+	</tr>
+	<tr class="selectable" id="cid-52">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/9a/9adf983d033ba1a3_833f647e2a41dd4853669e2a73694ecd">staticdata/evecategories.static</a><br></td>
+		<td>10 -> 10</td>
+	</tr>
+	<tr class="selectable" id="cid-53">
+		<td style="text-align: middle;"><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/14/14bc40309e9204c9_af1205edc79abbd261fcc3f08ce8cda4">res:/dx9/model/ship/concord/cruiser/conc1/icons/1056_128.png</a>
+    		</summary>
+    		<img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/14/14bc40309e9204c9_bf9db60325c3882cc2a3ca9626eba784" src="" /> -> <img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/14/14bc40309e9204c9_af1205edc79abbd261fcc3f08ce8cda4" src="" />
+		</details></td>
+		<td>20 -> 20</td>
+	</tr>
+	<tr class="selectable" id="cid-54">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/1d/1d34143a37d4b739_6230141224f040677a9b055153c91a01">resfileindex.txt</a><br></td>
+		<td>11493 -> 11493</td>
+	</tr>
+	<tr class="selectable" id="cid-55">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/f0/f032ac16b88d97a4_fe5a5ba94f3d5aa9cd2f00788136c623">code.ccp</a><br></td>
+		<td>16614 -> 16613</td>
+	</tr>
+	<tr class="selectable" id="cid-56">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/09/097de9381fe7929b_82a9d7981cb1f4c28555a5fcd34b2c3c">staticdata/environmenttemplates.static</a><br></td>
+		<td>20 -> 20</td>
+	</tr>
+	<tr class="selectable" id="cid-57">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/5a/5ad92a4c545980e3_f423b3869362eefa0c0cb223da3d353d">dx9/model/ship/concord/cruiser/conc1/conc1_t1_mediumdetail.gr2</a><br></td>
+		<td>119 -> 119</td>
+	</tr>
+	<tr class="selectable" id="cid-58">
+		<td style="text-align: middle;"><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/1a/1afa558ac22115f1_b3dfe0747fd987815a7086aecd68791d">res:/dx9/model/deployables/generic/citadel/xl/cxl1/icons/21139_64.png</a>
+    		</summary>
+    		<img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/1a/1afa558ac22115f1_4175f6597cf036d952e7345f6c2af15c" src="" /> -> <img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/1a/1afa558ac22115f1_b3dfe0747fd987815a7086aecd68791d" src="" />
+		</details></td>
+		<td>6 -> 6</td>
+	</tr>
+	<tr class="selectable" id="cid-59">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/34/34cee7939079398b_dcc8506259900e7832189c48494d587d">bin/_trinity_dx9_deploy.dll</a><br></td>
+		<td>14146 -> 14146</td>
+	</tr>
+	<tr class="selectable" id="cid-60">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/87/87bfc3b6eab5e5d3_a483daf6b3e94069ee7e88110e2ad002">localizationfsd/localization_fsd_zh.pickle</a><br></td>
+		<td>14109 -> 14109</td>
+	</tr>
+	<tr class="selectable" id="cid-61">
+		<td style="text-align: middle;"><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/d9/d9d50bdba2f378f7_302ac12f0c646510333d8c3c2a8b80bc">res:/dx9/model/ship/concord/cruiser/conc1/icons/21489_128.png</a>
+    		</summary>
+    		<img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/d9/d9d50bdba2f378f7_5bbbb743cb0de97ced013ca7b4750633" src="" /> -> <img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/d9/d9d50bdba2f378f7_302ac12f0c646510333d8c3c2a8b80bc" src="" />
+		</details></td>
+		<td>20 -> 20</td>
+	</tr>
+	<tr class="selectable" id="cid-62">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/c2/c2d7e26790c4ea2c_15c6ba5c33b099ddd137e596f8da84a2">graphics/effect.gles2/managed/space/postprocess/tonemapping.sm_hi</a><br></td>
+		<td>22 -> 22</td>
+	</tr>
+	<tr class="selectable" id="cid-63">
+		<td style="text-align: middle;"><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/e4/e429013b09001e65_125af73fac149739a1fa8c887ea4f7d3">res:/dx9/model/ship/concord/cruiser/conc1/icons/1052_128.png</a>
+    		</summary>
+    		<img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/e4/e429013b09001e65_00ac16145485bb2899749a34ffc47c52" src="" /> -> <img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/e4/e429013b09001e65_125af73fac149739a1fa8c887ea4f7d3" src="" />
+		</details></td>
+		<td>20 -> 20</td>
+	</tr>
+	<tr class="selectable" id="cid-64">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/f6/f67f509944259e6b_ffdb58cf1d396ab455e40e681a785223">dx9/model/ship/concord/cruiser/conc1/conc1_t1_ar_mediumdetail.dds</a><br></td>
+		<td>21 -> 21</td>
+	</tr>
+	<tr class="selectable" id="cid-65">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/69/69a683fa7e9bab78_01e94228c4e9b226d7bb809dac299229">dx9/model/ship/concord/cruiser/conc1/conc1_t1_lowdetail.gr2</a><br></td>
+		<td>45 -> 45</td>
+	</tr>
+	<tr class="selectable" id="cid-66">
+		<td style="text-align: middle;"><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/6b/6bb5da06c3cead21_7c0bbfcb11fbafe5fbe95962958b7d5f">res:/dx9/model/ship/concord/frigate/conf1/icons/1054_128.png</a>
+    		</summary>
+    		<img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/6b/6bb5da06c3cead21_47be30a12be642ba8a0f472d821ec8ed" src="" /> -> <img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/6b/6bb5da06c3cead21_7c0bbfcb11fbafe5fbe95962958b7d5f" src="" />
+		</details></td>
+		<td>19 -> 19</td>
+	</tr>
+	<tr class="selectable" id="cid-67">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/b8/b8b853f771f9c40a_283b5cd675bc097396a0fb8fbec50168">dx9/model/ship/concord/cruiser/conc1/conc1_t1_pmdg_mediumdetail.dds</a><br></td>
+		<td>21 -> 21</td>
+	</tr>
+	<tr class="selectable" id="cid-68">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/ad/adf6f005d843256a_ef10805716349c176625b1a8715f787a">dx9/model/spaceobjectfactory/hulls/conc1_t1.black</a><br></td>
+		<td>13 -> 14</td>
+	</tr>
+	<tr class="selectable" id="cid-69">
+		<td style="text-align: middle;"><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/f3/f3dc95869475bc26_2a034cf082c4c741061378c524c45b6f">res:/dx9/model/ship/concord/cruiser/conc1/icons/1051_128.png</a>
+    		</summary>
+    		<img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/f3/f3dc95869475bc26_b6083bce4679e50d2e3a80c85a65f96e" src="" /> -> <img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/f3/f3dc95869475bc26_2a034cf082c4c741061378c524c45b6f" src="" />
+		</details></td>
+		<td>21 -> 21</td>
+	</tr>
+	<tr class="selectable" id="cid-70">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/dd/ddec335c5166e1ce_9e6e300cb6e54eae3f7bf8f425034235">staticdata/skinlicenses.static</a><br></td>
+		<td>1076 -> 1077</td>
+	</tr>
+	<tr class="selectable" id="cid-71">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/bc/bc5fff279c5cae06_a065969bc91d87b3a9c36f946cc0ba7a">bulkdata/800006.cache2</a><br></td>
+		<td>6726 -> 6726</td>
+	</tr>
+	<tr class="selectable" id="cid-72">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/4a/4a2d3f8fdea01bca_2e333ee37c6e5a831cacb0254cb513e9">staticdata/fighterabilities.static</a><br></td>
+		<td>13 -> 13</td>
+	</tr>
+	<tr class="selectable" id="cid-73">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/c0/c02684ecbeb56aef_47d1fd0e8f66468241da526d8ae4d221">dx9/model/ship/concord/cruiser/conc1/conc1_t1_no_mediumdetail.dds</a><br></td>
+		<td>21 -> 21</td>
+	</tr>
+	<tr class="selectable" id="cid-74">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/69/6964de5841856287_b08f574242a27aa477cee2263599ff58">graphics/effect.dx11/managed/space/postprocess/tonemapping.sm_lo</a><br></td>
+		<td>26 -> 26</td>
+	</tr>
+	<tr class="selectable" id="cid-75">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/92/9299cb77f6cae635_163186877d23fdcf7c3f3361fe144785">staticdata/industry_activity_target_filters.static</a><br></td>
+		<td>8 -> 8</td>
+	</tr>
+	<tr class="selectable" id="cid-76">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/56/5610a6eb8b5a4975_53df41cefa87cdefe074f3d914256a86">resfileindex_prefetch.txt</a><br></td>
+		<td>1114 -> 1114</td>
+	</tr>
+	<tr class="selectable" id="cid-77">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/82/82afc4ce93a0dc14_0574f2865ca14d5d545f40aba9423313">localizationfsd/localization_fsd_ja.pickle</a><br></td>
+		<td>23102 -> 23101</td>
+	</tr>
+	<tr class="selectable" id="cid-78">
+		<td style="text-align: middle;"><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/9f/9f57b353d816b259_896ff017f66c4d563651c27e074bb15c">res:/dx9/model/deployables/generic/citadel/xl/cxl1/icons/21139_64_bpc.png</a>
+    		</summary>
+    		<img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/9f/9f57b353d816b259_e1ed05cb50701a0e1f7e81b9a5d9ebe4" src="" /> -> <img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/9f/9f57b353d816b259_896ff017f66c4d563651c27e074bb15c" src="" />
+		</details></td>
+		<td>7 -> 7</td>
+	</tr>
+	<tr class="selectable" id="cid-79">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/db/dbf2d4f724b2bc3c_0159f8f6df18be142bd6300fd9e91bd3">dx9/model/ship/concord/cruiser/conc1/conc1_t1_no.dds</a><br></td>
+		<td>1398 -> 1398</td>
+	</tr>
+	<tr class="selectable" id="cid-80">
+		<td style="text-align: middle;"><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/b4/b42d76e7ace3b524_3944eabcd9c0409ff96244b80abb7839">res:/dx9/model/ship/concord/frigate/conf1/icons/21490_64.png</a>
+    		</summary>
+    		<img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/b4/b42d76e7ace3b524_ea61fb5d0f01f21a1f38c97cb11b82ef" src="" /> -> <img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/b4/b42d76e7ace3b524_3944eabcd9c0409ff96244b80abb7839" src="" />
+		</details></td>
+		<td>6 -> 6</td>
+	</tr>
+	<tr class="selectable" id="cid-81">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/67/671695e3a499baf0_e58e5683a6c674d04d6200634564bd06">staticdata/evetypes.static</a><br></td>
+		<td>12405 -> 12406</td>
+	</tr>
+	<tr class="selectable" id="cid-82">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/75/751f98e18c6477d4_acad9c6d563627dcb80f8ece5686cce9">graphics/effect.dx9/managed/space/postprocess/tonemapping.sm_hi</a><br></td>
+		<td>9 -> 9</td>
+	</tr>
+	<tr class="selectable" id="cid-83">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/8d/8d0a225a112080f4_300cfa41ebab2556779e64dc6b266822">staticdata/industry_activity_modifier_sources.static</a><br></td>
+		<td>25 -> 25</td>
+	</tr>
+	<tr class="selectable" id="cid-84">
+		<td style="text-align: middle;"><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/37/37cb594031225c3c_010f78d848404ce779903f3d93ea9a54">res:/dx9/model/deployables/generic/citadel/xl/cxl1/icons/21139_128.png</a>
+    		</summary>
+    		<img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/37/37cb594031225c3c_1970d8d0ead0d4dbacd8aacd8baaba7f" src="" /> -> <img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/37/37cb594031225c3c_010f78d848404ce779903f3d93ea9a54" src="" />
+		</details></td>
+		<td>22 -> 22</td>
+	</tr>
+	<tr class="selectable" id="cid-85">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/1f/1fe5951645e3d1d4_773d2af94f22f03575e0f9d5014d0b24">dx9/model/ship/concord/cruiser/conc1/conc1_t1_ar_lowdetail.dds</a><br></td>
+		<td>1 -> 1</td>
+	</tr>
+	<tr class="selectable" id="cid-86">
+		<td style="text-align: middle;"><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/a0/a0df737f331727a2_149b88ffb39dae19a3b5c73931f11f2d">res:/dx9/model/ship/caldari/destroyer/cde1/icons/2802_64_bp.png</a>
+    		</summary>
+    		<img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/a0/a0df737f331727a2_fa40635baeb3d1a02b91309e1c544205" src="" /> -> <img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/a0/a0df737f331727a2_149b88ffb39dae19a3b5c73931f11f2d" src="" />
+		</details></td>
+		<td>7 -> 7</td>
+	</tr>
+	<tr class="selectable" id="cid-87">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/85/8509e36331a20ae7_6865359b1f20bea1b5d697ef00df5f0a">dx9/model/spaceobjectfactory/hulls/conf1_t1.black</a><br></td>
+		<td>12 -> 13</td>
+	</tr>
+	<tr class="selectable" id="cid-88">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/ba/ba1aa4f3fb71b2da_54bd7269e2965c84cf6027504e4e1642">bin/_trinity_dx11_deploy.dll</a><br></td>
+		<td>14246 -> 14246</td>
+	</tr>
+	<tr class="selectable" id="cid-89">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/41/41ad4a9357d7af13_2857aaa9be9e65db8c9ab05bfb80b886">dx9/model/ship/concord/frigate/conf1/conf1_t1.gr2</a><br></td>
+		<td>120 -> 120</td>
+	</tr>
+	<tr class="selectable" id="cid-90">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/b1/b1ba33e51fb68ec7_b66d6cc6acc10e3101a1b840c968f524">staticdata/crates.static</a><br></td>
+		<td>21 -> 21</td>
+	</tr>
+	<tr class="selectable" id="cid-91">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/1e/1ef674def6229546_4c1f15d0250730bb23881cd651fe952a">bulkdata/version</a><br></td>
+		<td>0 -> 0</td>
+	</tr>
+	<tr class="selectable" id="cid-92">
+		<td style="text-align: middle;"><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/87/878cbb1cd9311a1f_6e4e3a4f157f745cca322e0359a62fef">res:/dx9/model/ship/caldari/destroyer/cde1/icons/2802_64.png</a>
+    		</summary>
+    		<img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/87/878cbb1cd9311a1f_f22af402b19177eea414ab01a4dc8bc8" src="" /> -> <img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/87/878cbb1cd9311a1f_6e4e3a4f157f745cca322e0359a62fef" src="" />
+		</details></td>
+		<td>7 -> 7</td>
+	</tr>
+	<tr class="selectable" id="cid-93">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/37/3719f59ac6b0c033_7ab9aa41edfaa80b50f4ca12ba4429a0">graphics/effect.dx11/managed/space/postprocess/tonemapping.sm_depth</a><br></td>
+		<td>27 -> 27</td>
+	</tr>
+	<tr class="selectable" id="cid-94">
+		<td style="text-align: middle;"><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/3d/3d7d90b4cf396d58_3add18a3c1556a47ae213473a7c37261">res:/dx9/model/deployables/generic/citadel/xl/cxl1/icons/21315_128.png</a>
+    		</summary>
+    		<img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/3d/3d7d90b4cf396d58_ee0541e08a3f596708dd9caa13934abc" src="" /> -> <img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/3d/3d7d90b4cf396d58_3add18a3c1556a47ae213473a7c37261" src="" />
+		</details></td>
+		<td>21 -> 21</td>
+	</tr>
+	<tr class="selectable" id="cid-95">
+		<td style="text-align: middle;"><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/4f/4fa524975539ed3b_0e918cde617261b1d88a0ed1ea5444c4">res:/dx9/model/ship/caldari/destroyer/cde1/icons/2802_64_bpc.png</a>
+    		</summary>
+    		<img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/4f/4fa524975539ed3b_ffb2dbfb2c6ac82f77cc59b0b34de9b3" src="" /> -> <img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/4f/4fa524975539ed3b_0e918cde617261b1d88a0ed1ea5444c4" src="" />
+		</details></td>
+		<td>7 -> 7</td>
+	</tr>
+	<tr class="selectable" id="cid-96">
+		<td style="text-align: middle;"><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/5c/5c230090ec1639a3_74d768d492ed8c63cf75feec99d54424">res:/dx9/model/ship/concord/frigate/conf1/icons/1049_128.png</a>
+    		</summary>
+    		<img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/5c/5c230090ec1639a3_f8d5dc653e67f274cbdd23bd97b3223c" src="" /> -> <img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/5c/5c230090ec1639a3_74d768d492ed8c63cf75feec99d54424" src="" />
+		</details></td>
+		<td>20 -> 20</td>
+	</tr>
+	<tr class="selectable" id="cid-97">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/e3/e3cd8a97159e6321_b39bd881e57ff28d2794c5965df2d893">start.ini</a><br></td>
+		<td>0 -> 0</td>
+	</tr>
+	<tr class="selectable" id="cid-98">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/aa/aa0b8b0323d24f50_c7fd16894ea55702349371ac56b1e46c">bulkdata/metadata.yaml</a><br></td>
+		<td>0 -> 0</td>
+	</tr>
+	<tr class="selectable" id="cid-99">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/13/13cc788c734fe2be_d2b148b5156ece8cb3b30ac613279965">dx9/model/ship/concord/frigate/conf1/conf1_t1_mediumdetail.gr2</a><br></td>
+		<td>95 -> 95</td>
+	</tr>
+	<tr class="selectable" id="cid-100">
+		<td style="text-align: middle;"><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/38/38df4a1124352e85_763f3b3e587f5af7c0466ac4d1e9f413">res:/dx9/model/deployables/generic/citadel/xl/cxl1/icons/21315_64.png</a>
+    		</summary>
+    		<img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/38/38df4a1124352e85_2db47d28fae4eb41da88dd891f1f951b" src="" /> -> <img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/38/38df4a1124352e85_763f3b3e587f5af7c0466ac4d1e9f413" src="" />
+		</details></td>
+		<td>6 -> 6</td>
+	</tr>
+	<tr class="selectable" id="cid-101">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/96/966451c7ad70845c_6303e3192b51be3b5ac6b576bcfb0f6e">dx9/model/ship/concord/cruiser/conc1/conc1_t1.gr2</a><br></td>
+		<td>153 -> 153</td>
+	</tr>
+	<tr class="selectable" id="cid-102">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/50/50ea3456c14ebd15_5018de26034d2b6b8c09c03723bff6b7">bulkdata/800007.cache2</a><br></td>
+		<td>391 -> 391</td>
+	</tr>
+	<tr class="selectable" id="cid-103">
+		<td style="text-align: middle;"><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/e0/e0e65541f9a86495_41188849a4cb701a9619290a226ebf4a">res:/dx9/model/deployables/generic/citadel/xl/cxl1/icons/21315_64_bpc.png</a>
+    		</summary>
+    		<img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/e0/e0e65541f9a86495_d804f46874a746f3b961a859e946165d" src="" /> -> <img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/e0/e0e65541f9a86495_41188849a4cb701a9619290a226ebf4a" src="" />
+		</details></td>
+		<td>7 -> 7</td>
+	</tr>
+	<tr class="selectable" id="cid-104">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/4a/4a0f5fe70b667169_e66a264f828b7efecadb477080d6068f">localizationfsd/localization_fsd_fr.pickle</a><br></td>
+		<td>12558 -> 12558</td>
+	</tr>
+	<tr class="selectable" id="cid-105">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/c2/c2d7de6790c4e316_acb4a60defd3ee981ae4d4472cd85014">graphics/effect.gles2/managed/space/postprocess/tonemapping.sm_lo</a><br></td>
+		<td>21 -> 21</td>
+	</tr>
+	<tr class="selectable" id="cid-106">
+		<td style="text-align: middle;"><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/9e/9eb3f22122b9e5fc_2f11cb57d46547d7122517e176043b0b">res:/dx9/model/ship/concord/cruiser/conc1/icons/1050_64.png</a>
+    		</summary>
+    		<img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/9e/9eb3f22122b9e5fc_2816c1de6c5f168238630f2075e6d3d2" src="" /> -> <img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/9e/9eb3f22122b9e5fc_2f11cb57d46547d7122517e176043b0b" src="" />
+		</details></td>
+		<td>6 -> 6</td>
+	</tr>
+	<tr class="selectable" id="cid-107">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/2c/2c3038b3c38e91a1_f357f755532d17bcf5fe32db830f7cdb">localizationfsd/localization_fsd_en-us.pickle</a><br></td>
+		<td>11407 -> 11407</td>
+	</tr>
+	<tr class="selectable" id="cid-108">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/86/863b56fd8cb43266_eaa6f86bb3d4a7b0e3f2f9c250f3cd27">dx9/model/spaceobjectfactory/hulls/cde1_t2.black</a><br></td>
+		<td>13 -> 13</td>
+	</tr>
+	<tr class="selectable" id="cid-109">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/ea/ea738d023f28635f_6de1275737d9a762f89897c54835461c">dx9/model/ship/concord/frigate/conf1/conf1_t1_lowdetail.gr2</a><br></td>
+		<td>47 -> 47</td>
+	</tr>
+	<tr class="selectable" id="cid-110">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/0b/0b577d4609680827_97c70494cc8077e86d59454469f1d32f">staticdata/evegroups.static</a><br></td>
+		<td>388 -> 388</td>
+	</tr>
+	<tr class="selectable" id="cid-111">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/6a/6aeda83b6cd00010_d0c5cb76fc25d4ccbd26eec420e8fdbe">dx9/model/spaceobjectfactory/hulls/cxl1_t1.black</a><br></td>
+		<td>215 -> 215</td>
+	</tr>
+	<tr class="selectable" id="cid-112">
+		<td style="text-align: middle;"><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/21/2118213b3e97334e_14a051f332d00a46908474c0001fe6b5">res:/dx9/model/ship/caldari/destroyer/cde1/icons/2802_128.png</a>
+    		</summary>
+    		<img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/21/2118213b3e97334e_06089ab94d20891c21215600da749970" src="" /> -> <img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/21/2118213b3e97334e_14a051f332d00a46908474c0001fe6b5" src="" />
+		</details></td>
+		<td>22 -> 22</td>
+	</tr>
+	<tr class="selectable" id="cid-113">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/07/07df8a3489660b9e_afeebd59fc53280a4373418c1f3dc6c3">staticdata/infobubbles.static</a><br></td>
+		<td>216 -> 216</td>
+	</tr>
+	<tr class="selectable" id="cid-114">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/ff/ff6090512f1f8110_5550f88610a987a111c02726b93cca9b">dx9/model/ship/concord/cruiser/conc1/conc1_t1_ar.dds</a><br></td>
+		<td>1398 -> 1398</td>
+	</tr>
+	<tr class="selectable" id="cid-115">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/f9/f9f241d8c3a11761_7e1aaef1c2e90a469e37d15bdd1d218b">staticdata/dbuffcollections.static</a><br></td>
+		<td>36 -> 36</td>
+	</tr>
+	<tr class="selectable" id="cid-116">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/a8/a8ae8f1d778dfd07_6b6ee7a4072c88b79b957e96f027ebe3">staticdata/certificates.static</a><br></td>
+		<td>131 -> 130</td>
+	</tr>
+	<tr class="selectable" id="cid-117">
+		<td style="text-align: middle;"><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/bb/bb95e89f7ef69bbd_ff190bc3fc482ef4c898d9510fbbd48c">res:/dx9/model/deployables/generic/citadel/xl/cxl1/icons/cxl1_t1_isis.png</a>
+    		</summary>
+    		<img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/bb/bb95e89f7ef69bbd_0182d71352ff0bc821729125a9afede2" src="" /> -> <img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/bb/bb95e89f7ef69bbd_ff190bc3fc482ef4c898d9510fbbd48c" src="" />
+		</details></td>
+		<td>8 -> 8</td>
+	</tr>
+	<tr class="selectable" id="cid-118">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/35/350cf81f2f26b64b_cf189dc74bd0225800f6288aa018b70f">dx9/model/spaceobjectfactory/data.black</a><br></td>
+		<td>12031 -> 12033</td>
+	</tr>
+	<tr class="selectable" id="cid-119">
+		<td style="text-align: middle;"><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/82/8254fefeef82b697_9fb2bd0351a1e820150aa8f1466ca6aa">res:/dx9/model/ship/concord/cruiser/conc1/icons/1051_64.png</a>
+    		</summary>
+    		<img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/82/8254fefeef82b697_623b6fab25b299725bd9c8b62475b910" src="" /> -> <img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/82/8254fefeef82b697_9fb2bd0351a1e820150aa8f1466ca6aa" src="" />
+		</details></td>
+		<td>6 -> 6</td>
+	</tr>
+	<tr class="selectable" id="cid-120">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/bd/bda7724745ed6198_aaeb3f7ed00b9dbcd8bb3bb2d54cc946">bin/staticdata/mapObjects.db</a><br></td>
+		<td>35793 -> 35793</td>
+	</tr>
+	</table>
+</details>
+
+<!--<h2 id="changedfiles">Removed Files</h2>-->
+
+<!-- [[removedFilesSection]] -->
+
+<!--<h2 id="changedpythonfiles">Changed Python Files</h2>-->
+
+<!-- [[changedPythonFiles]] -->
+
+<p class="mini2">Made by Inomares. I don't want your donations. I don't read EVE mails. Leave me alone.</p>
+<p class="mini3">I guess contact me on <a href="https://tweetfleet.slack.com/messages/@inomares/">Tweetfleet Slack</a> if you really need to.</p>
+<div class="footer1 footer" id="footer1" onClick="test123();"></div>
+<div class="footer2 footer" id="footer2"></div>
+</body>
+</html>
