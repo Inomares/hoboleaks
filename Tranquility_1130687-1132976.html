@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hoboleaks: Tranquility_Previous (Build: 1130687) to Tranquility_Next (Build: 1132976)</title>
+	<meta name="title" content="Client Comparison: Tranquility_Previous (Build: 1130687) to Tranquility_Next (Build: 1132976) | Hoboleaks">
+	<meta name="description" content="Generated @ 2017-03-30 11:15:46 EVE Time">
+	
+	<meta name="og:title" content="Hoboleaks: Tranquility_Previous (Build: 1130687) -> Tranquility_Next (Build: 1132976)">
+	<meta name="og:description" content="Generated @ 2017-03-30 11:15:46 EVE Time">
+	<meta name="og:image" content="http://hoboleaks.space/sitepreview.png">
+	
+	<meta name="twitter:title" content="Hoboleaks: Tranquility_Previous (Build: 1130687) -> Tranquility_Next (Build: 1132976)">
+	<meta name="twitter:description" content="Generated @ 2017-03-30 11:15:46 EVE Time">
+	<meta name="twitter:image" content="http://hoboleaks.space/sitepreview.png">
+	<meta charset="UTF-8">
+	<style>
+		table {
+			width:1280px;
+			font-family: arial, tahoma, sans-serif;
+			font-size: 10pt;
+			border-collapse: collapse;
+		}
+
+		td, th {
+			border: 1px solid black;
+			text-align: left;
+			padding: 8px;
+		}
+
+		tr:nth-child(even) {
+			background-color: #DBDBDB;
+		}
+		
+		tr.unimportant {
+			opacity: 0.4;
+			font-size: 8pt;
+		}
+
+		td.mini {
+			font-size: 8pt;
+		}
+
+		p.mini {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 8pt;
+		}
+		
+		p {
+			font-family: arial, tahoma, sans-serif;
+		}
+		
+		p.mini2 {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 5pt;
+		}
+		
+		p.mini3 {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 5pt;
+			color: gray;
+		}
+		
+		p.kindasmall {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 10pt;
+			margin: 5px 0px 5px 0px;
+		}
+
+		h1, h2, h3 {
+			font-family: arial, tahoma, sans-serif;
+		}
+
+		summary.bigsum {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 15pt;
+		}		
+
+		summary.bigsum_disabled {
+			font-family: arial, tahoma, sans-serif;
+			color: #9E9E9E;
+			font-size: 15pt;
+		}
+		
+		summary.smallsum {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 10pt;
+		}
+		
+		p.scriptnotify {
+			font-family: arial, tahoma, sans-serif;
+			color: red;
+			font-size: 12pt;
+		}
+		
+		p.scriptnotifysmall {
+			font-family: arial, tahoma, sans-serif;
+			color: red;
+			font-size: 9pt;
+		}
+		
+		p.scriptnotifysmaller {
+			font-family: arial, tahoma, sans-serif;
+			color: red;
+			font-size: 5pt;
+		}
+		
+		div.simplebox {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 10pt;
+			padding: 5px;
+			margin: 2px;
+			border-left-style: dotted;
+		}
+		
+		ul {
+			padding-left:20px;
+		}
+		
+		div.footer {
+		   position: fixed;
+		   bottom: 20px;
+		   height: 20px;
+		   width: 20px;
+		   border-style: none;
+		}
+		
+		div.footer1 {
+		   right: 20px;
+		}
+		
+		div.footer2 {
+		   left: 20px;
+		   visibility: hidden;
+		}
+		
+		div.footer:hover {
+			border-style: dotted;
+			border-color: #F2F2F2;
+		}
+		
+		.selected {
+			background-color: #C4F0FF;
+		}
+		
+		tr.selected:nth-child(even) {
+			background-color: #C4F0FF;
+		}
+
+		/* IE 6 */
+		* html #footer {
+		   position:absolute;
+		   top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
+		}
+	</style>
+	<script type="text/javascript">
+		genTime = "highlight" + 1490872547.0
+	
+	    function selectText(containerid, hasWaited) {
+			hasWaited = hasWaited || false
+			if (hasWaited == false) {
+				window.setTimeout(function(){selectText(containerid, true)}, 50); /* I'm sure I'm in the wrong here somehow and not Chrome, but this is how we're fixing it soooooooo yeah. */
+				return
+			}
+			var node = document.getElementById(containerid);
+			if (document.selection) {
+				var range = document.body.createTextRange();
+				range.moveToElementText(node);
+				range.select();
+			} else if (window.getSelection) {
+				var range = document.createRange();
+				range.selectNodeContents(node);
+				window.getSelection().removeAllRanges();
+				window.getSelection().addRange(range);
+			}
+		}
+		
+		function hasClass(node, className) {
+			return (node.className && node.className.indexOf(className) != -1)
+		}
+		
+		function getHashValues() {
+			hashValues = window.location.hash.slice(1).split(",")
+			if (!isHashValid(hashValues)) {
+				console.log("Hash is invalid.")
+				return [genTime]
+			}
+			if (hashValues.length == 1 && hashValues[0] == "") {
+				return [genTime]
+			}
+			return hashValues
+		}
+		
+		function isHashValid(hashValues) {
+			if (hashValues[0] == genTime) {
+				return true
+			}
+			return false
+		}
+		
+		function hashHasID(nodeID) {
+			hashValues = getHashValues()
+			idPos = hashValues.indexOf(nodeID)
+			ret = (idPos != -1)
+			return 
+		}
+		
+		function updateSelectablesFromHash() {
+			hashValues = getHashValues()
+			oldSelected = document.getElementsByClassName("selected")
+			for (var i=oldSelected.length-1; i >= 0; i--) {
+				node = oldSelected[i]
+				if (!hashHasID(getNodeID(node))) {
+					deselectNode(node)
+				}
+			}
+			for (var i=0; i < hashValues.length; i++) {
+				currentID = hashValues[i]
+				idName = "cid-" + currentID
+				node = document.getElementById(idName)
+				if (node != null) {
+					selectNode(node)
+					updateInheritance(node)
+				}					
+			}
+		}
+		
+		function updateInheritance(node, isDetail) {
+			isDetail = isDetail || false
+			if (node == null || node.tagName == "BODY") {
+				return
+			}
+			if (hasClass(node, "selectParent")) {
+				node.classList.add("selected")
+			}
+			if (node.tagName == "DETAILS") {
+				updateInheritance(node.firstElementChild, true)
+			}
+			if (!isDetail) {
+				return updateInheritance(node.parentNode)
+			}
+		}
+		
+		function selectNode(node) {
+			node.classList.add("selected")
+		}
+		
+		function deselectNode(node) {
+			node.classList.remove("selected")
+		}
+		
+		function getNodeID(node) {
+			nodeID = node.id.slice(4)
+			return nodeID
+		}
+		
+		function toggleNodeHash(node) {
+			nodeID = node.id.slice(4)
+			hashValues = getHashValues()
+			idPos = hashValues.indexOf(nodeID)
+			if (idPos == -1) {
+				hashValues.push(nodeID)
+			}
+			else {
+				hashValues.splice(idPos, 1)
+			}
+			window.location.hash = hashValues.join()
+		}
+		
+		function getSelectableNode(node) {
+		/* We recursively iterate our way up the tree to see if any part of it is selectable. */
+			if (node == null) {
+				return null
+			}
+			if (hasClass(node, "selectable")) {
+				return node
+			}
+			return getSelectableNode(node.parentNode)			
+		}
+		
+		window.onhashchange = function() {
+			updateSelectablesFromHash()
+		}
+		
+		window.onload = function() {
+			document.body.onclick = function(e){
+				if (!e.altKey) {
+					return
+				}
+				if (window.event) {
+					clickedNode = event.srcElement;
+				}
+				else {
+					clickedNode = e.target
+				}
+				selectableNode = getSelectableNode(clickedNode)
+				if (selectableNode != null) {
+					toggleNodeHash(selectableNode)
+					return false
+				}
+			}
+			updateSelectablesFromHash()
+		}
+	</script>
+</head>
+<body>
+<h1>Comparing Tranquility_Previous (Build: 1130687) to Tranquility_Next (Build: 1132976)</h1>
+<!-- <iframe id="timer" src="timerSection.html?version=1&timer=1489606234.803" style="border:none;" height="40px" width="800px"> </iframe> -->
+<p class="mini">Generated @ 2017-03-30 11:15:46 EVE Time (UTC)</p>
+<noscript>
+	<nobr>
+		<p class="scriptnotify" style="display:inline;">You've disabled javascript. This made the menu so sad that it self-destructed. I hope you're happy now.</p>
+		<p class="scriptnotifysmaller" style="display:inline;">You monster.</p>
+	</nobr>
+	<p class="scriptnotifysmall">This page should still kinda work though.</p>
+</noscript>
+<iframe id="navMenu" src="nav.html" style="border:none; display:none;" height="40px" width="800px"> </iframe>
+<script>
+  document.getElementById("navMenu").style.display = "block";
+</script>
+<p class="mini"></p>
+<p class="kindasmall">Click the categories below to expand them! <a href="confused.html">Confused?</a></p>
+
+<!--<h2 id="items">Items</h2>-->
+
+<details id="newitems">
+	<summary class="selectParent bigsum_disabled" onclick="return false">New Items (0 Entries)</summary>
+	<table>
+	
+	  <tr>
+		<!--<th>[[title4]]</th>-->
+		<th>TypeID & Name</th>
+		<th>Description</th>
+		<th>Group</th>
+		<th>Attributes</th>
+	  </tr>
+	
+	</table>
+</details>
+
+<details id="removeditems">
+	<summary class="selectParent bigsum_disabled" onclick="return false">Removed Items (0 Entries)</summary>
+	<table>
+	  <tr>
+		<th>Name</th>
+		<th>Description</th>
+		<th>Group</th>
+		<th>Attributes</th>
+	  </tr>
+	
+	</table>
+</details>
+
+<details id="changedblueprints">
+	<summary class="selectParent bigsum_disabled" onclick="return false">Changed Blueprints BETA (0 Entries)</summary>
+	<table>
+	  <tr>
+		<th>Blueprint Name</th>
+		<th>Old BP Data</th>
+		<th>New BP Data</th>
+		<th>Raw Diff</th>
+	  </tr>
+	
+	</table>
+</details>
+
+<br>
+
+<details id="bonuschanges">
+	<summary class="selectParent bigsum_disabled" onclick="return false">Changed Traits (0 Entries)</summary>
+	<table>
+	  <tr>
+		<th>TypeID, Group, & Name</th>
+		<th>Tranquility_Previous</th>
+		<th>Tranquility_Next</th>
+		<th>Diff</th>
+		<!-- <th>[[title4]]</th> -->
+	  </tr>
+	
+	</table>
+</details>
+
+<!--<h2 id="attributes">Attributes</h2>-->
+
+<details id="dgmattribs">
+	<summary class="selectParent bigsum_disabled" onclick="return false">Changes to Attributes (0 Entries)</summary>
+	<table>
+	  <tr>
+		<th>Attribute Name</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Diff</th>
+	  </tr>
+	
+	</table>
+</details>
+
+<details id="typeattribs">
+	<summary class="selectParent bigsum_disabled" onclick="return false">Attribute Changes per Type (0 Entries)</summary>
+	<table>
+	  <tr>
+		<th>TypeID, Name, and Group</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Diff</th>
+	  </tr>
+	
+	</table>
+</details>
+
+<br>
+
+<!--<h2 id="effectchanges">Effect Changes</h2>-->
+
+<details id="dgmeffects">
+	<summary class="selectParent bigsum_disabled" onclick="return false">Changes to Effects (0 Entries)</summary>
+	<table>
+	  <tr>
+		<th>Effect Name</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Diff</th>
+	  </tr>
+	
+	</table>
+</details>
+
+<details id="typeeffects">
+	<summary class="selectParent bigsum_disabled" onclick="return false">Effect Changes per Type (0 Entries)</summary>
+	<table>
+	  <tr>
+		<th>TypeID, Name, and Group</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Effects Changes</th>
+	  </tr>
+	
+	</table>
+</details>
+
+<br>
+
+<!--<h2 id="stringchanges">String Changes</h2>-->
+
+<details id="stringchanges">
+	<summary class="selectParent bigsum_disabled" onclick="return false">String Changes (0 Entries)</summary>
+	<table>
+	  <tr>
+		<th>Key</th>
+		<th>Tranquility_Previous</th>
+		<th>Tranquility_Next</th>
+		<th>Diff</th>
+		<th>Notes</th>
+	  </tr>
+	
+	</table>
+</details>
+
+<br>
+
+<!--<h2 id="newfiles">New Files</h2>-->
+
+<script>
+	function displayMedia(doc) {
+		nodes = doc.children
+		for (i=0; i < nodes.length; i++) {
+			node = nodes[i]
+			if (node.hasAttribute("data-src") && node.getAttribute("src") == "") {
+				node.setAttribute("src", node.getAttribute("data-src"))
+			}
+		}
+	}
+</script>
+<details id="newfiles">
+	<summary class="selectParent bigsum_disabled" onclick="return false">New Files (0 Entries)</summary>
+	<table>
+	  <tr>
+		<th>File Name</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Size in kb (Decompressed)</th>
+	  </tr>
+	
+	</table>
+</details>
+<script>
+	function test123() {
+		document.getElementById("footer1").style.display = "none";
+		document.getElementById("footer2").style.visibility = "visible";
+		document.getElementById("footer2").onclick = function() {document.location = "http://i.imgur.com/3Kd6ruW.jpg"}
+	}
+</script>
+<!--<h2 id="changedfiles">Changed Files</h2>-->
+
+<details id="changedfiles">
+	<summary class="selectParent bigsum">Changed Files (27 Entries)</summary>
+	<table>
+	  <tr>
+		<th>File Name</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Size in kb (Decompressed)</th>
+	  </tr>
+	<tr class="selectable" id="cid-1">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/61/61e4f3091016e61b_fcb3bf996ceaa69f5f0ccbfc66e29010">staticdata/fighterabilitiesbytype.static</a><br></td>
+		<td>14 -> 14</td>
+	</tr>
+	<tr class="selectable" id="cid-2">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/f0/f016514b481ba503_8f28d70c346e4f0b80f9d2fe43ba92db">staticdata/blueprints.static</a><br></td>
+		<td>4333 -> 4333</td>
+	</tr>
+	<tr class="selectable" id="cid-3">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/1a/1a48a0969136daa1_00f90f917a7d61c236fe1605fcd36ef5">manifest.dat</a><br></td>
+		<td>13 -> 13</td>
+	</tr>
+	<tr class="selectable" id="cid-4">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/d6/d650a8ea71b2f13c_ac51cad11671c1706fc7747595a5de08">staticdata/clonegrades.static</a><br></td>
+		<td>20 -> 20</td>
+	</tr>
+	<tr class="selectable" id="cid-5">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/04/04fe8caf2896e754_8efa42721ecf9645679ade9c34569cf7">staticdata/skinmaterials.static</a><br></td>
+		<td>22 -> 22</td>
+	</tr>
+	<tr class="selectable" id="cid-6">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/4b/4ba32af50b80bf9a_137cac711fbe585bba195ab1575e375f">audio/soundbanksinfo.xml</a><br></td>
+		<td>3171 -> 3171</td>
+	</tr>
+	<tr class="selectable" id="cid-7">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/ee/ee8be85f1266bec3_532b02cffbb36d13c03d77f2fbc3eb77">audio/interface.bnk</a><br></td>
+		<td>8618 -> 8617</td>
+	</tr>
+	<tr class="selectable" id="cid-8">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/cb/cb291acd32af7f27_9b439daf44718352342d20f109549acb">staticdata/skins.static</a><br></td>
+		<td>1399 -> 1399</td>
+	</tr>
+	<tr class="selectable" id="cid-9">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/9a/9adf983d033ba1a3_6b440c93a826bebcdde2973b4979ff15">staticdata/evecategories.static</a><br></td>
+		<td>10 -> 10</td>
+	</tr>
+	<tr class="selectable" id="cid-10">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/1d/1d34143a37d4b739_041e2fe4398221924e753f9fee7cb6d5">resfileindex.txt</a><br></td>
+		<td>11435 -> 11435</td>
+	</tr>
+	<tr class="selectable" id="cid-11">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/f0/f032ac16b88d97a4_7f3a50db14e2c60be794d1127cc5e9d3">code.ccp</a><br></td>
+		<td>16553 -> 16553</td>
+	</tr>
+	<tr class="selectable" id="cid-12">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/2e/2edadfca55978bdf_904d4644a9d6ec092283e3b539992623">staticdata/starmapcache.pickle</a><br></td>
+		<td>1652 -> 1652</td>
+	</tr>
+	<tr class="selectable" id="cid-13">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/dd/ddec335c5166e1ce_4e91c91dd96c2b3662773fa0b030f559">staticdata/skinlicenses.static</a><br></td>
+		<td>1078 -> 1078</td>
+	</tr>
+	<tr class="selectable" id="cid-14">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/4a/4a2d3f8fdea01bca_453334db7faf7dbf89676f7436b55c45">staticdata/fighterabilities.static</a><br></td>
+		<td>13 -> 13</td>
+	</tr>
+	<tr class="selectable" id="cid-15">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/92/9299cb77f6cae635_146292e35b438e960c297ffd81f88720">staticdata/industry_activity_target_filters.static</a><br></td>
+		<td>8 -> 8</td>
+	</tr>
+	<tr class="selectable" id="cid-16">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/56/5610a6eb8b5a4975_6a3e24027ef24ad851f9e3e68fba3258">resfileindex_prefetch.txt</a><br></td>
+		<td>1116 -> 1116</td>
+	</tr>
+	<tr class="selectable" id="cid-17">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/67/671695e3a499baf0_4b45cc5c79bcb47674baa43da3a2867c">staticdata/evetypes.static</a><br></td>
+		<td>12382 -> 12382</td>
+	</tr>
+	<tr class="selectable" id="cid-18">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/8d/8d0a225a112080f4_bef4b1942e92509f58a8b7855ff14880">staticdata/industry_activity_modifier_sources.static</a><br></td>
+		<td>25 -> 25</td>
+	</tr>
+	<tr class="selectable" id="cid-19">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/b1/b1ba33e51fb68ec7_4fc527ea3f379ffbabcb3774b073547c">staticdata/crates.static</a><br></td>
+		<td>21 -> 21</td>
+	</tr>
+	<tr class="selectable" id="cid-20">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/1a/1afa3f2b81f52348_eb97389082ed3905ed858b34f4d3bf81">staticdata/evetypelists.static</a><br></td>
+		<td>1 -> 1</td>
+	</tr>
+	<tr class="selectable" id="cid-21">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/e3/e3cd8a97159e6321_a51a12ae3975e9221abd5ad84b30db79">start.ini</a><br></td>
+		<td>0 -> 0</td>
+	</tr>
+	<tr class="selectable" id="cid-22">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/aa/aa0b8b0323d24f50_3d2612184172bd544d8af3faf5cd478c">bulkdata/metadata.yaml</a><br></td>
+		<td>0 -> 0</td>
+	</tr>
+	<tr class="selectable" id="cid-23">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/54/544c5f8e1b39050d_486f7bf9d2f4a6fa96259269763b237e">graphics/character/paperdollcache.pickle</a><br></td>
+		<td>3815 -> 3841</td>
+	</tr>
+	<tr class="selectable" id="cid-24">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/0b/0b577d4609680827_f19c500873a0b590d37d75889d9f1912">staticdata/evegroups.static</a><br></td>
+		<td>387 -> 387</td>
+	</tr>
+	<tr class="selectable" id="cid-25">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/07/07df8a3489660b9e_d6dd2612b4a8782d0e206deeab991b00">staticdata/infobubbles.static</a><br></td>
+		<td>214 -> 214</td>
+	</tr>
+	<tr class="selectable" id="cid-26">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/f9/f9f241d8c3a11761_9eff183a0a3e7cfdb7488bdfce7ed7b8">staticdata/dbuffcollections.static</a><br></td>
+		<td>36 -> 36</td>
+	</tr>
+	<tr class="selectable" id="cid-27">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/bd/bda7724745ed6198_23494c728e661614b8ec868230113e3c">bin/staticdata/mapObjects.db</a><br></td>
+		<td>35788 -> 35788</td>
+	</tr>
+	</table>
+</details>
+
+<!--<h2 id="changedfiles">Removed Files</h2>-->
+
+<!-- [[removedFilesSection]] -->
+
+<!--<h2 id="changedpythonfiles">Changed Python Files</h2>-->
+
+<!-- [[changedPythonFiles]] -->
+
+<p class="mini2">Made by Inomares. I don't want your donations. I don't read EVE mails. Leave me alone.</p>
+<p class="mini3">I guess contact me on <a href="https://tweetfleet.slack.com/messages/@inomares/">Tweetfleet Slack</a> if you really need to.</p>
+<div class="footer1 footer" id="footer1" onClick="test123();"></div>
+<div class="footer2 footer" id="footer2"></div>
+</body>
+</html>
