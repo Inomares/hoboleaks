@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hoboleaks: Singularity_Previous (Build: 1134116) to Singularity_Next (Build: 1134468)</title>
+	<meta name="title" content="Client Comparison: Singularity_Previous (Build: 1134116) to Singularity_Next (Build: 1134468) | Hoboleaks">
+	<meta name="description" content="Generated @ 2017-04-05 12:29:35 EVE Time">
+	
+	<meta name="og:title" content="Hoboleaks: Singularity_Previous (Build: 1134116) -> Singularity_Next (Build: 1134468)">
+	<meta name="og:description" content="Generated @ 2017-04-05 12:29:35 EVE Time">
+	<meta name="og:image" content="http://hoboleaks.space/sitepreview.png">
+	
+	<meta name="twitter:title" content="Hoboleaks: Singularity_Previous (Build: 1134116) -> Singularity_Next (Build: 1134468)">
+	<meta name="twitter:description" content="Generated @ 2017-04-05 12:29:35 EVE Time">
+	<meta name="twitter:image" content="http://hoboleaks.space/sitepreview.png">
+	<meta charset="UTF-8">
+	<style>
+		table {
+			width:1280px;
+			font-family: arial, tahoma, sans-serif;
+			font-size: 10pt;
+			border-collapse: collapse;
+		}
+
+		td, th {
+			border: 1px solid black;
+			text-align: left;
+			padding: 8px;
+		}
+
+		tr:nth-child(even) {
+			background-color: #DBDBDB;
+		}
+		
+		tr.unimportant {
+			opacity: 0.4;
+			font-size: 8pt;
+		}
+
+		td.mini {
+			font-size: 8pt;
+		}
+
+		p.mini {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 8pt;
+		}
+		
+		p {
+			font-family: arial, tahoma, sans-serif;
+		}
+		
+		p.mini2 {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 5pt;
+		}
+		
+		p.mini3 {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 5pt;
+			color: gray;
+		}
+		
+		p.kindasmall {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 10pt;
+			margin: 5px 0px 5px 0px;
+		}
+
+		h1, h2, h3 {
+			font-family: arial, tahoma, sans-serif;
+		}
+
+		summary.bigsum {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 15pt;
+		}		
+
+		summary.bigsum_disabled {
+			font-family: arial, tahoma, sans-serif;
+			color: #9E9E9E;
+			font-size: 15pt;
+		}
+		
+		summary.smallsum {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 10pt;
+		}
+		
+		p.scriptnotify {
+			font-family: arial, tahoma, sans-serif;
+			color: red;
+			font-size: 12pt;
+		}
+		
+		p.scriptnotifysmall {
+			font-family: arial, tahoma, sans-serif;
+			color: red;
+			font-size: 9pt;
+		}
+		
+		p.scriptnotifysmaller {
+			font-family: arial, tahoma, sans-serif;
+			color: red;
+			font-size: 5pt;
+		}
+		
+		div.simplebox {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 10pt;
+			padding: 5px;
+			margin: 2px;
+			border-left-style: dotted;
+		}
+		
+		ul {
+			padding-left:20px;
+		}
+		
+		div.footer {
+		   position: fixed;
+		   bottom: 20px;
+		   height: 20px;
+		   width: 20px;
+		   border-style: none;
+		}
+		
+		div.footer1 {
+		   right: 20px;
+		}
+		
+		div.footer2 {
+		   left: 20px;
+		   visibility: hidden;
+		}
+		
+		div.footer:hover {
+			border-style: dotted;
+			border-color: #F2F2F2;
+		}
+		
+		.selected {
+			background-color: #C4F0FF;
+		}
+		
+		tr.selected:nth-child(even) {
+			background-color: #C4F0FF;
+		}
+
+		/* IE 6 */
+		* html #footer {
+		   position:absolute;
+		   top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
+		}
+	</style>
+	<script type="text/javascript">
+		genTime = "highlight" + 1491395376.0
+	
+	    function selectText(containerid, hasWaited) {
+			hasWaited = hasWaited || false
+			if (hasWaited == false) {
+				window.setTimeout(function(){selectText(containerid, true)}, 50); /* I'm sure I'm in the wrong here somehow and not Chrome, but this is how we're fixing it soooooooo yeah. */
+				return
+			}
+			var node = document.getElementById(containerid);
+			if (document.selection) {
+				var range = document.body.createTextRange();
+				range.moveToElementText(node);
+				range.select();
+			} else if (window.getSelection) {
+				var range = document.createRange();
+				range.selectNodeContents(node);
+				window.getSelection().removeAllRanges();
+				window.getSelection().addRange(range);
+			}
+		}
+		
+		function hasClass(node, className) {
+			return (node.className && node.className.indexOf(className) != -1)
+		}
+		
+		function getHashValues() {
+			hashValues = window.location.hash.slice(1).split(",")
+			if (!isHashValid(hashValues)) {
+				console.log("Hash is invalid.")
+				return [genTime]
+			}
+			if (hashValues.length == 1 && hashValues[0] == "") {
+				return [genTime]
+			}
+			return hashValues
+		}
+		
+		function isHashValid(hashValues) {
+			if (hashValues[0] == genTime) {
+				return true
+			}
+			return false
+		}
+		
+		function hashHasID(nodeID) {
+			hashValues = getHashValues()
+			idPos = hashValues.indexOf(nodeID)
+			ret = (idPos != -1)
+			return 
+		}
+		
+		function updateSelectablesFromHash() {
+			hashValues = getHashValues()
+			oldSelected = document.getElementsByClassName("selected")
+			for (var i=oldSelected.length-1; i >= 0; i--) {
+				node = oldSelected[i]
+				if (!hashHasID(getNodeID(node))) {
+					deselectNode(node)
+				}
+			}
+			for (var i=0; i < hashValues.length; i++) {
+				currentID = hashValues[i]
+				idName = "cid-" + currentID
+				node = document.getElementById(idName)
+				if (node != null) {
+					selectNode(node)
+					updateInheritance(node)
+				}					
+			}
+		}
+		
+		function updateInheritance(node, isDetail) {
+			isDetail = isDetail || false
+			if (node == null || node.tagName == "BODY") {
+				return
+			}
+			if (hasClass(node, "selectParent")) {
+				node.classList.add("selected")
+			}
+			if (node.tagName == "DETAILS") {
+				updateInheritance(node.firstElementChild, true)
+			}
+			if (!isDetail) {
+				return updateInheritance(node.parentNode)
+			}
+		}
+		
+		function selectNode(node) {
+			node.classList.add("selected")
+		}
+		
+		function deselectNode(node) {
+			node.classList.remove("selected")
+		}
+		
+		function getNodeID(node) {
+			nodeID = node.id.slice(4)
+			return nodeID
+		}
+		
+		function toggleNodeHash(node) {
+			nodeID = node.id.slice(4)
+			hashValues = getHashValues()
+			idPos = hashValues.indexOf(nodeID)
+			if (idPos == -1) {
+				hashValues.push(nodeID)
+			}
+			else {
+				hashValues.splice(idPos, 1)
+			}
+			window.location.hash = hashValues.join()
+		}
+		
+		function getSelectableNode(node) {
+		/* We recursively iterate our way up the tree to see if any part of it is selectable. */
+			if (node == null) {
+				return null
+			}
+			if (hasClass(node, "selectable")) {
+				return node
+			}
+			return getSelectableNode(node.parentNode)			
+		}
+		
+		window.onhashchange = function() {
+			updateSelectablesFromHash()
+		}
+		
+		window.onload = function() {
+			document.body.onclick = function(e){
+				if (!e.altKey) {
+					return
+				}
+				if (window.event) {
+					clickedNode = event.srcElement;
+				}
+				else {
+					clickedNode = e.target
+				}
+				selectableNode = getSelectableNode(clickedNode)
+				if (selectableNode != null) {
+					toggleNodeHash(selectableNode)
+					return false
+				}
+			}
+			updateSelectablesFromHash()
+		}
+	</script>
+</head>
+<body>
+<h1>Comparing Singularity_Previous (Build: 1134116) to Singularity_Next (Build: 1134468)</h1>
+<!-- <iframe id="timer" src="timerSection.html?version=1&timer=1489606234.803" style="border:none;" height="40px" width="800px"> </iframe> -->
+<p class="mini">Generated @ 2017-04-05 12:29:35 EVE Time (UTC)</p>
+<noscript>
+	<nobr>
+		<p class="scriptnotify" style="display:inline;">You've disabled javascript. This made the menu so sad that it self-destructed. I hope you're happy now.</p>
+		<p class="scriptnotifysmaller" style="display:inline;">You monster.</p>
+	</nobr>
+	<p class="scriptnotifysmall">This page should still kinda work though.</p>
+</noscript>
+<iframe id="navMenu" src="nav.html" style="border:none; display:none;" height="40px" width="800px"> </iframe>
+<script>
+  document.getElementById("navMenu").style.display = "block";
+</script>
+<p class="mini"></p>
+<p class="kindasmall">Click the categories below to expand them! <a href="confused.html">Confused?</a></p>
+
+<!--<h2 id="items">Items</h2>-->
+
+<details id="newitems">
+	<summary class="selectParent bigsum_disabled" onclick="return false">New Items (0 Entries)</summary>
+	<table>
+	
+	  <tr>
+		<!--<th>[[title4]]</th>-->
+		<th>TypeID & Name</th>
+		<th>Description</th>
+		<th>Group</th>
+		<th>Attributes</th>
+	  </tr>
+	
+	</table>
+</details>
+
+<details id="removeditems">
+	<summary class="selectParent bigsum_disabled" onclick="return false">Removed Items (0 Entries)</summary>
+	<p class="kindasmall">Please note that a "removed" item usually means the item was just not yet added to the "newer" build.</p>
+	<table>
+	  <tr>
+		<th>TypeID & Name</th>
+		<th>Description</th>
+		<th>Group</th>
+		<th>Attributes</th>
+	  </tr>
+	
+	</table>
+</details>
+
+<details id="changedblueprints">
+	<summary class="selectParent bigsum_disabled" onclick="return false">Changed Blueprints BETA (0 Entries)</summary>
+	<table>
+	  <tr>
+		<th>Blueprint Name</th>
+		<th>Old BP Data</th>
+		<th>New BP Data</th>
+		<th>Raw Diff</th>
+	  </tr>
+	
+	</table>
+</details>
+
+<br>
+
+<details id="bonuschanges">
+	<summary class="selectParent bigsum_disabled" onclick="return false">Changed Traits (0 Entries)</summary>
+	<table>
+	  <tr>
+		<th>TypeID, Group, & Name</th>
+		<th>Singularity_Previous</th>
+		<th>Singularity_Next</th>
+		<th>Diff</th>
+		<!-- <th>[[title4]]</th> -->
+	  </tr>
+	
+	</table>
+</details>
+
+<!--<h2 id="attributes">Attributes</h2>-->
+
+<details id="dgmattribs">
+	<summary class="selectParent bigsum_disabled" onclick="return false">Changes to Attributes (0 Entries)</summary>
+	<table>
+	  <tr>
+		<th>Attribute Name</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Diff</th>
+	  </tr>
+	
+	</table>
+</details>
+
+<details id="typeattribs">
+	<summary class="selectParent bigsum">Attribute Changes per Type (2 Entries)</summary>
+	<table>
+	  <tr>
+		<th>TypeID, Name, and Group</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Diff</th>
+	  </tr>
+	<tr class="selectable" id="cid-1">
+		<td>44993 - <b>Pacifier</b> (Covert Ops)</td>
+		<td><b>published:</b> False <b>=></b> True<br><b>marketGroupID:</b> None <b>=></b> 1838<br></td>
+	</tr>
+	<tr class="selectable" id="cid-2">
+		<td>44995 - <b>Enforcer</b> (Force Recon Ship)</td>
+		<td><b>eliteBonusReconShip1:</b> 20.0 <b>=></b> 10.0<br><b>eliteBonusReconShip2:</b> 10.0 <b>=></b> 5.0<br><b>published:</b> False <b>=></b> True<br><b>marketGroupID:</b> None <b>=></b> 1837<br></td>
+	</tr>
+	</table>
+</details>
+
+<br>
+
+<!--<h2 id="effectchanges">Effect Changes</h2>-->
+
+<details id="dgmeffects">
+	<summary class="selectParent bigsum_disabled" onclick="return false">Changes to Effects (0 Entries)</summary>
+	<table>
+	  <tr>
+		<th>Effect Name</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Diff</th>
+	  </tr>
+	
+	</table>
+</details>
+
+<details id="typeeffects">
+	<summary class="selectParent bigsum_disabled" onclick="return false">Effect Changes per Type (0 Entries)</summary>
+	<table>
+	  <tr>
+		<th>TypeID, Name, and Group</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Effects Changes</th>
+	  </tr>
+	
+	</table>
+</details>
+
+<br>
+
+<!--<h2 id="stringchanges">String Changes</h2>-->
+
+<details id="stringchanges">
+	<summary class="selectParent bigsum">String Changes (2 Entries)</summary>
+	<table>
+	  <tr>
+		<th>Key</th>
+		<th>Singularity_Previous</th>
+		<th>Singularity_Next</th>
+		<th>Diff</th>
+		<th>Notes</th>
+	  </tr>
+	<tr class="selectable" id="cid-3">
+		<td>526181</td>
+		<td width="355px"></td>
+		<td width="355px">Prerequisites need to be trained</td>
+		<td><ins style="background:#e6ffe6;">Prerequisites need to be trained</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-4">
+		<td>526182</td>
+		<td width="355px"></td>
+		<td width="355px">Skill injection required to train</td>
+		<td><ins style="background:#e6ffe6;">Skill injection required to train</ins></td>
+		<td class="mini"></td>
+	</tr>
+	</table>
+</details>
+
+<br>
+
+<!--<h2 id="newfiles">New Files</h2>-->
+
+<script>
+	function displayMedia(doc) {
+		nodes = doc.children
+		for (i=0; i < nodes.length; i++) {
+			node = nodes[i]
+			if (node.hasAttribute("data-src") && node.getAttribute("src") == "") {
+				node.setAttribute("src", node.getAttribute("data-src"))
+			}
+		}
+	}
+</script>
+<details id="newfiles">
+	<summary class="selectParent bigsum">New Files (9 Entries)</summary>
+	<table>
+	  <tr>
+		<th>File Name</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Size in kb (Decompressed)</th>
+	  </tr>
+	<tr class="selectable" id="cid-5">
+		<td><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/4e/4ed0bb0993f4c9af_d818048228d8266bdecfa0b954bd3c48">res:/ui/texture/classes/fastcheckout/plex_purchase_icon_20x16.png</a>
+    		</summary>
+    		<img data-src="http://res.eveprobe.ccpgames.com/4e/4ed0bb0993f4c9af_d818048228d8266bdecfa0b954bd3c48" src="" />
+		</details></td>
+		<td>17</td>
+	</tr>
+	<tr class="selectable" id="cid-6">
+		<td><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/d3/d3e3ba91762401b5_4c28a20eae9b540802f4807fef5df842">res:/ui/texture/classes/fastcheckout/plex_sale_icon_37x29.png</a>
+    		</summary>
+    		<img data-src="http://res.eveprobe.ccpgames.com/d3/d3e3ba91762401b5_4c28a20eae9b540802f4807fef5df842" src="" />
+		</details></td>
+		<td>18</td>
+	</tr>
+	<tr class="selectable" id="cid-7">
+		<td><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/b3/b3ee5c6b17cd1647_f4443ffae505fcbdc9e57881ffadcb8c">res:/ui/texture/classes/fastcheckout/eve_logo_v0.2.png</a>
+    		</summary>
+    		<img data-src="http://res.eveprobe.ccpgames.com/b3/b3ee5c6b17cd1647_f4443ffae505fcbdc9e57881ffadcb8c" src="" />
+		</details></td>
+		<td>18</td>
+	</tr>
+	<tr class="selectable" id="cid-8">
+		<td><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/de/de5147da2e3bc694_3f0c32339ead6ab73282b54e74b4e407">res:/ui/texture/vgs/plex_pricetag24.png</a>
+    		</summary>
+    		<img data-src="http://res.eveprobe.ccpgames.com/de/de5147da2e3bc694_3f0c32339ead6ab73282b54e74b4e407" src="" />
+		</details></td>
+		<td>0</td>
+	</tr>
+	<tr class="selectable" id="cid-9">
+		<td><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/3e/3ea13f4b5a3bdb79_26c03bf89ee9320f525992b3437f5f26">res:/ui/texture/classes/fastcheckout/eve_icon_purchase_window_header_v0.1.png</a>
+    		</summary>
+    		<img data-src="http://res.eveprobe.ccpgames.com/3e/3ea13f4b5a3bdb79_26c03bf89ee9320f525992b3437f5f26" src="" />
+		</details></td>
+		<td>18</td>
+	</tr>
+	<tr class="selectable" id="cid-10">
+		<td><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/92/9271b8ef1f547ffa_67cad5e151963754f1733f6250b5e282">res:/ui/texture/classes/fastcheckout/submit_arrow.png</a>
+    		</summary>
+    		<img data-src="http://res.eveprobe.ccpgames.com/92/9271b8ef1f547ffa_67cad5e151963754f1733f6250b5e282" src="" />
+		</details></td>
+		<td>17</td>
+	</tr>
+	<tr class="selectable" id="cid-11">
+		<td><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/25/25c3f3d8656c73e1_dd193c0f1d8390a7acc1e4ff281c7a9b">res:/ui/texture/vgs/plex_pricetag32.png</a>
+    		</summary>
+    		<img data-src="http://res.eveprobe.ccpgames.com/25/25c3f3d8656c73e1_dd193c0f1d8390a7acc1e4ff281c7a9b" src="" />
+		</details></td>
+		<td>1</td>
+	</tr>
+	<tr class="selectable" id="cid-12">
+		<td><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/3d/3dd9b3ab61cfb429_7f97604357534e0d531ca3723ddf734a">res:/ui/texture/classes/fastcheckout/eveonlinelogowhite.png</a>
+    		</summary>
+    		<img data-src="http://res.eveprobe.ccpgames.com/3d/3dd9b3ab61cfb429_7f97604357534e0d531ca3723ddf734a" src="" />
+		</details></td>
+		<td>3</td>
+	</tr>
+	<tr class="selectable" id="cid-13">
+		<td><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/a7/a78daaa7b4c65f84_47bf7904f4d37495ad36697ad6663898">res:/ui/texture/classes/fastcheckout/background.png</a>
+    		</summary>
+    		<img data-src="http://res.eveprobe.ccpgames.com/a7/a78daaa7b4c65f84_47bf7904f4d37495ad36697ad6663898" src="" />
+		</details></td>
+		<td>412</td>
+	</tr>
+	</table>
+</details>
+<script>
+	function test123() {
+		document.getElementById("footer1").style.display = "none";
+		document.getElementById("footer2").style.visibility = "visible";
+		document.getElementById("footer2").onclick = function() {document.location = "http://i.imgur.com/3Kd6ruW.jpg"}
+	}
+</script>
+<!--<h2 id="changedfiles">Changed Files</h2>-->
+
+<details id="changedfiles">
+	<summary class="selectParent bigsum">Changed Files (14 Entries)</summary>
+	<table>
+	  <tr>
+		<th>File Name</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Size in kb (Decompressed)</th>
+	  </tr>
+	<tr class="selectable" id="cid-14">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/1a/1a48a0969136daa1_d89873fe8ccce28486b35e9b606ef5c3">manifest.dat</a><br></td>
+		<td>13 -> 13</td>
+	</tr>
+	<tr class="selectable" id="cid-15">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/79/79a473897ae5f3b0_7775fcb61a87b19227f303e68a858019">localizationfsd/localization_fsd_main.pickle</a><br></td>
+		<td>2068 -> 2068</td>
+	</tr>
+	<tr class="selectable" id="cid-16">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/9a/9adf983d033ba1a3_4ed3f3fd160d7310057d73c2452c7be7">staticdata/evecategories.static</a><br></td>
+		<td>10 -> 10</td>
+	</tr>
+	<tr class="selectable" id="cid-17">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/1d/1d34143a37d4b739_22fdd55a702bcbac44f7bd1a02e50a57">resfileindex.txt</a><br></td>
+		<td>11502 -> 11503</td>
+	</tr>
+	<tr class="selectable" id="cid-18">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/f0/f032ac16b88d97a4_81be318859c6f7ff79303f20b9c8fe31">code.ccp</a><br></td>
+		<td>16622 -> 16621</td>
+	</tr>
+	<tr class="selectable" id="cid-19">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/bc/bc5fff279c5cae06_d23e35ce7c82d02ce552249234ee7ba1">bulkdata/800006.cache2</a><br></td>
+		<td>6726 -> 6726</td>
+	</tr>
+	<tr class="selectable" id="cid-20">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/56/5610a6eb8b5a4975_bd5b479e7cac0a7039d7d38b2b814e60">resfileindex_prefetch.txt</a><br></td>
+		<td>1114 -> 1114</td>
+	</tr>
+	<tr class="selectable" id="cid-21">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/67/671695e3a499baf0_7cc3d40841df3e88c0753845a9b5a637">staticdata/evetypes.static</a><br></td>
+		<td>12408 -> 12408</td>
+	</tr>
+	<tr class="selectable" id="cid-22">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/1e/1ef674def6229546_1f9db4c85fbc0fc9e2996cf0d0d405c8">bulkdata/version</a><br></td>
+		<td>0 -> 0</td>
+	</tr>
+	<tr class="selectable" id="cid-23">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/e3/e3cd8a97159e6321_2f6bc6c3fc5a4fc644a5d0f770153fdd">start.ini</a><br></td>
+		<td>0 -> 0</td>
+	</tr>
+	<tr class="selectable" id="cid-24">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/aa/aa0b8b0323d24f50_8abe94dbdd45029c24aacc946c47ec7c">bulkdata/metadata.yaml</a><br></td>
+		<td>0 -> 0</td>
+	</tr>
+	<tr class="selectable" id="cid-25">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/2c/2c3038b3c38e91a1_238c011b8f1562fbc57edae985890820">localizationfsd/localization_fsd_en-us.pickle</a><br></td>
+		<td>11407 -> 11407</td>
+	</tr>
+	<tr class="selectable" id="cid-26">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/0b/0b577d4609680827_f525667d4e7db6330f9e86b519033096">staticdata/evegroups.static</a><br></td>
+		<td>388 -> 388</td>
+	</tr>
+	<tr class="selectable" id="cid-27">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/fa/fade0fc260d02985_b04f0419d558e69f1e167aa36662d001">staticdata/graphicids.static</a><br></td>
+		<td>417 -> 419</td>
+	</tr>
+	</table>
+</details>
+
+<!--<h2 id="changedfiles">Removed Files</h2>-->
+
+<!-- [[removedFilesSection]] -->
+
+<!--<h2 id="changedpythonfiles">Changed Python Files</h2>-->
+
+<!-- [[changedPythonFiles]] -->
+
+<p class="mini2">Made by Inomares. I don't want your donations. I don't read EVE mails. Leave me alone.</p>
+<p class="mini3">I guess contact me on <a href="https://tweetfleet.slack.com/messages/@inomares/">Tweetfleet Slack</a> if you really need to.</p>
+<div class="footer1 footer" id="footer1" onClick="test123();"></div>
+<div class="footer2 footer" id="footer2"></div>
+</body>
+</html>
