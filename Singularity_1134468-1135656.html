@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hoboleaks: Singularity_Previous (Build: 1134468) to Singularity_Next (Build: 1135656)</title>
+	<meta name="title" content="Client Comparison: Singularity_Previous (Build: 1134468) to Singularity_Next (Build: 1135656) | Hoboleaks">
+	<meta name="description" content="Generated @ 2017-04-11 20:08:15 EVE Time">
+	
+	<meta name="og:title" content="Hoboleaks: Singularity_Previous (Build: 1134468) -> Singularity_Next (Build: 1135656)">
+	<meta name="og:description" content="Generated @ 2017-04-11 20:08:15 EVE Time">
+	<meta name="og:image" content="http://hoboleaks.space/sitepreview.png">
+	
+	<meta name="twitter:title" content="Hoboleaks: Singularity_Previous (Build: 1134468) -> Singularity_Next (Build: 1135656)">
+	<meta name="twitter:description" content="Generated @ 2017-04-11 20:08:15 EVE Time">
+	<meta name="twitter:image" content="http://hoboleaks.space/sitepreview.png">
+	<meta charset="UTF-8">
+	<style>
+		table {
+			width:1280px;
+			font-family: arial, tahoma, sans-serif;
+			font-size: 10pt;
+			border-collapse: collapse;
+		}
+
+		td, th {
+			border: 1px solid black;
+			text-align: left;
+			padding: 8px;
+		}
+
+		tr:nth-child(even) {
+			background-color: #DBDBDB;
+		}
+		
+		tr.unimportant {
+			opacity: 0.4;
+			font-size: 8pt;
+		}
+
+		td.mini {
+			font-size: 8pt;
+		}
+
+		p.mini {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 8pt;
+		}
+		
+		p {
+			font-family: arial, tahoma, sans-serif;
+		}
+		
+		p.mini2 {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 5pt;
+		}
+		
+		p.mini3 {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 5pt;
+			color: gray;
+		}
+		
+		p.kindasmall {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 10pt;
+			margin: 5px 0px 5px 0px;
+		}
+
+		h1, h2, h3 {
+			font-family: arial, tahoma, sans-serif;
+		}
+
+		summary.bigsum {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 15pt;
+		}		
+
+		summary.bigsum_disabled {
+			font-family: arial, tahoma, sans-serif;
+			color: #9E9E9E;
+			font-size: 15pt;
+		}
+		
+		summary.smallsum {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 10pt;
+		}
+		
+		p.scriptnotify {
+			font-family: arial, tahoma, sans-serif;
+			color: red;
+			font-size: 12pt;
+		}
+		
+		p.scriptnotifysmall {
+			font-family: arial, tahoma, sans-serif;
+			color: red;
+			font-size: 9pt;
+		}
+		
+		p.scriptnotifysmaller {
+			font-family: arial, tahoma, sans-serif;
+			color: red;
+			font-size: 5pt;
+		}
+		
+		div.simplebox {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 10pt;
+			padding: 5px;
+			margin: 2px;
+			border-left-style: dotted;
+		}
+		
+		ul {
+			padding-left:20px;
+		}
+		
+		div.footer {
+		   position: fixed;
+		   bottom: 20px;
+		   height: 20px;
+		   width: 20px;
+		   border-style: none;
+		}
+		
+		div.footer1 {
+		   right: 20px;
+		}
+		
+		div.footer2 {
+		   left: 20px;
+		   visibility: hidden;
+		}
+		
+		div.footer:hover {
+			border-style: dotted;
+			border-color: #F2F2F2;
+		}
+		
+		.selected {
+			background-color: #C4F0FF;
+		}
+		
+		tr.selected:nth-child(even) {
+			background-color: #C4F0FF;
+		}
+
+		/* IE 6 */
+		* html #footer {
+		   position:absolute;
+		   top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
+		}
+	</style>
+	<script type="text/javascript">
+		genTime = "highlight" + 1491941296.0
+	
+	    function selectText(containerid, hasWaited) {
+			hasWaited = hasWaited || false
+			if (hasWaited == false) {
+				window.setTimeout(function(){selectText(containerid, true)}, 50); /* I'm sure I'm in the wrong here somehow and not Chrome, but this is how we're fixing it soooooooo yeah. */
+				return
+			}
+			var node = document.getElementById(containerid);
+			if (document.selection) {
+				var range = document.body.createTextRange();
+				range.moveToElementText(node);
+				range.select();
+			} else if (window.getSelection) {
+				var range = document.createRange();
+				range.selectNodeContents(node);
+				window.getSelection().removeAllRanges();
+				window.getSelection().addRange(range);
+			}
+		}
+		
+		function hasClass(node, className) {
+			return (node.className && node.className.indexOf(className) != -1)
+		}
+		
+		function getHashValues() {
+			hashValues = window.location.hash.slice(1).split(",")
+			if (!isHashValid(hashValues)) {
+				console.log("Hash is invalid.")
+				return [genTime]
+			}
+			if (hashValues.length == 1 && hashValues[0] == "") {
+				return [genTime]
+			}
+			return hashValues
+		}
+		
+		function isHashValid(hashValues) {
+			if (hashValues[0] == genTime) {
+				return true
+			}
+			return false
+		}
+		
+		function hashHasID(nodeID) {
+			hashValues = getHashValues()
+			idPos = hashValues.indexOf(nodeID)
+			ret = (idPos != -1)
+			return 
+		}
+		
+		function updateSelectablesFromHash() {
+			hashValues = getHashValues()
+			oldSelected = document.getElementsByClassName("selected")
+			for (var i=oldSelected.length-1; i >= 0; i--) {
+				node = oldSelected[i]
+				if (!hashHasID(getNodeID(node))) {
+					deselectNode(node)
+				}
+			}
+			for (var i=0; i < hashValues.length; i++) {
+				currentID = hashValues[i]
+				idName = "cid-" + currentID
+				node = document.getElementById(idName)
+				if (node != null) {
+					selectNode(node)
+					updateInheritance(node)
+				}					
+			}
+		}
+		
+		function updateInheritance(node, isDetail) {
+			isDetail = isDetail || false
+			if (node == null || node.tagName == "BODY") {
+				return
+			}
+			if (hasClass(node, "selectParent")) {
+				node.classList.add("selected")
+			}
+			if (node.tagName == "DETAILS") {
+				updateInheritance(node.firstElementChild, true)
+			}
+			if (!isDetail) {
+				return updateInheritance(node.parentNode)
+			}
+		}
+		
+		function selectNode(node) {
+			node.classList.add("selected")
+		}
+		
+		function deselectNode(node) {
+			node.classList.remove("selected")
+		}
+		
+		function getNodeID(node) {
+			nodeID = node.id.slice(4)
+			return nodeID
+		}
+		
+		function toggleNodeHash(node) {
+			nodeID = node.id.slice(4)
+			hashValues = getHashValues()
+			idPos = hashValues.indexOf(nodeID)
+			if (idPos == -1) {
+				hashValues.push(nodeID)
+			}
+			else {
+				hashValues.splice(idPos, 1)
+			}
+			window.location.hash = hashValues.join()
+		}
+		
+		function getSelectableNode(node) {
+		/* We recursively iterate our way up the tree to see if any part of it is selectable. */
+			if (node == null) {
+				return null
+			}
+			if (hasClass(node, "selectable")) {
+				return node
+			}
+			return getSelectableNode(node.parentNode)			
+		}
+		
+		window.onhashchange = function() {
+			updateSelectablesFromHash()
+		}
+		
+		window.onload = function() {
+			document.body.onclick = function(e){
+				if (!e.altKey) {
+					return
+				}
+				if (window.event) {
+					clickedNode = event.srcElement;
+				}
+				else {
+					clickedNode = e.target
+				}
+				selectableNode = getSelectableNode(clickedNode)
+				if (selectableNode != null) {
+					toggleNodeHash(selectableNode)
+					return false
+				}
+			}
+			updateSelectablesFromHash()
+		}
+	</script>
+</head>
+<body>
+<h1>Comparing Singularity_Previous (Build: 1134468) to Singularity_Next (Build: 1135656)</h1>
+<!-- <iframe id="timer" src="timerSection.html?version=1&timer=1489606234.803" style="border:none;" height="40px" width="800px"> </iframe> -->
+<p class="mini">Generated @ 2017-04-11 20:08:15 EVE Time (UTC)</p>
+<noscript>
+	<nobr>
+		<p class="scriptnotify" style="display:inline;">You've disabled javascript. This made the menu so sad that it self-destructed. I hope you're happy now.</p>
+		<p class="scriptnotifysmaller" style="display:inline;">You monster.</p>
+	</nobr>
+	<p class="scriptnotifysmall">This page should still kinda work though.</p>
+</noscript>
+<iframe id="navMenu" src="nav.html" style="border:none; display:none;" height="40px" width="800px"> </iframe>
+<script>
+  document.getElementById("navMenu").style.display = "block";
+</script>
+<p class="mini"></p>
+<p class="kindasmall">Click the categories below to expand them! <a href="confused.html">Confused?</a></p>
+
+<!--<h2 id="items">Items</h2>-->
+
+<details id="newitems">
+	<summary class="selectParent bigsum_disabled" onclick="return false">New Items (0 Entries)</summary>
+	<table>
+	
+	  <tr>
+		<!--<th>[[title4]]</th>-->
+		<th>TypeID & Name</th>
+		<th>Description</th>
+		<th>Group</th>
+		<th>Attributes</th>
+	  </tr>
+	
+	</table>
+</details>
+
+<details id="removeditems">
+	<summary class="selectParent bigsum_disabled" onclick="return false">Removed Items (0 Entries)</summary>
+	<p class="kindasmall">Please note that a "removed" item usually means the item was just not yet added to the "newer" build.</p>
+	<table>
+	  <tr>
+		<th>TypeID & Name</th>
+		<th>Description</th>
+		<th>Group</th>
+		<th>Attributes</th>
+	  </tr>
+	
+	</table>
+</details>
+
+<details id="changedblueprints">
+	<summary class="selectParent bigsum_disabled" onclick="return false">Changed Blueprints BETA (0 Entries)</summary>
+	<table>
+	  <tr>
+		<th>Blueprint Name</th>
+		<th>Old BP Data</th>
+		<th>New BP Data</th>
+		<th>Raw Diff</th>
+	  </tr>
+	
+	</table>
+</details>
+
+<br>
+
+<details id="bonuschanges">
+	<summary class="selectParent bigsum">Changed Traits (1 Entries)</summary>
+	<table>
+	  <tr>
+		<th>TypeID, Group, & Name</th>
+		<th>Singularity_Previous</th>
+		<th>Singularity_Next</th>
+		<th>Diff</th>
+		<!-- <th>[[title4]]</th> -->
+	  </tr>
+	<tr class="selectable" id="cid-1">
+		<td style="text-align:center;" width="130px">42241 - <b>Molok</b><br>(Titan)</td>
+		<td width="355px"><b>Minmatar Titan bonuses (per skill level):</b><ul><li>20% bonus to <b>Stasis Webifier</b> optimal range</li><li>6+ bonus to ship warp core strength</li></ul><br><br><b>Amarr Titan bonuses (per skill level):</b><ul><li>15% bonus to <b>Energy Nosferatu</b> and <b>Energy Neutralizer</b> drain amount</li><li>6+ bonus to ship warp core strength</li></ul><br><br><b>Role Bonus:</b><ul><li> Can fit a <b>Doomsday</b> module</li><li> Can fit a <b>Phenomena Generator</b> module</li><li> Can fit a <b>Jump Portal Generator</b> module</li><li> Can fit a <b>Clone Vat Bay</b> module</li><li> Can use three <b>Command Burst</b> modules</li><li> <b>Energy Nosferatu</b> fitted to this ship will drain targeted ship's capacitor regardless of your own capacitor level</li><li>200% bonus to <b>Command Burst</b> area of effect range</li><li>500% bonus to Armor Plates and Shield Extenders</li><li>1400% bonus to <b>Capital Energy Turret</b> damage</li><li>80% bonus to Sensor Dampener resistance</li><li>80% bonus to Weapon Disruption resistance</li><li>80% bonus to Stasis effect resistance</li><li>80% increase to Remote Electronic Assistance impedance</li><li>5x penalty to <b>Entosis Link</b> duration</li><ul></td>
+		<td width="355px"><b>Minmatar Titan bonuses (per skill level):</b><ul><li>20% bonus to <b>Stasis Webifier</b> optimal range</li><li>6+ bonus to ship warp core strength</li></ul><br><br><b>Amarr Titan bonuses (per skill level):</b><ul><li>15% bonus to <b>Energy Nosferatu</b> and <b>Energy Neutralizer</b> drain amount</li><li>6+ bonus to ship warp core strength</li></ul><br><br><b>Role Bonus:</b><ul><li> Can fit a <b>Doomsday</b> module</li><li> Can fit a <b>Phenomena Generator</b> module</li><li> Can fit a <b>Jump Portal Generator</b> module</li><li> Can fit a <b>Clone Vat Bay</b> module</li><li> Can use three <b>Command Burst</b> modules</li><li> <b>Energy Nosferatu</b> fitted to this ship will drain targeted ship's capacitor regardless of your own capacitor level</li><li>200% bonus to <b>Command Burst</b> area of effect range</li><li>500% bonus to Armor Plates and Shield Extenders</li><li>1400% bonus to <b>Capital Energy Turret</b> damage</li><li>80% bonus to Sensor Dampener resistance</li><li>80% bonus to Weapon Disruption resistance</li><li>80% bonus to Stasis effect resistance</li><li>80% increase to Remote Electronic Assistance impedance</li><li>5x penalty to <b>Entosis Link</b> duration</li><ul></td>
+		<td><span>Minmatar Titan bonuses (per skill level):<br>20% bonus to &lt;a href=showinfo:526&gt;Stasis Webifier&lt;/a&gt; optimal range<br>6+ bonus to ship warp core strength<br><br>Amarr Titan bonuses (per skill level):<br>15% bonus to &lt;a href=showinfo:3423&gt;Energy Nosferatu&lt;/a&gt; and &lt;a href=showinfo:3423&gt;Energy Neutralizer&lt;/a&gt; drain amount<br>6+ bonus to ship warp core strength<br><br>Role Bonus:<br> Can fit a &lt;a href=showinfo:24563&gt;Doomsday&lt;/a&gt; module<br> Can fit a &lt;a href=showinfo:436</span><del style="background:#ffe6e6;">62</del><ins style="background:#e6ffe6;">59</ins><span>&gt;Phenomena Generator&lt;/a&gt; module<br> Can fit a &lt;a href=showinfo:23953&gt;Jump Portal Generator&lt;/a&gt; module<br> Can fit a &lt;a href=showinfo:23735&gt;Clone Vat Bay&lt;/a&gt; module<br> Can use three &lt;a href=showinfo:3348&gt;Command Burst&lt;/a&gt; modules<br> &lt;a href=showinfo:3423&gt;Energy Nosferatu&lt;/a&gt; fitted to this ship will drain targeted ship's capacitor regardless of your own capacitor level<br>200% bonus to &lt;a href=showinfo:3348&gt;Command Burst&lt;/a&gt; area of effect range<br>500% bonus to Armor Plates and Shield Extenders<br>1400% bonus to &lt;a href=showinfo:20327&gt;Capital Energy Turret&lt;/a&gt; damage<br>80% bonus to Sensor Dampener resistance<br>80% bonus to Weapon Disruption resistance<br>80% bonus to Stasis effect resistance<br>80% increase to Remote Electronic Assistance impedance<br>5x penalty to &lt;a href=showinfo:34593&gt;Entosis Link&lt;/a&gt; duration</span></td>
+	</tr>
+	</table>
+</details>
+
+<!--<h2 id="attributes">Attributes</h2>-->
+
+<details id="dgmattribs">
+	<summary class="selectParent bigsum_disabled" onclick="return false">Changes to Attributes (0 Entries)</summary>
+	<table>
+	  <tr>
+		<th>Attribute Name</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Diff</th>
+	  </tr>
+	
+	</table>
+</details>
+
+<details id="typeattribs">
+	<summary class="selectParent bigsum">Attribute Changes per Type (2 Entries)</summary>
+	<table>
+	  <tr>
+		<th>TypeID, Name, and Group</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Diff</th>
+	  </tr>
+	<tr class="selectable" id="cid-2">
+		<td>44995 - <b>Enforcer</b> (Force Recon Ship)</td>
+		<td><b>soundID:</b> 30 <b>=></b> 20078<br></td>
+	</tr>
+	<tr class="selectable" id="cid-3">
+		<td>29668 - <b>30 Day Pilot's License Extension (PLEX)</b> (Game Time)</td>
+		<td><b>radius:</b> 0.0 <b>=></b> 1.0<br><b>marketGroupID:</b> 1923 <b>=></b> None<br></td>
+	</tr>
+	</table>
+</details>
+
+<br>
+
+<!--<h2 id="effectchanges">Effect Changes</h2>-->
+
+<details id="dgmeffects">
+	<summary class="selectParent bigsum_disabled" onclick="return false">Changes to Effects (0 Entries)</summary>
+	<table>
+	  <tr>
+		<th>Effect Name</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Diff</th>
+	  </tr>
+	
+	</table>
+</details>
+
+<details id="typeeffects">
+	<summary class="selectParent bigsum_disabled" onclick="return false">Effect Changes per Type (0 Entries)</summary>
+	<table>
+	  <tr>
+		<th>TypeID, Name, and Group</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Effects Changes</th>
+	  </tr>
+	
+	</table>
+</details>
+
+<br>
+
+<!--<h2 id="stringchanges">String Changes</h2>-->
+
+<details id="stringchanges">
+	<summary class="selectParent bigsum">String Changes (12 Entries)</summary>
+	<table>
+	  <tr>
+		<th>Key</th>
+		<th>Singularity_Previous</th>
+		<th>Singularity_Next</th>
+		<th>Diff</th>
+		<th>Notes</th>
+	  </tr>
+	<tr class="selectable" id="cid-4">
+		<td>294918</td>
+		<td width="355px">Pilot's License Extensions (PLEX)</td>
+		<td width="355px">PLEX</td>
+		<td><del style="background:#ffe6e6;">Pilot's License Extensions (</del><span>PLEX</span><del style="background:#ffe6e6;">)</del></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-5">
+		<td>296374</td>
+		<td width="355px">Special ISK-priced capsuleering licenses offered as an alternative to regular piloting contracts</td>
+		<td width="355px">PLEX is an item that can be traded between players on the regional market. PLEX can also be used in the New Eden Store to upgrade your account to Omega Clone State,  purchase virtual goods, and activate other account services.</td>
+		<td><del style="background:#ffe6e6;">Special ISK-priced capsuleering licenses offered as an alternative to regular piloting contracts</del><ins style="background:#e6ffe6;">PLEX is an item that can be traded between players on the regional market. PLEX can also be used in the New Eden Store to upgrade your account to Omega Clone State,  purchase virtual goods, and activate other account services.</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-6">
+		<td>296382</td>
+		<td width="355px">Services available to capsuleers include Pilot's License Extensions (PLEX), Multiple Pilot Training and Pilot's Body Resculpt Certificates</td>
+		<td width="355px">Services available to capsuleers include PLEX, Multiple Pilot Training, Pilot's Body Resculpt Certificates, and Skill Trading items</td>
+		<td><span>Services available to capsuleers include </span><del style="background:#ffe6e6;">Pilot's License Extensions (</del><span>PLEX</span><del style="background:#ffe6e6;">)</del><span>, Multiple Pilot Training</span><del style="background:#ffe6e6;"> and</del><ins style="background:#e6ffe6;">,</ins><span> Pilot's Body Resculpt Certificates</span><ins style="background:#e6ffe6;">, and Skill Trading items</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-7">
+		<td>315657</td>
+		<td width="355px"></td>
+		<td width="355px">Skill Trading</td>
+		<td><ins style="background:#e6ffe6;">Skill Trading</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-8">
+		<td>315658</td>
+		<td width="355px"></td>
+		<td width="355px">Items used to extract and inject skill points.</td>
+		<td><ins style="background:#e6ffe6;">Items used to extract and inject skill points.</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-9">
+		<td>519203</td>
+		<td width="355px">Open PLEX Vault</td>
+		<td width="355px">Open Vault</td>
+		<td><span>Open </span><del style="background:#ffe6e6;">PLEX </del><span>Vault</span></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-10">
+		<td>525362</td>
+		<td width="355px">Based on average market prices and updated every hour. Corporation assets and blueprints are excluded.</td>
+		<td width="355px">Based on average market prices and updated every 12 hours. Corporation assets and blueprints are excluded.</td>
+		<td><span>Based on average market prices and updated every </span><ins style="background:#e6ffe6;">12 </ins><span>hour</span><ins style="background:#e6ffe6;">s</ins><span>. Corporation assets and blueprints are excluded.</span></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-11">
+		<td>525418</td>
+		<td width="355px">"Be wary of those who offer you aid with a smile and words of encouragement. They are false. Those that give life so that they may live are are more reliable and true in their motives. Eternity beckons for the Sabik but travelers on that road must be clothed in the blood of the weak and refreshed by the blood of the powerful and pure. Only give succor to a true fellow traveller, that they may aid you on your journey along that road."<br><br><i>- Omir Sarikusa, Meditations on a Crimson Chalice</i></td>
+		<td width="355px"><i>"Be wary of those who offer you aid with a smile and words of encouragement. They are false. Those that give life so that they may live are are more reliable and true in their motives. Eternity beckons for the Sabik but travelers on that road must be clothed in the blood of the weak and refreshed by the blood of the powerful and pure. Only give succor to a true fellow traveler, that they may aid you on your journey along that road."</i><br><br>- Omir Sarikusa, Meditations on a Crimson Chalice</td>
+		<td><ins style="background:#e6ffe6;">&lt;i&gt;</ins><span>"Be wary of those who offer you aid with a smile and words of encouragement. They are false. Those that give life so that they may live are are more reliable and true in their motives. Eternity beckons for the Sabik but travelers on that road must be clothed in the blood of the weak and refreshed by the blood of the powerful and pure. Only give succor to a true fellow travel</span><del style="background:#ffe6e6;">l</del><span>er, that they may aid you on your journey along that road."</span><ins style="background:#e6ffe6;">&lt;/i&gt;</ins><span><br><br></span><del style="background:#ffe6e6;">&lt;i&gt;</del><span>- Omir Sarikusa, Meditations on a Crimson Chalice</span><del style="background:#ffe6e6;">&lt;/i&gt;</del></td>
+		<td class="mini">Item description for "Dagon" (typeID 42242)
+Item description for "♦ Dagon" (typeID 45473)</td>
+	</tr>
+	<tr class="selectable" id="cid-12">
+		<td>525422</td>
+		<td width="355px">"Molok, libeled as 'The Deceiver' by the false faith, was truer than any so-called 'True Amarr' follower of the corrupted throne squatters could ever be. He it was that understood the true nature of the universe. There is only one truth: power is all; naked, merciless force wielded by those with the will to grapple with it. We drink the blood of the powerful and the pure because to survive and advance we must feed on their energy and make it our own. This is the lesson of Molok. His failure is of no moment, his glimpse of the Great Truth is all that matters."<br><br><i>- Omir Sarikusa, Meditations on a Crimson Chalice</i></td>
+		<td width="355px"><i>"Molok, libeled as 'The Deceiver' by the false faith, was truer than any so-called 'True Amarr' follower of the corrupted throne squatters could ever be. He it was that understood the true nature of the universe. There is only one truth: power is all; naked, merciless force wielded by those with the will to grapple with it. We drink the blood of the powerful and the pure because to survive and advance we must feed on their energy and make it our own. This is the lesson of Molok. His failure is of no moment, his glimpse of the Great Truth is all that matters."</i><br><br>- Omir Sarikusa, Meditations on a Crimson Chalice</td>
+		<td><ins style="background:#e6ffe6;">&lt;i&gt;</ins><span>"Molok, libeled as 'The Deceiver' by the false faith, was truer than any so-called 'True Amarr' follower of the corrupted throne squatters could ever be. He it was that understood the true nature of the universe. There is only one truth: power is all; naked, merciless force wielded by those with the will to grapple with it. We drink the blood of the powerful and the pure because to survive and advance we must feed on their energy and make it our own. This is the lesson of Molok. His failure is of no moment, his glimpse of the Great Truth is all that matters."</span><ins style="background:#e6ffe6;">&lt;/i&gt;</ins><span><br><br></span><del style="background:#ffe6e6;">&lt;i&gt;</del><span>- Omir Sarikusa, Meditations on a Crimson Chalice</span><del style="background:#ffe6e6;">&lt;/i&gt;</del></td>
+		<td class="mini">Item description for "Molok" (typeID 42241)
+Item description for "♦ Molok" (typeID 45471)
+Item description for "♦ Molok" (typeID 45472)</td>
+	</tr>
+	<tr class="selectable" id="cid-13">
+		<td>525646</td>
+		<td width="355px">Can fit a <b>Phenomena Generator</b> module</td>
+		<td width="355px">Can fit a <b>Phenomena Generator</b> module</td>
+		<td><span>Can fit a &lt;a href=showinfo:436</span><del style="background:#ffe6e6;">62</del><ins style="background:#e6ffe6;">59</ins><span>&gt;Phenomena Generator&lt;/a&gt; module</span></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-14">
+		<td>526232</td>
+		<td width="355px"></td>
+		<td width="355px">PLEX is an item that can be traded between players on the regional market. PLEX can also be used in the New Eden Store to upgrade your account to Omega Clone State,  purchase virtual goods, and activate other account services.<br><br>&lt;font size="14"&gt;<b>Getting PLEX</b>&lt;/font&gt;<br>PLEX can be purchased on the regional market for ISK, from the PLEX Vault, or securely on &lt;url=https://secure.eveonline.com/PLEX/&gt;https://secure.eveonline.com/PLEX/&lt;/url&gt; using a variety of methods.<br><br>&lt;font color="#ff3399cc"&gt;TIP: Purchasing PLEX to sell for ISK to other players is a great way to kickstart your capsuleer career!&lt;/font&gt;<br><br>&lt;font size="14"&gt;<b>Using PLEX</b>&lt;/font&gt;<br>PLEX can be used to upgrade your account to Omega Clone State, purchase virtual goods, and activate account services via the New Eden Store. To use PLEX in the New Eden Store, PLEX must be placed in your PLEX Vault.<br><br>&lt;font size="14"&gt;<b>PLEX Vault</b>&lt;/font&gt;<br>The PLEX Vault is a secure location in your inventory, shared across all characters on your account, where PLEX can be placed for use in the New Eden Store. You can find the PLEX Vault in your inventory in the list of locations to the left of the window.</td>
+		<td><ins style="background:#e6ffe6;">PLEX is an item that can be traded between players on the regional market. PLEX can also be used in the New Eden Store to upgrade your account to Omega Clone State,  purchase virtual goods, and activate other account services.<br><br>&lt;font size="14"&gt;&lt;b&gt;Getting PLEX&lt;/b&gt;&lt;/font&gt;<br>PLEX can be purchased on the regional market for ISK, from the PLEX Vault, or securely on &lt;url=https://secure.eveonline.com/PLEX/&gt;https://secure.eveonline.com/PLEX/&lt;/url&gt; using a variety of methods.<br><br>&lt;font color="#ff3399cc"&gt;TIP: Purchasing PLEX to sell for ISK to other players is a great way to kickstart your capsuleer career!&lt;/font&gt;<br><br>&lt;font size="14"&gt;&lt;b&gt;Using PLEX&lt;/b&gt;&lt;/font&gt;<br>PLEX can be used to upgrade your account to Omega Clone State, purchase virtual goods, and activate account services via the New Eden Store. To use PLEX in the New Eden Store, PLEX must be placed in your PLEX Vault.<br><br>&lt;font size="14"&gt;&lt;b&gt;PLEX Vault&lt;/b&gt;&lt;/font&gt;<br>The PLEX Vault is a secure location in your inventory, shared across all characters on your account, where PLEX can be placed for use in the New Eden Store. You can find the PLEX Vault in your inventory in the list of locations to the left of the window.</ins></td>
+		<td class="mini">Item description for "PLEX" (typeID 44992)</td>
+	</tr>
+	<tr class="selectable" id="cid-15">
+		<td>526234</td>
+		<td width="355px"></td>
+		<td width="355px">Fast Checkout</td>
+		<td><ins style="background:#e6ffe6;">Fast Checkout</ins></td>
+		<td class="mini"></td>
+	</tr>
+	</table>
+</details>
+
+<br>
+
+<!--<h2 id="newfiles">New Files</h2>-->
+
+<script>
+	function displayMedia(doc) {
+		nodes = doc.children
+		for (i=0; i < nodes.length; i++) {
+			node = nodes[i]
+			if (node.hasAttribute("data-src") && node.getAttribute("src") == "") {
+				node.setAttribute("src", node.getAttribute("data-src"))
+			}
+		}
+	}
+</script>
+<details id="newfiles">
+	<summary class="selectParent bigsum">New Files (1 Entries)</summary>
+	<table>
+	  <tr>
+		<th>File Name</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Size in kb (Decompressed)</th>
+	  </tr>
+	<tr class="selectable" id="cid-16">
+		<td><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/23/23d6b62bffe0568a_3869bb5d7e28880e75ba8dddf9b6869b">res:/ui/texture/classes/plexvault/plexicon128.png</a>
+    		</summary>
+    		<img data-src="http://res.eveprobe.ccpgames.com/23/23d6b62bffe0568a_3869bb5d7e28880e75ba8dddf9b6869b" src="" />
+		</details></td>
+		<td>12</td>
+	</tr>
+	</table>
+</details>
+<script>
+	function test123() {
+		document.getElementById("footer1").style.display = "none";
+		document.getElementById("footer2").style.visibility = "visible";
+		document.getElementById("footer2").onclick = function() {document.location = "http://i.imgur.com/3Kd6ruW.jpg"}
+	}
+</script>
+<!--<h2 id="changedfiles">Changed Files</h2>-->
+
+<details id="changedfiles">
+	<summary class="selectParent bigsum">Changed Files (55 Entries)</summary>
+	<table>
+	  <tr>
+		<th>File Name</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Size in kb (Decompressed)</th>
+	  </tr>
+	<tr class="selectable" id="cid-17">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/1a/1a48a0969136daa1_1db29c37e882ba264ff35ed4c04e3d2b">manifest.dat</a><br></td>
+		<td>13 -> 13</td>
+	</tr>
+	<tr class="selectable" id="cid-18">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/26/26abe7dc325e393d_dd13a096d4ab758812c72d5438990309">localization/localization_it.pickle</a><br></td>
+		<td>797 -> 797</td>
+	</tr>
+	<tr class="selectable" id="cid-19">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/bc/bc30bd7934457e6a_0fb1e35a56f015fc7bc5a5419315e85f">dx9/model/hangar/gallente/gh1/gh1_detail01_ar.dds</a><br></td>
+		<td>1398 -> 1398</td>
+	</tr>
+	<tr class="selectable" id="cid-20">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/cd/cd2b97bdb15b42e8_b5e17b38aad27289f350243cf53920c7">dx9/model/hangar/gallente/gh1/gh1_wall_no.dds</a><br></td>
+		<td>5592 -> 5592</td>
+	</tr>
+	<tr class="selectable" id="cid-21">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/79/79a473897ae5f3b0_292ecafe52daed785740f5f4696537d5">localizationfsd/localization_fsd_main.pickle</a><br></td>
+		<td>2068 -> 2068</td>
+	</tr>
+	<tr class="selectable" id="cid-22">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/f3/f38f66c92ed15a68_1b77a193c2681ca3d04d95bc76b08d2d">dx9/model/hangar/amarr/ah1/ah1_mainboard_no.dds</a><br></td>
+		<td>1398 -> 1398</td>
+	</tr>
+	<tr class="selectable" id="cid-23">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/9a/9adf983d033ba1a3_7fbc72bb8b530d4b8145e54bc2e6d18a">staticdata/evecategories.static</a><br></td>
+		<td>10 -> 10</td>
+	</tr>
+	<tr class="selectable" id="cid-24">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/1d/1d34143a37d4b739_210893f5c1a75184a2b7180af8d4f8e5">resfileindex.txt</a><br></td>
+		<td>11503 -> 11503</td>
+	</tr>
+	<tr class="selectable" id="cid-25">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/f0/f032ac16b88d97a4_f739e3ecc3c623511a9982aa3a1eed42">code.ccp</a><br></td>
+		<td>16621 -> 16621</td>
+	</tr>
+	<tr class="selectable" id="cid-26">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/36/36e1f4cc0ffb847f_0d4a6cec672becf7ad536f33b1700000">dx9/model/hangar/minmatar/mh1/mh1_wall_no.dds</a><br></td>
+		<td>1398 -> 1398</td>
+	</tr>
+	<tr class="selectable" id="cid-27">
+		<td style="text-align: middle;"><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/c4/c40a9c87591fa44a_25eeeea0a4fa2aa2cffdb48b1da84b0a">res:/ui/texture/classes/plexvault/buyplex.png</a>
+    		</summary>
+    		<img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/c4/c40a9c87591fa44a_d82aaeae323fab8f1441a6fea7942d5d" src="" /> -> <img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/c4/c40a9c87591fa44a_25eeeea0a4fa2aa2cffdb48b1da84b0a" src="" />
+		</details></td>
+		<td>16 -> 3</td>
+	</tr>
+	<tr class="selectable" id="cid-28">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/b7/b75cd31b7be63b4b_9ec71a24492824d91477a5a9c9d8f409">dx9/model/hangar/caldari/ch1/ch1_ar.dds</a><br></td>
+		<td>5592 -> 5592</td>
+	</tr>
+	<tr class="selectable" id="cid-29">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/5e/5e3b9a339b465481_39bb8940398308ec1b812ba6ec1c6b05">dx9/model/hangar/gallente/gh1/gh1.black</a><br></td>
+		<td>98 -> 98</td>
+	</tr>
+	<tr class="selectable" id="cid-30">
+		<td style="text-align: middle;"><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/79/79121882bb20f298_25eeeea0a4fa2aa2cffdb48b1da84b0a">res:/ui/texture/windowicons/pilotlicense.png</a>
+    		</summary>
+    		<img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/79/79121882bb20f298_d82aaeae323fab8f1441a6fea7942d5d" src="" /> -> <img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/79/79121882bb20f298_25eeeea0a4fa2aa2cffdb48b1da84b0a" src="" />
+		</details></td>
+		<td>16 -> 3</td>
+	</tr>
+	<tr class="selectable" id="cid-31">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/a8/a8a018a7b61cae50_6a86f2f043d6063dfec3a4fe4b4c2a81">dx9/model/hangar/gallente/gh1/gh1_detail03_no.dds</a><br></td>
+		<td>5592 -> 5592</td>
+	</tr>
+	<tr class="selectable" id="cid-32">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/c5/c5f5f32ec244a54d_f900f74c5bbe2320a0cf91f5589e8645">dx9/model/spaceobjectfactory/hulls/cm1_t1.black</a><br></td>
+		<td>103 -> 103</td>
+	</tr>
+	<tr class="selectable" id="cid-33">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/aa/aa67a1db4ed74a67_19b83ad2c4030d9481d7276d225d7d71">dx9/model/hangar/minmatar/mh1/mh1_pipe_no.dds</a><br></td>
+		<td>1398 -> 1398</td>
+	</tr>
+	<tr class="selectable" id="cid-34">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/8f/8f76169932e6db5b_768d1f205303d165eba5cb935be519d6">bulkdata/600007.cache2</a><br></td>
+		<td>53 -> 53</td>
+	</tr>
+	<tr class="selectable" id="cid-35">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/34/34cee7939079398b_a9c8b8a0b63e4f393ece06ee65310e65">bin/_trinity_dx9_deploy.dll</a><br></td>
+		<td>14146 -> 14146</td>
+	</tr>
+	<tr class="selectable" id="cid-36">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/89/8919ffe2ee5749cc_455f0d14d84c9a24e5e8967d14fef62f">bulkdata/mapbulk.db</a><br></td>
+		<td>443 -> 443</td>
+	</tr>
+	<tr class="selectable" id="cid-37">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/82/82f6d94e81f8f06d_41b53c06ed1b740277cf788392f2b051">dx9/model/ship/minmatar/industrial/mi3/effects/mi3_t2c_fx.black</a><br></td>
+		<td>7 -> 7</td>
+	</tr>
+	<tr class="selectable" id="cid-38">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/87/87bfc3b6eab5e5d3_c6a77423fef005bea93268a3bdea6838">localizationfsd/localization_fsd_zh.pickle</a><br></td>
+		<td>14108 -> 14903</td>
+	</tr>
+	<tr class="selectable" id="cid-39">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/b2/b248741e3401bcc4_7b07bd73d644d7896d495131a68d588f">dx9/model/hangar/gallente/gh1/gh1_detail03_ar.dds</a><br></td>
+		<td>1398 -> 1398</td>
+	</tr>
+	<tr class="selectable" id="cid-40">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/19/19cb724478ef99c7_5c7626eebe254ec70d644b37f5418870">dx9/model/hangar/gallente/gh1/gh1_detail03_pmdg.dds</a><br></td>
+		<td>5592 -> 5592</td>
+	</tr>
+	<tr class="selectable" id="cid-41">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/48/4864e0e1ddeaf99a_aaca3729548f6eddf38f2f56f4b8719e">dx9/model/hangar/minmatar/mh1/mh1.black</a><br></td>
+		<td>107 -> 107</td>
+	</tr>
+	<tr class="selectable" id="cid-42">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/c5/c57ec45bccb817c6_5fd153868c33c458ec586b4b1baafe16">localization/localization_en-us.pickle</a><br></td>
+		<td>11857 -> 11858</td>
+	</tr>
+	<tr class="selectable" id="cid-43">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/bc/bc5fff279c5cae06_94280ab09d67cc62422f863653cbd3c5">bulkdata/800006.cache2</a><br></td>
+		<td>6726 -> 6726</td>
+	</tr>
+	<tr class="selectable" id="cid-44">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/56/5610a6eb8b5a4975_c573f018a107de2ce192a16a578fc274">resfileindex_prefetch.txt</a><br></td>
+		<td>1114 -> 1114</td>
+	</tr>
+	<tr class="selectable" id="cid-45">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/67/671695e3a499baf0_7cd62648b07392e4ca25b4c00eb5e78c">staticdata/evetypes.static</a><br></td>
+		<td>12408 -> 12407</td>
+	</tr>
+	<tr class="selectable" id="cid-46">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/93/93f4e110bfdf1ece_bb76a746b8e6744d57a619a0b73c275a">localization/localization_zh.pickle</a><br></td>
+		<td>10561 -> 10561</td>
+	</tr>
+	<tr class="selectable" id="cid-47">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/a3/a3d5f11d51feed8b_5e95f802e89ac5b6cd54ada1b3126851">dx9/model/hangar/gallente/gh1/gh1_detail02_ar.dds</a><br></td>
+		<td>1398 -> 1398</td>
+	</tr>
+	<tr class="selectable" id="cid-48">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/76/7675d5b19045a6cb_f3337beb88523472135405c8fb7e6c08">dx9/model/hangar/gallente/gh1/gh1_detail02_no.dds</a><br></td>
+		<td>5592 -> 5592</td>
+	</tr>
+	<tr class="selectable" id="cid-49">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/07/07b882fb276c5fc5_14a372ad0823b70f9261a1862e293680">staticdata/graphicmaterialsets.static</a><br></td>
+		<td>34 -> 34</td>
+	</tr>
+	<tr class="selectable" id="cid-50">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/dd/ddd1d96d32cce452_5c2b0a228255c65a9e9bf5c410f55e7a">dx9/model/hangar/amarr/ah1/ah1_detail_ar.dds</a><br></td>
+		<td>2796 -> 2796</td>
+	</tr>
+	<tr class="selectable" id="cid-51">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/7c/7cd3782fa5f1d4e4_ecca6c9c37ea44cf5041b54d44ecedb8">localization/localization_es.pickle</a><br></td>
+		<td>848 -> 848</td>
+	</tr>
+	<tr class="selectable" id="cid-52">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/ba/ba1aa4f3fb71b2da_94146733627df0794a981a38f7e3647d">bin/_trinity_dx11_deploy.dll</a><br></td>
+		<td>14246 -> 14247</td>
+	</tr>
+	<tr class="selectable" id="cid-53">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/1e/1ef674def6229546_5edba54c854063716335386f76e7ffb4">bulkdata/version</a><br></td>
+		<td>0 -> 0</td>
+	</tr>
+	<tr class="selectable" id="cid-54">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/35/35bff5e4f5f69f32_4a19ea69cce5c4a903b848ced1b8acad">dx9/model/hangar/amarr/ah1/ah1_detail_no.dds</a><br></td>
+		<td>2796 -> 2796</td>
+	</tr>
+	<tr class="selectable" id="cid-55">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/1a/1a955ad4d30b80f2_08a9832180c524ef2448425100867ade">dx9/model/hangar/amarr/ah1/ah1.black</a><br></td>
+		<td>102 -> 102</td>
+	</tr>
+	<tr class="selectable" id="cid-56">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/fc/fc134c3dff273f7d_0bd336636e354e161cb46e54701fb043">localization/localization_main.pickle</a><br></td>
+		<td>752 -> 752</td>
+	</tr>
+	<tr class="selectable" id="cid-57">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/ce/ceab38c333ee0cf5_e719fa45f7ee8bc2c4504778506fd7c8">dx9/model/ship/amarr/forceauxillary/afaux1/afaux1_t1_mediumdetail.gr2</a><br></td>
+		<td>316 -> 317</td>
+	</tr>
+	<tr class="selectable" id="cid-58">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/e3/e3cd8a97159e6321_166c262c83e51bd73bb94eeb894e8a6a">start.ini</a><br></td>
+		<td>0 -> 0</td>
+	</tr>
+	<tr class="selectable" id="cid-59">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/96/96b7cf4ab38b44a6_9c70be98c5a9a8602dab906b43cf90cf">dx9/model/ship/amarr/forceauxillary/afaux1/afaux1_t1_lowdetail.gr2</a><br></td>
+		<td>132 -> 134</td>
+	</tr>
+	<tr class="selectable" id="cid-60">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/aa/aa0b8b0323d24f50_b6b46aa2123d1ff2451dd56a8cad248f">bulkdata/metadata.yaml</a><br></td>
+		<td>0 -> 0</td>
+	</tr>
+	<tr class="selectable" id="cid-61">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/ed/edfabdacb540fe0b_3f4a3f43f7864f34e252e7c01992651e">dx9/model/hangar/caldari/ch1/ch1.black</a><br></td>
+		<td>129 -> 129</td>
+	</tr>
+	<tr class="selectable" id="cid-62">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/4a/4a0f5fe70b667169_4230a35c21d0ce796b537a9559d82b16">localizationfsd/localization_fsd_fr.pickle</a><br></td>
+		<td>12557 -> 12557</td>
+	</tr>
+	<tr class="selectable" id="cid-63">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/1e/1e0169e2d9fd0cea_b5dc9982694e6fe231470dc597a5b8a9">dx9/model/hangar/gallente/gh1/gh1_detail01_no.dds</a><br></td>
+		<td>5592 -> 5592</td>
+	</tr>
+	<tr class="selectable" id="cid-64">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/2c/2c3038b3c38e91a1_8d3f30c2ba194da0d1f84a0eaaea2055">localizationfsd/localization_fsd_en-us.pickle</a><br></td>
+		<td>11407 -> 11409</td>
+	</tr>
+	<tr class="selectable" id="cid-65">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/0b/0b577d4609680827_dfea9fe71983c50d9736cf0d2958603e">staticdata/evegroups.static</a><br></td>
+		<td>388 -> 388</td>
+	</tr>
+	<tr class="selectable" id="cid-66">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/33/33c83a8c56c485e6_332a53fbe4cdfbb526d373f07adabdc0">staticdata/solarsystemcontent.static</a><br></td>
+		<td>76963 -> 76964</td>
+	</tr>
+	<tr class="selectable" id="cid-67">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/22/2239ae48c339bea1_dd5a05b8ba2a0a9aba15a5e159436546">dx9/model/hangar/generic/standard/gensh1/gensh1_t1a.black</a><br></td>
+		<td>129 -> 129</td>
+	</tr>
+	<tr class="selectable" id="cid-68">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/fa/fade0fc260d02985_247c96daecf19788f50c731f6b010652">staticdata/graphicids.static</a><br></td>
+		<td>419 -> 419</td>
+	</tr>
+	<tr class="selectable" id="cid-69">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/35/350cf81f2f26b64b_6b952b3b9452213c40f906c2f13a3510">dx9/model/spaceobjectfactory/data.black</a><br></td>
+		<td>12033 -> 12033</td>
+	</tr>
+	<tr class="selectable" id="cid-70">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/ae/aeb52dd46f41d30c_56107fe2ce14b5a78a638fccfe483767">dx9/model/spaceobjectfactory/hulls/cl1_t1.black</a><br></td>
+		<td>104 -> 104</td>
+	</tr>
+	<tr class="selectable" id="cid-71">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/bd/bda7724745ed6198_2c20c4c239dce376fb85b52d41896c38">bin/staticdata/mapObjects.db</a><br></td>
+		<td>35793 -> 35793</td>
+	</tr>
+	</table>
+</details>
+
+<!--<h2 id="changedfiles">Removed Files</h2>-->
+
+<!-- [[removedFilesSection]] -->
+
+<!--<h2 id="changedpythonfiles">Changed Python Files</h2>-->
+
+<!-- [[changedPythonFiles]] -->
+
+<p class="mini2">Made by Inomares. I don't want your donations. I don't read EVE mails. Leave me alone.</p>
+<p class="mini3">I guess contact me on <a href="https://tweetfleet.slack.com/messages/@inomares/">Tweetfleet Slack</a> if you really need to.</p>
+<div class="footer1 footer" id="footer1" onClick="test123();"></div>
+<div class="footer2 footer" id="footer2"></div>
+</body>
+</html>
