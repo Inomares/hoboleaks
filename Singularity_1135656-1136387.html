@@ -1,0 +1,1423 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hoboleaks: Singularity_Previous (Build: 1135656) to Singularity_Next (Build: 1136387)</title>
+	<meta name="title" content="Client Comparison: Singularity_Previous (Build: 1135656) to Singularity_Next (Build: 1136387) | Hoboleaks">
+	<meta name="description" content="Generated @ 2017-04-18 11:28:33 EVE Time">
+	
+	<meta name="og:title" content="Hoboleaks: Singularity_Previous (Build: 1135656) -> Singularity_Next (Build: 1136387)">
+	<meta name="og:description" content="Generated @ 2017-04-18 11:28:33 EVE Time">
+	<meta name="og:image" content="http://hoboleaks.space/sitepreview.png">
+	
+	<meta name="twitter:title" content="Hoboleaks: Singularity_Previous (Build: 1135656) -> Singularity_Next (Build: 1136387)">
+	<meta name="twitter:description" content="Generated @ 2017-04-18 11:28:33 EVE Time">
+	<meta name="twitter:image" content="http://hoboleaks.space/sitepreview.png">
+	<meta charset="UTF-8">
+	<style>
+		table {
+			width:1280px;
+			font-family: arial, tahoma, sans-serif;
+			font-size: 10pt;
+			border-collapse: collapse;
+		}
+
+		td, th {
+			border: 1px solid black;
+			text-align: left;
+			padding: 8px;
+		}
+
+		tr:nth-child(even) {
+			background-color: #DBDBDB;
+		}
+		
+		tr.unimportant {
+			opacity: 0.4;
+			font-size: 8pt;
+		}
+
+		td.mini {
+			font-size: 8pt;
+		}
+
+		p.mini {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 8pt;
+		}
+		
+		p {
+			font-family: arial, tahoma, sans-serif;
+		}
+		
+		p.mini2 {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 5pt;
+		}
+		
+		p.mini3 {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 5pt;
+			color: gray;
+		}
+		
+		p.kindasmall {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 10pt;
+			margin: 5px 0px 5px 0px;
+		}
+
+		h1, h2, h3 {
+			font-family: arial, tahoma, sans-serif;
+		}
+
+		summary.bigsum {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 15pt;
+		}		
+
+		summary.bigsum_disabled {
+			font-family: arial, tahoma, sans-serif;
+			color: #9E9E9E;
+			font-size: 15pt;
+		}
+		
+		summary.smallsum {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 10pt;
+		}
+		
+		p.scriptnotify {
+			font-family: arial, tahoma, sans-serif;
+			color: red;
+			font-size: 12pt;
+		}
+		
+		p.scriptnotifysmall {
+			font-family: arial, tahoma, sans-serif;
+			color: red;
+			font-size: 9pt;
+		}
+		
+		p.scriptnotifysmaller {
+			font-family: arial, tahoma, sans-serif;
+			color: red;
+			font-size: 5pt;
+		}
+		
+		div.simplebox {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 10pt;
+			padding: 5px;
+			margin: 2px;
+			border-left-style: dotted;
+		}
+		
+		ul {
+			padding-left:20px;
+		}
+		
+		div.footer {
+		   position: fixed;
+		   bottom: 20px;
+		   height: 20px;
+		   width: 20px;
+		   border-style: none;
+		}
+		
+		div.footer1 {
+		   right: 20px;
+		}
+		
+		div.footer2 {
+		   left: 20px;
+		   visibility: hidden;
+		}
+		
+		div.footer:hover {
+			border-style: dotted;
+			border-color: #F2F2F2;
+		}
+		
+		.selected {
+			background-color: #C4F0FF;
+		}
+		
+		tr.selected:nth-child(even) {
+			background-color: #C4F0FF;
+		}
+
+		/* IE 6 */
+		* html #footer {
+		   position:absolute;
+		   top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
+		}
+	</style>
+	<script type="text/javascript">
+		genTime = "highlight" + 1492514913.0
+	
+	    function selectText(containerid, hasWaited) {
+			hasWaited = hasWaited || false
+			if (hasWaited == false) {
+				window.setTimeout(function(){selectText(containerid, true)}, 50); /* I'm sure I'm in the wrong here somehow and not Chrome, but this is how we're fixing it soooooooo yeah. */
+				return
+			}
+			var node = document.getElementById(containerid);
+			if (document.selection) {
+				var range = document.body.createTextRange();
+				range.moveToElementText(node);
+				range.select();
+			} else if (window.getSelection) {
+				var range = document.createRange();
+				range.selectNodeContents(node);
+				window.getSelection().removeAllRanges();
+				window.getSelection().addRange(range);
+			}
+		}
+		
+		function hasClass(node, className) {
+			return (node.className && node.className.indexOf(className) != -1)
+		}
+		
+		function getHashValues() {
+			hashValues = window.location.hash.slice(1).split(",")
+			if (!isHashValid(hashValues)) {
+				console.log("Hash is invalid.")
+				return [genTime]
+			}
+			if (hashValues.length == 1 && hashValues[0] == "") {
+				return [genTime]
+			}
+			return hashValues
+		}
+		
+		function isHashValid(hashValues) {
+			if (hashValues[0] == genTime) {
+				return true
+			}
+			return false
+		}
+		
+		function hashHasID(nodeID) {
+			hashValues = getHashValues()
+			idPos = hashValues.indexOf(nodeID)
+			ret = (idPos != -1)
+			return 
+		}
+		
+		function updateSelectablesFromHash() {
+			hashValues = getHashValues()
+			oldSelected = document.getElementsByClassName("selected")
+			for (var i=oldSelected.length-1; i >= 0; i--) {
+				node = oldSelected[i]
+				if (!hashHasID(getNodeID(node))) {
+					deselectNode(node)
+				}
+			}
+			for (var i=0; i < hashValues.length; i++) {
+				currentID = hashValues[i]
+				idName = "cid-" + currentID
+				node = document.getElementById(idName)
+				if (node != null) {
+					selectNode(node)
+					updateInheritance(node)
+				}					
+			}
+		}
+		
+		function updateInheritance(node, isDetail) {
+			isDetail = isDetail || false
+			if (node == null || node.tagName == "BODY") {
+				return
+			}
+			if (hasClass(node, "selectParent")) {
+				node.classList.add("selected")
+			}
+			if (node.tagName == "DETAILS") {
+				updateInheritance(node.firstElementChild, true)
+			}
+			if (!isDetail) {
+				return updateInheritance(node.parentNode)
+			}
+		}
+		
+		function selectNode(node) {
+			node.classList.add("selected")
+		}
+		
+		function deselectNode(node) {
+			node.classList.remove("selected")
+		}
+		
+		function getNodeID(node) {
+			nodeID = node.id.slice(4)
+			return nodeID
+		}
+		
+		function toggleNodeHash(node) {
+			nodeID = node.id.slice(4)
+			hashValues = getHashValues()
+			idPos = hashValues.indexOf(nodeID)
+			if (idPos == -1) {
+				hashValues.push(nodeID)
+			}
+			else {
+				hashValues.splice(idPos, 1)
+			}
+			window.location.hash = hashValues.join()
+		}
+		
+		function getSelectableNode(node) {
+		/* We recursively iterate our way up the tree to see if any part of it is selectable. */
+			if (node == null) {
+				return null
+			}
+			if (hasClass(node, "selectable")) {
+				return node
+			}
+			return getSelectableNode(node.parentNode)			
+		}
+		
+		window.onhashchange = function() {
+			updateSelectablesFromHash()
+		}
+		
+		window.onload = function() {
+			document.body.onclick = function(e){
+				if (!e.altKey) {
+					return
+				}
+				if (window.event) {
+					clickedNode = event.srcElement;
+				}
+				else {
+					clickedNode = e.target
+				}
+				selectableNode = getSelectableNode(clickedNode)
+				if (selectableNode != null) {
+					toggleNodeHash(selectableNode)
+					return false
+				}
+			}
+			updateSelectablesFromHash()
+		}
+	</script>
+</head>
+<body>
+<h1>Comparing Singularity_Previous (Build: 1135656) to Singularity_Next (Build: 1136387)</h1>
+<!-- <iframe id="timer" src="timerSection.html?version=1&timer=1489606234.803" style="border:none;" height="40px" width="800px"> </iframe> -->
+<p class="mini">Generated @ 2017-04-18 11:28:33 EVE Time (UTC)</p>
+<noscript>
+	<nobr>
+		<p class="scriptnotify" style="display:inline;">You've disabled javascript. This made the menu so sad that it self-destructed. I hope you're happy now.</p>
+		<p class="scriptnotifysmaller" style="display:inline;">You monster.</p>
+	</nobr>
+	<p class="scriptnotifysmall">This page should still kinda work though.</p>
+</noscript>
+<iframe id="navMenu" src="nav.html" style="border:none; display:none;" height="40px" width="800px"> </iframe>
+<script>
+  document.getElementById("navMenu").style.display = "block";
+</script>
+<p class="mini"></p>
+<p class="kindasmall">Click the categories below to expand them! <a href="confused.html">Confused?</a></p>
+
+<!--<h2 id="items">Items</h2>-->
+
+<details id="newitems">
+	<summary class="selectParent bigsum">New Items (20 Entries)</summary>
+	<table>
+	<details>
+	<summary class="smallsum" onClick="selectText('newItemsNotepad')">Show/Hide EVE notepad list for in-game viewing.</summary><div class="simplebox" id="newItemsNotepad">&lt;url=showinfo:45486&gt;Pacifier Blueprint&lt;/url&gt;<br>&lt;url=showinfo:45487&gt;Enforcer Blueprint&lt;/url&gt;<br>&lt;url=showinfo:45505&gt;Taipan Hostile Takeover SKIN (Permanent)&lt;/url&gt;<br>&lt;url=showinfo:45507&gt;Worm Hostile Takeover SKIN (Permanent)&lt;/url&gt;<br>&lt;url=showinfo:45508&gt;Gila Hostile Takeover SKIN (Permanent)&lt;/url&gt;<br>&lt;url=showinfo:45509&gt;Rattlesnake Hostile Takeover SKIN (Permanent)&lt;/url&gt;<br>&lt;url=showinfo:45514&gt;ExplorationSuit_F01_SOE.type&lt;/url&gt;<br>&lt;url=showinfo:45515&gt;ExplorationSuit_F01_Caldari.type&lt;/url&gt;<br>&lt;url=showinfo:45516&gt;ExplorationSuit_F01_Minmatar.type&lt;/url&gt;<br>&lt;url=showinfo:45517&gt;ExplorationSuit_F01_Gallente.type&lt;/url&gt;<br>&lt;url=showinfo:45518&gt;ExplorationSuit_F01_Amarr.type&lt;/url&gt;<br>&lt;url=showinfo:45519&gt;ExplorationSuit_F01_CaldariOrange.type&lt;/url&gt;<br>&lt;url=showinfo:45520&gt;ExplorationSuit_F01_ORE.type&lt;/url&gt;<br>&lt;url=showinfo:45521&gt;ExplorationSuit_M01_Gallente.type&lt;/url&gt;<br>&lt;url=showinfo:45522&gt;ExplorationSuit_M01_ORE.type&lt;/url&gt;<br>&lt;url=showinfo:45523&gt;ExplorationSuit_M01_SOE.type&lt;/url&gt;<br>&lt;url=showinfo:45524&gt;ExplorationSuit_M01_Caldari.type&lt;/url&gt;<br>&lt;url=showinfo:45525&gt;ExplorationSuit_M01_Minmatar.type&lt;/url&gt;<br>&lt;url=showinfo:45526&gt;ExplorationSuit_M01_Amarr.type&lt;/url&gt;<br>&lt;url=showinfo:45527&gt;ExplorationSuit_M01_CaldariOrange.type&lt;/url&gt;<br></div></details>
+	  <tr>
+		<!--<th>[[title4]]</th>-->
+		<th>TypeID & Name</th>
+		<th>Description</th>
+		<th>Group</th>
+		<th>Attributes</th>
+	  </tr>
+	<tr class="selectable" id="cid-1">
+		<td>45486 - <b>Pacifier Blueprint</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Frigate Blueprint</td>
+		<td width="300px">	<b>typeID:</b> 45486<br>	<b>radius:</b> 1<br>	<b>Mass:</b> 0.0<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.01<br>	<b>typeNameID:</b> 526238<br>	<b>basePrice:</b> 1600000<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 105<br></td>
+	</tr>
+	<tr class="selectable" id="cid-2">
+		<td>45487 - <b>Enforcer Blueprint</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Cruiser Blueprint</td>
+		<td width="300px">	<b>typeID:</b> 45487<br>	<b>radius:</b> 1<br>	<b>Mass:</b> 0.0<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.01<br>	<b>typeNameID:</b> 526240<br>	<b>basePrice:</b> 82000000<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 106<br></td>
+	</tr>
+	<tr class="selectable" id="cid-3">
+		<td>45505 - <b>Taipan Hostile Takeover SKIN (Permanent)</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Super Kerr-Induced Nanocoatings</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 12 attributes.</summary>	<b>typeID:</b> 45505<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 1<br>	<b>Mass:</b> 0.0<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.01<br>	<b>typeNameID:</b> 526313<br>	<b>published:</b> True<br>	<b>marketGroupID:</b> 1619<br>	<b>basePrice:</b> 0.0<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 1311<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-4">
+		<td>45507 - <b>Worm Hostile Takeover SKIN (Permanent)</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Super Kerr-Induced Nanocoatings</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 12 attributes.</summary>	<b>typeID:</b> 45507<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 1<br>	<b>Mass:</b> 0.0<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.01<br>	<b>typeNameID:</b> 526314<br>	<b>published:</b> True<br>	<b>marketGroupID:</b> 2031<br>	<b>basePrice:</b> 0.0<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 1311<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-5">
+		<td>45508 - <b>Gila Hostile Takeover SKIN (Permanent)</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Super Kerr-Induced Nanocoatings</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 12 attributes.</summary>	<b>typeID:</b> 45508<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 1<br>	<b>Mass:</b> 0.0<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.01<br>	<b>typeNameID:</b> 526315<br>	<b>published:</b> True<br>	<b>marketGroupID:</b> 2030<br>	<b>basePrice:</b> 0.0<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 1311<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-6">
+		<td>45509 - <b>Rattlesnake Hostile Takeover SKIN (Permanent)</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Super Kerr-Induced Nanocoatings</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 12 attributes.</summary>	<b>typeID:</b> 45509<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 1<br>	<b>Mass:</b> 0.0<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.01<br>	<b>typeNameID:</b> 526316<br>	<b>published:</b> True<br>	<b>marketGroupID:</b> 1963<br>	<b>basePrice:</b> 0.0<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 1311<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-7">
+		<td>45514 - <b>ExplorationSuit_F01_SOE.type</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Outer</td>
+		<td width="300px">	<b>typeID:</b> 45514<br>	<b>radius:</b> 1<br>	<b>Mass:</b> 0.5<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.1<br>	<b>typeNameID:</b> 526322<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 1088<br></td>
+	</tr>
+	<tr class="selectable" id="cid-8">
+		<td>45515 - <b>ExplorationSuit_F01_Caldari.type</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Outer</td>
+		<td width="300px">	<b>typeID:</b> 45515<br>	<b>radius:</b> 1<br>	<b>Mass:</b> 0.5<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.1<br>	<b>typeNameID:</b> 526323<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 1088<br></td>
+	</tr>
+	<tr class="selectable" id="cid-9">
+		<td>45516 - <b>ExplorationSuit_F01_Minmatar.type</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Outer</td>
+		<td width="300px">	<b>typeID:</b> 45516<br>	<b>radius:</b> 1<br>	<b>Mass:</b> 0.5<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.1<br>	<b>typeNameID:</b> 526324<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 1088<br></td>
+	</tr>
+	<tr class="selectable" id="cid-10">
+		<td>45517 - <b>ExplorationSuit_F01_Gallente.type</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Outer</td>
+		<td width="300px">	<b>typeID:</b> 45517<br>	<b>radius:</b> 1<br>	<b>Mass:</b> 0.5<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.1<br>	<b>typeNameID:</b> 526325<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 1088<br></td>
+	</tr>
+	<tr class="selectable" id="cid-11">
+		<td>45518 - <b>ExplorationSuit_F01_Amarr.type</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Outer</td>
+		<td width="300px">	<b>typeID:</b> 45518<br>	<b>radius:</b> 1<br>	<b>Mass:</b> 0.5<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.1<br>	<b>typeNameID:</b> 526326<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 1088<br></td>
+	</tr>
+	<tr class="selectable" id="cid-12">
+		<td>45519 - <b>ExplorationSuit_F01_CaldariOrange.type</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Outer</td>
+		<td width="300px">	<b>typeID:</b> 45519<br>	<b>radius:</b> 1<br>	<b>Mass:</b> 0.5<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.1<br>	<b>typeNameID:</b> 526327<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 1088<br></td>
+	</tr>
+	<tr class="selectable" id="cid-13">
+		<td>45520 - <b>ExplorationSuit_F01_ORE.type</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Outer</td>
+		<td width="300px">	<b>typeID:</b> 45520<br>	<b>radius:</b> 1<br>	<b>Mass:</b> 0.5<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.1<br>	<b>typeNameID:</b> 526328<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 1088<br></td>
+	</tr>
+	<tr class="selectable" id="cid-14">
+		<td>45521 - <b>ExplorationSuit_M01_Gallente.type</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Outer</td>
+		<td width="300px">	<b>typeID:</b> 45521<br>	<b>radius:</b> 1<br>	<b>Mass:</b> 0.5<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.1<br>	<b>typeNameID:</b> 526330<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 1088<br></td>
+	</tr>
+	<tr class="selectable" id="cid-15">
+		<td>45522 - <b>ExplorationSuit_M01_ORE.type</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Outer</td>
+		<td width="300px">	<b>typeID:</b> 45522<br>	<b>radius:</b> 1<br>	<b>Mass:</b> 0.1<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.5<br>	<b>typeNameID:</b> 526331<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 1088<br></td>
+	</tr>
+	<tr class="selectable" id="cid-16">
+		<td>45523 - <b>ExplorationSuit_M01_SOE.type</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Outer</td>
+		<td width="300px">	<b>typeID:</b> 45523<br>	<b>radius:</b> 1<br>	<b>Mass:</b> 0.5<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.1<br>	<b>typeNameID:</b> 526332<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 1088<br></td>
+	</tr>
+	<tr class="selectable" id="cid-17">
+		<td>45524 - <b>ExplorationSuit_M01_Caldari.type</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Outer</td>
+		<td width="300px">	<b>typeID:</b> 45524<br>	<b>radius:</b> 1<br>	<b>Mass:</b> 0.5<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.1<br>	<b>typeNameID:</b> 526333<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 1088<br></td>
+	</tr>
+	<tr class="selectable" id="cid-18">
+		<td>45525 - <b>ExplorationSuit_M01_Minmatar.type</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Outer</td>
+		<td width="300px">	<b>typeID:</b> 45525<br>	<b>radius:</b> 1<br>	<b>Mass:</b> 0.5<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.1<br>	<b>typeNameID:</b> 526334<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 1088<br></td>
+	</tr>
+	<tr class="selectable" id="cid-19">
+		<td>45526 - <b>ExplorationSuit_M01_Amarr.type</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">#System</td>
+		<td width="300px">	<b>typeID:</b> 45526<br>	<b>radius:</b> 1<br>	<b>Mass:</b> 0.5<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.1<br>	<b>typeNameID:</b> 526335<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 0<br></td>
+	</tr>
+	<tr class="selectable" id="cid-20">
+		<td>45527 - <b>ExplorationSuit_M01_CaldariOrange.type</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Outer</td>
+		<td width="300px">	<b>typeID:</b> 45527<br>	<b>radius:</b> 1<br>	<b>Mass:</b> 0.5<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.1<br>	<b>typeNameID:</b> 526336<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 1088<br></td>
+	</tr>
+	</table>
+</details>
+
+<details id="removeditems">
+	<summary class="selectParent bigsum_disabled" onclick="return false">Removed Items (0 Entries)</summary>
+	<p class="kindasmall">Please note that a "removed" item usually means the item was just not yet added to the "newer" build.</p>
+	<table>
+	  <tr>
+		<th>TypeID & Name</th>
+		<th>Description</th>
+		<th>Group</th>
+		<th>Attributes</th>
+	  </tr>
+	
+	</table>
+</details>
+
+<details id="changedblueprints">
+	<summary class="selectParent bigsum">Changed Blueprints BETA (2 Entries)</summary>
+	<table>
+	  <tr>
+		<th>Blueprint Name</th>
+		<th>Old BP Data</th>
+		<th>New BP Data</th>
+		<th>Raw Diff</th>
+	  </tr>
+	<tr class="selectable" id="cid-21">
+		<td>45486 - <b> Pacifier Blueprint</b></td>
+		<td>No blueprint entry found.</td>
+		<td>Copy:? ME:? TE:? Limit:1x<br><b>Materials:</b><br>1x Tritanium<br><b>Skills:</b><br>Industry I<br><b>Outcome:</b><br>1x Pacifier (44993)</td>
+		<td width="300"><ins style="background:#e6ffe6;">Copy:? ME:? TE:? Limit:1x<br>Materials:<br>1x 34<br>Skills:<br>3380 I<br>Outcome:<br>1x 44993</ins></td>
+	</tr><tr class="selectable" id="cid-22">
+		<td>45487 - <b>Enforcer Blueprint</b></td>
+		<td>No blueprint entry found.</td>
+		<td>Copy:? ME:? TE:? Limit:1x<br><b>Materials:</b><br>1x Tritanium<br><b>Skills:</b><br>Industry I<br><b>Outcome:</b><br>1x Enforcer (44995)</td>
+		<td width="300"><ins style="background:#e6ffe6;">Copy:? ME:? TE:? Limit:1x<br>Materials:<br>1x 34<br>Skills:<br>3380 I<br>Outcome:<br>1x 44995</ins></td>
+	</tr>
+	</table>
+</details>
+
+<br>
+
+<details id="bonuschanges">
+	<summary class="selectParent bigsum">Changed Traits (3 Entries)</summary>
+	<table>
+	  <tr>
+		<th>TypeID, Group, & Name</th>
+		<th>Singularity_Previous</th>
+		<th>Singularity_Next</th>
+		<th>Diff</th>
+		<!-- <th>[[title4]]</th> -->
+	  </tr>
+	<tr class="selectable" id="cid-23">
+		<td style="text-align:center;" width="130px">44993 - <b>Pacifier</b><br>(Covert Ops)</td>
+		<td width="355px"></td>
+		<td width="355px"><b>Covert Ops bonuses (per skill level):</b><ul><li>10% bonus to <b>Core</b> and <b>Combat Scanner Probe</b> strength</li><li>10% reduction in <b>Survey Probe</b> flight time</li><li>10% bonus to warp speed and acceleration</li></ul><br><br><b>Gallente Frigate bonuses (per skill level):</b><ul><li>5% bonus to <b>Small Hybrid Turret</b> damage</li><li>7.5% bonus to <b>Small Hybrid Turret</b> tracking speed</li></ul><br><br><b>Minmatar Frigate bonuses (per skill level):</b><ul><li>5% bonus to <b>Small Projectile Turret</b> rate of fire</li><li>10% bonus to <b>Small Projectile Turret</b> falloff</li></ul><br><br><b>Caldari Frigate bonuses (per skill level):</b><ul><li>5% bonus to <b>Light Missile</b> and <b>Rocket</b> Launcher rate of fire</li><li>10% bonus to <b>Light Missile</b> and <b>Rocket</b> flight time</li></ul><br><br><b>Amarr Frigate bonuses (per skill level):</b><ul><li>5% bonus to <b>Small Energy Turret</b> damage</li><li>10% bonus to <b>Small Energy Turret</b> optimal range</li></ul><br><br><b>Role Bonus:</b><ul><li>100% reduction in <b>Cloaking Devices</b> CPU requirement</li><li>10+ bonus to <b>Relic</b> and <b>Data Analyzer</b> virus strength</li><li> Can fit <b>Covert Ops Cloaking Device</b> and <b>Covert Cynosural Field Generator</b></li><li> <b>Cloak</b> reactivation delay reduced to 5 seconds</li><li>10% bonus to security status gains from destruction of non-capsuleer pirates while flying this ship</li><li> <b>Armor Repairer</b> and <b>Shield Booster</b> effectiveness increased by a percentage equal to 10x pilot security status, with a floor of 0% and ceiling of 50%</li><ul></td>
+		<td><ins style="background:#e6ffe6;">Covert Ops bonuses (per skill level):<br>10% bonus to &lt;a href=showinfo:30013&gt;Core&lt;/a&gt; and &lt;a href=showinfo:30028&gt;Combat Scanner Probe&lt;/a&gt; strength<br>10% reduction in &lt;a href=showinfo:18635&gt;Survey Probe&lt;/a&gt; flight time<br>10% bonus to warp speed and acceleration<br><br>Gallente Frigate bonuses (per skill level):<br>5% bonus to &lt;a href=showinfo:3301&gt;Small Hybrid Turret&lt;/a&gt; damage<br>7.5% bonus to &lt;a href=showinfo:3301&gt;Small Hybrid Turret&lt;/a&gt; tracking speed<br><br>Minmatar Frigate bonuses (per skill level):<br>5% bonus to &lt;a href=showinfo:3302&gt;Small Projectile Turret&lt;/a&gt; rate of fire<br>10% bonus to &lt;a href=showinfo:3302&gt;Small Projectile Turret&lt;/a&gt; falloff<br><br>Caldari Frigate bonuses (per skill level):<br>5% bonus to &lt;a href=showinfo:3321&gt;Light Missile&lt;/a&gt; and &lt;a href=showinfo:3320&gt;Rocket&lt;/a&gt; Launcher rate of fire<br>10% bonus to &lt;a href=showinfo:3321&gt;Light Missile&lt;/a&gt; and &lt;a href=showinfo:3320&gt;Rocket&lt;/a&gt; flight time<br><br>Amarr Frigate bonuses (per skill level):<br>5% bonus to &lt;a href=showinfo:3303&gt;Small Energy Turret&lt;/a&gt; damage<br>10% bonus to &lt;a href=showinfo:3303&gt;Small Energy Turret&lt;/a&gt; optimal range<br><br>Role Bonus:<br>100% reduction in &lt;a href=showinfo:11579&gt;Cloaking Devices&lt;/a&gt; CPU requirement<br>10+ bonus to &lt;a href=showinfo:22177&gt;Relic&lt;/a&gt; and &lt;a href=showinfo:22175&gt;Data Analyzer&lt;/a&gt; virus strength<br> Can fit &lt;a href=showinfo:11578&gt;Covert Ops Cloaking Device&lt;/a&gt; and &lt;a href=showinfo:28646&gt;Covert Cynosural Field Generator&lt;/a&gt;<br> &lt;a href=showinfo:11579&gt;Cloak&lt;/a&gt; reactivation delay reduced to 5 seconds<br>10% bonus to security status gains from destruction of non-capsuleer pirates while flying this ship<br> &lt;a href=showinfo:3393&gt;Armor Repairer&lt;/a&gt; and &lt;a href=showinfo:3416&gt;Shield Booster&lt;/a&gt; effectiveness increased by a percentage equal to 10x pilot security status, with a floor of 0% and ceiling of 50%</ins></td>
+	</tr>
+	<tr class="selectable" id="cid-24">
+		<td style="text-align:center;" width="130px">44995 - <b>Enforcer</b><br>(Force Recon Ship)</td>
+		<td width="355px"></td>
+		<td width="355px"><b>Recon Ships bonuses (per skill level):</b><ul><li>5% bonus to <b>Warp Scrambler</b> and <b>Warp Disruptor</b> optimal range</li><li>10% bonus to <b>Stasis Webifier</b> optimal range</li><li>10% bonus to warp speed and acceleration</li></ul><br><br><b>Gallente Cruiser bonuses (per skill level):</b><ul><li>5% bonus to <b>Medium Hybrid Turret</b> damage</li><li>7.5% bonus to <b>Medium Hybrid Turret</b> tracking speed</li></ul><br><br><b>Minmatar Cruiser bonuses (per skill level):</b><ul><li>5% bonus to <b>Medium Projectile Turret</b> rate of fire</li><li>10% bonus to <b>Medium Projectile Turret</b> falloff</li></ul><br><br><b>Caldari Cruiser bonuses (per skill level):</b><ul><li>5% bonus to Rapid <b>Light Missile</b>, <b>Heavy Missile</b> and <b>Heavy Assault Missile</b> Launcher rate of fire</li><li>10% bonus to <b>Heavy Missile</b> and <b>Heavy Assault Missile</b> flight time</li></ul><br><br><b>Amarr Cruiser bonuses (per skill level):</b><ul><li>5% bonus to <b>Medium Energy Turret</b> damage</li><li>10% bonus to <b>Medium Energy Turret</b> optimal range</li></ul><br><br><b>Role Bonus:</b><ul><li>100% reduction in <b>Cloaking Devices</b> CPU requirement</li><li> Can fit <b>Covert Ops Cloaking Device</b> and <b>Covert Cynosural Field Generator</b></li><li> <b>Cloak</b> reactivation delay reduced to 5 seconds</li><li>80% reduction in <b>Cynosural Field Generator</b> liquid ozone consumption</li><li>50% reduction in <b>Cynosural Field Generator</b> duration</li><li>10% bonus to security status gains from destruction of non-capsuleer pirates while flying this ship</li><li> <b>Armor Repairer</b> and <b>Shield Booster</b> effectiveness increased by a percentage equal to 10x pilot security status, with a floor of 0% and ceiling of 50%</li><ul></td>
+		<td><ins style="background:#e6ffe6;">Recon Ships bonuses (per skill level):<br>5% bonus to &lt;a href=showinfo:447&gt;Warp Scrambler&lt;/a&gt; and &lt;a href=showinfo:3242&gt;Warp Disruptor&lt;/a&gt; optimal range<br>10% bonus to &lt;a href=showinfo:526&gt;Stasis Webifier&lt;/a&gt; optimal range<br>10% bonus to warp speed and acceleration<br><br>Gallente Cruiser bonuses (per skill level):<br>5% bonus to &lt;a href=showinfo:3304&gt;Medium Hybrid Turret&lt;/a&gt; damage<br>7.5% bonus to &lt;a href=showinfo:3304&gt;Medium Hybrid Turret&lt;/a&gt; tracking speed<br><br>Minmatar Cruiser bonuses (per skill level):<br>5% bonus to &lt;a href=showinfo:3305&gt;Medium Projectile Turret&lt;/a&gt; rate of fire<br>10% bonus to &lt;a href=showinfo:3305&gt;Medium Projectile Turret&lt;/a&gt; falloff<br><br>Caldari Cruiser bonuses (per skill level):<br>5% bonus to Rapid &lt;a href=showinfo:3321&gt;Light Missile&lt;/a&gt;, &lt;a href=showinfo:3324&gt;Heavy Missile&lt;/a&gt; and &lt;a href=showinfo:25719&gt;Heavy Assault Missile&lt;/a&gt; Launcher rate of fire<br>10% bonus to &lt;a href=showinfo:3324&gt;Heavy Missile&lt;/a&gt; and &lt;a href=showinfo:25719&gt;Heavy Assault Missile&lt;/a&gt; flight time<br><br>Amarr Cruiser bonuses (per skill level):<br>5% bonus to &lt;a href=showinfo:3306&gt;Medium Energy Turret&lt;/a&gt; damage<br>10% bonus to &lt;a href=showinfo:3306&gt;Medium Energy Turret&lt;/a&gt; optimal range<br><br>Role Bonus:<br>100% reduction in &lt;a href=showinfo:11579&gt;Cloaking Devices&lt;/a&gt; CPU requirement<br> Can fit &lt;a href=showinfo:11578&gt;Covert Ops Cloaking Device&lt;/a&gt; and &lt;a href=showinfo:28646&gt;Covert Cynosural Field Generator&lt;/a&gt;<br> &lt;a href=showinfo:11579&gt;Cloak&lt;/a&gt; reactivation delay reduced to 5 seconds<br>80% reduction in &lt;a href=showinfo:21096&gt;Cynosural Field Generator&lt;/a&gt; liquid ozone consumption<br>50% reduction in &lt;a href=showinfo:21096&gt;Cynosural Field Generator&lt;/a&gt; duration<br>10% bonus to security status gains from destruction of non-capsuleer pirates while flying this ship<br> &lt;a href=showinfo:3393&gt;Armor Repairer&lt;/a&gt; and &lt;a href=showinfo:3416&gt;Shield Booster&lt;/a&gt; effectiveness increased by a percentage equal to 10x pilot security status, with a floor of 0% and ceiling of 50%</ins></td>
+	</tr>
+	<tr class="selectable" id="cid-25">
+		<td style="text-align:center;" width="130px">44996 - <b>Marshal</b><br>(Black Ops)</td>
+		<td width="355px"></td>
+		<td width="355px"><b>Black Ops bonuses (per skill level):</b><ul><li>125% bonus to ship max velocity when using <b>Cloaking Devices</b></li><li>10% bonus to <b>Warp Scrambler</b> and <b>Warp Disruptor</b> optimal range</li><li>20% bonus to <b>Stasis Webifier</b> optimal range</li><li>10% bonus to warp speed and acceleration</li></ul><br><br><b>Gallente Battleship bonuses (per skill level):</b><ul><li>5% bonus to <b>Large Hybrid Turret</b> damage</li><li>7.5% bonus to <b>Large Hybrid Turret</b> tracking speed</li></ul><br><br><b>Minmatar Battleship bonuses (per skill level):</b><ul><li>5% bonus to <b>Large Projectile Turret</b> rate of fire</li><li>10% bonus to <b>Large Projectile Turret</b> falloff</li></ul><br><br><b>Caldari Battleship bonuses (per skill level):</b><ul><li>5% bonus to Rapid <b>Heavy Missile</b>, <b>Cruise Missile</b> and <b>Torpedo</b> Launcher rate of fire</li><li>10% bonus to <b>Cruise Missile</b> and <b>Torpedo</b> flight time</li></ul><br><br><b>Amarr Battleship bonuses (per skill level):</b><ul><li>5% bonus to <b>Large Energy Turret</b> damage</li><li>10% bonus to <b>Large Energy Turret</b> optimal range</li></ul><br><br><b>Role Bonus:</b><ul><li> Can fit <b>Covert Ops Cloaking Device</b> and <b>Covert Cynosural Field Generator</b></li><li> No targeting delay after <b>Cloaking Device</b> deactivation</li><li> <b>Cloak</b> reactivation delay reduced to 5 seconds</li><li>75% reduction to effective distance traveled for jump fatigue</li><li>10% bonus to security status gains from destruction of non-capsuleer pirates while flying this ship</li><li> <b>Armor Repairer</b> and <b>Shield Booster</b> effectiveness increased by a percentage equal to 10x pilot security status, with a floor of 0% and ceiling of 50%</li><ul></td>
+		<td><ins style="background:#e6ffe6;">Black Ops bonuses (per skill level):<br>125% bonus to ship max velocity when using &lt;a href=showinfo:11579&gt;Cloaking Devices&lt;/a&gt;<br>10% bonus to &lt;a href=showinfo:447&gt;Warp Scrambler&lt;/a&gt; and &lt;a href=showinfo:3242&gt;Warp Disruptor&lt;/a&gt; optimal range<br>20% bonus to &lt;a href=showinfo:526&gt;Stasis Webifier&lt;/a&gt; optimal range<br>10% bonus to warp speed and acceleration<br><br>Gallente Battleship bonuses (per skill level):<br>5% bonus to &lt;a href=showinfo:3307&gt;Large Hybrid Turret&lt;/a&gt; damage<br>7.5% bonus to &lt;a href=showinfo:3307&gt;Large Hybrid Turret&lt;/a&gt; tracking speed<br><br>Minmatar Battleship bonuses (per skill level):<br>5% bonus to &lt;a href=showinfo:3308&gt;Large Projectile Turret&lt;/a&gt; rate of fire<br>10% bonus to &lt;a href=showinfo:3308&gt;Large Projectile Turret&lt;/a&gt; falloff<br><br>Caldari Battleship bonuses (per skill level):<br>5% bonus to Rapid &lt;a href=showinfo:3324&gt;Heavy Missile&lt;/a&gt;, &lt;a href=showinfo:3326&gt;Cruise Missile&lt;/a&gt; and &lt;a href=showinfo:3325&gt;Torpedo&lt;/a&gt; Launcher rate of fire<br>10% bonus to &lt;a href=showinfo:3326&gt;Cruise Missile&lt;/a&gt; and &lt;a href=showinfo:3325&gt;Torpedo&lt;/a&gt; flight time<br><br>Amarr Battleship bonuses (per skill level):<br>5% bonus to &lt;a href=showinfo:3309&gt;Large Energy Turret&lt;/a&gt; damage<br>10% bonus to &lt;a href=showinfo:3309&gt;Large Energy Turret&lt;/a&gt; optimal range<br><br>Role Bonus:<br> Can fit &lt;a href=showinfo:11578&gt;Covert Ops Cloaking Device&lt;/a&gt; and &lt;a href=showinfo:28646&gt;Covert Cynosural Field Generator&lt;/a&gt;<br> No targeting delay after &lt;a href=showinfo:11579&gt;Cloaking Device&lt;/a&gt; deactivation<br> &lt;a href=showinfo:11579&gt;Cloak&lt;/a&gt; reactivation delay reduced to 5 seconds<br>75% reduction to effective distance traveled for jump fatigue<br>10% bonus to security status gains from destruction of non-capsuleer pirates while flying this ship<br> &lt;a href=showinfo:3393&gt;Armor Repairer&lt;/a&gt; and &lt;a href=showinfo:3416&gt;Shield Booster&lt;/a&gt; effectiveness increased by a percentage equal to 10x pilot security status, with a floor of 0% and ceiling of 50%</ins></td>
+	</tr>
+	</table>
+</details>
+
+<!--<h2 id="attributes">Attributes</h2>-->
+
+<details id="dgmattribs">
+	<summary class="selectParent bigsum_disabled" onclick="return false">Changes to Attributes (0 Entries)</summary>
+	<table>
+	  <tr>
+		<th>Attribute Name</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Diff</th>
+	  </tr>
+	
+	</table>
+</details>
+
+<details id="typeattribs">
+	<summary class="selectParent bigsum">Attribute Changes per Type (5 Entries)</summary>
+	<table>
+	  <tr>
+		<th>TypeID, Name, and Group</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Diff</th>
+	  </tr>
+	<tr class="selectable" id="cid-26">
+		<td>44993 - <b>Pacifier</b> (Covert Ops)</td>
+		<td><b>descriptionID:</b> None <b>=></b> 526236<br></td>
+	</tr>
+	<tr class="selectable" id="cid-27">
+		<td>42242 - <b>Dagon</b> (Force Auxiliary)</td>
+		<td><b>shipBonusForceAuxiliaryM2:</b> None <b>=></b> 5.0<br><b>specialCorpseHoldCapacity:</b> 20000.0 <b>=></b> 1000.0<br></td>
+	</tr>
+	<tr class="selectable" id="cid-28">
+		<td>42243 - <b>Chemosh</b> (Dreadnought)</td>
+		<td><b>specialCorpseHoldCapacity:</b> 20000.0 <b>=></b> 1000.0<br></td>
+	</tr>
+	<tr class="selectable" id="cid-29">
+		<td>42241 - <b>Molok</b> (Titan)</td>
+		<td><b>specialCorpseHoldCapacity:</b> 200000.0 <b>=></b> 2000.0<br></td>
+	</tr>
+	<tr class="selectable" id="cid-30">
+		<td>44995 - <b>Enforcer</b> (Force Recon Ship)</td>
+		<td><b>descriptionID:</b> None <b>=></b> 526237<br></td>
+	</tr>
+	</table>
+</details>
+
+<br>
+
+<!--<h2 id="effectchanges">Effect Changes</h2>-->
+
+<details id="dgmeffects">
+	<summary class="selectParent bigsum">Changes to Effects (2 Entries)</summary>
+	<table>
+	  <tr>
+		<th>Effect Name</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Diff</th>
+	  </tr>
+	<tr class="selectable" id="cid-31">
+		<td>6883 - shipBonusForceAuxiliaryM2LocalRepairAmount</td>
+		<td><b>disallowAutoRepeat:</b> None <b>=></b> False<br><b>displayName:</b> None <b>=></b> <br><b>effectCategory:</b> None <b>=></b> 0<br><b>effectID:</b> None <b>=></b> 6883<br><b>effectName:</b> None <b>=></b> shipBonusForceAuxiliaryM2LocalRepairAmount<br><b>electronicChance:</b> None <b>=></b> False<br><b>guid:</b> None <b>=></b> <br><b>isAssistance:</b> None <b>=></b> False<br><b>isOffensive:</b> None <b>=></b> False<br><b>isWarpSafe:</b> None <b>=></b> False<br><b>modifierInfo:</b> None <b>=></b> - domain: shipID<br>  func: LocationRequiredSkillModifier<br>  modifiedAttributeID: 84<br>  modifyingAttributeID: 2318<br>  operator: 6<br>  skillTypeID: 21803<br>- domain: shipID<br>  func: LocationRequiredSkillModifier<br>  modifiedAttributeID: 84<br>  modifyingAttributeID: 2318<br>  operator: 6<br>  skillTypeID: 3393<br><b>postExpression:</b> None <b>=></b> 59<br><b>preExpression:</b> None <b>=></b> 59<br><b>propulsionChance:</b> None <b>=></b> False<br><b>published:</b> None <b>=></b> False<br><b>rangeChance:</b> None <b>=></b> False<br><b>resistanceID:</b> None <b>=></b> 0<br></td>
+	</tr>
+	<tr class="selectable" id="cid-32">
+		<td>760 - shipBonusSmallMissileRoFCF2</td>
+		<td><b>modifierInfo:</b> - domain: itemID<br>  func: LocationRequiredSkillModifier<br>  modifiedAttributeID: 51<br>  modifyingAttributeID: 588<br>  operator: 6<br>  skillTypeID: 3320<br>- domain: itemID<br>  func: LocationRequiredSkillModifier<br>  modifiedAttributeID: 51<br>  modifyingAttributeID: 588<br>  operator: 6<br>  skillTypeID: 3321<br> <b>=></b> - domain: shipID<br>  func: LocationGroupModifier<br>  groupID: 507<br>  modifiedAttributeID: 51<br>  modifyingAttributeID: 588<br>  operator: 6<br>- domain: shipID<br>  func: LocationGroupModifier<br>  groupID: 509<br>  modifiedAttributeID: 51<br>  modifyingAttributeID: 588<br>  operator: 6<br><br></td>
+	</tr>
+	</table>
+</details>
+
+<details id="typeeffects">
+	<summary class="selectParent bigsum">Effect Changes per Type (1 Entries)</summary>
+	<table>
+	  <tr>
+		<th>TypeID, Name, and Group</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Effects Changes</th>
+	  </tr>
+	<tr class="selectable" id="cid-33">
+		<td>42242 - <b>Dagon</b> (Force Auxiliary)</td>
+		<td><b><u>Added Effects:</u></b><br><b>shipBonusForceAuxiliaryM2LocalRepairAmount:</b> None <b>=></b> False <br></td>
+	</tr>
+	</table>
+</details>
+
+<br>
+
+<!--<h2 id="stringchanges">String Changes</h2>-->
+
+<details id="stringchanges">
+	<summary class="selectParent bigsum">String Changes (82 Entries)</summary>
+	<table>
+	  <tr>
+		<th>Key</th>
+		<th>Singularity_Previous</th>
+		<th>Singularity_Next</th>
+		<th>Diff</th>
+		<th>Notes</th>
+	  </tr>
+	<tr class="selectable" id="cid-34">
+		<td>507049</td>
+		<td width="355px">Massive Environment</td>
+		<td width="355px"></td>
+		<td><del style="background:#ffe6e6;">Massive Environment</del></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-35">
+		<td>518358</td>
+		<td width="355px">Swirlybird Effect</td>
+		<td width="355px">Effect NPE Vortex</td>
+		<td><del style="background:#ffe6e6;">Swirlybird Effect</del><ins style="background:#e6ffe6;">Effect NPE Vortex</ins></td>
+		<td class="mini">Item name for typeID 42532 (MassiveEnvironments)</td>
+	</tr>
+	<tr class="selectable" id="cid-36">
+		<td>525374</td>
+		<td width="355px">H4-RP4 Kyonoke Inquest Center</td>
+		<td width="355px">H4-RP4 Kyonoke Memorial Research Facility</td>
+		<td><span>H4-RP4 Kyonoke </span><del style="background:#ffe6e6;">Inquest Center</del><ins style="background:#e6ffe6;">Memorial Research Facility</ins></td>
+		<td class="mini">Item name for typeID 45016 (Large Collidable Object)</td>
+	</tr>
+	<tr class="selectable" id="cid-37">
+		<td>525375</td>
+		<td width="355px">This Keepstar was constructed by the Society of Conscious Thought to act as a research and development center for the study of the Kyonoke Plague.<br><br>Widely considered by academics to be the single largest research installation in New Eden, its laboratories have hosted research projects from some of the most intelligent minds in human history.</td>
+		<td width="355px">This Keepstar was constructed by the Society of Conscious Thought to act as a research and development center for the study of the Kyonoke Plague, after a series of outbreaks across the cluster during early YC119.<br><br>Widely considered by academics to be the single largest research installation in New Eden, its laboratories have hosted research projects from some of the most intelligent minds in human history.<br><br>In April YC119 it hosted the Kyonoke Inquest, which saw the successful research of a cure to the Kyonoke Plague, one of the most voracious and deadly pathogens in recorded history.<br><br>This breakthrough would not have been possible without the assistance of thousands of independent capsuleers who attended the inquest in order to assist with research and development.<br><br>Today it remains under the administration of the Society and is maintained as a memorial to all those lost to Kyonoke, with its cutting edge research labs leased out to biotech corporations from across the cluster.</td>
+		<td><span>This Keepstar was constructed by the Society of Conscious Thought to act as a research and development center for the study of the Kyonoke Plague</span><ins style="background:#e6ffe6;">, after a series of outbreaks across the cluster during early YC119</ins><span>.<br><br>Widely considered by academics to be the single largest research installation in New Eden, its laboratories have hosted research projects from some of the most intelligent minds in human history.</span><ins style="background:#e6ffe6;"><br><br>In April YC119 it hosted the Kyonoke Inquest, which saw the successful research of a cure to the Kyonoke Plague, one of the most voracious and deadly pathogens in recorded history.<br><br>This breakthrough would not have been possible without the assistance of thousands of independent capsuleers who attended the inquest in order to assist with research and development.<br><br>Today it remains under the administration of the Society and is maintained as a memorial to all those lost to Kyonoke, with its cutting edge research labs leased out to biotech corporations from across the cluster.</ins></td>
+		<td class="mini">Item description for "H4-RP4 Kyonoke Memorial Research Facility" (typeID 45016)</td>
+	</tr>
+	<tr class="selectable" id="cid-38">
+		<td>526235</td>
+		<td width="355px"></td>
+		<td width="355px">MassiveEnvironments</td>
+		<td><ins style="background:#e6ffe6;">MassiveEnvironments</ins></td>
+		<td class="mini">Group description for group ID 1882</td>
+	</tr>
+	<tr class="selectable" id="cid-39">
+		<td>526236</td>
+		<td width="355px"></td>
+		<td width="355px">Notorious across New Eden, the Pacifier-class frigate has made its name as CONCORD's premier fast-attack frigate, capable of laying waste even to the Angel Cartel's legendary Dramiel-class high-performance frigates.<br><br>Originally based on a hybridization of the Punisher and Rifter frigate hulls, CONCORD's Directive Enforcement Department became concerned early in the Drifter Crisis that the design could no longer meet its needs. The Pacifier joined other ship classes in the DED inventory as part of CONCORD Aerospace's "Force Majeure Program" to develop enhanced variants.<br><br>While CONCORD Aerospace successfully upgraded the Pacifier and other DED vessels with hyper-advanced technology, the program became a severe drain on CONCORD's resources. Consequently, the Inner Circle authorized a limited release of the Pacifier, stripped of CONCORD's advanced rapid-deployment and electronic warfare suites, to the capsuleer market via authorized dealers.</td>
+		<td><ins style="background:#e6ffe6;">Notorious across New Eden, the Pacifier-class frigate has made its name as CONCORD's premier fast-attack frigate, capable of laying waste even to the Angel Cartel's legendary Dramiel-class high-performance frigates.<br><br>Originally based on a hybridization of the Punisher and Rifter frigate hulls, CONCORD's Directive Enforcement Department became concerned early in the Drifter Crisis that the design could no longer meet its needs. The Pacifier joined other ship classes in the DED inventory as part of CONCORD Aerospace's "Force Majeure Program" to develop enhanced variants.<br><br>While CONCORD Aerospace successfully upgraded the Pacifier and other DED vessels with hyper-advanced technology, the program became a severe drain on CONCORD's resources. Consequently, the Inner Circle authorized a limited release of the Pacifier, stripped of CONCORD's advanced rapid-deployment and electronic warfare suites, to the capsuleer market via authorized dealers.</ins></td>
+		<td class="mini">Item description for "Pacifier" (typeID 44993)</td>
+	</tr>
+	<tr class="selectable" id="cid-40">
+		<td>526237</td>
+		<td width="355px"></td>
+		<td width="355px">Famously one of the most flexible and compact rapid-attack ships in the New Eden cluster, the Enforcer-class cruiser is iconic due to its repeated appearances in anticrime and recruitment media issued by CONCORD.<br><br>With a core design based on a combination of the Moa and Vexor cruiser subframes, CONCORD's Directive Enforcement Department became concerned early in the Drifter Crisis that the ship could no longer meet its needs. The Enforcer joined other ship classes in the DED inventory as part of CONCORD Aerospace's "Force Majeure Program" to develop enhanced variants.<br><br>While CONCORD Aerospace successfully upgraded the Enforcer and other DED vessels with hyper-advanced technology, the program became a severe drain on CONCORD's resources. Consequently, the Inner Circle authorized a limited release of the Enforcer, stripped of CONCORD's advanced rapid-deployment and electronic warfare suites, to the capsuleer market via authorized dealers.</td>
+		<td><ins style="background:#e6ffe6;">Famously one of the most flexible and compact rapid-attack ships in the New Eden cluster, the Enforcer-class cruiser is iconic due to its repeated appearances in anticrime and recruitment media issued by CONCORD.<br><br>With a core design based on a combination of the Moa and Vexor cruiser subframes, CONCORD's Directive Enforcement Department became concerned early in the Drifter Crisis that the ship could no longer meet its needs. The Enforcer joined other ship classes in the DED inventory as part of CONCORD Aerospace's "Force Majeure Program" to develop enhanced variants.<br><br>While CONCORD Aerospace successfully upgraded the Enforcer and other DED vessels with hyper-advanced technology, the program became a severe drain on CONCORD's resources. Consequently, the Inner Circle authorized a limited release of the Enforcer, stripped of CONCORD's advanced rapid-deployment and electronic warfare suites, to the capsuleer market via authorized dealers.</ins></td>
+		<td class="mini">Item description for "Enforcer" (typeID 44995)</td>
+	</tr>
+	<tr class="selectable" id="cid-41">
+		<td>526238</td>
+		<td width="355px"></td>
+		<td width="355px">Pacifier Blueprint</td>
+		<td><ins style="background:#e6ffe6;">Pacifier Blueprint</ins></td>
+		<td class="mini">Item name for typeID 45486 (Frigate Blueprint)</td>
+	</tr>
+	<tr class="selectable" id="cid-42">
+		<td>526240</td>
+		<td width="355px"></td>
+		<td width="355px">Enforcer Blueprint</td>
+		<td><ins style="background:#e6ffe6;">Enforcer Blueprint</ins></td>
+		<td class="mini">Item name for typeID 45487 (Cruiser Blueprint)</td>
+	</tr>
+	<tr class="selectable" id="cid-43">
+		<td>526241</td>
+		<td width="355px"></td>
+		<td width="355px">bonus to <b>Light Missile</b> and <b>Rocket</b> Launcher rate of fire</td>
+		<td><ins style="background:#e6ffe6;">bonus to &lt;a href=showinfo:3321&gt;Light Missile&lt;/a&gt; and &lt;a href=showinfo:3320&gt;Rocket&lt;/a&gt; Launcher rate of fire</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-44">
+		<td>526242</td>
+		<td width="355px"></td>
+		<td width="355px">bonus to <b>Light Missile</b> and <b>Rocket</b> flight time</td>
+		<td><ins style="background:#e6ffe6;">bonus to &lt;a href=showinfo:3321&gt;Light Missile&lt;/a&gt; and &lt;a href=showinfo:3320&gt;Rocket&lt;/a&gt; flight time</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-45">
+		<td>526243</td>
+		<td width="355px"></td>
+		<td width="355px">bonus to <b>Small Energy Turret</b> damage</td>
+		<td><ins style="background:#e6ffe6;">bonus to &lt;a href=showinfo:3303&gt;Small Energy Turret&lt;/a&gt; damage</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-46">
+		<td>526244</td>
+		<td width="355px"></td>
+		<td width="355px">bonus to <b>Small Energy Turret</b> optimal range</td>
+		<td><ins style="background:#e6ffe6;">bonus to &lt;a href=showinfo:3303&gt;Small Energy Turret&lt;/a&gt; optimal range</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-47">
+		<td>526245</td>
+		<td width="355px"></td>
+		<td width="355px">bonus to <b>Small Hybrid Turret</b> damage</td>
+		<td><ins style="background:#e6ffe6;">bonus to &lt;a href=showinfo:3301&gt;Small Hybrid Turret&lt;/a&gt; damage</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-48">
+		<td>526246</td>
+		<td width="355px"></td>
+		<td width="355px">bonus to <b>Small Hybrid Turret</b> tracking speed</td>
+		<td><ins style="background:#e6ffe6;">bonus to &lt;a href=showinfo:3301&gt;Small Hybrid Turret&lt;/a&gt; tracking speed</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-49">
+		<td>526247</td>
+		<td width="355px"></td>
+		<td width="355px">bonus to <b>Small Projectile Turret</b> rate of fire</td>
+		<td><ins style="background:#e6ffe6;">bonus to &lt;a href=showinfo:3302&gt;Small Projectile Turret&lt;/a&gt; rate of fire</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-50">
+		<td>526248</td>
+		<td width="355px"></td>
+		<td width="355px">bonus to <b>Small Projectile Turret</b> falloff</td>
+		<td><ins style="background:#e6ffe6;">bonus to &lt;a href=showinfo:3302&gt;Small Projectile Turret&lt;/a&gt; falloff</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-51">
+		<td>526249</td>
+		<td width="355px"></td>
+		<td width="355px">reduction in <b>Survey Probe</b> flight time</td>
+		<td><ins style="background:#e6ffe6;">reduction in &lt;a href=showinfo:18635&gt;Survey Probe&lt;/a&gt; flight time</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-52">
+		<td>526250</td>
+		<td width="355px"></td>
+		<td width="355px">bonus to <b>Core</b> and <b>Combat Scanner Probe</b> strength</td>
+		<td><ins style="background:#e6ffe6;">bonus to &lt;a href=showinfo:30013&gt;Core&lt;/a&gt; and &lt;a href=showinfo:30028&gt;Combat Scanner Probe&lt;/a&gt; strength</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-53">
+		<td>526251</td>
+		<td width="355px"></td>
+		<td width="355px">bonus to warp speed and acceleration</td>
+		<td><ins style="background:#e6ffe6;">bonus to warp speed and acceleration</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-54">
+		<td>526252</td>
+		<td width="355px"></td>
+		<td width="355px">reduction in <b>Cloaking Devices</b> CPU requirement</td>
+		<td><ins style="background:#e6ffe6;">reduction in &lt;a href=showinfo:11579&gt;Cloaking Devices&lt;/a&gt; CPU requirement</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-55">
+		<td>526253</td>
+		<td width="355px"></td>
+		<td width="355px">bonus to <b>Relic</b> and <b>Data Analyzer</b> virus strength</td>
+		<td><ins style="background:#e6ffe6;">bonus to &lt;a href=showinfo:22177&gt;Relic&lt;/a&gt; and &lt;a href=showinfo:22175&gt;Data Analyzer&lt;/a&gt; virus strength</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-56">
+		<td>526254</td>
+		<td width="355px"></td>
+		<td width="355px">Can fit <b>Covert Ops Cloaking Device</b> and <b>Covert Cynosural Field Generator</b></td>
+		<td><ins style="background:#e6ffe6;">Can fit &lt;a href=showinfo:11578&gt;Covert Ops Cloaking Device&lt;/a&gt; and &lt;a href=showinfo:28646&gt;Covert Cynosural Field Generator&lt;/a&gt;</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-57">
+		<td>526255</td>
+		<td width="355px"></td>
+		<td width="355px"><b>Cloak</b> reactivation delay reduced to 5 seconds</td>
+		<td><ins style="background:#e6ffe6;">&lt;a href=showinfo:11579&gt;Cloak&lt;/a&gt; reactivation delay reduced to 5 seconds</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-58">
+		<td>526256</td>
+		<td width="355px"></td>
+		<td width="355px">bonus to security status gains from destruction of non-capsuleer pirates while flying this ship</td>
+		<td><ins style="background:#e6ffe6;">bonus to security status gains from destruction of non-capsuleer pirates while flying this ship</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-59">
+		<td>526257</td>
+		<td width="355px"></td>
+		<td width="355px"><b>Armor Repairer</b> and <b>Shield Booster</b> effectiveness increased by a percentage equal to 10x pilot security status, with a floor of 0% and ceiling of 50%</td>
+		<td><ins style="background:#e6ffe6;">&lt;a href=showinfo:3393&gt;Armor Repairer&lt;/a&gt; and &lt;a href=showinfo:3416&gt;Shield Booster&lt;/a&gt; effectiveness increased by a percentage equal to 10x pilot security status, with a floor of 0% and ceiling of 50%</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-60">
+		<td>526258</td>
+		<td width="355px"></td>
+		<td width="355px">bonus to Rapid <b>Light Missile</b>, <b>Heavy Missile</b> and <b>Heavy Assault Missile</b> Launcher rate of fire</td>
+		<td><ins style="background:#e6ffe6;">bonus to Rapid &lt;a href=showinfo:3321&gt;Light Missile&lt;/a&gt;, &lt;a href=showinfo:3324&gt;Heavy Missile&lt;/a&gt; and &lt;a href=showinfo:25719&gt;Heavy Assault Missile&lt;/a&gt; Launcher rate of fire</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-61">
+		<td>526259</td>
+		<td width="355px"></td>
+		<td width="355px">bonus to <b>Heavy Missile</b> and <b>Heavy Assault Missile</b> flight time</td>
+		<td><ins style="background:#e6ffe6;">bonus to &lt;a href=showinfo:3324&gt;Heavy Missile&lt;/a&gt; and &lt;a href=showinfo:25719&gt;Heavy Assault Missile&lt;/a&gt; flight time</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-62">
+		<td>526260</td>
+		<td width="355px"></td>
+		<td width="355px">bonus to <b>Medium Energy Turret</b> damage</td>
+		<td><ins style="background:#e6ffe6;">bonus to &lt;a href=showinfo:3306&gt;Medium Energy Turret&lt;/a&gt; damage</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-63">
+		<td>526261</td>
+		<td width="355px"></td>
+		<td width="355px">bonus to <b>Medium Energy Turret</b> optimal range</td>
+		<td><ins style="background:#e6ffe6;">bonus to &lt;a href=showinfo:3306&gt;Medium Energy Turret&lt;/a&gt; optimal range</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-64">
+		<td>526262</td>
+		<td width="355px"></td>
+		<td width="355px">bonus to <b>Medium Hybrid Turret</b> damage</td>
+		<td><ins style="background:#e6ffe6;">bonus to &lt;a href=showinfo:3304&gt;Medium Hybrid Turret&lt;/a&gt; damage</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-65">
+		<td>526263</td>
+		<td width="355px"></td>
+		<td width="355px">bonus to <b>Medium Hybrid Turret</b> tracking speed</td>
+		<td><ins style="background:#e6ffe6;">bonus to &lt;a href=showinfo:3304&gt;Medium Hybrid Turret&lt;/a&gt; tracking speed</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-66">
+		<td>526264</td>
+		<td width="355px"></td>
+		<td width="355px">bonus to <b>Medium Projectile Turret</b> rate of fire</td>
+		<td><ins style="background:#e6ffe6;">bonus to &lt;a href=showinfo:3305&gt;Medium Projectile Turret&lt;/a&gt; rate of fire</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-67">
+		<td>526265</td>
+		<td width="355px"></td>
+		<td width="355px">bonus to <b>Medium Projectile Turret</b> falloff</td>
+		<td><ins style="background:#e6ffe6;">bonus to &lt;a href=showinfo:3305&gt;Medium Projectile Turret&lt;/a&gt; falloff</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-68">
+		<td>526266</td>
+		<td width="355px"></td>
+		<td width="355px">reduction in <b>Cloaking Devices</b> CPU requirement</td>
+		<td><ins style="background:#e6ffe6;">reduction in &lt;a href=showinfo:11579&gt;Cloaking Devices&lt;/a&gt; CPU requirement</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-69">
+		<td>526267</td>
+		<td width="355px"></td>
+		<td width="355px">Can fit <b>Covert Ops Cloaking Device</b> and <b>Covert Cynosural Field Generator</b></td>
+		<td><ins style="background:#e6ffe6;">Can fit &lt;a href=showinfo:11578&gt;Covert Ops Cloaking Device&lt;/a&gt; and &lt;a href=showinfo:28646&gt;Covert Cynosural Field Generator&lt;/a&gt;</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-70">
+		<td>526268</td>
+		<td width="355px"></td>
+		<td width="355px"><b>Cloak</b> reactivation delay reduced to 5 seconds</td>
+		<td><ins style="background:#e6ffe6;">&lt;a href=showinfo:11579&gt;Cloak&lt;/a&gt; reactivation delay reduced to 5 seconds</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-71">
+		<td>526269</td>
+		<td width="355px"></td>
+		<td width="355px">reduction in <b>Cynosural Field Generator</b> liquid ozone consumption</td>
+		<td><ins style="background:#e6ffe6;">reduction in &lt;a href=showinfo:21096&gt;Cynosural Field Generator&lt;/a&gt; liquid ozone consumption</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-72">
+		<td>526270</td>
+		<td width="355px"></td>
+		<td width="355px">reduction in <b>Cynosural Field Generator</b> duration</td>
+		<td><ins style="background:#e6ffe6;">reduction in &lt;a href=showinfo:21096&gt;Cynosural Field Generator&lt;/a&gt; duration</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-73">
+		<td>526271</td>
+		<td width="355px"></td>
+		<td width="355px">bonus to security status gains from destruction of non-capsuleer pirates while flying this ship</td>
+		<td><ins style="background:#e6ffe6;">bonus to security status gains from destruction of non-capsuleer pirates while flying this ship</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-74">
+		<td>526272</td>
+		<td width="355px"></td>
+		<td width="355px"><b>Armor Repairer</b> and <b>Shield Booster</b> effectiveness increased by a percentage equal to 10x pilot security status, with a floor of 0% and ceiling of 50%</td>
+		<td><ins style="background:#e6ffe6;">&lt;a href=showinfo:3393&gt;Armor Repairer&lt;/a&gt; and &lt;a href=showinfo:3416&gt;Shield Booster&lt;/a&gt; effectiveness increased by a percentage equal to 10x pilot security status, with a floor of 0% and ceiling of 50%</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-75">
+		<td>526273</td>
+		<td width="355px"></td>
+		<td width="355px">bonus to Rapid <b>Heavy Missile</b>, <b>Cruise Missile</b> and <b>Torpedo</b> Launcher rate of fire</td>
+		<td><ins style="background:#e6ffe6;">bonus to Rapid &lt;a href=showinfo:3324&gt;Heavy Missile&lt;/a&gt;, &lt;a href=showinfo:3326&gt;Cruise Missile&lt;/a&gt; and &lt;a href=showinfo:3325&gt;Torpedo&lt;/a&gt; Launcher rate of fire</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-76">
+		<td>526274</td>
+		<td width="355px"></td>
+		<td width="355px">bonus to <b>Cruise Missile</b> and <b>Torpedo</b> flight time</td>
+		<td><ins style="background:#e6ffe6;">bonus to &lt;a href=showinfo:3326&gt;Cruise Missile&lt;/a&gt; and &lt;a href=showinfo:3325&gt;Torpedo&lt;/a&gt; flight time</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-77">
+		<td>526275</td>
+		<td width="355px"></td>
+		<td width="355px">bonus to <b>Large Energy Turret</b> damage</td>
+		<td><ins style="background:#e6ffe6;">bonus to &lt;a href=showinfo:3309&gt;Large Energy Turret&lt;/a&gt; damage</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-78">
+		<td>526276</td>
+		<td width="355px"></td>
+		<td width="355px">bonus to <b>Large Energy Turret</b> optimal range</td>
+		<td><ins style="background:#e6ffe6;">bonus to &lt;a href=showinfo:3309&gt;Large Energy Turret&lt;/a&gt; optimal range</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-79">
+		<td>526277</td>
+		<td width="355px"></td>
+		<td width="355px">bonus to <b>Large Hybrid Turret</b> damage</td>
+		<td><ins style="background:#e6ffe6;">bonus to &lt;a href=showinfo:3307&gt;Large Hybrid Turret&lt;/a&gt; damage</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-80">
+		<td>526278</td>
+		<td width="355px"></td>
+		<td width="355px">bonus to <b>Large Hybrid Turret</b> tracking speed</td>
+		<td><ins style="background:#e6ffe6;">bonus to &lt;a href=showinfo:3307&gt;Large Hybrid Turret&lt;/a&gt; tracking speed</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-81">
+		<td>526279</td>
+		<td width="355px"></td>
+		<td width="355px">bonus to <b>Large Projectile Turret</b> rate of fire</td>
+		<td><ins style="background:#e6ffe6;">bonus to &lt;a href=showinfo:3308&gt;Large Projectile Turret&lt;/a&gt; rate of fire</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-82">
+		<td>526280</td>
+		<td width="355px"></td>
+		<td width="355px">bonus to <b>Large Projectile Turret</b> falloff</td>
+		<td><ins style="background:#e6ffe6;">bonus to &lt;a href=showinfo:3308&gt;Large Projectile Turret&lt;/a&gt; falloff</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-83">
+		<td>526281</td>
+		<td width="355px"></td>
+		<td width="355px">bonus to <b>Warp Scrambler</b> and <b>Warp Disruptor</b> optimal range</td>
+		<td><ins style="background:#e6ffe6;">bonus to &lt;a href=showinfo:447&gt;Warp Scrambler&lt;/a&gt; and &lt;a href=showinfo:3242&gt;Warp Disruptor&lt;/a&gt; optimal range</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-84">
+		<td>526282</td>
+		<td width="355px"></td>
+		<td width="355px">bonus to <b>Stasis Webifier</b> optimal range</td>
+		<td><ins style="background:#e6ffe6;">bonus to &lt;a href=showinfo:526&gt;Stasis Webifier&lt;/a&gt; optimal range</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-85">
+		<td>526283</td>
+		<td width="355px"></td>
+		<td width="355px">bonus to warp speed and acceleration</td>
+		<td><ins style="background:#e6ffe6;">bonus to warp speed and acceleration</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-86">
+		<td>526284</td>
+		<td width="355px"></td>
+		<td width="355px">bonus to ship max velocity when using <b>Cloaking Devices</b></td>
+		<td><ins style="background:#e6ffe6;">bonus to ship max velocity when using &lt;a href=showinfo:11579&gt;Cloaking Devices&lt;/a&gt;</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-87">
+		<td>526285</td>
+		<td width="355px"></td>
+		<td width="355px">bonus to <b>Warp Scrambler</b> and <b>Warp Disruptor</b> optimal range</td>
+		<td><ins style="background:#e6ffe6;">bonus to &lt;a href=showinfo:447&gt;Warp Scrambler&lt;/a&gt; and &lt;a href=showinfo:3242&gt;Warp Disruptor&lt;/a&gt; optimal range</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-88">
+		<td>526286</td>
+		<td width="355px"></td>
+		<td width="355px">bonus to <b>Stasis Webifier</b> optimal range</td>
+		<td><ins style="background:#e6ffe6;">bonus to &lt;a href=showinfo:526&gt;Stasis Webifier&lt;/a&gt; optimal range</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-89">
+		<td>526287</td>
+		<td width="355px"></td>
+		<td width="355px">bonus to warp speed and acceleration</td>
+		<td><ins style="background:#e6ffe6;">bonus to warp speed and acceleration</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-90">
+		<td>526288</td>
+		<td width="355px"></td>
+		<td width="355px">Can fit <b>Covert Ops Cloaking Device</b> and <b>Covert Cynosural Field Generator</b></td>
+		<td><ins style="background:#e6ffe6;">Can fit &lt;a href=showinfo:11578&gt;Covert Ops Cloaking Device&lt;/a&gt; and &lt;a href=showinfo:28646&gt;Covert Cynosural Field Generator&lt;/a&gt;</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-91">
+		<td>526289</td>
+		<td width="355px"></td>
+		<td width="355px">No targeting delay after <b>Cloaking Device</b> deactivation</td>
+		<td><ins style="background:#e6ffe6;">No targeting delay after &lt;a href=showinfo:11579&gt;Cloaking Device&lt;/a&gt; deactivation</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-92">
+		<td>526290</td>
+		<td width="355px"></td>
+		<td width="355px"><b>Cloak</b> reactivation delay reduced to 5 seconds</td>
+		<td><ins style="background:#e6ffe6;">&lt;a href=showinfo:11579&gt;Cloak&lt;/a&gt; reactivation delay reduced to 5 seconds</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-93">
+		<td>526291</td>
+		<td width="355px"></td>
+		<td width="355px">reduction to effective distance traveled for jump fatigue</td>
+		<td><ins style="background:#e6ffe6;">reduction to effective distance traveled for jump fatigue</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-94">
+		<td>526292</td>
+		<td width="355px"></td>
+		<td width="355px">bonus to security status gains from destruction of non-capsuleer pirates while flying this ship</td>
+		<td><ins style="background:#e6ffe6;">bonus to security status gains from destruction of non-capsuleer pirates while flying this ship</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-95">
+		<td>526293</td>
+		<td width="355px"></td>
+		<td width="355px"><b>Armor Repairer</b> and <b>Shield Booster</b> effectiveness increased by a percentage equal to 10x pilot security status, with a floor of 0% and ceiling of 50%</td>
+		<td><ins style="background:#e6ffe6;">&lt;a href=showinfo:3393&gt;Armor Repairer&lt;/a&gt; and &lt;a href=showinfo:3416&gt;Shield Booster&lt;/a&gt; effectiveness increased by a percentage equal to 10x pilot security status, with a floor of 0% and ceiling of 50%</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-96">
+		<td>526305</td>
+		<td width="355px"></td>
+		<td width="355px">Hostile Takeover</td>
+		<td><ins style="background:#e6ffe6;">Hostile Takeover</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-97">
+		<td>526313</td>
+		<td width="355px"></td>
+		<td width="355px">Taipan Hostile Takeover SKIN (Permanent)</td>
+		<td><ins style="background:#e6ffe6;">Taipan Hostile Takeover SKIN (Permanent)</ins></td>
+		<td class="mini">Item name for typeID 45505 (Super Kerr-Induced Nanocoatings)</td>
+	</tr>
+	<tr class="selectable" id="cid-98">
+		<td>526314</td>
+		<td width="355px"></td>
+		<td width="355px">Worm Hostile Takeover SKIN (Permanent)</td>
+		<td><ins style="background:#e6ffe6;">Worm Hostile Takeover SKIN (Permanent)</ins></td>
+		<td class="mini">Item name for typeID 45507 (Super Kerr-Induced Nanocoatings)</td>
+	</tr>
+	<tr class="selectable" id="cid-99">
+		<td>526315</td>
+		<td width="355px"></td>
+		<td width="355px">Gila Hostile Takeover SKIN (Permanent)</td>
+		<td><ins style="background:#e6ffe6;">Gila Hostile Takeover SKIN (Permanent)</ins></td>
+		<td class="mini">Item name for typeID 45508 (Super Kerr-Induced Nanocoatings)</td>
+	</tr>
+	<tr class="selectable" id="cid-100">
+		<td>526316</td>
+		<td width="355px"></td>
+		<td width="355px">Rattlesnake Hostile Takeover SKIN (Permanent)</td>
+		<td><ins style="background:#e6ffe6;">Rattlesnake Hostile Takeover SKIN (Permanent)</ins></td>
+		<td class="mini">Item name for typeID 45509 (Super Kerr-Induced Nanocoatings)</td>
+	</tr>
+	<tr class="selectable" id="cid-101">
+		<td>526322</td>
+		<td width="355px"></td>
+		<td width="355px">ExplorationSuit_F01_SOE.type</td>
+		<td><ins style="background:#e6ffe6;">ExplorationSuit_F01_SOE.type</ins></td>
+		<td class="mini">Item name for typeID 45514 (Outer)</td>
+	</tr>
+	<tr class="selectable" id="cid-102">
+		<td>526323</td>
+		<td width="355px"></td>
+		<td width="355px">ExplorationSuit_F01_Caldari.type</td>
+		<td><ins style="background:#e6ffe6;">ExplorationSuit_F01_Caldari.type</ins></td>
+		<td class="mini">Item name for typeID 45515 (Outer)</td>
+	</tr>
+	<tr class="selectable" id="cid-103">
+		<td>526324</td>
+		<td width="355px"></td>
+		<td width="355px">ExplorationSuit_F01_Minmatar.type</td>
+		<td><ins style="background:#e6ffe6;">ExplorationSuit_F01_Minmatar.type</ins></td>
+		<td class="mini">Item name for typeID 45516 (Outer)</td>
+	</tr>
+	<tr class="selectable" id="cid-104">
+		<td>526325</td>
+		<td width="355px"></td>
+		<td width="355px">ExplorationSuit_F01_Gallente.type</td>
+		<td><ins style="background:#e6ffe6;">ExplorationSuit_F01_Gallente.type</ins></td>
+		<td class="mini">Item name for typeID 45517 (Outer)</td>
+	</tr>
+	<tr class="selectable" id="cid-105">
+		<td>526326</td>
+		<td width="355px"></td>
+		<td width="355px">ExplorationSuit_F01_Amarr.type</td>
+		<td><ins style="background:#e6ffe6;">ExplorationSuit_F01_Amarr.type</ins></td>
+		<td class="mini">Item name for typeID 45518 (Outer)</td>
+	</tr>
+	<tr class="selectable" id="cid-106">
+		<td>526327</td>
+		<td width="355px"></td>
+		<td width="355px">ExplorationSuit_F01_CaldariOrange.type</td>
+		<td><ins style="background:#e6ffe6;">ExplorationSuit_F01_CaldariOrange.type</ins></td>
+		<td class="mini">Item name for typeID 45519 (Outer)</td>
+	</tr>
+	<tr class="selectable" id="cid-107">
+		<td>526328</td>
+		<td width="355px"></td>
+		<td width="355px">ExplorationSuit_F01_ORE.type</td>
+		<td><ins style="background:#e6ffe6;">ExplorationSuit_F01_ORE.type</ins></td>
+		<td class="mini">Item name for typeID 45520 (Outer)</td>
+	</tr>
+	<tr class="selectable" id="cid-108">
+		<td>526329</td>
+		<td width="355px"></td>
+		<td width="355px">ExplorationSuit_M01_Gallente.type</td>
+		<td><ins style="background:#e6ffe6;">ExplorationSuit_M01_Gallente.type</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-109">
+		<td>526330</td>
+		<td width="355px"></td>
+		<td width="355px">ExplorationSuit_M01_Gallente.type</td>
+		<td><ins style="background:#e6ffe6;">ExplorationSuit_M01_Gallente.type</ins></td>
+		<td class="mini">Item name for typeID 45521 (Outer)</td>
+	</tr>
+	<tr class="selectable" id="cid-110">
+		<td>526331</td>
+		<td width="355px"></td>
+		<td width="355px">ExplorationSuit_M01_ORE.type</td>
+		<td><ins style="background:#e6ffe6;">ExplorationSuit_M01_ORE.type</ins></td>
+		<td class="mini">Item name for typeID 45522 (Outer)</td>
+	</tr>
+	<tr class="selectable" id="cid-111">
+		<td>526332</td>
+		<td width="355px"></td>
+		<td width="355px">ExplorationSuit_M01_SOE.type</td>
+		<td><ins style="background:#e6ffe6;">ExplorationSuit_M01_SOE.type</ins></td>
+		<td class="mini">Item name for typeID 45523 (Outer)</td>
+	</tr>
+	<tr class="selectable" id="cid-112">
+		<td>526333</td>
+		<td width="355px"></td>
+		<td width="355px">ExplorationSuit_M01_Caldari.type</td>
+		<td><ins style="background:#e6ffe6;">ExplorationSuit_M01_Caldari.type</ins></td>
+		<td class="mini">Item name for typeID 45524 (Outer)</td>
+	</tr>
+	<tr class="selectable" id="cid-113">
+		<td>526334</td>
+		<td width="355px"></td>
+		<td width="355px">ExplorationSuit_M01_Minmatar.type</td>
+		<td><ins style="background:#e6ffe6;">ExplorationSuit_M01_Minmatar.type</ins></td>
+		<td class="mini">Item name for typeID 45525 (Outer)</td>
+	</tr>
+	<tr class="selectable" id="cid-114">
+		<td>526335</td>
+		<td width="355px"></td>
+		<td width="355px">ExplorationSuit_M01_Amarr.type</td>
+		<td><ins style="background:#e6ffe6;">ExplorationSuit_M01_Amarr.type</ins></td>
+		<td class="mini">Item name for typeID 45526 (#System)</td>
+	</tr>
+	<tr class="selectable" id="cid-115">
+		<td>526336</td>
+		<td width="355px"></td>
+		<td width="355px">ExplorationSuit_M01_CaldariOrange.type</td>
+		<td><ins style="background:#e6ffe6;">ExplorationSuit_M01_CaldariOrange.type</ins></td>
+		<td class="mini">Item name for typeID 45527 (Outer)</td>
+	</tr>
+	</table>
+</details>
+
+<br>
+
+<!--<h2 id="newfiles">New Files</h2>-->
+
+<script>
+	function displayMedia(doc) {
+		nodes = doc.children
+		for (i=0; i < nodes.length; i++) {
+			node = nodes[i]
+			if (node.hasAttribute("data-src") && node.getAttribute("src") == "") {
+				node.setAttribute("src", node.getAttribute("data-src"))
+			}
+		}
+	}
+</script>
+<details id="newfiles">
+	<summary class="selectParent bigsum">New Files (2 Entries)</summary>
+	<table>
+	  <tr>
+		<th>File Name</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Size in kb (Decompressed)</th>
+	  </tr>
+	<tr class="selectable" id="cid-116">
+		<td><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/84/84c96fe777289ba0_c0a7ef1a3eeb34f8c150fea9c7ad11d5">res:/ui/texture/corps/concord_aerospace.png</a>
+    		</summary>
+    		<img data-src="http://res.eveprobe.ccpgames.com/84/84c96fe777289ba0_c0a7ef1a3eeb34f8c150fea9c7ad11d5" src="" />
+		</details></td>
+		<td>36</td>
+	</tr>
+	<tr class="selectable" id="cid-117">
+		<td><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/fd/fd9a0d6cd294ab64_8401fde46c5f298b54e803b024ac33f9">res:/ui/texture/classes/skins/icons/175.png</a>
+    		</summary>
+    		<img data-src="http://res.eveprobe.ccpgames.com/fd/fd9a0d6cd294ab64_8401fde46c5f298b54e803b024ac33f9" src="" />
+		</details></td>
+		<td>3</td>
+	</tr>
+	</table>
+</details>
+<script>
+	function test123() {
+		document.getElementById("footer1").style.display = "none";
+		document.getElementById("footer2").style.visibility = "visible";
+		document.getElementById("footer2").onclick = function() {document.location = "http://i.imgur.com/3Kd6ruW.jpg"}
+	}
+</script>
+<!--<h2 id="changedfiles">Changed Files</h2>-->
+
+<details id="changedfiles">
+	<summary class="selectParent bigsum">Changed Files (32 Entries)</summary>
+	<table>
+	  <tr>
+		<th>File Name</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Size in kb (Decompressed)</th>
+	  </tr>
+	<tr class="selectable" id="cid-118">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/f0/f016514b481ba503_18c88bbe7744adc385c2f47fe08cf747">staticdata/blueprints.static</a><br></td>
+		<td>4342 -> 4344</td>
+	</tr>
+	<tr class="selectable" id="cid-119">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/1a/1a48a0969136daa1_f053760b50898c913680ff15f737f0a2">manifest.dat</a><br></td>
+		<td>13 -> 13</td>
+	</tr>
+	<tr class="selectable" id="cid-120">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/04/04fe8caf2896e754_6a8a8c2d3dac39e65c2c8820cc77766b">staticdata/skinmaterials.static</a><br></td>
+		<td>26 -> 27</td>
+	</tr>
+	<tr class="selectable" id="cid-121">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/f7/f781e479bccfd00e_8d237c07a461194801ca2e4ea055a4a3">localizationfsd/localization_fsd_de.pickle</a><br></td>
+		<td>12533 -> 12533</td>
+	</tr>
+	<tr class="selectable" id="cid-122">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/cb/cb291acd32af7f27_8577480447de377c1f1d210a33c79414">staticdata/skins.static</a><br></td>
+		<td>1400 -> 1402</td>
+	</tr>
+	<tr class="selectable" id="cid-123">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/4c/4c56e191aaa0e618_03c2894647b8ea046e2871774d2f863b">localizationfsd/localization_fsd_ru.pickle</a><br></td>
+		<td>44985 -> 44985</td>
+	</tr>
+	<tr class="selectable" id="cid-124">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/9a/9adf983d033ba1a3_02a79bdf7dbf074bdc051f5d91db9775">staticdata/evecategories.static</a><br></td>
+		<td>10 -> 10</td>
+	</tr>
+	<tr class="selectable" id="cid-125">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/1d/1d34143a37d4b739_3dfdb3017ff1624513ea813f48371f1e">resfileindex.txt</a><br></td>
+		<td>11503 -> 11503</td>
+	</tr>
+	<tr class="selectable" id="cid-126">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/f0/f032ac16b88d97a4_5ecf8d8f9225fb23b7cf9f0e06fc9a88">code.ccp</a><br></td>
+		<td>16621 -> 16621</td>
+	</tr>
+	<tr class="selectable" id="cid-127">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/41/416f0d77b55600e6_a7f7ee692aec6ad3284b25069f8a6a2c">dx9/scene/universe/a01_cube.black</a><br></td>
+		<td>0 -> 0</td>
+	</tr>
+	<tr class="selectable" id="cid-128">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/75/7526ac125e473cbf_28593856d23191bd4c362e1cab55873b">fisfx/environment/cloudvortex_01b.black</a><br></td>
+		<td>11 -> 11</td>
+	</tr>
+	<tr class="selectable" id="cid-129">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/87/87bfc3b6eab5e5d3_99f7e2baf5abf9e307ad83587772237b">localizationfsd/localization_fsd_zh.pickle</a><br></td>
+		<td>14903 -> 14903</td>
+	</tr>
+	<tr class="selectable" id="cid-130">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/1b/1b045c71bbbb8612_e8cbb7dc9901a142d1d905b9200971a3">bulkdata/2001600003.cache2</a><br></td>
+		<td>116 -> 117</td>
+	</tr>
+	<tr class="selectable" id="cid-131">
+		<td style="text-align: middle;"><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/d1/d1863d8152ff616e_455d388d1369ab14e3130aa99d7c3edc">res:/ui/texture/classes/plexvault/plexslot.png</a>
+    		</summary>
+    		<img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/d1/d1863d8152ff616e_2afdce9fe88a3ed12db8636fcb563bc7" src="" /> -> <img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/d1/d1863d8152ff616e_455d388d1369ab14e3130aa99d7c3edc" src="" />
+		</details></td>
+		<td>18 -> 3</td>
+	</tr>
+	<tr class="selectable" id="cid-132">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/dd/ddec335c5166e1ce_12da03dae08cfca942bda48f59eb022c">staticdata/skinlicenses.static</a><br></td>
+		<td>1077 -> 1075</td>
+	</tr>
+	<tr class="selectable" id="cid-133">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/bc/bc5fff279c5cae06_979ecee3fad790a81dd417a43ab16e5c">bulkdata/800006.cache2</a><br></td>
+		<td>6726 -> 6726</td>
+	</tr>
+	<tr class="selectable" id="cid-134">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/61/61dd1635bf599cb0_27ab1e585420879792c4c8563d9c485c">dx9/model/worldobject/planet/uiplanet.black</a><br></td>
+		<td>0 -> 0</td>
+	</tr>
+	<tr class="selectable" id="cid-135">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/56/5610a6eb8b5a4975_2936802590a026243f192a27e0f7f029">resfileindex_prefetch.txt</a><br></td>
+		<td>1114 -> 1114</td>
+	</tr>
+	<tr class="selectable" id="cid-136">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/82/82afc4ce93a0dc14_5eccab221cd204927fe9018da9d13c90">localizationfsd/localization_fsd_ja.pickle</a><br></td>
+		<td>23100 -> 23100</td>
+	</tr>
+	<tr class="selectable" id="cid-137">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/67/671695e3a499baf0_61ae26bfc8ad9b7bd9e0c1925188cec9">staticdata/evetypes.static</a><br></td>
+		<td>12407 -> 12412</td>
+	</tr>
+	<tr class="selectable" id="cid-138">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/1e/1ef674def6229546_3cd276e96f82b525b7d77ff71de3958f">bulkdata/version</a><br></td>
+		<td>0 -> 0</td>
+	</tr>
+	<tr class="selectable" id="cid-139">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/ee/eea80354bae9a691_73edcc4d0f79817c90aa420b8c950725">resfiledependencies.yaml</a><br></td>
+		<td>3458 -> 3458</td>
+	</tr>
+	<tr class="selectable" id="cid-140">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/e3/e3cd8a97159e6321_20bc02e467b19bad147cccf313be8125">start.ini</a><br></td>
+		<td>0 -> 0</td>
+	</tr>
+	<tr class="selectable" id="cid-141">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/aa/aa0b8b0323d24f50_aa882af3cef9eafe4eacba293d70136a">bulkdata/metadata.yaml</a><br></td>
+		<td>0 -> 0</td>
+	</tr>
+	<tr class="selectable" id="cid-142">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/a0/a0411270de1e7503_8264ee069327f4d84e39952483fc7a7c">bulkdata/800005.cache2</a><br></td>
+		<td>480 -> 481</td>
+	</tr>
+	<tr class="selectable" id="cid-143">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/07/07ad98916e8abb94_20be8b4466a2bf5f37f869de90d0f200">fisfx/environment/cloudvortex_01a.black</a><br></td>
+		<td>7 -> 7</td>
+	</tr>
+	<tr class="selectable" id="cid-144">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/50/50ea3456c14ebd15_3230e2fb7152e3e9239215cc2ebce191">bulkdata/800007.cache2</a><br></td>
+		<td>391 -> 391</td>
+	</tr>
+	<tr class="selectable" id="cid-145">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/4a/4a0f5fe70b667169_81c4b81d1871d1d604ee4a794fcf1271">localizationfsd/localization_fsd_fr.pickle</a><br></td>
+		<td>12557 -> 12557</td>
+	</tr>
+	<tr class="selectable" id="cid-146">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/2c/2c3038b3c38e91a1_eaaf89672300a3006f1adbb248778db1">localizationfsd/localization_fsd_en-us.pickle</a><br></td>
+		<td>11409 -> 11419</td>
+	</tr>
+	<tr class="selectable" id="cid-147">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/0b/0b577d4609680827_d500c3c7f7d3ef50d379aea0569d4677">staticdata/evegroups.static</a><br></td>
+		<td>388 -> 388</td>
+	</tr>
+	<tr class="selectable" id="cid-148">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/07/07df8a3489660b9e_b941fe2877d3d7d725694fc4c4907ebf">staticdata/infobubbles.static</a><br></td>
+		<td>216 -> 220</td>
+	</tr>
+	<tr class="selectable" id="cid-149">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/bd/bda7724745ed6198_ac2e323d364838da1d32badf7482a6e2">bin/staticdata/mapObjects.db</a><br></td>
+		<td>35793 -> 35793</td>
+	</tr>
+	</table>
+</details>
+
+<!--<h2 id="changedfiles">Removed Files</h2>-->
+
+<!-- [[removedFilesSection]] -->
+
+<!--<h2 id="changedpythonfiles">Changed Python Files</h2>-->
+
+<!-- [[changedPythonFiles]] -->
+
+<p class="mini2">Made by Inomares. I don't want your donations. I don't read EVE mails. Leave me alone.</p>
+<p class="mini3">I guess contact me on <a href="https://tweetfleet.slack.com/messages/@inomares/">Tweetfleet Slack</a> if you really need to.</p>
+<div class="footer1 footer" id="footer1" onClick="test123();"></div>
+<div class="footer2 footer" id="footer2"></div>
+</body>
+</html>
