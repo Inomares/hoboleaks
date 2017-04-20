@@ -3,15 +3,17 @@
 <head>
 	<title>Hoboleaks: Singularity (Build: 1137176) to Chaos (Build: 1132818)</title>
 	<meta name="title" content="Client Comparison: Singularity (Build: 1137176) to Chaos (Build: 1132818) | Hoboleaks">
-	<meta name="description" content="Generated @ 2017-04-20 17:20:24 EVE Time">
+	<meta name="description" content="Generated @ 2017-04-20 22:03:59 EVE Time">
 	
 	<meta name="og:title" content="Hoboleaks: Singularity (Build: 1137176) -> Chaos (Build: 1132818)">
-	<meta name="og:description" content="Generated @ 2017-04-20 17:20:24 EVE Time">
+	<meta name="og:description" content="Generated @ 2017-04-20 22:03:59 EVE Time">
 	<meta name="og:image" content="http://hoboleaks.space/sitepreview.png">
 	
 	<meta name="twitter:title" content="Hoboleaks: Singularity (Build: 1137176) -> Chaos (Build: 1132818)">
-	<meta name="twitter:description" content="Generated @ 2017-04-20 17:20:24 EVE Time">
+	<meta name="twitter:description" content="Generated @ 2017-04-20 22:03:59 EVE Time">
 	<meta name="twitter:image" content="http://hoboleaks.space/sitepreview.png">
+	<meta name="genTime" content="1492725839145">
+	<meta name="genDate" content="2017-04-20 22:03:59">
 	<meta charset="UTF-8">
 	<style>
 		table {
@@ -153,7 +155,7 @@
 		}
 	</style>
 	<script type="text/javascript">
-		genTime = "highlight" + 1492708825.0
+		genBaseHash = "highlight" + 1492725839145
 	
 	    function selectText(containerid, hasWaited) {
 			hasWaited = hasWaited || false
@@ -181,17 +183,16 @@
 		function getHashValues() {
 			hashValues = window.location.hash.slice(1).split(",")
 			if (!isHashValid(hashValues)) {
-				console.log("Hash is invalid.")
-				return [genTime]
+				return [genBaseHash]
 			}
 			if (hashValues.length == 1 && hashValues[0] == "") {
-				return [genTime]
+				return [genBaseHash]
 			}
 			return hashValues
 		}
 		
 		function isHashValid(hashValues) {
-			if (hashValues[0] == genTime) {
+			if (hashValues[0] == genBaseHash) {
 				return true
 			}
 			return false
@@ -304,18 +305,19 @@
 </head>
 <body>
 <h1>Comparing Singularity (Build: 1137176) to Chaos (Build: 1132818)</h1>
-<!-- <iframe id="timer" src="timerSection.html?version=1&timer=1489606234.803" style="border:none;" height="40px" width="800px"> </iframe> -->
-<p class="mini">Generated @ 2017-04-20 17:20:24 EVE Time (UTC)</p>
 <noscript>
 	<nobr>
+		<p class="mini">Generated @ 2017-04-20 22:03:59 EVE Time (UTC)</p>
 		<p class="scriptnotify" style="display:inline;">You've disabled javascript. This made the menu so sad that it self-destructed. I hope you're happy now.</p>
 		<p class="scriptnotifysmaller" style="display:inline;">You monster.</p>
 	</nobr>
 	<p class="scriptnotifysmall">This page should still kinda work though.</p>
 </noscript>
+<iframe id="timer" src="timerSection.html?version=1&timer=1492725839145" style="border:none; display:none;" height="40px" width="800px"> </iframe>
 <iframe id="navMenu" src="nav.html" style="border:none; display:none;" height="40px" width="800px"> </iframe>
 <script>
   document.getElementById("navMenu").style.display = "block";
+  document.getElementById("timer").style.display = "block";
 </script>
 <p class="mini">Note: Chaos is an internal development server containing many odd projects and changes, many of which may never actually make it to TQ. Speculate responsibly.</p>
 <p class="kindasmall">Click the categories below to expand them! <a href="confused.html">Confused?</a></p>

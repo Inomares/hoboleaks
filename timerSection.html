@@ -1,0 +1,109 @@
+<meta charset="UTF-8">
+<style type="text/css">
+	p.mini {
+		font-family: arial, tahoma, sans-serif;
+		font-size: 8pt;
+		margin: 0px;
+		padding: 0px;
+	}
+	
+	div.horiz {
+		display:inline;
+		width:500px;
+		margin: 0px;
+		padding: 0px;
+	}
+</style>
+
+<div class="horiz">
+	<p class="mini">Generated @ <span id="staticTimer"></span> EVE Time (UTC) - <span id="dynamicTimer"></span></p>
+</div>
+
+<script>
+	function getParameterByName(name) {
+		var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+		return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+	}
+	
+	function pad(n, width, z) {
+		z = z || '0';
+		n = n + '';
+		return n.length >= width ? n : new Array(width - n.length + 1).join(z) + n;
+	}
+	
+	function _generateDateString(year, month, day, hours, minutes, seconds) {
+		dateStr = ""
+		dateStr += year + "-"
+		dateStr += pad(month, 2) + "-"
+		dateStr += pad(day, 2) + " "
+		dateStr += pad(hours, 2) + ":"
+		dateStr += pad(minutes, 2) + ":"
+		dateStr += pad(seconds, 2)
+		return dateStr
+	}
+	
+	function generateDateString(dateObject) {
+		year = dateObject.getUTCFullYear()
+		month = dateObject.getUTCMonth() + 1
+		day = dateObject.getUTCDate()
+		hours = dateObject.getUTCHours()
+		minutes = dateObject.getUTCMinutes()
+		seconds = dateObject.getUTCSeconds()
+		return _generateDateString(year, month, day, hours, minutes, seconds)
+	}
+	
+	function getDeltaTimeUsingTimestamp(timeDelta) {
+		timeDelta = Math.abs(timeDelta)
+		secLength = 1000
+		minuteLength = secLength * 60
+		hourLength = minuteLength * 60
+		dayLength = hourLength * 24
+		
+		numDays = Math.floor(timeDelta / dayLength)
+		timeDelta -= numDays * dayLength
+		
+		numHours = Math.floor(timeDelta / hourLength)
+		timeDelta -= numHours * hourLength
+		
+		numMinutes = Math.floor(timeDelta / minuteLength)
+		timeDelta -= numMinutes * minuteLength
+		
+		numSeconds = Math.floor(timeDelta / secLength)
+		timeDelta -= numSeconds * secLength
+		return {numDays:numDays, numHours:numHours, numMinutes:numMinutes, numSeconds:numSeconds}
+	}
+	
+	function getDeltaTime(date1, date2) {
+		return getDeltaTimeUsingTimestamp(date2 - date1)
+	}
+	
+	function _generateDeltaString(numDays, numHours, numMinutes, numSeconds) {
+		deltaStr = "("
+		deltaStr += numDays + "d, "
+		deltaStr += numHours + "h, "
+		deltaStr += numMinutes + "m ago)"
+		//deltaStr += numSeconds + "s ago)"
+		return deltaStr
+	}
+	
+	function generateDeltaString(date1, date2) {
+		var {numDays, numHours, numMinutes, numSeconds} = getDeltaTime(date1, date2)
+		return _generateDeltaString(numDays, numHours, numMinutes, numSeconds)
+	}
+	
+	function v1TimerLoop(genDate) {
+		now = new Date(Date.now())
+		document.getElementById("dynamicTimer").innerHTML = generateDeltaString(genDate, now)
+	}
+	
+	genTime = Number(getParameterByName("timer") || 0)
+	version = getParameterByName("version") || 0
+	genDate = new Date(genTime)
+	if (version <= 1) {
+		console.log("Initializing timer version 1. genDate:")
+		console.log(genDate)
+		document.getElementById("staticTimer").innerHTML = generateDateString(genDate)
+		v1TimerLoop(genDate)
+		setInterval(function() {v1TimerLoop(genDate)}, 60000)
+	}
+</script>
