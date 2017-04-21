@@ -1,8 +1,50 @@
-<!-- Generated at 1492779467.88 / 2017-04-21 12:57:47 / 2017-04-21 14:57:47.885000 -->
+<!-- Generated at 1492779659.47 / 2017-04-21 13:00:59 / 2017-04-21 15:00:59.468000 -->
+<meta charset="UTF-8">
+<script>
+	function getParameterByName(name) {
+		var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+		return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+	}
+	
+	function getCurrentPageName() {
+		return getParameterByName("curPage") || "index"
+	}
+	
+	function getStrippedPageName(pageName) {
+		dot = pageName.indexOf(".")
+		if (dot != -1) {
+			pageName = pageName.slice(0, dot)
+		}
+		slash = pageName.indexOf("/")
+		if (slash == 0) {
+			pageName = pageName.slice(1)
+		}
+		return pageName
+	}
+	
+	window.onload = function() {
+		menus = ["formclients", "formtqrevs", "formsisirevs", "formchaosrevs"]
+		curPage = getCurrentPageName()
+		console.log(curPage)
+		for (i=0; i < menus.length; i++) {
+			curMenu = document.getElementsByName(menus[i])[0]
+			if (curMenu == null) {
+				continue
+			}
+			for (childID=0; childID < curMenu.children.length; childID++) {
+				curChild = curMenu.children[childID]
+				if (getStrippedPageName(curChild.getAttribute("value")) == curPage) {
+					curChild.setAttribute("disabled", "disabled")
+				}
+			}
+		}
+	}
+</script>
+
 <select name="formclients" onchange="parent.location = this.value;">
  <option value="">Client Comparisons</option>
-	<option value="index.html" title="Generated @ 2017-04-21 12:57:33">Tranquility -> Singularity</option>
-	<option value="chaos.html" title="Generated @ 2017-04-21 12:57:47">Singularity -> Chaos</option>
+	<option value="index.html" title="Generated @ 2017-04-21 13:00:49">Tranquility -> Singularity</option>
+	<option value="chaos.html" title="Generated @ 2017-04-21 13:00:59">Singularity -> Chaos</option>
 </select>
 <select name="formtqrevs" onchange="parent.location = this.value;">
  <option value="">TQ Revisions</option>
