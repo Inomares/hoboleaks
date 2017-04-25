@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hoboleaks: Singularity_Previous (Build: 1137911) to Singularity_Next (Build: 1138187)</title>
+	<meta name="title" content="Client Comparison: Singularity_Previous (Build: 1137911) to Singularity_Next (Build: 1138187) | Hoboleaks">
+	<meta name="description" content="Generated @ 2017-04-25 16:20:58 EVE Time">
+	
+	<meta name="og:title" content="Hoboleaks: Singularity_Previous (Build: 1137911) -> Singularity_Next (Build: 1138187)">
+	<meta name="og:description" content="Generated @ 2017-04-25 16:20:58 EVE Time">
+	<meta name="og:image" content="http://hoboleaks.space/sitepreview.png">
+	
+	<meta name="twitter:title" content="Hoboleaks: Singularity_Previous (Build: 1137911) -> Singularity_Next (Build: 1138187)">
+	<meta name="twitter:description" content="Generated @ 2017-04-25 16:20:58 EVE Time">
+	<meta name="twitter:image" content="http://hoboleaks.space/sitepreview.png">
+	<meta name="genTime" content="1493137258066">
+	<meta name="genDate" content="2017-04-25 16:20:58">
+	<meta charset="UTF-8">
+	<style>
+		table {
+			width:1280px;
+			font-family: arial, tahoma, sans-serif;
+			font-size: 10pt;
+			border-collapse: collapse;
+		}
+
+		td, th {
+			border: 1px solid black;
+			text-align: left;
+			padding: 8px;
+		}
+
+		tr:nth-child(even) {
+			background-color: #DBDBDB;
+		}
+		
+		tr.unimportant {
+			opacity: 0.4;
+			font-size: 8pt;
+		}
+
+		td.mini {
+			font-size: 8pt;
+		}
+
+		p.mini {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 8pt;
+		}
+		
+		p {
+			font-family: arial, tahoma, sans-serif;
+		}
+		
+		p.mini2 {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 5pt;
+		}
+		
+		p.mini3 {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 5pt;
+			color: gray;
+		}
+		
+		p.kindasmall {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 10pt;
+			margin: 5px 0px 5px 0px;
+		}
+
+		h1, h2, h3 {
+			font-family: arial, tahoma, sans-serif;
+		}
+
+		summary.bigsum {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 15pt;
+		}		
+
+		summary.bigsum_disabled {
+			font-family: arial, tahoma, sans-serif;
+			color: #9E9E9E;
+			font-size: 15pt;
+		}
+		
+		summary.smallsum {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 10pt;
+		}
+		
+		p.scriptnotify {
+			font-family: arial, tahoma, sans-serif;
+			color: red;
+			font-size: 12pt;
+		}
+		
+		p.scriptnotifysmall {
+			font-family: arial, tahoma, sans-serif;
+			color: red;
+			font-size: 9pt;
+		}
+		
+		p.scriptnotifysmaller {
+			font-family: arial, tahoma, sans-serif;
+			color: red;
+			font-size: 5pt;
+		}
+		
+		div.simplebox {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 10pt;
+			padding: 5px;
+			margin: 2px;
+			border-left-style: dotted;
+		}
+		
+		ul {
+			padding-left:20px;
+		}
+		
+		div.footer {
+		   position: fixed;
+		   bottom: 20px;
+		   height: 20px;
+		   width: 20px;
+		   border-style: none;
+		}
+		
+		div.footer1 {
+		   right: 20px;
+		}
+		
+		div.footer2 {
+		   left: 20px;
+		   visibility: hidden;
+		}
+		
+		div.footer:hover {
+			border-style: dotted;
+			border-color: #F2F2F2;
+		}
+		
+		.selected {
+			background-color: #C4F0FF;
+		}
+		
+		tr.selected:nth-child(even) {
+			background-color: #C4F0FF;
+		}
+
+		/* IE 6 */
+		* html #footer {
+		   position:absolute;
+		   top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
+		}
+	</style>
+	<script type="text/javascript">
+		genBaseHash = "highlight" + 1493137258066
+	
+	    function selectText(containerid, hasWaited) {
+			hasWaited = hasWaited || false
+			if (hasWaited == false) {
+				window.setTimeout(function(){selectText(containerid, true)}, 50); /* I'm sure I'm in the wrong here somehow and not Chrome, but this is how we're fixing it soooooooo yeah. */
+				return
+			}
+			var node = document.getElementById(containerid);
+			if (document.selection) {
+				var range = document.body.createTextRange();
+				range.moveToElementText(node);
+				range.select();
+			} else if (window.getSelection) {
+				var range = document.createRange();
+				range.selectNodeContents(node);
+				window.getSelection().removeAllRanges();
+				window.getSelection().addRange(range);
+			}
+		}
+		
+		function hasClass(node, className) {
+			return (node.className && node.className.indexOf(className) != -1)
+		}
+		
+		function getHashValues() {
+			hashValues = window.location.hash.slice(1).split(",")
+			if (!isHashValid(hashValues)) {
+				return [genBaseHash]
+			}
+			if (hashValues.length == 1 && hashValues[0] == "") {
+				return [genBaseHash]
+			}
+			return hashValues
+		}
+		
+		function isHashValid(hashValues) {
+			if (hashValues[0] == genBaseHash) {
+				return true
+			}
+			return false
+		}
+		
+		function hashHasID(nodeID) {
+			hashValues = getHashValues()
+			idPos = hashValues.indexOf(nodeID)
+			ret = (idPos != -1)
+			return 
+		}
+		
+		function updateSelectablesFromHash() {
+			hashValues = getHashValues()
+			oldSelected = document.getElementsByClassName("selected")
+			for (var i=oldSelected.length-1; i >= 0; i--) {
+				node = oldSelected[i]
+				if (!hashHasID(getNodeID(node))) {
+					deselectNode(node)
+				}
+			}
+			for (var i=0; i < hashValues.length; i++) {
+				currentID = hashValues[i]
+				idName = "cid-" + currentID
+				node = document.getElementById(idName)
+				if (node != null) {
+					selectNode(node)
+					updateInheritance(node)
+				}					
+			}
+		}
+		
+		function updateInheritance(node, isDetail) {
+			isDetail = isDetail || false
+			if (node == null || node.tagName == "BODY") {
+				return
+			}
+			if (hasClass(node, "selectParent")) {
+				node.classList.add("selected")
+			}
+			if (node.tagName == "DETAILS") {
+				updateInheritance(node.firstElementChild, true)
+			}
+			if (!isDetail) {
+				return updateInheritance(node.parentNode)
+			}
+		}
+		
+		function selectNode(node) {
+			node.classList.add("selected")
+		}
+		
+		function deselectNode(node) {
+			node.classList.remove("selected")
+		}
+		
+		function getNodeID(node) {
+			nodeID = node.id.slice(4)
+			return nodeID
+		}
+		
+		function toggleNodeHash(node) {
+			nodeID = node.id.slice(4)
+			hashValues = getHashValues()
+			idPos = hashValues.indexOf(nodeID)
+			if (idPos == -1) {
+				hashValues.push(nodeID)
+			}
+			else {
+				hashValues.splice(idPos, 1)
+			}
+			window.location.hash = hashValues.join()
+		}
+		
+		function getSelectableNode(node) {
+		/* We recursively iterate our way up the tree to see if any part of it is selectable. */
+			if (node == null) {
+				return null
+			}
+			if (hasClass(node, "selectable")) {
+				return node
+			}
+			return getSelectableNode(node.parentNode)			
+		}
+		
+		window.onhashchange = function() {
+			updateSelectablesFromHash()
+		}
+		
+		window.onload = function() {
+			document.body.onclick = function(e){
+				if (!e.altKey) {
+					return
+				}
+				if (window.event) {
+					clickedNode = event.srcElement;
+				}
+				else {
+					clickedNode = e.target
+				}
+				selectableNode = getSelectableNode(clickedNode)
+				if (selectableNode != null) {
+					toggleNodeHash(selectableNode)
+					return false
+				}
+			}
+			updateSelectablesFromHash()
+		}
+	</script>
+</head>
+<body>
+<h1>Comparing Singularity_Previous (Build: 1137911) to Singularity_Next (Build: 1138187)</h1>
+<noscript>
+	<nobr>
+		<p class="mini">Generated @ 2017-04-25 16:20:58 EVE Time (UTC)</p>
+		<p class="scriptnotify" style="display:inline;">You've disabled javascript. This made the menu so sad that it self-destructed. I hope you're happy now.</p>
+		<p class="scriptnotifysmaller" style="display:inline;">You monster.</p>
+	</nobr>
+	<p class="scriptnotifysmall">This page should still kinda work though.</p>
+</noscript>
+<iframe id="timer" src="timerSection.html?version=1&timer=1493137258066" style="border:none; display:none;" height="40px" width="800px"> </iframe>
+<iframe id="navMenu" src="" style="border:none; display:none;" height="40px" width="800px"> </iframe>
+<script>
+	function getStrippedPageName(pageName) {
+		dot = pageName.indexOf(".")
+		if (dot != -1) {
+			pageName = pageName.slice(0, dot)
+		}
+		slash = pageName.indexOf("/")
+		if (slash == 0) {
+			pageName = pageName.slice(1)
+		}
+		return pageName || "index"
+	}
+	
+	document.getElementById("navMenu").style.display = "block";
+	document.getElementById("navMenu").src = "nav.html?curPage=" + getStrippedPageName(window.location.pathname);
+	document.getElementById("timer").style.display = "block";
+</script>
+<p class="mini"></p>
+<p class="kindasmall">Click the categories below to expand them! <a href="confused.html">Confused?</a></p>
+
+<!--<h2 id="items">Items</h2>-->
+
+<details id="newitems">
+	<summary class="selectParent bigsum_disabled" onclick="return false">New Items (0 Entries)</summary>
+	<table>
+	
+	  <tr>
+		<!--<th>[[title4]]</th>-->
+		<th>TypeID & Name</th>
+		<th>Description</th>
+		<th>Group</th>
+		<th>Attributes</th>
+	  </tr>
+	
+	</table>
+</details>
+
+<details id="removeditems">
+	<summary class="selectParent bigsum_disabled" onclick="return false">Removed Items (0 Entries)</summary>
+	<p class="kindasmall">Please note that a "removed" item usually means the item was just not yet added to the "newer" build.</p>
+	<table>
+	  <tr>
+		<th>TypeID & Name</th>
+		<th>Description</th>
+		<th>Group</th>
+		<th>Attributes</th>
+	  </tr>
+	
+	</table>
+</details>
+
+<details id="changedblueprints">
+	<summary class="selectParent bigsum_disabled" onclick="return false">Changed Blueprints BETA (0 Entries)</summary>
+	<table>
+	  <tr>
+		<th>Blueprint Name</th>
+		<th>Old BP Data</th>
+		<th>New BP Data</th>
+		<th>Raw Diff</th>
+	  </tr>
+	
+	</table>
+</details>
+
+<br>
+
+<details id="bonuschanges">
+	<summary class="selectParent bigsum_disabled" onclick="return false">Changed Traits (0 Entries)</summary>
+	<table>
+	  <tr>
+		<th>TypeID, Group, & Name</th>
+		<th>Singularity_Previous</th>
+		<th>Singularity_Next</th>
+		<th>Diff</th>
+		<!-- <th>[[title4]]</th> -->
+	  </tr>
+	
+	</table>
+</details>
+
+<!--<h2 id="attributes">Attributes</h2>-->
+
+<details id="dgmattribs">
+	<summary class="selectParent bigsum_disabled" onclick="return false">Changes to Attributes (0 Entries)</summary>
+	<table>
+	  <tr>
+		<th>Attribute Name</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Diff</th>
+	  </tr>
+	
+	</table>
+</details>
+
+<details id="typeattribs">
+	<summary class="selectParent bigsum_disabled" onclick="return false">Attribute Changes per Type (0 Entries)</summary>
+	<table>
+	  <tr>
+		<th>TypeID, Name, and Group</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Diff</th>
+	  </tr>
+	
+	</table>
+</details>
+
+<br>
+
+<!--<h2 id="effectchanges">Effect Changes</h2>-->
+
+<details id="dgmeffects">
+	<summary class="selectParent bigsum_disabled" onclick="return false">Changes to Effects (0 Entries)</summary>
+	<table>
+	  <tr>
+		<th>Effect Name</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Diff</th>
+	  </tr>
+	
+	</table>
+</details>
+
+<details id="typeeffects">
+	<summary class="selectParent bigsum_disabled" onclick="return false">Effect Changes per Type (0 Entries)</summary>
+	<table>
+	  <tr>
+		<th>TypeID, Name, and Group</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Effects Changes</th>
+	  </tr>
+	
+	</table>
+</details>
+
+<br>
+
+<!--<h2 id="stringchanges">String Changes</h2>-->
+
+<details id="stringchanges">
+	<summary class="selectParent bigsum_disabled" onclick="return false">String Changes (0 Entries)</summary>
+	<table>
+	  <tr>
+		<th>Key</th>
+		<th>Singularity_Previous</th>
+		<th>Singularity_Next</th>
+		<th>Diff</th>
+		<th>Notes</th>
+	  </tr>
+	
+	</table>
+</details>
+
+<br>
+
+<!--<h2 id="newfiles">New Files</h2>-->
+
+<script>
+	function displayMedia(doc) {
+		nodes = doc.children
+		for (i=0; i < nodes.length; i++) {
+			node = nodes[i]
+			if (node.hasAttribute("data-src") && node.getAttribute("src") == "") {
+				node.setAttribute("src", node.getAttribute("data-src"))
+			}
+		}
+	}
+</script>
+<details id="newfiles">
+	<summary class="selectParent bigsum">New Files (31 Entries)</summary>
+	<table>
+	  <tr>
+		<th>File Name</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Size in kb (Decompressed)</th>
+	  </tr>
+	<tr class="selectable" id="cid-1">
+		<td><details>
+        		<summary>
+            		<a href="http://res.eveprobe.ccpgames.com/b6/b6210974295cf28e_d77d5d277b762914e5ccda7fe0936c51">res:/video/billboardswide/fcon_billboard_1024x576x30_webm.webm</a>
+        		</summary>
+        <video preload="none" controls onclick="this.paused ? this.play() : this.pause();">
+        			<source src="http://res.eveprobe.ccpgames.com/b6/b6210974295cf28e_d77d5d277b762914e5ccda7fe0936c51" type="video/webm" /> 
+        </video>
+        <p class="mini">Previewing webm files doesn't seem to work in all browsers because of the way CCP serves these files.</p><p class="mini">I'm sure there's some way around that, but you can also just click the direct link to the video and open the file with the browser.</p>
+    		</details></td>
+		<td>2686</td>
+	</tr>
+	<tr class="selectable" id="cid-2">
+		<td><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/10/10743231ad8c2536_c325a1c5f73d759e5cd2a8a9178bd1cb">res:/ui/asset/mannequin/outer/45518_female_outer_explorationsuit_f01_types_explorationsuit_f01_amarr.png</a>
+    		</summary>
+    		<img data-src="http://res.eveprobe.ccpgames.com/10/10743231ad8c2536_c325a1c5f73d759e5cd2a8a9178bd1cb" src="" />
+		</details></td>
+		<td>37</td>
+	</tr>
+	<tr class="selectable" id="cid-3">
+		<td><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/68/68f1020079c82872_7be84bac6da9db578fa6dd415405a0a9">res:/ui/asset/mannequin/outer/45519_female_outer_explorationsuit_f01_types_explorationsuit_f01_caldariorange.png</a>
+    		</summary>
+    		<img data-src="http://res.eveprobe.ccpgames.com/68/68f1020079c82872_7be84bac6da9db578fa6dd415405a0a9" src="" />
+		</details></td>
+		<td>37</td>
+	</tr>
+	<tr class="selectable" id="cid-4">
+		<td><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/0a/0afb3f3ef8b91dc4_fe02dfce8918cf1414efde130b7d87ce">res:/ui/asset/mannequin/outer/45516_female_outer_explorationsuit_f01_types_explorationsuit_f01_minmatar.png</a>
+    		</summary>
+    		<img data-src="http://res.eveprobe.ccpgames.com/0a/0afb3f3ef8b91dc4_fe02dfce8918cf1414efde130b7d87ce" src="" />
+		</details></td>
+		<td>36</td>
+	</tr>
+	<tr class="selectable" id="cid-5">
+		<td><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/56/565ae5c100445e24_14e6074abcd88fa08c26e0738e3c96d9">res:/ui/asset/mannequin/outer/45527_male_outer_explorationsuit_m01_types_explorationsuit_m01_caldariorange.png</a>
+    		</summary>
+    		<img data-src="http://res.eveprobe.ccpgames.com/56/565ae5c100445e24_14e6074abcd88fa08c26e0738e3c96d9" src="" />
+		</details></td>
+		<td>41</td>
+	</tr>
+	<tr class="selectable" id="cid-6">
+		<td><details>
+        		<summary>
+            		<a href="http://res.eveprobe.ccpgames.com/75/754246332a291887_fcbe36c847dd3bb4614b1ee1e950d0b4">res:/video/billboardswide/public_enemy.webm</a>
+        		</summary>
+        <video preload="none" controls onclick="this.paused ? this.play() : this.pause();">
+        			<source src="http://res.eveprobe.ccpgames.com/75/754246332a291887_fcbe36c847dd3bb4614b1ee1e950d0b4" type="video/webm" /> 
+        </video>
+        <p class="mini">Previewing webm files doesn't seem to work in all browsers because of the way CCP serves these files.</p><p class="mini">I'm sure there's some way around that, but you can also just click the direct link to the video and open the file with the browser.</p>
+    		</details></td>
+		<td>2805</td>
+	</tr>
+	<tr class="selectable" id="cid-7">
+		<td><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/78/785d0b6605ae4c5f_a86f2596c868909f6c5cb6c79853f33d">res:/ui/asset/mannequin/outer/45525_male_outer_explorationsuit_m01_types_explorationsuit_m01_minmatar.png</a>
+    		</summary>
+    		<img data-src="http://res.eveprobe.ccpgames.com/78/785d0b6605ae4c5f_a86f2596c868909f6c5cb6c79853f33d" src="" />
+		</details></td>
+		<td>39</td>
+	</tr>
+	<tr class="selectable" id="cid-8">
+		<td><details>
+        		<summary>
+            		<a href="http://res.eveprobe.ccpgames.com/b8/b893313f6e67f1f6_c3c404f5882a7ad36cb6744bfed6dd50">res:/video/billboardswide/dream fleet.webm</a>
+        		</summary>
+        <video preload="none" controls onclick="this.paused ? this.play() : this.pause();">
+        			<source src="http://res.eveprobe.ccpgames.com/b8/b893313f6e67f1f6_c3c404f5882a7ad36cb6744bfed6dd50" type="video/webm" /> 
+        </video>
+        <p class="mini">Previewing webm files doesn't seem to work in all browsers because of the way CCP serves these files.</p><p class="mini">I'm sure there's some way around that, but you can also just click the direct link to the video and open the file with the browser.</p>
+    		</details></td>
+		<td>2641</td>
+	</tr>
+	<tr class="selectable" id="cid-9">
+		<td><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/e2/e270301abdac57a8_20b8ba7de6cb36f2f1b00b7b7eac8d70">res:/ui/asset/mannequin/outer/45515_female_outer_explorationsuit_f01_types_explorationsuit_f01_caldari.png</a>
+    		</summary>
+    		<img data-src="http://res.eveprobe.ccpgames.com/e2/e270301abdac57a8_20b8ba7de6cb36f2f1b00b7b7eac8d70" src="" />
+		</details></td>
+		<td>37</td>
+	</tr>
+	<tr class="selectable" id="cid-10">
+		<td><details>
+        		<summary>
+            		<a href="http://res.eveprobe.ccpgames.com/ac/acc5a3511bcfa471_cd0af3fc8bf9742a88f54406c9fed5a8">res:/video/billboardswide/kfad_noaudio.webm</a>
+        		</summary>
+        <video preload="none" controls onclick="this.paused ? this.play() : this.pause();">
+        			<source src="http://res.eveprobe.ccpgames.com/ac/acc5a3511bcfa471_cd0af3fc8bf9742a88f54406c9fed5a8" type="video/webm" /> 
+        </video>
+        <p class="mini">Previewing webm files doesn't seem to work in all browsers because of the way CCP serves these files.</p><p class="mini">I'm sure there's some way around that, but you can also just click the direct link to the video and open the file with the browser.</p>
+    		</details></td>
+		<td>1757</td>
+	</tr>
+	<tr class="selectable" id="cid-11">
+		<td><details>
+        		<summary>
+            		<a href="http://res.eveprobe.ccpgames.com/2e/2e05c1816528cb60_eb1b0648f2032b3ad58a63b0c2b96a89">res:/video/billboardswide/nodal point teledildonics.webm</a>
+        		</summary>
+        <video preload="none" controls onclick="this.paused ? this.play() : this.pause();">
+        			<source src="http://res.eveprobe.ccpgames.com/2e/2e05c1816528cb60_eb1b0648f2032b3ad58a63b0c2b96a89" type="video/webm" /> 
+        </video>
+        <p class="mini">Previewing webm files doesn't seem to work in all browsers because of the way CCP serves these files.</p><p class="mini">I'm sure there's some way around that, but you can also just click the direct link to the video and open the file with the browser.</p>
+    		</details></td>
+		<td>1779</td>
+	</tr>
+	<tr class="selectable" id="cid-12">
+		<td><details>
+        		<summary>
+            		<a href="http://res.eveprobe.ccpgames.com/25/257110ad3546c21b_c55772053b383805caea476193c653b0">res:/video/billboardswide/fusion enterprises ltd_ad-update.webm</a>
+        		</summary>
+        <video preload="none" controls onclick="this.paused ? this.play() : this.pause();">
+        			<source src="http://res.eveprobe.ccpgames.com/25/257110ad3546c21b_c55772053b383805caea476193c653b0" type="video/webm" /> 
+        </video>
+        <p class="mini">Previewing webm files doesn't seem to work in all browsers because of the way CCP serves these files.</p><p class="mini">I'm sure there's some way around that, but you can also just click the direct link to the video and open the file with the browser.</p>
+    		</details></td>
+		<td>2966</td>
+	</tr>
+	<tr class="selectable" id="cid-13">
+		<td><details>
+        		<summary>
+            		<a href="http://res.eveprobe.ccpgames.com/50/500b848cf65e5c51_e3285abb6501e8e745de9d10d6c9fd49">res:/video/billboardswide/rhpbillboardvideo.webm</a>
+        		</summary>
+        <video preload="none" controls onclick="this.paused ? this.play() : this.pause();">
+        			<source src="http://res.eveprobe.ccpgames.com/50/500b848cf65e5c51_e3285abb6501e8e745de9d10d6c9fd49" type="video/webm" /> 
+        </video>
+        <p class="mini">Previewing webm files doesn't seem to work in all browsers because of the way CCP serves these files.</p><p class="mini">I'm sure there's some way around that, but you can also just click the direct link to the video and open the file with the browser.</p>
+    		</details></td>
+		<td>2755</td>
+	</tr>
+	<tr class="selectable" id="cid-14">
+		<td><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/10/106cbe8a09139d73_6957fbc139ffcb4e45143edd514533ca">res:/ui/asset/mannequin/outer/45524_male_outer_explorationsuit_m01_types_explorationsuit_m01_caldari.png</a>
+    		</summary>
+    		<img data-src="http://res.eveprobe.ccpgames.com/10/106cbe8a09139d73_6957fbc139ffcb4e45143edd514533ca" src="" />
+		</details></td>
+		<td>41</td>
+	</tr>
+	<tr class="selectable" id="cid-15">
+		<td><details>
+        		<summary>
+            		<a href="http://res.eveprobe.ccpgames.com/85/8512645904c19032_773c29831a8830465bf2f94481951af6">res:/video/billboardswide/spectre fleet - logo ad.webm</a>
+        		</summary>
+        <video preload="none" controls onclick="this.paused ? this.play() : this.pause();">
+        			<source src="http://res.eveprobe.ccpgames.com/85/8512645904c19032_773c29831a8830465bf2f94481951af6" type="video/webm" /> 
+        </video>
+        <p class="mini">Previewing webm files doesn't seem to work in all browsers because of the way CCP serves these files.</p><p class="mini">I'm sure there's some way around that, but you can also just click the direct link to the video and open the file with the browser.</p>
+    		</details></td>
+		<td>3079</td>
+	</tr>
+	<tr class="selectable" id="cid-16">
+		<td><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/1a/1a884665f4c764f4_6b587f0dc5b7f165f20b52d2eb686a42">res:/ui/asset/mannequin/outer/45526_male_outer_explorationsuit_m01_types_explorationsuit_m01_amarr.png</a>
+    		</summary>
+    		<img data-src="http://res.eveprobe.ccpgames.com/1a/1a884665f4c764f4_6b587f0dc5b7f165f20b52d2eb686a42" src="" />
+		</details></td>
+		<td>40</td>
+	</tr>
+	<tr class="selectable" id="cid-17">
+		<td><details>
+        		<summary>
+            		<a href="http://res.eveprobe.ccpgames.com/60/608cc216af10c742_7b346e66d9a7b4e3b583513954293c05">res:/video/billboardswide/synergyofsteel.webm</a>
+        		</summary>
+        <video preload="none" controls onclick="this.paused ? this.play() : this.pause();">
+        			<source src="http://res.eveprobe.ccpgames.com/60/608cc216af10c742_7b346e66d9a7b4e3b583513954293c05" type="video/webm" /> 
+        </video>
+        <p class="mini">Previewing webm files doesn't seem to work in all browsers because of the way CCP serves these files.</p><p class="mini">I'm sure there's some way around that, but you can also just click the direct link to the video and open the file with the browser.</p>
+    		</details></td>
+		<td>2192</td>
+	</tr>
+	<tr class="selectable" id="cid-18">
+		<td><details>
+        		<summary>
+            		<a href="http://res.eveprobe.ccpgames.com/f6/f6b2eff723752b57_8ac3068b09acf2ac9f54cd6f3cedcd48">res:/video/billboardswide/sigcartel_billboard_v3_forccp.webm</a>
+        		</summary>
+        <video preload="none" controls onclick="this.paused ? this.play() : this.pause();">
+        			<source src="http://res.eveprobe.ccpgames.com/f6/f6b2eff723752b57_8ac3068b09acf2ac9f54cd6f3cedcd48" type="video/webm" /> 
+        </video>
+        <p class="mini">Previewing webm files doesn't seem to work in all browsers because of the way CCP serves these files.</p><p class="mini">I'm sure there's some way around that, but you can also just click the direct link to the video and open the file with the browser.</p>
+    		</details></td>
+		<td>2819</td>
+	</tr>
+	<tr class="selectable" id="cid-19">
+		<td><details>
+        		<summary>
+            		<a href="http://res.eveprobe.ccpgames.com/d4/d487181b14539ee2_5364885849cc6d16836a730501bc4b6d">res:/video/billboardswide/eve005_iron_armada_sting_webm.webm</a>
+        		</summary>
+        <video preload="none" controls onclick="this.paused ? this.play() : this.pause();">
+        			<source src="http://res.eveprobe.ccpgames.com/d4/d487181b14539ee2_5364885849cc6d16836a730501bc4b6d" type="video/webm" /> 
+        </video>
+        <p class="mini">Previewing webm files doesn't seem to work in all browsers because of the way CCP serves these files.</p><p class="mini">I'm sure there's some way around that, but you can also just click the direct link to the video and open the file with the browser.</p>
+    		</details></td>
+		<td>2838</td>
+	</tr>
+	<tr class="selectable" id="cid-20">
+		<td><details>
+        		<summary>
+            		<a href="http://res.eveprobe.ccpgames.com/2b/2bfafb3d6c999c3d_cdd40c51b9afb7d91db5e8e46436e8b3">res:/video/billboardswide/sturm_billboard_final.webm</a>
+        		</summary>
+        <video preload="none" controls onclick="this.paused ? this.play() : this.pause();">
+        			<source src="http://res.eveprobe.ccpgames.com/2b/2bfafb3d6c999c3d_cdd40c51b9afb7d91db5e8e46436e8b3" type="video/webm" /> 
+        </video>
+        <p class="mini">Previewing webm files doesn't seem to work in all browsers because of the way CCP serves these files.</p><p class="mini">I'm sure there's some way around that, but you can also just click the direct link to the video and open the file with the browser.</p>
+    		</details></td>
+		<td>3053</td>
+	</tr>
+	<tr class="selectable" id="cid-21">
+		<td><details>
+        		<summary>
+            		<a href="http://res.eveprobe.ccpgames.com/dc/dc516e1973c8a85e_a56c51bb11b4fa9cd346e456f80660b8">res:/video/billboardswide/meridian_billboard.webm</a>
+        		</summary>
+        <video preload="none" controls onclick="this.paused ? this.play() : this.pause();">
+        			<source src="http://res.eveprobe.ccpgames.com/dc/dc516e1973c8a85e_a56c51bb11b4fa9cd346e456f80660b8" type="video/webm" /> 
+        </video>
+        <p class="mini">Previewing webm files doesn't seem to work in all browsers because of the way CCP serves these files.</p><p class="mini">I'm sure there's some way around that, but you can also just click the direct link to the video and open the file with the browser.</p>
+    		</details></td>
+		<td>2414</td>
+	</tr>
+	<tr class="selectable" id="cid-22">
+		<td><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/76/765b42393aad397e_eea2267781805d0b08a0ed079dd7b967">res:/ui/asset/mannequin/outer/45520_female_outer_explorationsuit_f01_types_explorationsuit_f01_ore.png</a>
+    		</summary>
+    		<img data-src="http://res.eveprobe.ccpgames.com/76/765b42393aad397e_eea2267781805d0b08a0ed079dd7b967" src="" />
+		</details></td>
+		<td>37</td>
+	</tr>
+	<tr class="selectable" id="cid-23">
+		<td><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/92/92ffd03285afe95e_954af278e303e853196ac41fd0d94c46">res:/ui/asset/mannequin/outer/45514_female_outer_explorationsuit_f01_types_explorationsuit_f01_soe.png</a>
+    		</summary>
+    		<img data-src="http://res.eveprobe.ccpgames.com/92/92ffd03285afe95e_954af278e303e853196ac41fd0d94c46" src="" />
+		</details></td>
+		<td>39</td>
+	</tr>
+	<tr class="selectable" id="cid-24">
+		<td><details>
+        		<summary>
+            		<a href="http://res.eveprobe.ccpgames.com/c3/c3c2658bf71da99f_9af02c7badf8b714d56b12c38bc899fb">res:/video/billboardswide/wecu2017.webm</a>
+        		</summary>
+        <video preload="none" controls onclick="this.paused ? this.play() : this.pause();">
+        			<source src="http://res.eveprobe.ccpgames.com/c3/c3c2658bf71da99f_9af02c7badf8b714d56b12c38bc899fb" type="video/webm" /> 
+        </video>
+        <p class="mini">Previewing webm files doesn't seem to work in all browsers because of the way CCP serves these files.</p><p class="mini">I'm sure there's some way around that, but you can also just click the direct link to the video and open the file with the browser.</p>
+    		</details></td>
+		<td>2458</td>
+	</tr>
+	<tr class="selectable" id="cid-25">
+		<td><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/85/8584ffea7a4ba4c0_205f59ff85b1b0297a111fc196390e02">res:/ui/asset/mannequin/outer/45521_male_outer_explorationsuit_m01_types_explorationsuit_m01_gallente.png</a>
+    		</summary>
+    		<img data-src="http://res.eveprobe.ccpgames.com/85/8584ffea7a4ba4c0_205f59ff85b1b0297a111fc196390e02" src="" />
+		</details></td>
+		<td>40</td>
+	</tr>
+	<tr class="selectable" id="cid-26">
+		<td><details>
+        		<summary>
+            		<a href="http://res.eveprobe.ccpgames.com/fb/fbe29bb5770e0e51_d5b695e0ae150669db14118f5eea2eb8">res:/video/billboardswide/bombers bar npsi community.webm</a>
+        		</summary>
+        <video preload="none" controls onclick="this.paused ? this.play() : this.pause();">
+        			<source src="http://res.eveprobe.ccpgames.com/fb/fbe29bb5770e0e51_d5b695e0ae150669db14118f5eea2eb8" type="video/webm" /> 
+        </video>
+        <p class="mini">Previewing webm files doesn't seem to work in all browsers because of the way CCP serves these files.</p><p class="mini">I'm sure there's some way around that, but you can also just click the direct link to the video and open the file with the browser.</p>
+    		</details></td>
+		<td>2899</td>
+	</tr>
+	<tr class="selectable" id="cid-27">
+		<td><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/26/26a4649dc7833803_cb7412959aff9a463f2ac09dd14d1861">res:/ui/asset/mannequin/outer/45522_male_outer_explorationsuit_m01_types_explorationsuit_m01_ore.png</a>
+    		</summary>
+    		<img data-src="http://res.eveprobe.ccpgames.com/26/26a4649dc7833803_cb7412959aff9a463f2ac09dd14d1861" src="" />
+		</details></td>
+		<td>41</td>
+	</tr>
+	<tr class="selectable" id="cid-28">
+		<td><details>
+        		<summary>
+            		<a href="http://res.eveprobe.ccpgames.com/7d/7dcb1fe4380299ce_42e49af108f3085d91d2cf4a93a0852c">res:/video/billboardswide/federation uprising alliance recruitment.webm</a>
+        		</summary>
+        <video preload="none" controls onclick="this.paused ? this.play() : this.pause();">
+        			<source src="http://res.eveprobe.ccpgames.com/7d/7dcb1fe4380299ce_42e49af108f3085d91d2cf4a93a0852c" type="video/webm" /> 
+        </video>
+        <p class="mini">Previewing webm files doesn't seem to work in all browsers because of the way CCP serves these files.</p><p class="mini">I'm sure there's some way around that, but you can also just click the direct link to the video and open the file with the browser.</p>
+    		</details></td>
+		<td>807</td>
+	</tr>
+	<tr class="selectable" id="cid-29">
+		<td><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/d3/d3404ec277028a77_0fd19c02aee0a66c5c943a2017bfe5fb">res:/ui/asset/mannequin/outer/45523_male_outer_explorationsuit_m01_types_explorationsuit_m01_soe.png</a>
+    		</summary>
+    		<img data-src="http://res.eveprobe.ccpgames.com/d3/d3404ec277028a77_0fd19c02aee0a66c5c943a2017bfe5fb" src="" />
+		</details></td>
+		<td>43</td>
+	</tr>
+	<tr class="selectable" id="cid-30">
+		<td><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/78/78cd3f76398463ea_77262255913105f641318ec53980133b">res:/ui/asset/mannequin/outer/45517_female_outer_explorationsuit_f01_types_explorationsuit_f01_gallente.png</a>
+    		</summary>
+    		<img data-src="http://res.eveprobe.ccpgames.com/78/78cd3f76398463ea_77262255913105f641318ec53980133b" src="" />
+		</details></td>
+		<td>37</td>
+	</tr>
+	<tr class="selectable" id="cid-31">
+		<td><details>
+        		<summary>
+            		<a href="http://res.eveprobe.ccpgames.com/ff/ff3975a8545efe75_b85bd396e2a5aee068edb197e81d9b9c">res:/video/billboardswide/real enemy.webm</a>
+        		</summary>
+        <video preload="none" controls onclick="this.paused ? this.play() : this.pause();">
+        			<source src="http://res.eveprobe.ccpgames.com/ff/ff3975a8545efe75_b85bd396e2a5aee068edb197e81d9b9c" type="video/webm" /> 
+        </video>
+        <p class="mini">Previewing webm files doesn't seem to work in all browsers because of the way CCP serves these files.</p><p class="mini">I'm sure there's some way around that, but you can also just click the direct link to the video and open the file with the browser.</p>
+    		</details></td>
+		<td>3036</td>
+	</tr>
+	</table>
+</details>
+<script>
+	function test123() {
+		document.getElementById("footer1").style.display = "none";
+		document.getElementById("footer2").style.visibility = "visible";
+		document.getElementById("footer2").onclick = function() {document.location = "http://i.imgur.com/3Kd6ruW.jpg"}
+	}
+</script>
+<!--<h2 id="changedfiles">Changed Files</h2>-->
+
+<details id="changedfiles">
+	<summary class="selectParent bigsum">Changed Files (8 Entries)</summary>
+	<table>
+	  <tr>
+		<th>File Name</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Size in kb (Decompressed)</th>
+	  </tr>
+	<tr class="selectable" id="cid-32">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/c1/c1f17b45fd3beab8_a37fcbf459c24abc0a1c616b9cd78834">audio/placeables.bnk</a><br></td>
+		<td>18706 -> 22981</td>
+	</tr>
+	<tr class="selectable" id="cid-33">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/1a/1a48a0969136daa1_f5b8165afea4b6a2e3a6c51c7b5d6b06">manifest.dat</a><br></td>
+		<td>13 -> 13</td>
+	</tr>
+	<tr class="selectable" id="cid-34">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/4b/4ba32af50b80bf9a_4f2e8c9af03659c01c5c8e453981cdb7">audio/soundbanksinfo.xml</a><br></td>
+		<td>3181 -> 3192</td>
+	</tr>
+	<tr class="selectable" id="cid-35">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/ee/ee8be85f1266bec3_7cd762fcf941a876da99a3c83f45193d">audio/interface.bnk</a><br></td>
+		<td>8634 -> 8612</td>
+	</tr>
+	<tr class="selectable" id="cid-36">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/1d/1d34143a37d4b739_3d10ff20aac54141d310fa11239b4136">resfileindex.txt</a><br></td>
+		<td>11503 -> 11508</td>
+	</tr>
+	<tr class="selectable" id="cid-37">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/f0/f032ac16b88d97a4_f2ac329650f3764d06ca2ddfc8d32c0d">code.ccp</a><br></td>
+		<td>16622 -> 16622</td>
+	</tr>
+	<tr class="selectable" id="cid-38">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/e3/e3cd8a97159e6321_3cc2ee5b3646c29ac9dcc0e077875f6d">start.ini</a><br></td>
+		<td>0 -> 0</td>
+	</tr>
+	<tr class="selectable" id="cid-39">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/aa/aa0b8b0323d24f50_a8eede185e7ff4a1ef3e1920dbf422c1">bulkdata/metadata.yaml</a><br></td>
+		<td>0 -> 0</td>
+	</tr>
+	</table>
+</details>
+
+<!--<h2 id="changedfiles">Removed Files</h2>-->
+
+<!-- [[removedFilesSection]] -->
+
+<!--<h2 id="changedpythonfiles">Changed Python Files</h2>-->
+
+<!-- [[changedPythonFiles]] -->
+
+<p class="mini2">Made by Inomares. I don't want your donations. I don't read EVE mails. Leave me alone.</p>
+<p class="mini3">I guess contact me on <a href="https://tweetfleet.slack.com/messages/@inomares/">Tweetfleet Slack</a> if you really need to.</p>
+<div class="footer1 footer" id="footer1" onClick="test123();"></div>
+<div class="footer2 footer" id="footer2"></div>
+</body>
+</html>
