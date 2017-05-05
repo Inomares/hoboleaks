@@ -1,0 +1,2068 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hoboleaks: Chaos_Previous (Build: 1140466) to Chaos_Next (Build: 1141660)</title>
+	<meta name="title" content="Client Comparison: Chaos_Previous (Build: 1140466) to Chaos_Next (Build: 1141660) | Hoboleaks">
+	<meta name="description" content="Generated @ 2017-05-05 14:59:47 EVE Time">
+	
+	<meta name="og:title" content="Hoboleaks: Chaos_Previous (Build: 1140466) -> Chaos_Next (Build: 1141660)">
+	<meta name="og:type" content="website">
+	<meta name="og:description" content="Generated @ 2017-05-05 14:59:47 EVE Time">
+	<!-- <meta name="og:image" content="http://hoboleaks.space/sitepreview.png"> -->
+	<meta name="og:image" content="http://static-cdn.jtvnw.net/emoticons/v1/151586/3.0">
+	<meta name="og:url" content="http://hoboleaks.space/">
+	<meta name="og:site_name" content="Hoboleaks">
+	
+	<meta name="twitter:title" content="Hoboleaks: Chaos_Previous (Build: 1140466) -> Chaos_Next (Build: 1141660)">
+	<meta name="twitter:description" content="Generated @ 2017-05-05 14:59:47 EVE Time">
+	<!-- <meta name="twitter:image" content="http://hoboleaks.space/sitepreview.png"> -->
+	<meta name="twitter:image" content="http://static-cdn.jtvnw.net/emoticons/v1/151586/3.0">
+	<meta name="genTime" content="1493996387878">
+	<meta name="genDate" content="2017-05-05 14:59:47">
+	<meta charset="UTF-8">
+	<!-- Who needs css files lol -->
+	<style>
+		table {
+			width:1280px;
+			font-family: arial, tahoma, sans-serif;
+			font-size: 10pt;
+			border-collapse: collapse;
+		}
+
+		td, th {
+			border: 1px solid black;
+			text-align: left;
+			padding: 8px;
+		}
+
+		tr:nth-child(even) {
+			background-color: #DBDBDB;
+		}
+		
+		tr.unimportant {
+			opacity: 0.5;
+			font-size: 8pt;
+		}
+		
+		.hidden {
+			display: none;
+		}
+
+		td.mini {
+			font-size: 8pt;
+		}
+
+		p.mini {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 8pt;
+		}
+		
+		p {
+			font-family: arial, tahoma, sans-serif;
+		}
+		
+		p.mini2 {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 5pt;
+		}
+		
+		p.mini3 {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 5pt;
+			color: gray;
+		}
+		
+		p.kindasmall {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 10pt;
+			margin: 5px 0px 5px 0px;
+		}
+
+		h1, h2, h3 {
+			font-family: arial, tahoma, sans-serif;
+		}
+
+		summary.bigsum {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 15pt;
+		}		
+
+		summary.bigsum_disabled {
+			font-family: arial, tahoma, sans-serif;
+			color: #9E9E9E;
+			font-size: 15pt;
+		}
+		
+		summary.smallsum {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 10pt;
+		}
+		
+		.smallinput {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 10pt;
+		}
+		
+		p.scriptnotify {
+			font-family: arial, tahoma, sans-serif;
+			color: red;
+			font-size: 12pt;
+		}
+		
+		p.scriptnotifysmall {
+			font-family: arial, tahoma, sans-serif;
+			color: red;
+			font-size: 9pt;
+		}
+		
+		p.scriptnotifysmaller {
+			font-family: arial, tahoma, sans-serif;
+			color: red;
+			font-size: 5pt;
+		}
+		
+		div.simplebox {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 10pt;
+			padding: 5px;
+			margin: 2px;
+			border-left-style: dotted;
+		}
+		
+		ul {
+			padding-left:20px;
+		}
+		
+		div.footer {
+		   position: fixed;
+		   bottom: 20px;
+		   height: 20px;
+		   width: 20px;
+		   border-style: none;
+		}
+		
+		div.footer1 {
+		   right: 20px;
+		}
+		
+		div.footer2 {
+		   left: 20px;
+		   visibility: hidden;
+		}
+		
+		div.footer:hover {
+			border-style: dotted;
+			border-color: #F2F2F2;
+		}
+		
+		.selected {
+			background-color: #C4F0FF;
+		}
+		
+		tr.selected:nth-child(even) {
+			background-color: #C4F0FF;
+		}
+		
+		.noscripthidden {
+			display: none;
+		}
+
+		/* IE 6 */
+		* html #footer {
+		   position:absolute;
+		   top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
+		}
+	</style>
+	<script type="text/javascript">
+		genBaseHash = "highlight" + 1493996387878
+	
+	    function selectText(containerid, hasWaited) {
+			hasWaited = hasWaited || false
+			if (hasWaited == false) {
+				window.setTimeout(function(){selectText(containerid, true)}, 50); /* I'm sure I'm in the wrong here somehow and not Chrome, but this is how we're fixing it soooooooo yeah. */
+				return
+			}
+			var node = document.getElementById(containerid);
+			if (document.selection) {
+				var range = document.body.createTextRange();
+				range.moveToElementText(node);
+				range.select();
+			} else if (window.getSelection) {
+				var range = document.createRange();
+				range.selectNodeContents(node);
+				window.getSelection().removeAllRanges();
+				window.getSelection().addRange(range);
+			}
+		}
+		
+		function hasClass(node, className) {
+			return (node.className && node.className.indexOf(className) != -1)
+		}
+		
+		function getHashValues() {
+			hashValues = window.location.hash.slice(1).split(",")
+			if (!isHashValid(hashValues)) {
+				return [genBaseHash]
+			}
+			if (hashValues.length == 1 && hashValues[0] == "") {
+				return [genBaseHash]
+			}
+			return hashValues
+		}
+		
+		function isHashValid(hashValues) {
+			if (hashValues[0] == genBaseHash) {
+				return true
+			}
+			return false
+		}
+		
+		function hashHasID(nodeID) {
+			hashValues = getHashValues()
+			idPos = hashValues.indexOf(nodeID)
+			ret = (idPos != -1)
+			return 
+		}
+		
+		function updateSelectablesFromHash() {
+			hashValues = getHashValues()
+			oldSelected = document.getElementsByClassName("selected")
+			for (var i=oldSelected.length-1; i >= 0; i--) {
+				node = oldSelected[i]
+				if (!hashHasID(getNodeID(node))) {
+					deselectNode(node)
+				}
+			}
+			for (var i=0; i < hashValues.length; i++) {
+				currentID = hashValues[i]
+				idName = "cid-" + currentID
+				node = document.getElementById(idName)
+				if (node != null) {
+					selectNode(node)
+					updateInheritance(node)
+				}					
+			}
+		}
+		
+		function updateInheritance(node, isDetail) {
+			isDetail = isDetail || false
+			if (node == null || node.tagName == "BODY") {
+				return
+			}
+			if (hasClass(node, "selectParent")) {
+				node.classList.add("selected")
+			}
+			if (node.tagName == "DETAILS") {
+				updateInheritance(node.firstElementChild, true)
+			}
+			if (!isDetail) {
+				return updateInheritance(node.parentNode)
+			}
+		}
+		
+		function selectNode(node) {
+			node.classList.add("selected")
+		}
+		
+		function deselectNode(node) {
+			node.classList.remove("selected")
+		}
+		
+		function getNodeID(node) {
+			nodeID = node.id.slice(4)
+			return nodeID
+		}
+		
+		function toggleNodeHash(node) {
+			nodeID = node.id.slice(4)
+			hashValues = getHashValues()
+			idPos = hashValues.indexOf(nodeID)
+			if (idPos == -1) {
+				hashValues.push(nodeID)
+			}
+			else {
+				hashValues.splice(idPos, 1)
+			}
+			window.location.hash = hashValues.join()
+		}
+		
+		function getSelectableNode(node) {
+		/* We recursively iterate our way up the tree to see if any part of it is selectable. */
+			if (node == null) {
+				return null
+			}
+			if (hasClass(node, "selectable")) {
+				return node
+			}
+			return getSelectableNode(node.parentNode)			
+		}
+		
+		window.onhashchange = function() {
+			updateSelectablesFromHash()
+		}
+		
+		window.onload = function() {
+			document.body.onclick = function(e){
+				if (!e.altKey) {
+					return
+				}
+				if (window.event) {
+					clickedNode = event.srcElement;
+				}
+				else {
+					clickedNode = e.target
+				}
+				selectableNode = getSelectableNode(clickedNode)
+				if (selectableNode != null) {
+					toggleNodeHash(selectableNode)
+					return false
+				}
+			}
+			updateSelectablesFromHash()
+		}
+	</script>
+</head>
+<body>
+<h1>Comparing Chaos_Previous (Build: 1140466) to Chaos_Next (Build: 1141660)</h1>
+<noscript>
+	<nobr>
+		<p class="mini">Generated @ 2017-05-05 14:59:47 EVE Time (UTC)</p>
+		<p class="scriptnotify" style="display:inline;">You've disabled javascript. This made the menu so sad that it self-destructed. I hope you're happy now.</p>
+		<p class="scriptnotifysmaller" style="display:inline;">You monster.</p>
+	</nobr>
+	<p class="scriptnotifysmall">This page should still kinda work though.</p>
+</noscript>
+<iframe id="timer" src="timerSection.html?version=1&timer=1493996387878" style="border:none; display:none;" height="40px" width="800px"> </iframe>
+<iframe id="navMenu" src="" style="border:none; display:none;" height="40px" width="800px"> </iframe>
+<script>
+	function getStrippedPageName(pageName) {
+		dot = pageName.indexOf(".")
+		if (dot != -1) {
+			pageName = pageName.slice(0, dot)
+		}
+		slash = pageName.indexOf("/")
+		if (slash == 0) {
+			pageName = pageName.slice(1)
+		}
+		return pageName || "index"
+	}
+	
+	document.getElementById("navMenu").style.display = "block";
+	document.getElementById("navMenu").src = "nav.html?curPage=" + getStrippedPageName(window.location.pathname);
+	document.getElementById("timer").style.display = "block";
+</script>
+<p class="mini">Note: Chaos is an internal development server containing many odd projects and changes, many of which may never actually make it to TQ. Speculate responsibly.</p>
+<p class="kindasmall">Click the categories below to expand them! <a href="confused.html">Confused?</a></p>
+
+<!--<h2 id="items">Items</h2>-->
+
+<details id="newitems">
+	<summary class="selectParent bigsum">New Items (32 Entries)</summary>
+	<table>
+	<details>
+	<summary class="smallsum" onClick="selectText('newItemsNotepad')">Show/Hide EVE notepad list for in-game viewing.</summary><div class="simplebox" id="newItemsNotepad">&lt;url=showinfo:45553&gt;Hurricane Hazard Control SKIN (Permanent)&lt;/url&gt;<br>&lt;url=showinfo:45554&gt;Rifter Hazard Control SKIN (Permanent)&lt;/url&gt;<br>&lt;url=showinfo:45555&gt;Nidhoggur Hazard Control SKIN (Permanent)&lt;/url&gt;<br>&lt;url=showinfo:45556&gt;Hel Hazard Control SKIN (Permanent)&lt;/url&gt;<br>&lt;url=showinfo:45557&gt;Sabre Hazard Control SKIN (Permanent)&lt;/url&gt;<br>&lt;url=showinfo:45558&gt;Naglfar Hazard Control SKIN (Permanent)&lt;/url&gt;<br>&lt;url=showinfo:45559&gt;Typhoon Hazard Control SKIN (Permanent)&lt;/url&gt;<br>&lt;url=showinfo:45560&gt;Tristan Ruby Sungrazer SKIN (Permanent)&lt;/url&gt;<br>&lt;url=showinfo:45561&gt;Helios Ruby Sungrazer SKIN (Permanent)&lt;/url&gt;<br>&lt;url=showinfo:45562&gt;Algos Ruby Sungrazer SKIN (Permanent)&lt;/url&gt;<br>&lt;url=showinfo:45563&gt;Catalyst Ruby Sungrazer SKIN (Permanent)&lt;/url&gt;<br>&lt;url=showinfo:45564&gt;Hecate Ruby Sungrazer SKIN (Permanent)&lt;/url&gt;<br>&lt;url=showinfo:45565&gt;Thorax Ruby Sungrazer SKIN (Permanent)&lt;/url&gt;<br>&lt;url=showinfo:45566&gt;Vexor Ruby Sungrazer SKIN (Permanent)&lt;/url&gt;<br>&lt;url=showinfo:45567&gt;Ishtar Ruby Sungrazer SKIN (Permanent)&lt;/url&gt;<br>&lt;url=showinfo:45568&gt;Vexor Navy Issue Ruby Sungrazer SKIN (Permanent)&lt;/url&gt;<br>&lt;url=showinfo:45569&gt;Dominix Ruby Sungrazer SKIN (Permanent)&lt;/url&gt;<br>&lt;url=showinfo:45570&gt;Megathron Ruby Sungrazer SKIN (Permanent)&lt;/url&gt;<br>&lt;url=showinfo:45571&gt;Kronos Ruby Sungrazer SKIN (Permanent)&lt;/url&gt;<br>&lt;url=showinfo:45572&gt;Moros Ruby Sungrazer SKIN (Permanent)&lt;/url&gt;<br>&lt;url=showinfo:45573&gt;Thanatos Ruby Sungrazer SKIN (Permanent)&lt;/url&gt;<br>&lt;url=showinfo:45574&gt;Nyx Ruby Sungrazer SKIN (Permanent)&lt;/url&gt;<br>&lt;url=showinfo:45575&gt;Epithal Ruby Sungrazer SKIN (Permanent)&lt;/url&gt;<br>&lt;url=showinfo:45576&gt;Iteron Mark V Ruby Sungrazer SKIN (Permanent)&lt;/url&gt;<br>&lt;url=showinfo:45577&gt;Miasmos Ruby Sungrazer SKIN (Permanent)&lt;/url&gt;<br>&lt;url=showinfo:45578&gt;Nereus Ruby Sungrazer SKIN (Permanent)&lt;/url&gt;<br>&lt;url=showinfo:45579&gt;Viator Ruby Sungrazer SKIN (Permanent)&lt;/url&gt;<br>&lt;url=showinfo:45580&gt;Occator Ruby Sungrazer SKIN (Permanent)&lt;/url&gt;<br>&lt;url=showinfo:45581&gt;Obelisk Ruby Sungrazer SKIN (Permanent)&lt;/url&gt;<br>&lt;url=showinfo:45582&gt;Erebus Ruby Sungrazer SKIN (Permanent)&lt;/url&gt;<br>&lt;url=showinfo:45584&gt;Hyasyoda Research Lab Technical Data Chip&lt;/url&gt;<br>&lt;url=showinfo:45585&gt;Thukker Capital Component Manufacturing Technical Data Chip&lt;/url&gt;<br></div></details>
+	  <tr>
+		<!--<th>[[title4]]</th>-->
+		<th>TypeID & Name</th>
+		<th>Description</th>
+		<th>Group</th>
+		<th>Attributes</th>
+	  </tr>
+	<tr class="selectable" id="cid-1">
+		<td>45553 - <b>Hurricane Hazard Control SKIN (Permanent)</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Super Kerr-Induced Nanocoatings</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 12 attributes.</summary>	<b>typeID:</b> 45553<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 2<br>	<b>Mass:</b> 0.0<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.01<br>	<b>typeNameID:</b> 526414<br>	<b>published:</b> True<br>	<b>marketGroupID:</b> 1959<br>	<b>basePrice:</b> 0.0<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 1311<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-2">
+		<td>45554 - <b>Rifter Hazard Control SKIN (Permanent)</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Super Kerr-Induced Nanocoatings</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 12 attributes.</summary>	<b>typeID:</b> 45554<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 2<br>	<b>Mass:</b> 0.0<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.01<br>	<b>typeNameID:</b> 526415<br>	<b>published:</b> True<br>	<b>marketGroupID:</b> 2005<br>	<b>basePrice:</b> 0.0<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 1311<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-3">
+		<td>45555 - <b>Nidhoggur Hazard Control SKIN (Permanent)</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Super Kerr-Induced Nanocoatings</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 12 attributes.</summary>	<b>typeID:</b> 45555<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 2<br>	<b>Mass:</b> 0.0<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.01<br>	<b>typeNameID:</b> 526416<br>	<b>published:</b> True<br>	<b>marketGroupID:</b> 1977<br>	<b>basePrice:</b> 0.0<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 1311<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-4">
+		<td>45556 - <b>Hel Hazard Control SKIN (Permanent)</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Super Kerr-Induced Nanocoatings</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 12 attributes.</summary>	<b>typeID:</b> 45556<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 2<br>	<b>Mass:</b> 0.0<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.01<br>	<b>typeNameID:</b> 526417<br>	<b>published:</b> True<br>	<b>marketGroupID:</b> 1977<br>	<b>basePrice:</b> 0.0<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 1311<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-5">
+		<td>45557 - <b>Sabre Hazard Control SKIN (Permanent)</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Super Kerr-Induced Nanocoatings</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 12 attributes.</summary>	<b>typeID:</b> 45557<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 2<br>	<b>Mass:</b> 0.0<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.01<br>	<b>typeNameID:</b> 526418<br>	<b>published:</b> True<br>	<b>marketGroupID:</b> 2041<br>	<b>basePrice:</b> 0.0<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 1311<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-6">
+		<td>45558 - <b>Naglfar Hazard Control SKIN (Permanent)</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Super Kerr-Induced Nanocoatings</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 12 attributes.</summary>	<b>typeID:</b> 45558<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 2<br>	<b>Mass:</b> 0.0<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.01<br>	<b>typeNameID:</b> 526419<br>	<b>published:</b> True<br>	<b>marketGroupID:</b> 1983<br>	<b>basePrice:</b> 0.0<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 1311<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-7">
+		<td>45559 - <b>Typhoon Hazard Control SKIN (Permanent)</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Super Kerr-Induced Nanocoatings</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 12 attributes.</summary>	<b>typeID:</b> 45559<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 2<br>	<b>Mass:</b> 0.0<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.01<br>	<b>typeNameID:</b> 526420<br>	<b>published:</b> True<br>	<b>marketGroupID:</b> 1967<br>	<b>basePrice:</b> 0.0<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 1311<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-8">
+		<td>45560 - <b>Tristan Ruby Sungrazer SKIN (Permanent)</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Super Kerr-Induced Nanocoatings</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 12 attributes.</summary>	<b>typeID:</b> 45560<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 8<br>	<b>Mass:</b> 0.0<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.01<br>	<b>typeNameID:</b> 526424<br>	<b>published:</b> True<br>	<b>marketGroupID:</b> 2004<br>	<b>basePrice:</b> 0.0<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 1311<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-9">
+		<td>45561 - <b>Helios Ruby Sungrazer SKIN (Permanent)</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Super Kerr-Induced Nanocoatings</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 12 attributes.</summary>	<b>typeID:</b> 45561<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 8<br>	<b>Mass:</b> 0.0<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.01<br>	<b>typeNameID:</b> 526425<br>	<b>published:</b> True<br>	<b>marketGroupID:</b> 2053<br>	<b>basePrice:</b> 0.0<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 1311<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-10">
+		<td>45562 - <b>Algos Ruby Sungrazer SKIN (Permanent)</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Super Kerr-Induced Nanocoatings</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 12 attributes.</summary>	<b>typeID:</b> 45562<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 8<br>	<b>Mass:</b> 0.0<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.01<br>	<b>typeNameID:</b> 526426<br>	<b>published:</b> True<br>	<b>marketGroupID:</b> 1996<br>	<b>basePrice:</b> 0.0<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 1311<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-11">
+		<td>45563 - <b>Catalyst Ruby Sungrazer SKIN (Permanent)</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Super Kerr-Induced Nanocoatings</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 12 attributes.</summary>	<b>typeID:</b> 45563<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 8<br>	<b>Mass:</b> 0.0<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.01<br>	<b>typeNameID:</b> 526427<br>	<b>published:</b> True<br>	<b>marketGroupID:</b> 1996<br>	<b>basePrice:</b> 0.0<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 1311<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-12">
+		<td>45564 - <b>Hecate Ruby Sungrazer SKIN (Permanent)</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Super Kerr-Induced Nanocoatings</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 12 attributes.</summary>	<b>typeID:</b> 45564<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 8<br>	<b>Mass:</b> 0.0<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.01<br>	<b>typeNameID:</b> 526428<br>	<b>published:</b> True<br>	<b>marketGroupID:</b> 2356<br>	<b>basePrice:</b> 0.0<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 1311<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-13">
+		<td>45565 - <b>Thorax Ruby Sungrazer SKIN (Permanent)</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Super Kerr-Induced Nanocoatings</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 12 attributes.</summary>	<b>typeID:</b> 45565<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 8<br>	<b>Mass:</b> 0.0<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.01<br>	<b>typeNameID:</b> 526429<br>	<b>published:</b> True<br>	<b>marketGroupID:</b> 1992<br>	<b>basePrice:</b> 0.0<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 1311<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-14">
+		<td>45566 - <b>Vexor Ruby Sungrazer SKIN (Permanent)</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Super Kerr-Induced Nanocoatings</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 12 attributes.</summary>	<b>typeID:</b> 45566<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 8<br>	<b>Mass:</b> 0.0<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.01<br>	<b>typeNameID:</b> 526430<br>	<b>published:</b> True<br>	<b>marketGroupID:</b> 1992<br>	<b>basePrice:</b> 0.0<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 1311<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-15">
+		<td>45567 - <b>Ishtar Ruby Sungrazer SKIN (Permanent)</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Super Kerr-Induced Nanocoatings</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 12 attributes.</summary>	<b>typeID:</b> 45567<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 8<br>	<b>Mass:</b> 0.0<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.01<br>	<b>typeNameID:</b> 526431<br>	<b>published:</b> True<br>	<b>marketGroupID:</b> 2071<br>	<b>basePrice:</b> 0.0<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 1311<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-16">
+		<td>45568 - <b>Vexor Navy Issue Ruby Sungrazer SKIN (Permanent)</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Super Kerr-Induced Nanocoatings</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 12 attributes.</summary>	<b>typeID:</b> 45568<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 8<br>	<b>Mass:</b> 0.0<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.01<br>	<b>typeNameID:</b> 526432<br>	<b>published:</b> True<br>	<b>marketGroupID:</b> 2063<br>	<b>basePrice:</b> 0.0<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 1311<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-17">
+		<td>45569 - <b>Dominix Ruby Sungrazer SKIN (Permanent)</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Super Kerr-Induced Nanocoatings</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 12 attributes.</summary>	<b>typeID:</b> 45569<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 8<br>	<b>Mass:</b> 0.0<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.01<br>	<b>typeNameID:</b> 526433<br>	<b>published:</b> True<br>	<b>marketGroupID:</b> 1966<br>	<b>basePrice:</b> 0.0<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 1311<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-18">
+		<td>45570 - <b>Megathron Ruby Sungrazer SKIN (Permanent)</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Super Kerr-Induced Nanocoatings</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 12 attributes.</summary>	<b>typeID:</b> 45570<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 8<br>	<b>Mass:</b> 0.0<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.01<br>	<b>typeNameID:</b> 526434<br>	<b>published:</b> True<br>	<b>marketGroupID:</b> 1966<br>	<b>basePrice:</b> 0.0<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 1311<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-19">
+		<td>45571 - <b>Kronos Ruby Sungrazer SKIN (Permanent)</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Super Kerr-Induced Nanocoatings</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 12 attributes.</summary>	<b>typeID:</b> 45571<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 8<br>	<b>Mass:</b> 0.0<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.01<br>	<b>typeNameID:</b> 526435<br>	<b>published:</b> True<br>	<b>marketGroupID:</b> 2026<br>	<b>basePrice:</b> 0.0<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 1311<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-20">
+		<td>45572 - <b>Moros Ruby Sungrazer SKIN (Permanent)</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Super Kerr-Induced Nanocoatings</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 12 attributes.</summary>	<b>typeID:</b> 45572<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 8<br>	<b>Mass:</b> 0.0<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.01<br>	<b>typeNameID:</b> 526436<br>	<b>published:</b> True<br>	<b>marketGroupID:</b> 1982<br>	<b>basePrice:</b> 0.0<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 1311<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-21">
+		<td>45573 - <b>Thanatos Ruby Sungrazer SKIN (Permanent)</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Super Kerr-Induced Nanocoatings</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 12 attributes.</summary>	<b>typeID:</b> 45573<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 8<br>	<b>Mass:</b> 0.0<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.01<br>	<b>typeNameID:</b> 526437<br>	<b>published:</b> True<br>	<b>marketGroupID:</b> 1976<br>	<b>basePrice:</b> 0.0<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 1311<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-22">
+		<td>45574 - <b>Nyx Ruby Sungrazer SKIN (Permanent)</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Super Kerr-Induced Nanocoatings</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 12 attributes.</summary>	<b>typeID:</b> 45574<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 8<br>	<b>Mass:</b> 0.0<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.01<br>	<b>typeNameID:</b> 526438<br>	<b>published:</b> True<br>	<b>marketGroupID:</b> 1976<br>	<b>basePrice:</b> 0.0<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 1311<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-23">
+		<td>45575 - <b>Epithal Ruby Sungrazer SKIN (Permanent)</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Super Kerr-Induced Nanocoatings</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 12 attributes.</summary>	<b>typeID:</b> 45575<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 8<br>	<b>Mass:</b> 0.0<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.01<br>	<b>typeNameID:</b> 526439<br>	<b>published:</b> True<br>	<b>marketGroupID:</b> 2009<br>	<b>basePrice:</b> 0.0<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 1311<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-24">
+		<td>45576 - <b>Iteron Mark V Ruby Sungrazer SKIN (Permanent)</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Super Kerr-Induced Nanocoatings</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 12 attributes.</summary>	<b>typeID:</b> 45576<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 8<br>	<b>Mass:</b> 0.0<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.01<br>	<b>typeNameID:</b> 526440<br>	<b>published:</b> True<br>	<b>marketGroupID:</b> 2009<br>	<b>basePrice:</b> 0.0<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 1311<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-25">
+		<td>45577 - <b>Miasmos Ruby Sungrazer SKIN (Permanent)</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Super Kerr-Induced Nanocoatings</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 12 attributes.</summary>	<b>typeID:</b> 45577<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 8<br>	<b>Mass:</b> 0.0<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.01<br>	<b>typeNameID:</b> 526441<br>	<b>published:</b> True<br>	<b>marketGroupID:</b> 2009<br>	<b>basePrice:</b> 0.0<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 1311<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-26">
+		<td>45578 - <b>Nereus Ruby Sungrazer SKIN (Permanent)</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Super Kerr-Induced Nanocoatings</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 12 attributes.</summary>	<b>typeID:</b> 45578<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 8<br>	<b>Mass:</b> 0.0<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.01<br>	<b>typeNameID:</b> 526442<br>	<b>published:</b> True<br>	<b>marketGroupID:</b> 2009<br>	<b>basePrice:</b> 0.0<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 1311<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-27">
+		<td>45579 - <b>Viator Ruby Sungrazer SKIN (Permanent)</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Super Kerr-Induced Nanocoatings</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 12 attributes.</summary>	<b>typeID:</b> 45579<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 8<br>	<b>Mass:</b> 0.0<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.01<br>	<b>typeNameID:</b> 526443<br>	<b>published:</b> True<br>	<b>marketGroupID:</b> 2090<br>	<b>basePrice:</b> 0.0<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 1311<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-28">
+		<td>45580 - <b>Occator Ruby Sungrazer SKIN (Permanent)</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Super Kerr-Induced Nanocoatings</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 12 attributes.</summary>	<b>typeID:</b> 45580<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 8<br>	<b>Mass:</b> 0.0<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.01<br>	<b>typeNameID:</b> 526444<br>	<b>published:</b> True<br>	<b>marketGroupID:</b> 2090<br>	<b>basePrice:</b> 0.0<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 1311<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-29">
+		<td>45581 - <b>Obelisk Ruby Sungrazer SKIN (Permanent)</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Super Kerr-Induced Nanocoatings</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 12 attributes.</summary>	<b>typeID:</b> 45581<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 8<br>	<b>Mass:</b> 0.0<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.01<br>	<b>typeNameID:</b> 526445<br>	<b>published:</b> True<br>	<b>marketGroupID:</b> 1986<br>	<b>basePrice:</b> 0.0<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 1311<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-30">
+		<td>45582 - <b>Erebus Ruby Sungrazer SKIN (Permanent)</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Super Kerr-Induced Nanocoatings</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 12 attributes.</summary>	<b>typeID:</b> 45582<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 8<br>	<b>Mass:</b> 0.0<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.01<br>	<b>typeNameID:</b> 526446<br>	<b>published:</b> True<br>	<b>marketGroupID:</b> 1979<br>	<b>basePrice:</b> 0.0<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 1311<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-31">
+		<td>45584 - <b>Hyasyoda Research Lab Technical Data Chip</b></td>
+		<td style="max-width: 500px;">This Technical Data Chip holds specifications and proprietary nano-assembler instructions for upgraded Hyasyoda corporation research facilities.<br><br>It should theoretically be possible for a talented capsuleer to interface with this data chip and recover usable blueprint data.</td>
+		<td style="max-width: 250px;">Technical Data Chips</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 13 attributes.</summary>	<b>descriptionID:</b> 526462<br>	<b>typeID:</b> 45584<br>	<b>radius:</b> 1<br>	<b>Mass:</b> 0.0<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.1<br>	<b>typeNameID:</b> 526447<br>	<b>iconID:</b> 2885<br>	<b>published:</b> True<br>	<b>marketGroupID:</b> 2317<br>	<b>basePrice:</b> 0.0<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 1886<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-32">
+		<td>45585 - <b>Thukker Capital Component Manufacturing Technical Data Chip</b></td>
+		<td style="max-width: 500px;">This Technical Data Chip holds specifications and proprietary nano-assembler instructions for advanced black market Thukker capital component manufacturing upgrades.<br><br>It should theoretically be possible for a talented capsuleer to interface with this data chip and recover usable blueprint data.</td>
+		<td style="max-width: 250px;">Technical Data Chips</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 13 attributes.</summary>	<b>descriptionID:</b> 526465<br>	<b>typeID:</b> 45585<br>	<b>radius:</b> 1<br>	<b>Mass:</b> 0.0<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.1<br>	<b>typeNameID:</b> 526464<br>	<b>iconID:</b> 2885<br>	<b>published:</b> True<br>	<b>marketGroupID:</b> 2317<br>	<b>basePrice:</b> 0.0<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 1886<br></details></td>
+	</tr>
+	</table>
+</details>
+
+<details id="removeditems">
+	<summary class="selectParent bigsum_disabled" onclick="return false">Removed Items (0 Entries)</summary>
+	<p class="kindasmall">Please note that a "removed" item usually means the item was just not yet added to the "newer" build.</p>
+	<table>
+	  <tr>
+		<th>TypeID & Name</th>
+		<th>Description</th>
+		<th>Group</th>
+		<th>Attributes</th>
+	  </tr>
+	
+	</table>
+</details>
+
+<details id="changedblueprints">
+	<summary class="selectParent bigsum">Changed Blueprints BETA (6 Entries)</summary>
+	<table>
+	  <tr>
+		<th>Blueprint Name</th>
+		<th>Old BP Data</th>
+		<th>New BP Data</th>
+		<th>Raw Diff</th>
+	  </tr>
+	<tr class="selectable" id="cid-33">
+		<td>43915 - <b>'Excavator' Mining Drone Blueprint</b></td>
+		<td>Copy:? ME:? TE:? Limit:1x<br><b>Materials:</b><br>1x Modulated Strip Miner II<br>10x Mining Laser Upgrade II<br>15x R.A.M.- Robotics<br>15x Fusion Reactor Unit<br>20x Ion Thruster<br>45x Magnetometric Sensor Cluster<br>45x Pulse Shield Emitter<br>50x Elite Drone AI<br>75x Drone Coronary Unit<br>120x Oscillator Capacitor Unit<br>125x Drone Cerebral Fragment<br>125x Drone Tactical Limb<br>150x Drone Epidermal Shielding Chunk<br>200x Morphite<br>350x Drone Capillary Fluid<br>500x Photon Microprocessor<br>500x Crystalline Carbonide Armor Plate<br>600x Drone Synaptic Relay Wiring<br><b>Skills:</b><br>Graviton Physics I<br>Electronic Engineering I<br>Drones II<br>Industry V<br><b>Outcome:</b><br>1x 'Excavator' Mining Drone (41030)</td>
+		<td>Copy:? ME:? TE:? Limit:5x<br><b>Materials:</b><br>1x Modulated Strip Miner II<br>10x Mining Laser Upgrade II<br>15x R.A.M.- Robotics<br>15x Fusion Reactor Unit<br>20x Ion Thruster<br>45x Magnetometric Sensor Cluster<br>45x Pulse Shield Emitter<br>50x Elite Drone AI<br>75x Drone Coronary Unit<br>120x Oscillator Capacitor Unit<br>125x Drone Cerebral Fragment<br>125x Drone Tactical Limb<br>150x Drone Epidermal Shielding Chunk<br>200x Morphite<br>350x Drone Capillary Fluid<br>500x Photon Microprocessor<br>500x Crystalline Carbonide Armor Plate<br>600x Drone Synaptic Relay Wiring<br><b>Skills:</b><br>Graviton Physics I<br>Electronic Engineering I<br>Drones II<br>Industry V<br><b>Outcome:</b><br>1x 'Excavator' Mining Drone (41030)</td>
+		<td width="300"><span>Copy:? ME:? TE:? Limit:</span><del style="background:#ffe6e6;">1</del><ins style="background:#e6ffe6;">5</ins><span>x<br>Materials:<br>1x 17912<br>10x 28576<br>15x 11481<br>15x 11547<br>20x 11531<br>45x 11535<br>45x 11556<br>50x 21815<br>75x 28366<br>120x 11553<br>125x 28363<br>125x 28364<br>150x 28365<br>200x 11399<br>350x 28362<br>500x 11541<br>500x 11545<br>600x 28361<br>Skills:<br>11446 I<br>11453 I<br>3436 II<br>3380 V<br>Outcome:<br>1x 41030</span></td>
+	</tr><tr class="selectable" id="cid-34">
+		<td>43916 - <b>'Excavator' Ice Harvesting Drone Blueprint</b></td>
+		<td>Copy:? ME:? TE:? Limit:1x<br><b>Materials:</b><br>1x Ice Harvester II<br>10x Ice Harvester Upgrade II<br>15x R.A.M.- Robotics<br>15x Fusion Reactor Unit<br>20x Ion Thruster<br>45x Magnetometric Sensor Cluster<br>45x Pulse Shield Emitter<br>50x Elite Drone AI<br>75x Drone Coronary Unit<br>120x Oscillator Capacitor Unit<br>125x Drone Cerebral Fragment<br>125x Drone Tactical Limb<br>150x Drone Epidermal Shielding Chunk<br>200x Morphite<br>350x Drone Capillary Fluid<br>500x Photon Microprocessor<br>500x Crystalline Carbonide Armor Plate<br>600x Drone Synaptic Relay Wiring<br><b>Skills:</b><br>Graviton Physics I<br>Electronic Engineering I<br>Drones II<br>Industry V<br><b>Outcome:</b><br>1x 'Excavator' Ice Harvesting Drone (43681)</td>
+		<td>Copy:? ME:? TE:? Limit:5x<br><b>Materials:</b><br>1x Ice Harvester II<br>10x Ice Harvester Upgrade II<br>15x R.A.M.- Robotics<br>15x Fusion Reactor Unit<br>20x Ion Thruster<br>45x Magnetometric Sensor Cluster<br>45x Pulse Shield Emitter<br>50x Elite Drone AI<br>75x Drone Coronary Unit<br>120x Oscillator Capacitor Unit<br>125x Drone Cerebral Fragment<br>125x Drone Tactical Limb<br>150x Drone Epidermal Shielding Chunk<br>200x Morphite<br>350x Drone Capillary Fluid<br>500x Photon Microprocessor<br>500x Crystalline Carbonide Armor Plate<br>600x Drone Synaptic Relay Wiring<br><b>Skills:</b><br>Graviton Physics I<br>Electronic Engineering I<br>Drones II<br>Industry V<br><b>Outcome:</b><br>1x 'Excavator' Ice Harvesting Drone (43681)</td>
+		<td width="300"><span>Copy:? ME:? TE:? Limit:</span><del style="background:#ffe6e6;">1</del><ins style="background:#e6ffe6;">5</ins><span>x<br>Materials:<br>1x 22229<br>10x 28578<br>15x 11481<br>15x 11547<br>20x 11531<br>45x 11535<br>45x 11556<br>50x 21815<br>75x 28366<br>120x 11553<br>125x 28363<br>125x 28364<br>150x 28365<br>200x 11399<br>350x 28362<br>500x 11541<br>500x 11545<br>600x 28361<br>Skills:<br>11446 I<br>11453 I<br>3436 II<br>3380 V<br>Outcome:<br>1x 43681</span></td>
+	</tr><tr class="selectable" id="cid-35">
+		<td>45545 - <b>Standup M-Set Thukker Capital Component Manufacturing Material Efficiency Blueprint</b></td>
+		<td>Copy:? ME:? TE:? Limit:60x<br><b>Materials:</b><br>960x Contaminated Nanite Compound<br>1440x Fried Interface Circuit<br>1600x Contaminated Lorentz Fluid<br>1600x Defective Current Pump<br>1600x Smashed Trigger Unit<br>1600x Tangled Power Conduit<br>1600x Damaged Artificial Neural Network<br>1600x Charred Micro Circuit<br>1600x Conductive Polymer<br><b>Skills:</b><br>Industry I<br><b>Outcome:</b><br>1x Standup M-Set Thukker Capital Component Manufacturing Material Efficiency (45544)</td>
+		<td>Copy:? ME:? TE:? Limit:60x<br><b>Materials:</b><br>100x Covert Research Tools<br>960x Contaminated Nanite Compound<br>1440x Fried Interface Circuit<br>1600x Contaminated Lorentz Fluid<br>1600x Defective Current Pump<br>1600x Smashed Trigger Unit<br>1600x Tangled Power Conduit<br>1600x Damaged Artificial Neural Network<br>1600x Charred Micro Circuit<br>1600x Conductive Polymer<br><b>Skills:</b><br>Industry I<br><b>Outcome:</b><br>1x Standup M-Set Thukker Capital Component Manufacturing Material Efficiency (45544)</td>
+		<td width="300"><span>Copy:? ME:? TE:? Limit:60x<br>Materials:<br></span><ins style="background:#e6ffe6;">100x 33577<br></ins><span>960x 25590<br>1440x 25601<br>1600x 25591<br>1600x 25592<br>1600x 25593<br>1600x 25594<br>1600x 25597<br>1600x 25599<br>1600x 25604<br>Skills:<br>3380 I<br>Outcome:<br>1x 45544</span></td>
+	</tr><tr class="selectable" id="cid-36">
+		<td>45547 - <b>Standup L-Set Thukker Capital Component Manufacturing Efficiency Blueprint</b></td>
+		<td>Copy:? ME:? TE:? Limit:40x<br><b>Materials:</b><br>3600x Tripped Power Circuit<br>7200x Contaminated Nanite Compound<br>10800x Fried Interface Circuit<br>12000x Contaminated Lorentz Fluid<br>12000x Defective Current Pump<br>12000x Smashed Trigger Unit<br>12000x Tangled Power Conduit<br>12000x Damaged Artificial Neural Network<br>12000x Charred Micro Circuit<br>12000x Conductive Polymer<br><b>Skills:</b><br>Industry I<br><b>Outcome:</b><br>1x Standup L-Set Thukker Capital Component Manufacturing Efficiency (45546)</td>
+		<td>Copy:? ME:? TE:? Limit:40x<br><b>Materials:</b><br>200x Covert Research Tools<br>3600x Tripped Power Circuit<br>7200x Contaminated Nanite Compound<br>10800x Fried Interface Circuit<br>12000x Contaminated Lorentz Fluid<br>12000x Defective Current Pump<br>12000x Smashed Trigger Unit<br>12000x Tangled Power Conduit<br>12000x Damaged Artificial Neural Network<br>12000x Charred Micro Circuit<br>12000x Conductive Polymer<br><b>Skills:</b><br>Industry I<br><b>Outcome:</b><br>1x Standup L-Set Thukker Capital Component Manufacturing Efficiency (45546)</td>
+		<td width="300"><span>Copy:? ME:? TE:? Limit:40x<br>Materials:<br></span><ins style="background:#e6ffe6;">200x 33577<br></ins><span>3600x 25598<br>7200x 25590<br>10800x 25601<br>12000x 25591<br>12000x 25592<br>12000x 25593<br>12000x 25594<br>12000x 25597<br>12000x 25599<br>12000x 25604<br>Skills:<br>3380 I<br>Outcome:<br>1x 45546</span></td>
+	</tr><tr class="selectable" id="cid-37">
+		<td>45549 - <b>Standup XL-Set Thukker Structure and Component Manufacturing Efficiency Blueprint</b></td>
+		<td>Copy:? ME:? TE:? Limit:30x<br><b>Materials:</b><br>36000x Tripped Power Circuit<br>72000x Contaminated Nanite Compound<br>108000x Fried Interface Circuit<br>120000x Contaminated Lorentz Fluid<br>120000x Defective Current Pump<br>120000x Smashed Trigger Unit<br>120000x Tangled Power Conduit<br>120000x Damaged Artificial Neural Network<br>120000x Charred Micro Circuit<br>120000x Conductive Polymer<br><b>Skills:</b><br>Industry I<br><b>Outcome:</b><br>1x Standup XL-Set Thukker Structure and Component Manufacturing Efficiency (45548)</td>
+		<td>Copy:? ME:? TE:? Limit:30x<br><b>Materials:</b><br>300x Covert Research Tools<br>36000x Tripped Power Circuit<br>72000x Contaminated Nanite Compound<br>108000x Fried Interface Circuit<br>120000x Contaminated Lorentz Fluid<br>120000x Defective Current Pump<br>120000x Smashed Trigger Unit<br>120000x Tangled Power Conduit<br>120000x Damaged Artificial Neural Network<br>120000x Charred Micro Circuit<br>120000x Conductive Polymer<br><b>Skills:</b><br>Industry I<br><b>Outcome:</b><br>1x Standup XL-Set Thukker Structure and Component Manufacturing Efficiency (45548)</td>
+		<td width="300"><span>Copy:? ME:? TE:? Limit:30x<br>Materials:<br></span><ins style="background:#e6ffe6;">300x 33577<br></ins><span>36000x 25598<br>72000x 25590<br>108000x 25601<br>120000x 25591<br>120000x 25592<br>120000x 25593<br>120000x 25594<br>120000x 25597<br>120000x 25599<br>120000x 25604<br>Skills:<br>3380 I<br>Outcome:<br>1x 45548</span></td>
+	</tr><tr class="selectable" id="cid-38">
+		<td>45551 - <b>Standup Hyasyoda Research Lab Blueprint</b></td>
+		<td>Copy:? ME:? TE:? Limit:1x<br><b>Materials:</b><br>1x Standup Research Lab I<br><b>Skills:</b><br>Outpost Construction I<br><b>Outcome:</b><br>1x Standup Hyasyoda Research Lab (45550)</td>
+		<td>Copy:? ME:? TE:? Limit:1x<br><b>Materials:</b><br>1x Standup Research Lab I<br>10x Science Graduates<br><b>Skills:</b><br>Outpost Construction I<br><b>Outcome:</b><br>1x Standup Hyasyoda Research Lab (45550)</td>
+		<td width="300"><span>Copy:? ME:? TE:? Limit:1x<br>Materials:<br>1x 35891<br></span><ins style="background:#e6ffe6;">10x 12243<br></ins><span>Skills:<br>3400 I<br>Outcome:<br>1x 45550</span></td>
+	</tr>
+	</table>
+</details>
+
+<br>
+
+<details id="bonuschanges">
+	<summary class="selectParent bigsum_disabled" onclick="return false">Changed Traits (0 Entries)</summary>
+	<table>
+	  <tr>
+		<th>TypeID, Group, & Name</th>
+		<th>Chaos_Previous</th>
+		<th>Chaos_Next</th>
+		<th>Diff</th>
+		<!-- <th>[[title4]]</th> -->
+	  </tr>
+	
+	</table>
+</details>
+
+<!--<h2 id="attributes">Attributes</h2>-->
+
+<details id="dgmattribs">
+	<summary class="selectParent bigsum">Changes to Attributes (3 Entries)</summary>
+	<table>
+	  <tr>
+		<th>Attribute Name</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Diff</th>
+	  </tr>
+	<tr class="selectable" id="cid-39">
+		<td>2654 - gfxTurretCount</td>
+		<td><b>attributeCategory:</b> None <b>=></b> 4<br><b>attributeID:</b> None <b>=></b> 2654<br><b>attributeName:</b> None <b>=></b> gfxTurretCount<br><b>categoryID:</b> None <b>=></b> 31<br><b>defaultValue:</b> None <b>=></b> 0.0<br><b>description:</b> None <b>=></b> Number of Turrets to fit for entity type ships<br><b>displayName:</b> None <b>=></b> <br><b>highIsGood:</b> None <b>=></b> True<br><b>published:</b> None <b>=></b> False<br><b>stackable:</b> None <b>=></b> True<br></td>
+	</tr>
+	<tr class="selectable" id="cid-40">
+		<td>2655 - gfxLauncherID</td>
+		<td><b>attributeCategory:</b> None <b>=></b> 4<br><b>attributeID:</b> None <b>=></b> 2655<br><b>attributeName:</b> None <b>=></b> gfxLauncherID<br><b>categoryID:</b> None <b>=></b> 31<br><b>defaultValue:</b> None <b>=></b> 0.0<br><b>description:</b> None <b>=></b> Type ID of the launcher for entity type ships<br><b>displayName:</b> None <b>=></b> <br><b>highIsGood:</b> None <b>=></b> True<br><b>published:</b> None <b>=></b> False<br><b>stackable:</b> None <b>=></b> True<br></td>
+	</tr>
+	<tr class="selectable" id="cid-41">
+		<td>2656 - gfxLauncherCount</td>
+		<td><b>attributeCategory:</b> None <b>=></b> 4<br><b>attributeID:</b> None <b>=></b> 2656<br><b>attributeName:</b> None <b>=></b> gfxLauncherCount<br><b>categoryID:</b> None <b>=></b> 31<br><b>defaultValue:</b> None <b>=></b> 0.0<br><b>description:</b> None <b>=></b> Number of Launchers to fit for entity type ships<br><b>displayName:</b> None <b>=></b> <br><b>highIsGood:</b> None <b>=></b> True<br><b>published:</b> None <b>=></b> False<br><b>stackable:</b> None <b>=></b> True<br></td>
+	</tr>
+	</table>
+</details>
+
+<details id="typeattribs">
+	<summary class="selectParent bigsum">Attribute Changes per Type (36 Entries)</summary>
+	<table>
+	  <tr>
+		<th>TypeID, Name, and Group</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Diff</th>
+	  </tr>
+	<tr class="selectable" id="cid-42">
+		<td>10210 - <b>Memory Augmentation - Advanced</b> (Cyber Learning)</td>
+		<td><b>radius:</b> 0.0 <b>=></b> 1.0<br><b>published:</b> True <b>=></b> False<br></td>
+	</tr>
+	<tr class="selectable" id="cid-43">
+		<td>10211 - <b>Memory Augmentation - Elite</b> (Cyber Learning)</td>
+		<td><b>radius:</b> 0.0 <b>=></b> 1.0<br><b>published:</b> True <b>=></b> False<br></td>
+	</tr>
+	<tr class="selectable" id="cid-44">
+		<td>10214 - <b>Neural Boost - Advanced</b> (Cyber Learning)</td>
+		<td><b>radius:</b> 0.0 <b>=></b> 1.0<br><b>published:</b> True <b>=></b> False<br></td>
+	</tr>
+	<tr class="selectable" id="cid-45">
+		<td>10215 - <b>Neural Boost - Elite</b> (Cyber Learning)</td>
+		<td><b>radius:</b> 0.0 <b>=></b> 1.0<br><b>published:</b> True <b>=></b> False<br></td>
+	</tr>
+	<tr class="selectable" id="cid-46">
+		<td>10218 - <b>Ocular Filter - Advanced</b> (Cyber Learning)</td>
+		<td><b>radius:</b> 0.0 <b>=></b> 1.0<br><b>published:</b> True <b>=></b> False<br></td>
+	</tr>
+	<tr class="selectable" id="cid-47">
+		<td>10219 - <b>Ocular Filter - Elite</b> (Cyber Learning)</td>
+		<td><b>radius:</b> 0.0 <b>=></b> 1.0<br><b>published:</b> True <b>=></b> False<br></td>
+	</tr>
+	<tr class="selectable" id="cid-48">
+		<td>10223 - <b>Cybernetic Subprocessor - Advanced</b> (Cyber Learning)</td>
+		<td><b>radius:</b> 0.0 <b>=></b> 1.0<br><b>published:</b> True <b>=></b> False<br></td>
+	</tr>
+	<tr class="selectable" id="cid-49">
+		<td>10224 - <b>Cybernetic Subprocessor - Elite</b> (Cyber Learning)</td>
+		<td><b>radius:</b> 0.0 <b>=></b> 1.0<br><b>published:</b> True <b>=></b> False<br></td>
+	</tr>
+	<tr class="selectable" id="cid-50">
+		<td>10227 - <b>Social Adaptation Chip - Advanced</b> (Cyber Learning)</td>
+		<td><b>radius:</b> 0.0 <b>=></b> 1.0<br><b>published:</b> True <b>=></b> False<br></td>
+	</tr>
+	<tr class="selectable" id="cid-51">
+		<td>29668 - <b>30 Day Pilot's License Extension (PLEX)</b> (Game Time)</td>
+		<td><b>published:</b> True <b>=></b> False<br><b>marketGroupID:</b> 1923 <b>=></b> None<br></td>
+	</tr>
+	<tr class="selectable" id="cid-52">
+		<td>42242 - <b>Dagon</b> (Force Auxiliary)</td>
+		<td><b>shipBonusForceAuxiliaryM1:</b> 5.0 <b>=></b> -5.0<br></td>
+	</tr>
+	<tr class="selectable" id="cid-53">
+		<td>42698 - <b>Women's 'Dread' Beret (Guristas)</b> (Headwear)</td>
+		<td><b>gender:</b> None <b>=></b> 3.0<br></td>
+	</tr>
+	<tr class="selectable" id="cid-54">
+		<td>42699 - <b>Men's 'Dread' Beret (Guristas)</b> (Headwear)</td>
+		<td><b>gender:</b> None <b>=></b> 1.0<br></td>
+	</tr>
+	<tr class="selectable" id="cid-55">
+		<td>42717 - <b>Women's 'Pithum' Beret (Guristas)</b> (Headwear)</td>
+		<td><b>gender:</b> None <b>=></b> 3.0<br></td>
+	</tr>
+	<tr class="selectable" id="cid-56">
+		<td>42721 - <b>Men's 'Pithum' Beret (Guristas)</b> (Headwear)</td>
+		<td><b>gender:</b> None <b>=></b> 1.0<br></td>
+	</tr>
+	<tr class="selectable" id="cid-57">
+		<td>42729 - <b>Women's 'Boarder' Cap (Digital Camo)</b> (Headwear)</td>
+		<td><b>gender:</b> None <b>=></b> 3.0<br></td>
+	</tr>
+	<tr class="selectable" id="cid-58">
+		<td>42732 - <b>Men's 'Boarder' Cap (Digital Camo)</b> (Headwear)</td>
+		<td><b>gender:</b> None <b>=></b> 1.0<br></td>
+	</tr>
+	<tr class="selectable" id="cid-59">
+		<td>45470 - <b>♦ Chemosh</b> (♦ Dreadnought)</td>
+		<td><b>isCapitalSize:</b> None <b>=></b> 1.0<br></td>
+	</tr>
+	<tr class="selectable" id="cid-60">
+		<td>45471 - <b>♦ Molok</b> (♦ Titan)</td>
+		<td><b>isCapitalSize:</b> None <b>=></b> 1.0<br></td>
+	</tr>
+	<tr class="selectable" id="cid-61">
+		<td>45472 - <b>♦ Molok</b> (♦ Titan)</td>
+		<td><b>isCapitalSize:</b> None <b>=></b> 1.0<br></td>
+	</tr>
+	<tr class="selectable" id="cid-62">
+		<td>45473 - <b>♦ Dagon</b> (♦ Force Auxiliary)</td>
+		<td><b>isCapitalSize:</b> None <b>=></b> 1.0<br></td>
+	</tr>
+	<tr class="selectable" id="cid-63">
+		<td>45474 - <b>♦ Chemosh</b> (♦ Dreadnought)</td>
+		<td><b>isCapitalSize:</b> None <b>=></b> 1.0<br></td>
+	</tr>
+	<tr class="selectable" id="cid-64">
+		<td>45514 - <b>ExplorationSuit_F01_SOE.type</b> (Outer)</td>
+		<td><b>gender:</b> None <b>=></b> 3.0<br><b>clothingAlsoCoversCategory:</b> None <b>=></b> 25.0<br><b>clothingRemovesCategory:</b> None <b>=></b> 25.0<br><b>clothingAlsoCoversCategory2:</b> None <b>=></b> 22.0<br><b>clothingRemovesCategory2:</b> None <b>=></b> 22.0<br></td>
+	</tr>
+	<tr class="selectable" id="cid-65">
+		<td>45515 - <b>ExplorationSuit_F01_Caldari.type</b> (Outer)</td>
+		<td><b>gender:</b> None <b>=></b> 3.0<br><b>clothingAlsoCoversCategory:</b> None <b>=></b> 25.0<br><b>clothingRemovesCategory:</b> None <b>=></b> 25.0<br><b>clothingAlsoCoversCategory2:</b> None <b>=></b> 22.0<br><b>clothingRemovesCategory2:</b> None <b>=></b> 22.0<br></td>
+	</tr>
+	<tr class="selectable" id="cid-66">
+		<td>45516 - <b>ExplorationSuit_F01_Minmatar.type</b> (Outer)</td>
+		<td><b>gender:</b> None <b>=></b> 3.0<br><b>clothingAlsoCoversCategory:</b> None <b>=></b> 25.0<br><b>clothingRemovesCategory:</b> None <b>=></b> 25.0<br><b>clothingAlsoCoversCategory2:</b> None <b>=></b> 22.0<br><b>clothingRemovesCategory2:</b> None <b>=></b> 22.0<br></td>
+	</tr>
+	<tr class="selectable" id="cid-67">
+		<td>45517 - <b>ExplorationSuit_F01_Gallente.type</b> (Outer)</td>
+		<td><b>gender:</b> None <b>=></b> 3.0<br><b>clothingAlsoCoversCategory:</b> None <b>=></b> 25.0<br><b>clothingRemovesCategory:</b> None <b>=></b> 25.0<br><b>clothingAlsoCoversCategory2:</b> None <b>=></b> 22.0<br><b>clothingRemovesCategory2:</b> None <b>=></b> 22.0<br></td>
+	</tr>
+	<tr class="selectable" id="cid-68">
+		<td>45518 - <b>ExplorationSuit_F01_Amarr.type</b> (Outer)</td>
+		<td><b>gender:</b> None <b>=></b> 3.0<br><b>clothingAlsoCoversCategory:</b> None <b>=></b> 25.0<br><b>clothingRemovesCategory:</b> None <b>=></b> 25.0<br><b>clothingAlsoCoversCategory2:</b> None <b>=></b> 22.0<br><b>clothingRemovesCategory2:</b> None <b>=></b> 22.0<br></td>
+	</tr>
+	<tr class="selectable" id="cid-69">
+		<td>45519 - <b>ExplorationSuit_F01_CaldariOrange.type</b> (Outer)</td>
+		<td><b>gender:</b> None <b>=></b> 3.0<br><b>clothingAlsoCoversCategory:</b> None <b>=></b> 25.0<br><b>clothingRemovesCategory:</b> None <b>=></b> 25.0<br><b>clothingAlsoCoversCategory2:</b> None <b>=></b> 22.0<br><b>clothingRemovesCategory2:</b> None <b>=></b> 22.0<br></td>
+	</tr>
+	<tr class="selectable" id="cid-70">
+		<td>45520 - <b>ExplorationSuit_F01_ORE.type</b> (Outer)</td>
+		<td><b>gender:</b> None <b>=></b> 3.0<br><b>clothingAlsoCoversCategory:</b> None <b>=></b> 25.0<br><b>clothingRemovesCategory:</b> None <b>=></b> 25.0<br><b>clothingAlsoCoversCategory2:</b> None <b>=></b> 22.0<br><b>clothingRemovesCategory2:</b> None <b>=></b> 22.0<br></td>
+	</tr>
+	<tr class="selectable" id="cid-71">
+		<td>45521 - <b>ExplorationSuit_M01_Gallente.type</b> (Outer)</td>
+		<td><b>gender:</b> None <b>=></b> 1.0<br><b>clothingAlsoCoversCategory:</b> None <b>=></b> 25.0<br><b>clothingRemovesCategory:</b> None <b>=></b> 25.0<br><b>clothingAlsoCoversCategory2:</b> None <b>=></b> 22.0<br><b>clothingRemovesCategory2:</b> None <b>=></b> 22.0<br></td>
+	</tr>
+	<tr class="selectable" id="cid-72">
+		<td>45522 - <b>ExplorationSuit_M01_ORE.type</b> (Outer)</td>
+		<td><b>gender:</b> None <b>=></b> 1.0<br><b>clothingAlsoCoversCategory:</b> None <b>=></b> 25.0<br><b>clothingRemovesCategory:</b> None <b>=></b> 25.0<br><b>clothingAlsoCoversCategory2:</b> None <b>=></b> 22.0<br><b>clothingRemovesCategory2:</b> None <b>=></b> 22.0<br></td>
+	</tr>
+	<tr class="selectable" id="cid-73">
+		<td>45523 - <b>ExplorationSuit_M01_SOE.type</b> (Outer)</td>
+		<td><b>gender:</b> None <b>=></b> 1.0<br><b>clothingAlsoCoversCategory:</b> None <b>=></b> 25.0<br><b>clothingRemovesCategory:</b> None <b>=></b> 25.0<br><b>clothingAlsoCoversCategory2:</b> None <b>=></b> 22.0<br><b>clothingRemovesCategory2:</b> None <b>=></b> 22.0<br></td>
+	</tr>
+	<tr class="selectable" id="cid-74">
+		<td>45524 - <b>ExplorationSuit_M01_Caldari.type</b> (Outer)</td>
+		<td><b>gender:</b> None <b>=></b> 1.0<br><b>clothingAlsoCoversCategory:</b> None <b>=></b> 25.0<br><b>clothingRemovesCategory:</b> None <b>=></b> 25.0<br><b>clothingAlsoCoversCategory2:</b> None <b>=></b> 22.0<br><b>clothingRemovesCategory2:</b> None <b>=></b> 22.0<br></td>
+	</tr>
+	<tr class="selectable" id="cid-75">
+		<td>45525 - <b>ExplorationSuit_M01_Minmatar.type</b> (Outer)</td>
+		<td><b>gender:</b> None <b>=></b> 1.0<br><b>clothingAlsoCoversCategory:</b> None <b>=></b> 25.0<br><b>clothingRemovesCategory:</b> None <b>=></b> 25.0<br><b>clothingAlsoCoversCategory2:</b> None <b>=></b> 22.0<br><b>clothingRemovesCategory2:</b> None <b>=></b> 22.0<br></td>
+	</tr>
+	<tr class="selectable" id="cid-76">
+		<td>45526 - <b>ExplorationSuit_M01_Amarr.type</b> (Outer)</td>
+		<td><b>gender:</b> None <b>=></b> 1.0<br><b>clothingAlsoCoversCategory:</b> None <b>=></b> 25.0<br><b>clothingRemovesCategory:</b> None <b>=></b> 25.0<br><b>clothingAlsoCoversCategory2:</b> None <b>=></b> 22.0<br><b>clothingRemovesCategory2:</b> None <b>=></b> 22.0<br></td>
+	</tr>
+	<tr class="selectable" id="cid-77">
+		<td>45527 - <b>ExplorationSuit_M01_CaldariOrange.type</b> (Outer)</td>
+		<td><b>gender:</b> None <b>=></b> 1.0<br><b>clothingAlsoCoversCategory:</b> None <b>=></b> 25.0<br><b>clothingRemovesCategory:</b> None <b>=></b> 25.0<br><b>clothingAlsoCoversCategory2:</b> None <b>=></b> 22.0<br><b>clothingRemovesCategory2:</b> None <b>=></b> 22.0<br></td>
+	</tr>
+	</table>
+</details>
+
+<br>
+
+<!--<h2 id="effectchanges">Effect Changes</h2>-->
+
+<details id="dgmeffects">
+	<summary class="selectParent bigsum_disabled" onclick="return false">Changes to Effects (0 Entries)</summary>
+	<table>
+	  <tr>
+		<th>Effect Name</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Diff</th>
+	  </tr>
+	
+	</table>
+</details>
+
+<details id="typeeffects">
+	<summary class="selectParent bigsum_disabled" onclick="return false">Effect Changes per Type (0 Entries)</summary>
+	<table>
+	  <tr>
+		<th>TypeID, Name, and Group</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Effects Changes</th>
+	  </tr>
+	
+	</table>
+</details>
+
+<br>
+
+<!--<h2 id="stringchanges">String Changes</h2>-->
+
+<script>
+	function toggleHidden(cb) {
+		var nodes = document.getElementById("stringchanges").getElementsByClassName("unimportant")
+		for (var i=0; i < nodes.length; i++) {
+			var node = nodes[i]
+			if (cb.checked) {
+				node.classList.remove("hidden")
+			} else {
+				node.classList.add("hidden")
+			}
+		}
+	}
+</script>
+<details id="stringchanges">
+	<summary class="selectParent bigsum">String Changes (48 Entries)</summary>
+	<label class="smallinput noscripthidden hidden"><input type="checkbox" onclick="toggleHidden(this)">Show [[unimportants]] changes marked as old</label>
+	<table>
+	  <tr>
+		<th>Key</th>
+		<th>Chaos_Previous</th>
+		<th>Chaos_Next</th>
+		<th>Diff</th>
+		<th>Notes</th>
+	  </tr>
+	<tr class="selectable" id="cid-78">
+		<td>525202</td>
+		<td width="355px">Currency</td>
+		<td width="355px">PLEX</td>
+		<td><del style="background:#ffe6e6;">Currency</del><ins style="background:#e6ffe6;">PLEX</ins></td>
+		<td class="mini">Group description for group ID 1875</td>
+	</tr>
+	<tr class="selectable" id="cid-79">
+		<td>526413</td>
+		<td width="355px"></td>
+		<td width="355px">Hazard Control</td>
+		<td><ins style="background:#e6ffe6;">Hazard Control</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-80">
+		<td>526414</td>
+		<td width="355px"></td>
+		<td width="355px">Hurricane Hazard Control SKIN (Permanent)</td>
+		<td><ins style="background:#e6ffe6;">Hurricane Hazard Control SKIN (Permanent)</ins></td>
+		<td class="mini">Item name for typeID 45553 (Super Kerr-Induced Nanocoatings)</td>
+	</tr>
+	<tr class="selectable" id="cid-81">
+		<td>526415</td>
+		<td width="355px"></td>
+		<td width="355px">Rifter Hazard Control SKIN (Permanent)</td>
+		<td><ins style="background:#e6ffe6;">Rifter Hazard Control SKIN (Permanent)</ins></td>
+		<td class="mini">Item name for typeID 45554 (Super Kerr-Induced Nanocoatings)</td>
+	</tr>
+	<tr class="selectable" id="cid-82">
+		<td>526416</td>
+		<td width="355px"></td>
+		<td width="355px">Nidhoggur Hazard Control SKIN (Permanent)</td>
+		<td><ins style="background:#e6ffe6;">Nidhoggur Hazard Control SKIN (Permanent)</ins></td>
+		<td class="mini">Item name for typeID 45555 (Super Kerr-Induced Nanocoatings)</td>
+	</tr>
+	<tr class="selectable" id="cid-83">
+		<td>526417</td>
+		<td width="355px"></td>
+		<td width="355px">Hel Hazard Control SKIN (Permanent)</td>
+		<td><ins style="background:#e6ffe6;">Hel Hazard Control SKIN (Permanent)</ins></td>
+		<td class="mini">Item name for typeID 45556 (Super Kerr-Induced Nanocoatings)</td>
+	</tr>
+	<tr class="selectable" id="cid-84">
+		<td>526418</td>
+		<td width="355px"></td>
+		<td width="355px">Sabre Hazard Control SKIN (Permanent)</td>
+		<td><ins style="background:#e6ffe6;">Sabre Hazard Control SKIN (Permanent)</ins></td>
+		<td class="mini">Item name for typeID 45557 (Super Kerr-Induced Nanocoatings)</td>
+	</tr>
+	<tr class="selectable" id="cid-85">
+		<td>526419</td>
+		<td width="355px"></td>
+		<td width="355px">Naglfar Hazard Control SKIN (Permanent)</td>
+		<td><ins style="background:#e6ffe6;">Naglfar Hazard Control SKIN (Permanent)</ins></td>
+		<td class="mini">Item name for typeID 45558 (Super Kerr-Induced Nanocoatings)</td>
+	</tr>
+	<tr class="selectable" id="cid-86">
+		<td>526420</td>
+		<td width="355px"></td>
+		<td width="355px">Typhoon Hazard Control SKIN (Permanent)</td>
+		<td><ins style="background:#e6ffe6;">Typhoon Hazard Control SKIN (Permanent)</ins></td>
+		<td class="mini">Item name for typeID 45559 (Super Kerr-Induced Nanocoatings)</td>
+	</tr>
+	<tr class="selectable" id="cid-87">
+		<td>526421</td>
+		<td width="355px"></td>
+		<td width="355px">PLEX vault</td>
+		<td><ins style="background:#e6ffe6;">PLEX vault</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-88">
+		<td>526422</td>
+		<td width="355px"></td>
+		<td width="355px">Ruby Sungrazer</td>
+		<td><ins style="background:#e6ffe6;">Ruby Sungrazer</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-89">
+		<td>526424</td>
+		<td width="355px"></td>
+		<td width="355px">Tristan Ruby Sungrazer SKIN (Permanent)</td>
+		<td><ins style="background:#e6ffe6;">Tristan Ruby Sungrazer SKIN (Permanent)</ins></td>
+		<td class="mini">Item name for typeID 45560 (Super Kerr-Induced Nanocoatings)</td>
+	</tr>
+	<tr class="selectable" id="cid-90">
+		<td>526425</td>
+		<td width="355px"></td>
+		<td width="355px">Helios Ruby Sungrazer SKIN (Permanent)</td>
+		<td><ins style="background:#e6ffe6;">Helios Ruby Sungrazer SKIN (Permanent)</ins></td>
+		<td class="mini">Item name for typeID 45561 (Super Kerr-Induced Nanocoatings)</td>
+	</tr>
+	<tr class="selectable" id="cid-91">
+		<td>526426</td>
+		<td width="355px"></td>
+		<td width="355px">Algos Ruby Sungrazer SKIN (Permanent)</td>
+		<td><ins style="background:#e6ffe6;">Algos Ruby Sungrazer SKIN (Permanent)</ins></td>
+		<td class="mini">Item name for typeID 45562 (Super Kerr-Induced Nanocoatings)</td>
+	</tr>
+	<tr class="selectable" id="cid-92">
+		<td>526427</td>
+		<td width="355px"></td>
+		<td width="355px">Catalyst Ruby Sungrazer SKIN (Permanent)</td>
+		<td><ins style="background:#e6ffe6;">Catalyst Ruby Sungrazer SKIN (Permanent)</ins></td>
+		<td class="mini">Item name for typeID 45563 (Super Kerr-Induced Nanocoatings)</td>
+	</tr>
+	<tr class="selectable" id="cid-93">
+		<td>526428</td>
+		<td width="355px"></td>
+		<td width="355px">Hecate Ruby Sungrazer SKIN (Permanent)</td>
+		<td><ins style="background:#e6ffe6;">Hecate Ruby Sungrazer SKIN (Permanent)</ins></td>
+		<td class="mini">Item name for typeID 45564 (Super Kerr-Induced Nanocoatings)</td>
+	</tr>
+	<tr class="selectable" id="cid-94">
+		<td>526429</td>
+		<td width="355px"></td>
+		<td width="355px">Thorax Ruby Sungrazer SKIN (Permanent)</td>
+		<td><ins style="background:#e6ffe6;">Thorax Ruby Sungrazer SKIN (Permanent)</ins></td>
+		<td class="mini">Item name for typeID 45565 (Super Kerr-Induced Nanocoatings)</td>
+	</tr>
+	<tr class="selectable" id="cid-95">
+		<td>526430</td>
+		<td width="355px"></td>
+		<td width="355px">Vexor Ruby Sungrazer SKIN (Permanent)</td>
+		<td><ins style="background:#e6ffe6;">Vexor Ruby Sungrazer SKIN (Permanent)</ins></td>
+		<td class="mini">Item name for typeID 45566 (Super Kerr-Induced Nanocoatings)</td>
+	</tr>
+	<tr class="selectable" id="cid-96">
+		<td>526431</td>
+		<td width="355px"></td>
+		<td width="355px">Ishtar Ruby Sungrazer SKIN (Permanent)</td>
+		<td><ins style="background:#e6ffe6;">Ishtar Ruby Sungrazer SKIN (Permanent)</ins></td>
+		<td class="mini">Item name for typeID 45567 (Super Kerr-Induced Nanocoatings)</td>
+	</tr>
+	<tr class="selectable" id="cid-97">
+		<td>526432</td>
+		<td width="355px"></td>
+		<td width="355px">Vexor Navy Issue Ruby Sungrazer SKIN (Permanent)</td>
+		<td><ins style="background:#e6ffe6;">Vexor Navy Issue Ruby Sungrazer SKIN (Permanent)</ins></td>
+		<td class="mini">Item name for typeID 45568 (Super Kerr-Induced Nanocoatings)</td>
+	</tr>
+	<tr class="selectable" id="cid-98">
+		<td>526433</td>
+		<td width="355px"></td>
+		<td width="355px">Dominix Ruby Sungrazer SKIN (Permanent)</td>
+		<td><ins style="background:#e6ffe6;">Dominix Ruby Sungrazer SKIN (Permanent)</ins></td>
+		<td class="mini">Item name for typeID 45569 (Super Kerr-Induced Nanocoatings)</td>
+	</tr>
+	<tr class="selectable" id="cid-99">
+		<td>526434</td>
+		<td width="355px"></td>
+		<td width="355px">Megathron Ruby Sungrazer SKIN (Permanent)</td>
+		<td><ins style="background:#e6ffe6;">Megathron Ruby Sungrazer SKIN (Permanent)</ins></td>
+		<td class="mini">Item name for typeID 45570 (Super Kerr-Induced Nanocoatings)</td>
+	</tr>
+	<tr class="selectable" id="cid-100">
+		<td>526435</td>
+		<td width="355px"></td>
+		<td width="355px">Kronos Ruby Sungrazer SKIN (Permanent)</td>
+		<td><ins style="background:#e6ffe6;">Kronos Ruby Sungrazer SKIN (Permanent)</ins></td>
+		<td class="mini">Item name for typeID 45571 (Super Kerr-Induced Nanocoatings)</td>
+	</tr>
+	<tr class="selectable" id="cid-101">
+		<td>526436</td>
+		<td width="355px"></td>
+		<td width="355px">Moros Ruby Sungrazer SKIN (Permanent)</td>
+		<td><ins style="background:#e6ffe6;">Moros Ruby Sungrazer SKIN (Permanent)</ins></td>
+		<td class="mini">Item name for typeID 45572 (Super Kerr-Induced Nanocoatings)</td>
+	</tr>
+	<tr class="selectable" id="cid-102">
+		<td>526437</td>
+		<td width="355px"></td>
+		<td width="355px">Thanatos Ruby Sungrazer SKIN (Permanent)</td>
+		<td><ins style="background:#e6ffe6;">Thanatos Ruby Sungrazer SKIN (Permanent)</ins></td>
+		<td class="mini">Item name for typeID 45573 (Super Kerr-Induced Nanocoatings)</td>
+	</tr>
+	<tr class="selectable" id="cid-103">
+		<td>526438</td>
+		<td width="355px"></td>
+		<td width="355px">Nyx Ruby Sungrazer SKIN (Permanent)</td>
+		<td><ins style="background:#e6ffe6;">Nyx Ruby Sungrazer SKIN (Permanent)</ins></td>
+		<td class="mini">Item name for typeID 45574 (Super Kerr-Induced Nanocoatings)</td>
+	</tr>
+	<tr class="selectable" id="cid-104">
+		<td>526439</td>
+		<td width="355px"></td>
+		<td width="355px">Epithal Ruby Sungrazer SKIN (Permanent)</td>
+		<td><ins style="background:#e6ffe6;">Epithal Ruby Sungrazer SKIN (Permanent)</ins></td>
+		<td class="mini">Item name for typeID 45575 (Super Kerr-Induced Nanocoatings)</td>
+	</tr>
+	<tr class="selectable" id="cid-105">
+		<td>526440</td>
+		<td width="355px"></td>
+		<td width="355px">Iteron Mark V Ruby Sungrazer SKIN (Permanent)</td>
+		<td><ins style="background:#e6ffe6;">Iteron Mark V Ruby Sungrazer SKIN (Permanent)</ins></td>
+		<td class="mini">Item name for typeID 45576 (Super Kerr-Induced Nanocoatings)</td>
+	</tr>
+	<tr class="selectable" id="cid-106">
+		<td>526441</td>
+		<td width="355px"></td>
+		<td width="355px">Miasmos Ruby Sungrazer SKIN (Permanent)</td>
+		<td><ins style="background:#e6ffe6;">Miasmos Ruby Sungrazer SKIN (Permanent)</ins></td>
+		<td class="mini">Item name for typeID 45577 (Super Kerr-Induced Nanocoatings)</td>
+	</tr>
+	<tr class="selectable" id="cid-107">
+		<td>526442</td>
+		<td width="355px"></td>
+		<td width="355px">Nereus Ruby Sungrazer SKIN (Permanent)</td>
+		<td><ins style="background:#e6ffe6;">Nereus Ruby Sungrazer SKIN (Permanent)</ins></td>
+		<td class="mini">Item name for typeID 45578 (Super Kerr-Induced Nanocoatings)</td>
+	</tr>
+	<tr class="selectable" id="cid-108">
+		<td>526443</td>
+		<td width="355px"></td>
+		<td width="355px">Viator Ruby Sungrazer SKIN (Permanent)</td>
+		<td><ins style="background:#e6ffe6;">Viator Ruby Sungrazer SKIN (Permanent)</ins></td>
+		<td class="mini">Item name for typeID 45579 (Super Kerr-Induced Nanocoatings)</td>
+	</tr>
+	<tr class="selectable" id="cid-109">
+		<td>526444</td>
+		<td width="355px"></td>
+		<td width="355px">Occator Ruby Sungrazer SKIN (Permanent)</td>
+		<td><ins style="background:#e6ffe6;">Occator Ruby Sungrazer SKIN (Permanent)</ins></td>
+		<td class="mini">Item name for typeID 45580 (Super Kerr-Induced Nanocoatings)</td>
+	</tr>
+	<tr class="selectable" id="cid-110">
+		<td>526445</td>
+		<td width="355px"></td>
+		<td width="355px">Obelisk Ruby Sungrazer SKIN (Permanent)</td>
+		<td><ins style="background:#e6ffe6;">Obelisk Ruby Sungrazer SKIN (Permanent)</ins></td>
+		<td class="mini">Item name for typeID 45581 (Super Kerr-Induced Nanocoatings)</td>
+	</tr>
+	<tr class="selectable" id="cid-111">
+		<td>526446</td>
+		<td width="355px"></td>
+		<td width="355px">Erebus Ruby Sungrazer SKIN (Permanent)</td>
+		<td><ins style="background:#e6ffe6;">Erebus Ruby Sungrazer SKIN (Permanent)</ins></td>
+		<td class="mini">Item name for typeID 45582 (Super Kerr-Induced Nanocoatings)</td>
+	</tr>
+	<tr class="selectable" id="cid-112">
+		<td>526447</td>
+		<td width="355px"></td>
+		<td width="355px">Hyasyoda Research Lab Technical Data Chip</td>
+		<td><ins style="background:#e6ffe6;">Hyasyoda Research Lab Technical Data Chip</ins></td>
+		<td class="mini">Item name for typeID 45584 (Technical Data Chips)</td>
+	</tr>
+	<tr class="selectable" id="cid-113">
+		<td>526448</td>
+		<td width="355px"></td>
+		<td width="355px">This Hyasyoda Research Lab Technical Data Chip holds specifications and proprietary nano-assembler instructions for upgraded Hyasyoda corporation research facilities.<br><br>It should theoretically be possible for a talented capsuleer to interface with this data chip and recover usable blueprint data.</td>
+		<td><ins style="background:#e6ffe6;">This Hyasyoda Research Lab Technical Data Chip holds specifications and proprietary nano-assembler instructions for upgraded Hyasyoda corporation research facilities.<br><br>It should theoretically be possible for a talented capsuleer to interface with this data chip and recover usable blueprint data.</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-114">
+		<td>526449</td>
+		<td width="355px"></td>
+		<td width="355px">Technical Data Chip</td>
+		<td><ins style="background:#e6ffe6;">Technical Data Chip</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-115">
+		<td>526460</td>
+		<td width="355px"></td>
+		<td width="355px">Aligning to a point in space</td>
+		<td><ins style="background:#e6ffe6;">Aligning to a point in space</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-116">
+		<td>526461</td>
+		<td width="355px"></td>
+		<td width="355px">Approaching a point in space</td>
+		<td><ins style="background:#e6ffe6;">Approaching a point in space</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-117">
+		<td>526462</td>
+		<td width="355px"></td>
+		<td width="355px">This Technical Data Chip holds specifications and proprietary nano-assembler instructions for upgraded Hyasyoda corporation research facilities.<br><br>It should theoretically be possible for a talented capsuleer to interface with this data chip and recover usable blueprint data.</td>
+		<td><ins style="background:#e6ffe6;">This Technical Data Chip holds specifications and proprietary nano-assembler instructions for upgraded Hyasyoda corporation research facilities.<br><br>It should theoretically be possible for a talented capsuleer to interface with this data chip and recover usable blueprint data.</ins></td>
+		<td class="mini">Item description for "Hyasyoda Research Lab Technical Data Chip" (typeID 45584)</td>
+	</tr>
+	<tr class="selectable" id="cid-118">
+		<td>526463</td>
+		<td width="355px"></td>
+		<td width="355px">Technical Data Chips</td>
+		<td><ins style="background:#e6ffe6;">Technical Data Chips</ins></td>
+		<td class="mini">Group description for group ID 1886</td>
+	</tr>
+	<tr class="selectable" id="cid-119">
+		<td>526464</td>
+		<td width="355px"></td>
+		<td width="355px">Thukker Capital Component Manufacturing Technical Data Chip</td>
+		<td><ins style="background:#e6ffe6;">Thukker Capital Component Manufacturing Technical Data Chip</ins></td>
+		<td class="mini">Item name for typeID 45585 (Technical Data Chips)</td>
+	</tr>
+	<tr class="selectable" id="cid-120">
+		<td>526465</td>
+		<td width="355px"></td>
+		<td width="355px">This Technical Data Chip holds specifications and proprietary nano-assembler instructions for advanced black market Thukker capital component manufacturing upgrades.<br><br>It should theoretically be possible for a talented capsuleer to interface with this data chip and recover usable blueprint data.</td>
+		<td><ins style="background:#e6ffe6;">This Technical Data Chip holds specifications and proprietary nano-assembler instructions for advanced black market Thukker capital component manufacturing upgrades.<br><br>It should theoretically be possible for a talented capsuleer to interface with this data chip and recover usable blueprint data.</ins></td>
+		<td class="mini">Item description for "Thukker Capital Component Manufacturing Technical Data Chip" (typeID 45585)</td>
+	</tr>
+	<tr class="selectable" id="cid-121">
+		<td>526466</td>
+		<td width="355px"></td>
+		<td width="355px">This Thukker Capital Component Manufacturing Technical Data Chip holds specifications and proprietary nano-assembler instructions for advanced black market Thukker capital component manufacturing upgrades.<br><br>It should theoretically be possible for a talented capsuleer to interface with this data chip and recover usable blueprint data.</td>
+		<td><ins style="background:#e6ffe6;">This Thukker Capital Component Manufacturing Technical Data Chip holds specifications and proprietary nano-assembler instructions for advanced black market Thukker capital component manufacturing upgrades.<br><br>It should theoretically be possible for a talented capsuleer to interface with this data chip and recover usable blueprint data.</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-122">
+		<td>526467</td>
+		<td width="355px"></td>
+		<td width="355px">Technical Data Chip</td>
+		<td><ins style="background:#e6ffe6;">Technical Data Chip</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-123">
+		<td>526468</td>
+		<td width="355px"></td>
+		<td width="355px">&lt;color=0xffcce580&gt;<b>{[numeric]amount, decimalPlaces=0} HP</b>{faintColor}{fontMarkUpStart} armor repaired {fontMarkUpEnd}<b>&lt;color=0xffffffff&gt;{specialObject}</b>{faintColor}{fontMarkUpStart} - {[item]type.name}{fontMarkUpEnd}</td>
+		<td><ins style="background:#e6ffe6;">&lt;color=0xffcce580&gt;&lt;b&gt;{[numeric]amount, decimalPlaces=0} HP&lt;/b&gt;{faintColor}{fontMarkUpStart} armor repaired {fontMarkUpEnd}&lt;b&gt;&lt;color=0xffffffff&gt;{specialObject}&lt;/b&gt;{faintColor}{fontMarkUpStart} - {[item]type.name}{fontMarkUpEnd}</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-124">
+		<td>526469</td>
+		<td width="355px"></td>
+		<td width="355px">&lt;color=0xffcce580&gt;<b>{[numeric]amount, decimalPlaces=0} HP</b>{faintColor}{fontMarkUpStart} armor repaired {fontMarkUpEnd}<b>&lt;color=0xffffffff&gt;{specialObject}</b>{faintColor}{fontMarkUpStart} - {[item]type.name}{fontMarkUpEnd}</td>
+		<td><ins style="background:#e6ffe6;">&lt;color=0xffcce580&gt;&lt;b&gt;{[numeric]amount, decimalPlaces=0} HP&lt;/b&gt;{faintColor}{fontMarkUpStart} armor repaired {fontMarkUpEnd}&lt;b&gt;&lt;color=0xffffffff&gt;{specialObject}&lt;/b&gt;{faintColor}{fontMarkUpStart} - {[item]type.name}{fontMarkUpEnd}</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-125">
+		<td>526470</td>
+		<td width="355px"></td>
+		<td width="355px">Copy Selected With Formatting</td>
+		<td><ins style="background:#e6ffe6;">Copy Selected With Formatting</ins></td>
+		<td class="mini"></td>
+	</tr>
+	</table>
+</details>
+
+<br>
+
+<!--<h2 id="newfiles">New Files</h2>-->
+
+<script>
+	function displayMedia(doc) {
+		nodes = doc.children
+		for (i=0; i < nodes.length; i++) {
+			node = nodes[i]
+			if (node.hasAttribute("data-src") && node.getAttribute("src") == "") {
+				node.setAttribute("src", node.getAttribute("data-src"))
+			}
+		}
+	}
+</script>
+<details id="newfiles">
+	<summary class="selectParent bigsum">New Files (21 Entries)</summary>
+	<table>
+	  <tr>
+		<th>File Name</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Size in kb (Decompressed)</th>
+	  </tr>
+	<tr class="selectable" id="cid-126">
+		<td><a href="http://res.eveprobe.ccpgames.com/fc/fca3e0bef55a82b1_2d44e30ac6f1133dc5600bb8ac410708">audio/383145737.wem</a><br></td>
+		<td>575</td>
+	</tr>
+	<tr class="selectable" id="cid-127">
+		<td><a href="http://res.eveprobe.ccpgames.com/b4/b418d3a54643678c_c70c9b17c794438b8b421671523ef7c3">graphics/effect.dx11/managed/space/specialfx/motionvectorramp.sm_depth</a><br></td>
+		<td>11</td>
+	</tr>
+	<tr class="selectable" id="cid-128">
+		<td><a href="http://res.eveprobe.ccpgames.com/ac/ac1d22b31dc130a0_4575d8553321b787270adf4c7bede1f0">graphics/effect.dx11/managed/space/specialfx/motionvectorramp.sm_hi</a><br></td>
+		<td>9</td>
+	</tr>
+	<tr class="selectable" id="cid-129">
+		<td><a href="http://res.eveprobe.ccpgames.com/ac/ac1d26b31dc137fa_f52a5f20ba5a81f7c63b787d64333a1c">graphics/effect.dx11/managed/space/specialfx/motionvectorramp.sm_lo</a><br></td>
+		<td>8</td>
+	</tr>
+	<tr class="selectable" id="cid-130">
+		<td><a href="http://res.eveprobe.ccpgames.com/f3/f35f5607126548f2_9c1718fc68a2ab2b68c8d8aa3efa7007">graphics/effect.dx11/managed/space/specialfx/particles/dynamic/motionvectorramp.sm_depth</a><br></td>
+		<td>13</td>
+	</tr>
+	<tr class="selectable" id="cid-131">
+		<td><a href="http://res.eveprobe.ccpgames.com/f7/f75fec8261de2112_90c8fd49a8a449a9b519834109a3c47e">graphics/effect.dx11/managed/space/specialfx/particles/dynamic/motionvectorramp.sm_hi</a><br></td>
+		<td>12</td>
+	</tr>
+	<tr class="selectable" id="cid-132">
+		<td><a href="http://res.eveprobe.ccpgames.com/f7/f75ff08261de2828_956e793462943686727667354b9e28e8">graphics/effect.dx11/managed/space/specialfx/particles/dynamic/motionvectorramp.sm_lo</a><br></td>
+		<td>11</td>
+	</tr>
+	<tr class="selectable" id="cid-133">
+		<td><a href="http://res.eveprobe.ccpgames.com/1e/1ec4520218e8dadd_0df8f684dfd1590ff09616310314fc15">graphics/effect.dx9/managed/space/specialfx/motionvectorramp.sm_depth</a><br></td>
+		<td>3</td>
+	</tr>
+	<tr class="selectable" id="cid-134">
+		<td><a href="http://res.eveprobe.ccpgames.com/19/1961e27210a1ffbb_d18842dbcea550fa3e44b9a63f9386bc">graphics/effect.dx9/managed/space/specialfx/motionvectorramp.sm_hi</a><br></td>
+		<td>3</td>
+	</tr>
+	<tr class="selectable" id="cid-135">
+		<td><a href="http://res.eveprobe.ccpgames.com/19/1961de7210a1f969_95151b03841ca2ca1ee50cee713a801c">graphics/effect.dx9/managed/space/specialfx/motionvectorramp.sm_lo</a><br></td>
+		<td>2</td>
+	</tr>
+	<tr class="selectable" id="cid-136">
+		<td><a href="http://res.eveprobe.ccpgames.com/d8/d8ef074669b3946f_1b68e17591dc57e2d11b1628d0dde518">graphics/effect.dx9/managed/space/specialfx/particles/dynamic/motionvectorramp.sm_depth</a><br></td>
+		<td>4</td>
+	</tr>
+	<tr class="selectable" id="cid-137">
+		<td><a href="http://res.eveprobe.ccpgames.com/94/946f48659ca6fa19_02578b7afc34a729d58eda86c757cda3">graphics/effect.dx9/managed/space/specialfx/particles/dynamic/motionvectorramp.sm_hi</a><br></td>
+		<td>4</td>
+	</tr>
+	<tr class="selectable" id="cid-138">
+		<td><a href="http://res.eveprobe.ccpgames.com/94/946f4c659ca70153_04951308228324af621cd7096a8b02dd">graphics/effect.dx9/managed/space/specialfx/particles/dynamic/motionvectorramp.sm_lo</a><br></td>
+		<td>4</td>
+	</tr>
+	<tr class="selectable" id="cid-139">
+		<td><a href="http://res.eveprobe.ccpgames.com/93/939c6e491bf2b935_9192d689f15f4ee7d31e1caaa2f130f5">graphics/effect.gles2/managed/space/specialfx/motionvectorramp.sm_depth</a><br></td>
+		<td>9</td>
+	</tr>
+	<tr class="selectable" id="cid-140">
+		<td><a href="http://res.eveprobe.ccpgames.com/ab/ab033657ac7c04b3_0b4687105fad179ba11be9cd68c7ca8d">graphics/effect.gles2/managed/space/specialfx/motionvectorramp.sm_hi</a><br></td>
+		<td>7</td>
+	</tr>
+	<tr class="selectable" id="cid-141">
+		<td><a href="http://res.eveprobe.ccpgames.com/ab/ab033257ac7bfe61_bb7eacb8dedd5ee933fd6cee18213f00">graphics/effect.gles2/managed/space/specialfx/motionvectorramp.sm_lo</a><br></td>
+		<td>6</td>
+	</tr>
+	<tr class="selectable" id="cid-142">
+		<td><a href="http://res.eveprobe.ccpgames.com/d8/d8426c95a5db4187_9b4095e69cf23cdfa2c1310ee0a830f9">graphics/effect.gles2/managed/space/specialfx/particles/dynamic/motionvectorramp.sm_depth</a><br></td>
+		<td>12</td>
+	</tr>
+	<tr class="selectable" id="cid-143">
+		<td><a href="http://res.eveprobe.ccpgames.com/8b/8b26c49ebedfa0f1_49f08a0c1723240b2b6cc15566d7778e">graphics/effect.gles2/managed/space/specialfx/particles/dynamic/motionvectorramp.sm_hi</a><br></td>
+		<td>9</td>
+	</tr>
+	<tr class="selectable" id="cid-144">
+		<td><a href="http://res.eveprobe.ccpgames.com/8b/8b26c89ebedfa70b_1002f837f7bd26bcb7b4ea60a6f7b911">graphics/effect.gles2/managed/space/specialfx/particles/dynamic/motionvectorramp.sm_lo</a><br></td>
+		<td>9</td>
+	</tr>
+	<tr class="selectable" id="cid-145">
+		<td><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/62/62000dd1ef7c7288_62627e9bcadbccb04086eaa02d25ff22">res:/ui/texture/classes/skins/icons/179.png</a>
+    		</summary>
+    		<img data-src="http://res.eveprobe.ccpgames.com/62/62000dd1ef7c7288_62627e9bcadbccb04086eaa02d25ff22" src="" />
+		</details></td>
+		<td>3</td>
+	</tr>
+	<tr class="selectable" id="cid-146">
+		<td><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/ad/ad424564253a5130_0c1ac3be80cd0b5d756c66eadf61ad8e">res:/ui/texture/classes/skins/icons/180.png</a>
+    		</summary>
+    		<img data-src="http://res.eveprobe.ccpgames.com/ad/ad424564253a5130_0c1ac3be80cd0b5d756c66eadf61ad8e" src="" />
+		</details></td>
+		<td>4</td>
+	</tr>
+	</table>
+</details>
+<script>
+	function test123() {
+		document.getElementById("footer1").style.display = "none";
+		document.getElementById("footer2").style.visibility = "visible";
+		document.getElementById("footer2").onclick = function() {document.location = "http://i.imgur.com/3Kd6ruW.jpg"}
+	}
+</script>
+<!--<h2 id="changedfiles">Changed Files</h2>-->
+
+<details id="changedfiles">
+	<summary class="selectParent bigsum">Changed Files (164 Entries)</summary>
+	<table>
+	  <tr>
+		<th>File Name</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Size in kb (Decompressed)</th>
+	  </tr>
+	<tr class="selectable" id="cid-147">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/b7/b7d347d34259b521_96ce371e8a591e3d13ef4723bfa984b3">bin/_ime.dll</a><br></td>
+		<td>67 -> 67</td>
+	</tr>
+	<tr class="selectable" id="cid-148">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/ba/ba1aa4f3fb71b2da_d158368e63b644b04b57d5cb7ddb727f">bin/_trinity_dx11_deploy.dll</a><br></td>
+		<td>14245 -> 14252</td>
+	</tr>
+	<tr class="selectable" id="cid-149">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/34/34cee7939079398b_e8dce4e6c30f0936c7e4a169e8004b60">bin/_trinity_dx9_deploy.dll</a><br></td>
+		<td>14143 -> 14149</td>
+	</tr>
+	<tr class="selectable" id="cid-150">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/c5/c5a6d4c28b97c1ab_21601fc6ccdc4df7a388169d50daba01">bin/_twitch.dll</a><br></td>
+		<td>147 -> 147</td>
+	</tr>
+	<tr class="selectable" id="cid-151">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/c5/c56a4712b94261f4_ce234eeb717d0da225c0000a33c0fe07">bin/_videoplayer.dll</a><br></td>
+		<td>1761 -> 1761</td>
+	</tr>
+	<tr class="selectable" id="cid-152">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/31/3180e648a99b3387_92e8607dd39657aa42fb768cc76067f9">bin/blue.dll</a><br></td>
+		<td>3861 -> 3861</td>
+	</tr>
+	<tr class="selectable" id="cid-153">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/2c/2ccf7b5a121a1f06_f02853cec9f5f8f171e93850d011034b">bin/nvapi.pyd</a><br></td>
+		<td>722 -> 722</td>
+	</tr>
+	<tr class="selectable" id="cid-154">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/0d/0da8395e8680d5c1_df13537147f1f4b0585122ef79a661d9">bin/pyEvePathfinder.dll</a><br></td>
+		<td>674 -> 668</td>
+	</tr>
+	<tr class="selectable" id="cid-155">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/bd/bda7724745ed6198_a12e09e3d7c853e5ee8600fee829758b">bin/staticdata/mapObjects.db</a><br></td>
+		<td>35793 -> 35793</td>
+	</tr>
+	<tr class="selectable" id="cid-156">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/85/859dbff16e82fb44_bdd180b50f5f17a3a0f45eff2e076da6">bulkdata/3200012.cache2</a><br></td>
+		<td>11 -> 11</td>
+	</tr>
+	<tr class="selectable" id="cid-157">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/61/613be34f1627840d_a6060d47d03d10209be539d4b43d3008">bulkdata/600005.cache2</a><br></td>
+		<td>480 -> 480</td>
+	</tr>
+	<tr class="selectable" id="cid-158">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/dc/dc8783696da17ecc_6b9f19f0cfc1271bbcc6bac2d2e31693">bulkdata/800004.cache2</a><br></td>
+		<td>198 -> 198</td>
+	</tr>
+	<tr class="selectable" id="cid-159">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/bc/bc5fff279c5cae06_7b4e66e019ce67ff55556e9e3bba2aaa">bulkdata/800006.cache2</a><br></td>
+		<td>6730 -> 6732</td>
+	</tr>
+	<tr class="selectable" id="cid-160">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/aa/aa0b8b0323d24f50_bdca59981414f49cc9e285943ed0aafe">bulkdata/metadata.yaml</a><br></td>
+		<td>0 -> 0</td>
+	</tr>
+	<tr class="selectable" id="cid-161">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/1e/1ef674def6229546_6cf97b944a93ec4af3e8763bd99c60ea">bulkdata/version</a><br></td>
+		<td>0 -> 0</td>
+	</tr>
+	<tr class="selectable" id="cid-162">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/f0/f032ac16b88d97a4_fc9bc8e54cb347cdf74dcf1bd05e9a91">code.ccp</a><br></td>
+		<td>16656 -> 16744</td>
+	</tr>
+	<tr class="selectable" id="cid-163">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/1a/1a48a0969136daa1_f56ef6cbeca2da8713816f27cbfdfc5a">manifest.dat</a><br></td>
+		<td>12 -> 12</td>
+	</tr>
+	<tr class="selectable" id="cid-164">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/29/299d63199a8131b3_64ebf61cca9b571e55fa325faa36d512">audio/planets.bnk</a><br></td>
+		<td>1846 -> 1846</td>
+	</tr>
+	<tr class="selectable" id="cid-165">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/35/350cf81f2f26b64b_01c75341469a21085ff0d0cc49258000">dx9/model/spaceobjectfactory/data.black</a><br></td>
+		<td>12091 -> 12091</td>
+	</tr>
+	<tr class="selectable" id="cid-166">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/29/2961665e6fed8b9c_9936916c876d49baeb14ff02a700a356">dx9/model/spaceobjectfactory/generic.black</a><br></td>
+		<td>11 -> 11</td>
+	</tr>
+	<tr class="selectable" id="cid-167">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/a0/a080ce446d914b5f_8dde50a0bc489a6b1090ffbb8fd44f45">dx9/model/turret/structure/moonminer/moonminer_t1.black</a><br></td>
+		<td>1 -> 1</td>
+	</tr>
+	<tr class="selectable" id="cid-168">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/04/040afe4920ec8e32_6074e922d51725ebc4ce52fb0bf8d335">fisfx/postprocess/eve.yaml</a><br></td>
+		<td>20 -> 20</td>
+	</tr>
+	<tr class="selectable" id="cid-169">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/2d/2d9f949e6c6ef9ba_f71b58fd38d41f95141eaff01faeab9e">graphics/effect.dx11/managed/space/booster/boostervolumetric.sm_depth</a><br></td>
+		<td>28 -> 28</td>
+	</tr>
+	<tr class="selectable" id="cid-170">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/03/0365dc9bd9a56d45_3a68fc46496ec96ff842a312c1042a8b">graphics/effect.dx11/managed/space/planet/solarflare.sm_depth</a><br></td>
+		<td>13 -> 13</td>
+	</tr>
+	<tr class="selectable" id="cid-171">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/3a/3ab39a9fa22a4af8_130e2bd1c50245a720cf24a984699dee">graphics/effect.dx11/managed/space/planet/solarflareanimated.sm_depth</a><br></td>
+		<td>16 -> 16</td>
+	</tr>
+	<tr class="selectable" id="cid-172">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/fa/fa381e7ea05cf3fe_e6f5c0f03582456efc88cd1f6fe213a4">graphics/effect.dx11/managed/space/postprocess/downsampledepth.sm_depth</a><br></td>
+		<td>4 -> 4</td>
+	</tr>
+	<tr class="selectable" id="cid-173">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/1c/1c45467a39a5d96e_e6f5c0f03582456efc88cd1f6fe213a4">graphics/effect.dx11/managed/space/postprocess/downsampledepth.sm_hi</a><br></td>
+		<td>4 -> 4</td>
+	</tr>
+	<tr class="selectable" id="cid-174">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/1c/1c45427a39a5d254_e6f5c0f03582456efc88cd1f6fe213a4">graphics/effect.dx11/managed/space/postprocess/downsampledepth.sm_lo</a><br></td>
+		<td>4 -> 4</td>
+	</tr>
+	<tr class="selectable" id="cid-175">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/3a/3acc354c304bdbf3_d8d052f11fa5b418a9327da07d75fc3b">graphics/effect.dx11/managed/space/postprocess/environmentfogcolor.sm_depth</a><br></td>
+		<td>5 -> 5</td>
+	</tr>
+	<tr class="selectable" id="cid-176">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/af/af410edcc2b3eb9d_d8d052f11fa5b418a9327da07d75fc3b">graphics/effect.dx11/managed/space/postprocess/environmentfogcolor.sm_hi</a><br></td>
+		<td>5 -> 5</td>
+	</tr>
+	<tr class="selectable" id="cid-177">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/af/af410adcc2b3e547_d8d052f11fa5b418a9327da07d75fc3b">graphics/effect.dx11/managed/space/postprocess/environmentfogcolor.sm_lo</a><br></td>
+		<td>5 -> 5</td>
+	</tr>
+	<tr class="selectable" id="cid-178">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/83/837a217594876a80_b2e49e858a8181ce9df549db501bb2d1">graphics/effect.dx11/managed/space/postprocess/environmentfogcomposit.sm_depth</a><br></td>
+		<td>9 -> 9</td>
+	</tr>
+	<tr class="selectable" id="cid-179">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/ae/ae8ec08567e7b5f7_112b7d40d8c00012b9a39204fdc3e47a">graphics/effect.dx11/managed/space/postprocess/taa.sm_depth</a><br></td>
+		<td>19 -> 19</td>
+	</tr>
+	<tr class="selectable" id="cid-180">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/37/3719f59ac6b0c033_f1d69a484c0043b2fe5772883dd08f82">graphics/effect.dx11/managed/space/postprocess/tonemapping.sm_depth</a><br></td>
+		<td>27 -> 27</td>
+	</tr>
+	<tr class="selectable" id="cid-181">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/69/6964e258418569dd_f1d69a484c0043b2fe5772883dd08f82">graphics/effect.dx11/managed/space/postprocess/tonemapping.sm_hi</a><br></td>
+		<td>27 -> 27</td>
+	</tr>
+	<tr class="selectable" id="cid-182">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/69/6964de5841856287_526e9eb7fa290142293e5ad10e606549">graphics/effect.dx11/managed/space/postprocess/tonemapping.sm_lo</a><br></td>
+		<td>26 -> 26</td>
+	</tr>
+	<tr class="selectable" id="cid-183">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/47/47e30a3ab9b15259_4f8cb13db4f79aeb137f861cbb93087d">graphics/effect.dx11/managed/space/spaceobject/v3/doublesailsv3.sm_hi</a><br></td>
+		<td>18 -> 18</td>
+	</tr>
+	<tr class="selectable" id="cid-184">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/41/41f084c2ee7b89b4_4de50048685aacc4c82876f50fce3804">graphics/effect.dx11/managed/space/spaceobject/v3/skinned_doublesailsv3.sm_hi</a><br></td>
+		<td>21 -> 21</td>
+	</tr>
+	<tr class="selectable" id="cid-185">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/b0/b0dc20316a784935_23b371c63edfd7f6831abc1532eb06b3">graphics/effect.dx11/managed/space/spaceobject/v3/unpacked_doublesailsv3.sm_depth</a><br></td>
+		<td>19 -> 19</td>
+	</tr>
+	<tr class="selectable" id="cid-186">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/12/12a0f53e9d51c41a_f401807cf3f0f273cb0846dd41031e4b">graphics/effect.dx11/managed/space/spaceobject/v3/unpacked_singlesailsv3.sm_depth</a><br></td>
+		<td>17 -> 17</td>
+	</tr>
+	<tr class="selectable" id="cid-187">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/97/979767d14b4f4239_965e1826150d1ea8610aa8082304fd62">graphics/effect.dx11/managed/space/spaceobject/v3/unpackedskinned_doublesailsv3.sm_depth</a><br></td>
+		<td>23 -> 23</td>
+	</tr>
+	<tr class="selectable" id="cid-188">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/c0/c098fcbbe339c5f6_eaeb504fa3972def962c83ae4c631d37">graphics/effect.dx11/managed/space/spaceobject/v3/unpackedskinned_singlesailsv3.sm_depth</a><br></td>
+		<td>21 -> 21</td>
+	</tr>
+	<tr class="selectable" id="cid-189">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/e2/e21aba7451eed9b7_cc72a3d6a9cbccd10e4cefd100749dae">graphics/effect.dx11/managed/space/spaceobject/v5/organic/asteroidv5.sm_depth</a><br></td>
+		<td>47 -> 36</td>
+	</tr>
+	<tr class="selectable" id="cid-190">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/2c/2c4eda48cf8e6181_34f963ea0ffa33156ee94d68a2c149ce">graphics/effect.dx11/managed/space/spaceobject/v5/organic/asteroidv5.sm_hi</a><br></td>
+		<td>34 -> 23</td>
+	</tr>
+	<tr class="selectable" id="cid-191">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/2c/2c4ede48cf8e68db_6ee2fe47dea15617212772da6da3eac8">graphics/effect.dx11/managed/space/spaceobject/v5/organic/asteroidv5.sm_lo</a><br></td>
+		<td>13 -> 9</td>
+	</tr>
+	<tr class="selectable" id="cid-192">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/0b/0b770185787aa1e1_942670a221a941dfec0d6fed99ae004b">graphics/effect.dx11/managed/space/spaceobject/v5/organic/unpacked_asteroidv5.sm_depth</a><br></td>
+		<td>38 -> 36</td>
+	</tr>
+	<tr class="selectable" id="cid-193">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/e3/e3a818977f11835f_8bd24854b4880cfcd1db698cae82a69a">graphics/effect.dx11/managed/space/spaceobject/v5/organic/unpacked_asteroidv5.sm_hi</a><br></td>
+		<td>24 -> 23</td>
+	</tr>
+	<tr class="selectable" id="cid-194">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/e3/e3a81c977f118a6d_f3eb2d5507a8faf633fc822e8ed80438">graphics/effect.dx11/managed/space/spaceobject/v5/organic/unpacked_asteroidv5.sm_lo</a><br></td>
+		<td>20 -> 9</td>
+	</tr>
+	<tr class="selectable" id="cid-195">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/a3/a334c1b355ee9bdb_276a5fc956e80bdb01eb7f258404cd96">graphics/effect.dx11/managed/space/spaceobject/v5/quad/quadsailsv5.sm_depth</a><br></td>
+		<td>34 -> 34</td>
+	</tr>
+	<tr class="selectable" id="cid-196">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/f8/f81db72c2c3927c5_bfc11a5b0cb5d416d818f1d27f564d91">graphics/effect.dx11/managed/space/spaceobject/v5/quad/quadsailsv5.sm_hi</a><br></td>
+		<td>21 -> 21</td>
+	</tr>
+	<tr class="selectable" id="cid-197">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/6b/6b8bf9b27e150268_90665257c3f33d79811ebe01b2ef7145">graphics/effect.dx11/managed/space/spaceobject/v5/quad/skinned_quadsailsv5.sm_depth</a><br></td>
+		<td>39 -> 38</td>
+	</tr>
+	<tr class="selectable" id="cid-198">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/ee/ee0443e2e7dff6fc_60e74cc229ed021f079f87bf89e5a4f5">graphics/effect.dx11/managed/space/spaceobject/v5/quad/skinned_quadsailsv5.sm_hi</a><br></td>
+		<td>23 -> 23</td>
+	</tr>
+	<tr class="selectable" id="cid-199">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/31/313ee233b456b825_1cc3a7e34bbb26967882f61e1287f144">graphics/effect.dx11/managed/space/spaceobject/v5/quad/unpacked_quadsailsv5.sm_depth</a><br></td>
+		<td>34 -> 34</td>
+	</tr>
+	<tr class="selectable" id="cid-200">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/60/60234ebed286e183_0a7e73293caf9815047cc35686d39112">graphics/effect.dx11/managed/space/spaceobject/v5/quad/unpacked_quadsailsv5.sm_hi</a><br></td>
+		<td>21 -> 21</td>
+	</tr>
+	<tr class="selectable" id="cid-201">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/d8/d8a6ee29c7f72641_71a7965feedad7c34a510b04a2973d7a">graphics/effect.dx11/managed/space/spaceobject/v5/quad/unpackedskinned_quadsailsv5.sm_depth</a><br></td>
+		<td>39 -> 38</td>
+	</tr>
+	<tr class="selectable" id="cid-202">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/3d/3d9445e5517e363f_85c55c49d888623fb88ebb1bd083cc67">graphics/effect.dx11/managed/space/spaceobject/v5/quad/unpackedskinned_quadsailsv5.sm_hi</a><br></td>
+		<td>23 -> 23</td>
+	</tr>
+	<tr class="selectable" id="cid-203">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/fe/fe6d91726e30258d_45bdb0acc95fa555becede9437f0cc82">graphics/effect.dx11/managed/space/specialfx/gradientcircle.sm_depth</a><br></td>
+		<td>6 -> 6</td>
+	</tr>
+	<tr class="selectable" id="cid-204">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/8e/8e26bb5684eb2b3f_802f57912aae85a32e8bb30187dfb10f">graphics/effect.dx11/managed/space/specialfx/particles/dynamic/1layerdynanimv2.sm_depth</a><br></td>
+		<td>13 -> 13</td>
+	</tr>
+	<tr class="selectable" id="cid-205">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/98/98f29a4a275d037d_6d6b9832e50b0b645726d5bdadd85749">graphics/effect.dx11/managed/space/specialfx/particles/dynamic/1layerdyndistortionv2.sm_depth</a><br></td>
+		<td>20 -> 20</td>
+	</tr>
+	<tr class="selectable" id="cid-206">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/5d/5dc0bdb24d22da06_641c9cc9a81416331c2721205803da93">graphics/effect.dx11/managed/space/specialfx/particles/dynamic/1layerdynv2.sm_depth</a><br></td>
+		<td>14 -> 14</td>
+	</tr>
+	<tr class="selectable" id="cid-207">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/ec/ecdf10ec30df4d49_76060ab2343d62ff2ff80275f0a2e2b9">graphics/effect.dx11/managed/space/specialfx/particles/dynamic/1layerdynwithnebula.sm_depth</a><br></td>
+		<td>14 -> 14</td>
+	</tr>
+	<tr class="selectable" id="cid-208">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/18/180d8c2f4475e463_90c403b7be628eb723e5ea08a11db275">graphics/effect.dx11/managed/space/specialfx/particles/dynamic/2layerdynmaskv2.sm_depth</a><br></td>
+		<td>15 -> 15</td>
+	</tr>
+	<tr class="selectable" id="cid-209">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/65/654ba697a7715706_4b8e4cb11a8949569cb477d772158b6c">graphics/effect.dx11/managed/space/specialfx/particles/static/1layernoatlasv2.sm_depth</a><br></td>
+		<td>9 -> 9</td>
+	</tr>
+	<tr class="selectable" id="cid-210">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/4f/4fed34582be78364_4a5b2337c6211f0f18b4b1dee2e27eda">graphics/effect.dx11/managed/space/specialfx/particles/static/1layerv2.sm_depth</a><br></td>
+		<td>10 -> 10</td>
+	</tr>
+	<tr class="selectable" id="cid-211">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/22/22434e68a70ef602_3241626c3fcc714617f22f96b2180c46">graphics/effect.dx11/managed/space/specialfx/particles/static/2layermodulatenoatlasv2.sm_depth</a><br></td>
+		<td>10 -> 10</td>
+	</tr>
+	<tr class="selectable" id="cid-212">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/c2/c2c38f528f47b098_b95223cefaabd2f672852e9e6de289fb">graphics/effect.dx11/managed/space/specialfx/particles/static/2layermodulatev2.sm_depth</a><br></td>
+		<td>11 -> 11</td>
+	</tr>
+	<tr class="selectable" id="cid-213">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/13/137cfb5dbf12a90b_9ae542e662aa1d599065ec83ec3ade3b">graphics/effect.dx11/managed/space/specialfx/particles/static/simplecircularfalloff.sm_depth</a><br></td>
+		<td>8 -> 8</td>
+	</tr>
+	<tr class="selectable" id="cid-214">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/de/dee1a74068532fee_9e72cb3f1364247e3582414b257a6f90">graphics/effect.dx11/managed/space/specialfx/stretch/laser.sm_depth</a><br></td>
+		<td>20 -> 20</td>
+	</tr>
+	<tr class="selectable" id="cid-215">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/43/4377e340f202abe8_a6bf93bb9bd7ab2177a2f567907b25ae">graphics/effect.dx11/managed/space/specialfx/twocolorflare.sm_depth</a><br></td>
+		<td>6 -> 6</td>
+	</tr>
+	<tr class="selectable" id="cid-216">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/f3/f32a21834156e6b9_1307594e44e8d27a649c04d28b1c28f1">graphics/effect.dx9/managed/space/booster/boostervolumetric.sm_depth</a><br></td>
+		<td>9 -> 9</td>
+	</tr>
+	<tr class="selectable" id="cid-217">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/c7/c7d8b78ef1446fae_48c23f31cb4aec58f52bfb1494a85a78">graphics/effect.dx9/managed/space/planet/solarflare.sm_depth</a><br></td>
+		<td>5 -> 5</td>
+	</tr>
+	<tr class="selectable" id="cid-218">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/c8/c89ecd63a8871d5f_ead35d83c76b01aeab9d72e6ffc06ae9">graphics/effect.dx9/managed/space/planet/solarflareanimated.sm_depth</a><br></td>
+		<td>5 -> 5</td>
+	</tr>
+	<tr class="selectable" id="cid-219">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/83/8362a12fdfe8e25d_a932473489a01dbdf68b61c50504498f">graphics/effect.dx9/managed/space/postprocess/downsampledepth.sm_depth</a><br></td>
+		<td>0 -> 0</td>
+	</tr>
+	<tr class="selectable" id="cid-220">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/9c/9ca23845a1fc163b_a932473489a01dbdf68b61c50504498f">graphics/effect.dx9/managed/space/postprocess/downsampledepth.sm_hi</a><br></td>
+		<td>0 -> 0</td>
+	</tr>
+	<tr class="selectable" id="cid-221">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/9c/9ca23445a1fc0fe9_a932473489a01dbdf68b61c50504498f">graphics/effect.dx9/managed/space/postprocess/downsampledepth.sm_lo</a><br></td>
+		<td>0 -> 0</td>
+	</tr>
+	<tr class="selectable" id="cid-222">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/23/23068307a1d62b78_274ede47a66aa96add6da706b768d801">graphics/effect.dx9/managed/space/postprocess/environmentfogcolor.sm_depth</a><br></td>
+		<td>1 -> 1</td>
+	</tr>
+	<tr class="selectable" id="cid-223">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/e2/e2a28e8c47bb77ec_274ede47a66aa96add6da706b768d801">graphics/effect.dx9/managed/space/postprocess/environmentfogcolor.sm_hi</a><br></td>
+		<td>1 -> 1</td>
+	</tr>
+	<tr class="selectable" id="cid-224">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/e2/e2a28a8c47bb70d6_274ede47a66aa96add6da706b768d801">graphics/effect.dx9/managed/space/postprocess/environmentfogcolor.sm_lo</a><br></td>
+		<td>1 -> 1</td>
+	</tr>
+	<tr class="selectable" id="cid-225">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/1b/1b6cb4841e9d9495_e45725a94a6bfab49e1aa0f42fef2a80">graphics/effect.dx9/managed/space/postprocess/environmentfogcomposit.sm_depth</a><br></td>
+		<td>3 -> 3</td>
+	</tr>
+	<tr class="selectable" id="cid-226">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/f7/f7dc40ab27694670_d141302ffa67cb2380b2eb52896da548">graphics/effect.dx9/managed/space/spaceobject/v5/organic/asteroidv5.sm_depth</a><br></td>
+		<td>14 -> 10</td>
+	</tr>
+	<tr class="selectable" id="cid-227">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/28/2844f08ad5735ca4_585fb8fd8a5db74478e428b57ff43057">graphics/effect.dx9/managed/space/spaceobject/v5/organic/asteroidv5.sm_hi</a><br></td>
+		<td>12 -> 8</td>
+	</tr>
+	<tr class="selectable" id="cid-228">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/28/2844ec8ad573566e_476a471a2118d641f4313cd5f5872c84">graphics/effect.dx9/managed/space/spaceobject/v5/organic/asteroidv5.sm_lo</a><br></td>
+		<td>4 -> 3</td>
+	</tr>
+	<tr class="selectable" id="cid-229">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/a7/a73406bf06dcd280_250056804dcdf54a3055c9765dc36c81">graphics/effect.dx9/managed/space/spaceobject/v5/organic/unpacked_asteroidv5.sm_depth</a><br></td>
+		<td>11 -> 10</td>
+	</tr>
+	<tr class="selectable" id="cid-230">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/43/4370830e1193be14_28f1ca54ed4526c23bb1a9e83f26710e">graphics/effect.dx9/managed/space/spaceobject/v5/organic/unpacked_asteroidv5.sm_hi</a><br></td>
+		<td>8 -> 8</td>
+	</tr>
+	<tr class="selectable" id="cid-231">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/43/43707f0e1193b7de_4fc23b34cfc8057582048316dd6183da">graphics/effect.dx9/managed/space/spaceobject/v5/organic/unpacked_asteroidv5.sm_lo</a><br></td>
+		<td>7 -> 3</td>
+	</tr>
+	<tr class="selectable" id="cid-232">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/59/59abf410a8e1d9f4_e423edff58023d64c500e88ccfb2fd5f">graphics/effect.dx9/managed/space/spaceobject/v5/quad/quadsailsv5.sm_depth</a><br></td>
+		<td>9 -> 9</td>
+	</tr>
+	<tr class="selectable" id="cid-233">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/52/52ebefbc277aaa68_8f14ae1174e4c7fd18485ee7580d142a">graphics/effect.dx9/managed/space/spaceobject/v5/quad/quadsailsv5.sm_hi</a><br></td>
+		<td>7 -> 7</td>
+	</tr>
+	<tr class="selectable" id="cid-234">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/93/938bdefa5eb420df_5f2d3886babe6f462f14bf2ff979b308">graphics/effect.dx9/managed/space/spaceobject/v5/quad/skinned_quadsailsv5.sm_depth</a><br></td>
+		<td>10 -> 10</td>
+	</tr>
+	<tr class="selectable" id="cid-235">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/47/47dae3e46eabcb29_63c77415b3bcf6b65897b0c5798ddc5a">graphics/effect.dx9/managed/space/spaceobject/v5/quad/skinned_quadsailsv5.sm_hi</a><br></td>
+		<td>8 -> 7</td>
+	</tr>
+	<tr class="selectable" id="cid-236">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/0a/0ab78cbf12b2af68_6164907452f87923b61ee3868fca42cb">graphics/effect.dx9/managed/space/spaceobject/v5/quad/unpacked_quadsailsv5.sm_depth</a><br></td>
+		<td>10 -> 9</td>
+	</tr>
+	<tr class="selectable" id="cid-237">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/01/0104a8b171d4fdfc_ddd2c852237a5f1b2aa3da8547cc5907">graphics/effect.dx9/managed/space/spaceobject/v5/quad/unpacked_quadsailsv5.sm_hi</a><br></td>
+		<td>7 -> 7</td>
+	</tr>
+	<tr class="selectable" id="cid-238">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/a9/a99947717012bed2_4a3add278f8f722ce27d601d579a5f9b">graphics/effect.dx9/managed/space/spaceobject/v5/quad/unpackedskinned_quadsailsv5.sm_depth</a><br></td>
+		<td>10 -> 10</td>
+	</tr>
+	<tr class="selectable" id="cid-239">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/3b/3bead012362fa972_1347a6eb83536838eca7aa4bb00f5b02">graphics/effect.dx9/managed/space/spaceobject/v5/quad/unpackedskinned_quadsailsv5.sm_hi</a><br></td>
+		<td>8 -> 8</td>
+	</tr>
+	<tr class="selectable" id="cid-240">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/4e/4ef105cc99895fe8_783ed39b61af752f43e5481b469ca94f">graphics/effect.dx9/managed/space/specialfx/gradientcircle.sm_depth</a><br></td>
+		<td>2 -> 2</td>
+	</tr>
+	<tr class="selectable" id="cid-241">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/46/4678696aa0fae928_55801f503bcd9404bac31e82cd422254">graphics/effect.dx9/managed/space/specialfx/particles/dynamic/1layerdynanimv2.sm_depth</a><br></td>
+		<td>4 -> 4</td>
+	</tr>
+	<tr class="selectable" id="cid-242">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/ab/ab21623caf3429f6_5ed456f96856d8d0b809c1f07efa9088">graphics/effect.dx9/managed/space/specialfx/particles/dynamic/1layerdyndistortionv2.sm_depth</a><br></td>
+		<td>6 -> 6</td>
+	</tr>
+	<tr class="selectable" id="cid-243">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/0f/0ff79a10ce74be75_cccb108825c363323340f9d369783acd">graphics/effect.dx9/managed/space/specialfx/particles/dynamic/1layerdynv2.sm_depth</a><br></td>
+		<td>5 -> 5</td>
+	</tr>
+	<tr class="selectable" id="cid-244">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/33/33b06aabf829544e_b8aeb2fc30d96311470bafe2fe855221">graphics/effect.dx9/managed/space/specialfx/particles/dynamic/1layerdynwithnebula.sm_depth</a><br></td>
+		<td>5 -> 5</td>
+	</tr>
+	<tr class="selectable" id="cid-245">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/be/be6e1fae7bd38c28_13b4b9819ec0d67e8c066c817ccd0309">graphics/effect.dx9/managed/space/specialfx/particles/dynamic/2layerdynmaskv2.sm_depth</a><br></td>
+		<td>5 -> 5</td>
+	</tr>
+	<tr class="selectable" id="cid-246">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/28/28f966c12807bd13_0b8e4779e378f72e495995e863998443">graphics/effect.dx9/managed/space/specialfx/particles/static/1layernoatlasv2.sm_depth</a><br></td>
+		<td>3 -> 3</td>
+	</tr>
+	<tr class="selectable" id="cid-247">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/b8/b84097a767b2e6df_51e02d75b9dbf224acaf2faa351b02d8">graphics/effect.dx9/managed/space/specialfx/particles/static/1layerv2.sm_depth</a><br></td>
+		<td>3 -> 3</td>
+	</tr>
+	<tr class="selectable" id="cid-248">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/ae/ae0a837ba79adfeb_539beaed41b5a1649ca2fad39f094650">graphics/effect.dx9/managed/space/specialfx/particles/static/2layermodulatenoatlasv2.sm_depth</a><br></td>
+		<td>3 -> 3</td>
+	</tr>
+	<tr class="selectable" id="cid-249">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/c7/c7d1feeb38585577_58e5b36e02195e490ec936aba6e3a6fa">graphics/effect.dx9/managed/space/specialfx/particles/static/2layermodulatev2.sm_depth</a><br></td>
+		<td>4 -> 4</td>
+	</tr>
+	<tr class="selectable" id="cid-250">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/52/52f60a5a07faccae_d7c7859e9d986a792b21aac94a440d43">graphics/effect.dx9/managed/space/specialfx/particles/static/simplecircularfalloff.sm_depth</a><br></td>
+		<td>2 -> 2</td>
+	</tr>
+	<tr class="selectable" id="cid-251">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/7a/7aaa033a187f4c9d_511a329e8133fc80dc2779d71e4994e8">graphics/effect.dx9/managed/space/specialfx/stretch/laser.sm_depth</a><br></td>
+		<td>6 -> 6</td>
+	</tr>
+	<tr class="selectable" id="cid-252">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/3a/3abc54ec9e37ff3b_70a9d2c33e2995b27a418338147031b8">graphics/effect.dx9/managed/space/specialfx/twocolorflare.sm_depth</a><br></td>
+		<td>1 -> 1</td>
+	</tr>
+	<tr class="selectable" id="cid-253">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/d1/d17d1aa58701bd81_b180f48ae84401f5d19ae1502eb57c8e">graphics/effect.gles2/managed/space/booster/boostervolumetric.sm_depth</a><br></td>
+		<td>24 -> 24</td>
+	</tr>
+	<tr class="selectable" id="cid-254">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/89/896ffe86ee4e5a86_f06aa045169246f017fde9c804116117">graphics/effect.gles2/managed/space/planet/solarflare.sm_depth</a><br></td>
+		<td>10 -> 12</td>
+	</tr>
+	<tr class="selectable" id="cid-255">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/21/213ab355d565e5a7_2cac8614349a801a1433118d2329b3d8">graphics/effect.gles2/managed/space/planet/solarflareanimated.sm_depth</a><br></td>
+		<td>15 -> 15</td>
+	</tr>
+	<tr class="selectable" id="cid-256">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/b3/b35208ce626c15b5_cb4877cb5a8903270bbf4b298e2e90ff">graphics/effect.gles2/managed/space/postprocess/downsampledepth.sm_depth</a><br></td>
+		<td>1 -> 3</td>
+	</tr>
+	<tr class="selectable" id="cid-257">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/ed/ede15eda143e1a33_cb4877cb5a8903270bbf4b298e2e90ff">graphics/effect.gles2/managed/space/postprocess/downsampledepth.sm_hi</a><br></td>
+		<td>1 -> 3</td>
+	</tr>
+	<tr class="selectable" id="cid-258">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/ed/ede15ada143e13e1_cb4877cb5a8903270bbf4b298e2e90ff">graphics/effect.gles2/managed/space/postprocess/downsampledepth.sm_lo</a><br></td>
+		<td>1 -> 3</td>
+	</tr>
+	<tr class="selectable" id="cid-259">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/9f/9f021eb6919d32c0_22a0fc93c72acdfd22c71931fa97b974">graphics/effect.gles2/managed/space/postprocess/environmentfogcolor.sm_depth</a><br></td>
+		<td>4 -> 4</td>
+	</tr>
+	<tr class="selectable" id="cid-260">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/07/07886ce085d12854_22a0fc93c72acdfd22c71931fa97b974">graphics/effect.gles2/managed/space/postprocess/environmentfogcolor.sm_hi</a><br></td>
+		<td>4 -> 4</td>
+	</tr>
+	<tr class="selectable" id="cid-261">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/07/078868e085d1211e_22a0fc93c72acdfd22c71931fa97b974">graphics/effect.gles2/managed/space/postprocess/environmentfogcolor.sm_lo</a><br></td>
+		<td>4 -> 4</td>
+	</tr>
+	<tr class="selectable" id="cid-262">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/b8/b8988f463b478e9d_761e6d4a3795c150244090461a7d3930">graphics/effect.gles2/managed/space/postprocess/environmentfogcomposit.sm_depth</a><br></td>
+		<td>6 -> 7</td>
+	</tr>
+	<tr class="selectable" id="cid-263">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/c4/c4cf034c1cfeb2c8_353ef00117988b625c04d0cecd1ec7cc">graphics/effect.gles2/managed/space/spaceobject/v5/organic/asteroidv5.sm_depth</a><br></td>
+		<td>34 -> 22</td>
+	</tr>
+	<tr class="selectable" id="cid-264">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/1b/1b156dd97a3b13dc_2234e9879db693b1a3d5ac787abfb80c">graphics/effect.gles2/managed/space/spaceobject/v5/organic/asteroidv5.sm_hi</a><br></td>
+		<td>29 -> 18</td>
+	</tr>
+	<tr class="selectable" id="cid-265">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/1b/1b1569d97a3b0c86_41826036117a4935e8ac27ce33d8a301">graphics/effect.gles2/managed/space/spaceobject/v5/organic/asteroidv5.sm_lo</a><br></td>
+		<td>10 -> 8</td>
+	</tr>
+	<tr class="selectable" id="cid-266">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/e1/e136699a62ce04d8_f5502fbc6e67f862ad12a0e7299cc2c5">graphics/effect.gles2/managed/space/spaceobject/v5/organic/unpacked_asteroidv5.sm_depth</a><br></td>
+		<td>24 -> 22</td>
+	</tr>
+	<tr class="selectable" id="cid-267">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/f7/f7f3e5b5de9629cc_a3ec2d76fa4c99ba6e971bcbdf8068cb">graphics/effect.gles2/managed/space/spaceobject/v5/organic/unpacked_asteroidv5.sm_hi</a><br></td>
+		<td>19 -> 17</td>
+	</tr>
+	<tr class="selectable" id="cid-268">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/f7/f7f3e1b5de9622b6_95dd67fabc6e363886d9a5cc7033bdb5">graphics/effect.gles2/managed/space/spaceobject/v5/organic/unpacked_asteroidv5.sm_lo</a><br></td>
+		<td>16 -> 7</td>
+	</tr>
+	<tr class="selectable" id="cid-269">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/b4/b464a6148cdac43c_0b62485dc4aa5d26f02131b4ed24a728">graphics/effect.gles2/managed/space/spaceobject/v5/quad/quadsailsv5.sm_depth</a><br></td>
+		<td>22 -> 22</td>
+	</tr>
+	<tr class="selectable" id="cid-270">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/62/6284cd9ba2c827f0_8921268fd349090b31795bf7fa377d9c">graphics/effect.gles2/managed/space/spaceobject/v5/quad/quadsailsv5.sm_hi</a><br></td>
+		<td>17 -> 17</td>
+	</tr>
+	<tr class="selectable" id="cid-271">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/f2/f29d5e3e99afacf7_83cd926f84d2aa260d4fc90babc3144d">graphics/effect.gles2/managed/space/spaceobject/v5/quad/skinned_quadsailsv5.sm_depth</a><br></td>
+		<td>23 -> 23</td>
+	</tr>
+	<tr class="selectable" id="cid-272">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/23/23d207656bc80bc1_b72c28c4970b238e29e795adc016208b">graphics/effect.gles2/managed/space/spaceobject/v5/quad/skinned_quadsailsv5.sm_hi</a><br></td>
+		<td>18 -> 18</td>
+	</tr>
+	<tr class="selectable" id="cid-273">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/5e/5ec4b59cd1f8e410_86d89042e7eef5f214798493618706b5">graphics/effect.gles2/managed/space/spaceobject/v5/quad/unpacked_quadsailsv5.sm_depth</a><br></td>
+		<td>22 -> 22</td>
+	</tr>
+	<tr class="selectable" id="cid-274">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/84/84dc38949acf12c4_90cc5ad231ea930aaf9b19d501126ea7">graphics/effect.gles2/managed/space/spaceobject/v5/quad/unpacked_quadsailsv5.sm_hi</a><br></td>
+		<td>17 -> 17</td>
+	</tr>
+	<tr class="selectable" id="cid-275">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/3e/3e10e44ac059ff6a_c5f6cbe70366b1b8228e95aacb54b2ce">graphics/effect.gles2/managed/space/spaceobject/v5/quad/unpackedskinned_quadsailsv5.sm_depth</a><br></td>
+		<td>23 -> 23</td>
+	</tr>
+	<tr class="selectable" id="cid-276">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/80/8029eaaabb10fb4a_b02ef214c310cc295f941d0645c86fb0">graphics/effect.gles2/managed/space/spaceobject/v5/quad/unpackedskinned_quadsailsv5.sm_hi</a><br></td>
+		<td>18 -> 18</td>
+	</tr>
+	<tr class="selectable" id="cid-277">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/b1/b182d4298f5dab30_f8c3b487384b79e723076c91dde495bc">graphics/effect.gles2/managed/space/specialfx/gradientcircle.sm_depth</a><br></td>
+		<td>4 -> 5</td>
+	</tr>
+	<tr class="selectable" id="cid-278">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/47/4795bedcdbfeab10_47a2fa64022da8607b7f0278c3a383d9">graphics/effect.gles2/managed/space/specialfx/particles/dynamic/1layerdynanimv2.sm_depth</a><br></td>
+		<td>11 -> 12</td>
+	</tr>
+	<tr class="selectable" id="cid-279">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/89/8965eac2c28edc7e_0ab7002456767a8b225a1f3ffd5df6cd">graphics/effect.gles2/managed/space/specialfx/particles/dynamic/1layerdyndistortionv2.sm_depth</a><br></td>
+		<td>18 -> 18</td>
+	</tr>
+	<tr class="selectable" id="cid-280">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/9e/9e90250c7102814d_aecdf0f25150e39299592d3dfb3e2b17">graphics/effect.gles2/managed/space/specialfx/particles/dynamic/1layerdynv2.sm_depth</a><br></td>
+		<td>12 -> 12</td>
+	</tr>
+	<tr class="selectable" id="cid-281">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/13/1369ca4a1451c006_76c94c8151b833f75945df34c5557310">graphics/effect.gles2/managed/space/specialfx/particles/dynamic/1layerdynwithnebula.sm_depth</a><br></td>
+		<td>12 -> 12</td>
+	</tr>
+	<tr class="selectable" id="cid-282">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/02/028794d5a975d2a0_c93ca589c9f1239229c11649d53bbe00">graphics/effect.gles2/managed/space/specialfx/particles/dynamic/2layerdynmaskv2.sm_depth</a><br></td>
+		<td>11 -> 12</td>
+	</tr>
+	<tr class="selectable" id="cid-283">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/0e/0ec43e9324e7ac9b_e195ac6ba0c9d2831d1932a1b75a4afd">graphics/effect.gles2/managed/space/specialfx/particles/static/1layernoatlasv2.sm_depth</a><br></td>
+		<td>7 -> 8</td>
+	</tr>
+	<tr class="selectable" id="cid-284">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/be/be4988a122ef2047_db287d1003b5d7e96a53b38d84054625">graphics/effect.gles2/managed/space/specialfx/particles/static/1layerv2.sm_depth</a><br></td>
+		<td>9 -> 9</td>
+	</tr>
+	<tr class="selectable" id="cid-285">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/8a/8aaf2774055c8063_8222ddae18953fd4714e8d448df91432">graphics/effect.gles2/managed/space/specialfx/particles/static/2layermodulatenoatlasv2.sm_depth</a><br></td>
+		<td>8 -> 9</td>
+	</tr>
+	<tr class="selectable" id="cid-286">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/11/114d67b3d9ebcb4f_8dbdbcc8250312aa55f4c90d681d9c73">graphics/effect.gles2/managed/space/specialfx/particles/static/2layermodulatev2.sm_depth</a><br></td>
+		<td>10 -> 10</td>
+	</tr>
+	<tr class="selectable" id="cid-287">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/41/41c017163ff4d366_46a4134f5f176285f5f27fad278c4e3e">graphics/effect.gles2/managed/space/specialfx/particles/static/simplecircularfalloff.sm_depth</a><br></td>
+		<td>6 -> 7</td>
+	</tr>
+	<tr class="selectable" id="cid-288">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/0a/0a925cf4f643d325_4362a005b71e5aea429d7939a72cb4cb">graphics/effect.gles2/managed/space/specialfx/stretch/laser.sm_depth</a><br></td>
+		<td>16 -> 16</td>
+	</tr>
+	<tr class="selectable" id="cid-289">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/c4/c4fa4f991e00b2e3_f0c40f95bcc3c9c286509c0241cd2629">graphics/effect.gles2/managed/space/specialfx/twocolorflare.sm_depth</a><br></td>
+		<td>5 -> 6</td>
+	</tr>
+	<tr class="selectable" id="cid-290">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/f7/f781e479bccfd00e_2a565eb7139c0899cab70e940252cefc">localizationfsd/localization_fsd_de.pickle</a><br></td>
+		<td>12588 -> 12588</td>
+	</tr>
+	<tr class="selectable" id="cid-291">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/2c/2c3038b3c38e91a1_bea80cfbf155bd029defb289f9dfe412">localizationfsd/localization_fsd_en-us.pickle</a><br></td>
+		<td>11431 -> 11438</td>
+	</tr>
+	<tr class="selectable" id="cid-292">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/4a/4a0f5fe70b667169_2f58665ee38d7a4f6e474e6a7309aa60">localizationfsd/localization_fsd_fr.pickle</a><br></td>
+		<td>12609 -> 12609</td>
+	</tr>
+	<tr class="selectable" id="cid-293">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/79/79a473897ae5f3b0_04a7acf538159c8f725a13020a681077">localizationfsd/localization_fsd_main.pickle</a><br></td>
+		<td>2073 -> 2073</td>
+	</tr>
+	<tr class="selectable" id="cid-294">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/4c/4c56e191aaa0e618_f85086f23c39f77afdf103d4f0e2bc05">localizationfsd/localization_fsd_ru.pickle</a><br></td>
+		<td>45184 -> 45184</td>
+	</tr>
+	<tr class="selectable" id="cid-295">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/f0/f016514b481ba503_1fea35e2d914ac61a8f715f068023a83">staticdata/blueprints.static</a><br></td>
+		<td>4345 -> 4345</td>
+	</tr>
+	<tr class="selectable" id="cid-296">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/b8/b8efe23150d6f26f_55276420a131309f4c74694189011d68">staticdata/bracketsbytype.static</a><br></td>
+		<td>7 -> 7</td>
+	</tr>
+	<tr class="selectable" id="cid-297">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/b1/b1ba33e51fb68ec7_931cd0e703d1aadcde2411ac34fd6950">staticdata/crates.static</a><br></td>
+		<td>21 -> 21</td>
+	</tr>
+	<tr class="selectable" id="cid-298">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/f9/f9f241d8c3a11761_6a545d919c20672faedaedd8eec298e4">staticdata/dbuffcollections.static</a><br></td>
+		<td>36 -> 36</td>
+	</tr>
+	<tr class="selectable" id="cid-299">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/e9/e9bad7ecd80e0d2c_4e780d4239d36978c3b05acf718f39b1">staticdata/dialogs.static</a><br></td>
+		<td>270 -> 270</td>
+	</tr>
+	<tr class="selectable" id="cid-300">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/9a/9adf983d033ba1a3_faff3f835cdd9bb899de20017f47a05d">staticdata/evecategories.static</a><br></td>
+		<td>10 -> 10</td>
+	</tr>
+	<tr class="selectable" id="cid-301">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/0b/0b577d4609680827_5cbb1033099fb282e04174d9bd3f8a0e">staticdata/evegroups.static</a><br></td>
+		<td>389 -> 389</td>
+	</tr>
+	<tr class="selectable" id="cid-302">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/67/671695e3a499baf0_291ba73c8b104af1fa3d3ca7a9ccc202">staticdata/evetypes.static</a><br></td>
+		<td>12435 -> 12448</td>
+	</tr>
+	<tr class="selectable" id="cid-303">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/dd/ddec335c5166e1ce_dd702d5444d0064c1323592ec004649c">staticdata/skinlicenses.static</a><br></td>
+		<td>1076 -> 1081</td>
+	</tr>
+	<tr class="selectable" id="cid-304">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/04/04fe8caf2896e754_aee9ef861984607518a63a8b20a201b3">staticdata/skinmaterials.static</a><br></td>
+		<td>27 -> 27</td>
+	</tr>
+	<tr class="selectable" id="cid-305">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/cb/cb291acd32af7f27_50512627b3e9a407b9fc74954e61ee08">staticdata/skins.static</a><br></td>
+		<td>1403 -> 1426</td>
+	</tr>
+	<tr class="selectable" id="cid-306">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/eb/eb27156c7577063f_fe468ee4e928d8e6352be7749ef117b7">staticdata/spacecomponents.static</a><br></td>
+		<td>129 -> 129</td>
+	</tr>
+	<tr class="selectable" id="cid-307">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/ee/eea80354bae9a691_fa2e065588858a6212f749b701308ac3">resfiledependencies.yaml</a><br></td>
+		<td>3464 -> 3464</td>
+	</tr>
+	<tr class="selectable" id="cid-308">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/1d/1d34143a37d4b739_2713e3783c7e161fe49190fe3df58efe">resfileindex.txt</a><br></td>
+		<td>11524 -> 11527</td>
+	</tr>
+	<tr class="selectable" id="cid-309">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/56/5610a6eb8b5a4975_1b4b034fbff9796435f409e3900a3189">resfileindex_prefetch.txt</a><br></td>
+		<td>1118 -> 1120</td>
+	</tr>
+	<tr class="selectable" id="cid-310">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/e3/e3cd8a97159e6321_374e64ff1a7bc7e65404fbac9de90723">start.ini</a><br></td>
+		<td>0 -> 0</td>
+	</tr>
+	</table>
+</details>
+
+<!--<h2 id="changedfiles">Removed Files</h2>-->
+
+<!-- [[removedFilesSection]] -->
+
+<!--<h2 id="changedpythonfiles">Changed Python Files</h2>-->
+
+<!-- [[changedPythonFiles]] -->
+
+<p class="mini2">Made by Inomares. I don't want your donations. I don't read EVE mails. Leave me alone.</p>
+<p class="mini3">I guess contact me on <a href="https://tweetfleet.slack.com/messages/@inomares/">Tweetfleet Slack</a> if you really need to.</p>
+<div class="footer1 footer" id="footer1" onClick="test123();"></div>
+<div class="footer2 footer" id="footer2"></div>
+
+<script>
+	var nodes = document.getElementsByClassName("noscripthidden")
+	for (var i=0; i < nodes.length; i++) {
+		var node = nodes[i]
+		node.classList.remove("noscripthidden")
+	}
+</script>
+</body>
+</html>
