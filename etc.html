@@ -36,7 +36,8 @@
 				Minutes: <input type="number" id="input_mm" value="0" min="0" max="59" onfocus="this.select()" onmouseup="return false"><br>
 				Reverse: <input type="checkbox" id="input_reverse" onclick="toggleReverse(this)"><input type="number" id="input_reversepct" value="1" min="0" max="99" disabled onfocus="this.select()" onmouseup="return false">% into timer <span class="hoverable" title="If the structure is currently vulnerable, this option allows you to figure out when the timer started. Simply input the time left on the vulnerability, and approximately how far into the timer it looks to be.">(?)</span><br>
 			</form>
-			<p>Your timer <span id="iswas"></span> at: <span><input type="text" id="dateDisplay" onfocus="this.select()" onmouseup="return false" size="22" readonly></span> <input type="button" name="copyDate" value="Copy to clipboard" onclick="copyDateToClipboard()"></p>
+			<p>Your timer <span id="iswas"></span> at: <span><input type="text" id="dateDisplay" onfocus="this.select()" onmouseup="return false" size="22" readonly></span> UTC <input type="button" name="copyDate" value="Copy to clipboard" onclick="copyDateToClipboard(false)"></p>
+			<p>Or in local time: <span><input type="text" id="dateDisplayLocal" onfocus="this.select()" onmouseup="return false" size="22" readonly></span> <input type="button" name="copyDateLocal" value="Copy to clipboard" onclick="copyDateToClipboard(true)"></p>
 		</div>
 		<noscript>
 			<p>Page requires javascript to function.</p>
@@ -44,9 +45,22 @@
 		<script>
 			var timerUpdateInterval = 300 //Timer update interval in ms
 			var evetimeUpdateInterval = 1000
+			var secLength = 1000
+			var minuteLength = secLength * 60
+			var hourLength = minuteLength * 60
+			var dayLength = hourLength * 24
+			var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+			var days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+			
+			function pad(n, width, z) {
+				z = z || '0';
+				n = n + '';
+				return n.length >= width ? n : new Array(width - n.length + 1).join(z) + n;
+			}
 			
 			function toggleReverse(cb) {
 				document.getElementById("input_reversepct").disabled = !cb.checked
+				updateTimer()
 			}
 			
 			function resetFields() {
@@ -58,18 +72,19 @@
 				document.getElementById("input_reversepct").disabled = true
 			}
 			
-			function copyDateToClipboard() {
-				var dateDisplay = document.getElementById("dateDisplay")
+			function copyDateToClipboard(local) {
+				var dateDisplay = null
+				if (!local) {
+					dateDisplay = document.getElementById("dateDisplay")
+				} else {
+					dateDisplay = document.getElementById("dateDisplayLocal")
+				}
 				dateDisplay.select()
 				document.execCommand('copy')
 			}
 			
 			function updateTimer() {
-				var secLength = 1000
-				var minuteLength = secLength * 60
-				var hourLength = minuteLength * 60
-				var dayLength = hourLength * 24
-				
+			
 				var daysSelected = document.getElementById("input_dd").value
 				var hoursSelected = document.getElementById("input_hh").value
 				var minutesSelected = document.getElementById("input_mm").value
@@ -90,10 +105,20 @@
 					timerDate = new Date(now - (originalTimer - timerLength))
 					document.getElementById("iswas").innerHTML = "was"
 				}
+				
 				var timerString = timerDate.toUTCString()
 				timerString = timerString.slice(0,-7)
+				
+				var localTimerString = ""
+				localTimerString += days[timerDate.getDay()] + ", "
+				localTimerString += pad(timerDate.getDate(), 2) + " "
+				localTimerString += months[timerDate.getMonth()] + " "
+				localTimerString += timerDate.getFullYear() + " "
+				localTimerString += timerDate.toLocaleTimeString().slice(0,-3)
+				
 				if (timerString != document.getElementById("dateDisplay").innerHTML) {
 					document.getElementById("dateDisplay").value = timerString
+					document.getElementById("dateDisplayLocal").value = localTimerString
 				}
 			}
 			
