@@ -1,0 +1,119 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<style>
+			p, form {
+				font-family: arial, tahoma, sans-serif;
+			}
+			
+			.noscripthidden {
+				display: none;
+			}
+			
+			.hoverable {
+				border-bottom: 1px dotted black;
+			}
+			
+			input[type=number]{
+				width: 30px;
+				-moz-appearance: textfield;
+			} 
+			input[type="number"]::-webkit-outer-spin-button,
+			input[type="number"]::-webkit-inner-spin-button {
+				-webkit-appearance: none;
+				margin: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="noscripthidden">
+			<p>Current EVE (UTC) Time: <span id="evetime"></span></p>
+			<form action="">
+				Days: <input type="number" id="input_dd" value="0" min="0" max="6" size="2" onfocus="this.select()" onmouseup="return false"><br>
+				Hours: <input type="number" id="input_hh" value="0" min="0" max="23" onfocus="this.select()" onmouseup="return false"><br>
+				Minutes: <input type="number" id="input_mm" value="0" min="0" max="59" onfocus="this.select()" onmouseup="return false"><br>
+				Reverse: <input type="checkbox" id="input_reverse" onclick="toggleReverse(this)"><input type="number" id="input_reversepct" value="1" min="0" max="99" disabled onfocus="this.select()" onmouseup="return false">% into timer <span class="hoverable" title="If the structure is currently vulnerable, this option allows you to figure out when the timer started. Simply input the time left on the vulnerability, and approximately how far into the timer it looks to be.">(?)</span></br>
+			</form>
+			<p>Your timer <span id="iswas"></span> at: <span id=""><input type="text" id="dateDisplay" onfocus="this.select()" onmouseup="return false" style="width:150" readonly></span> <input type="button" name="copyDate" value="Copy to clipboard" onclick="copyDateToClipboard()"></p>
+		</div>
+		<noscript>
+			<p>Page requires javascript to function.</p>
+		</noscript>
+	</body>
+	<script>
+		var timerUpdateInterval = 300 //Timer update interval in ms
+		var evetimeUpdateInterval = 1000
+		
+		function toggleReverse(cb) {
+			document.getElementById("input_reversepct").disabled = !cb.checked
+		}
+		
+		function resetFields() {
+			document.getElementById("input_dd").value = 0
+			document.getElementById("input_hh").value = 0
+			document.getElementById("input_mm").value = 0
+			document.getElementById("input_reverse").checked = false
+			document.getElementById("input_reversepct").value = 0
+			document.getElementById("input_reversepct").disabled = true
+		}
+		
+		function copyDateToClipboard() {
+			var dateDisplay = document.getElementById("dateDisplay")
+			dateDisplay.select()
+			document.execCommand('copy')
+		}
+		
+		function updateTimer() {
+			var secLength = 1000
+			var minuteLength = secLength * 60
+			var hourLength = minuteLength * 60
+			var dayLength = hourLength * 24
+			
+			var daysSelected = document.getElementById("input_dd").value
+			var hoursSelected = document.getElementById("input_hh").value
+			var minutesSelected = document.getElementById("input_mm").value
+			var shouldReverse = document.getElementById("input_reverse").checked
+			var reversePct = document.getElementById("input_reversepct").value
+			var now = new Date().getTime()
+			var timerLength = 0
+			
+			timerLength += daysSelected * dayLength
+			timerLength += hoursSelected * hourLength
+			timerLength += minutesSelected * minuteLength
+			
+			if (!shouldReverse) {
+				var timerDate = new Date(now + timerLength)
+				document.getElementById("iswas").innerHTML = "is"
+			} else {
+				var originalTimer = timerLength / (1- reversePct / 100)
+				timerDate = new Date(now - (originalTimer - timerLength))
+				document.getElementById("iswas").innerHTML = "was"
+			}
+			var timerString = timerDate.toUTCString()
+			timerString = timerString.slice(0,-7)
+			if (timerString != document.getElementById("dateDisplay").innerHTML) {
+				document.getElementById("dateDisplay").value = timerString
+			}
+		}
+		
+		function updateEVETime() {
+			var d = new Date()
+			ds = d.toUTCString()
+			ds = ds.slice(17,-7)
+			document.getElementById("evetime").innerHTML = ds
+		}
+		
+		updateEVETime()
+		resetFields()
+		updateTimer()
+		
+		var nodes = document.getElementsByClassName("noscripthidden")
+		for (var i=0; i < nodes.length; i++) {
+			var node = nodes[i]
+			node.classList.remove("noscripthidden")
+		}
+		
+		setInterval(updateTimer, timerUpdateInterval)
+		setInterval(updateEVETime, evetimeUpdateInterval)
+	</script>
+</html>
