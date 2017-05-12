@@ -1,0 +1,1759 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hoboleaks: Chaos_Previous (Build: 1142708) to Chaos_Next (Build: 1143786)</title>
+	<meta charset="UTF-8">
+	<meta name="title" content="Client Comparison: Chaos_Previous (Build: 1142708) to Chaos_Next (Build: 1143786) | Hoboleaks">
+	<meta name="description" content="Generated @ 2017-05-12 11:23:30 EVE Time">
+	
+	<meta name="og:title" content="Hoboleaks: Chaos_Previous (Build: 1142708) -> Chaos_Next (Build: 1143786)">
+	<meta name="og:type" content="website">
+	<meta name="og:description" content="Generated @ 2017-05-12 11:23:30 EVE Time">
+	<!-- <meta name="og:image" content="http://hoboleaks.space/sitepreview.png"> -->
+	<meta name="og:image" content="http://static-cdn.jtvnw.net/emoticons/v1/151586/3.0">
+	<meta name="og:url" content="http://hoboleaks.space/">
+	<meta name="og:site_name" content="Hoboleaks">
+	
+	<meta name="twitter:title" content="Hoboleaks: Chaos_Previous (Build: 1142708) -> Chaos_Next (Build: 1143786)">
+	<meta name="twitter:description" content="Generated @ 2017-05-12 11:23:30 EVE Time">
+	<!-- <meta name="twitter:image" content="http://hoboleaks.space/sitepreview.png"> -->
+	<meta name="twitter:image" content="http://static-cdn.jtvnw.net/emoticons/v1/151586/3.0">
+	<meta name="genTime" content="1494588210944">
+	<meta name="genDate" content="2017-05-12 11:23:30">
+	<!-- Who needs css files lol -->
+	<style>
+		table {
+			width:1280px;
+			font-family: arial, tahoma, sans-serif;
+			font-size: 10pt;
+			border-collapse: collapse;
+		}
+
+		td, th {
+			border: 1px solid black;
+			text-align: left;
+			padding: 8px;
+		}
+
+		tr:nth-child(even) {
+			background-color: #DBDBDB;
+		}
+		
+		tr.unimportant {
+			opacity: 0.5;
+			font-size: 8pt;
+		}
+		
+		.hidden {
+			display: none;
+		}
+
+		td.mini {
+			font-size: 8pt;
+		}
+
+		p.mini {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 8pt;
+		}
+		
+		p {
+			font-family: arial, tahoma, sans-serif;
+		}
+		
+		p.mini2 {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 5pt;
+		}
+		
+		p.mini3 {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 5pt;
+			color: gray;
+		}
+		
+		p.kindasmall {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 10pt;
+			margin: 5px 0px 5px 0px;
+		}
+
+		h1, h2, h3 {
+			font-family: arial, tahoma, sans-serif;
+		}
+
+		summary.bigsum {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 15pt;
+		}		
+
+		summary.bigsum_disabled {
+			font-family: arial, tahoma, sans-serif;
+			color: #9E9E9E;
+			font-size: 15pt;
+		}
+		
+		summary.smallsum {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 10pt;
+		}
+		
+		.smallinput {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 10pt;
+		}
+		
+		p.scriptnotify {
+			font-family: arial, tahoma, sans-serif;
+			color: red;
+			font-size: 12pt;
+		}
+		
+		p.scriptnotifysmall {
+			font-family: arial, tahoma, sans-serif;
+			color: red;
+			font-size: 9pt;
+		}
+		
+		p.scriptnotifysmaller {
+			font-family: arial, tahoma, sans-serif;
+			color: red;
+			font-size: 5pt;
+		}
+		
+		div.simplebox {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 10pt;
+			padding: 5px;
+			margin: 2px;
+			border-left-style: dotted;
+		}
+		
+		ul {
+			padding-left:20px;
+		}
+		
+		div.footer {
+		   position: fixed;
+		   bottom: 20px;
+		   height: 20px;
+		   width: 20px;
+		   border-style: none;
+		}
+		
+		div.footer1 {
+		   right: 20px;
+		}
+		
+		div.footer2 {
+		   left: 20px;
+		   visibility: hidden;
+		}
+		
+		div.footer:hover {
+			border-style: dotted;
+			border-color: #F2F2F2;
+		}
+		
+		.selected {
+			background-color: #C4F0FF;
+		}
+		
+		tr.selected:nth-child(even) {
+			background-color: #C4F0FF;
+		}
+		
+		.noscripthidden {
+			display: none;
+		}
+
+		/* IE 6 */
+		* html #footer {
+		   position:absolute;
+		   top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
+		}
+	</style>
+	<script type="text/javascript">
+		genBaseHash = "highlight" + 1494588210944
+	
+	    function selectText(containerid, hasWaited) {
+			hasWaited = hasWaited || false
+			if (hasWaited == false) {
+				window.setTimeout(function(){selectText(containerid, true)}, 50); /* I'm sure I'm in the wrong here somehow and not Chrome, but this is how we're fixing it soooooooo yeah. */
+				return
+			}
+			var node = document.getElementById(containerid);
+			if (document.selection) {
+				var range = document.body.createTextRange();
+				range.moveToElementText(node);
+				range.select();
+			} else if (window.getSelection) {
+				var range = document.createRange();
+				range.selectNodeContents(node);
+				window.getSelection().removeAllRanges();
+				window.getSelection().addRange(range);
+			}
+		}
+		
+		function hasClass(node, className) {
+			return (node.className && node.className.indexOf(className) != -1)
+		}
+		
+		function getHashValues() {
+			hashValues = window.location.hash.slice(1).split(",")
+			if (!isHashValid(hashValues)) {
+				return [genBaseHash]
+			}
+			if (hashValues.length == 1 && hashValues[0] == "") {
+				return [genBaseHash]
+			}
+			return hashValues
+		}
+		
+		function isHashValid(hashValues) {
+			if (hashValues[0] == genBaseHash) {
+				return true
+			}
+			return false
+		}
+		
+		function hashHasID(nodeID) {
+			hashValues = getHashValues()
+			idPos = hashValues.indexOf(nodeID)
+			ret = (idPos != -1)
+			return 
+		}
+		
+		function updateSelectablesFromHash() {
+			hashValues = getHashValues()
+			oldSelected = document.getElementsByClassName("selected")
+			for (var i=oldSelected.length-1; i >= 0; i--) {
+				node = oldSelected[i]
+				if (!hashHasID(getNodeID(node))) {
+					deselectNode(node)
+				}
+			}
+			for (var i=0; i < hashValues.length; i++) {
+				currentID = hashValues[i]
+				idName = "cid-" + currentID
+				node = document.getElementById(idName)
+				if (node != null) {
+					selectNode(node)
+					updateInheritance(node)
+				}					
+			}
+		}
+		
+		function updateInheritance(node, isDetail) {
+			isDetail = isDetail || false
+			if (node == null || node.tagName == "BODY") {
+				return
+			}
+			if (hasClass(node, "selectParent")) {
+				node.classList.add("selected")
+			}
+			if (node.tagName == "DETAILS") {
+				updateInheritance(node.firstElementChild, true)
+			}
+			if (!isDetail) {
+				return updateInheritance(node.parentNode)
+			}
+		}
+		
+		function selectNode(node) {
+			node.classList.add("selected")
+		}
+		
+		function deselectNode(node) {
+			node.classList.remove("selected")
+		}
+		
+		function getNodeID(node) {
+			nodeID = node.id.slice(4)
+			return nodeID
+		}
+		
+		function toggleNodeHash(node) {
+			nodeID = node.id.slice(4)
+			hashValues = getHashValues()
+			idPos = hashValues.indexOf(nodeID)
+			if (idPos == -1) {
+				hashValues.push(nodeID)
+			}
+			else {
+				hashValues.splice(idPos, 1)
+			}
+			window.location.hash = hashValues.join()
+		}
+		
+		function getSelectableNode(node) {
+		/* We recursively iterate our way up the tree to see if any part of it is selectable. */
+			if (node == null) {
+				return null
+			}
+			if (hasClass(node, "selectable")) {
+				return node
+			}
+			return getSelectableNode(node.parentNode)			
+		}
+		
+		window.onhashchange = function() {
+			updateSelectablesFromHash()
+		}
+		
+		window.onload = function() {
+			document.body.onclick = function(e){
+				if (!e.altKey) {
+					return
+				}
+				if (window.event) {
+					clickedNode = event.srcElement;
+				}
+				else {
+					clickedNode = e.target
+				}
+				selectableNode = getSelectableNode(clickedNode)
+				if (selectableNode != null) {
+					toggleNodeHash(selectableNode)
+					return false
+				}
+			}
+			updateSelectablesFromHash()
+		}
+	</script>
+</head>
+<body>
+<h1>Comparing Chaos_Previous (Build: 1142708) to Chaos_Next (Build: 1143786)</h1>
+<noscript>
+	<nobr>
+		<p class="mini">Generated @ 2017-05-12 11:23:30 EVE Time (UTC)</p>
+		<p class="scriptnotify" style="display:inline;">You've disabled javascript. This made the menu so sad that it self-destructed. I hope you're happy now.</p>
+		<p class="scriptnotifysmaller" style="display:inline;">You monster.</p>
+	</nobr>
+	<p class="scriptnotifysmall">This page should still kinda work though.</p>
+</noscript>
+<iframe id="timer" src="timerSection.html?version=1&timer=1494588210944" style="border:none; display:none;" height="40px" width="800px"> </iframe>
+<iframe id="navMenu" src="" style="border:none; display:none;" height="40px" width="800px"> </iframe>
+<script>
+	function getStrippedPageName(pageName) {
+		dot = pageName.indexOf(".")
+		if (dot != -1) {
+			pageName = pageName.slice(0, dot)
+		}
+		slash = pageName.indexOf("/")
+		if (slash == 0) {
+			pageName = pageName.slice(1)
+		}
+		return pageName || "index"
+	}
+	
+	document.getElementById("navMenu").style.display = "block";
+	document.getElementById("navMenu").src = "nav.html?curPage=" + getStrippedPageName(window.location.pathname);
+	document.getElementById("timer").style.display = "block";
+</script>
+<p class="mini">Note: Chaos is an internal development server containing many odd projects and changes, many of which may never actually make it to TQ. Speculate responsibly.</p>
+<p class="kindasmall">Click the categories below to expand them! <a href="confused.html">Confused?</a></p>
+
+<!--<h2 id="items">Items</h2>-->
+
+<details id="newitems">
+	<summary class="selectParent bigsum">New Items (48 Entries)</summary>
+	<table>
+	<details>
+	<summary class="smallsum" onClick="selectText('newItemsNotepad')">Show/Hide EVE notepad list for in-game viewing.</summary><div class="simplebox" id="newItemsNotepad">&lt;url=showinfo:45586&gt;Legion Defensive - Cloak Locus&lt;/url&gt;<br>&lt;url=showinfo:45587&gt;Legion Defensive - Passive&lt;/url&gt;<br>&lt;url=showinfo:45588&gt;Legion Defensive - Active&lt;/url&gt;<br>&lt;url=showinfo:45589&gt;Tengu Defensive - Cloak Locus&lt;/url&gt;<br>&lt;url=showinfo:45590&gt;Tengu Defensive - Passive&lt;/url&gt;<br>&lt;url=showinfo:45591&gt;Tengu Defensive - Active&lt;/url&gt;<br>&lt;url=showinfo:45592&gt;Proteus Defensive - Cloak Locus&lt;/url&gt;<br>&lt;url=showinfo:45593&gt;Proteus Defensive - Passive&lt;/url&gt;<br>&lt;url=showinfo:45594&gt;Proteus Defensive - Active&lt;/url&gt;<br>&lt;url=showinfo:45595&gt;Loki Defensive - Cloak Locus&lt;/url&gt;<br>&lt;url=showinfo:45596&gt;Loki Defensive - Passive&lt;/url&gt;<br>&lt;url=showinfo:45597&gt;Loki Defensive - Active&lt;/url&gt;<br>&lt;url=showinfo:45598&gt;Legion Offensive - Laser&lt;/url&gt;<br>&lt;url=showinfo:45599&gt;Legion Offensive - Missile&lt;/url&gt;<br>&lt;url=showinfo:45600&gt;Legion Offensive - Support&lt;/url&gt;<br>&lt;url=showinfo:45601&gt;Tengu Offensive - Missile&lt;/url&gt;<br>&lt;url=showinfo:45602&gt;Tengu Offensive - Hybrid&lt;/url&gt;<br>&lt;url=showinfo:45603&gt;Tengu Offensive - Support&lt;/url&gt;<br>&lt;url=showinfo:45604&gt;Proteus Offensive - Hybrid&lt;/url&gt;<br>&lt;url=showinfo:45605&gt;Proteus Offensive - Drone&lt;/url&gt;<br>&lt;url=showinfo:45606&gt;Proteus Offensive - Support&lt;/url&gt;<br>&lt;url=showinfo:45607&gt;Loki Offensive - Projectile&lt;/url&gt;<br>&lt;url=showinfo:45608&gt;Loki Offensive - Missile&lt;/url&gt;<br>&lt;url=showinfo:45609&gt;Loki Offensive - Support&lt;/url&gt;<br>&lt;url=showinfo:45610&gt;Legion Propulsion - Nullification&lt;/url&gt;<br>&lt;url=showinfo:45611&gt;Legion Propulsion - Base&lt;/url&gt;<br>&lt;url=showinfo:45612&gt;Legion Propulsion - Prop Mod&lt;/url&gt;<br>&lt;url=showinfo:45613&gt;Tengu Propulsion - Nullification&lt;/url&gt;<br>&lt;url=showinfo:45614&gt;Tengu Propulsion - Base&lt;/url&gt;<br>&lt;url=showinfo:45615&gt;Tengu Propulsion - Prop Mod&lt;/url&gt;<br>&lt;url=showinfo:45616&gt;Proteus Propulsion - Nullification&lt;/url&gt;<br>&lt;url=showinfo:45617&gt;Proteus Propulsion - Base&lt;/url&gt;<br>&lt;url=showinfo:45618&gt;Proteus Propulsion - Prop Mod&lt;/url&gt;<br>&lt;url=showinfo:45619&gt;Loki Propulsion - Nullification&lt;/url&gt;<br>&lt;url=showinfo:45620&gt;Loki Propulsion - Base&lt;/url&gt;<br>&lt;url=showinfo:45621&gt;Loki Propulsion - Prop Mod&lt;/url&gt;<br>&lt;url=showinfo:45622&gt;Legion Core - Electronics&lt;/url&gt;<br>&lt;url=showinfo:45623&gt;Legion Core - Power&lt;/url&gt;<br>&lt;url=showinfo:45624&gt;Legion Core - Neut&lt;/url&gt;<br>&lt;url=showinfo:45625&gt;Tengu Core - Electronics&lt;/url&gt;<br>&lt;url=showinfo:45626&gt;Tengu Core - Power&lt;/url&gt;<br>&lt;url=showinfo:45627&gt;Tengu Core - ECM&lt;/url&gt;<br>&lt;url=showinfo:45628&gt;Proteus Core - Electronics&lt;/url&gt;<br>&lt;url=showinfo:45629&gt;Proteus Core - Power&lt;/url&gt;<br>&lt;url=showinfo:45630&gt;Proteus Core - Point&lt;/url&gt;<br>&lt;url=showinfo:45631&gt;Loki Core - Electronics&lt;/url&gt;<br>&lt;url=showinfo:45632&gt;Loki Core - Power&lt;/url&gt;<br>&lt;url=showinfo:45633&gt;Loki Core - Web&lt;/url&gt;<br></div></details>
+	  <tr>
+		<!--<th>[[title4]]</th>-->
+		<th>TypeID & Name</th>
+		<th>Description</th>
+		<th>Group</th>
+		<th>Attributes</th>
+	  </tr>
+	<tr class="selectable" id="cid-1">
+		<td>45586 - <b>Legion Defensive - Cloak Locus</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Defensive Systems</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 11 attributes.</summary>	<b>typeID:</b> 45586<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 4<br>	<b>Mass:</b> 1400000<br>	<b>Capacity:</b> 300<br>	<b>Volume:</b> 40<br>	<b>typeNameID:</b> 526498<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 954<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-2">
+		<td>45587 - <b>Legion Defensive - Passive</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Defensive Systems</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 11 attributes.</summary>	<b>typeID:</b> 45587<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 4<br>	<b>Mass:</b> 1400000<br>	<b>Capacity:</b> 300<br>	<b>Volume:</b> 40<br>	<b>typeNameID:</b> 526499<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 954<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-3">
+		<td>45588 - <b>Legion Defensive - Active</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Defensive Systems</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 11 attributes.</summary>	<b>typeID:</b> 45588<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 4<br>	<b>Mass:</b> 1400000<br>	<b>Capacity:</b> 300<br>	<b>Volume:</b> 40<br>	<b>typeNameID:</b> 526500<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 954<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-4">
+		<td>45589 - <b>Tengu Defensive - Cloak Locus</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Defensive Systems</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 11 attributes.</summary>	<b>typeID:</b> 45589<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 1<br>	<b>Mass:</b> 1400000<br>	<b>Capacity:</b> 300<br>	<b>Volume:</b> 40<br>	<b>typeNameID:</b> 526501<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 954<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-5">
+		<td>45590 - <b>Tengu Defensive - Passive</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Defensive Systems</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 11 attributes.</summary>	<b>typeID:</b> 45590<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 1<br>	<b>Mass:</b> 1400000<br>	<b>Capacity:</b> 300<br>	<b>Volume:</b> 40<br>	<b>typeNameID:</b> 526502<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 954<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-6">
+		<td>45591 - <b>Tengu Defensive - Active</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Defensive Systems</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 11 attributes.</summary>	<b>typeID:</b> 45591<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 1<br>	<b>Mass:</b> 1400000<br>	<b>Capacity:</b> 300<br>	<b>Volume:</b> 40<br>	<b>typeNameID:</b> 526503<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 954<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-7">
+		<td>45592 - <b>Proteus Defensive - Cloak Locus</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Defensive Systems</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 11 attributes.</summary>	<b>typeID:</b> 45592<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 8<br>	<b>Mass:</b> 1400000<br>	<b>Capacity:</b> 300<br>	<b>Volume:</b> 40<br>	<b>typeNameID:</b> 526504<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 954<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-8">
+		<td>45593 - <b>Proteus Defensive - Passive</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Defensive Systems</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 11 attributes.</summary>	<b>typeID:</b> 45593<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 8<br>	<b>Mass:</b> 1400000<br>	<b>Capacity:</b> 300<br>	<b>Volume:</b> 40<br>	<b>typeNameID:</b> 526505<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 954<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-9">
+		<td>45594 - <b>Proteus Defensive - Active</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Defensive Systems</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 11 attributes.</summary>	<b>typeID:</b> 45594<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 8<br>	<b>Mass:</b> 1400000<br>	<b>Capacity:</b> 300<br>	<b>Volume:</b> 40<br>	<b>typeNameID:</b> 526506<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 954<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-10">
+		<td>45595 - <b>Loki Defensive - Cloak Locus</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Defensive Systems</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 11 attributes.</summary>	<b>typeID:</b> 45595<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 2<br>	<b>Mass:</b> 1400000<br>	<b>Capacity:</b> 300<br>	<b>Volume:</b> 40<br>	<b>typeNameID:</b> 526507<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 954<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-11">
+		<td>45596 - <b>Loki Defensive - Passive</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Defensive Systems</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 11 attributes.</summary>	<b>typeID:</b> 45596<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 2<br>	<b>Mass:</b> 1400000<br>	<b>Capacity:</b> 300<br>	<b>Volume:</b> 40<br>	<b>typeNameID:</b> 526508<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 954<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-12">
+		<td>45597 - <b>Loki Defensive - Active</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Defensive Systems</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 11 attributes.</summary>	<b>typeID:</b> 45597<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 2<br>	<b>Mass:</b> 1400000<br>	<b>Capacity:</b> 300<br>	<b>Volume:</b> 40<br>	<b>typeNameID:</b> 526509<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 954<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-13">
+		<td>45598 - <b>Legion Offensive - Laser</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Offensive Systems</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 11 attributes.</summary>	<b>typeID:</b> 45598<br>	<b>radius:</b> 500<br>	<b>raceID:</b> 4<br>	<b>Mass:</b> 800000<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 40<br>	<b>typeNameID:</b> 526510<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 956<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-14">
+		<td>45599 - <b>Legion Offensive - Missile</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Offensive Systems</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 11 attributes.</summary>	<b>typeID:</b> 45599<br>	<b>radius:</b> 500<br>	<b>raceID:</b> 4<br>	<b>Mass:</b> 800000<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 40<br>	<b>typeNameID:</b> 526511<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 956<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-15">
+		<td>45600 - <b>Legion Offensive - Support</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Offensive Systems</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 11 attributes.</summary>	<b>typeID:</b> 45600<br>	<b>radius:</b> 500<br>	<b>raceID:</b> 4<br>	<b>Mass:</b> 800000<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 40<br>	<b>typeNameID:</b> 526512<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 956<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-16">
+		<td>45601 - <b>Tengu Offensive - Missile</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Offensive Systems</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 11 attributes.</summary>	<b>typeID:</b> 45601<br>	<b>radius:</b> 500<br>	<b>raceID:</b> 1<br>	<b>Mass:</b> 800000<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 40<br>	<b>typeNameID:</b> 526513<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 956<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-17">
+		<td>45602 - <b>Tengu Offensive - Hybrid</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Offensive Systems</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 11 attributes.</summary>	<b>typeID:</b> 45602<br>	<b>radius:</b> 500<br>	<b>raceID:</b> 1<br>	<b>Mass:</b> 800000<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 40<br>	<b>typeNameID:</b> 526514<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 956<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-18">
+		<td>45603 - <b>Tengu Offensive - Support</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Offensive Systems</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 11 attributes.</summary>	<b>typeID:</b> 45603<br>	<b>radius:</b> 500<br>	<b>raceID:</b> 1<br>	<b>Mass:</b> 800000<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 40<br>	<b>typeNameID:</b> 526515<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 956<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-19">
+		<td>45604 - <b>Proteus Offensive - Hybrid</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Offensive Systems</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 11 attributes.</summary>	<b>typeID:</b> 45604<br>	<b>radius:</b> 500<br>	<b>raceID:</b> 8<br>	<b>Mass:</b> 800000<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 40<br>	<b>typeNameID:</b> 526516<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 956<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-20">
+		<td>45605 - <b>Proteus Offensive - Drone</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Offensive Systems</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 11 attributes.</summary>	<b>typeID:</b> 45605<br>	<b>radius:</b> 500<br>	<b>raceID:</b> 8<br>	<b>Mass:</b> 800000<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 40<br>	<b>typeNameID:</b> 526517<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 956<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-21">
+		<td>45606 - <b>Proteus Offensive - Support</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Offensive Systems</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 11 attributes.</summary>	<b>typeID:</b> 45606<br>	<b>radius:</b> 500<br>	<b>raceID:</b> 8<br>	<b>Mass:</b> 800000<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 40<br>	<b>typeNameID:</b> 526518<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 956<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-22">
+		<td>45607 - <b>Loki Offensive - Projectile</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Offensive Systems</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 11 attributes.</summary>	<b>typeID:</b> 45607<br>	<b>radius:</b> 500<br>	<b>raceID:</b> 2<br>	<b>Mass:</b> 800000<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 40<br>	<b>typeNameID:</b> 526519<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 956<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-23">
+		<td>45608 - <b>Loki Offensive - Missile</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Offensive Systems</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 11 attributes.</summary>	<b>typeID:</b> 45608<br>	<b>radius:</b> 500<br>	<b>raceID:</b> 2<br>	<b>Mass:</b> 800000<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 40<br>	<b>typeNameID:</b> 526520<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 956<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-24">
+		<td>45609 - <b>Loki Offensive - Support</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Offensive Systems</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 11 attributes.</summary>	<b>typeID:</b> 45609<br>	<b>radius:</b> 500<br>	<b>raceID:</b> 2<br>	<b>Mass:</b> 800000<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 40<br>	<b>typeNameID:</b> 526521<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 956<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-25">
+		<td>45610 - <b>Legion Propulsion - Nullification</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Propulsion Systems</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 11 attributes.</summary>	<b>typeID:</b> 45610<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 4<br>	<b>Mass:</b> 1400000<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 40<br>	<b>typeNameID:</b> 526522<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 957<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-26">
+		<td>45611 - <b>Legion Propulsion - Base</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Propulsion Systems</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 11 attributes.</summary>	<b>typeID:</b> 45611<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 4<br>	<b>Mass:</b> 1400000<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 40<br>	<b>typeNameID:</b> 526523<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 957<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-27">
+		<td>45612 - <b>Legion Propulsion - Prop Mod</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Propulsion Systems</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 11 attributes.</summary>	<b>typeID:</b> 45612<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 4<br>	<b>Mass:</b> 1400000<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 40<br>	<b>typeNameID:</b> 526524<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 957<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-28">
+		<td>45613 - <b>Tengu Propulsion - Nullification</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Propulsion Systems</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 11 attributes.</summary>	<b>typeID:</b> 45613<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 1<br>	<b>Mass:</b> 1400000<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 40<br>	<b>typeNameID:</b> 526525<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 957<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-29">
+		<td>45614 - <b>Tengu Propulsion - Base</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Propulsion Systems</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 11 attributes.</summary>	<b>typeID:</b> 45614<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 1<br>	<b>Mass:</b> 1400000<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 40<br>	<b>typeNameID:</b> 526526<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 957<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-30">
+		<td>45615 - <b>Tengu Propulsion - Prop Mod</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Propulsion Systems</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 11 attributes.</summary>	<b>typeID:</b> 45615<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 1<br>	<b>Mass:</b> 1400000<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 40<br>	<b>typeNameID:</b> 526527<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 957<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-31">
+		<td>45616 - <b>Proteus Propulsion - Nullification</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Propulsion Systems</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 11 attributes.</summary>	<b>typeID:</b> 45616<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 8<br>	<b>Mass:</b> 1400000<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 40<br>	<b>typeNameID:</b> 526528<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 957<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-32">
+		<td>45617 - <b>Proteus Propulsion - Base</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Propulsion Systems</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 11 attributes.</summary>	<b>typeID:</b> 45617<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 8<br>	<b>Mass:</b> 1400000<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 40<br>	<b>typeNameID:</b> 526529<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 957<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-33">
+		<td>45618 - <b>Proteus Propulsion - Prop Mod</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Propulsion Systems</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 11 attributes.</summary>	<b>typeID:</b> 45618<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 8<br>	<b>Mass:</b> 1400000<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 40<br>	<b>typeNameID:</b> 526530<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 957<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-34">
+		<td>45619 - <b>Loki Propulsion - Nullification</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Propulsion Systems</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 11 attributes.</summary>	<b>typeID:</b> 45619<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 2<br>	<b>Mass:</b> 1400000<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 40<br>	<b>typeNameID:</b> 526531<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 957<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-35">
+		<td>45620 - <b>Loki Propulsion - Base</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Propulsion Systems</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 11 attributes.</summary>	<b>typeID:</b> 45620<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 2<br>	<b>Mass:</b> 1400000<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 40<br>	<b>typeNameID:</b> 526532<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 957<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-36">
+		<td>45621 - <b>Loki Propulsion - Prop Mod</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Propulsion Systems</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 11 attributes.</summary>	<b>typeID:</b> 45621<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 2<br>	<b>Mass:</b> 1400000<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 40<br>	<b>typeNameID:</b> 526533<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 957<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-37">
+		<td>45622 - <b>Legion Core - Electronics</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Engineering Systems</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 11 attributes.</summary>	<b>typeID:</b> 45622<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 4<br>	<b>Mass:</b> 1200000<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 40<br>	<b>typeNameID:</b> 526534<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 958<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-38">
+		<td>45623 - <b>Legion Core - Power</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Engineering Systems</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 11 attributes.</summary>	<b>typeID:</b> 45623<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 4<br>	<b>Mass:</b> 1200000<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 40<br>	<b>typeNameID:</b> 526535<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 958<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-39">
+		<td>45624 - <b>Legion Core - Neut</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Engineering Systems</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 11 attributes.</summary>	<b>typeID:</b> 45624<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 4<br>	<b>Mass:</b> 1200000<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 40<br>	<b>typeNameID:</b> 526536<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 958<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-40">
+		<td>45625 - <b>Tengu Core - Electronics</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Engineering Systems</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 11 attributes.</summary>	<b>typeID:</b> 45625<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 1<br>	<b>Mass:</b> 1200000<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 40<br>	<b>typeNameID:</b> 526537<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 958<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-41">
+		<td>45626 - <b>Tengu Core - Power</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Engineering Systems</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 11 attributes.</summary>	<b>typeID:</b> 45626<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 1<br>	<b>Mass:</b> 1200000<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 40<br>	<b>typeNameID:</b> 526538<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 958<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-42">
+		<td>45627 - <b>Tengu Core - ECM</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Engineering Systems</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 11 attributes.</summary>	<b>typeID:</b> 45627<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 1<br>	<b>Mass:</b> 1200000<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 40<br>	<b>typeNameID:</b> 526539<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 958<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-43">
+		<td>45628 - <b>Proteus Core - Electronics</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Engineering Systems</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 11 attributes.</summary>	<b>typeID:</b> 45628<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 8<br>	<b>Mass:</b> 1200000<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 40<br>	<b>typeNameID:</b> 526540<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 958<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-44">
+		<td>45629 - <b>Proteus Core - Power</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Engineering Systems</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 11 attributes.</summary>	<b>typeID:</b> 45629<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 8<br>	<b>Mass:</b> 1200000<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 40<br>	<b>typeNameID:</b> 526541<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 958<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-45">
+		<td>45630 - <b>Proteus Core - Point</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Engineering Systems</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 11 attributes.</summary>	<b>typeID:</b> 45630<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 8<br>	<b>Mass:</b> 1200000<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 40<br>	<b>typeNameID:</b> 526542<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 958<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-46">
+		<td>45631 - <b>Loki Core - Electronics</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Engineering Systems</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 11 attributes.</summary>	<b>typeID:</b> 45631<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 2<br>	<b>Mass:</b> 1200000<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 40<br>	<b>typeNameID:</b> 526543<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 958<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-47">
+		<td>45632 - <b>Loki Core - Power</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Engineering Systems</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 11 attributes.</summary>	<b>typeID:</b> 45632<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 2<br>	<b>Mass:</b> 1200000<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 40<br>	<b>typeNameID:</b> 526544<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 958<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-48">
+		<td>45633 - <b>Loki Core - Web</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Engineering Systems</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 11 attributes.</summary>	<b>typeID:</b> 45633<br>	<b>radius:</b> 1<br>	<b>raceID:</b> 2<br>	<b>Mass:</b> 1200000<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 40<br>	<b>typeNameID:</b> 526545<br>	<b>basePrice:</b> 0.0<br>	<b>published:</b> False<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 958<br></details></td>
+	</tr>
+	</table>
+</details>
+
+<details id="removeditems">
+	<summary class="selectParent bigsum_disabled" onclick="return false">Removed Items (0 Entries)</summary>
+	<p class="kindasmall">Please note that a "removed" item usually means the item was just not yet added to the "newer" build.</p>
+	<table>
+	  <tr>
+		<th>TypeID & Name</th>
+		<th>Description</th>
+		<th>Group</th>
+		<th>Attributes</th>
+	  </tr>
+	
+	</table>
+</details>
+
+<details id="changedblueprints">
+	<summary class="selectParent bigsum_disabled" onclick="return false">Changed Blueprints BETA (0 Entries)</summary>
+	<table>
+	  <tr>
+		<th>Blueprint Name</th>
+		<th>Old BP Data</th>
+		<th>New BP Data</th>
+		<th>Raw Diff</th>
+	  </tr>
+	
+	</table>
+</details>
+
+<br>
+
+<details id="bonuschanges">
+	<summary class="selectParent bigsum_disabled" onclick="return false">Changed Traits (0 Entries)</summary>
+	<table>
+	  <tr>
+		<th>TypeID, Group, & Name</th>
+		<th>Chaos_Previous</th>
+		<th>Chaos_Next</th>
+		<th>Diff</th>
+		<!-- <th>[[title4]]</th> -->
+	  </tr>
+	
+	</table>
+</details>
+
+<!--<h2 id="attributes">Attributes</h2>-->
+
+<details id="dgmattribs">
+	<summary class="selectParent bigsum_disabled" onclick="return false">Changes to Attributes (0 Entries)</summary>
+	<table>
+	  <tr>
+		<th>Attribute Name</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Diff</th>
+	  </tr>
+	
+	</table>
+</details>
+
+<details id="typeattribs">
+	<summary class="selectParent bigsum">Attribute Changes per Type (2 Entries)</summary>
+	<table>
+	  <tr>
+		<th>TypeID, Name, and Group</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Diff</th>
+	  </tr>
+	<tr class="selectable" id="cid-49">
+		<td>37601 - <b>Women's CONCORD 'Solitaire' Survival Suit</b> (Outer)</td>
+		<td><b>marketGroupID:</b> 1399 <b>=></b> 1405<br></td>
+	</tr>
+	<tr class="selectable" id="cid-50">
+		<td>37808 - <b>Women's CONCORD Test Pilot T-Shirt</b> (Tops)</td>
+		<td><b>marketGroupID:</b> 1398 <b>=></b> 1406<br></td>
+	</tr>
+	</table>
+</details>
+
+<br>
+
+<!--<h2 id="effectchanges">Effect Changes</h2>-->
+
+<details id="dgmeffects">
+	<summary class="selectParent bigsum_disabled" onclick="return false">Changes to Effects (0 Entries)</summary>
+	<table>
+	  <tr>
+		<th>Effect Name</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Diff</th>
+	  </tr>
+	
+	</table>
+</details>
+
+<details id="typeeffects">
+	<summary class="selectParent bigsum_disabled" onclick="return false">Effect Changes per Type (0 Entries)</summary>
+	<table>
+	  <tr>
+		<th>TypeID, Name, and Group</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Effects Changes</th>
+	  </tr>
+	
+	</table>
+</details>
+
+<br>
+
+<!--<h2 id="stringchanges">String Changes</h2>-->
+
+<script>
+	function toggleHidden(cb) {
+		var nodes = document.getElementById("stringchanges").getElementsByClassName("unimportant")
+		for (var i=0; i < nodes.length; i++) {
+			var node = nodes[i]
+			if (cb.checked) {
+				node.classList.remove("hidden")
+			} else {
+				node.classList.add("hidden")
+			}
+		}
+	}
+</script>
+<details id="stringchanges">
+	<summary class="selectParent bigsum">String Changes (67 Entries)</summary>
+	<label class="smallinput noscripthidden hidden"><input type="checkbox" onclick="toggleHidden(this)">Show [[unimportants]] changes marked as old</label>
+	<table>
+	  <tr>
+		<th>Key</th>
+		<th>Chaos_Previous</th>
+		<th>Chaos_Next</th>
+		<th>Diff</th>
+		<th>Notes</th>
+	  </tr>
+	<tr class="selectable" id="cid-51">
+		<td>93506</td>
+		<td width="355px">Heavy Attack Drone.  <br><br>This particular model has had multiple components from rogue drones incorporated into its design, enhancing its performance.</td>
+		<td width="355px">Heavy Attack Drone<br><br>This particular model has had multiple components from rogue drones incorporated into its design, enhancing its performance.</td>
+		<td><span>Heavy Attack Drone</span><del style="background:#ffe6e6;">.</del><span><br><br>This particular model has had multiple components from rogue drones incorporated into its design, enhancing its performance.</span></td>
+		<td class="mini">Item description for "'Integrated' Praetor" (typeID 28290)</td>
+	</tr>
+	<tr class="selectable" id="cid-52">
+		<td>259430</td>
+		<td width="355px">The {[item]type.name} you are trying to fit is not a low, medium or high powered module and cannot be fitted to any of these fitting slots.</td>
+		<td width="355px">The {[item]type.name} cannot be fitted to this hull as it lacks the required fitting slots.</td>
+		<td><span>The {[item]type.name} </span><del style="background:#ffe6e6;">you are trying to fit is not a low, medium or high powered module and cannot be fitted to any of these</del><ins style="background:#e6ffe6;">cannot be fitted to this hull as it lacks the required</ins><span> fitting slots.</span></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-53">
+		<td>509415</td>
+		<td width="355px">{[location] target.name} is too far away to use your {[item] item.name} on, it needs to be closer than {distance} meters.</td>
+		<td width="355px">{[location] target.name} is too far away to use your {[item] item.name} on, it needs to be closer than {[numeric]distance, decimalPlaces=0} meters.</td>
+		<td><span>{[location] target.name} is too far away to use your {[item] item.name} on, it needs to be closer than {</span><del style="background:#ffe6e6;">distance</del><ins style="background:#e6ffe6;">[numeric]distance, decimalPlaces=0</ins><span>} meters.</span></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-54">
+		<td>516564</td>
+		<td width="355px">Upwell Capsule</td>
+		<td width="355px">Upwell</td>
+		<td><span>Upwell</span><del style="background:#ffe6e6;"> Capsule</del></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-55">
+		<td>516565</td>
+		<td width="355px">Palatine Capsule</td>
+		<td width="355px">Palatine</td>
+		<td><span>Palatine</span><del style="background:#ffe6e6;"> Capsule</del></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-56">
+		<td>525353</td>
+		<td width="355px">Shortcut to launch drones will launch drones belonging to this group</td>
+		<td width="355px">Favorite Group: This group will be launched when using the "Launch Drones" shortcut.</td>
+		<td><del style="background:#ffe6e6;">Shortcut to launch drones</del><ins style="background:#e6ffe6;">Favorite Group: This group</ins><span> will </span><ins style="background:#e6ffe6;">be </ins><span>launch</span><del style="background:#ffe6e6;"> drones belonging to this group</del><ins style="background:#e6ffe6;">ed when using the "Launch Drones" shortcut.</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-57">
+		<td>525689</td>
+		<td width="355px">Get PLEX</td>
+		<td width="355px">Buy PLEX</td>
+		<td><del style="background:#ffe6e6;">Get</del><ins style="background:#e6ffe6;">Buy</ins><span> PLEX</span></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-58">
+		<td>526147</td>
+		<td width="355px">Color Blindness Mode</td>
+		<td width="355px">Color Blind Mode</td>
+		<td><span>Color Blind</span><del style="background:#ffe6e6;">ness</del><span> Mode</span></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-59">
+		<td>526183</td>
+		<td width="355px">This feature is currently in BETA.<br>Feedback through <b>This Survey</b> or <b>The forums</b> would be greatly appreciated.</td>
+		<td width="355px">This feature is currently in BETA.<br>Feedback through <b>This Survey</b> would be greatly appreciated.</td>
+		<td><span>This feature is currently in BETA.<br>Feedback through &lt;a href='http</span><ins style="background:#e6ffe6;">s</ins><span>://www.survey</span><del style="background:#ffe6e6;">monkey.com'&gt;This Survey&lt;/a&gt; or &lt;a href='https://forums.eveonline.com/default.aspx?g=topics&amp;f=271'&gt;The forums</del><ins style="background:#e6ffe6;">gizmo.com/s3/3552574/2017-04-EVE-Online-Color-Blind-Mode-Survey'&gt;This Survey</ins><span>&lt;/a&gt; would be greatly appreciated.</span></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-60">
+		<td>526468</td>
+		<td width="355px">&lt;color=0xffcce580&gt;<b>{[numeric]amount, decimalPlaces=0} HP</b>{faintColor}{fontMarkUpStart} armor repaired {fontMarkUpEnd}<b>&lt;color=0xffffffff&gt;{specialObject}</b>{faintColor}{fontMarkUpStart} - {[item]type.name}{fontMarkUpEnd}</td>
+		<td width="355px">&lt;color=0xffccff66&gt;<b>{[numeric]amount, decimalPlaces=0}</b>{faintColor}{fontMarkUpStart} remote armor repaired to {fontMarkUpEnd}<b>&lt;color=0xffffffff&gt;{specialObject}</b>{faintColor}{fontMarkUpStart} - {[item]type.name}{fontMarkUpEnd}</td>
+		<td><span>&lt;color=0xffcc</span><del style="background:#ffe6e6;">e580</del><ins style="background:#e6ffe6;">ff66</ins><span>&gt;&lt;b&gt;{[numeric]amount, decimalPlaces=0}</span><del style="background:#ffe6e6;"> HP</del><span>&lt;/b&gt;{faintColor}{fontMarkUpStart}</span><ins style="background:#e6ffe6;"> remote</ins><span> armor repaired </span><ins style="background:#e6ffe6;">to </ins><span>{fontMarkUpEnd}&lt;b&gt;&lt;color=0xffffffff&gt;{specialObject}&lt;/b&gt;{faintColor}{fontMarkUpStart} - {[item]type.name}{fontMarkUpEnd}</span></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-61">
+		<td>526469</td>
+		<td width="355px">&lt;color=0xffcce580&gt;<b>{[numeric]amount, decimalPlaces=0} HP</b>{faintColor}{fontMarkUpStart} armor repaired {fontMarkUpEnd}<b>&lt;color=0xffffffff&gt;{specialObject}</b>{faintColor}{fontMarkUpStart} - {[item]type.name}{fontMarkUpEnd}</td>
+		<td width="355px">&lt;color=0xffccff66&gt;<b>{[numeric]amount, decimalPlaces=0}</b>{faintColor}{fontMarkUpStart} remote armor repaired by {fontMarkUpEnd}<b>&lt;color=0xffffffff&gt;{specialObject}</b>{faintColor}{fontMarkUpStart} - {[item]type.name}{fontMarkUpEnd}</td>
+		<td><span>&lt;color=0xffcc</span><del style="background:#ffe6e6;">e580</del><ins style="background:#e6ffe6;">ff66</ins><span>&gt;&lt;b&gt;{[numeric]amount, decimalPlaces=0}</span><del style="background:#ffe6e6;"> HP</del><span>&lt;/b&gt;{faintColor}{fontMarkUpStart}</span><ins style="background:#e6ffe6;"> remote</ins><span> armor repaired </span><ins style="background:#e6ffe6;">by </ins><span>{fontMarkUpEnd}&lt;b&gt;&lt;color=0xffffffff&gt;{specialObject}&lt;/b&gt;{faintColor}{fontMarkUpStart} - {[item]type.name}{fontMarkUpEnd}</span></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-62">
+		<td>526498</td>
+		<td width="355px"></td>
+		<td width="355px">Legion Defensive - Cloak Locus</td>
+		<td><ins style="background:#e6ffe6;">Legion Defensive - Cloak Locus</ins></td>
+		<td class="mini">Item name for typeID 45586 (Defensive Systems)</td>
+	</tr>
+	<tr class="selectable" id="cid-63">
+		<td>526499</td>
+		<td width="355px"></td>
+		<td width="355px">Legion Defensive - Passive</td>
+		<td><ins style="background:#e6ffe6;">Legion Defensive - Passive</ins></td>
+		<td class="mini">Item name for typeID 45587 (Defensive Systems)</td>
+	</tr>
+	<tr class="selectable" id="cid-64">
+		<td>526500</td>
+		<td width="355px"></td>
+		<td width="355px">Legion Defensive - Active</td>
+		<td><ins style="background:#e6ffe6;">Legion Defensive - Active</ins></td>
+		<td class="mini">Item name for typeID 45588 (Defensive Systems)</td>
+	</tr>
+	<tr class="selectable" id="cid-65">
+		<td>526501</td>
+		<td width="355px"></td>
+		<td width="355px">Tengu Defensive - Cloak Locus</td>
+		<td><ins style="background:#e6ffe6;">Tengu Defensive - Cloak Locus</ins></td>
+		<td class="mini">Item name for typeID 45589 (Defensive Systems)</td>
+	</tr>
+	<tr class="selectable" id="cid-66">
+		<td>526502</td>
+		<td width="355px"></td>
+		<td width="355px">Tengu Defensive - Passive</td>
+		<td><ins style="background:#e6ffe6;">Tengu Defensive - Passive</ins></td>
+		<td class="mini">Item name for typeID 45590 (Defensive Systems)</td>
+	</tr>
+	<tr class="selectable" id="cid-67">
+		<td>526503</td>
+		<td width="355px"></td>
+		<td width="355px">Tengu Defensive - Active</td>
+		<td><ins style="background:#e6ffe6;">Tengu Defensive - Active</ins></td>
+		<td class="mini">Item name for typeID 45591 (Defensive Systems)</td>
+	</tr>
+	<tr class="selectable" id="cid-68">
+		<td>526504</td>
+		<td width="355px"></td>
+		<td width="355px">Proteus Defensive - Cloak Locus</td>
+		<td><ins style="background:#e6ffe6;">Proteus Defensive - Cloak Locus</ins></td>
+		<td class="mini">Item name for typeID 45592 (Defensive Systems)</td>
+	</tr>
+	<tr class="selectable" id="cid-69">
+		<td>526505</td>
+		<td width="355px"></td>
+		<td width="355px">Proteus Defensive - Passive</td>
+		<td><ins style="background:#e6ffe6;">Proteus Defensive - Passive</ins></td>
+		<td class="mini">Item name for typeID 45593 (Defensive Systems)</td>
+	</tr>
+	<tr class="selectable" id="cid-70">
+		<td>526506</td>
+		<td width="355px"></td>
+		<td width="355px">Proteus Defensive - Active</td>
+		<td><ins style="background:#e6ffe6;">Proteus Defensive - Active</ins></td>
+		<td class="mini">Item name for typeID 45594 (Defensive Systems)</td>
+	</tr>
+	<tr class="selectable" id="cid-71">
+		<td>526507</td>
+		<td width="355px"></td>
+		<td width="355px">Loki Defensive - Cloak Locus</td>
+		<td><ins style="background:#e6ffe6;">Loki Defensive - Cloak Locus</ins></td>
+		<td class="mini">Item name for typeID 45595 (Defensive Systems)</td>
+	</tr>
+	<tr class="selectable" id="cid-72">
+		<td>526508</td>
+		<td width="355px"></td>
+		<td width="355px">Loki Defensive - Passive</td>
+		<td><ins style="background:#e6ffe6;">Loki Defensive - Passive</ins></td>
+		<td class="mini">Item name for typeID 45596 (Defensive Systems)</td>
+	</tr>
+	<tr class="selectable" id="cid-73">
+		<td>526509</td>
+		<td width="355px"></td>
+		<td width="355px">Loki Defensive - Active</td>
+		<td><ins style="background:#e6ffe6;">Loki Defensive - Active</ins></td>
+		<td class="mini">Item name for typeID 45597 (Defensive Systems)</td>
+	</tr>
+	<tr class="selectable" id="cid-74">
+		<td>526510</td>
+		<td width="355px"></td>
+		<td width="355px">Legion Offensive - Laser</td>
+		<td><ins style="background:#e6ffe6;">Legion Offensive - Laser</ins></td>
+		<td class="mini">Item name for typeID 45598 (Offensive Systems)</td>
+	</tr>
+	<tr class="selectable" id="cid-75">
+		<td>526511</td>
+		<td width="355px"></td>
+		<td width="355px">Legion Offensive - Missile</td>
+		<td><ins style="background:#e6ffe6;">Legion Offensive - Missile</ins></td>
+		<td class="mini">Item name for typeID 45599 (Offensive Systems)</td>
+	</tr>
+	<tr class="selectable" id="cid-76">
+		<td>526512</td>
+		<td width="355px"></td>
+		<td width="355px">Legion Offensive - Support</td>
+		<td><ins style="background:#e6ffe6;">Legion Offensive - Support</ins></td>
+		<td class="mini">Item name for typeID 45600 (Offensive Systems)</td>
+	</tr>
+	<tr class="selectable" id="cid-77">
+		<td>526513</td>
+		<td width="355px"></td>
+		<td width="355px">Tengu Offensive - Missile</td>
+		<td><ins style="background:#e6ffe6;">Tengu Offensive - Missile</ins></td>
+		<td class="mini">Item name for typeID 45601 (Offensive Systems)</td>
+	</tr>
+	<tr class="selectable" id="cid-78">
+		<td>526514</td>
+		<td width="355px"></td>
+		<td width="355px">Tengu Offensive - Hybrid</td>
+		<td><ins style="background:#e6ffe6;">Tengu Offensive - Hybrid</ins></td>
+		<td class="mini">Item name for typeID 45602 (Offensive Systems)</td>
+	</tr>
+	<tr class="selectable" id="cid-79">
+		<td>526515</td>
+		<td width="355px"></td>
+		<td width="355px">Tengu Offensive - Support</td>
+		<td><ins style="background:#e6ffe6;">Tengu Offensive - Support</ins></td>
+		<td class="mini">Item name for typeID 45603 (Offensive Systems)</td>
+	</tr>
+	<tr class="selectable" id="cid-80">
+		<td>526516</td>
+		<td width="355px"></td>
+		<td width="355px">Proteus Offensive - Hybrid</td>
+		<td><ins style="background:#e6ffe6;">Proteus Offensive - Hybrid</ins></td>
+		<td class="mini">Item name for typeID 45604 (Offensive Systems)</td>
+	</tr>
+	<tr class="selectable" id="cid-81">
+		<td>526517</td>
+		<td width="355px"></td>
+		<td width="355px">Proteus Offensive - Drone</td>
+		<td><ins style="background:#e6ffe6;">Proteus Offensive - Drone</ins></td>
+		<td class="mini">Item name for typeID 45605 (Offensive Systems)</td>
+	</tr>
+	<tr class="selectable" id="cid-82">
+		<td>526518</td>
+		<td width="355px"></td>
+		<td width="355px">Proteus Offensive - Support</td>
+		<td><ins style="background:#e6ffe6;">Proteus Offensive - Support</ins></td>
+		<td class="mini">Item name for typeID 45606 (Offensive Systems)</td>
+	</tr>
+	<tr class="selectable" id="cid-83">
+		<td>526519</td>
+		<td width="355px"></td>
+		<td width="355px">Loki Offensive - Projectile</td>
+		<td><ins style="background:#e6ffe6;">Loki Offensive - Projectile</ins></td>
+		<td class="mini">Item name for typeID 45607 (Offensive Systems)</td>
+	</tr>
+	<tr class="selectable" id="cid-84">
+		<td>526520</td>
+		<td width="355px"></td>
+		<td width="355px">Loki Offensive - Missile</td>
+		<td><ins style="background:#e6ffe6;">Loki Offensive - Missile</ins></td>
+		<td class="mini">Item name for typeID 45608 (Offensive Systems)</td>
+	</tr>
+	<tr class="selectable" id="cid-85">
+		<td>526521</td>
+		<td width="355px"></td>
+		<td width="355px">Loki Offensive - Support</td>
+		<td><ins style="background:#e6ffe6;">Loki Offensive - Support</ins></td>
+		<td class="mini">Item name for typeID 45609 (Offensive Systems)</td>
+	</tr>
+	<tr class="selectable" id="cid-86">
+		<td>526522</td>
+		<td width="355px"></td>
+		<td width="355px">Legion Propulsion - Nullification</td>
+		<td><ins style="background:#e6ffe6;">Legion Propulsion - Nullification</ins></td>
+		<td class="mini">Item name for typeID 45610 (Propulsion Systems)</td>
+	</tr>
+	<tr class="selectable" id="cid-87">
+		<td>526523</td>
+		<td width="355px"></td>
+		<td width="355px">Legion Propulsion - Base</td>
+		<td><ins style="background:#e6ffe6;">Legion Propulsion - Base</ins></td>
+		<td class="mini">Item name for typeID 45611 (Propulsion Systems)</td>
+	</tr>
+	<tr class="selectable" id="cid-88">
+		<td>526524</td>
+		<td width="355px"></td>
+		<td width="355px">Legion Propulsion - Prop Mod</td>
+		<td><ins style="background:#e6ffe6;">Legion Propulsion - Prop Mod</ins></td>
+		<td class="mini">Item name for typeID 45612 (Propulsion Systems)</td>
+	</tr>
+	<tr class="selectable" id="cid-89">
+		<td>526525</td>
+		<td width="355px"></td>
+		<td width="355px">Tengu Propulsion - Nullification</td>
+		<td><ins style="background:#e6ffe6;">Tengu Propulsion - Nullification</ins></td>
+		<td class="mini">Item name for typeID 45613 (Propulsion Systems)</td>
+	</tr>
+	<tr class="selectable" id="cid-90">
+		<td>526526</td>
+		<td width="355px"></td>
+		<td width="355px">Tengu Propulsion - Base</td>
+		<td><ins style="background:#e6ffe6;">Tengu Propulsion - Base</ins></td>
+		<td class="mini">Item name for typeID 45614 (Propulsion Systems)</td>
+	</tr>
+	<tr class="selectable" id="cid-91">
+		<td>526527</td>
+		<td width="355px"></td>
+		<td width="355px">Tengu Propulsion - Prop Mod</td>
+		<td><ins style="background:#e6ffe6;">Tengu Propulsion - Prop Mod</ins></td>
+		<td class="mini">Item name for typeID 45615 (Propulsion Systems)</td>
+	</tr>
+	<tr class="selectable" id="cid-92">
+		<td>526528</td>
+		<td width="355px"></td>
+		<td width="355px">Proteus Propulsion - Nullification</td>
+		<td><ins style="background:#e6ffe6;">Proteus Propulsion - Nullification</ins></td>
+		<td class="mini">Item name for typeID 45616 (Propulsion Systems)</td>
+	</tr>
+	<tr class="selectable" id="cid-93">
+		<td>526529</td>
+		<td width="355px"></td>
+		<td width="355px">Proteus Propulsion - Base</td>
+		<td><ins style="background:#e6ffe6;">Proteus Propulsion - Base</ins></td>
+		<td class="mini">Item name for typeID 45617 (Propulsion Systems)</td>
+	</tr>
+	<tr class="selectable" id="cid-94">
+		<td>526530</td>
+		<td width="355px"></td>
+		<td width="355px">Proteus Propulsion - Prop Mod</td>
+		<td><ins style="background:#e6ffe6;">Proteus Propulsion - Prop Mod</ins></td>
+		<td class="mini">Item name for typeID 45618 (Propulsion Systems)</td>
+	</tr>
+	<tr class="selectable" id="cid-95">
+		<td>526531</td>
+		<td width="355px"></td>
+		<td width="355px">Loki Propulsion - Nullification</td>
+		<td><ins style="background:#e6ffe6;">Loki Propulsion - Nullification</ins></td>
+		<td class="mini">Item name for typeID 45619 (Propulsion Systems)</td>
+	</tr>
+	<tr class="selectable" id="cid-96">
+		<td>526532</td>
+		<td width="355px"></td>
+		<td width="355px">Loki Propulsion - Base</td>
+		<td><ins style="background:#e6ffe6;">Loki Propulsion - Base</ins></td>
+		<td class="mini">Item name for typeID 45620 (Propulsion Systems)</td>
+	</tr>
+	<tr class="selectable" id="cid-97">
+		<td>526533</td>
+		<td width="355px"></td>
+		<td width="355px">Loki Propulsion - Prop Mod</td>
+		<td><ins style="background:#e6ffe6;">Loki Propulsion - Prop Mod</ins></td>
+		<td class="mini">Item name for typeID 45621 (Propulsion Systems)</td>
+	</tr>
+	<tr class="selectable" id="cid-98">
+		<td>526534</td>
+		<td width="355px"></td>
+		<td width="355px">Legion Core - Electronics</td>
+		<td><ins style="background:#e6ffe6;">Legion Core - Electronics</ins></td>
+		<td class="mini">Item name for typeID 45622 (Engineering Systems)</td>
+	</tr>
+	<tr class="selectable" id="cid-99">
+		<td>526535</td>
+		<td width="355px"></td>
+		<td width="355px">Legion Core - Power</td>
+		<td><ins style="background:#e6ffe6;">Legion Core - Power</ins></td>
+		<td class="mini">Item name for typeID 45623 (Engineering Systems)</td>
+	</tr>
+	<tr class="selectable" id="cid-100">
+		<td>526536</td>
+		<td width="355px"></td>
+		<td width="355px">Legion Core - Neut</td>
+		<td><ins style="background:#e6ffe6;">Legion Core - Neut</ins></td>
+		<td class="mini">Item name for typeID 45624 (Engineering Systems)</td>
+	</tr>
+	<tr class="selectable" id="cid-101">
+		<td>526537</td>
+		<td width="355px"></td>
+		<td width="355px">Tengu Core - Electronics</td>
+		<td><ins style="background:#e6ffe6;">Tengu Core - Electronics</ins></td>
+		<td class="mini">Item name for typeID 45625 (Engineering Systems)</td>
+	</tr>
+	<tr class="selectable" id="cid-102">
+		<td>526538</td>
+		<td width="355px"></td>
+		<td width="355px">Tengu Core - Power</td>
+		<td><ins style="background:#e6ffe6;">Tengu Core - Power</ins></td>
+		<td class="mini">Item name for typeID 45626 (Engineering Systems)</td>
+	</tr>
+	<tr class="selectable" id="cid-103">
+		<td>526539</td>
+		<td width="355px"></td>
+		<td width="355px">Tengu Core - ECM</td>
+		<td><ins style="background:#e6ffe6;">Tengu Core - ECM</ins></td>
+		<td class="mini">Item name for typeID 45627 (Engineering Systems)</td>
+	</tr>
+	<tr class="selectable" id="cid-104">
+		<td>526540</td>
+		<td width="355px"></td>
+		<td width="355px">Proteus Core - Electronics</td>
+		<td><ins style="background:#e6ffe6;">Proteus Core - Electronics</ins></td>
+		<td class="mini">Item name for typeID 45628 (Engineering Systems)</td>
+	</tr>
+	<tr class="selectable" id="cid-105">
+		<td>526541</td>
+		<td width="355px"></td>
+		<td width="355px">Proteus Core - Power</td>
+		<td><ins style="background:#e6ffe6;">Proteus Core - Power</ins></td>
+		<td class="mini">Item name for typeID 45629 (Engineering Systems)</td>
+	</tr>
+	<tr class="selectable" id="cid-106">
+		<td>526542</td>
+		<td width="355px"></td>
+		<td width="355px">Proteus Core - Point</td>
+		<td><ins style="background:#e6ffe6;">Proteus Core - Point</ins></td>
+		<td class="mini">Item name for typeID 45630 (Engineering Systems)</td>
+	</tr>
+	<tr class="selectable" id="cid-107">
+		<td>526543</td>
+		<td width="355px"></td>
+		<td width="355px">Loki Core - Electronics</td>
+		<td><ins style="background:#e6ffe6;">Loki Core - Electronics</ins></td>
+		<td class="mini">Item name for typeID 45631 (Engineering Systems)</td>
+	</tr>
+	<tr class="selectable" id="cid-108">
+		<td>526544</td>
+		<td width="355px"></td>
+		<td width="355px">Loki Core - Power</td>
+		<td><ins style="background:#e6ffe6;">Loki Core - Power</ins></td>
+		<td class="mini">Item name for typeID 45632 (Engineering Systems)</td>
+	</tr>
+	<tr class="selectable" id="cid-109">
+		<td>526545</td>
+		<td width="355px"></td>
+		<td width="355px">Loki Core - Web</td>
+		<td><ins style="background:#e6ffe6;">Loki Core - Web</ins></td>
+		<td class="mini">Item name for typeID 45633 (Engineering Systems)</td>
+	</tr>
+	<tr class="selectable" id="cid-110">
+		<td>526547</td>
+		<td width="355px"></td>
+		<td width="355px">UI Click</td>
+		<td><ins style="background:#e6ffe6;">UI Click</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-111">
+		<td>526548</td>
+		<td width="355px"></td>
+		<td width="355px">Buy extra skill queue</td>
+		<td><ins style="background:#e6ffe6;">Buy extra skill queue</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-112">
+		<td>526550</td>
+		<td width="355px"></td>
+		<td width="355px">&lt;color=0xffccff66&gt;<b>{[numeric]amount, decimalPlaces=0}</b>{faintColor}{fontMarkUpStart} remote shield boosted to {fontMarkUpEnd}<b>&lt;color=0xffffffff&gt;{specialObject}</b>{faintColor}{fontMarkUpStart} - {[item]type.name}{fontMarkUpEnd}</td>
+		<td><ins style="background:#e6ffe6;">&lt;color=0xffccff66&gt;&lt;b&gt;{[numeric]amount, decimalPlaces=0}&lt;/b&gt;{faintColor}{fontMarkUpStart} remote shield boosted to {fontMarkUpEnd}&lt;b&gt;&lt;color=0xffffffff&gt;{specialObject}&lt;/b&gt;{faintColor}{fontMarkUpStart} - {[item]type.name}{fontMarkUpEnd}</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-113">
+		<td>526551</td>
+		<td width="355px"></td>
+		<td width="355px">&lt;color=0xffccff66&gt;<b>{[numeric]amount, decimalPlaces=0}</b>{faintColor}{fontMarkUpStart} remote shield boosted by {fontMarkUpEnd}<b>&lt;color=0xffffffff&gt;{specialObject}</b>{faintColor}{fontMarkUpStart} - {[item]type.name}{fontMarkUpEnd}</td>
+		<td><ins style="background:#e6ffe6;">&lt;color=0xffccff66&gt;&lt;b&gt;{[numeric]amount, decimalPlaces=0}&lt;/b&gt;{faintColor}{fontMarkUpStart} remote shield boosted by {fontMarkUpEnd}&lt;b&gt;&lt;color=0xffffffff&gt;{specialObject}&lt;/b&gt;{faintColor}{fontMarkUpStart} - {[item]type.name}{fontMarkUpEnd}</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-114">
+		<td>526553</td>
+		<td width="355px"></td>
+		<td width="355px">&lt;color=0xffccff66&gt;<b>{[numeric]amount, decimalPlaces=0}</b>{faintColor}{fontMarkUpStart} remote hull repaired to {fontMarkUpEnd}<b>&lt;color=0xffffffff&gt;{specialObject}</b>{faintColor}{fontMarkUpStart} - {[item]type.name}{fontMarkUpEnd}</td>
+		<td><ins style="background:#e6ffe6;">&lt;color=0xffccff66&gt;&lt;b&gt;{[numeric]amount, decimalPlaces=0}&lt;/b&gt;{faintColor}{fontMarkUpStart} remote hull repaired to {fontMarkUpEnd}&lt;b&gt;&lt;color=0xffffffff&gt;{specialObject}&lt;/b&gt;{faintColor}{fontMarkUpStart} - {[item]type.name}{fontMarkUpEnd}</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-115">
+		<td>526554</td>
+		<td width="355px"></td>
+		<td width="355px">&lt;color=0xffccff66&gt;<b>{[numeric]amount, decimalPlaces=0}</b>{faintColor}{fontMarkUpStart} remote hull repaired by {fontMarkUpEnd}<b>&lt;color=0xffffffff&gt;{specialObject}</b>{faintColor}{fontMarkUpStart} - {[item]type.name}{fontMarkUpEnd}</td>
+		<td><ins style="background:#e6ffe6;">&lt;color=0xffccff66&gt;&lt;b&gt;{[numeric]amount, decimalPlaces=0}&lt;/b&gt;{faintColor}{fontMarkUpStart} remote hull repaired by {fontMarkUpEnd}&lt;b&gt;&lt;color=0xffffffff&gt;{specialObject}&lt;/b&gt;{faintColor}{fontMarkUpStart} - {[item]type.name}{fontMarkUpEnd}</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-116">
+		<td>526556</td>
+		<td width="355px"></td>
+		<td width="355px">&lt;color=0xffccff66&gt;<b>{[numeric]amount, decimalPlaces=0}</b>{faintColor}{fontMarkUpStart} remote capacitor transmitted by {fontMarkUpEnd}<b>&lt;color=0xffffffff&gt;{specialObject}</b>{faintColor}{fontMarkUpStart} - {[item]type.name}{fontMarkUpEnd}</td>
+		<td><ins style="background:#e6ffe6;">&lt;color=0xffccff66&gt;&lt;b&gt;{[numeric]amount, decimalPlaces=0}&lt;/b&gt;{faintColor}{fontMarkUpStart} remote capacitor transmitted by {fontMarkUpEnd}&lt;b&gt;&lt;color=0xffffffff&gt;{specialObject}&lt;/b&gt;{faintColor}{fontMarkUpStart} - {[item]type.name}{fontMarkUpEnd}</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-117">
+		<td>526557</td>
+		<td width="355px"></td>
+		<td width="355px">&lt;color=0xffccff66&gt;<b>{[numeric]amount, decimalPlaces=0}</b>{faintColor}{fontMarkUpStart} remote capacitor transmitted to {fontMarkUpEnd}<b>&lt;color=0xffffffff&gt;{specialObject}</b>{faintColor}{fontMarkUpStart} - {[item]type.name}{fontMarkUpEnd}</td>
+		<td><ins style="background:#e6ffe6;">&lt;color=0xffccff66&gt;&lt;b&gt;{[numeric]amount, decimalPlaces=0}&lt;/b&gt;{faintColor}{fontMarkUpStart} remote capacitor transmitted to {fontMarkUpEnd}&lt;b&gt;&lt;color=0xffffffff&gt;{specialObject}&lt;/b&gt;{faintColor}{fontMarkUpStart} - {[item]type.name}{fontMarkUpEnd}</ins></td>
+		<td class="mini"></td>
+	</tr>
+	</table>
+</details>
+
+<br>
+
+<!--<h2 id="newfiles">New Files</h2>-->
+
+<script>
+	function displayMedia(doc) {
+		nodes = doc.children
+		for (i=0; i < nodes.length; i++) {
+			node = nodes[i]
+			if (node.hasAttribute("data-src") && node.getAttribute("src") == "") {
+				node.setAttribute("src", node.getAttribute("data-src"))
+			}
+		}
+	}
+</script>
+<details id="newfiles">
+	<summary class="selectParent bigsum">New Files (41 Entries)</summary>
+	<table>
+	  <tr>
+		<th>File Name</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Size in kb (Decompressed)</th>
+	  </tr>
+	<tr class="selectable" id="cid-118">
+		<td><a href="http://res.eveprobe.ccpgames.com/97/97ef4662114172ae_48b4529217ba0c7da7fd9cbeddc32d4c">audio/1042790539.wem</a><br></td>
+		<td>208</td>
+	</tr>
+	<tr class="selectable" id="cid-119">
+		<td><a href="http://res.eveprobe.ccpgames.com/b4/b479e9693c08f1cd_6715a5ce998dcb9c32e3acdc757d3540">audio/270841863.wem</a><br></td>
+		<td>216</td>
+	</tr>
+	<tr class="selectable" id="cid-120">
+		<td><a href="http://res.eveprobe.ccpgames.com/fe/fe43313c07f17ca8_89e675d7bdb48357f2a4e27d25629712">audio/309823265.wem</a><br></td>
+		<td>234</td>
+	</tr>
+	<tr class="selectable" id="cid-121">
+		<td><a href="http://res.eveprobe.ccpgames.com/45/45a0d261dd54f479_27dfba1ad6835b07237d5fda84987f31">audio/482218668.wem</a><br></td>
+		<td>246</td>
+	</tr>
+	<tr class="selectable" id="cid-122">
+		<td><a href="http://res.eveprobe.ccpgames.com/f6/f6771adff454f2f1_5e2ec4b64e75a2971c8895f2f2df5072">audio/489553362.wem</a><br></td>
+		<td>254</td>
+	</tr>
+	<tr class="selectable" id="cid-123">
+		<td><a href="http://res.eveprobe.ccpgames.com/06/067681348510c0f6_6438552720170df67f0af8aad1098a40">audio/529000989.wem</a><br></td>
+		<td>230</td>
+	</tr>
+	<tr class="selectable" id="cid-124">
+		<td><a href="http://res.eveprobe.ccpgames.com/1e/1e909ef5fe937490_f99c5e5c4ad3c6b546807b01cb7a1a16">audio/552181206.wem</a><br></td>
+		<td>216</td>
+	</tr>
+	<tr class="selectable" id="cid-125">
+		<td><a href="http://res.eveprobe.ccpgames.com/8b/8be260c50c1f9c97_77a5c14a6eae3a76c266b99b8757d207">audio/690545864.wem</a><br></td>
+		<td>252</td>
+	</tr>
+	<tr class="selectable" id="cid-126">
+		<td><a href="http://res.eveprobe.ccpgames.com/b5/b51da84331bf61e1_c72efd6d45273d8904714fad85b5c2d4">audio/844958601.wem</a><br></td>
+		<td>221</td>
+	</tr>
+	<tr class="selectable" id="cid-127">
+		<td><a href="http://res.eveprobe.ccpgames.com/97/97925d121ee570e9_6993e068708965e5331a218b89fe7bae">audio/866245057.wem</a><br></td>
+		<td>217</td>
+	</tr>
+	<tr class="selectable" id="cid-128">
+		<td><a href="http://res.eveprobe.ccpgames.com/8e/8ead0cdc1bb2144d_2ea5e9aa18043b76c02710bd6b968749">audio/956276907.wem</a><br></td>
+		<td>273</td>
+	</tr>
+	<tr class="selectable" id="cid-129">
+		<td><a href="http://res.eveprobe.ccpgames.com/fc/fcf38500cb395b54_89556d1710253a5d0513db390214be5d">audio/977270279.wem</a><br></td>
+		<td>219</td>
+	</tr>
+	<tr class="selectable" id="cid-130">
+		<td><a href="http://res.eveprobe.ccpgames.com/b8/b8628103e56baf3c_fb391aa6137431136a671eb42bd9a541">dx9/model/decal/concord/logo_pdexoplanet_01_at.dds</a><br></td>
+		<td>22</td>
+	</tr>
+	<tr class="selectable" id="cid-131">
+		<td><a href="http://res.eveprobe.ccpgames.com/9d/9df8ed56bd330c41_5faae97365adbf1f641db92c271006c5">dx9/model/decal/concord/logo_pdexoplanet_01_f.dds</a><br></td>
+		<td>11</td>
+	</tr>
+	<tr class="selectable" id="cid-132">
+		<td><a href="http://res.eveprobe.ccpgames.com/00/00edb8adf45e3ee3_58fad562b0ed9b770aea610b4924e868">dx9/model/decal/concord/logo_pdexoplanet_01_nr.dds</a><br></td>
+		<td>11</td>
+	</tr>
+	<tr class="selectable" id="cid-133">
+		<td><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/1c/1c3ceecc4a81094b_1abc61c283e1345f3fae98ba8e70c4a4">res:/dx9/model/ship/amarr/dreadnought/adn1/icons/21277_64_bp.png</a>
+    		</summary>
+    		<img data-src="http://res.eveprobe.ccpgames.com/1c/1c3ceecc4a81094b_1abc61c283e1345f3fae98ba8e70c4a4" src="" />
+		</details></td>
+		<td>7</td>
+	</tr>
+	<tr class="selectable" id="cid-134">
+		<td><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/84/84f46f20ca9b6a20_bd6dab94f7b8e9487c7b018e1935a03b">res:/dx9/model/ship/amarr/dreadnought/adn1/icons/21277_64_bpc.png</a>
+    		</summary>
+    		<img data-src="http://res.eveprobe.ccpgames.com/84/84f46f20ca9b6a20_bd6dab94f7b8e9487c7b018e1935a03b" src="" />
+		</details></td>
+		<td>8</td>
+	</tr>
+	<tr class="selectable" id="cid-135">
+		<td><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/aa/aa37315655e364f0_563d44e7bc9c49926d0412625e5bb81b">res:/dx9/model/ship/amarr/forceauxillary/afaux1/icons/21358_64_bp.png</a>
+    		</summary>
+    		<img data-src="http://res.eveprobe.ccpgames.com/aa/aa37315655e364f0_563d44e7bc9c49926d0412625e5bb81b" src="" />
+		</details></td>
+		<td>7</td>
+	</tr>
+	<tr class="selectable" id="cid-136">
+		<td><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/f4/f46ceaa0ec66b3f1_a883fda2442c3e528b96e3dda5de8a7a">res:/dx9/model/ship/amarr/forceauxillary/afaux1/icons/21358_64_bpc.png</a>
+    		</summary>
+    		<img data-src="http://res.eveprobe.ccpgames.com/f4/f46ceaa0ec66b3f1_a883fda2442c3e528b96e3dda5de8a7a" src="" />
+		</details></td>
+		<td>7</td>
+	</tr>
+	<tr class="selectable" id="cid-137">
+		<td><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/ee/eebd9b1405693fc1_f2da8a9425b4a5e79f49292523710927">res:/dx9/model/ship/amarr/titan/at1/icons/21278_64_bp.png</a>
+    		</summary>
+    		<img data-src="http://res.eveprobe.ccpgames.com/ee/eebd9b1405693fc1_f2da8a9425b4a5e79f49292523710927" src="" />
+		</details></td>
+		<td>8</td>
+	</tr>
+	<tr class="selectable" id="cid-138">
+		<td><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/17/174642946ede7cf6_17271eff36bf996148511ea256f307c6">res:/dx9/model/ship/amarr/titan/at1/icons/21278_64_bpc.png</a>
+    		</summary>
+    		<img data-src="http://res.eveprobe.ccpgames.com/17/174642946ede7cf6_17271eff36bf996148511ea256f307c6" src="" />
+		</details></td>
+		<td>8</td>
+	</tr>
+	<tr class="selectable" id="cid-139">
+		<td><a href="http://res.eveprobe.ccpgames.com/8d/8db08ed969a1a522_226b2241bf9eef868bf4fd153346a729">dx9/model/spaceobjectfactory/factions/pdexoplanets.black</a><br></td>
+		<td>2</td>
+	</tr>
+	<tr class="selectable" id="cid-140">
+		<td><a href="http://res.eveprobe.ccpgames.com/4d/4d8dc1673f2012e6_d3a4fd5a11e20f716685709f67027413">graphics/effect.dx11/managed/space/spaceobject/v5/organic/skinned_asteroidv5.sm_depth</a><br></td>
+		<td>40</td>
+	</tr>
+	<tr class="selectable" id="cid-141">
+		<td><a href="http://res.eveprobe.ccpgames.com/a0/a0d839433045a8b6_7fee3bf5a3bd2af85ec99ae8cdee98c2">graphics/effect.dx11/managed/space/spaceobject/v5/organic/skinned_asteroidv5.sm_hi</a><br></td>
+		<td>25</td>
+	</tr>
+	<tr class="selectable" id="cid-142">
+		<td><a href="http://res.eveprobe.ccpgames.com/a0/a0d835433045a27c_8dbc546505391aab593e6185f7235796">graphics/effect.dx11/managed/space/spaceobject/v5/organic/skinned_asteroidv5.sm_lo</a><br></td>
+		<td>12</td>
+	</tr>
+	<tr class="selectable" id="cid-143">
+		<td><a href="http://res.eveprobe.ccpgames.com/8f/8f566598d7b0c5dd_9bb7f8d513e81ff4793248497d3ef2d6">graphics/effect.dx11/managed/space/spaceobject/v5/organic/unpackedskinned_asteroidv5.sm_depth</a><br></td>
+		<td>40</td>
+	</tr>
+	<tr class="selectable" id="cid-144">
+		<td><a href="http://res.eveprobe.ccpgames.com/93/93a9728303fdc0bb_075a47ffd96f068ddd4841d075e15e45">graphics/effect.dx11/managed/space/spaceobject/v5/organic/unpackedskinned_asteroidv5.sm_hi</a><br></td>
+		<td>25</td>
+	</tr>
+	<tr class="selectable" id="cid-145">
+		<td><a href="http://res.eveprobe.ccpgames.com/93/93a96e8303fdba69_528bb6eab12818ff526de09a66db8950">graphics/effect.dx11/managed/space/spaceobject/v5/organic/unpackedskinned_asteroidv5.sm_lo</a><br></td>
+		<td>11</td>
+	</tr>
+	<tr class="selectable" id="cid-146">
+		<td><a href="http://res.eveprobe.ccpgames.com/27/274c1a3e65ea9035_f1e2b7d2955242b71a52adfae263aa14">graphics/effect.dx9/managed/space/spaceobject/v5/organic/skinned_asteroidv5.sm_depth</a><br></td>
+		<td>10</td>
+	</tr>
+	<tr class="selectable" id="cid-147">
+		<td><a href="http://res.eveprobe.ccpgames.com/ae/aeaaa4f9e07789b3_2f3c0a431906d431fff16ca820775d08">graphics/effect.dx9/managed/space/spaceobject/v5/organic/skinned_asteroidv5.sm_hi</a><br></td>
+		<td>8</td>
+	</tr>
+	<tr class="selectable" id="cid-148">
+		<td><a href="http://res.eveprobe.ccpgames.com/ae/aeaaa0f9e0778361_d92d80044d54405bd538694841dc22e6">graphics/effect.dx9/managed/space/spaceobject/v5/organic/skinned_asteroidv5.sm_lo</a><br></td>
+		<td>3</td>
+	</tr>
+	<tr class="selectable" id="cid-149">
+		<td><a href="http://res.eveprobe.ccpgames.com/2f/2f6984a3a650b8f6_53175a48ad34adde792d6d99c222b614">graphics/effect.dx9/managed/space/spaceobject/v5/organic/unpackedskinned_asteroidv5.sm_depth</a><br></td>
+		<td>10</td>
+	</tr>
+	<tr class="selectable" id="cid-150">
+		<td><a href="http://res.eveprobe.ccpgames.com/e5/e5509c4b7c4ba0a6_18e6d26b6094064fbb30b926cf02241e">graphics/effect.dx9/managed/space/spaceobject/v5/organic/unpackedskinned_asteroidv5.sm_hi</a><br></td>
+		<td>8</td>
+	</tr>
+	<tr class="selectable" id="cid-151">
+		<td><a href="http://res.eveprobe.ccpgames.com/e5/e550984b7c4b9a6c_950caac229196cb029dd4e12dde70e12">graphics/effect.dx9/managed/space/spaceobject/v5/organic/unpackedskinned_asteroidv5.sm_lo</a><br></td>
+		<td>3</td>
+	</tr>
+	<tr class="selectable" id="cid-152">
+		<td><a href="http://res.eveprobe.ccpgames.com/be/be4e98e5d730fcdd_d251ac29f53e20be35d607d6d01387e5">graphics/effect.gles2/managed/space/spaceobject/v5/organic/skinned_asteroidv5.sm_depth</a><br></td>
+		<td>23</td>
+	</tr>
+	<tr class="selectable" id="cid-153">
+		<td><a href="http://res.eveprobe.ccpgames.com/8a/8abc9f71bd1265bb_13750fc1637af64936665d27c1bdc5c4">graphics/effect.gles2/managed/space/spaceobject/v5/organic/skinned_asteroidv5.sm_hi</a><br></td>
+		<td>19</td>
+	</tr>
+	<tr class="selectable" id="cid-154">
+		<td><a href="http://res.eveprobe.ccpgames.com/8a/8abc9b71bd125f69_0b48fd1322e3e6726056bdc161795cec">graphics/effect.gles2/managed/space/spaceobject/v5/organic/skinned_asteroidv5.sm_lo</a><br></td>
+		<td>9</td>
+	</tr>
+	<tr class="selectable" id="cid-155">
+		<td><a href="http://res.eveprobe.ccpgames.com/34/34fb95180f84359e_bfdab34b4a68382f7afd256d3d725f8f">graphics/effect.gles2/managed/space/spaceobject/v5/organic/unpackedskinned_asteroidv5.sm_depth</a><br></td>
+		<td>23</td>
+	</tr>
+	<tr class="selectable" id="cid-156">
+		<td><a href="http://res.eveprobe.ccpgames.com/20/2085333f88787a8e_7edf42c95118fb87c47045632992d282">graphics/effect.gles2/managed/space/spaceobject/v5/organic/unpackedskinned_asteroidv5.sm_hi</a><br></td>
+		<td>18</td>
+	</tr>
+	<tr class="selectable" id="cid-157">
+		<td><a href="http://res.eveprobe.ccpgames.com/20/20852f3f88787474_b7edd1e9d584c1e44e24ab6044072f8d">graphics/effect.gles2/managed/space/spaceobject/v5/organic/unpackedskinned_asteroidv5.sm_lo</a><br></td>
+		<td>8</td>
+	</tr>
+	<tr class="selectable" id="cid-158">
+		<td><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/be/be2023bdf074378a_5f6de92de64f30bba92fe57d6b0ad47e">res:/ui/texture/corps/pd_exoplanets.png</a>
+    		</summary>
+    		<img data-src="http://res.eveprobe.ccpgames.com/be/be2023bdf074378a_5f6de92de64f30bba92fe57d6b0ad47e" src="" />
+		</details></td>
+		<td>85</td>
+	</tr>
+	</table>
+</details>
+<script>
+	function test123() {
+		document.getElementById("footer1").style.display = "none";
+		document.getElementById("footer2").style.visibility = "visible";
+		document.getElementById("footer2").onclick = function() {document.location = "http://i.imgur.com/3Kd6ruW.jpg"}
+	}
+</script>
+<!--<h2 id="changedfiles">Changed Files</h2>-->
+
+<details id="changedfiles">
+	<summary class="selectParent bigsum">Changed Files (41 Entries)</summary>
+	<table>
+	  <tr>
+		<th>File Name</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Size in kb (Decompressed)</th>
+	  </tr>
+	<tr class="selectable" id="cid-159">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/ba/ba1aa4f3fb71b2da_7880f5370d55a1a1809f7e2a8a012d5e">bin/_trinity_dx11_deploy.dll</a><br></td>
+		<td>14291 -> 14291</td>
+	</tr>
+	<tr class="selectable" id="cid-160">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/34/34cee7939079398b_e192d439c94408984e042d93cc11ff64">bin/_trinity_dx9_deploy.dll</a><br></td>
+		<td>14189 -> 14189</td>
+	</tr>
+	<tr class="selectable" id="cid-161">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/aa/aa0b8b0323d24f50_49e59d6bed6cac7ea17dc5bc8421203e">bulkdata/metadata.yaml</a><br></td>
+		<td>0 -> 0</td>
+	</tr>
+	<tr class="selectable" id="cid-162">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/1e/1ef674def6229546_65249df7135b1bfdce2c8578bd08e495">bulkdata/version</a><br></td>
+		<td>0 -> 0</td>
+	</tr>
+	<tr class="selectable" id="cid-163">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/f0/f032ac16b88d97a4_fff9613112872a33e3570d1e253e2fe6">code.ccp</a><br></td>
+		<td>16730 -> 16734</td>
+	</tr>
+	<tr class="selectable" id="cid-164">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/1a/1a48a0969136daa1_ded1cd1dc4345337c90e978d4f9f099a">manifest.dat</a><br></td>
+		<td>12 -> 12</td>
+	</tr>
+	<tr class="selectable" id="cid-165">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/88/88f878b3aadd73dc_955f44cd768bca5daa2351f6d8bf4fe9">audio/393759501.wem</a><br></td>
+		<td>890 -> 870</td>
+	</tr>
+	<tr class="selectable" id="cid-166">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/ee/ee8be85f1266bec3_01e10b3dd0a53639be6aa4910d7cb409">audio/interface.bnk</a><br></td>
+		<td>8612 -> 12315</td>
+	</tr>
+	<tr class="selectable" id="cid-167">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/48/48a443bce47d275f_255098b366d0d3dd65116227825b8d9a">audio/music.bnk</a><br></td>
+		<td>8111 -> 34157</td>
+	</tr>
+	<tr class="selectable" id="cid-168">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/29/299d63199a8131b3_4ddd87ef4faa77b45159f4ec0515923b">audio/planets.bnk</a><br></td>
+		<td>1848 -> 1848</td>
+	</tr>
+	<tr class="selectable" id="cid-169">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/7a/7a583c603ed49fee_2e7187826c55e57aea869dbfbf2cd790">audio/shipeffects.bnk</a><br></td>
+		<td>5650 -> 5773</td>
+	</tr>
+	<tr class="selectable" id="cid-170">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/4b/4ba32af50b80bf9a_67948bd83f8c74d020149b24465dedef">audio/soundbanksinfo.xml</a><br></td>
+		<td>3193 -> 3224</td>
+	</tr>
+	<tr class="selectable" id="cid-171">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/6f/6fc2448a93522006_6022972abb641fec6dd4014f28c026cf">dx9/model/decal/concord/marking_conaero_01_f.dds</a><br></td>
+		<td>21 -> 21</td>
+	</tr>
+	<tr class="selectable" id="cid-172">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/75/757188ca289ec270_e38db935dc0efd50a4251125c2c396b1">dx9/model/decal/concord/marking_conaero_02_at.dds</a><br></td>
+		<td>43 -> 43</td>
+	</tr>
+	<tr class="selectable" id="cid-173">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/cf/cf60f70178b8047d_565244d96ea5230f1cdbb8482abb99d6">dx9/model/decal/concord/marking_conaero_02_f.dds</a><br></td>
+		<td>21 -> 21</td>
+	</tr>
+	<tr class="selectable" id="cid-174">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/4e/4ea06986aae91d07_239a1e82a8a6492d4b6be4600effa41b">dx9/model/decal/concord/marking_conaero_02_nr.dds</a><br></td>
+		<td>21 -> 21</td>
+	</tr>
+	<tr class="selectable" id="cid-175">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/6f/6f3d61269081b1f0_b368ff61fb671dfa8bd88618f5fab20a">dx9/model/hangar/amarr/ah1/ah1_postprocess.yaml</a><br></td>
+		<td>0 -> 0</td>
+	</tr>
+	<tr class="selectable" id="cid-176">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/40/40afa3596e3420b3_7a0f4a4e3fd97ee585125c8f8a1a1267">dx9/model/hangar/caldari/ch1/ch1_postprocess.yaml</a><br></td>
+		<td>0 -> 0</td>
+	</tr>
+	<tr class="selectable" id="cid-177">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/94/949aa0963d56ac19_b368ff61fb671dfa8bd88618f5fab20a">dx9/model/hangar/gallente/gh1/gh1_postprocess.yaml</a><br></td>
+		<td>0 -> 0</td>
+	</tr>
+	<tr class="selectable" id="cid-178">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/40/40dd75a4fadcd090_a81f5273607363170014cc96238cfca8">dx9/model/hangar/generic/capital/gench1/gench1_t1a_postprocess.yaml</a><br></td>
+		<td>0 -> 0</td>
+	</tr>
+	<tr class="selectable" id="cid-179">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/5a/5a51f0749e441879_c73d117e95b75d7b4657039d551a9757">dx9/model/hangar/generic/standard/gensh1/gensh1_t1a_postprocess.yaml</a><br></td>
+		<td>0 -> 0</td>
+	</tr>
+	<tr class="selectable" id="cid-180">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/2d/2d572e56982df668_62682b7c020e7476f202904d9171ee30">dx9/model/hangar/minmatar/mh1/mh1_postprocess.yaml</a><br></td>
+		<td>0 -> 0</td>
+	</tr>
+	<tr class="selectable" id="cid-181">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/35/350cf81f2f26b64b_860479c6d5680fa54675fc412ee90256">dx9/model/spaceobjectfactory/data.black</a><br></td>
+		<td>12095 -> 12097</td>
+	</tr>
+	<tr class="selectable" id="cid-182">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/04/040afe4920ec8e32_19068e73674531f48a4b7dfb33d9cc4a">fisfx/postprocess/eve.yaml</a><br></td>
+		<td>20 -> 20</td>
+	</tr>
+	<tr class="selectable" id="cid-183">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/37/3719f59ac6b0c033_358564b76fed82dee8a98de026297bf8">graphics/effect.dx11/managed/space/postprocess/tonemapping.sm_depth</a><br></td>
+		<td>27 -> 27</td>
+	</tr>
+	<tr class="selectable" id="cid-184">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/69/6964e258418569dd_358564b76fed82dee8a98de026297bf8">graphics/effect.dx11/managed/space/postprocess/tonemapping.sm_hi</a><br></td>
+		<td>27 -> 27</td>
+	</tr>
+	<tr class="selectable" id="cid-185">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/69/6964de5841856287_d6b101e4bec48cb3f4c061b075759e5a">graphics/effect.dx11/managed/space/postprocess/tonemapping.sm_lo</a><br></td>
+		<td>26 -> 26</td>
+	</tr>
+	<tr class="selectable" id="cid-186">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/2c/2c3038b3c38e91a1_e23ba7cf3e279d3e57caa34974d275a1">localizationfsd/localization_fsd_en-us.pickle</a><br></td>
+		<td>11438 -> 11447</td>
+	</tr>
+	<tr class="selectable" id="cid-187">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/79/79a473897ae5f3b0_f049da196280fc25de84de82b70db94b">localizationfsd/localization_fsd_main.pickle</a><br></td>
+		<td>2073 -> 2074</td>
+	</tr>
+	<tr class="selectable" id="cid-188">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/e9/e9bad7ecd80e0d2c_ac8b59bcde2e0db891e1b0ee04a2d2e4">staticdata/dialogs.static</a><br></td>
+		<td>270 -> 271</td>
+	</tr>
+	<tr class="selectable" id="cid-189">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/9a/9adf983d033ba1a3_d2ca891ccea2440bdf03dc0ca82a4b1c">staticdata/evecategories.static</a><br></td>
+		<td>10 -> 10</td>
+	</tr>
+	<tr class="selectable" id="cid-190">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/0b/0b577d4609680827_24014e3f446575479aabadcc996d159f">staticdata/evegroups.static</a><br></td>
+		<td>389 -> 389</td>
+	</tr>
+	<tr class="selectable" id="cid-191">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/67/671695e3a499baf0_420b85ff9cecbb1275f21bf739881dbb">staticdata/evetypes.static</a><br></td>
+		<td>12448 -> 12465</td>
+	</tr>
+	<tr class="selectable" id="cid-192">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/07/07b882fb276c5fc5_b2fc55d648f29b66b30bda7c4e9df612">staticdata/graphicmaterialsets.static</a><br></td>
+		<td>34 -> 36</td>
+	</tr>
+	<tr class="selectable" id="cid-193">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/38/38fb6e77a644db5c_d4d3fd54b77834a816c4e7bfb39dbff4">staticdata/soundids.static</a><br></td>
+		<td>41 -> 41</td>
+	</tr>
+	<tr class="selectable" id="cid-194">
+		<td style="text-align: middle;"><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/a5/a58f6857ea0130e8_2fd6a6433eb4081da10525d373580a7f">res:/ui/texture/classes/plexvault/upgradeomega.png</a>
+    		</summary>
+    		<img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/a5/a58f6857ea0130e8_ded3c9b299ae973b1be8dea08acd5d2d" src="" /> -> <img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/a5/a58f6857ea0130e8_2fd6a6433eb4081da10525d373580a7f" src="" />
+		</details></td>
+		<td>17 -> 3</td>
+	</tr>
+	<tr class="selectable" id="cid-195">
+		<td style="text-align: middle;"><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/cd/cdff76bd8b37dcb2_3a90533531d1a06985c91ac801428f57">res:/ui/texture/icons/multiple_training.png</a>
+    		</summary>
+    		<img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/cd/cdff76bd8b37dcb2_09b8a064cc4b714e6fe20c4cde5ba7a5" src="" /> -> <img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/cd/cdff76bd8b37dcb2_3a90533531d1a06985c91ac801428f57" src="" />
+		</details></td>
+		<td>9 -> 25</td>
+	</tr>
+	<tr class="selectable" id="cid-196">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/ee/eea80354bae9a691_2fb08e62a77c7a2f4d62274620e20a12">resfiledependencies.yaml</a><br></td>
+		<td>3465 -> 3465</td>
+	</tr>
+	<tr class="selectable" id="cid-197">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/1d/1d34143a37d4b739_e2405061dfa30fcf00650b772b6550be">resfileindex.txt</a><br></td>
+		<td>11530 -> 11537</td>
+	</tr>
+	<tr class="selectable" id="cid-198">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/56/5610a6eb8b5a4975_6988c9631b0d2b3336b2a508bd118355">resfileindex_prefetch.txt</a><br></td>
+		<td>1120 -> 1122</td>
+	</tr>
+	<tr class="selectable" id="cid-199">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/e3/e3cd8a97159e6321_5a9664fe8db753ce1e0a5921f8129ff8">start.ini</a><br></td>
+		<td>0 -> 0</td>
+	</tr>
+	</table>
+</details>
+
+<!--<h2 id="changedfiles">Removed Files</h2>-->
+
+<!-- [[removedFilesSection]] -->
+
+<!--<h2 id="changedpythonfiles">Changed Python Files</h2>-->
+
+<!-- [[changedPythonFiles]] -->
+
+<p class="mini2">Made by Inomares. I don't want your donations. I don't read EVE mails. Leave me alone.</p>
+<p class="mini3">I guess contact me on <a href="https://tweetfleet.slack.com/messages/@inomares/">Tweetfleet Slack</a> if you really need to.</p>
+<div class="footer1 footer" id="footer1" onClick="test123();"></div>
+<div class="footer2 footer" id="footer2"></div>
+
+<script>
+	var nodes = document.getElementsByClassName("noscripthidden")
+	for (var i=0; i < nodes.length; i++) {
+		var node = nodes[i]
+		node.classList.remove("noscripthidden")
+	}
+</script>
+</body>
+</html>
