@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hoboleaks: Tranquility_Previous (Build: 1145192) to Tranquility_Next (Build: 1146849)</title>
+	<meta charset="UTF-8">
+	<meta name="title" content="Client Comparison: Tranquility_Previous (Build: 1145192) to Tranquility_Next (Build: 1146849) | Hoboleaks">
+	<meta name="description" content="Generated @ 2017-05-23 11:58:51 EVE Time">
+	
+	<meta name="og:title" content="Hoboleaks: Tranquility_Previous (Build: 1145192) -> Tranquility_Next (Build: 1146849)">
+	<meta name="og:type" content="website">
+	<meta name="og:description" content="Generated @ 2017-05-23 11:58:51 EVE Time">
+	<!-- <meta name="og:image" content="http://hoboleaks.space/sitepreview.png"> -->
+	<meta name="og:image" content="http://static-cdn.jtvnw.net/emoticons/v1/151586/3.0">
+	<meta name="og:url" content="http://hoboleaks.space/">
+	<meta name="og:site_name" content="Hoboleaks">
+	
+	<meta name="twitter:title" content="Hoboleaks: Tranquility_Previous (Build: 1145192) -> Tranquility_Next (Build: 1146849)">
+	<meta name="twitter:description" content="Generated @ 2017-05-23 11:58:51 EVE Time">
+	<!-- <meta name="twitter:image" content="http://hoboleaks.space/sitepreview.png"> -->
+	<meta name="twitter:image" content="http://static-cdn.jtvnw.net/emoticons/v1/151586/3.0">
+	<meta name="genTime" content="1495540731758">
+	<meta name="genDate" content="2017-05-23 11:58:51">
+	<!-- Who needs css files lol -->
+	<style>
+		table {
+			width:1280px;
+			font-family: arial, tahoma, sans-serif;
+			font-size: 10pt;
+			border-collapse: collapse;
+		}
+
+		td, th {
+			border: 1px solid black;
+			text-align: left;
+			padding: 8px;
+		}
+
+		tr:nth-child(even) {
+			background-color: #DBDBDB;
+		}
+		
+		tr.unimportant {
+			opacity: 0.5;
+			font-size: 8pt;
+		}
+		
+		.hidden {
+			display: none;
+		}
+
+		td.mini {
+			font-size: 8pt;
+		}
+
+		p.mini {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 8pt;
+		}
+		
+		p {
+			font-family: arial, tahoma, sans-serif;
+		}
+		
+		p.mini2 {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 5pt;
+		}
+		
+		p.mini3 {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 5pt;
+			color: gray;
+		}
+		
+		p.kindasmall {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 10pt;
+			margin: 5px 0px 5px 0px;
+		}
+
+		h1, h2, h3 {
+			font-family: arial, tahoma, sans-serif;
+		}
+
+		summary.bigsum {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 15pt;
+		}		
+
+		summary.bigsum_disabled {
+			font-family: arial, tahoma, sans-serif;
+			color: #9E9E9E;
+			font-size: 15pt;
+		}
+		
+		summary.smallsum {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 10pt;
+		}
+		
+		.smallinput {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 10pt;
+		}
+		
+		p.scriptnotify {
+			font-family: arial, tahoma, sans-serif;
+			color: red;
+			font-size: 12pt;
+		}
+		
+		p.scriptnotifysmall {
+			font-family: arial, tahoma, sans-serif;
+			color: red;
+			font-size: 9pt;
+		}
+		
+		p.scriptnotifysmaller {
+			font-family: arial, tahoma, sans-serif;
+			color: red;
+			font-size: 5pt;
+		}
+		
+		div.simplebox {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 10pt;
+			padding: 5px;
+			margin: 2px;
+			border-left-style: dotted;
+		}
+		
+		ul {
+			padding-left:20px;
+		}
+		
+		div.footer {
+		   position: fixed;
+		   bottom: 20px;
+		   height: 20px;
+		   width: 20px;
+		   border-style: none;
+		}
+		
+		div.footer1 {
+		   right: 20px;
+		}
+		
+		div.footer2 {
+		   left: 20px;
+		   visibility: hidden;
+		}
+		
+		div.footer:hover {
+			border-style: dotted;
+			border-color: #F2F2F2;
+		}
+		
+		.selected {
+			background-color: #C4F0FF;
+		}
+		
+		tr.selected:nth-child(even) {
+			background-color: #C4F0FF;
+		}
+		
+		.noscripthidden {
+			display: none;
+		}
+
+		/* IE 6 */
+		* html #footer {
+		   position:absolute;
+		   top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
+		}
+	</style>
+	<script type="text/javascript">
+		genBaseHash = "highlight" + 1495540731758
+	
+	    function selectText(containerid, hasWaited) {
+			hasWaited = hasWaited || false
+			if (hasWaited == false) {
+				window.setTimeout(function(){selectText(containerid, true)}, 50); /* I'm sure I'm in the wrong here somehow and not Chrome, but this is how we're fixing it soooooooo yeah. */
+				return
+			}
+			var node = document.getElementById(containerid);
+			if (document.selection) {
+				var range = document.body.createTextRange();
+				range.moveToElementText(node);
+				range.select();
+			} else if (window.getSelection) {
+				var range = document.createRange();
+				range.selectNodeContents(node);
+				window.getSelection().removeAllRanges();
+				window.getSelection().addRange(range);
+			}
+		}
+		
+		function hasClass(node, className) {
+			return (node.className && node.className.indexOf(className) != -1)
+		}
+		
+		function getHashValues() {
+			hashValues = window.location.hash.slice(1).split(",")
+			if (!isHashValid(hashValues)) {
+				return [genBaseHash]
+			}
+			if (hashValues.length == 1 && hashValues[0] == "") {
+				return [genBaseHash]
+			}
+			return hashValues
+		}
+		
+		function isHashValid(hashValues) {
+			if (hashValues[0] == genBaseHash) {
+				return true
+			}
+			return false
+		}
+		
+		function hashHasID(nodeID) {
+			hashValues = getHashValues()
+			idPos = hashValues.indexOf(nodeID)
+			ret = (idPos != -1)
+			return 
+		}
+		
+		function updateSelectablesFromHash() {
+			hashValues = getHashValues()
+			oldSelected = document.getElementsByClassName("selected")
+			for (var i=oldSelected.length-1; i >= 0; i--) {
+				node = oldSelected[i]
+				if (!hashHasID(getNodeID(node))) {
+					deselectNode(node)
+				}
+			}
+			for (var i=0; i < hashValues.length; i++) {
+				currentID = hashValues[i]
+				idName = "cid-" + currentID
+				node = document.getElementById(idName)
+				if (node != null) {
+					selectNode(node)
+					updateInheritance(node)
+				}					
+			}
+		}
+		
+		function updateInheritance(node, isDetail) {
+			isDetail = isDetail || false
+			if (node == null || node.tagName == "BODY") {
+				return
+			}
+			if (hasClass(node, "selectParent")) {
+				node.classList.add("selected")
+			}
+			if (node.tagName == "DETAILS") {
+				updateInheritance(node.firstElementChild, true)
+			}
+			if (!isDetail) {
+				return updateInheritance(node.parentNode)
+			}
+		}
+		
+		function selectNode(node) {
+			node.classList.add("selected")
+		}
+		
+		function deselectNode(node) {
+			node.classList.remove("selected")
+		}
+		
+		function getNodeID(node) {
+			nodeID = node.id.slice(4)
+			return nodeID
+		}
+		
+		function toggleNodeHash(node) {
+			nodeID = node.id.slice(4)
+			hashValues = getHashValues()
+			idPos = hashValues.indexOf(nodeID)
+			if (idPos == -1) {
+				hashValues.push(nodeID)
+			}
+			else {
+				hashValues.splice(idPos, 1)
+			}
+			window.location.hash = hashValues.join()
+		}
+		
+		function getSelectableNode(node) {
+		/* We recursively iterate our way up the tree to see if any part of it is selectable. */
+			if (node == null) {
+				return null
+			}
+			if (hasClass(node, "selectable")) {
+				return node
+			}
+			return getSelectableNode(node.parentNode)			
+		}
+		
+		window.onhashchange = function() {
+			updateSelectablesFromHash()
+		}
+		
+		window.onload = function() {
+			document.body.onclick = function(e){
+				if (!e.altKey) {
+					return
+				}
+				if (window.event) {
+					clickedNode = event.srcElement;
+				}
+				else {
+					clickedNode = e.target
+				}
+				selectableNode = getSelectableNode(clickedNode)
+				if (selectableNode != null) {
+					toggleNodeHash(selectableNode)
+					return false
+				}
+			}
+			updateSelectablesFromHash()
+		}
+	</script>
+</head>
+<body>
+<h1>Comparing Tranquility_Previous (Build: 1145192) to Tranquility_Next (Build: 1146849)</h1>
+<noscript>
+	<nobr>
+		<p class="mini">Generated @ 2017-05-23 11:58:51 EVE Time (UTC)</p>
+		<p class="scriptnotify" style="display:inline;">You've disabled javascript. This made the menu so sad that it self-destructed. I hope you're happy now.</p>
+		<p class="scriptnotifysmaller" style="display:inline;">You monster.</p>
+	</nobr>
+	<p class="scriptnotifysmall">This page should still kinda work though.</p>
+</noscript>
+<iframe id="timer" src="timerSection.html?version=1&timer=1495540731758" style="border:none; display:none;" height="40px" width="800px"> </iframe>
+<iframe id="navMenu" src="" style="border:none; display:none;" height="40px" width="800px"> </iframe>
+<script>
+	function getStrippedPageName(pageName) {
+		dot = pageName.indexOf(".")
+		if (dot != -1) {
+			pageName = pageName.slice(0, dot)
+		}
+		slash = pageName.indexOf("/")
+		if (slash == 0) {
+			pageName = pageName.slice(1)
+		}
+		return pageName || "index"
+	}
+	
+	document.getElementById("navMenu").style.display = "block";
+	document.getElementById("navMenu").src = "nav.html?curPage=" + getStrippedPageName(window.location.pathname);
+	document.getElementById("timer").style.display = "block";
+</script>
+<p class="mini"></p>
+<p class="kindasmall">Click the categories below to expand them! ALT-click entries to highlight for sharing. <a href="confused.html">Confused?</a></p>
+
+<!--<h2 id="items">Items</h2>-->
+
+<details id="newitems">
+	<summary class="selectParent bigsum">New Items (1 Entries)</summary>
+	<table>
+	<details>
+	<summary class="smallsum" onClick="selectText('newItemsNotepad')">Show/Hide EVE notepad list for in-game viewing.</summary><div class="simplebox" id="newItemsNotepad">&lt;url=showinfo:45635&gt;Small Skill Injector&lt;/url&gt;<br></div></details>
+	  <tr>
+		<!--<th>[[title4]]</th>-->
+		<th>TypeID & Name</th>
+		<th>Description</th>
+		<th>Group</th>
+		<th>Attributes</th>
+	  </tr>
+	<tr class="selectable" id="cid-1">
+		<td>45635 - <b>Small Skill Injector</b></td>
+		<td style="max-width: 500px;">This item can be activated in a station to grant the user unallocated skill points. The injectors are consumed immediately once activated.<br><br>The amount of skill points granted depends on the total skill points (including unallocated skill points) the using character possesses, according to the following scale:<br><br>Characters with less than 5,000,000 skill points will receive 100,000 unallocated skill points.<br>Characters with between 5,000,000 and 50,000,000 skill points will receive 80,000 unallocated skill points.<br>Characters with between 50,000,000 and 80,000,000 skill points will receive 60,000 unallocated skill points.<br>Characters with more than 80,000,000 skill points will receive 30,000 unallocated skill points.<br><br>Small Skill Injectors are created by splitting &lt;a href=showinfo:40520&gt;Large Skill Injectors&lt;/a&gt; into five Small Skill Injectors each.</td>
+		<td style="max-width: 250px;">Skill Injectors</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 13 attributes.</summary>	<b>descriptionID:</b> 526610<br>	<b>typeID:</b> 45635<br>	<b>radius:</b> 1<br>	<b>Mass:</b> 0.0<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.002<br>	<b>typeNameID:</b> 526567<br>	<b>iconID:</b> 21731<br>	<b>published:</b> True<br>	<b>marketGroupID:</b> 2358<br>	<b>basePrice:</b> 0.0<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 1739<br></details></td>
+	</tr>
+	</table>
+</details>
+
+<details id="removeditems">
+	<summary class="selectParent bigsum_disabled" onclick="return false">Removed Items (0 Entries)</summary>
+	<p class="kindasmall">Please note that a "removed" item usually means the item was just not yet added to the "newer" build.</p>
+	<table>
+	  <tr>
+		<th>TypeID & Name</th>
+		<th>Description</th>
+		<th>Group</th>
+		<th>Attributes</th>
+	  </tr>
+	
+	</table>
+</details>
+
+<details id="changedblueprints">
+	<summary class="selectParent bigsum_disabled" onclick="return false">Changed Blueprints BETA (0 Entries)</summary>
+	<table>
+	  <tr>
+		<th>Blueprint Name</th>
+		<th>Old BP Data</th>
+		<th>New BP Data</th>
+		<th>Raw Diff</th>
+	  </tr>
+	
+	</table>
+</details>
+
+<br>
+
+<details id="bonuschanges">
+	<summary class="selectParent bigsum_disabled" onclick="return false">Changed Traits (0 Entries)</summary>
+	<table>
+	  <tr>
+		<th>TypeID, Group, & Name</th>
+		<th>Tranquility_Previous</th>
+		<th>Tranquility_Next</th>
+		<th>Diff</th>
+		<!-- <th>[[title4]]</th> -->
+	  </tr>
+	
+	</table>
+</details>
+
+<!--<h2 id="attributes">Attributes</h2>-->
+
+<details id="dgmattribs">
+	<summary class="selectParent bigsum_disabled" onclick="return false">Changes to Attributes (0 Entries)</summary>
+	<table>
+	  <tr>
+		<th>Attribute Name</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Diff</th>
+	  </tr>
+	
+	</table>
+</details>
+
+<details id="typeattribs">
+	<summary class="selectParent bigsum_disabled" onclick="return false">Attribute Changes per Type (0 Entries)</summary>
+	<table>
+	  <tr>
+		<th>TypeID, Name, and Group</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Diff</th>
+	  </tr>
+	
+	</table>
+</details>
+
+<br>
+
+<!--<h2 id="effectchanges">Effect Changes</h2>-->
+
+<details id="dgmeffects">
+	<summary class="selectParent bigsum_disabled" onclick="return false">Changes to Effects (0 Entries)</summary>
+	<table>
+	  <tr>
+		<th>Effect Name</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Diff</th>
+	  </tr>
+	
+	</table>
+</details>
+
+<details id="typeeffects">
+	<summary class="selectParent bigsum_disabled" onclick="return false">Effect Changes per Type (0 Entries)</summary>
+	<table>
+	  <tr>
+		<th>TypeID, Name, and Group</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Effects Changes</th>
+	  </tr>
+	
+	</table>
+</details>
+
+<br>
+
+<!--<h2 id="stringchanges">String Changes</h2>-->
+
+<script>
+	function toggleHidden(cb) {
+		var nodes = document.getElementById("stringchanges").getElementsByClassName("unimportant")
+		for (var i=0; i < nodes.length; i++) {
+			var node = nodes[i]
+			if (cb.checked) {
+				node.classList.remove("hidden")
+			} else {
+				node.classList.add("hidden")
+			}
+		}
+	}
+</script>
+<details id="stringchanges">
+	<summary class="selectParent bigsum">String Changes (8 Entries)</summary>
+	<label class="smallinput noscripthidden hidden"><input type="checkbox" onclick="toggleHidden(this)">Show [[unimportants]] changes marked as old</label>
+	<table>
+	  <tr>
+		<th>Key</th>
+		<th>Tranquility_Previous</th>
+		<th>Tranquility_Next</th>
+		<th>Diff</th>
+		<th>Notes</th>
+	  </tr>
+	<tr class="selectable" id="cid-2">
+		<td>514024</td>
+		<td width="355px">Skill Injector</td>
+		<td width="355px">Large Skill Injector</td>
+		<td><ins style="background:#e6ffe6;">Large </ins><span>Skill Injector</span></td>
+		<td class="mini">Item name for typeID 40520 (Skill Injectors)</td>
+	</tr>
+	<tr class="selectable" id="cid-3">
+		<td>514247</td>
+		<td width="355px">This item can be activated in a station to grant the user unallocated skill points. Skill injectors are consumed immediately once activated.<br><br>The amount of skill points granted depends on the total skill points (including unallocated skill points) the using character possesses, according to the following scale:<br><br>Characters with less than 5,000,000 skill points will receive 500,000 unallocated skill points.<br>Characters with between 5,000,000 and 50,000,000 skill points will receive 400,000 unallocated skill points.<br>Characters with between 50,000,000 and 80,000,000 skill points will receive 300,000 unallocated skill points.<br>Characters with more than 80,000,000 skill points will receive 150,000 unallocated skill points.<br><br>Skill Injectors are created using a <b>Skill Extractor</b>.</td>
+		<td width="355px">This item can be activated in a station to grant the user unallocated skill points. The injectors are consumed immediately once activated.<br><br>The amount of skill points granted depends on the total skill points (including unallocated skill points) the using character possesses, according to the following scale:<br><br>Characters with less than 5,000,000 skill points will receive 500,000 unallocated skill points.<br>Characters with between 5,000,000 and 50,000,000 skill points will receive 400,000 unallocated skill points.<br>Characters with between 50,000,000 and 80,000,000 skill points will receive 300,000 unallocated skill points.<br>Characters with more than 80,000,000 skill points will receive 150,000 unallocated skill points.<br><br>Large Skill Injectors are created using a <b>Skill Extractor</b>.</td>
+		<td><span>This item can be activated in a station to grant the user unallocated skill points. </span><del style="background:#ffe6e6;">Skill</del><ins style="background:#e6ffe6;">The</ins><span> injectors are consumed immediately once activated.<br><br>The amount of skill points granted depends on the total skill points (including unallocated skill points) the using character possesses, according to the following scale:<br><br>Characters with less than 5,000,000 skill points will receive 500,000 unallocated skill points.<br>Characters with between 5,000,000 and 50,000,000 skill points will receive 400,000 unallocated skill points.<br>Characters with between 50,000,000 and 80,000,000 skill points will receive 300,000 unallocated skill points.<br>Characters with more than 80,000,000 skill points will receive 150,000 unallocated skill points.<br><br></span><ins style="background:#e6ffe6;">Large </ins><span>Skill Injectors are created using a &lt;a href=showinfo:40519&gt;Skill Extractor&lt;/a&gt;.</span></td>
+		<td class="mini">Item description for "Large Skill Injector" (typeID 40520)</td>
+	</tr>
+	<tr class="selectable" id="cid-4">
+		<td>526567</td>
+		<td width="355px"></td>
+		<td width="355px">Small Skill Injector</td>
+		<td><ins style="background:#e6ffe6;">Small Skill Injector</ins></td>
+		<td class="mini">Item name for typeID 45635 (Skill Injectors)</td>
+	</tr>
+	<tr class="selectable" id="cid-5">
+		<td>526606</td>
+		<td width="355px"></td>
+		<td width="355px">Split {[numeric]quantity-&gt; "injector", "injectors"}</td>
+		<td><ins style="background:#e6ffe6;">Split {[numeric]quantity-&gt; "injector", "injectors"}</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-6">
+		<td>526607</td>
+		<td width="355px"></td>
+		<td width="355px">Combine injectors</td>
+		<td><ins style="background:#e6ffe6;">Combine injectors</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-7">
+		<td>526608</td>
+		<td width="355px"></td>
+		<td width="355px">You need at least {[numeric]minQuantity} {[item]injectorType.name} in order to combine them.</td>
+		<td><ins style="background:#e6ffe6;">You need at least {[numeric]minQuantity} {[item]injectorType.name} in order to combine them.</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-8">
+		<td>526609</td>
+		<td width="355px"></td>
+		<td width="355px">Too few injectors</td>
+		<td><ins style="background:#e6ffe6;">Too few injectors</ins></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-9">
+		<td>526610</td>
+		<td width="355px"></td>
+		<td width="355px">This item can be activated in a station to grant the user unallocated skill points. The injectors are consumed immediately once activated.<br><br>The amount of skill points granted depends on the total skill points (including unallocated skill points) the using character possesses, according to the following scale:<br><br>Characters with less than 5,000,000 skill points will receive 100,000 unallocated skill points.<br>Characters with between 5,000,000 and 50,000,000 skill points will receive 80,000 unallocated skill points.<br>Characters with between 50,000,000 and 80,000,000 skill points will receive 60,000 unallocated skill points.<br>Characters with more than 80,000,000 skill points will receive 30,000 unallocated skill points.<br><br>Small Skill Injectors are created by splitting <b>Large Skill Injectors</b> into five Small Skill Injectors each.</td>
+		<td><ins style="background:#e6ffe6;">This item can be activated in a station to grant the user unallocated skill points. The injectors are consumed immediately once activated.<br><br>The amount of skill points granted depends on the total skill points (including unallocated skill points) the using character possesses, according to the following scale:<br><br>Characters with less than 5,000,000 skill points will receive 100,000 unallocated skill points.<br>Characters with between 5,000,000 and 50,000,000 skill points will receive 80,000 unallocated skill points.<br>Characters with between 50,000,000 and 80,000,000 skill points will receive 60,000 unallocated skill points.<br>Characters with more than 80,000,000 skill points will receive 30,000 unallocated skill points.<br><br>Small Skill Injectors are created by splitting &lt;a href=showinfo:40520&gt;Large Skill Injectors&lt;/a&gt; into five Small Skill Injectors each.</ins></td>
+		<td class="mini">Item description for "Small Skill Injector" (typeID 45635)</td>
+	</tr>
+	</table>
+</details>
+
+<br>
+
+<!--<h2 id="newfiles">New Files</h2>-->
+
+<script>
+	function displayMedia(doc) {
+		nodes = doc.children
+		for (i=0; i < nodes.length; i++) {
+			node = nodes[i]
+			if (node.hasAttribute("data-src") && node.getAttribute("src") == "") {
+				node.setAttribute("src", node.getAttribute("data-src"))
+			}
+		}
+	}
+</script>
+<details id="newfiles">
+	<summary class="selectParent bigsum_disabled" onclick="return false">New Files (0 Entries)</summary>
+	<table>
+	  <tr>
+		<th>File Name</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Size in kb (Decompressed)</th>
+	  </tr>
+	
+	</table>
+</details>
+<script>
+	function test123() {
+		document.getElementById("footer1").style.display = "none";
+		document.getElementById("footer2").style.visibility = "visible";
+		document.getElementById("footer2").onclick = function() {document.location = "http://i.imgur.com/3Kd6ruW.jpg"}
+	}
+</script>
+<!--<h2 id="changedfiles">Changed Files</h2>-->
+
+<details id="changedfiles">
+	<summary class="selectParent bigsum">Changed Files (18 Entries)</summary>
+	<table>
+	  <tr>
+		<th>File Name</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Size in kb (Decompressed)</th>
+	  </tr>
+	<tr class="selectable" id="cid-10">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/bd/bda7724745ed6198_6a92de8b9a2ba8291751110c1f3c46fe">bin/staticdata/mapObjects.db</a><br></td>
+		<td>35793 -> 35793</td>
+	</tr>
+	<tr class="selectable" id="cid-11">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/aa/aa0b8b0323d24f50_02a6d2a3572372d21edf01d80a1205f4">bulkdata/metadata.yaml</a><br></td>
+		<td>0 -> 0</td>
+	</tr>
+	<tr class="selectable" id="cid-12">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/f0/f032ac16b88d97a4_49f9fe442b52b872aa18c5970e2eea88">code.ccp</a><br></td>
+		<td>16732 -> 16734</td>
+	</tr>
+	<tr class="selectable" id="cid-13">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/1a/1a48a0969136daa1_884610b54af7407f3700cb7f1e75a83c">manifest.dat</a><br></td>
+		<td>13 -> 13</td>
+	</tr>
+	<tr class="selectable" id="cid-14">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/f7/f781e479bccfd00e_decce9258328ba759a43fc6d3aa19df3">localizationfsd/localization_fsd_de.pickle</a><br></td>
+		<td>12590 -> 12592</td>
+	</tr>
+	<tr class="selectable" id="cid-15">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/2c/2c3038b3c38e91a1_b5b35e768c9d3c547ade04ee02d44aaa">localizationfsd/localization_fsd_en-us.pickle</a><br></td>
+		<td>11424 -> 11426</td>
+	</tr>
+	<tr class="selectable" id="cid-16">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/4a/4a0f5fe70b667169_d717a655e32e4f7842f51f93673cc2dd">localizationfsd/localization_fsd_fr.pickle</a><br></td>
+		<td>12611 -> 12613</td>
+	</tr>
+	<tr class="selectable" id="cid-17">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/79/79a473897ae5f3b0_32e10a59083b2d19bb58e58646e421d0">localizationfsd/localization_fsd_main.pickle</a><br></td>
+		<td>2071 -> 2071</td>
+	</tr>
+	<tr class="selectable" id="cid-18">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/4c/4c56e191aaa0e618_5567f0ab0131b1d548ae8a8da4074746">localizationfsd/localization_fsd_ru.pickle</a><br></td>
+		<td>45189 -> 45195</td>
+	</tr>
+	<tr class="selectable" id="cid-19">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/e9/e9bad7ecd80e0d2c_a8ed8baff0fbb9400a2bdf050a4a9e2c">staticdata/dialogs.static</a><br></td>
+		<td>270 -> 270</td>
+	</tr>
+	<tr class="selectable" id="cid-20">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/9a/9adf983d033ba1a3_2634fddacb8c8f722fddc8c466ab8b84">staticdata/evecategories.static</a><br></td>
+		<td>10 -> 10</td>
+	</tr>
+	<tr class="selectable" id="cid-21">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/0b/0b577d4609680827_f24431b9e19bedab784839dea5cd1998">staticdata/evegroups.static</a><br></td>
+		<td>388 -> 388</td>
+	</tr>
+	<tr class="selectable" id="cid-22">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/1a/1afa3f2b81f52348_f706a4050cb35b6b53fc25b7f63d0326">staticdata/evetypelists.static</a><br></td>
+		<td>12 -> 12</td>
+	</tr>
+	<tr class="selectable" id="cid-23">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/67/671695e3a499baf0_120b9537bb6cc8f10795850449092501">staticdata/evetypes.static</a><br></td>
+		<td>12438 -> 12438</td>
+	</tr>
+	<tr class="selectable" id="cid-24">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/2e/2edadfca55978bdf_ea1751a2d8f0aac7b89c2bdd507fea91">staticdata/starmapcache.pickle</a><br></td>
+		<td>1654 -> 1654</td>
+	</tr>
+	<tr class="selectable" id="cid-25">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/1d/1d34143a37d4b739_a960578db1abf2f23838742f8e735c75">resfileindex.txt</a><br></td>
+		<td>11510 -> 11510</td>
+	</tr>
+	<tr class="selectable" id="cid-26">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/56/5610a6eb8b5a4975_d90994007a1ff8a08150660352523050">resfileindex_prefetch.txt</a><br></td>
+		<td>1114 -> 1114</td>
+	</tr>
+	<tr class="selectable" id="cid-27">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/e3/e3cd8a97159e6321_4b2c6e0cce0020e7bfa2c8fbef723d7b">start.ini</a><br></td>
+		<td>0 -> 0</td>
+	</tr>
+	</table>
+</details>
+
+<!--<h2 id="changedfiles">Removed Files</h2>-->
+
+<!-- [[removedFilesSection]] -->
+
+<!--<h2 id="changedpythonfiles">Changed Python Files</h2>-->
+
+<!-- [[changedPythonFiles]] -->
+
+<p class="mini2">Made by Inomares. I don't want your donations. I don't read EVE mails. Leave me alone.</p>
+<p class="mini3">I guess contact me on <a href="https://tweetfleet.slack.com/messages/@inomares/">Tweetfleet Slack</a> if you really need to.</p>
+<div class="footer1 footer" id="footer1" onClick="test123();"></div>
+<div class="footer2 footer" id="footer2"></div>
+
+<script>
+	var nodes = document.getElementsByClassName("noscripthidden")
+	for (var i=0; i < nodes.length; i++) {
+		var node = nodes[i]
+		node.classList.remove("noscripthidden")
+	}
+</script>
+</body>
+</html>
