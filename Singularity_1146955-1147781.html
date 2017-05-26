@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hoboleaks: Singularity_Previous (Build: 1146955) to Singularity_Next (Build: 1147781)</title>
+	<meta charset="UTF-8">
+	<meta name="title" content="Client Comparison: Singularity_Previous (Build: 1146955) to Singularity_Next (Build: 1147781) | Hoboleaks">
+	<meta name="description" content="Generated @ 2017-05-26 14:21:08 EVE Time">
+	
+	<meta name="og:title" content="Hoboleaks: Singularity_Previous (Build: 1146955) -> Singularity_Next (Build: 1147781)">
+	<meta name="og:type" content="website">
+	<meta name="og:description" content="Generated @ 2017-05-26 14:21:08 EVE Time">
+	<!-- <meta name="og:image" content="http://hoboleaks.space/sitepreview.png"> -->
+	<meta name="og:image" content="http://static-cdn.jtvnw.net/emoticons/v1/151586/3.0">
+	<meta name="og:url" content="http://hoboleaks.space/">
+	<meta name="og:site_name" content="Hoboleaks">
+	
+	<meta name="twitter:title" content="Hoboleaks: Singularity_Previous (Build: 1146955) -> Singularity_Next (Build: 1147781)">
+	<meta name="twitter:description" content="Generated @ 2017-05-26 14:21:08 EVE Time">
+	<!-- <meta name="twitter:image" content="http://hoboleaks.space/sitepreview.png"> -->
+	<meta name="twitter:image" content="http://static-cdn.jtvnw.net/emoticons/v1/151586/3.0">
+	<meta name="genTime" content="1495808468069">
+	<meta name="genDate" content="2017-05-26 14:21:08">
+	<!-- Who needs css files lol -->
+	<style>
+		table {
+			width:1280px;
+			font-family: arial, tahoma, sans-serif;
+			font-size: 10pt;
+			border-collapse: collapse;
+		}
+
+		td, th {
+			border: 1px solid black;
+			text-align: left;
+			padding: 8px;
+		}
+
+		tr:nth-child(even) {
+			background-color: #DBDBDB;
+		}
+		
+		tr.unimportant {
+			opacity: 0.5;
+			font-size: 8pt;
+		}
+		
+		.hidden {
+			display: none;
+		}
+
+		td.mini {
+			font-size: 8pt;
+		}
+
+		p.mini {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 8pt;
+		}
+		
+		p {
+			font-family: arial, tahoma, sans-serif;
+		}
+		
+		p.mini2 {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 5pt;
+		}
+		
+		p.mini3 {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 5pt;
+			color: gray;
+		}
+		
+		p.kindasmall {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 10pt;
+			margin: 5px 0px 5px 0px;
+		}
+
+		h1, h2, h3 {
+			font-family: arial, tahoma, sans-serif;
+		}
+
+		summary.bigsum {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 15pt;
+		}		
+
+		summary.bigsum_disabled {
+			font-family: arial, tahoma, sans-serif;
+			color: #9E9E9E;
+			font-size: 15pt;
+		}
+		
+		summary.smallsum {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 10pt;
+		}
+		
+		.smallinput {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 10pt;
+		}
+		
+		p.scriptnotify {
+			font-family: arial, tahoma, sans-serif;
+			color: red;
+			font-size: 12pt;
+		}
+		
+		p.scriptnotifysmall {
+			font-family: arial, tahoma, sans-serif;
+			color: red;
+			font-size: 9pt;
+		}
+		
+		p.scriptnotifysmaller {
+			font-family: arial, tahoma, sans-serif;
+			color: red;
+			font-size: 5pt;
+		}
+		
+		div.simplebox {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 10pt;
+			padding: 5px;
+			margin: 2px;
+			border-left-style: dotted;
+		}
+		
+		ul {
+			padding-left:20px;
+		}
+		
+		div.footer {
+		   position: fixed;
+		   bottom: 20px;
+		   height: 20px;
+		   width: 20px;
+		   border-style: none;
+		}
+		
+		div.footer1 {
+		   right: 20px;
+		}
+		
+		div.footer2 {
+		   left: 20px;
+		   visibility: hidden;
+		}
+		
+		div.footer:hover {
+			border-style: dotted;
+			border-color: #F2F2F2;
+		}
+		
+		.selected {
+			background-color: #C4F0FF;
+		}
+		
+		tr.selected:nth-child(even) {
+			background-color: #C4F0FF;
+		}
+		
+		.noscripthidden {
+			display: none;
+		}
+
+		/* IE 6 */
+		* html #footer {
+		   position:absolute;
+		   top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
+		}
+	</style>
+	<script type="text/javascript">
+		genBaseHash = "highlight" + 1495808468069
+	
+	    function selectText(containerid, hasWaited) {
+			hasWaited = hasWaited || false
+			if (hasWaited == false) {
+				window.setTimeout(function(){selectText(containerid, true)}, 50); /* I'm sure I'm in the wrong here somehow and not Chrome, but this is how we're fixing it soooooooo yeah. */
+				return
+			}
+			var node = document.getElementById(containerid);
+			if (document.selection) {
+				var range = document.body.createTextRange();
+				range.moveToElementText(node);
+				range.select();
+			} else if (window.getSelection) {
+				var range = document.createRange();
+				range.selectNodeContents(node);
+				window.getSelection().removeAllRanges();
+				window.getSelection().addRange(range);
+			}
+		}
+		
+		function hasClass(node, className) {
+			return (node.className && node.className.indexOf(className) != -1)
+		}
+		
+		function getHashValues() {
+			hashValues = window.location.hash.slice(1).split(",")
+			if (!isHashValid(hashValues)) {
+				return [genBaseHash]
+			}
+			if (hashValues.length == 1 && hashValues[0] == "") {
+				return [genBaseHash]
+			}
+			return hashValues
+		}
+		
+		function isHashValid(hashValues) {
+			if (hashValues[0] == genBaseHash) {
+				return true
+			}
+			return false
+		}
+		
+		function hashHasID(nodeID) {
+			hashValues = getHashValues()
+			idPos = hashValues.indexOf(nodeID)
+			ret = (idPos != -1)
+			return 
+		}
+		
+		function updateSelectablesFromHash() {
+			hashValues = getHashValues()
+			oldSelected = document.getElementsByClassName("selected")
+			for (var i=oldSelected.length-1; i >= 0; i--) {
+				node = oldSelected[i]
+				if (!hashHasID(getNodeID(node))) {
+					deselectNode(node)
+				}
+			}
+			for (var i=0; i < hashValues.length; i++) {
+				currentID = hashValues[i]
+				idName = "cid-" + currentID
+				node = document.getElementById(idName)
+				if (node != null) {
+					selectNode(node)
+					updateInheritance(node)
+				}					
+			}
+		}
+		
+		function updateInheritance(node, isDetail) {
+			isDetail = isDetail || false
+			if (node == null || node.tagName == "BODY") {
+				return
+			}
+			if (hasClass(node, "selectParent")) {
+				node.classList.add("selected")
+			}
+			if (node.tagName == "DETAILS") {
+				updateInheritance(node.firstElementChild, true)
+			}
+			if (!isDetail) {
+				return updateInheritance(node.parentNode)
+			}
+		}
+		
+		function selectNode(node) {
+			node.classList.add("selected")
+		}
+		
+		function deselectNode(node) {
+			node.classList.remove("selected")
+		}
+		
+		function getNodeID(node) {
+			nodeID = node.id.slice(4)
+			return nodeID
+		}
+		
+		function toggleNodeHash(node) {
+			nodeID = node.id.slice(4)
+			hashValues = getHashValues()
+			idPos = hashValues.indexOf(nodeID)
+			if (idPos == -1) {
+				hashValues.push(nodeID)
+			}
+			else {
+				hashValues.splice(idPos, 1)
+			}
+			window.location.hash = hashValues.join()
+		}
+		
+		function getSelectableNode(node) {
+		/* We recursively iterate our way up the tree to see if any part of it is selectable. */
+			if (node == null) {
+				return null
+			}
+			if (hasClass(node, "selectable")) {
+				return node
+			}
+			return getSelectableNode(node.parentNode)			
+		}
+		
+		window.onhashchange = function() {
+			updateSelectablesFromHash()
+		}
+		
+		window.onload = function() {
+			document.body.onclick = function(e){
+				if (!e.altKey) {
+					return
+				}
+				if (window.event) {
+					clickedNode = event.srcElement;
+				}
+				else {
+					clickedNode = e.target
+				}
+				selectableNode = getSelectableNode(clickedNode)
+				if (selectableNode != null) {
+					toggleNodeHash(selectableNode)
+					return false
+				}
+			}
+			updateSelectablesFromHash()
+		}
+	</script>
+</head>
+<body>
+<h1>Comparing Singularity_Previous (Build: 1146955) to Singularity_Next (Build: 1147781)</h1>
+<noscript>
+	<nobr>
+		<p class="mini">Generated @ 2017-05-26 14:21:08 EVE Time (UTC)</p>
+		<p class="scriptnotify" style="display:inline;">You've disabled javascript. This made the menu so sad that it self-destructed. I hope you're happy now.</p>
+		<p class="scriptnotifysmaller" style="display:inline;">You monster.</p>
+	</nobr>
+	<p class="scriptnotifysmall">This page should still kinda work though.</p>
+</noscript>
+<iframe id="timer" src="timerSection.html?version=1&timer=1495808468069" style="border:none; display:none;" height="40px" width="800px"> </iframe>
+<iframe id="navMenu" src="" style="border:none; display:none;" height="40px" width="800px"> </iframe>
+<script>
+	function getStrippedPageName(pageName) {
+		dot = pageName.indexOf(".")
+		if (dot != -1) {
+			pageName = pageName.slice(0, dot)
+		}
+		slash = pageName.indexOf("/")
+		if (slash == 0) {
+			pageName = pageName.slice(1)
+		}
+		return pageName || "index"
+	}
+	
+	document.getElementById("navMenu").style.display = "block";
+	document.getElementById("navMenu").src = "nav.html?curPage=" + getStrippedPageName(window.location.pathname);
+	document.getElementById("timer").style.display = "block";
+</script>
+<p class="mini"></p>
+<p class="kindasmall">Click the categories below to expand them! ALT-click entries to highlight for sharing. <a href="confused.html">Confused?</a></p>
+
+<!--<h2 id="items">Items</h2>-->
+
+<details id="newitems">
+	<summary class="selectParent bigsum">New Items (4 Entries)</summary>
+	<table>
+	<details>
+	<summary class="smallsum" onClick="selectText('newItemsNotepad')">Show/Hide EVE notepad list for in-game viewing.</summary><div class="simplebox" id="newItemsNotepad">&lt;url=showinfo:45640&gt;Standup M-Set Thukker Advanced Component Manufacturing Material Efficiency&lt;/url&gt;<br>&lt;url=showinfo:45641&gt;Standup L-Set Thukker Advanced Component Manufacturing Efficiency&lt;/url&gt;<br>&lt;url=showinfo:45642&gt;Standup M-Set Thukker Advanced Component Manufacturing Material Efficiency Blueprint&lt;/url&gt;<br>&lt;url=showinfo:45643&gt;Standup L-Set Thukker Advanced Component Manufacturing Efficiency Blueprint&lt;/url&gt;<br></div></details>
+	  <tr>
+		<!--<th>[[title4]]</th>-->
+		<th>TypeID & Name</th>
+		<th>Description</th>
+		<th>Group</th>
+		<th>Attributes</th>
+	  </tr>
+	<tr class="selectable" id="cid-1">
+		<td>45640 - <b>Standup M-Set Thukker Advanced Component Manufacturing Material Efficiency</b></td>
+		<td style="max-width: 500px;">This rig has been optimized for use in low security space and will provide reduced benefits in all other areas of space. When installed in low security space it provides enhanced benefits to the materials required for construction of Tech 2 capital ship components and normal benefits to the construction of other Tech 2 components, Tools, Data Interfaces and Tech 3 components.<br><br>The Standup M-Set Thukker Advanced Component Manufacturing Material Efficiency rig provides a means for structure operators to decrease material requirements for manufacturing Tech 2 components, Tech 2 capital components, Tools, Data Interfaces and Tech 3 components in their Upwell structures.<br><br>This facility design has been modified by Thukker specialists to utilize certain unregulated opportunities for expediting capital ship component construction in low security space.<br><br>Standup is a proprietary system that uses a Structure Autonomous Nanoassembly Device (Upwell) containing integrated template software, a nanoassembler array and sufficient nanomass to enable the construction of a variety of service modules, structure modules and structure rigs when inserted into the appropriate slots on a structure built with Upwell technology.<br><br>Note: Only one rig of the same type, counting both tech variations, may be fitted at the same time on a structure.</td>
+		<td style="max-width: 250px;">Structure Engineering Rig M - Advanced Component ME</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 32 attributes.</summary>	<b>Calibration cost:</b> 100.0<br>	<b>Mass:</b> 200.0<br>	<b>typeNameID:</b> 526600<br>	<b>Structure Hitpoints:</b> 40.0<br>	<b>iconID:</b> 21729<br>	<b>Rig Size:</b> 2.0<br>	<b>Time Reduction Bonus:</b> 0.0<br>	<b>Can be fitted to:</b> 1657.0<br>	<b>Can be fitted to:</b> 1404.0<br>	<b>requiredSkill1Level:</b> 1.0<br>	<b>metaGroupID:</b> 4.0<br>	<b>structureItemVisualFlag:</b> 1.0<br>	<b>typeID:</b> 45640<br>	<b>radius:</b> 100.0<br>	<b>Cost Reduction Bonus:</b> 0.0<br>	<b>Capacity:</b> 0.0<br>	<b>Max Modules Of This Group Allowed:</b> 1.0<br>	<b>High Security Bonus Multiplier:</b> 0.1<br>	<b>Low Security Bonus Multiplier:</b> 1.9<br>	<b>Nullsec and Wormhole Bonus Multiplier:</b> 0.1<br>	<b>securityModifier:</b> 1.0<br>	<b>published:</b> True<br>	<b>Primary Skill required:</b> 26252.0<br>	<b>Volume:</b> 10.0<br>	<b>Material Reduction Bonus:</b> -2.0<br>	<b>marketGroupID:</b> 2347<br>	<b>Thukker Enhanced Capital Component Material Reduction Bonus:</b> -3.7<br>	<b>descriptionID:</b> 526601<br>	<b>Tech Level:</b> 1.0<br>	<b>basePrice:</b> 0.0<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 1836<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-2">
+		<td>45641 - <b>Standup L-Set Thukker Advanced Component Manufacturing Efficiency</b></td>
+		<td style="max-width: 500px;">This rig has been optimized for use in low security space and will provide reduced benefits in all other areas of space. When installed in low security space it provides enhanced benefits to the materials required for construction of Tech 2 capital ship components and normal benefits to the construction of other Tech 2 components, Tools, Data Interfaces and Tech 3 components.<br><br>The Standup L-Set Thukker Advanced Component Manufacturing Efficiency rig provides a means for structure operators to decrease both material and time requirements for manufacturing Tech 2 components, Tech 2 capital components, Tools, Data Interfaces and Tech 3 components in their Upwell structures.<br><br>This facility design has been modified by Thukker specialists to utilize certain unregulated opportunities for expediting capital ship component construction in low security space.<br><br>Standup is a proprietary system that uses a Structure Autonomous Nanoassembly Device (Upwell) containing integrated template software, a nanoassembler array and sufficient nanomass to enable the construction of a variety of service modules, structure modules and structure rigs when inserted into the appropriate slots on a structure built with Upwell technology.<br><br>Note: Only one rig of the same type, counting both tech variations, may be fitted at the same time on a structure.</td>
+		<td style="max-width: 250px;">Structure Engineering Rig L - Advanced Component Efficiency</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 34 attributes.</summary>	<b>Calibration cost:</b> 100.0<br>	<b>Mass:</b> 200.0<br>	<b>typeNameID:</b> 526602<br>	<b>Structure Hitpoints:</b> 40.0<br>	<b>iconID:</b> 21729<br>	<b>Rig Size:</b> 3.0<br>	<b>Time Reduction Bonus:</b> -20.0<br>	<b>Can be fitted to:</b> 1657.0<br>	<b>Can be fitted to:</b> 1404.0<br>	<b>requiredSkill1Level:</b> 1.0<br>	<b>metaGroupID:</b> 4.0<br>	<b>structureItemVisualFlag:</b> 1.0<br>	<b>typeID:</b> 45641<br>	<b>radius:</b> 100.0<br>	<b>Cost Reduction Bonus:</b> 0.0<br>	<b>Capacity:</b> 0.0<br>	<b>structureRigBonus1:</b> 32.0<br>	<b>structureRigBonus2:</b> 3.2<br>	<b>Max Modules Of This Group Allowed:</b> 1.0<br>	<b>High Security Bonus Multiplier:</b> 0.1<br>	<b>Low Security Bonus Multiplier:</b> 1.9<br>	<b>Nullsec and Wormhole Bonus Multiplier:</b> 0.1<br>	<b>securityModifier:</b> 1.0<br>	<b>published:</b> True<br>	<b>Primary Skill required:</b> 26252.0<br>	<b>Volume:</b> 20.0<br>	<b>Material Reduction Bonus:</b> -2.0<br>	<b>marketGroupID:</b> 2348<br>	<b>Thukker Enhanced Capital Component Material Reduction Bonus:</b> -3.7<br>	<b>descriptionID:</b> 526603<br>	<b>Tech Level:</b> 1.0<br>	<b>basePrice:</b> 0.0<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 1860<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-3">
+		<td>45642 - <b>Standup M-Set Thukker Advanced Component Manufacturing Material Efficiency Blueprint</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Structure  Rig Blueprint</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 11 attributes.</summary>	<b>typeID:</b> 45642<br>	<b>radius:</b> 1<br>	<b>Mass:</b> 0.0<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.01<br>	<b>typeNameID:</b> 526604<br>	<b>iconID:</b> 3198<br>	<b>published:</b> True<br>	<b>basePrice:</b> 100000000<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 1708<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-4">
+		<td>45643 - <b>Standup L-Set Thukker Advanced Component Manufacturing Efficiency Blueprint</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Structure  Rig Blueprint</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 11 attributes.</summary>	<b>typeID:</b> 45643<br>	<b>radius:</b> 1<br>	<b>Mass:</b> 0.0<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.01<br>	<b>typeNameID:</b> 526605<br>	<b>iconID:</b> 21729<br>	<b>published:</b> True<br>	<b>basePrice:</b> 500000000<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 1708<br></details></td>
+	</tr>
+	</table>
+</details>
+
+<details id="removeditems">
+	<summary class="selectParent bigsum_disabled" onclick="return false">Removed Items (0 Entries)</summary>
+	<p class="kindasmall">Please note that a "removed" item usually means the item was just not yet added to the "newer" build.</p>
+	<table>
+	  <tr>
+		<th>TypeID & Name</th>
+		<th>Description</th>
+		<th>Group</th>
+		<th>Attributes</th>
+	  </tr>
+	
+	</table>
+</details>
+
+<details id="changedblueprints">
+	<summary class="selectParent bigsum">Changed Blueprints BETA (2 Entries)</summary>
+	<table>
+	  <tr>
+		<th>Blueprint Name</th>
+		<th>Old BP Data</th>
+		<th>New BP Data</th>
+		<th>Raw Diff</th>
+	  </tr>
+	<tr class="selectable" id="cid-5">
+		<td>45642 - <b>Standup M-Set Thukker Advanced Component Manufacturing Material Efficiency Blueprint</b></td>
+		<td>No blueprint entry found.</td>
+		<td>Copy:? ME:? TE:? Limit:60x<br><b>Materials:</b><br>1x Standup M-Set Advanced Component Manufacturing Material Efficiency I<br>100x Covert Research Tools<br><b>Skills:</b><br>Industry I<br><b>Outcome:</b><br>1x Standup M-Set Thukker Advanced Component Manufacturing Material Efficiency (45640)</td>
+		<td width="300"><ins style="background:#e6ffe6;">Copy:? ME:? TE:? Limit:60x<br>Materials:<br>1x 43867<br>100x 33577<br>Skills:<br>3380 I<br>Outcome:<br>1x 45640</ins></td>
+	</tr><tr class="selectable" id="cid-6">
+		<td>45643 - <b>Standup L-Set Thukker Advanced Component Manufacturing Efficiency Blueprint</b></td>
+		<td>No blueprint entry found.</td>
+		<td>Copy:? ME:? TE:? Limit:40x<br><b>Materials:</b><br>1x Standup L-Set Advanced Component Manufacturing Efficiency I<br>200x Covert Research Tools<br><b>Skills:</b><br>Industry I<br><b>Outcome:</b><br>1x Standup L-Set Thukker Advanced Component Manufacturing Efficiency (45641)</td>
+		<td width="300"><ins style="background:#e6ffe6;">Copy:? ME:? TE:? Limit:40x<br>Materials:<br>1x 37174<br>200x 33577<br>Skills:<br>3380 I<br>Outcome:<br>1x 45641</ins></td>
+	</tr>
+	</table>
+</details>
+
+<br>
+
+<details id="bonuschanges">
+	<summary class="selectParent bigsum_disabled" onclick="return false">Changed Traits (0 Entries)</summary>
+	<table>
+	  <tr>
+		<th>TypeID, Group, & Name</th>
+		<th>Singularity_Previous</th>
+		<th>Singularity_Next</th>
+		<th>Diff</th>
+		<!-- <th>[[title4]]</th> -->
+	  </tr>
+	
+	</table>
+</details>
+
+<!--<h2 id="attributes">Attributes</h2>-->
+
+<details id="dgmattribs">
+	<summary class="selectParent bigsum_disabled" onclick="return false">Changes to Attributes (0 Entries)</summary>
+	<table>
+	  <tr>
+		<th>Attribute Name</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Diff</th>
+	  </tr>
+	
+	</table>
+</details>
+
+<details id="typeattribs">
+	<summary class="selectParent bigsum">Attribute Changes per Type (10 Entries)</summary>
+	<table>
+	  <tr>
+		<th>TypeID, Name, and Group</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Diff</th>
+	  </tr>
+	<tr class="selectable" id="cid-7">
+		<td>32250 - <b>Sovereignty Blockade Unit</b> (Sovereignty Blockade Unit)</td>
+		<td><b>published:</b> True <b>=></b> False<br><b>marketGroupID:</b> 1274 <b>=></b> None<br></td>
+	</tr>
+	<tr class="selectable" id="cid-8">
+		<td>32799 - <b>Orbital Laser S</b> (Frequency Crystal)</td>
+		<td><b>published:</b> True <b>=></b> False<br><b>marketGroupID:</b> 1599 <b>=></b> None<br></td>
+	</tr>
+	<tr class="selectable" id="cid-9">
+		<td>32800 - <b>Orbital Laser S Blueprint</b> (Frequency Crystal Blueprint)</td>
+		<td><b>published:</b> True <b>=></b> False<br></td>
+	</tr>
+	<tr class="selectable" id="cid-10">
+		<td>32801 - <b>Orbital EMP S</b> (Projectile Ammo)</td>
+		<td><b>published:</b> True <b>=></b> False<br><b>marketGroupID:</b> 1598 <b>=></b> None<br></td>
+	</tr>
+	<tr class="selectable" id="cid-11">
+		<td>32802 - <b>Orbital EMP S Blueprint</b> (Projectile Ammo Blueprint)</td>
+		<td><b>published:</b> True <b>=></b> False<br></td>
+	</tr>
+	<tr class="selectable" id="cid-12">
+		<td>32803 - <b>Orbital Hybrid S</b> (Hybrid Charge)</td>
+		<td><b>published:</b> True <b>=></b> False<br><b>marketGroupID:</b> 1600 <b>=></b> None<br></td>
+	</tr>
+	<tr class="selectable" id="cid-13">
+		<td>32804 - <b>Orbital Hybrid S Blueprint</b> (Hybrid Charge Blueprint)</td>
+		<td><b>published:</b> True <b>=></b> False<br></td>
+	</tr>
+	<tr class="selectable" id="cid-14">
+		<td>45550 - <b>Standup Hyasyoda Research Lab</b> (Structure Engineering Service Module)</td>
+		<td><b>serviceModuleFuelAmount:</b> 11.0 <b>=></b> 10.0<br><b>serviceModuleFuelOnlineAmount:</b> 792.0 <b>=></b> 720.0<br></td>
+	</tr>
+	<tr class="selectable" id="cid-15">
+		<td>45640 - <b>Standup M-Set Thukker Advanced Component Manufacturing Material Efficiency</b> (Structure Engineering Rig M - Advanced Component ME)</td>
+		<td><details>
+	<summary>Click to toggle showing the 32 attributes.</summary><b>mass:</b> None <b>=></b> 200.0<br><b>hp:</b> None <b>=></b> 40.0<br><b>capacity:</b> None <b>=></b> 0.0<br><b>volume:</b> None <b>=></b> 10.0<br><b>radius:</b> None <b>=></b> 100.0<br><b>requiredSkill1:</b> None <b>=></b> 26252.0 (Jury Rigging)<br><b>requiredSkill1Level:</b> None <b>=></b> 1.0<br><b>techLevel:</b> None <b>=></b> 1.0<br><b>upgradeCost:</b> None <b>=></b> 100.0<br><b>canFitShipGroup01:</b> None <b>=></b> 1657.0<br><b>canFitShipGroup02:</b> None <b>=></b> 1404.0<br><b>maxGroupFitted:</b> None <b>=></b> 1.0<br><b>rigSize:</b> None <b>=></b> 2.0<br><b>metaGroupID:</b> None <b>=></b> 4.0<br><b>published:</b> None <b>=></b> True<br><b>structureItemVisualFlag:</b> None <b>=></b> 1.0<br><b>hiSecModifier:</b> None <b>=></b> 0.1<br><b>lowSecModifier:</b> None <b>=></b> 1.9<br><b>nullSecModifier:</b> None <b>=></b> 0.1<br><b>securityModifier:</b> None <b>=></b> 1.0<br><b>attributeEngRigTimeBonus:</b> None <b>=></b> 0.0<br><b>attributeEngRigMatBonus:</b> None <b>=></b> -2.0<br><b>attributeEngRigCostBonus:</b> None <b>=></b> 0.0<br><b>attributeThukkerEngRigMatBonus:</b> None <b>=></b> -3.7<br><b>basePrice:</b> None <b>=></b> 0.0<br><b>descriptionID:</b> None <b>=></b> 526601<br><b>groupID:</b> None <b>=></b> 1836<br><b>iconID:</b> None <b>=></b> 21729<br><b>marketGroupID:</b> None <b>=></b> 2347<br><b>portionSize:</b> None <b>=></b> 1<br><b>typeID:</b> None <b>=></b> 45640<br><b>typeNameID:</b> None <b>=></b> 526600<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-16">
+		<td>45641 - <b>Standup L-Set Thukker Advanced Component Manufacturing Efficiency</b> (Structure Engineering Rig L - Advanced Component Efficiency)</td>
+		<td><details>
+	<summary>Click to toggle showing the 34 attributes.</summary><b>mass:</b> None <b>=></b> 200.0<br><b>hp:</b> None <b>=></b> 40.0<br><b>capacity:</b> None <b>=></b> 0.0<br><b>volume:</b> None <b>=></b> 20.0<br><b>radius:</b> None <b>=></b> 100.0<br><b>requiredSkill1:</b> None <b>=></b> 26252.0 (Jury Rigging)<br><b>requiredSkill1Level:</b> None <b>=></b> 1.0<br><b>techLevel:</b> None <b>=></b> 1.0<br><b>upgradeCost:</b> None <b>=></b> 100.0<br><b>canFitShipGroup01:</b> None <b>=></b> 1657.0<br><b>canFitShipGroup02:</b> None <b>=></b> 1404.0<br><b>maxGroupFitted:</b> None <b>=></b> 1.0<br><b>rigSize:</b> None <b>=></b> 3.0<br><b>metaGroupID:</b> None <b>=></b> 4.0<br><b>published:</b> None <b>=></b> True<br><b>structureRigBonus1:</b> None <b>=></b> 32.0<br><b>structureRigBonus2:</b> None <b>=></b> 3.2<br><b>structureItemVisualFlag:</b> None <b>=></b> 1.0<br><b>hiSecModifier:</b> None <b>=></b> 0.1<br><b>lowSecModifier:</b> None <b>=></b> 1.9<br><b>nullSecModifier:</b> None <b>=></b> 0.1<br><b>securityModifier:</b> None <b>=></b> 1.0<br><b>attributeEngRigTimeBonus:</b> None <b>=></b> -20.0<br><b>attributeEngRigMatBonus:</b> None <b>=></b> -2.0<br><b>attributeEngRigCostBonus:</b> None <b>=></b> 0.0<br><b>attributeThukkerEngRigMatBonus:</b> None <b>=></b> -3.7<br><b>basePrice:</b> None <b>=></b> 0.0<br><b>descriptionID:</b> None <b>=></b> 526603<br><b>groupID:</b> None <b>=></b> 1860<br><b>iconID:</b> None <b>=></b> 21729<br><b>marketGroupID:</b> None <b>=></b> 2348<br><b>portionSize:</b> None <b>=></b> 1<br><b>typeID:</b> None <b>=></b> 45641<br><b>typeNameID:</b> None <b>=></b> 526602<br></details></td>
+	</tr>
+	</table>
+</details>
+
+<br>
+
+<!--<h2 id="effectchanges">Effect Changes</h2>-->
+
+<details id="dgmeffects">
+	<summary class="selectParent bigsum_disabled" onclick="return false">Changes to Effects (0 Entries)</summary>
+	<table>
+	  <tr>
+		<th>Effect Name</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Diff</th>
+	  </tr>
+	
+	</table>
+</details>
+
+<details id="typeeffects">
+	<summary class="selectParent bigsum">Effect Changes per Type (2 Entries)</summary>
+	<table>
+	  <tr>
+		<th>TypeID, Name, and Group</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Effects Changes</th>
+	  </tr>
+	<tr class="selectable" id="cid-17">
+		<td>45640 - <b>Standup M-Set Thukker Advanced Component Manufacturing Material Efficiency</b> (Structure Engineering Rig M - Advanced Component ME)</td>
+		<td><b><u>Added Effects:</u></b><br><b>rigSlot:</b> None <b>=></b> True <br><b>rigAdvComponentManufactureMaterialBonus:</b> None <b>=></b> False <br><b>structureEngineeringRigSecurityModification:</b> None <b>=></b> False <br><b>rigThukkerAdvCapCompManufactureMaterialBonus:</b> None <b>=></b> False <br></td>
+	</tr>
+	<tr class="selectable" id="cid-18">
+		<td>45641 - <b>Standup L-Set Thukker Advanced Component Manufacturing Efficiency</b> (Structure Engineering Rig L - Advanced Component Efficiency)</td>
+		<td><b><u>Added Effects:</u></b><br><b>rigSlot:</b> None <b>=></b> True <br><b>rigAdvComponentManufactureMaterialBonus:</b> None <b>=></b> False <br><b>rigAdvComponentManufactureTimeBonus:</b> None <b>=></b> False <br><b>structureEngineeringRigSecurityModification:</b> None <b>=></b> False <br><b>rigAdvCapComponentManufactureMaterialBonus:</b> None <b>=></b> False <br><b>rigAdvCapComponentManufactureTimeBonus:</b> None <b>=></b> False <br><b>rigThukkerAdvCapCompManufactureMaterialBonus:</b> None <b>=></b> False <br></td>
+	</tr>
+	</table>
+</details>
+
+<br>
+
+<!--<h2 id="stringchanges">String Changes</h2>-->
+
+<script>
+	function toggleHidden(cb) {
+		var nodes = document.getElementById("stringchanges").getElementsByClassName("unimportant")
+		for (var i=0; i < nodes.length; i++) {
+			var node = nodes[i]
+			if (cb.checked) {
+				node.classList.remove("hidden")
+			} else {
+				node.classList.add("hidden")
+			}
+		}
+	}
+</script>
+<details id="stringchanges">
+	<summary class="selectParent bigsum">String Changes (12 Entries)</summary>
+	<label class="smallinput noscripthidden hidden"><input type="checkbox" onclick="toggleHidden(this)">Show [[unimportants]] changes marked as old</label>
+	<table>
+	  <tr>
+		<th>Key</th>
+		<th>Singularity_Previous</th>
+		<th>Singularity_Next</th>
+		<th>Diff</th>
+		<th>Notes</th>
+	  </tr>
+	<tr class="selectable" id="cid-19">
+		<td>520686</td>
+		<td width="355px">Removing a industry service will cancel all the jobs related to this service at this facility. <br>Are you sure you want to do this?</td>
+		<td width="355px">Removing an industry service module will cancel all the jobs related to this service at this facility unless another service module with duplicate functionality is already installed. <br>Are you sure you want to do this?</td>
+		<td><span>Removing a</span><ins style="background:#e6ffe6;">n</ins><span> industry service </span><ins style="background:#e6ffe6;">module </ins><span>will cancel all the jobs related to this service at this facility</span><ins style="background:#e6ffe6;"> unless another service module with duplicate functionality is already installed</ins><span>.<br>Are you sure you want to do this?</span></td>
+		<td class="mini"></td>
+	</tr>
+	<tr class="selectable" id="cid-20">
+		<td>526394</td>
+		<td width="355px">Standup M-Set Thukker Capital Component Manufacturing Material Efficiency</td>
+		<td width="355px">Standup M-Set Thukker Basic Capital Component Manufacturing Material Efficiency</td>
+		<td><span>Standup M-Set Thukker </span><ins style="background:#e6ffe6;">Basic </ins><span>Capital Component Manufacturing Material Efficiency</span></td>
+		<td class="mini">Item name for typeID 45544 (Structure Engineering Rig M - Basic Capital Component ME)</td>
+	</tr>
+	<tr class="selectable" id="cid-21">
+		<td>526395</td>
+		<td width="355px">This rig has been optimized for use in low security space and will provide reduced benefits in all other areas of space.<br><br>The Standup M-Set Thukker Capital Component Manufacturing Material Efficiency rig provides a means for structure operators to decrease material requirements when manufacturing capital ship construction components in their Upwell structures.<br><br>This facility design has been modified by Thukker specialists to utilize certain unregulated opportunities for expediting capital ship component construction in low security space.<br><br>Standup is a proprietary system that uses a Structure Autonomous Nanoassembly Device (Upwell) containing integrated template software, a nanoassembler array and sufficient nanomass to enable the construction of a variety of service modules, structure modules and structure rigs when inserted into the appropriate slots on a structure built with Upwell technology.<br><br>Note: Only one rig of the same type, counting both tech variations, may be fitted at the same time on a structure.</td>
+		<td width="355px">This rig has been optimized for use in low security space and will provide reduced benefits in all other areas of space.<br><br>The Standup M-Set Thukker Capital Component Manufacturing Material Efficiency rig provides a means for structure operators to decrease material requirements when manufacturing basic capital ship construction components in their Upwell structures.<br><br>This facility design has been modified by Thukker specialists to utilize certain unregulated opportunities for expediting capital ship component construction in low security space.<br><br>Standup is a proprietary system that uses a Structure Autonomous Nanoassembly Device (Upwell) containing integrated template software, a nanoassembler array and sufficient nanomass to enable the construction of a variety of service modules, structure modules and structure rigs when inserted into the appropriate slots on a structure built with Upwell technology.<br><br>Note: Only one rig of the same type, counting both tech variations, may be fitted at the same time on a structure.</td>
+		<td><span>This rig has been optimized for use in low security space and will provide reduced benefits in all other areas of space.<br><br>The Standup M-Set Thukker Capital Component Manufacturing Material Efficiency rig provides a means for structure operators to decrease material requirements when manufacturing </span><ins style="background:#e6ffe6;">basic </ins><span>capital ship construction components in their Upwell structures.<br><br>This facility design has been modified by Thukker specialists to utilize certain unregulated opportunities for expediting capital ship component construction in low security space.<br><br>Standup is a proprietary system that uses a Structure Autonomous Nanoassembly Device (Upwell) containing integrated template software, a nanoassembler array and sufficient nanomass to enable the construction of a variety of service modules, structure modules and structure rigs when inserted into the appropriate slots on a structure built with Upwell technology.<br><br>Note: Only one rig of the same type, counting both tech variations, may be fitted at the same time on a structure.</span></td>
+		<td class="mini">Item description for "Standup M-Set Thukker Basic Capital Component Manufacturing Material Efficiency" (typeID 45544)</td>
+	</tr>
+	<tr class="selectable" id="cid-22">
+		<td>526397</td>
+		<td width="355px">Standup L-Set Thukker Capital Component Manufacturing Efficiency</td>
+		<td width="355px">Standup L-Set Thukker Basic Capital Component Manufacturing Efficiency</td>
+		<td><span>Standup L-Set Thukker </span><ins style="background:#e6ffe6;">Basic </ins><span>Capital Component Manufacturing Efficiency</span></td>
+		<td class="mini">Item name for typeID 45546 (Structure Engineering Rig L - Basic Capital Component Efficiency)</td>
+	</tr>
+	<tr class="selectable" id="cid-23">
+		<td>526398</td>
+		<td width="355px">This rig has been optimized for use in low security space and will provide reduced benefits in all other areas of space.<br><br>The Standup L-Set Thukker Capital Component Manufacturing Efficiency rig provides a means for structure operators to decrease both material and time requirements for manufacturing capital ship construction components in their Upwell structures.<br><br>This facility design has been modified by Thukker specialists to utilize certain unregulated opportunities for expediting capital ship component construction in low security space.<br><br>Standup is a proprietary system that uses a Structure Autonomous Nanoassembly Device (Upwell) containing integrated template software, a nanoassembler array and sufficient nanomass to enable the construction of a variety of service modules, structure modules and structure rigs when inserted into the appropriate slots on a structure built with Upwell technology.<br><br>Note: Only one rig of the same type, counting both tech variations, may be fitted at the same time on a structure.</td>
+		<td width="355px">This rig has been optimized for use in low security space and will provide reduced benefits in all other areas of space.<br><br>The Standup L-Set Thukker Capital Component Manufacturing Efficiency rig provides a means for structure operators to decrease both material and time requirements for manufacturing basic capital ship construction components in their Upwell structures.<br><br>This facility design has been modified by Thukker specialists to utilize certain unregulated opportunities for expediting capital ship component construction in low security space.<br><br>Standup is a proprietary system that uses a Structure Autonomous Nanoassembly Device (Upwell) containing integrated template software, a nanoassembler array and sufficient nanomass to enable the construction of a variety of service modules, structure modules and structure rigs when inserted into the appropriate slots on a structure built with Upwell technology.<br><br>Note: Only one rig of the same type, counting both tech variations, may be fitted at the same time on a structure.</td>
+		<td><span>This rig has been optimized for use in low security space and will provide reduced benefits in all other areas of space.<br><br>The Standup L-Set Thukker Capital Component Manufacturing Efficiency rig provides a means for structure operators to decrease both material and time requirements for manufacturing </span><ins style="background:#e6ffe6;">basic </ins><span>capital ship construction components in their Upwell structures.<br><br>This facility design has been modified by Thukker specialists to utilize certain unregulated opportunities for expediting capital ship component construction in low security space.<br><br>Standup is a proprietary system that uses a Structure Autonomous Nanoassembly Device (Upwell) containing integrated template software, a nanoassembler array and sufficient nanomass to enable the construction of a variety of service modules, structure modules and structure rigs when inserted into the appropriate slots on a structure built with Upwell technology.<br><br>Note: Only one rig of the same type, counting both tech variations, may be fitted at the same time on a structure.</span></td>
+		<td class="mini">Item description for "Standup L-Set Thukker Basic Capital Component Manufacturing Efficiency" (typeID 45546)</td>
+	</tr>
+	<tr class="selectable" id="cid-24">
+		<td>526401</td>
+		<td width="355px">This rig has been optimized for use in low security space and will provide reduced benefits in all other areas of space. When installed in low security space it provides enhanced benefits to the materials required for construction of capital ship components and normal benefits to the construction of other components, Upwell structures, structure modules, structure rigs, starbase structures and fuel blocks.<br><br>The Standup XL-Set Thukker Structure and Component Manufacturing Efficiency rig provides a means for structure operators to decrease both material and time requirements manufacturing components, Upwell structures, structure modules, structure rigs, starbase structures and fuel blocks in their Upwell structures.<br><br>This facility design has been modified by Thukker specialists to utilize certain unregulated opportunities for expediting capital ship component construction in low security space.<br><br>Standup is a proprietary system that uses a Structure Autonomous Nanoassembly Device (Upwell) containing integrated template software, a nanoassembler array and sufficient nanomass to enable the construction of a variety of service modules, structure modules and structure rigs when inserted into the appropriate slots on a structure built with Upwell technology.<br><br>Note: Only one rig of the same type, counting both tech variations, may be fitted at the same time on a structure.</td>
+		<td width="355px">This rig has been optimized for use in low security space and will provide reduced benefits in all other areas of space. When installed in low security space it provides enhanced benefits to the materials required for construction of basic and advanced capital ship components and normal benefits to the construction of other components, Upwell structures, structure modules, structure rigs, starbase structures and fuel blocks.<br><br>The Standup XL-Set Thukker Structure and Component Manufacturing Efficiency rig provides a means for structure operators to decrease both material and time requirements manufacturing components, Upwell structures, structure modules, structure rigs, starbase structures and fuel blocks in their Upwell structures.<br><br>This facility design has been modified by Thukker specialists to utilize certain unregulated opportunities for expediting capital ship component construction in low security space.<br><br>Standup is a proprietary system that uses a Structure Autonomous Nanoassembly Device (Upwell) containing integrated template software, a nanoassembler array and sufficient nanomass to enable the construction of a variety of service modules, structure modules and structure rigs when inserted into the appropriate slots on a structure built with Upwell technology.<br><br>Note: Only one rig of the same type, counting both tech variations, may be fitted at the same time on a structure.</td>
+		<td><span>This rig has been optimized for use in low security space and will provide reduced benefits in all other areas of space. When installed in low security space it provides enhanced benefits to the materials required for construction of </span><ins style="background:#e6ffe6;">basic and advanced </ins><span>capital ship components and normal benefits to the construction of other components, Upwell structures, structure modules, structure rigs, starbase structures and fuel blocks.<br><br>The Standup XL-Set Thukker Structure and Component Manufacturing Efficiency rig provides a means for structure operators to decrease both material and time requirements manufacturing components, Upwell structures, structure modules, structure rigs, starbase structures and fuel blocks in their Upwell structures.<br><br>This facility design has been modified by Thukker specialists to utilize certain unregulated opportunities for expediting capital ship component construction in low security space.<br><br>Standup is a proprietary system that uses a Structure Autonomous Nanoassembly Device (Upwell) containing integrated template software, a nanoassembler array and sufficient nanomass to enable the construction of a variety of service modules, structure modules and structure rigs when inserted into the appropriate slots on a structure built with Upwell technology.<br><br>Note: Only one rig of the same type, counting both tech variations, may be fitted at the same time on a structure.</span></td>
+		<td class="mini">Item description for "Standup XL-Set Thukker Structure and Component Manufacturing Efficiency" (typeID 45548)</td>
+	</tr>
+	<tr class="selectable" id="cid-25">
+		<td>526600</td>
+		<td width="355px"></td>
+		<td width="355px">Standup M-Set Thukker Advanced Component Manufacturing Material Efficiency</td>
+		<td><ins style="background:#e6ffe6;">Standup M-Set Thukker Advanced Component Manufacturing Material Efficiency</ins></td>
+		<td class="mini">Item name for typeID 45640 (Structure Engineering Rig M - Advanced Component ME)</td>
+	</tr>
+	<tr class="selectable" id="cid-26">
+		<td>526601</td>
+		<td width="355px"></td>
+		<td width="355px">This rig has been optimized for use in low security space and will provide reduced benefits in all other areas of space. When installed in low security space it provides enhanced benefits to the materials required for construction of Tech 2 capital ship components and normal benefits to the construction of other Tech 2 components, Tools, Data Interfaces and Tech 3 components.<br><br>The Standup M-Set Thukker Advanced Component Manufacturing Material Efficiency rig provides a means for structure operators to decrease material requirements for manufacturing Tech 2 components, Tech 2 capital components, Tools, Data Interfaces and Tech 3 components in their Upwell structures.<br><br>This facility design has been modified by Thukker specialists to utilize certain unregulated opportunities for expediting capital ship component construction in low security space.<br><br>Standup is a proprietary system that uses a Structure Autonomous Nanoassembly Device (Upwell) containing integrated template software, a nanoassembler array and sufficient nanomass to enable the construction of a variety of service modules, structure modules and structure rigs when inserted into the appropriate slots on a structure built with Upwell technology.<br><br>Note: Only one rig of the same type, counting both tech variations, may be fitted at the same time on a structure.</td>
+		<td><ins style="background:#e6ffe6;">This rig has been optimized for use in low security space and will provide reduced benefits in all other areas of space. When installed in low security space it provides enhanced benefits to the materials required for construction of Tech 2 capital ship components and normal benefits to the construction of other Tech 2 components, Tools, Data Interfaces and Tech 3 components.<br><br>The Standup M-Set Thukker Advanced Component Manufacturing Material Efficiency rig provides a means for structure operators to decrease material requirements for manufacturing Tech 2 components, Tech 2 capital components, Tools, Data Interfaces and Tech 3 components in their Upwell structures.<br><br>This facility design has been modified by Thukker specialists to utilize certain unregulated opportunities for expediting capital ship component construction in low security space.<br><br>Standup is a proprietary system that uses a Structure Autonomous Nanoassembly Device (Upwell) containing integrated template software, a nanoassembler array and sufficient nanomass to enable the construction of a variety of service modules, structure modules and structure rigs when inserted into the appropriate slots on a structure built with Upwell technology.<br><br>Note: Only one rig of the same type, counting both tech variations, may be fitted at the same time on a structure.</ins></td>
+		<td class="mini">Item description for "Standup M-Set Thukker Advanced Component Manufacturing Material Efficiency" (typeID 45640)</td>
+	</tr>
+	<tr class="selectable" id="cid-27">
+		<td>526602</td>
+		<td width="355px"></td>
+		<td width="355px">Standup L-Set Thukker Advanced Component Manufacturing Efficiency</td>
+		<td><ins style="background:#e6ffe6;">Standup L-Set Thukker Advanced Component Manufacturing Efficiency</ins></td>
+		<td class="mini">Item name for typeID 45641 (Structure Engineering Rig L - Advanced Component Efficiency)</td>
+	</tr>
+	<tr class="selectable" id="cid-28">
+		<td>526603</td>
+		<td width="355px"></td>
+		<td width="355px">This rig has been optimized for use in low security space and will provide reduced benefits in all other areas of space. When installed in low security space it provides enhanced benefits to the materials required for construction of Tech 2 capital ship components and normal benefits to the construction of other Tech 2 components, Tools, Data Interfaces and Tech 3 components.<br><br>The Standup L-Set Thukker Advanced Component Manufacturing Efficiency rig provides a means for structure operators to decrease both material and time requirements for manufacturing Tech 2 components, Tech 2 capital components, Tools, Data Interfaces and Tech 3 components in their Upwell structures.<br><br>This facility design has been modified by Thukker specialists to utilize certain unregulated opportunities for expediting capital ship component construction in low security space.<br><br>Standup is a proprietary system that uses a Structure Autonomous Nanoassembly Device (Upwell) containing integrated template software, a nanoassembler array and sufficient nanomass to enable the construction of a variety of service modules, structure modules and structure rigs when inserted into the appropriate slots on a structure built with Upwell technology.<br><br>Note: Only one rig of the same type, counting both tech variations, may be fitted at the same time on a structure.</td>
+		<td><ins style="background:#e6ffe6;">This rig has been optimized for use in low security space and will provide reduced benefits in all other areas of space. When installed in low security space it provides enhanced benefits to the materials required for construction of Tech 2 capital ship components and normal benefits to the construction of other Tech 2 components, Tools, Data Interfaces and Tech 3 components.<br><br>The Standup L-Set Thukker Advanced Component Manufacturing Efficiency rig provides a means for structure operators to decrease both material and time requirements for manufacturing Tech 2 components, Tech 2 capital components, Tools, Data Interfaces and Tech 3 components in their Upwell structures.<br><br>This facility design has been modified by Thukker specialists to utilize certain unregulated opportunities for expediting capital ship component construction in low security space.<br><br>Standup is a proprietary system that uses a Structure Autonomous Nanoassembly Device (Upwell) containing integrated template software, a nanoassembler array and sufficient nanomass to enable the construction of a variety of service modules, structure modules and structure rigs when inserted into the appropriate slots on a structure built with Upwell technology.<br><br>Note: Only one rig of the same type, counting both tech variations, may be fitted at the same time on a structure.</ins></td>
+		<td class="mini">Item description for "Standup L-Set Thukker Advanced Component Manufacturing Efficiency" (typeID 45641)</td>
+	</tr>
+	<tr class="selectable" id="cid-29">
+		<td>526604</td>
+		<td width="355px"></td>
+		<td width="355px">Standup M-Set Thukker Advanced Component Manufacturing Material Efficiency Blueprint</td>
+		<td><ins style="background:#e6ffe6;">Standup M-Set Thukker Advanced Component Manufacturing Material Efficiency Blueprint</ins></td>
+		<td class="mini">Item name for typeID 45642 (Structure  Rig Blueprint)</td>
+	</tr>
+	<tr class="selectable" id="cid-30">
+		<td>526605</td>
+		<td width="355px"></td>
+		<td width="355px">Standup L-Set Thukker Advanced Component Manufacturing Efficiency Blueprint</td>
+		<td><ins style="background:#e6ffe6;">Standup L-Set Thukker Advanced Component Manufacturing Efficiency Blueprint</ins></td>
+		<td class="mini">Item name for typeID 45643 (Structure  Rig Blueprint)</td>
+	</tr>
+	</table>
+</details>
+
+<br>
+
+<!--<h2 id="newfiles">New Files</h2>-->
+
+<script>
+	function displayMedia(doc) {
+		nodes = doc.children
+		for (i=0; i < nodes.length; i++) {
+			node = nodes[i]
+			if (node.hasAttribute("data-src") && node.getAttribute("src") == "") {
+				node.setAttribute("src", node.getAttribute("data-src"))
+			}
+		}
+	}
+</script>
+<details id="newfiles">
+	<summary class="selectParent bigsum">New Files (7 Entries)</summary>
+	<table>
+	  <tr>
+		<th>File Name</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Size in kb (Decompressed)</th>
+	  </tr>
+	<tr class="selectable" id="cid-31">
+		<td><a href="http://res.eveprobe.ccpgames.com/bc/bc56f51b0bbdd3ab_52acb584d9d6609141a7249ac88cebbb">dx9/model/decal/glow_landingstrip_08_at.dds</a><br></td>
+		<td>22</td>
+	</tr>
+	<tr class="selectable" id="cid-32">
+		<td><a href="http://res.eveprobe.ccpgames.com/e5/e5b245dd2ca7c256_76bad6494876d665cc3dda4ee5a37bf5">dx9/model/decal/glow_landingstrip_14_at.dds</a><br></td>
+		<td>22</td>
+	</tr>
+	<tr class="selectable" id="cid-33">
+		<td><a href="http://res.eveprobe.ccpgames.com/43/4387c70ce58a8e37_bf968546474bf5328ff90465f100693d">dx9/model/ship/angel/battleship/angb1/fallen/angb1_t1_fallen_pmdg.dds</a><br></td>
+		<td>1398</td>
+	</tr>
+	<tr class="selectable" id="cid-34">
+		<td><a href="http://res.eveprobe.ccpgames.com/ae/ae30b0a9eb73ff5b_be6d1a467a96f995b06d654c81f1388a">dx9/model/ship/angel/battleship/angb1/fallen/angb1_t1_fallen_pmdg_lowdetail.dds</a><br></td>
+		<td>1</td>
+	</tr>
+	<tr class="selectable" id="cid-35">
+		<td><a href="http://res.eveprobe.ccpgames.com/88/88f74a81b3aed06e_a3509cb21675fc9a112055eb4fdfe47a">dx9/model/ship/angel/battleship/angb1/fallen/angb1_t1_fallen_pmdg_mediumdetail.dds</a><br></td>
+		<td>22</td>
+	</tr>
+	<tr class="selectable" id="cid-36">
+		<td><a href="http://res.eveprobe.ccpgames.com/a4/a49f4a9612d4d822_086e3a3aba7575b6d0b5b7b4d28b847e">dx9/model/spaceobjectfactory/factions/angelinfested.black</a><br></td>
+		<td>1</td>
+	</tr>
+	<tr class="selectable" id="cid-37">
+		<td><a href="http://res.eveprobe.ccpgames.com/9a/9ac93d2da8286d63_4a485e50738b0cdc54d4dd49ab1010a2">dx9/model/spaceobjectfactory/factions/fallen.black</a><br></td>
+		<td>2</td>
+	</tr>
+	</table>
+</details>
+<script>
+	function test123() {
+		document.getElementById("footer1").style.display = "none";
+		document.getElementById("footer2").style.visibility = "visible";
+		document.getElementById("footer2").onclick = function() {document.location = "http://i.imgur.com/3Kd6ruW.jpg"}
+	}
+</script>
+<!--<h2 id="changedfiles">Changed Files</h2>-->
+
+<details id="changedfiles">
+	<summary class="selectParent bigsum">Changed Files (94 Entries)</summary>
+	<table>
+	  <tr>
+		<th>File Name</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Size in kb (Decompressed)</th>
+	  </tr>
+	<tr class="selectable" id="cid-38">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/ba/ba1aa4f3fb71b2da_d1c1a6ad00341f900aa49f2c0809d2e6">bin/_trinity_dx11_deploy.dll</a><br></td>
+		<td>14293 -> 14293</td>
+	</tr>
+	<tr class="selectable" id="cid-39">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/34/34cee7939079398b_b988ab34fb978b012eefee6ffab0211c">bin/_trinity_dx9_deploy.dll</a><br></td>
+		<td>14193 -> 14191</td>
+	</tr>
+	<tr class="selectable" id="cid-40">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/61/613be34f1627840d_f7e1568519ace8e8148f1fea41fd2edc">bulkdata/600005.cache2</a><br></td>
+		<td>481 -> 481</td>
+	</tr>
+	<tr class="selectable" id="cid-41">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/bc/bc5fff279c5cae06_95a4923a4bb5bdf14b0957b43ca50f88">bulkdata/800006.cache2</a><br></td>
+		<td>6739 -> 6740</td>
+	</tr>
+	<tr class="selectable" id="cid-42">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/50/50ea3456c14ebd15_6b1cbc9a1fb81eda6475478cdce7e392">bulkdata/800007.cache2</a><br></td>
+		<td>392 -> 392</td>
+	</tr>
+	<tr class="selectable" id="cid-43">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/89/8919ffe2ee5749cc_1376feef45659c7cb1d1d7dd32355651">bulkdata/mapbulk.db</a><br></td>
+		<td>443 -> 443</td>
+	</tr>
+	<tr class="selectable" id="cid-44">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/aa/aa0b8b0323d24f50_4d506c036195a2d712e8b919fb783eec">bulkdata/metadata.yaml</a><br></td>
+		<td>0 -> 0</td>
+	</tr>
+	<tr class="selectable" id="cid-45">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/1e/1ef674def6229546_62d5081d06b142c3abe8cb2c0b7add1a">bulkdata/version</a><br></td>
+		<td>0 -> 0</td>
+	</tr>
+	<tr class="selectable" id="cid-46">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/f0/f032ac16b88d97a4_d21e1881d6da567d9615d1f90a59e76e">code.ccp</a><br></td>
+		<td>16747 -> 16747</td>
+	</tr>
+	<tr class="selectable" id="cid-47">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/1a/1a48a0969136daa1_843adc807a9090f6b78f2e82cb495912">manifest.dat</a><br></td>
+		<td>12 -> 12</td>
+	</tr>
+	<tr class="selectable" id="cid-48">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/84/84f1bcf0d3db9838_8bcea6d4464d0958f7feac2df751c1c2">dx9/model/decal/angel/glow_killmarks_01_t.dds</a><br></td>
+		<td>16 -> 16</td>
+	</tr>
+	<tr class="selectable" id="cid-49">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/10/10861d8e302eebd6_e10c82f34f46941aa43341b2e87b7bba">dx9/model/decal/angel/logo_angel_01_at.dds</a><br></td>
+		<td>21 -> 22</td>
+	</tr>
+	<tr class="selectable" id="cid-50">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/d0/d070fc82ccd98d1b_3e3209ce2d9afa69b24fc7166d508b60">dx9/model/decal/angel/logo_angel_01_f.dds</a><br></td>
+		<td>11 -> 11</td>
+	</tr>
+	<tr class="selectable" id="cid-51">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/7b/7bf995eba5a65e45_58fad562b0ed9b770aea610b4924e868">dx9/model/decal/angel/logo_angel_01_nr.dds</a><br></td>
+		<td>11 -> 11</td>
+	</tr>
+	<tr class="selectable" id="cid-52">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/8f/8fcc9210d585d23d_971e1555726206bed2ea0063e3f0f033">dx9/model/decal/caldari/glow_killmarks_01_t.dds</a><br></td>
+		<td>16 -> 16</td>
+	</tr>
+	<tr class="selectable" id="cid-53">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/f1/f112201c877f7285_68c641d68e07fcf6130b9461dc86b29b">dx9/model/decal/glow_emitter_07_at.dds</a><br></td>
+		<td>21 -> 22</td>
+	</tr>
+	<tr class="selectable" id="cid-54">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/01/01da7b8ec8cb5b30_7f9494dd958c76260b142931e00c0b40">dx9/model/decal/glow_rotation_08_at.dds</a><br></td>
+		<td>21 -> 22</td>
+	</tr>
+	<tr class="selectable" id="cid-55">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/9b/9beda4e5baa86cbd_69d7287cfc08f02f1ce0af8311528a0b">dx9/model/decal/glow_strip_18_at.dds</a><br></td>
+		<td>21 -> 22</td>
+	</tr>
+	<tr class="selectable" id="cid-56">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/de/de0fb6ae5e90ead7_f73dae43a89a633ce552f35eb7c0d1e4">dx9/model/decal/glow_stripdouble_13_at.dds</a><br></td>
+		<td>21 -> 22</td>
+	</tr>
+	<tr class="selectable" id="cid-57">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/9e/9ea45362570a6ca0_942dde9b0e2966d77e954f22003509d6">dx9/model/ship/angel/battleship/angb1/angb1_t1.gr2</a><br></td>
+		<td>103 -> 103</td>
+	</tr>
+	<tr class="selectable" id="cid-58">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/db/dbc333f222c552ec_26991f9327a504807ea7861e2b040495">dx9/model/ship/angel/battleship/angb1/angb1_t1_ar.dds</a><br></td>
+		<td>1398 -> 1398</td>
+	</tr>
+	<tr class="selectable" id="cid-59">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/a6/a6b522500d8be430_fb6a18f1e730f98bb5d54c0aa658737b">dx9/model/ship/angel/battleship/angb1/angb1_t1_ar_lowdetail.dds</a><br></td>
+		<td>1398 -> 1</td>
+	</tr>
+	<tr class="selectable" id="cid-60">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/d6/d613f9537af48e5f_0d74187073e50ae3dbf0fb5c0160933f">dx9/model/ship/angel/battleship/angb1/angb1_t1_ar_mediumdetail.dds</a><br></td>
+		<td>1398 -> 22</td>
+	</tr>
+	<tr class="selectable" id="cid-61">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/33/3345f6bfeaaaa33c_13d258f1de137b6788999d37e49c8900">dx9/model/ship/angel/battleship/angb1/angb1_t1_lowdetail.gr2</a><br></td>
+		<td>31 -> 31</td>
+	</tr>
+	<tr class="selectable" id="cid-62">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/1e/1e8d7a2e91d8207f_50fd339d871889df2d9697f71114aeed">dx9/model/ship/angel/battleship/angb1/angb1_t1_mediumdetail.gr2</a><br></td>
+		<td>71 -> 72</td>
+	</tr>
+	<tr class="selectable" id="cid-63">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/18/18d0076494d2dc18_7c98fa313bbcb2170379b84204518811">dx9/model/ship/angel/battleship/angb1/angb1_t1_no.dds</a><br></td>
+		<td>1398 -> 1398</td>
+	</tr>
+	<tr class="selectable" id="cid-64">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/8e/8edc0f76fffdb5ac_481f25805618d446c9fa030d0bcbae74">dx9/model/ship/angel/battleship/angb1/angb1_t1_no_lowdetail.dds</a><br></td>
+		<td>1398 -> 1</td>
+	</tr>
+	<tr class="selectable" id="cid-65">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/a8/a884d572d2da5ae3_a5b6e61bdd125e572203830e290ef3b2">dx9/model/ship/angel/battleship/angb1/angb1_t1_no_mediumdetail.dds</a><br></td>
+		<td>1398 -> 22</td>
+	</tr>
+	<tr class="selectable" id="cid-66">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/21/21b4ed25b8391c3f_5684c2d1d4725d2d87c92bf603a8f293">dx9/model/ship/angel/battleship/angb1/angb1_t1_pmdg.dds</a><br></td>
+		<td>1398 -> 1398</td>
+	</tr>
+	<tr class="selectable" id="cid-67">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/ff/ff537deab32b2c13_73d09e285f04553abcaa3ad9e7b764ea">dx9/model/ship/angel/battleship/angb1/angb1_t1_pmdg_lowdetail.dds</a><br></td>
+		<td>1398 -> 1</td>
+	</tr>
+	<tr class="selectable" id="cid-68">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/e3/e3d6573a64cd25c6_e8be5d1227bc044521428dd49c71da19">dx9/model/ship/angel/battleship/angb1/angb1_t1_pmdg_mediumdetail.dds</a><br></td>
+		<td>1398 -> 22</td>
+	</tr>
+	<tr class="selectable" id="cid-69">
+		<td style="text-align: middle;"><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/2c/2c3f75cbc0dfa558_203b45febfba2e45f40d81f8270e485f">res:/dx9/model/ship/angel/battleship/angb1/icons/20994_128.png</a>
+    		</summary>
+    		<img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/2c/2c3f75cbc0dfa558_cf813b58ba6322b3e4b4f825bc1412f6" src="" /> -> <img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/2c/2c3f75cbc0dfa558_203b45febfba2e45f40d81f8270e485f" src="" />
+		</details></td>
+		<td>22 -> 21</td>
+	</tr>
+	<tr class="selectable" id="cid-70">
+		<td style="text-align: middle;"><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/7e/7e9894becdaa1685_1d408c0aff97ae219223fc962199c205">res:/dx9/model/ship/angel/battleship/angb1/icons/20994_64.png</a>
+    		</summary>
+    		<img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/7e/7e9894becdaa1685_0b4779316ecde45a0a1182007c7e0ab8" src="" /> -> <img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/7e/7e9894becdaa1685_1d408c0aff97ae219223fc962199c205" src="" />
+		</details></td>
+		<td>6 -> 6</td>
+	</tr>
+	<tr class="selectable" id="cid-71">
+		<td style="text-align: middle;"><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/9e/9eba0150f3de122c_680fa7fef652999579aed02f3b937171">res:/dx9/model/ship/angel/battleship/angb1/icons/20994_64_bp.png</a>
+    		</summary>
+    		<img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/9e/9eba0150f3de122c_756929a35f8b40ee130a6e8e5a4ae421" src="" /> -> <img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/9e/9eba0150f3de122c_680fa7fef652999579aed02f3b937171" src="" />
+		</details></td>
+		<td>7 -> 7</td>
+	</tr>
+	<tr class="selectable" id="cid-72">
+		<td style="text-align: middle;"><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/a6/a619c534d73fcc95_17a2fde5d586b71e9309fc9fee77d38c">res:/dx9/model/ship/angel/battleship/angb1/icons/20994_64_bpc.png</a>
+    		</summary>
+    		<img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/a6/a619c534d73fcc95_bba6b3bf7711766590501c562ac913d3" src="" /> -> <img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/a6/a619c534d73fcc95_17a2fde5d586b71e9309fc9fee77d38c" src="" />
+		</details></td>
+		<td>7 -> 7</td>
+	</tr>
+	<tr class="selectable" id="cid-73">
+		<td style="text-align: middle;"><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/62/62eabcecf8e8c54b_21ae763890d87956e6fc6f7138177f47">res:/dx9/model/ship/angel/battleship/angb1/icons/335_128.png</a>
+    		</summary>
+    		<img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/62/62eabcecf8e8c54b_78fd53d340f8df7a4356a6d32201bf07" src="" /> -> <img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/62/62eabcecf8e8c54b_21ae763890d87956e6fc6f7138177f47" src="" />
+		</details></td>
+		<td>21 -> 21</td>
+	</tr>
+	<tr class="selectable" id="cid-74">
+		<td style="text-align: middle;"><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/3c/3cb6f28035f38174_f8cbb1d120a136d9ee87515ec473ee5d">res:/dx9/model/ship/angel/battleship/angb1/icons/335_64.png</a>
+    		</summary>
+    		<img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/3c/3cb6f28035f38174_0af4f167621236abe10dcfee99e6c075" src="" /> -> <img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/3c/3cb6f28035f38174_f8cbb1d120a136d9ee87515ec473ee5d" src="" />
+		</details></td>
+		<td>6 -> 6</td>
+	</tr>
+	<tr class="selectable" id="cid-75">
+		<td style="text-align: middle;"><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/cb/cb153b176af9c0b7_3289074fa5dc2623e503514f37e1fd72">res:/dx9/model/ship/angel/battleship/angb1/icons/335_64_bp.png</a>
+    		</summary>
+    		<img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/cb/cb153b176af9c0b7_db14cb0009b04c04f55184e835f4643b" src="" /> -> <img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/cb/cb153b176af9c0b7_3289074fa5dc2623e503514f37e1fd72" src="" />
+		</details></td>
+		<td>7 -> 7</td>
+	</tr>
+	<tr class="selectable" id="cid-76">
+		<td style="text-align: middle;"><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/52/52c4925753815914_1513e17c674bf09a4e5afc58c6160372">res:/dx9/model/ship/angel/battleship/angb1/icons/335_64_bpc.png</a>
+    		</summary>
+    		<img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/52/52c4925753815914_b4f9aad7dce370cfbfa3ccd3a96490c9" src="" /> -> <img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/52/52c4925753815914_1513e17c674bf09a4e5afc58c6160372" src="" />
+		</details></td>
+		<td>7 -> 7</td>
+	</tr>
+	<tr class="selectable" id="cid-77">
+		<td style="text-align: middle;"><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/3c/3cb5205e58c85d50_53a2056f5dd448f93493a37c24521f6e">res:/dx9/model/ship/angel/battleship/angb1/icons/angb1_t1_isis.png</a>
+    		</summary>
+    		<img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/3c/3cb5205e58c85d50_eb9fca4fa0fef9f7a58c683500a4efc3" src="" /> -> <img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/3c/3cb5205e58c85d50_53a2056f5dd448f93493a37c24521f6e" src="" />
+		</details></td>
+		<td>3 -> 3</td>
+	</tr>
+	<tr class="selectable" id="cid-78">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/e1/e152d79cf29a4e3b_17ae9b33f322a145834b744bbf6a7c51">dx9/model/ship/angel/battleship/angb1/serenity/angb1_t1_serenity_pmdg.dds</a><br></td>
+		<td>1398 -> 1398</td>
+	</tr>
+	<tr class="selectable" id="cid-79">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/5f/5f0bc622d8f6ca6f_288ff3e045d91619c5865ddc9c9094c3">dx9/model/ship/angel/battleship/angb1/serenity/angb1_t1_serenity_pmdg_lowdetail.dds</a><br></td>
+		<td>1398 -> 1</td>
+	</tr>
+	<tr class="selectable" id="cid-80">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/01/019fb07c15d4f4fa_3683e1e2bc3a81c8efb063fa4a084a58">dx9/model/ship/angel/battleship/angb1/serenity/angb1_t1_serenity_pmdg_mediumdetail.dds</a><br></td>
+		<td>1398 -> 22</td>
+	</tr>
+	<tr class="selectable" id="cid-81">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/c2/c2a3ae556cd7ff00_f40703dc3e817e0b2edb322757c0399b">dx9/model/ship/caldari/destroyer/cde1/cde1_t1_ar.dds</a><br></td>
+		<td>1398 -> 1398</td>
+	</tr>
+	<tr class="selectable" id="cid-82">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/59/5924da3424d59224_dcc4c67398f5ed875b3aa82c34572974">dx9/model/ship/caldari/destroyer/cde1/cde1_t1_ar_lowdetail.dds</a><br></td>
+		<td>1 -> 1</td>
+	</tr>
+	<tr class="selectable" id="cid-83">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/a9/a92cc9a65648589b_97fba6a2ac46e8fb055c7de515c95de8">dx9/model/ship/caldari/destroyer/cde1/cde1_t1_ar_mediumdetail.dds</a><br></td>
+		<td>21 -> 22</td>
+	</tr>
+	<tr class="selectable" id="cid-84">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/98/98d83a46cffc848c_3ae673bece4cdbefc9806368190f7726">dx9/model/ship/caldari/destroyer/cde1/cde1_t1_no.dds</a><br></td>
+		<td>1398 -> 1398</td>
+	</tr>
+	<tr class="selectable" id="cid-85">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/78/782df72ae6d28810_c9763347a27a774e9dbbd49dbdf4f8dc">dx9/model/ship/caldari/destroyer/cde1/cde1_t1_no_lowdetail.dds</a><br></td>
+		<td>1 -> 1</td>
+	</tr>
+	<tr class="selectable" id="cid-86">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/c2/c2eadddbe564c8bf_c9becdeebaa5c54b7960bd8c7ca4753c">dx9/model/ship/caldari/destroyer/cde1/cde1_t1_no_mediumdetail.dds</a><br></td>
+		<td>21 -> 22</td>
+	</tr>
+	<tr class="selectable" id="cid-87">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/f4/f425f4b1d6be4afb_2a158d3723500d5093776ab697f4820d">dx9/model/ship/caldari/destroyer/cde1/cde1_t1_pmdg.dds</a><br></td>
+		<td>1398 -> 1398</td>
+	</tr>
+	<tr class="selectable" id="cid-88">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/fe/fe18030887f1552f_7a5c30c164a1d79ce4bfa90851a03e6e">dx9/model/ship/caldari/destroyer/cde1/cde1_t1_pmdg_lowdetail.dds</a><br></td>
+		<td>1 -> 1</td>
+	</tr>
+	<tr class="selectable" id="cid-89">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/c3/c3b487014f2b13ba_5d457677a1a7dfc5fe4291e83e4cedef">dx9/model/ship/caldari/destroyer/cde1/cde1_t1_pmdg_mediumdetail.dds</a><br></td>
+		<td>21 -> 22</td>
+	</tr>
+	<tr class="selectable" id="cid-90">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/4e/4eb133a7469e327d_f33a63959d8c7b7a0c74c5093cf8a965">dx9/model/ship/caldari/destroyer/cde1/guristas/cde1_t1_guristas_pmdg.dds</a><br></td>
+		<td>1398 -> 1398</td>
+	</tr>
+	<tr class="selectable" id="cid-91">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/a0/a07f01f1231a0e35_d213ecf0b9b4b7f0600cbac8be151a8f">dx9/model/ship/caldari/destroyer/cde1/guristas/cde1_t1_guristas_pmdg_lowdetail.dds</a><br></td>
+		<td>1 -> 1</td>
+	</tr>
+	<tr class="selectable" id="cid-92">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/73/736b938b86338f7c_f6ab5c220233c1f86dbd4bc7b67b3066">dx9/model/ship/caldari/destroyer/cde1/guristas/cde1_t1_guristas_pmdg_mediumdetail.dds</a><br></td>
+		<td>21 -> 22</td>
+	</tr>
+	<tr class="selectable" id="cid-93">
+		<td style="text-align: middle;"><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/ca/caacc98caa4ab63d_99a8303c79d199e5e6fc95966d3a28a8">res:/dx9/model/ship/caldari/destroyer/cde1/icons/20223_128.png</a>
+    		</summary>
+    		<img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/ca/caacc98caa4ab63d_07acefaf0575405374aa5b59f393cade" src="" /> -> <img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/ca/caacc98caa4ab63d_99a8303c79d199e5e6fc95966d3a28a8" src="" />
+		</details></td>
+		<td>22 -> 22</td>
+	</tr>
+	<tr class="selectable" id="cid-94">
+		<td style="text-align: middle;"><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/31/310c9896bd87f962_e8625b2d9a3c6406a011cbe8708948d3">res:/dx9/model/ship/caldari/destroyer/cde1/icons/20223_64.png</a>
+    		</summary>
+    		<img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/31/310c9896bd87f962_eafda241eac7d001d27826f8d82967b7" src="" /> -> <img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/31/310c9896bd87f962_e8625b2d9a3c6406a011cbe8708948d3" src="" />
+		</details></td>
+		<td>6 -> 6</td>
+	</tr>
+	<tr class="selectable" id="cid-95">
+		<td style="text-align: middle;"><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/a5/a5cfe6cfcdd403eb_052a2156df4281db3a4bf97a31542307">res:/dx9/model/ship/caldari/destroyer/cde1/icons/2388_128.png</a>
+    		</summary>
+    		<img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/a5/a5cfe6cfcdd403eb_5c74275668fbc5ab2cbe17f6cabae159" src="" /> -> <img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/a5/a5cfe6cfcdd403eb_052a2156df4281db3a4bf97a31542307" src="" />
+		</details></td>
+		<td>22 -> 22</td>
+	</tr>
+	<tr class="selectable" id="cid-96">
+		<td style="text-align: middle;"><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/62/629b38e3a2842294_d5649da5ae951db5ea2007b7325f528d">res:/dx9/model/ship/caldari/destroyer/cde1/icons/2388_64.png</a>
+    		</summary>
+    		<img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/62/629b38e3a2842294_794a03ef4ef96ec0c42b58a233b7ee79" src="" /> -> <img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/62/629b38e3a2842294_d5649da5ae951db5ea2007b7325f528d" src="" />
+		</details></td>
+		<td>7 -> 7</td>
+	</tr>
+	<tr class="selectable" id="cid-97">
+		<td style="text-align: middle;"><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/53/53082004182f3617_c67debbf38861887653e2e0fbf3c6c9e">res:/dx9/model/ship/caldari/destroyer/cde1/icons/2388_64_bp.png</a>
+    		</summary>
+    		<img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/53/53082004182f3617_315b0127dc5ddb4881e330998c98a638" src="" /> -> <img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/53/53082004182f3617_c67debbf38861887653e2e0fbf3c6c9e" src="" />
+		</details></td>
+		<td>7 -> 7</td>
+	</tr>
+	<tr class="selectable" id="cid-98">
+		<td style="text-align: middle;"><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/e2/e21870841c3a4a74_04fdf776a9330aa5f8457081379de611">res:/dx9/model/ship/caldari/destroyer/cde1/icons/2388_64_bpc.png</a>
+    		</summary>
+    		<img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/e2/e21870841c3a4a74_cab80e19313e32537965f72c4f57e82d" src="" /> -> <img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/e2/e21870841c3a4a74_04fdf776a9330aa5f8457081379de611" src="" />
+		</details></td>
+		<td>7 -> 7</td>
+	</tr>
+	<tr class="selectable" id="cid-99">
+		<td style="text-align: middle;"><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/1a/1a8248fc50c17a37_73cba8ef9561901e09bf18ce3b3edea9">res:/dx9/model/ship/caldari/destroyer/cde1/icons/2920_128.png</a>
+    		</summary>
+    		<img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/1a/1a8248fc50c17a37_aaf07aedd1e8df2401c2601ef020ab9a" src="" /> -> <img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/1a/1a8248fc50c17a37_73cba8ef9561901e09bf18ce3b3edea9" src="" />
+		</details></td>
+		<td>22 -> 22</td>
+	</tr>
+	<tr class="selectable" id="cid-100">
+		<td style="text-align: middle;"><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/dc/dc36624fa2cd0e98_e158150130ef2b260aa8b6eb1dd98f47">res:/dx9/model/ship/caldari/destroyer/cde1/icons/2920_64.png</a>
+    		</summary>
+    		<img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/dc/dc36624fa2cd0e98_714d4367a7b736fa237a410eebabd5e4" src="" /> -> <img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/dc/dc36624fa2cd0e98_e158150130ef2b260aa8b6eb1dd98f47" src="" />
+		</details></td>
+		<td>7 -> 7</td>
+	</tr>
+	<tr class="selectable" id="cid-101">
+		<td style="text-align: middle;"><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/6c/6cb66a9da6369ccb_95b89ff4a40b22f7d30e175daf003694">res:/dx9/model/ship/caldari/destroyer/cde1/icons/2920_64_bp.png</a>
+    		</summary>
+    		<img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/6c/6cb66a9da6369ccb_d07a177ffdc0dcd43d0fb66522db83e6" src="" /> -> <img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/6c/6cb66a9da6369ccb_95b89ff4a40b22f7d30e175daf003694" src="" />
+		</details></td>
+		<td>7 -> 7</td>
+	</tr>
+	<tr class="selectable" id="cid-102">
+		<td style="text-align: middle;"><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/f8/f8f553dfa0250ca0_7af9162f6ce92527a629600b1771008a">res:/dx9/model/ship/caldari/destroyer/cde1/icons/2920_64_bpc.png</a>
+    		</summary>
+    		<img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/f8/f8f553dfa0250ca0_2ded3960b42ac72fc1d29a2ed32fca4d" src="" /> -> <img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/f8/f8f553dfa0250ca0_7af9162f6ce92527a629600b1771008a" src="" />
+		</details></td>
+		<td>7 -> 7</td>
+	</tr>
+	<tr class="selectable" id="cid-103">
+		<td style="text-align: middle;"><details onclick="displayMedia(this)">
+    		<summary>
+        		<a href="http://res.eveprobe.ccpgames.com/98/98e9f0850107adfe_650f8117f6666ce6c5d1789bdd828010">res:/dx9/model/ship/caldari/destroyer/cde1/icons/cde1_t1_isis.png</a>
+    		</summary>
+    		<img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/98/98e9f0850107adfe_1f056ace0d112f53dfaad5b8c4ff97ae" src="" /> -> <img style="vertical-align:middle" data-src="http://res.eveprobe.ccpgames.com/98/98e9f0850107adfe_650f8117f6666ce6c5d1789bdd828010" src="" />
+		</details></td>
+		<td>2 -> 2</td>
+	</tr>
+	<tr class="selectable" id="cid-104">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/df/df8ad70a7d2638d5_2a04a14b552277d44f2995417a4762bd">dx9/model/ship/caldari/destroyer/cde1/ishukone/cde1_t1_ishukone_pmdg.dds</a><br></td>
+		<td>1398 -> 1398</td>
+	</tr>
+	<tr class="selectable" id="cid-105">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/55/552b3c463177681d_4e639143e8aa379466afd23734b72f79">dx9/model/ship/caldari/destroyer/cde1/ishukone/cde1_t1_ishukone_pmdg_lowdetail.dds</a><br></td>
+		<td>1 -> 1</td>
+	</tr>
+	<tr class="selectable" id="cid-106">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/f9/f939b48767797e04_e41d1816ffbf4d3ca867f227ecc6764a">dx9/model/ship/caldari/destroyer/cde1/ishukone/cde1_t1_ishukone_pmdg_mediumdetail.dds</a><br></td>
+		<td>21 -> 22</td>
+	</tr>
+	<tr class="selectable" id="cid-107">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/85/8540f80b9b5789a5_055878e8daf3b0159cb73682d6b11b5d">dx9/model/ship/caldari/destroyer/cde1/navy/cde1_t1_navy_pmdg.dds</a><br></td>
+		<td>1398 -> 1398</td>
+	</tr>
+	<tr class="selectable" id="cid-108">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/c9/c9629367d08a3fcd_9c4540348b423dbcf3824670a344df0e">dx9/model/ship/caldari/destroyer/cde1/navy/cde1_t1_navy_pmdg_lowdetail.dds</a><br></td>
+		<td>1 -> 1</td>
+	</tr>
+	<tr class="selectable" id="cid-109">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/d4/d4b624a09badf4d4_a2f68e27903f1a3d4a66de295d5d595c">dx9/model/ship/caldari/destroyer/cde1/navy/cde1_t1_navy_pmdg_mediumdetail.dds</a><br></td>
+		<td>21 -> 22</td>
+	</tr>
+	<tr class="selectable" id="cid-110">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/35/350cf81f2f26b64b_5e2dbe94de920eea2f7f5db5d5b4a882">dx9/model/spaceobjectfactory/data.black</a><br></td>
+		<td>12102 -> 12112</td>
+	</tr>
+	<tr class="selectable" id="cid-111">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/89/891c2e65c85f3519_4cc6279f96fbab5c18454232c650c99c">dx9/model/spaceobjectfactory/factions/angelbase.black</a><br></td>
+		<td>2 -> 2</td>
+	</tr>
+	<tr class="selectable" id="cid-112">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/d7/d75702b453a8d596_e49e06eeffca8e88bf281c611d2e0cf4">dx9/model/spaceobjectfactory/factions/tournament-xi.black</a><br></td>
+		<td>1 -> 1</td>
+	</tr>
+	<tr class="selectable" id="cid-113">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/02/02c73b352a762b3b_c0a3a2432b5cee2caf0811f12f91fbce">dx9/model/spaceobjectfactory/hulls/angb1_t1.black</a><br></td>
+		<td>8 -> 16</td>
+	</tr>
+	<tr class="selectable" id="cid-114">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/7d/7dc799e85adf6bb5_ed593e979146c6ad723db4e981f34774">dx9/model/spaceobjectfactory/hulls/cde1_t1.black</a><br></td>
+		<td>14 -> 14</td>
+	</tr>
+	<tr class="selectable" id="cid-115">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/f7/f781e479bccfd00e_b20d11812aa55f97cdb0aafff3f357d5">localizationfsd/localization_fsd_de.pickle</a><br></td>
+		<td>12590 -> 12591</td>
+	</tr>
+	<tr class="selectable" id="cid-116">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/2c/2c3038b3c38e91a1_11bc47dff7eac33467f26d7adbb935e7">localizationfsd/localization_fsd_en-us.pickle</a><br></td>
+		<td>11452 -> 11455</td>
+	</tr>
+	<tr class="selectable" id="cid-117">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/4a/4a0f5fe70b667169_7e0d597f8d4360f7bb50a25e2a02712f">localizationfsd/localization_fsd_fr.pickle</a><br></td>
+		<td>12611 -> 12613</td>
+	</tr>
+	<tr class="selectable" id="cid-118">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/4c/4c56e191aaa0e618_86da73a98d360e1fee581f62624051c7">localizationfsd/localization_fsd_ru.pickle</a><br></td>
+		<td>45190 -> 45195</td>
+	</tr>
+	<tr class="selectable" id="cid-119">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/f0/f016514b481ba503_408d391c11600d36383bbfe2d70292bc">staticdata/blueprints.static</a><br></td>
+		<td>4343 -> 4354</td>
+	</tr>
+	<tr class="selectable" id="cid-120">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/9a/9adf983d033ba1a3_383e61d8f92d034a35ca91456aad406e">staticdata/evecategories.static</a><br></td>
+		<td>10 -> 10</td>
+	</tr>
+	<tr class="selectable" id="cid-121">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/0b/0b577d4609680827_b601729b53a87be3dcc8eb40eeaf6821">staticdata/evegroups.static</a><br></td>
+		<td>389 -> 389</td>
+	</tr>
+	<tr class="selectable" id="cid-122">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/67/671695e3a499baf0_10851a529c6e9af033c92995c01604c3">staticdata/evetypes.static</a><br></td>
+		<td>12468 -> 12470</td>
+	</tr>
+	<tr class="selectable" id="cid-123">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/fa/fade0fc260d02985_f3e1ab8c21a41a4d7a531fb4e715bae8">staticdata/graphicids.static</a><br></td>
+		<td>419 -> 419</td>
+	</tr>
+	<tr class="selectable" id="cid-124">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/07/07b882fb276c5fc5_fab7cb7c843b322e062ea459cdce1ceb">staticdata/graphicmaterialsets.static</a><br></td>
+		<td>37 -> 37</td>
+	</tr>
+	<tr class="selectable" id="cid-125">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/36/369f743b71e34fe6_fb1817d15b108e63a075a625175807a6">texture/fx/caustics/caustic_01.dds</a><br></td>
+		<td>349 -> 349</td>
+	</tr>
+	<tr class="selectable" id="cid-126">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/ab/ab45941437898379_fc40361fa98312e6e09525b7febb027d">texture/fx/lightnings/fx_electro.dds</a><br></td>
+		<td>87 -> 87</td>
+	</tr>
+	<tr class="selectable" id="cid-127">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/5b/5ba4a968af16232e_4eab77a5b6f8af6b914bf42219607ed4">texture/global/white.dds</a><br></td>
+		<td>0 -> 0</td>
+	</tr>
+	<tr class="selectable" id="cid-128">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/ee/eea80354bae9a691_4e1f08facba1cf4497de7c1e30a91b9b">resfiledependencies.yaml</a><br></td>
+		<td>3466 -> 3467</td>
+	</tr>
+	<tr class="selectable" id="cid-129">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/1d/1d34143a37d4b739_9111755266e1ce8e39d0ed821f040c72">resfileindex.txt</a><br></td>
+		<td>11536 -> 11537</td>
+	</tr>
+	<tr class="selectable" id="cid-130">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/56/5610a6eb8b5a4975_41350e36249b5087bd36c1b260b4de76">resfileindex_prefetch.txt</a><br></td>
+		<td>1123 -> 1123</td>
+	</tr>
+	<tr class="selectable" id="cid-131">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/e3/e3cd8a97159e6321_fafbd45c595b7a9ff7cbc8fe473e33e0">start.ini</a><br></td>
+		<td>0 -> 0</td>
+	</tr>
+	</table>
+</details>
+
+<!--<h2 id="changedfiles">Removed Files</h2>-->
+
+<!-- [[removedFilesSection]] -->
+
+<!--<h2 id="changedpythonfiles">Changed Python Files</h2>-->
+
+<!-- [[changedPythonFiles]] -->
+
+<p class="mini2">Made by Inomares. I don't want your donations. I don't read EVE mails. Leave me alone.</p>
+<p class="mini3">I guess contact me on <a href="https://tweetfleet.slack.com/messages/@inomares/">Tweetfleet Slack</a> if you really need to.</p>
+<div class="footer1 footer" id="footer1" onClick="test123();"></div>
+<div class="footer2 footer" id="footer2"></div>
+
+<script>
+	var nodes = document.getElementsByClassName("noscripthidden")
+	for (var i=0; i < nodes.length; i++) {
+		var node = nodes[i]
+		node.classList.remove("noscripthidden")
+	}
+</script>
+</body>
+</html>
