@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hoboleaks: Singularity_Previous (Build: 1147781) to Singularity_Next (Build: 1148443)</title>
+	<meta charset="UTF-8">
+	<meta name="title" content="Client Comparison: Singularity_Previous (Build: 1147781) to Singularity_Next (Build: 1148443) | Hoboleaks">
+	<meta name="description" content="Generated @ 2017-05-29 12:01:02 EVE Time">
+	
+	<meta name="og:title" content="Hoboleaks: Singularity_Previous (Build: 1147781) -> Singularity_Next (Build: 1148443)">
+	<meta name="og:type" content="website">
+	<meta name="og:description" content="Generated @ 2017-05-29 12:01:02 EVE Time">
+	<!-- <meta name="og:image" content="http://hoboleaks.space/sitepreview.png"> -->
+	<meta name="og:image" content="http://static-cdn.jtvnw.net/emoticons/v1/151586/3.0">
+	<meta name="og:url" content="http://hoboleaks.space/">
+	<meta name="og:site_name" content="Hoboleaks">
+	
+	<meta name="twitter:title" content="Hoboleaks: Singularity_Previous (Build: 1147781) -> Singularity_Next (Build: 1148443)">
+	<meta name="twitter:description" content="Generated @ 2017-05-29 12:01:02 EVE Time">
+	<!-- <meta name="twitter:image" content="http://hoboleaks.space/sitepreview.png"> -->
+	<meta name="twitter:image" content="http://static-cdn.jtvnw.net/emoticons/v1/151586/3.0">
+	<meta name="genTime" content="1496059262825">
+	<meta name="genDate" content="2017-05-29 12:01:02">
+	<!-- Who needs css files lol -->
+	<style>
+		table {
+			width:1280px;
+			font-family: arial, tahoma, sans-serif;
+			font-size: 10pt;
+			border-collapse: collapse;
+		}
+
+		td, th {
+			border: 1px solid black;
+			text-align: left;
+			padding: 8px;
+		}
+
+		tr:nth-child(even) {
+			background-color: #DBDBDB;
+		}
+		
+		tr.unimportant {
+			opacity: 0.5;
+			font-size: 8pt;
+		}
+		
+		.hidden {
+			display: none;
+		}
+
+		td.mini {
+			font-size: 8pt;
+		}
+
+		p.mini {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 8pt;
+		}
+		
+		p {
+			font-family: arial, tahoma, sans-serif;
+		}
+		
+		p.mini2 {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 5pt;
+		}
+		
+		p.mini3 {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 5pt;
+			color: gray;
+		}
+		
+		.no-bottom-margin {
+			margin-bottom: 0px;
+		}
+				
+		p.kindasmall {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 10pt;
+			margin: 5px 0px 5px 0px;
+		}
+
+		h1, h2, h3 {
+			font-family: arial, tahoma, sans-serif;
+		}
+
+		summary.bigsum {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 15pt;
+		}		
+
+		summary.bigsum_disabled {
+			font-family: arial, tahoma, sans-serif;
+			color: #9E9E9E;
+			font-size: 15pt;
+		}
+		
+		summary.smallsum {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 10pt;
+		}
+		
+		.smallinput {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 10pt;
+		}
+		
+		p.scriptnotify {
+			font-family: arial, tahoma, sans-serif;
+			color: red;
+			font-size: 12pt;
+		}
+		
+		p.scriptnotifysmall {
+			font-family: arial, tahoma, sans-serif;
+			color: red;
+			font-size: 9pt;
+		}
+		
+		p.scriptnotifysmaller {
+			font-family: arial, tahoma, sans-serif;
+			color: red;
+			font-size: 5pt;
+		}
+		
+		div.simplebox {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 10pt;
+			padding: 5px;
+			margin: 2px;
+			border-left-style: dotted;
+		}
+		
+		ul {
+			padding-left:20px;
+		}
+		
+		div.footer {
+		   position: fixed;
+		   bottom: 20px;
+		   height: 20px;
+		   width: 20px;
+		   border-style: none;
+		}
+		
+		div.footer1 {
+		   right: 20px;
+		}
+		
+		div.footer2 {
+		   left: 20px;
+		   visibility: hidden;
+		}
+		
+		div.footer:hover {
+			border-style: dotted;
+			border-color: #F2F2F2;
+		}
+		
+		.selected {
+			background-color: #C4F0FF;
+		}
+		
+		tr.selected:nth-child(even) {
+			background-color: #C4F0FF;
+		}
+		
+		.noscripthidden {
+			display: none;
+		}
+
+		/* IE 6 */
+		* html #footer {
+		   position:absolute;
+		   top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
+		}
+	</style>
+	<script type="text/javascript">
+		genBaseHash = "highlight" + 1496059262825
+	
+	    function selectText(containerid, hasWaited) {
+			hasWaited = hasWaited || false
+			if (hasWaited == false) {
+				window.setTimeout(function(){selectText(containerid, true)}, 50); /* I'm sure I'm in the wrong here somehow and not Chrome, but this is how we're fixing it soooooooo yeah. */
+				return
+			}
+			var node = document.getElementById(containerid);
+			if (document.selection) {
+				var range = document.body.createTextRange();
+				range.moveToElementText(node);
+				range.select();
+			} else if (window.getSelection) {
+				var range = document.createRange();
+				range.selectNodeContents(node);
+				window.getSelection().removeAllRanges();
+				window.getSelection().addRange(range);
+			}
+		}
+		
+		function hasClass(node, className) {
+			return (node.className && node.className.indexOf(className) != -1)
+		}
+		
+		function getHashValues() {
+			hashValues = window.location.hash.slice(1).split(",")
+			if (!isHashValid(hashValues)) {
+				return [genBaseHash]
+			}
+			if (hashValues.length == 1 && hashValues[0] == "") {
+				return [genBaseHash]
+			}
+			return hashValues
+		}
+		
+		function isHashValid(hashValues) {
+			if (hashValues[0] == genBaseHash) {
+				return true
+			}
+			return false
+		}
+		
+		function hashHasID(nodeID) {
+			hashValues = getHashValues()
+			idPos = hashValues.indexOf(nodeID)
+			ret = (idPos != -1)
+			return 
+		}
+		
+		function updateSelectablesFromHash() {
+			hashValues = getHashValues()
+			oldSelected = document.getElementsByClassName("selected")
+			for (var i=oldSelected.length-1; i >= 0; i--) {
+				node = oldSelected[i]
+				if (!hashHasID(getNodeID(node))) {
+					deselectNode(node)
+				}
+			}
+			for (var i=0; i < hashValues.length; i++) {
+				currentID = hashValues[i]
+				idName = "cid-" + currentID
+				node = document.getElementById(idName)
+				if (node != null) {
+					selectNode(node)
+					updateInheritance(node)
+				}					
+			}
+		}
+		
+		function updateInheritance(node, isDetail) {
+			isDetail = isDetail || false
+			if (node == null || node.tagName == "BODY") {
+				return
+			}
+			if (hasClass(node, "selectParent")) {
+				node.classList.add("selected")
+			}
+			if (node.tagName == "DETAILS") {
+				updateInheritance(node.firstElementChild, true)
+			}
+			if (!isDetail) {
+				return updateInheritance(node.parentNode)
+			}
+		}
+		
+		function selectNode(node) {
+			node.classList.add("selected")
+		}
+		
+		function deselectNode(node) {
+			node.classList.remove("selected")
+		}
+		
+		function getNodeID(node) {
+			nodeID = node.id.slice(4)
+			return nodeID
+		}
+		
+		function toggleNodeHash(node) {
+			nodeID = node.id.slice(4)
+			hashValues = getHashValues()
+			idPos = hashValues.indexOf(nodeID)
+			if (idPos == -1) {
+				hashValues.push(nodeID)
+			}
+			else {
+				hashValues.splice(idPos, 1)
+			}
+			window.location.hash = hashValues.join()
+		}
+		
+		function getSelectableNode(node) {
+		/* We recursively iterate our way up the tree to see if any part of it is selectable. */
+			if (node == null) {
+				return null
+			}
+			if (hasClass(node, "selectable")) {
+				return node
+			}
+			return getSelectableNode(node.parentNode)			
+		}
+		
+		window.onhashchange = function() {
+			updateSelectablesFromHash()
+		}
+		
+		window.onload = function() {
+			document.body.onclick = function(e){
+				if (!e.altKey) {
+					return
+				}
+				if (window.event) {
+					clickedNode = event.srcElement;
+				}
+				else {
+					clickedNode = e.target
+				}
+				selectableNode = getSelectableNode(clickedNode)
+				if (selectableNode != null) {
+					toggleNodeHash(selectableNode)
+					return false
+				}
+			}
+			updateSelectablesFromHash()
+		}
+	</script>
+</head>
+<body>
+<h1 class="no-bottom-margin">Comparing <span title="Release Name: EVE-2017-EMILY&#013;Build Date: 2017-05-29 04:13:56">Singularity_Previous (Build: 1147781)</span> to <span title="Release Name: EVE-2017-EMILY&#013;Build Date: 2017-05-29 04:13:56">Singularity_Next (Build: 1148443)</span> </h1>
+<noscript>
+	<nobr>
+		<p class="mini">Generated @ 2017-05-29 12:01:02 EVE Time (UTC)</p>
+		<p class="scriptnotify" style="display:inline;">You've disabled javascript. This made the menu so sad that it self-destructed. I hope you're happy now.</p>
+		<p class="scriptnotifysmaller" style="display:inline;">You monster.</p>
+	</nobr>
+	<p class="scriptnotifysmall">This page should still kinda work though.</p>
+</noscript>
+<iframe id="timer" src="timerSection.html?version=1&timer=1496059262825" style="border:none; display:none;" height="40px" width="800px"> </iframe>
+<iframe id="navMenu" src="" style="border:none; display:none;" height="40px" width="800px"> </iframe>
+<script>
+	function getStrippedPageName(pageName) {
+		dot = pageName.indexOf(".")
+		if (dot != -1) {
+			pageName = pageName.slice(0, dot)
+		}
+		slash = pageName.indexOf("/")
+		if (slash == 0) {
+			pageName = pageName.slice(1)
+		}
+		return pageName || "index"
+	}
+	
+	document.getElementById("navMenu").style.display = "block";
+	document.getElementById("navMenu").src = "nav.html?curPage=" + getStrippedPageName(window.location.pathname);
+	document.getElementById("timer").style.display = "block";
+</script>
+<p class="mini"></p>
+<p class="mini" style="margin-top: 5px; margin-bottom: 3px;">Est. patch size: 57mb</p>
+<p class="kindasmall">Click the categories below to expand them! ALT-click entries to highlight for sharing. <a href="confused.html">Confused?</a></p>
+
+<details id="newitems">
+	<summary class="selectParent bigsum">New Items (12 Entries)</summary>
+	<table>
+	<details>
+	<summary class="smallsum" onClick="selectText('newItemsNotepad')">Show/Hide EVE notepad list for in-game viewing.</summary><div class="simplebox" id="newItemsNotepad">&lt;url=showinfo:45652&gt;Superconducting Magnetometric Amplifier&lt;/url&gt;<br>&lt;url=showinfo:45653&gt;Superconducting Gravimetric Amplifier&lt;/url&gt;<br>&lt;url=showinfo:45654&gt;Superconducting Radar Amplifier&lt;/url&gt;<br>&lt;url=showinfo:45655&gt;Superconducting Ladar Amplifier&lt;/url&gt;<br>&lt;url=showinfo:45656&gt;Superconducting Magnetometric Amplifier Blueprint&lt;/url&gt;<br>&lt;url=showinfo:45657&gt;Superconducting Gravimetric Amplifier Blueprint&lt;/url&gt;<br>&lt;url=showinfo:45658&gt;Superconducting Radar Amplifier Blueprint&lt;/url&gt;<br>&lt;url=showinfo:45659&gt;Superconducting Ladar Amplifier Blueprint&lt;/url&gt;<br>&lt;url=showinfo:45660&gt;Scorched Microgravimeter&lt;/url&gt;<br>&lt;url=showinfo:45661&gt;Faraday Force Magnetometer&lt;/url&gt;<br>&lt;url=showinfo:45662&gt;Ancient Radar Decorrelator&lt;/url&gt;<br>&lt;url=showinfo:45663&gt;Synthetic Aperture Ladar Receiver&lt;/url&gt;<br></div></details>
+	  <tr>
+		<!--<th>[[title4]]</th>-->
+		<th>TypeID & Name</th>
+		<th>Description</th>
+		<th>Group</th>
+		<th>Attributes</th>
+	  </tr>
+	<tr class="selectable" id="cid-1">
+		<td>45652 - <b>Superconducting Magnetometric Amplifier</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Hybrid Tech Components</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 12 attributes.</summary>	<b>typeID:</b> 45652<br>	<b>radius:</b> 1<br>	<b>Mass:</b> 1<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 5<br>	<b>typeNameID:</b> 526646<br>	<b>iconID:</b> 3720<br>	<b>published:</b> True<br>	<b>marketGroupID:</b> 1147<br>	<b>basePrice:</b> 400000<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 964<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-2">
+		<td>45653 - <b>Superconducting Gravimetric Amplifier</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Hybrid Tech Components</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 12 attributes.</summary>	<b>typeID:</b> 45653<br>	<b>radius:</b> 1<br>	<b>Mass:</b> 1<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 5<br>	<b>typeNameID:</b> 526647<br>	<b>iconID:</b> 3720<br>	<b>published:</b> True<br>	<b>marketGroupID:</b> 1147<br>	<b>basePrice:</b> 400000<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 964<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-3">
+		<td>45654 - <b>Superconducting Radar Amplifier</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Hybrid Tech Components</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 12 attributes.</summary>	<b>typeID:</b> 45654<br>	<b>radius:</b> 1<br>	<b>Mass:</b> 1<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 5<br>	<b>typeNameID:</b> 526648<br>	<b>iconID:</b> 3720<br>	<b>published:</b> True<br>	<b>marketGroupID:</b> 1147<br>	<b>basePrice:</b> 400000<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 964<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-4">
+		<td>45655 - <b>Superconducting Ladar Amplifier</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Hybrid Tech Components</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 12 attributes.</summary>	<b>typeID:</b> 45655<br>	<b>radius:</b> 1<br>	<b>Mass:</b> 1<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 5<br>	<b>typeNameID:</b> 526649<br>	<b>iconID:</b> 3720<br>	<b>published:</b> True<br>	<b>marketGroupID:</b> 1147<br>	<b>basePrice:</b> 400000<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 964<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-5">
+		<td>45656 - <b>Superconducting Magnetometric Amplifier Blueprint</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Hybrid Component Blueprints</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 11 attributes.</summary>	<b>typeID:</b> 45656<br>	<b>radius:</b> 1<br>	<b>Mass:</b> 0.0<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.01<br>	<b>typeNameID:</b> 526650<br>	<b>published:</b> True<br>	<b>marketGroupID:</b> 1191<br>	<b>basePrice:</b> 10000000<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 965<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-6">
+		<td>45657 - <b>Superconducting Gravimetric Amplifier Blueprint</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Hybrid Component Blueprints</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 11 attributes.</summary>	<b>typeID:</b> 45657<br>	<b>radius:</b> 1<br>	<b>Mass:</b> 0.0<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.01<br>	<b>typeNameID:</b> 526651<br>	<b>published:</b> True<br>	<b>marketGroupID:</b> 1191<br>	<b>basePrice:</b> 10000000<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 965<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-7">
+		<td>45658 - <b>Superconducting Radar Amplifier Blueprint</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Hybrid Component Blueprints</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 11 attributes.</summary>	<b>typeID:</b> 45658<br>	<b>radius:</b> 1<br>	<b>Mass:</b> 0.0<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.01<br>	<b>typeNameID:</b> 526652<br>	<b>published:</b> True<br>	<b>marketGroupID:</b> 1191<br>	<b>basePrice:</b> 10000000<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 965<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-8">
+		<td>45659 - <b>Superconducting Ladar Amplifier Blueprint</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Hybrid Component Blueprints</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 11 attributes.</summary>	<b>typeID:</b> 45659<br>	<b>radius:</b> 1<br>	<b>Mass:</b> 0.0<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.01<br>	<b>typeNameID:</b> 526653<br>	<b>published:</b> True<br>	<b>marketGroupID:</b> 1191<br>	<b>basePrice:</b> 10000000<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 965<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-9">
+		<td>45660 - <b>Scorched Microgravimeter</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Ancient Salvage</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 12 attributes.</summary>	<b>typeID:</b> 45660<br>	<b>radius:</b> 1<br>	<b>Mass:</b> 0.0<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.01<br>	<b>typeNameID:</b> 526654<br>	<b>iconID:</b> 3723<br>	<b>published:</b> True<br>	<b>marketGroupID:</b> 1862<br>	<b>basePrice:</b> 0.0<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 966<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-10">
+		<td>45661 - <b>Faraday Force Magnetometer</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Ancient Salvage</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 12 attributes.</summary>	<b>typeID:</b> 45661<br>	<b>radius:</b> 1<br>	<b>Mass:</b> 0.0<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.01<br>	<b>typeNameID:</b> 526655<br>	<b>iconID:</b> 3723<br>	<b>published:</b> True<br>	<b>marketGroupID:</b> 1862<br>	<b>basePrice:</b> 0.0<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 966<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-11">
+		<td>45662 - <b>Ancient Radar Decorrelator</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Ancient Salvage</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 12 attributes.</summary>	<b>typeID:</b> 45662<br>	<b>radius:</b> 1<br>	<b>Mass:</b> 0.0<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.01<br>	<b>typeNameID:</b> 526656<br>	<b>iconID:</b> 3723<br>	<b>published:</b> True<br>	<b>marketGroupID:</b> 1862<br>	<b>basePrice:</b> 0.0<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 966<br></details></td>
+	</tr>
+	<tr class="selectable" id="cid-12">
+		<td>45663 - <b>Synthetic Aperture Ladar Receiver</b></td>
+		<td style="max-width: 500px;">No Description</td>
+		<td style="max-width: 250px;">Ancient Salvage</td>
+		<td width="300px"><details>
+	<summary>Click to toggle showing the 12 attributes.</summary>	<b>typeID:</b> 45663<br>	<b>radius:</b> 1<br>	<b>Mass:</b> 0.0<br>	<b>Capacity:</b> 0.0<br>	<b>Volume:</b> 0.01<br>	<b>typeNameID:</b> 526657<br>	<b>iconID:</b> 3723<br>	<b>published:</b> True<br>	<b>marketGroupID:</b> 1862<br>	<b>basePrice:</b> 0.0<br>	<b>portionSize:</b> 1<br>	<b>groupID:</b> 966<br></details></td>
+	</tr>
+	</table>
+</details>
+
+<details id="removeditems">
+	<summary class="selectParent bigsum_disabled" onclick="return false">Removed Items (0 Entries)</summary>
+	<p class="kindasmall">Please note that a "removed" item usually means the item was just not yet added to the "newer" build.</p>
+	<table>
+	  <tr>
+		<th>TypeID & Name</th>
+		<th>Description</th>
+		<th>Group</th>
+		<th>Attributes</th>
+	  </tr>
+	
+	</table>
+</details>
+
+<details id="changedblueprints">
+	<summary class="selectParent bigsum_disabled" onclick="return false">Changed Blueprints BETA (0 Entries)</summary>
+	<table>
+	  <tr>
+		<th>Blueprint Name</th>
+		<th>Old BP Data</th>
+		<th>New BP Data</th>
+		<th>Raw Diff</th>
+	  </tr>
+	
+	</table>
+</details>
+
+<br>
+
+<details id="bonuschanges">
+	<summary class="selectParent bigsum_disabled" onclick="return false">Changed Traits (0 Entries)</summary>
+	<table>
+	  <tr>
+		<th>TypeID, Group, & Name</th>
+		<th>Singularity_Previous</th>
+		<th>Singularity_Next</th>
+		<th>Diff</th>
+		<!-- <th>[[title4]]</th> -->
+	  </tr>
+	
+	</table>
+</details>
+
+<!--<h2 id="attributes">Attributes</h2>-->
+
+<details id="dgmattribs">
+	<summary class="selectParent bigsum_disabled" onclick="return false">Changes to Attributes (0 Entries)</summary>
+	<table>
+	  <tr>
+		<th>Attribute Name</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Diff</th>
+	  </tr>
+	
+	</table>
+</details>
+
+<details id="typeattribs">
+	<summary class="selectParent bigsum">Attribute Changes per Type (6 Entries)</summary>
+	<table>
+	  <tr>
+		<th>TypeID, Name, and Group</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Diff</th>
+	  </tr>
+	<tr class="selectable" id="cid-13">
+		<td>32799 - <b>Orbital Laser S</b> (Frequency Crystal)</td>
+		<td><b>radius:</b> 0.0 <b>=></b> 1.0<br></td>
+	</tr>
+	<tr class="selectable" id="cid-14">
+		<td>32801 - <b>Orbital EMP S</b> (Projectile Ammo)</td>
+		<td><b>radius:</b> 0.0 <b>=></b> 1.0<br></td>
+	</tr>
+	<tr class="selectable" id="cid-15">
+		<td>32803 - <b>Orbital Hybrid S</b> (Hybrid Charge)</td>
+		<td><b>radius:</b> 0.0 <b>=></b> 1.0<br></td>
+	</tr>
+	<tr class="selectable" id="cid-16">
+		<td>45009 - <b>Standup Moon Drill I</b> (Structure Moon Drilling Service Module)</td>
+		<td><b>groupID:</b> 1322 <b>=></b> 1887<br></td>
+	</tr>
+	<tr class="selectable" id="cid-17">
+		<td>45636 - <b>Swarm Overmind Tertius</b> (Deadspace Rogue Drone Cruiser)</td>
+		<td><b>hp:</b> 800.0 <b>=></b> 900.0<br><b>shieldCapacity:</b> 800.0 <b>=></b> 900.0<br><b>armorHP:</b> 800.0 <b>=></b> 900.0<br></td>
+	</tr>
+	<tr class="selectable" id="cid-18">
+		<td>45638 - <b>Swarm Overmind Primus</b> (Deadspace Rogue Drone Battleship)</td>
+		<td><b>shieldCapacity:</b> 2500.0 <b>=></b> 3000.0<br></td>
+	</tr>
+	</table>
+</details>
+
+<br>
+
+<!--<h2 id="effectchanges">Effect Changes</h2>-->
+
+<details id="dgmeffects">
+	<summary class="selectParent bigsum_disabled" onclick="return false">Changes to Effects (0 Entries)</summary>
+	<table>
+	  <tr>
+		<th>Effect Name</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Diff</th>
+	  </tr>
+	
+	</table>
+</details>
+
+<details id="typeeffects">
+	<summary class="selectParent bigsum_disabled" onclick="return false">Effect Changes per Type (0 Entries)</summary>
+	<table>
+	  <tr>
+		<th>TypeID, Name, and Group</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Effects Changes</th>
+	  </tr>
+	
+	</table>
+</details>
+
+<br>
+
+<!--<h2 id="stringchanges">String Changes</h2>-->
+
+<script>
+	function toggleHidden(cb) {
+		var nodes = document.getElementById("stringchanges").getElementsByClassName("unimportant")
+		for (var i=0; i < nodes.length; i++) {
+			var node = nodes[i]
+			if (cb.checked) {
+				node.classList.remove("hidden")
+			} else {
+				node.classList.add("hidden")
+			}
+		}
+	}
+</script>
+<details id="stringchanges">
+	<summary class="selectParent bigsum">String Changes (17 Entries)</summary>
+	<label class="smallinput noscripthidden hidden"><input type="checkbox" onclick="toggleHidden(this)">Show [[unimportants]] changes marked as old</label>
+	<table>
+	  <tr>
+		<th>Key</th>
+		<th>Singularity_Previous</th>
+		<th>Singularity_Next</th>
+		<th>Diff</th>
+		<th>Notes</th>
+	  </tr>
+	<tr class="selectable" id="cid-19">
+		<td>91757</td>
+		<td width="355px">Revelation burrows through the material world, devours creation's soil, digests the thoughtless void, and produces significance with God's grace. From emptiness comes meaning, essence from existence, soul from matter.<br><br>Is God through the wormhole? Did God grant us this boon, this new technology, a revelation from on high? These weapons are God's new prophecy, domain, and blessing. Let us use God's grace and prepare New Eden. We are God's soldiers, weapons, glory. Our people are God's army. Together, we are the legion.<br><br>    -<i>The Heresies of Hinketsu</i></td>
+		<td width="355px"><b>Important CONCORD announcement:</b> At 11:00 EveTime on July 11th all Strategic Cruisers will receive an automatic upgrade into the latest technology. This upgrade process may cause modules to go offline.<br><b>CONCORD encourages all Strategic Cruiser pilots to get themselves into a safe location (such as a friendly starbase or docked within a structure) on or before July 11th.</b><br><br>Revelation burrows through the material world, devours creation's soil, digests the thoughtless void, and produces significance with God's grace. From emptiness comes meaning, essence from existence, soul from matter.<br><br>Is God through the wormhole? Did God grant us this boon, this new technology, a revelation from on high? These weapons are God's new prophecy, domain, and blessing. Let us use God's grace and prepare New Eden. We are God's soldiers, weapons, glory. Our people are God's army. Together, we are the legion.<br><br>    -<i>The Heresies of Hinketsu</i></td>
+		<td><ins style="background:#e6ffe6;">&lt;b&gt;Important CONCORD announcement:&lt;/b&gt; At 11:00 EveTime on July 11th all Strategic Cruisers will receive an automatic upgrade into the latest technology. This upgrade process may cause modules to go offline.<br>&lt;b&gt;CONCORD encourages all Strategic Cruiser pilots to get themselves into a safe location (such as a friendly starbase or docked within a structure) on or before July 11th.&lt;/b&gt;<br><br></ins><span>Revelation burrows through the material world, devours creation's soil, digests the thoughtless void, and produces significance with God's grace. From emptiness comes meaning, essence from existence, soul from matter.<br><br>Is God through the wormhole? Did God grant us this boon, this new technology, a revelation from on high? These weapons are God's new prophecy, domain, and blessing. Let us use God's grace and prepare New Eden. We are God's soldiers, weapons, glory. Our people are God's army. Together, we are the legion.<br><br>    -&lt;i&gt;The Heresies of Hinketsu&lt;/i&gt;</span></td>
+		<td class="mini">Item description for "Legion" (typeID 29986)</td>
+	</tr>
+	<tr class="selectable" id="cid-20">
+		<td>91758</td>
+		<td width="355px">Freedom is liquid, supple, mellifluous. It surrounds us, engulfs our bodies, drowns our fear. We plumb freedom's depths and consume the nourishment within. From these waters, we are born; when we die, we shall return to those waters. <br><br>Out there, among the stars, are the waters, freedom incarnate. That dark, endless void is our destiny, our path, our goal. We must not fear it, nor should we control it. Rather, we should embrace it, trust it, love it. Its ever-changing face, its protean existence, is our very essence. We are those stars, the void, the awesome waters of space: ancient, forever, free.<br><br>    - Jinsente Parmen, <i>The Gallente in New Eden</i></td>
+		<td width="355px"><b>Important CONCORD announcement:</b> At 11:00 EveTime on July 11th all Strategic Cruisers will receive an automatic upgrade into the latest technology. This upgrade process may cause modules to go offline.<br><b>CONCORD encourages all Strategic Cruiser pilots to get themselves into a safe location (such as a friendly starbase or docked within a structure) on or before July 11th.</b><br><br>Freedom is liquid, supple, mellifluous. It surrounds us, engulfs our bodies, drowns our fear. We plumb freedom's depths and consume the nourishment within. From these waters, we are born; when we die, we shall return to those waters. <br><br>Out there, among the stars, are the waters, freedom incarnate. That dark, endless void is our destiny, our path, our goal. We must not fear it, nor should we control it. Rather, we should embrace it, trust it, love it. Its ever-changing face, its protean existence, is our very essence. We are those stars, the void, the awesome waters of space: ancient, forever, free.<br><br>    - Jinsente Parmen, <i>The Gallente in New Eden</i></td>
+		<td><ins style="background:#e6ffe6;">&lt;b&gt;Important CONCORD announcement:&lt;/b&gt; At 11:00 EveTime on July 11th all Strategic Cruisers will receive an automatic upgrade into the latest technology. This upgrade process may cause modules to go offline.<br>&lt;b&gt;CONCORD encourages all Strategic Cruiser pilots to get themselves into a safe location (such as a friendly starbase or docked within a structure) on or before July 11th.&lt;/b&gt;<br><br></ins><span>Freedom is liquid, supple, mellifluous. It surrounds us, engulfs our bodies, drowns our fear. We plumb freedom's depths and consume the nourishment within. From these waters, we are born; when we die, we shall return to those waters.<br><br>Out there, among the stars, are the waters, freedom incarnate. That dark, endless void is our destiny, our path, our goal. We must not fear it, nor should we control it. Rather, we should embrace it, trust it, love it. Its ever-changing face, its protean existence, is our very essence. We are those stars, the void, the awesome waters of space: ancient, forever, free.<br><br>    - Jinsente Parmen, &lt;i&gt;The Gallente in New Eden&lt;/i&gt;</span></td>
+		<td class="mini">Item description for "Proteus" (typeID 29988)</td>
+	</tr>
+	<tr class="selectable" id="cid-21">
+		<td>91759</td>
+		<td width="355px">When we first saw the flock, we were surrounded, caught in a spectacle of stimuli. Brilliant colors, dancing lights, beautiful cacophonies, wafting ambrosia. Those birds surrounded us, each one a different shape, an altered species, a new wonder. I tried to follow a single bird, but my efforts were futile: Transformation is natural to their existence. Imagine it: an undulating mass, a changing mob, all those beasts partaking in wonderful transmogrification.  <br><br>These were our augurs, our deliverers, our saviors. Standing amidst the flock, we should have feared their glory; instead, we drew hope. This moment is the first time I understood what it meant to be Caldari: Divinity in the flock, delivery in flux, one being, many changes.<br><br>   - Janto Sitarbe, <i>The Legendary Flock</i></td>
+		<td width="355px"><b>Important CONCORD announcement:</b> At 11:00 EveTime on July 11th all Strategic Cruisers will receive an automatic upgrade into the latest technology. This upgrade process may cause modules to go offline.<br><b>CONCORD encourages all Strategic Cruiser pilots to get themselves into a safe location (such as a friendly starbase or docked within a structure) on or before July 11th.</b><br><br>When we first saw the flock, we were surrounded, caught in a spectacle of stimuli. Brilliant colors, dancing lights, beautiful cacophonies, wafting ambrosia. Those birds surrounded us, each one a different shape, an altered species, a new wonder. I tried to follow a single bird, but my efforts were futile: Transformation is natural to their existence. Imagine it: an undulating mass, a changing mob, all those beasts partaking in wonderful transmogrification.  <br><br>These were our augurs, our deliverers, our saviors. Standing amidst the flock, we should have feared their glory; instead, we drew hope. This moment is the first time I understood what it meant to be Caldari: Divinity in the flock, delivery in flux, one being, many changes.<br><br>   - Janto Sitarbe, <i>The Legendary Flock</i></td>
+		<td><ins style="background:#e6ffe6;">&lt;b&gt;Important CONCORD announcement:&lt;/b&gt; At 11:00 EveTime on July 11th all Strategic Cruisers will receive an automatic upgrade into the latest technology. This upgrade process may cause modules to go offline.<br>&lt;b&gt;CONCORD encourages all Strategic Cruiser pilots to get themselves into a safe location (such as a friendly starbase or docked within a structure) on or before July 11th.&lt;/b&gt;<br><br></ins><span>When we first saw the flock, we were surrounded, caught in a spectacle of stimuli. Brilliant colors, dancing lights, beautiful cacophonies, wafting ambrosia. Those birds surrounded us, each one a different shape, an altered species, a new wonder. I tried to follow a single bird, but my efforts were futile: Transformation is natural to their existence. Imagine it: an undulating mass, a changing mob, all those beasts partaking in wonderful transmogrification.<br><br>These were our augurs, our deliverers, our saviors. Standing amidst the flock, we should have feared their glory; instead, we drew hope. This moment is the first time I understood what it meant to be Caldari: Divinity in the flock, delivery in flux, one being, many changes.<br><br>   - Janto Sitarbe, &lt;i&gt;The Legendary Flock&lt;/i&gt;</span></td>
+		<td class="mini">Item description for "Tengu" (typeID 29984)</td>
+	</tr>
+	<tr class="selectable" id="cid-22">
+		<td>91789</td>
+		<td width="355px">For many Minmatar, the high mountains of Matar hold wonders unknown to the rest of New Eden: hidden glens, beautiful creatures, buried customs. Not surprisingly, the Krusual tribe lay claim to these mountains, their home for generations and base to their machinations.<br><br>Krusual elders whisper ancient tales among their huddled tribes, describing the glory of heroes past and enigmatic prophecies of old. On the darkest day, at the most hopeless moments, an elder may speak of <i>Loki</i>, in reverent tones and excited hushes. In the ancient tongue, the <i>Loki</i> are the crux of Krusual thought. There is no direct translation for this word; in fact, <i>Loki</i> translates differently among the elders. It can mean “hidden wonder” or “secret passage”, “changing mask” or “unseen dagger”. Regardless of its context, <i>Loki</i> has one meaning common to all its tales across all the elders: “hope”.</td>
+		<td width="355px"><b>Important CONCORD announcement:</b> At 11:00 EveTime on July 11th all Strategic Cruisers will receive an automatic upgrade into the latest technology. This upgrade process may cause modules to go offline.<br><b>CONCORD encourages all Strategic Cruiser pilots to get themselves into a safe location (such as a friendly starbase or docked within a structure) on or before July 11th.</b><br><br>For many Minmatar, the high mountains of Matar hold wonders unknown to the rest of New Eden: hidden glens, beautiful creatures, buried customs. Not surprisingly, the Krusual tribe lay claim to these mountains, their home for generations and base to their machinations.<br><br>Krusual elders whisper ancient tales among their huddled tribes, describing the glory of heroes past and enigmatic prophecies of old. On the darkest day, at the most hopeless moments, an elder may speak of <i>Loki</i>, in reverent tones and excited hushes. In the ancient tongue, the <i>Loki</i> are the crux of Krusual thought. There is no direct translation for this word; in fact, <i>Loki</i> translates differently among the elders. It can mean “hidden wonder” or “secret passage”, “changing mask” or “unseen dagger”. Regardless of its context, <i>Loki</i> has one meaning common to all its tales across all the elders: “hope”.</td>
+		<td><ins style="background:#e6ffe6;">&lt;b&gt;Important CONCORD announcement:&lt;/b&gt; At 11:00 EveTime on July 11th all Strategic Cruisers will receive an automatic upgrade into the latest technology. This upgrade process may cause modules to go offline.<br>&lt;b&gt;CONCORD encourages all Strategic Cruiser pilots to get themselves into a safe location (such as a friendly starbase or docked within a structure) on or before July 11th.&lt;/b&gt;<br><br></ins><span>For many Minmatar, the high mountains of Matar hold wonders unknown to the rest of New Eden: hidden glens, beautiful creatures, buried customs. Not surprisingly, the Krusual tribe lay claim to these mountains, their home for generations and base to their machinations.<br><br>Krusual elders whisper ancient tales among their huddled tribes, describing the glory of heroes past and enigmatic prophecies of old. On the darkest day, at the most hopeless moments, an elder may speak of &lt;i&gt;Loki&lt;/i&gt;, in reverent tones and excited hushes. In the ancient tongue, the &lt;i&gt;Loki&lt;/i&gt; are the crux of Krusual thought. There is no direct translation for this word; in fact, &lt;i&gt;Loki&lt;/i&gt; translates differently among the elders. It can mean “hidden wonder” or “secret passage”, “changing mask” or “unseen dagger”. Regardless of its context, &lt;i&gt;Loki&lt;/i&gt; has one meaning common to all its tales across all the elders: “hope”.</span></td>
+		<td class="mini">Item description for "Loki" (typeID 29990)</td>
+	</tr>
+	<tr class="selectable" id="cid-23">
+		<td>526632</td>
+		<td width="355px"></td>
+		<td width="355px">Structure Moon Drilling Service Module</td>
+		<td><ins style="background:#e6ffe6;">Structure Moon Drilling Service Module</ins></td>
+		<td class="mini">Group description for group ID 1887</td>
+	</tr>
+	<tr class="selectable" id="cid-24">
+		<td>526646</td>
+		<td width="355px"></td>
+		<td width="355px">Superconducting Magnetometric Amplifier</td>
+		<td><ins style="background:#e6ffe6;">Superconducting Magnetometric Amplifier</ins></td>
+		<td class="mini">Item name for typeID 45652 (Hybrid Tech Components)</td>
+	</tr>
+	<tr class="selectable" id="cid-25">
+		<td>526647</td>
+		<td width="355px"></td>
+		<td width="355px">Superconducting Gravimetric Amplifier</td>
+		<td><ins style="background:#e6ffe6;">Superconducting Gravimetric Amplifier</ins></td>
+		<td class="mini">Item name for typeID 45653 (Hybrid Tech Components)</td>
+	</tr>
+	<tr class="selectable" id="cid-26">
+		<td>526648</td>
+		<td width="355px"></td>
+		<td width="355px">Superconducting Radar Amplifier</td>
+		<td><ins style="background:#e6ffe6;">Superconducting Radar Amplifier</ins></td>
+		<td class="mini">Item name for typeID 45654 (Hybrid Tech Components)</td>
+	</tr>
+	<tr class="selectable" id="cid-27">
+		<td>526649</td>
+		<td width="355px"></td>
+		<td width="355px">Superconducting Ladar Amplifier</td>
+		<td><ins style="background:#e6ffe6;">Superconducting Ladar Amplifier</ins></td>
+		<td class="mini">Item name for typeID 45655 (Hybrid Tech Components)</td>
+	</tr>
+	<tr class="selectable" id="cid-28">
+		<td>526650</td>
+		<td width="355px"></td>
+		<td width="355px">Superconducting Magnetometric Amplifier Blueprint</td>
+		<td><ins style="background:#e6ffe6;">Superconducting Magnetometric Amplifier Blueprint</ins></td>
+		<td class="mini">Item name for typeID 45656 (Hybrid Component Blueprints)</td>
+	</tr>
+	<tr class="selectable" id="cid-29">
+		<td>526651</td>
+		<td width="355px"></td>
+		<td width="355px">Superconducting Gravimetric Amplifier Blueprint</td>
+		<td><ins style="background:#e6ffe6;">Superconducting Gravimetric Amplifier Blueprint</ins></td>
+		<td class="mini">Item name for typeID 45657 (Hybrid Component Blueprints)</td>
+	</tr>
+	<tr class="selectable" id="cid-30">
+		<td>526652</td>
+		<td width="355px"></td>
+		<td width="355px">Superconducting Radar Amplifier Blueprint</td>
+		<td><ins style="background:#e6ffe6;">Superconducting Radar Amplifier Blueprint</ins></td>
+		<td class="mini">Item name for typeID 45658 (Hybrid Component Blueprints)</td>
+	</tr>
+	<tr class="selectable" id="cid-31">
+		<td>526653</td>
+		<td width="355px"></td>
+		<td width="355px">Superconducting Ladar Amplifier Blueprint</td>
+		<td><ins style="background:#e6ffe6;">Superconducting Ladar Amplifier Blueprint</ins></td>
+		<td class="mini">Item name for typeID 45659 (Hybrid Component Blueprints)</td>
+	</tr>
+	<tr class="selectable" id="cid-32">
+		<td>526654</td>
+		<td width="355px"></td>
+		<td width="355px">Scorched Microgravimeter</td>
+		<td><ins style="background:#e6ffe6;">Scorched Microgravimeter</ins></td>
+		<td class="mini">Item name for typeID 45660 (Ancient Salvage)</td>
+	</tr>
+	<tr class="selectable" id="cid-33">
+		<td>526655</td>
+		<td width="355px"></td>
+		<td width="355px">Faraday Force Magnetometer</td>
+		<td><ins style="background:#e6ffe6;">Faraday Force Magnetometer</ins></td>
+		<td class="mini">Item name for typeID 45661 (Ancient Salvage)</td>
+	</tr>
+	<tr class="selectable" id="cid-34">
+		<td>526656</td>
+		<td width="355px"></td>
+		<td width="355px">Ancient Radar Decorrelator</td>
+		<td><ins style="background:#e6ffe6;">Ancient Radar Decorrelator</ins></td>
+		<td class="mini">Item name for typeID 45662 (Ancient Salvage)</td>
+	</tr>
+	<tr class="selectable" id="cid-35">
+		<td>526657</td>
+		<td width="355px"></td>
+		<td width="355px">Synthetic Aperture Ladar Receiver</td>
+		<td><ins style="background:#e6ffe6;">Synthetic Aperture Ladar Receiver</ins></td>
+		<td class="mini">Item name for typeID 45663 (Ancient Salvage)</td>
+	</tr>
+	</table>
+</details>
+
+<br>
+
+<!--<h2 id="newfiles">New Files</h2>-->
+
+<script>
+	function displayMedia(doc) {
+		nodes = doc.children
+		for (i=0; i < nodes.length; i++) {
+			node = nodes[i]
+			if (node.hasAttribute("data-src") && node.getAttribute("src") == "") {
+				node.setAttribute("src", node.getAttribute("data-src"))
+			}
+		}
+	}
+</script>
+<details id="newfiles">
+	<summary class="selectParent bigsum">New Files (2 Entries)</summary>
+	<table>
+	  <tr>
+		<th>File Name</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Size in kb (Decompressed)</th>
+	  </tr>
+	<tr class="selectable" id="cid-36">
+		<td><a href="https://binaries.eveonline.com/0b/0b6af6f6a6ef898d_f148ac3706d08b2b9790721fcbd74a15">bin/_elementtree.pyd</a><br></td>
+		<td>74</td>
+	</tr>
+	<tr class="selectable" id="cid-37">
+		<td><a href="https://binaries.eveonline.com/8f/8f52eb0dd3f74c34_e7ef35499b7cad964ed20b336eba35d8">bin/packages/certifi/cacert.pem</a><br></td>
+		<td>330</td>
+	</tr>
+	</table>
+</details>
+<script>
+	function test123() {
+		document.getElementById("footer1").style.display = "none";
+		document.getElementById("footer2").style.visibility = "visible";
+		document.getElementById("footer2").onclick = function() {document.location = "http://i.imgur.com/3Kd6ruW.jpg"}
+	}
+</script>
+<!--<h2 id="changedfiles">Changed Files</h2>-->
+
+<details id="changedfiles">
+	<summary class="selectParent bigsum">Changed Files (36 Entries)</summary>
+	<table>
+	  <tr>
+		<th>File Name</th>
+		<!--<th>[[title1]]</th>
+		<th>[[title2]]</th>-->
+		<th>Size in kb (Decompressed)</th>
+	  </tr>
+	<tr class="selectable" id="cid-38">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/fd/fd64e5270a98c9d2_fe7f75eba804e23dc66064ac426d5121">bin/_audio2.dll</a><br></td>
+		<td>1778 -> 1778</td>
+	</tr>
+	<tr class="selectable" id="cid-39">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/9d/9dda27afa02a904b_fe8f1d9af460fa3bcb5c55010f26840d">bin/_ctypes.pyd</a><br></td>
+		<td>82 -> 82</td>
+	</tr>
+	<tr class="selectable" id="cid-40">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/a9/a93c4f04ac83ab10_bd35f0c632efd2a4b8f867f58e0440f1">bin/_destiny.dll</a><br></td>
+		<td>701 -> 701</td>
+	</tr>
+	<tr class="selectable" id="cid-41">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/96/960ceec6e6614863_d5d7e1b78d53f385d35c7c48afb51529">bin/_evelocalization.dll</a><br></td>
+		<td>245 -> 245</td>
+	</tr>
+	<tr class="selectable" id="cid-42">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/0f/0f69699dcd6744fb_ea261531b0ff5c67c0b2a4decc822dcf">bin/_ssl.pyd</a><br></td>
+		<td>992 -> 992</td>
+	</tr>
+	<tr class="selectable" id="cid-43">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/ba/ba1aa4f3fb71b2da_2424ed30c9f5ce8b18ea46c70abb7be4">bin/_trinity_dx11_deploy.dll</a><br></td>
+		<td>14293 -> 14293</td>
+	</tr>
+	<tr class="selectable" id="cid-44">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/34/34cee7939079398b_84c1482c3fbfb477ade09e5ca45b0c70">bin/_trinity_dx9_deploy.dll</a><br></td>
+		<td>14191 -> 14191</td>
+	</tr>
+	<tr class="selectable" id="cid-45">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/ed/ed941bbe3dcdb8c8_701fc6320edefb3aff9e8e11da3942d8">bin/_yaml.pyd</a><br></td>
+		<td>205 -> 205</td>
+	</tr>
+	<tr class="selectable" id="cid-46">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/31/3180e648a99b3387_3a6570c209c64faa9820d6ec0028c3e6">bin/blue.dll</a><br></td>
+		<td>3861 -> 3861</td>
+	</tr>
+	<tr class="selectable" id="cid-47">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/08/086c8ddb05e6679b_62ceb23f7b334279c1c3566aa03c83e0">bin/exefile.exe</a><br></td>
+		<td>545 -> 545</td>
+	</tr>
+	<tr class="selectable" id="cid-48">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/79/793eabc55b8f7528_3c7fc1494dfa417a30215ea06b4dec77">bin/geo2.dll</a><br></td>
+		<td>195 -> 195</td>
+	</tr>
+	<tr class="selectable" id="cid-49">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/d5/d5dab9df889d46cd_c4dcaed1c69a0f8bc6f1fe51bc156034">bin/pyFSD.dll</a><br></td>
+		<td>788 -> 781</td>
+	</tr>
+	<tr class="selectable" id="cid-50">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/f0/f0eab0ecb51e058b_f0dca34bad54a3d775580ee6fb8ee107">bin/pyexpat.pyd</a><br></td>
+		<td>130 -> 130</td>
+	</tr>
+	<tr class="selectable" id="cid-51">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/8f/8fc0107a8acdb92c_9b3df97034e09efd0028b76c86bf41ee">bin/python27.dll</a><br></td>
+		<td>3881 -> 3881</td>
+	</tr>
+	<tr class="selectable" id="cid-52">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/bd/bda7724745ed6198_ac2e323d364838da1d32badf7482a6e2">bin/staticdata/mapObjects.db</a><br></td>
+		<td>35793 -> 35793</td>
+	</tr>
+	<tr class="selectable" id="cid-53">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/48/484283789a4b08cf_27e01659c543c697ac6196272054fc69">bin/unicodedata.pyd</a><br></td>
+		<td>690 -> 690</td>
+	</tr>
+	<tr class="selectable" id="cid-54">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/bc/bc5fff279c5cae06_30f1ec908d12121676f8ea6e1758ce8f">bulkdata/800006.cache2</a><br></td>
+		<td>6740 -> 6740</td>
+	</tr>
+	<tr class="selectable" id="cid-55">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/aa/aa0b8b0323d24f50_3c32c977d200190f165e253552fe0a81">bulkdata/metadata.yaml</a><br></td>
+		<td>0 -> 0</td>
+	</tr>
+	<tr class="selectable" id="cid-56">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/1e/1ef674def6229546_c28061ed50f4c32fd0ebc12862843eab">bulkdata/version</a><br></td>
+		<td>0 -> 0</td>
+	</tr>
+	<tr class="selectable" id="cid-57">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/f0/f032ac16b88d97a4_3e129f643bd627a0556b8219f06100ad">code.ccp</a><br></td>
+		<td>16747 -> 16771</td>
+	</tr>
+	<tr class="selectable" id="cid-58">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/6f/6f3d61269081b1f0_830d3f9a5e1819b9ce9efe4f3d514c8f">dx9/model/hangar/amarr/ah1/ah1_postprocess.yaml</a><br></td>
+		<td>0 -> 0</td>
+	</tr>
+	<tr class="selectable" id="cid-59">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/40/40afa3596e3420b3_ff8937ebcdc87c646d219faf6973e7bc">dx9/model/hangar/caldari/ch1/ch1_postprocess.yaml</a><br></td>
+		<td>0 -> 0</td>
+	</tr>
+	<tr class="selectable" id="cid-60">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/94/949aa0963d56ac19_bef1cbfcbd4be9194f948480d1bb1631">dx9/model/hangar/gallente/gh1/gh1_postprocess.yaml</a><br></td>
+		<td>0 -> 0</td>
+	</tr>
+	<tr class="selectable" id="cid-61">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/5a/5a51f0749e441879_18ada2e054d84ed0311a94d0ddc79651">dx9/model/hangar/generic/standard/gensh1/gensh1_t1a_postprocess.yaml</a><br></td>
+		<td>0 -> 0</td>
+	</tr>
+	<tr class="selectable" id="cid-62">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/2d/2d572e56982df668_27129c301913dc3d0dd01e707ac17d3f">dx9/model/hangar/minmatar/mh1/mh1_postprocess.yaml</a><br></td>
+		<td>0 -> 0</td>
+	</tr>
+	<tr class="selectable" id="cid-63">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/1d/1d34143a37d4b739_bed993194ff55e4973d0bdf46c7b93e1">fileindex.txt</a><br></td>
+		<td>11537 -> 11537</td>
+	</tr>
+	<tr class="selectable" id="cid-64">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/56/5610a6eb8b5a4975_1d28d3fa92d54c51187afdbf6d8c0251">fileindex_prefetch.txt</a><br></td>
+		<td>1123 -> 1123</td>
+	</tr>
+	<tr class="selectable" id="cid-65">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/2c/2c3038b3c38e91a1_063e40b51070acd19d949b47e6f2eb57">localizationfsd/localization_fsd_en-us.pickle</a><br></td>
+		<td>11455 -> 11458</td>
+	</tr>
+	<tr class="selectable" id="cid-66">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/1a/1a48a0969136daa1_1dddea69a78ad2b3271016d317139491">manifest.dat</a><br></td>
+		<td>12 -> 12</td>
+	</tr>
+	<tr class="selectable" id="cid-67">
+		<td style="text-align: middle;"><a href="https://binaries.eveonline.com/e3/e3cd8a97159e6321_a662f2002326bc7e6246665e1d2d5163">tart.ini</a><br></td>
+		<td>0 -> 0</td>
+	</tr>
+	<tr class="selectable" id="cid-68">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/9a/9adf983d033ba1a3_d6f51eef4ac36b082ca2d0dea0bca4ce">taticdata/evecategories.static</a><br></td>
+		<td>10 -> 10</td>
+	</tr>
+	<tr class="selectable" id="cid-69">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/0b/0b577d4609680827_b2f8a27c5e285df119b607f9f162b50c">taticdata/evegroups.static</a><br></td>
+		<td>389 -> 389</td>
+	</tr>
+	<tr class="selectable" id="cid-70">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/67/671695e3a499baf0_593779e9e7dcffdbc5cf5e76bbfc867e">taticdata/evetypes.static</a><br></td>
+		<td>12470 -> 12476</td>
+	</tr>
+	<tr class="selectable" id="cid-71">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/dd/ddec335c5166e1ce_d165889edb2daef6ce0e758f3c6acf98">taticdata/skinlicenses.static</a><br></td>
+		<td>1081 -> 1081</td>
+	</tr>
+	<tr class="selectable" id="cid-72">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/04/04fe8caf2896e754_68643a236906486cddd1cba73e64c9ee">taticdata/skinmaterials.static</a><br></td>
+		<td>27 -> 27</td>
+	</tr>
+	<tr class="selectable" id="cid-73">
+		<td style="text-align: middle;"><a href="http://res.eveprobe.ccpgames.com/cb/cb291acd32af7f27_a031fbb7cf0a49fa0b354efe65553cb6">taticdata/skins.static</a><br></td>
+		<td>1422 -> 1422</td>
+	</tr>
+	</table>
+</details>
+
+<!--<h2 id="changedfiles">Removed Files</h2>-->
+
+<!-- [[removedFilesSection]] -->
+
+<p class="mini2">Made by Inomares. I don't want your donations. I don't read EVE mails. Leave me alone.</p>
+<p class="mini3">I guess contact me on <a href="https://tweetfleet.slack.com/messages/@inomares/">Tweetfleet Slack</a> if you really need to.</p>
+<div class="footer1 footer" id="footer1" onClick="test123();"></div>
+<div class="footer2 footer" id="footer2"></div>
+
+<script>
+	var nodes = document.getElementsByClassName("noscripthidden")
+	for (var i=0; i < nodes.length; i++) {
+		var node = nodes[i]
+		node.classList.remove("noscripthidden")
+	}
+</script>
+</body>
+</html>
