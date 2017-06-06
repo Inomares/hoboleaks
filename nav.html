@@ -1,4 +1,4 @@
-<!-- Generated at 1496695441.63 / 2017-06-05 20:44:01 / 2017-06-05 22:44:01.627000 -->
+<!-- Generated at 1496778366.3 / 2017-06-06 19:46:06 / 2017-06-06 21:46:06.298000 -->
 <meta charset="UTF-8">
 <script>
 	function getParameterByName(name) {
@@ -22,6 +22,12 @@
 		return pageName
 	}
 	
+	function navigateIfNotEmpty(toPage) {
+		if (toPage != "") {
+			parent.location = toPage
+		}
+	}
+	
 	window.onload = function() {
 		menus = ["formclients", "formtqrevs", "formsisirevs", "formchaosrevs"]
 		curPage = getCurrentPageName()
@@ -40,12 +46,12 @@
 	}
 </script>
 
-<select name="formclients" onchange="parent.location = this.value;">
+<select name="formclients" onchange="navigateIfNotEmpty(this.value);">
  <option value="">Client Comparisons</option>
-	<option value="index.html" title="Generated @ 2017-06-05 20:43:48">Tranquility -> Singularity</option>
+	<option value="index.html" title="Generated @ 2017-06-06 19:46:05">Tranquility -> Singularity</option>
 	<option value="chaos.html" title="Generated @ 2017-05-18 12:02:07">Singularity -> Chaos</option>
 </select>
-<select name="formtqrevs" onchange="parent.location = this.value;">
+<select name="formtqrevs" onchange="navigateIfNotEmpty(this.value);">
  <option value="">TQ Revisions</option>
 	<option value="Tranquility_1148666-1149496.html" title="Generated @ 2017-06-01 11:21:48">1148666 -> 1149496</option>
 	<option value="Tranquility_1146849-1148666.html" title="Generated @ 2017-05-30 11:13:09">1146849 -> 1148666</option>
@@ -58,8 +64,9 @@
 	<option value="Tranquility_1142279-1142846.html" title="Generated @ 2017-05-10 11:11:26">1142279 -> 1142846</option>
 	<option value="Tranquility_1140953-1142279.html" title="Generated @ 2017-05-09 11:13:39">1140953 -> 1142279</option>
 </select>
-<select name="formsisirevs" onchange="parent.location = this.value;">
+<select name="formsisirevs" onchange="navigateIfNotEmpty(this.value);">
  <option value="">Singularity Revisions</option>
+	<option value="Singularity_1150718-1151250.html" title="Generated @ 2017-06-06 19:45:15">1150718 -> 1151250</option>
 	<option value="Singularity_1150347-1150718.html" title="Generated @ 2017-06-05 20:43:14">1150347 -> 1150718</option>
 	<option value="Singularity_1149177-1150347.html" title="Generated @ 2017-06-02 15:34:07">1149177 -> 1150347</option>
 	<option value="Singularity_1148443-1149177.html" title="Generated @ 2017-05-31 13:44:38">1148443 -> 1149177</option>
@@ -68,10 +75,9 @@
 	<option value="Singularity_1146253-1146955.html" title="Generated @ 2017-05-23 11:58:24">1146253 -> 1146955</option>
 	<option value="Singularity_1145274-1146253.html" title="Generated @ 2017-05-19 20:02:06">1145274 -> 1146253</option>
 	<option value="Singularity_1144087-1145274.html" title="Generated @ 2017-05-18 12:01:04">1144087 -> 1145274</option>
-	<option value="Singularity_1143865-1144087.html" title="Generated @ 2017-05-15 12:42:50">1143865 -> 1144087</option>
-	<option value="Singularity_1143536-1143865.html" title="Generated @ 2017-05-12 12:38:52">1143536 -> 1143865</option>
+	<option value="Singularity_1143865-1144087.html" title="Generated @ 2017-05-15 12:42:50">1143865 -> 1144087</option>
 </select>
-<select name="formchaosrevs" onchange="parent.location = this.value;">
+<select name="formchaosrevs" onchange="navigateIfNotEmpty(this.value);">
  <option value="">Chaos Revisions</option>
 	<option value="chaos.html" title="Generated @ 2017-05-18 17:25:00">Not RIP -> RIP</option>
 	<option value="Chaos_1142708-1143786.html" title="Generated @ 2017-05-12 11:23:04">1142708 -> 1143786</option>
