@@ -1,0 +1,116 @@
+body {
+	background:#282828;
+	text-align: center;
+}
+
+footer {
+	text-align: center;
+}
+
+/* TODO: Get a better looking font */
+p, h1, button, div.contents {
+	font-family: 'Roboto', arial, tahoma, sans-serif;
+	color:white;
+}
+
+.noscripthidden {
+	display:none;
+}
+
+a {
+    color: white;
+}
+
+p.footer1 {
+	font-size: 8pt;
+}
+
+p.footer2 {
+	font-size: 7pt;
+	color: gray;
+}
+
+p.footer2 a  {
+	color:#AFAFAF;
+}
+
+img.headerIcon, h1.headerName, p.headerID {
+	margin: 5px;
+	display:inline;
+	vertical-align:middle;
+}
+
+div.itemHeader {
+	height:64px;
+	line-height:64px;
+	margin:20px;
+}
+
+div.maincontent {
+	background-color: #323232;
+	border: 1px solid black;
+	/* width:580px;
+	display:inline-block; */
+}
+
+div.contents {
+	text-align: left;
+	padding:12px;
+}
+
+div.tabs {
+	border-bottom: none;
+	padding:0px;
+	display: flex;
+}
+
+
+.tablink {
+	border:none;
+	background-color: #454545;
+	cursor:pointer;
+	padding: 8px 10px;
+	color:white;
+	flex-grow: 1;
+	transition:0.2s;
+}
+
+button.tablink:hover {
+	background-color: #606060;
+}
+
+button.tablink.selected {
+	background-color: #999999;
+}
+
+div.inactive {
+	display: none;
+}
+
+p .description {
+	margin:0px;
+}
+
+b.bonusheader {
+	color:#76AFC2;
+}
+
+span.bonusunit {
+	color:#DBF6FF;
+}
+
+a span.skillLevel {
+	color:white;
+}
+
+a.skillLink {
+	color:#D6D6D6;
+}
+
+#requirements li {
+	list-style:none;
+}
+
+#requirements ul ul {
+	opacity:0.6;
+}
