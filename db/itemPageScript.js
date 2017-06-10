@@ -1,4 +1,6 @@
-dontUpdateHash = false
+var dontUpdateHash = false
+var attachedPopups = {}
+var testNode = null
 
 function getParameterByName(name) {
 
@@ -26,6 +28,46 @@ function selectTab(evt, tabName) {
 	contents.classList.remove("inactive")
 	evt.currentTarget.classList.add("selected")
 }
+
+function createPopup(x, y, className) {
+	className = className || "popup1"
+	var newElement = document.createElement("div")
+	newElement.classList.add(className)
+	newElement.innerHTML = "<p>This is a very very very very very very very very long description of the attribute. It does things.</p>"
+	newElement.style.visibility = "hidden"
+	newElement.style.opacity = 0
+	document.body.appendChild(newElement)
+	var nodeRect = newElement.getBoundingClientRect()
+	var xPos = Math.max((x - nodeRect.width / 2), 0)	
+	var yPos = (y - (nodeRect.height + 9))
+	newElement.style.top = yPos + "px"
+	newElement.style.left = xPos + "px"
+	newElement.style.visibility = ""
+	newElement.style.opacity = 1
+	return newElement
+}
+
+function displayAttachedPopup(node, event) {
+	var nodePosition = node.getBoundingClientRect()
+	var newElement = createPopup(event.clientX, nodePosition.y)
+	attachedPopups[node] = attachedPopups[node] || []
+	attachedPopups[node].push(newElement)
+}
+
+function removeAttachedPopups(node) {
+	var popups = attachedPopups[node] || []
+	for (var i=0; i < popups.length; i++) {
+		var popup = popups[i]
+		document.body.removeChild(popup)
+	}
+	attachedPopups[node] = []
+}
+
+
+
+
+
+
 
 window.onload = function(){
 	var nodes = document.getElementsByClassName("noscripthidden")

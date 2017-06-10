@@ -1,3 +1,10 @@
+:root {
+	--unit-color: #DBF6FF;
+	--bonusHeader-color: #76AFC2;
+	--contentBackground-color: #323232;
+	--skin-transition-time: 0.5s;
+}
+
 body {
 	background:#282828;
 	text-align: center;
@@ -8,7 +15,7 @@ footer {
 }
 
 /* TODO: Get a better looking font */
-p, h1, button, div.contents {
+p, h1, button, span, div.contents {
 	font-family: 'Roboto', arial, tahoma, sans-serif;
 	color:white;
 }
@@ -47,7 +54,7 @@ div.itemHeader {
 }
 
 div.maincontent {
-	background-color: #323232;
+	background-color: var(--contentBackground-color);
 	border: 1px solid black;
 	/* width:580px;
 	display:inline-block; */
@@ -73,6 +80,7 @@ div.tabs {
 	color:white;
 	flex-grow: 1;
 	transition:0.2s;
+	max-height:33px;
 }
 
 button.tablink:hover {
@@ -81,6 +89,7 @@ button.tablink:hover {
 
 button.tablink.selected {
 	background-color: #999999;
+	/* color: var(--unit-color); */
 }
 
 div.inactive {
@@ -92,11 +101,11 @@ p .description {
 }
 
 b.bonusheader {
-	color:#76AFC2;
+	color:var(--bonusHeader-color);
 }
 
 span.bonusunit {
-	color:#DBF6FF;
+	color: var(--unit-color);
 }
 
 a span.skillLevel {
@@ -112,5 +121,121 @@ a.skillLink {
 }
 
 #requirements ul ul {
+	margin: 0px;
+}
+
+#requirements ul ul {
 	opacity:0.6;
+}
+
+#attributes table{
+	border-spacing:0;
+	border-collapse: collapse;
+}
+
+#attributes .attrCategory {
+	text-align:center;
+	background-color:#282828;
+	background: linear-gradient(to right, var(--contentBackground-color), #2D3F4D, var(--contentBackground-color));
+	color:white;
+	border:1px solid #252525;
+	/* border-bottom:2px solid #404040; */
+}
+
+#attributes tr {
+	color:white;
+	border-right:3px solid transparent;
+	border-left:3px solid transparent;
+	transition:0.1s;
+}
+
+#attributes tr:hover:not(.attrCategory) {
+	background-color:#454545;
+	border-right:3px solid #CCF2FF;
+	border-left:3px solid #CCF2FF;
+}
+
+
+#attributes td.attrValue {
+	text-align: right;
+}
+
+div.popup1 {
+	max-width:300px;
+	font-size:13px;
+	background-color: #252525;
+	position: absolute;
+	border-radius: .4em;
+	border: 3px solid #1E282B;
+	padding-left: 9px;
+	padding-right: 9px;
+	transition:0.4s;
+}
+
+div.popup1:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 10px solid transparent; /* IF CHANGED, ALSO CHANGE MARGIN BELOW AND POPUP JS POSITION */
+	border-top-color: #1E282B; 
+	border-bottom: 0; 
+	margin-left: -10px; 
+	margin-bottom: -10px; 
+}
+
+/* #button_skins {
+	background-image: url('type/tabSkins.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: right;
+} */
+
+img.fitted {
+	max-width: 100%;
+	max-height: 100%;
+	vertical-align: middle;
+}
+
+div.skinbox {
+	border:1px solid #424242;
+	vertical-align: center;
+	transition:var(--skin-transition-time);
+	font-size: 20pt;
+	display: flex;
+	align-items: center;
+	padding:12px;
+}
+
+#skins a {
+	text-decoration: none;	
+}
+
+
+div.skinbox:hover {
+	border:1px solid #7A8B9E;
+}
+
+div.skinDescriptor {
+/* 	display:flex;
+	align-items: center;
+	padding: 0px;
+	text-align: center; */
+}
+
+span.skinName, span.skinNotes {
+	/* margin:auto; */
+	margin-left:10px;
+	color: white;
+	transition:var(--skin-transition-time);
+}
+
+span.skinNotes {
+	font-size: 12px;
+}
+
+a:hover span.skinName, a:hover span.skinNotes {
+	color: var(--unit-color);
 }

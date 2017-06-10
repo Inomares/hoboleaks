@@ -41,7 +41,7 @@
  				<button class="tablink" id="button_requirements" onclick="selectTab(event, 'requirements')">Requirements</button>
 				<!-- <button class="tablink" id="button_mastery" onclick="selectTab(event, 'mastery')">Mastery</button> -->
 				<button class="tablink" id="button_industry" onclick="selectTab(event, 'industry')">Industry</button>
-				<button class="tablink" id="button_skins" onclick="selectTab(event, 'skins')">Skins</button>
+				<button class="tablink" id="button_skins" onclick="selectTab(event, 'skins')">Skins <!--<img class="fitted" src="tabSkins.png">--></button>
 			</div>
 			<div class="contents">
 				<noscript>
@@ -60,7 +60,30 @@
 					<p class="description">The Etana came into existence as one of numerous secret projects under Tibus Heth's rule. As part of those revolutionary and paranoid times in the Caldari State, political emphasis on technological research was split between a need for inexpensive improvements in warfare and a need for advances in espionage and the arts of secrecy.<br><br>				One of the outcomes of that research was an improvement on the Osprey, whose versatility and low manufacturing cost made it a natural candidate for improvements. The resulting vessel maintained the shield defenses known among similar ships of its type, while adding an array of remarkable black ops capabilities. In fact, it is reputed that initial prototypes were employed to spy on interstellar activities near the recaptured Caldari Prime, as part of Tibus Heth's continually growing espionage initiative.</p>
 				</div>				
 				<div class="inactive content" id="attributes">
-					Coming Soon...
+					<table style="width:100%">
+						<tr class="attrCategory"><th colspan="2">General</th></tr>
+						<tr>
+							<td class="attrKey" onmouseover="displayAttachedPopup(this, event)" onmouseout="removeAttachedPopups(this)">Cargo Capacity</td>
+							<td class="attrValue">500 <span class="bonusunit">m3</span></td>
+						</tr>
+						<tr>
+							<td class="attrKey" onmouseover="displayAttachedPopup(this, event)" onmouseout="removeAttachedPopups(this)">Test</td>
+							<td class="attrValue">231 <span class="bonusunit">units</span></td>
+						</tr>
+						<tr class="attrCategory"><th colspan="2">Speed n Shit</th></tr>
+						<tr>
+							<td class="attrKey" onmouseover="displayAttachedPopup(this, event)" onmouseout="removeAttachedPopups(this)">Warp Speed</td>
+							<td class="attrValue">3.15 <span class="bonusunit">AU/s</span></td>
+						</tr>
+						<tr>
+							<td class="attrKey" onmouseover="displayAttachedPopup(this, event)" onmouseout="removeAttachedPopups(this)">Velocity</td>
+							<td class="attrValue">311 <span class="bonusunit">m/s</span></td>
+						</tr>
+						<tr>
+							<td class="attrKey" onmouseover="displayAttachedPopup(this, event)" onmouseout="removeAttachedPopups(this)">Some Bonus</td>
+							<td class="attrValue">40 <span class="bonusunit">%</span></td>
+						</tr>
+					</table>
 				</div>
 				<div class="inactive content" id="requirements">
 					<ul>
@@ -126,7 +149,35 @@
 					Coming Soon...
 				</div>
 				<div class="inactive content" id="skins">
-					Coming Soon...
+					<a href="">
+						<div class="skinbox">
+							<img src="http://i.imgur.com/K22DVw5.png">
+							<div class="skinDescriptor">
+								<span class="skinName">Raata Sunset</span>
+								<br>
+								<span class="skinNotes">Source: New Eden Store (500 AUR)</span>
+							</div>
+						</div>
+					</a>
+					<a href="">
+						<div class="skinbox">
+							<img src="http://i.imgur.com/bdsjKf1.png">
+							<div class="skinDescriptor">
+								<span class="skinName">Sansha Victory</span>
+								<span class="skinNotes">Source: Alliance Tournament XV (2020)</span>
+							</div>
+						</div>
+					</a>
+					<a href="">
+						<div class="skinbox">
+							<img src="http://i.imgur.com/71IINfV.png">
+							<div class="skinDescriptor">
+								<span class="skinName">Nugoeihuvi</span>
+								<br>
+								<span class="skinNotes">Source: Christmas Promotion (1995)</span>
+							</div>
+						</div>
+					</a>
 				</div>
 			</div>
 		</div>
