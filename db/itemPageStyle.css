@@ -219,10 +219,8 @@ div.skinbox:hover {
 }
 
 div.skinDescriptor {
-/* 	display:flex;
-	align-items: center;
-	padding: 0px;
-	text-align: center; */
+	display: flex;
+	flex-direction: column;
 }
 
 span.skinName, span.skinNotes {
