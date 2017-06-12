@@ -29,177 +29,180 @@
 		</script>
 	</head>
 	<body>
-		<header>
-			<div class="siteHeader">
-				<img class="noclip" src="http://static-cdn.jtvnw.net/emoticons/v1/151586/2.0" alt="Site Logo">
-				<h1 class="siteName">Hoboleaks Sisi DB</h1>
-				<form action="disabled">
-					<input type="text" name="searchInput" placeholder="Search disabled..." disabled>
-					<input type="submit" value="" disabled>
-				</form>
+		<div class="mainContainer">
+			<header>
+				<div class="siteHeader">
+					<a href="/">
+						<img class="noclip" src="http://static-cdn.jtvnw.net/emoticons/v1/151586/2.0" alt="Site Logo"></a>
+						<h1 class="siteName">Hoboleaks Sisi DB</h1>
+					<form action="disabled">
+						<input type="text" name="searchInput" placeholder="Search disabled..." disabled>
+						<input type="submit" value="" disabled>
+					</form>
+				</div>
+			</header>
+			<div class="itemHeader">
+				<img class="headerIcon" alt="Item Icon" src="https://image.eveonline.com/Type/32790_64.png">
+				<h1 class="headerName">Etana</h1>
+				<p class="headerID">(32790)</p>
 			</div>
-		</header>
-		<div class="itemHeader">
-			<img class="headerIcon" alt="Item Icon" src="https://image.eveonline.com/Type/32790_64.png">
-			<h1 class="headerName">Etana</h1>
-			<p class="headerID">(32790)</p>
-		</div>
-		<div class="maincontent">
-			<div class="tabs">
-				<button class="tablink" id="button_traits" onclick="selectTab(event, 'traits')">Traits</button>
-				<button class="tablink" id="button_description" onclick="selectTab(event, 'description')">Description</button>
-				<button class="tablink" id="button_attributes" onclick="selectTab(event, 'attributes')">Attributes</button>
- 				<button class="tablink" id="button_requirements" onclick="selectTab(event, 'requirements')">Requirements</button>
-				<button class="tablink" id="button_industry" onclick="selectTab(event, 'industry')">Industry</button>
-				<button class="tablink" id="button_skins" onclick="selectTab(event, 'skins')">Skins</button>
-			</div>
-			<div class="contents">
-				<noscript>
-					<div class="onlynoscript">
-						<p>You have disabled javascript. This enables Internet Explorer simulation mode. Enjoy!</p>
+			<div class="maincontent">
+				<div class="tabs">
+					<button class="tablink" id="button_traits" onclick="selectTab(event, 'traits')">Traits</button>
+					<button class="tablink" id="button_description" onclick="selectTab(event, 'description')">Description</button>
+					<button class="tablink" id="button_attributes" onclick="selectTab(event, 'attributes')">Attributes</button>
+					<button class="tablink" id="button_requirements" onclick="selectTab(event, 'requirements')">Requirements</button>
+					<button class="tablink" id="button_industry" onclick="selectTab(event, 'industry')">Industry</button>
+					<button class="tablink" id="button_skins" onclick="selectTab(event, 'skins')">Skins</button>
+				</div>
+				<div class="contents">
+					<noscript>
+						<div class="onlynoscript">
+							<p>You have disabled javascript. This enables Internet Explorer simulation mode. Enjoy!</p>
+						</div>
+					</noscript>
+					<div class="inactive content" id="traits">
+						<b class="bonusheader">Logistics Cruisers bonuses (per skill level):</b><ul><li><span class="bonusunit">17%</span> reduction in <a href=showinfo:3422>Remote Shield Booster</a> and <a href=showinfo:3423>Remote Capacitor Transmitter</a> activation cost</li></ul>
+
+						<b class="bonusheader">Caldari Cruiser bonuses (per skill level):</b><ul><li><span class="bonusunit">160%</span> bonus to <a href=showinfo:3423>Remote Capacitor Transmitter</a> range</li><li><span class="bonusunit">20%</span> bonus to <a href=showinfo:3439>Logistic Drone</a> transfer amount</li><li><span class="bonusunit">62%</span> bonus to <a href=showinfo:3422>Remote Shield Booster</a> optimal range and falloff</li></ul>
+
+						<b class="bonusheader">Role Bonus:</b><ul><li><span class="bonusunit">50%</span> reduction in <a href=showinfo:3422>Remote Shield Booster</a> CPU requirement</li><li><span class="bonusunit">50%</span> reduction in <a href=showinfo:3423>Remote Capacitor Transmitter</a> powergrid requirement</li><li><span class="bonusunit">40%</span> reduction in module heat damage amount taken</li><li><span class="bonusunit"></span> Can fit <a href=showinfo:11578>Covert Ops Cloaking Device</a> and <a href=showinfo:28646>Covert Cynosural Field Generator</a></li></ul>
 					</div>
-				</noscript>
-				<div class="inactive content" id="traits">
-					<b class="bonusheader">Logistics Cruisers bonuses (per skill level):</b><ul><li><span class="bonusunit">17%</span> reduction in <a href=showinfo:3422>Remote Shield Booster</a> and <a href=showinfo:3423>Remote Capacitor Transmitter</a> activation cost</li></ul>
-
-					<b class="bonusheader">Caldari Cruiser bonuses (per skill level):</b><ul><li><span class="bonusunit">160%</span> bonus to <a href=showinfo:3423>Remote Capacitor Transmitter</a> range</li><li><span class="bonusunit">20%</span> bonus to <a href=showinfo:3439>Logistic Drone</a> transfer amount</li><li><span class="bonusunit">62%</span> bonus to <a href=showinfo:3422>Remote Shield Booster</a> optimal range and falloff</li></ul>
-
-					<b class="bonusheader">Role Bonus:</b><ul><li><span class="bonusunit">50%</span> reduction in <a href=showinfo:3422>Remote Shield Booster</a> CPU requirement</li><li><span class="bonusunit">50%</span> reduction in <a href=showinfo:3423>Remote Capacitor Transmitter</a> powergrid requirement</li><li><span class="bonusunit">40%</span> reduction in module heat damage amount taken</li><li><span class="bonusunit"></span> Can fit <a href=showinfo:11578>Covert Ops Cloaking Device</a> and <a href=showinfo:28646>Covert Cynosural Field Generator</a></li></ul>
-				</div>
-				<div class="inactive content" id="description">
-					<p class="description">The Etana came into existence as one of numerous secret projects under Tibus Heth's rule. As part of those revolutionary and paranoid times in the Caldari State, political emphasis on technological research was split between a need for inexpensive improvements in warfare and a need for advances in espionage and the arts of secrecy.<br><br>				One of the outcomes of that research was an improvement on the Osprey, whose versatility and low manufacturing cost made it a natural candidate for improvements. The resulting vessel maintained the shield defenses known among similar ships of its type, while adding an array of remarkable black ops capabilities. In fact, it is reputed that initial prototypes were employed to spy on interstellar activities near the recaptured Caldari Prime, as part of Tibus Heth's continually growing espionage initiative.</p>
-				</div>				
-				<div class="inactive content" id="attributes">
-					<table style="width:100%">
-						<tr class="attrCategory"><th colspan="2">This tab looks like shit</th></tr>
-						<tr>
-							<td class="attrKey" onmouseover="displayAttachedPopup(this, event)" onmouseout="removeAttachedPopups(this)">Cargo Capacity</td>
-							<td class="attrValue">500 <span class="bonusunit">m3</span></td>
-						</tr>
-						<tr>
-							<td class="attrKey" onmouseover="displayAttachedPopup(this, event)" onmouseout="removeAttachedPopups(this)">Test</td>
-							<td class="attrValue">231 <span class="bonusunit">units</span></td>
-						</tr>
-						<tr class="attrCategory"><th colspan="2">Don't look at it</th></tr>
-						<tr>
-							<td class="attrKey" onmouseover="displayAttachedPopup(this, event)" onmouseout="removeAttachedPopups(this)">Warp Speed</td>
-							<td class="attrValue">3.15 <span class="bonusunit">AU/s</span></td>
-						</tr>
-						<tr>
-							<td class="attrKey" onmouseover="displayAttachedPopup(this, event)" onmouseout="removeAttachedPopups(this)">Velocity</td>
-							<td class="attrValue">311 <span class="bonusunit">m/s</span></td>
-						</tr>
-						<tr>
-							<td class="attrKey" onmouseover="displayAttachedPopup(this, event)" onmouseout="removeAttachedPopups(this)">Some Bonus</td>
-							<td class="attrValue">40 <span class="bonusunit">%</span></td>
-						</tr>
-					</table>
-				</div>
-				<div class="inactive content" id="requirements">
-					<ul>
-						<li>
-							<a class="skillLink" href="unone.html">Logistics Cruisers <span class="skillLevel">I</span></a>
-						</li>
-
+					<div class="inactive content" id="description">
+						<p class="description">The Etana came into existence as one of numerous secret projects under Tibus Heth's rule. As part of those revolutionary and paranoid times in the Caldari State, political emphasis on technological research was split between a need for inexpensive improvements in warfare and a need for advances in espionage and the arts of secrecy.<br><br>				One of the outcomes of that research was an improvement on the Osprey, whose versatility and low manufacturing cost made it a natural candidate for improvements. The resulting vessel maintained the shield defenses known among similar ships of its type, while adding an array of remarkable black ops capabilities. In fact, it is reputed that initial prototypes were employed to spy on interstellar activities near the recaptured Caldari Prime, as part of Tibus Heth's continually growing espionage initiative.</p>
+					</div>				
+					<div class="inactive content" id="attributes">
+						<table style="width:100%">
+							<tr class="attrCategory"><th colspan="2">This tab looks like shit</th></tr>
+							<tr>
+								<td class="attrKey" onmouseover="displayAttachedPopup(this, event)" onmouseout="removeAttachedPopups(this)">Cargo Capacity</td>
+								<td class="attrValue">500 <span class="bonusunit">m3</span></td>
+							</tr>
+							<tr>
+								<td class="attrKey" onmouseover="displayAttachedPopup(this, event)" onmouseout="removeAttachedPopups(this)">Test</td>
+								<td class="attrValue">231 <span class="bonusunit">units</span></td>
+							</tr>
+							<tr class="attrCategory"><th colspan="2">Don't look at it</th></tr>
+							<tr>
+								<td class="attrKey" onmouseover="displayAttachedPopup(this, event)" onmouseout="removeAttachedPopups(this)">Warp Speed</td>
+								<td class="attrValue">3.15 <span class="bonusunit">AU/s</span></td>
+							</tr>
+							<tr>
+								<td class="attrKey" onmouseover="displayAttachedPopup(this, event)" onmouseout="removeAttachedPopups(this)">Velocity</td>
+								<td class="attrValue">311 <span class="bonusunit">m/s</span></td>
+							</tr>
+							<tr>
+								<td class="attrKey" onmouseover="displayAttachedPopup(this, event)" onmouseout="removeAttachedPopups(this)">Some Bonus</td>
+								<td class="attrValue">40 <span class="bonusunit">%</span></td>
+							</tr>
+						</table>
+					</div>
+					<div class="inactive content" id="requirements">
 						<ul>
 							<li>
-								<a class="skillLink" href="unone.html">Long Range Targeting <span class="skillLevel">V</span></a>
+								<a class="skillLink" href="unone.html">Logistics Cruisers <span class="skillLevel">I</span></a>
 							</li>
 
 							<ul>
 								<li>
-									<a class="skillLink" href="unone.html">CPU Management <span class="skillLevel">II</span></a>
-								</li>
-
-							</ul>
-							<li>
-								<a class="skillLink" href="unone.html">Signature Analysis <span class="skillLevel">V</span></a>
-							</li>
-
-							<ul>
-								<li>
-									<a class="skillLink" href="unone.html">CPU Management <span class="skillLevel">I</span></a>
-								</li>
-
-							</ul>
-							<li>
-								<a class="skillLink" href="unone.html">Spaceship Command <span class="skillLevel">III</span></a>
-							</li>
-
-						</ul>
-						<li>
-							<a class="skillLink" href="unone.html">Caldari Cruiser <span class="skillLevel">V</span></a>
-						</li>
-
-						<ul>
-							<li>
-								<a class="skillLink" href="unone.html">Caldari Destroyer <span class="skillLevel">III</span></a>
-							</li>
-
-							<ul>
-								<li>
-									<a class="skillLink" href="unone.html">Caldari Frigate <span class="skillLevel">III</span></a>
+									<a class="skillLink" href="unone.html">Long Range Targeting <span class="skillLevel">V</span></a>
 								</li>
 
 								<ul>
 									<li>
-										<a class="skillLink" href="unone.html">Spaceship Command <span class="skillLevel">I</span></a>
+										<a class="skillLink" href="unone.html">CPU Management <span class="skillLevel">II</span></a>
 									</li>
 
 								</ul>
+								<li>
+									<a class="skillLink" href="unone.html">Signature Analysis <span class="skillLevel">V</span></a>
+								</li>
+
+								<ul>
+									<li>
+										<a class="skillLink" href="unone.html">CPU Management <span class="skillLevel">I</span></a>
+									</li>
+
+								</ul>
+								<li>
+									<a class="skillLink" href="unone.html">Spaceship Command <span class="skillLevel">III</span></a>
+								</li>
+
 							</ul>
 							<li>
-								<a class="skillLink" href="unone.html">Spaceship Command <span class="skillLevel">II</span></a>
+								<a class="skillLink" href="unone.html">Caldari Cruiser <span class="skillLevel">V</span></a>
 							</li>
 
+							<ul>
+								<li>
+									<a class="skillLink" href="unone.html">Caldari Destroyer <span class="skillLevel">III</span></a>
+								</li>
+
+								<ul>
+									<li>
+										<a class="skillLink" href="unone.html">Caldari Frigate <span class="skillLevel">III</span></a>
+									</li>
+
+									<ul>
+										<li>
+											<a class="skillLink" href="unone.html">Spaceship Command <span class="skillLevel">I</span></a>
+										</li>
+
+									</ul>
+								</ul>
+								<li>
+									<a class="skillLink" href="unone.html">Spaceship Command <span class="skillLevel">II</span></a>
+								</li>
+
+							</ul>
 						</ul>
-					</ul>
-				</div>
-				<div class="inactive content" id="industry">
-					Some tritanium...<br>
-					Noxcium...<br>
-					Pyerite?<br>
-				</div>
-				<div class="inactive content" id="skins">
-					<a href="">
-						<div class="skinbox">
-							<img src="http://i.imgur.com/K22DVw5.png">
-							<div class="skinDescriptor">
-								<span class="skinName">Raata Sunset</span>
-								<span class="skinNotes"><b>Source:</b> New Eden Store (500 AUR)</span>
+					</div>
+					<div class="inactive content" id="industry">
+						Some tritanium...<br>
+						Noxcium...<br>
+						Pyerite?<br>
+					</div>
+					<div class="inactive content" id="skins">
+						<a href="">
+							<div class="skinbox">
+								<img src="http://i.imgur.com/K22DVw5.png">
+								<div class="skinDescriptor">
+									<span class="skinName">Raata Sunset</span>
+									<span class="skinNotes"><b>Source:</b> New Eden Store (500 AUR)</span>
+								</div>
 							</div>
-						</div>
-					</a>
-					<a href="">
-						<div class="skinbox">
-							<img src="http://i.imgur.com/bdsjKf1.png">
-							<div class="skinDescriptor">
-								<span class="skinName">Sansha Victory</span>
-								<span class="skinNotes"><b>Source:</b> Alliance Tournament XV (2020)</span>
+						</a>
+						<a href="">
+							<div class="skinbox">
+								<img src="http://i.imgur.com/bdsjKf1.png">
+								<div class="skinDescriptor">
+									<span class="skinName">Sansha Victory</span>
+									<span class="skinNotes"><b>Source:</b> Alliance Tournament XV (2020)</span>
+								</div>
 							</div>
-						</div>
-					</a>
-					<a href="">
-						<div class="skinbox">
-							<img src="http://i.imgur.com/71IINfV.png">
-							<div class="skinDescriptor">
-								<span class="skinName">Nugoeihuvi</span>
-								<span class="skinNotes"><b>Source:</b> Christmas Promotion (1995)</span>
+						</a>
+						<a href="">
+							<div class="skinbox">
+								<img src="http://i.imgur.com/71IINfV.png">
+								<div class="skinDescriptor">
+									<span class="skinName">Nugoeihuvi</span>
+									<span class="skinNotes"><b>Source:</b> Christmas Promotion (1995)</span>
+								</div>
 							</div>
-						</div>
-					</a>
+						</a>
+					</div>
 				</div>
 			</div>
-		</div>
 		
-		<footer>
-			<div class="footerText">
-				<p class="footerP footer1">Made by Inomares. I don't want your donations. I don't read EVE mails. Leave me alone.</p>
-				<p class="footerP footer2">I guess contact me on <a href="https://tweetfleet.slack.com/messages/@inomares/">Tweetfleet Slack</a> if you really need to.</p>
-			</div>
-			<div class="footerButtons">
-				<img class="settingsButton" src="http://www.freeiconspng.com/uploads/gear-11-icon--free-icons-4.png" onclick="console.log('hi')" />
-			</div>
-		</footer>
+			<footer>
+				<div class="footerText">
+					<p class="footerP footer1">Made by Inomares. I don't want your donations. I don't read EVE mails. Leave me alone.</p>
+					<p class="footerP footer2">I guess contact me on <a href="https://tweetfleet.slack.com/messages/@inomares/">Tweetfleet Slack</a> if you really need to.</p>
+				</div>
+				<div class="footerButtons">
+					<img class="settingsButton" src="http://www.freeiconspng.com/uploads/gear-11-icon--free-icons-4.png" onclick="console.log('hi')" alt="Placeholder Icon" />
+				</div>
+			</footer>
+		</div>
 	</body>
 </html>
