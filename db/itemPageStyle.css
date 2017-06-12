@@ -2,30 +2,96 @@
 	--unit-color: #DBF6FF;
 	--bonusHeader-color: #76AFC2;
 	--contentBackground-color: #323232;
+	--siteHeader-color: #181818;
+	--siteHeader-borderColor: #484848;
 	--skin-transition-time: 0.5s;
+	--font-names: 'Roboto', arial, tahoma, sans-serif;
 }
 
 body {
-	background:#282828;
-	text-align: center;
+	background: #252525;
+	margin: 0;
+
+}
+
+/* TODO: Get a better looking font */
+p, h1, button, span, div.contents, a {
+	font-family: var(--font-names);
+	color: white;
+}
+
+.noscripthidden {
+	display: none;
+}
+
+div.siteHeader {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	
+	align-items: center;
+	padding: 5px 15px 5px 15px;
+	
+	background: var(--siteHeader-color);
+	
+	border-bottom: 1px solid var(--siteHeader-borderColor);
+}
+
+h1.siteName {
+	margin: 5px;
+
+}
+
+img.noclip { /* Broken due to flex spacing of parent container */
+	max-width:100%;
+	max-height:100%;
+}
+
+input[type="text"] {
+	font-family: var(--font-names);
+	font-size: 11pt;
+	
+	height: 25px;
+	width: 200px;
+	
+	padding: 6px 12px;
+	margin: 15px 8px;
+	
+	border: 0px solid var(--unit-color);
+	border-radius: 2px;
+}
+
+input[type="text"]:focus {
+	box-shadow: 0px 0px 10px var(--unit-color);
+}
+
+input[type="submit"] {
+	cursor: pointer;
+	
+	height: 37px;
+	width: 50px;
+	
+	border:none;
+	border-radius:2px;
+	
+	padding: 0px 12px;
+	
+	background-color: #BBBBBB;
+	background-image: url(http://simpleicon.com/wp-content/uploads/magnifier-3-64x64.png);
+	background-repeat: no-repeat;
+	background-size: 25px;
+	background-position: center;
+	
+	transition:0.3s;
+}
+
+input[type="submit"]:hover {
+	background-color: #CCCCCC;
+	box-shadow: 0px 0px 4px var(--unit-color);
 }
 
 footer {
 	text-align: center;
-}
-
-/* TODO: Get a better looking font */
-p, h1, button, span, div.contents {
-	font-family: 'Roboto', arial, tahoma, sans-serif;
-	color:white;
-}
-
-.noscripthidden {
-	display:none;
-}
-
-a {
-    color: white;
 }
 
 p.footer1 {
@@ -51,6 +117,7 @@ div.itemHeader {
 	height:64px;
 	line-height:64px;
 	margin:20px;
+	text-align: center;
 }
 
 div.maincontent {
@@ -69,6 +136,8 @@ div.tabs {
 	border-bottom: none;
 	padding:0px;
 	display: flex;
+	flex-wrap: wrap;
+	overflow: hidden;
 }
 
 
@@ -231,7 +300,7 @@ span.skinName, span.skinNotes {
 }
 
 span.skinNotes {
-	font-size: 12px;
+	font-size: 13px;
 }
 
 a:hover span.skinName, a:hover span.skinNotes {
