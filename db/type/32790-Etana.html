@@ -24,8 +24,15 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
 		<link rel="stylesheet" href="../itemPageStyle.css">
 		<script src="../itemPageScript.js"></script>
+			<!-- Google analytics -->
 		<script>
-			//itemData = 1;
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-101504388-1', 'auto');
+			ga('send', 'pageview');
 		</script>
 	</head>
 	<body>
@@ -50,9 +57,9 @@
 				<div class="tabs">
 					<button class="tablink" id="button_traits" onclick="selectTab(event, 'traits')">Traits</button>
 					<button class="tablink" id="button_description" onclick="selectTab(event, 'description')">Description</button>
-					<button class="tablink" id="button_attributes" onclick="selectTab(event, 'attributes')">Attributes</button>
-					<button class="tablink" id="button_requirements" onclick="selectTab(event, 'requirements')">Requirements</button>
-					<button class="tablink" id="button_industry" onclick="selectTab(event, 'industry')">Industry</button>
+					<button class="tablink" id="button_attributes" onclick="selectTab(event, 'attributes')">Attributes (WIP)</button>
+					<button class="tablink" id="button_requirements" onclick="selectTab(event, 'requirements')">Requirements (WIP)</button>
+					<button class="tablink" id="button_industry" onclick="selectTab(event, 'industry')">Industry (WIP)</button>
 					<button class="tablink" id="button_skins" onclick="selectTab(event, 'skins')">Skins</button>
 				</div>
 				<div class="contents">
@@ -200,7 +207,7 @@
 					<p class="footerP footer2">I guess contact me on <a href="https://tweetfleet.slack.com/messages/@inomares/">Tweetfleet Slack</a> if you really need to.</p>
 				</div>
 				<div class="footerButtons">
-					<img class="settingsButton" src="http://www.freeiconspng.com/uploads/gear-11-icon--free-icons-4.png" onclick="console.log('hi')" alt="Placeholder Icon" />
+					<img class="settingsButton" src="http://www.freeiconspng.com/uploads/gear-11-icon--free-icons-4.png" onclick="alert('Welcome to the settings menu!\n\nUhh... press OK to enable normal use of the website.')" alt="Placeholder Icon" />
 				</div>
 			</footer>
 		</div>
