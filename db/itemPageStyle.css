@@ -118,9 +118,11 @@ footer {
 	width:100%;
 	margin: 0px;
 	display: flex;
-	flex-wrap: wrap;
+	height: 45px;
+	/* flex-wrap: wrap; */
 	justify-content: space-between;
 	align-items: center;
+	overflow: hidden;
 }
 
 p.footerP {
@@ -137,6 +139,10 @@ p.footer2 {
 
 p.footer2 a  {
 	color:#AFAFAF;
+}
+
+div.footerText {
+	overflow: hidden;
 }
 
 div.footerButtons {
