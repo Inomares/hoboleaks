@@ -29,11 +29,15 @@ function selectTab(evt, tabName) {
 	evt.currentTarget.classList.add("selected")
 }
 
-function createPopup(x, y, className) {
+function createPopup(x, y, contents, className) {
+	contents = contents || "<p>This is a very very very very very very very very long description of the attribute. It does things.</p>"
+	if (!contents.startsWith("<p>")) {
+		contents = "<p>" + contents + "</p>"
+	}
 	className = className || "popup1"
 	var newElement = document.createElement("div")
 	newElement.classList.add(className)
-	newElement.innerHTML = "<p>This is a very very very very very very very very long description of the attribute. It does things.</p>"
+	newElement.innerHTML = contents
 	newElement.style.visibility = "hidden"
 	newElement.style.opacity = 0
 	document.body.appendChild(newElement)
@@ -47,9 +51,9 @@ function createPopup(x, y, className) {
 	return newElement
 }
 
-function displayAttachedPopup(node, event) {
+function displayAttachedPopup(node, event, txt) {
 	var nodePosition = node.getBoundingClientRect()
-	var newElement = createPopup(event.clientX, nodePosition.y)
+	var newElement = createPopup(event.clientX, nodePosition.y, txt)
 	attachedPopups[node] = attachedPopups[node] || []
 	attachedPopups[node].push(newElement)
 }

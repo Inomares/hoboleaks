@@ -4,11 +4,11 @@
 	--siteHeader-color: linear-gradient(to right, #171717, #202124, #171717);
 	--siteHeader-borderColor: #484848;
 	
-	--tabButtons-color: #232323;
-	--tabButtons-hover-color: #353535;
-	--tabButtons-selected-color: #606060;
+	--tabButtons-color: #26272B;
+	--tabButtons-hover-color: #353740;
+	--tabButtons-selected-color: #606369;
 	
-	--contentBackground-color: #202020;
+	--contentBackground-color: #202123;
 	
 	--unit-color: #DBF6FF;
 	--bonusHeader-color: #76AFC2;
@@ -20,7 +20,6 @@ body {
 	margin: 0;
 }
 
-/* TODO: Get a better looking font */
 p, h1, button, span, div.contents, a {
 	font-family: var(--font-names);
 	color: white;
@@ -37,7 +36,8 @@ div.mainContainer {
 div.siteHeader {
 	display: flex;
 	justify-content: space-between;
-	flex-wrap: wrap;
+	/* flex-wrap: wrap; */
+	height:65px;
 	
 	align-items: center;
 	padding: 5px 15px 5px 15px;
@@ -49,7 +49,7 @@ div.siteHeader {
 
 h1.siteName {
 	margin: 5px;
-
+	white-space: nowrap;
 }
 
 img.noclip { /* Broken due to flex spacing of parent container */
@@ -142,6 +142,7 @@ p.footer2 a  {
 div.footerButtons {
 	margin: 5px;
 	margin-right: 20px;
+	display:flex;
 }
 
 img.settingsButton {
@@ -174,6 +175,7 @@ div.itemHeader {
 div.maincontent {
 	background-color: var(--contentBackground-color);
 	border: 1px solid var(--siteHeader-borderColor);
+	margin: 0 8% 0 8%;
 	/* width:580px;
 	display:inline-block; */
 }
@@ -236,40 +238,44 @@ a.skillLink {
 	color:#D6D6D6;
 }
 
-#requirements li {
-	list-style:none;
+#requirements ul {
+	padding-left: 30px;
 }
 
-#requirements ul ul {
+#requirements li, /* .industrySkills li */ {
+	list-style: none;
+}
+
+#requirements ul {
 	margin: 0px;
 }
 
-#requirements ul ul {
-	opacity:0.6;
+#requirements ul ul, .industrySkills ul ul {
+	opacity: 0.6;
 }
 
-#attributes table{
-	border-spacing:0;
+#attributes table {
+	border-spacing: 0;
 	border-collapse: collapse;
 }
 
 #attributes .attrCategory {
 	text-align:center;
 	background-color:#282828;
-	background: linear-gradient(to right, var(--contentBackground-color), #2D3F4D, var(--contentBackground-color));
+	background: linear-gradient(to right, var(--contentBackground-color), #2D3C4A, var(--contentBackground-color));
 	color:white;
-	border:1px solid #252525;
+	border:1px solid #273043;
 	/* border-bottom:2px solid #404040; */
 }
 
-#attributes tr {
+#attributes tr{
 	color:white;
 	border-right:3px solid transparent;
 	border-left:3px solid transparent;
 	transition:0.1s;
 }
 
-#attributes tr:hover:not(.attrCategory) {
+#attributes tr:hover:not(.attrCategory){
 	background-color:#454545;
 	border-right:3px solid #CCF2FF;
 	border-left:3px solid #CCF2FF;
@@ -278,6 +284,23 @@ a.skillLink {
 
 #attributes td.attrValue {
 	text-align: right;
+}
+
+div.attrKeyDiv {
+	display:flex;
+	align-items: center;
+}
+
+span.attrKeyText {
+	margin-left:2px;
+}
+
+img.attrKeyImg {
+	width:24px;
+}
+
+.attrCategory th {
+	font-weight: normal;
 }
 
 div.popup1 {
@@ -356,4 +379,23 @@ span.skinNotes {
 
 a:hover span.skinName, a:hover span.skinNotes {
 	color: var(--unit-color);
+}
+
+div.materialDiv {
+	display: flex;
+	align-items: center;
+}
+
+span.materialValue {
+	color: var(--unit-color)
+}
+
+.materialDiv p {
+	margin: 0 0 0 5px;
+	padding: 0px;
+}
+
+.industryMaterials tr td a {
+	color:red;
+	text-decoration: none;
 }
