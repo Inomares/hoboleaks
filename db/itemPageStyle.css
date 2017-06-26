@@ -248,7 +248,7 @@ a.skillLink {
 	padding-left: 30px;
 }
 
-#requirements li, /* .industrySkills li */ {
+#requirements li {
 	list-style: none;
 }
 
@@ -401,7 +401,14 @@ span.materialValue {
 	padding: 0px;
 }
 
-.industryMaterials tr td a {
-	color:red;
+.industryMaterials a {
 	text-decoration: none;
+}
+
+#industry h2 {
+	margin-bottom: 3px;
+}
+
+.industrySkills ul {
+	margin-top:3px;
 }
