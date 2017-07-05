@@ -50,6 +50,7 @@ div.siteHeader {
 h1.siteName {
 	margin: 5px;
 	white-space: nowrap;
+	overflow: hidden;
 }
 
 img.noclip { /* Broken due to flex spacing of parent container */
@@ -171,6 +172,11 @@ img.headerIcon, h1.headerName, p.headerID {
 	vertical-align:middle;
 }
 
+img.headerIcon {
+	max-width: 64px;
+	max-height: 64px;
+}
+
 div.itemHeader {
 	height:64px;
 	line-height:64px;
@@ -181,7 +187,7 @@ div.itemHeader {
 div.maincontent {
 	background-color: var(--contentBackground-color);
 	border: 1px solid var(--siteHeader-borderColor);
-	margin: 0 8% 0 8%;
+	margin: 0 8% 70px 8%;
 	/* width:580px;
 	display:inline-block; */
 }
@@ -257,7 +263,7 @@ a.skillLink {
 }
 
 #requirements ul ul, .industrySkills ul ul {
-	opacity: 0.6;
+	opacity: 0.75;
 }
 
 #attributes table {
@@ -399,6 +405,10 @@ span.materialValue {
 .materialDiv p {
 	margin: 0 0 0 5px;
 	padding: 0px;
+}
+
+.industryMaterials table {
+	margin-left: 15px;
 }
 
 .industryMaterials a {

@@ -67,11 +67,37 @@ function removeAttachedPopups(node) {
 	attachedPopups[node] = []
 }
 
+function getAttributeName(attrID) {
+	let attribute = dynamicData.attributes[attrID]
+	if (attribute != null) {
+		return attribute.name
+	}
+	return "Unnamed Attribute " + attrID
+}
 
+function getAttributeDescription(attrID) {
+	let attribute = dynamicData.attributes[attrID]
+	if (attribute != null) {
+		return attribute.desc
+	}
+	return null
+}
 
+function getAttributeIcon(attrID) {
+	let attribute = dynamicData.attributes[attrID]
+	if (attribute != null) {
+		return attribute.icon
+	}
+	return null
+}
 
-
-
+function getTypeURL(typeID) {
+	let type = dynamicData.types[typeID]
+	if (type != null) {
+		"/db/type/" + type.url
+	}
+	return null
+}
 
 window.onload = function(){
 	var nodes = document.getElementsByClassName("noscripthidden")

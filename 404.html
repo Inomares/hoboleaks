@@ -5,6 +5,7 @@ permalink: /404.html
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="UTF-8">
 		<!-- Google analytics -->
 		<script>
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -15,8 +16,20 @@ permalink: /404.html
 			ga('create', 'UA-101504388-1', 'auto');
 			ga('send', 'pageview');
 		</script>
+		<script src="../dynamicData.js"></script>
+		<script src="../itemPageScript.js"></script>
 		<script>
-			//console.log(document.location)
+			let path = window.location.pathname.split("/").splice(1)
+			if (path[0] == "db") {
+				let subCategory = path[1]
+				let typeID = path[2].split("-")[0]
+				if (subCategory.toLowerCase() == "type") {
+					let url = getTypeURL(typeID)
+					if (url != null) {
+						window.location = url
+					}
+				}
+			}
 		</script>
 		<style>
 			body {
