@@ -1,0 +1,404 @@
+<!-- 1162600:0.1A:1499299081888 -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Domination Medium Artillery Battery Blueprint (27838) | Hoboleaks DB</title>
+		<meta charset="UTF-8">
+		<meta name="title" content="Domination Medium Artillery Battery Blueprint | Hoboleaks">
+		<meta name="description" content="">
+		
+		<meta name="og:title" content="Domination Medium Artillery Battery Blueprint | Hoboleaks">
+		<meta name="og:description" content="Starbase - Projectile Battery Blueprints">
+		<meta name="og:type" content="website">
+		<meta name="og:image" content="http://static-cdn.jtvnw.net/emoticons/v1/151586/3.0">
+		<meta name="og:url" content="http://hoboleaks.space/">
+		<meta name="og:site_name" content="Hoboleaks">
+		
+		<meta name="twitter:title" content="Domination Medium Artillery Battery Blueprint | Hoboleaks">
+		<meta name="twitter:description" content="Starbase - Projectile Battery Blueprints">
+		<meta name="twitter:image" content="http://static-cdn.jtvnw.net/emoticons/v1/151586/3.0">
+		<meta name="genTime" content="1499299081888">
+		<meta name="genDate" content="2017-07-05 23:58:01">
+		<meta name="revision" content="1162600">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+		<link rel="stylesheet" href="../itemPageStyle.css">
+		<script src="../dynamicData.js"></script>
+		<script src="../itemPageScript.js"></script>
+		<!-- Google analytics -->
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-101504388-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+	</head>
+	<body>
+		<div class="mainContainer">
+			<header><div class="siteHeader">
+					<a href="/">
+						<img class="noclip" src="http://static-cdn.jtvnw.net/emoticons/v1/151586/2.0" alt="Site Logo"></a>
+						<h1 class="siteName">Hoboleaks Sisi DB</h1>
+					<form action="disabled">
+						<input type="text" name="searchInput" placeholder="Search disabled..." disabled>
+						<input type="submit" value="" disabled>
+					</form>
+				</div>
+			</header>
+			<div class="itemHeader">
+				<img class="headerIcon" alt="Item Icon" src="http://res.eveprobe.ccpgames.com/17/17b178babdce06fe_7876c731b663e78cbbcc4ebba97a9f60">
+				<h1 class="headerName">Domination Medium Artillery Battery Blueprint</h1>
+				<p class="headerID">(TypeID: 27838)</p>
+			</div>
+			<div class="maincontent">
+				<div class="tabs">
+					<!-- TAB:TRAITS
+					<button class="tablink" id="button_traits" onclick="selectTab(event, 'traits')">Traits</button>
+					TAB:TRAITS -->
+					<!-- TAB:DESCRIPTION
+					<button class="tablink" id="button_description" onclick="selectTab(event, 'description')">Description</button>
+					TAB:DESCRIPTION -->
+					<!-- TAB:ATTRIBUTES
+					<button class="tablink" id="button_attributes" onclick="selectTab(event, 'attributes')">Attributes</button>
+					TAB:ATTRIBUTES -->
+					<!-- TAB:REQUIREMENTS
+					<button class="tablink" id="button_requirements" onclick="selectTab(event, 'requirements')">Requirements</button>
+					TAB:REQUIREMENTS -->
+					<!-- TAB:INDUSTRY
+					<button class="tablink" id="button_industry" onclick="selectTab(event, 'industry')">Industry</button>
+					TAB:INDUSTRY -->
+					<!-- TAB:SKINS
+					<button class="tablink" id="button_skins" onclick="selectTab(event, 'skins')">Skins</button>
+					TAB:SKINS -->
+				</div>
+				<div class="contents">
+					<noscript>
+						<div class="onlynoscript">
+							<p>You have disabled javascript. This enables Internet Explorer simulation mode. Enjoy!</p>
+						</div>
+					</noscript>
+					<div class="inactive content" id="traits">
+						
+					</div>
+					<div class="inactive content" id="description">
+						<p class="description"></p>
+					</div>				
+					<div class="inactive content" id="attributes">
+						<table style="width:100%">
+							<tr class="attrCategory"><th colspan="2">Structure</th></tr>
+							<tr>
+								<td class="attrKeyEntry" onmouseover="displayAttachedPopup(this, event, 'The maximum volume of items that can be carried in the cargo hold')" onmouseout="removeAttachedPopups(this)">
+									<div class="attrKeyDiv">
+										<img class="attrKeyImg" src="https://image.eveonline.com/type/2603_32.png">
+										<span class="attrKeyText">Capacity</span>
+									</div>
+								</td>
+								<td class="attrValue">500 <span class="bonusunit">m3</span></td>
+							</tr>
+							<tr>
+								<td class="attrKeyEntry" onmouseover="displayAttachedPopup(this, event,'Hello I am special!')" onmouseout="removeAttachedPopups(this)">
+									<div class="attrKeyDiv">
+										<img class="attrKeyImg" src="https://image.eveonline.com/type/40520_32.png">
+										<span class="attrKeyText">Test</span>
+									</div>
+								</td>
+								<td class="attrValue">231 <span class="bonusunit">units</span></td>
+							</tr>
+							<tr class="attrCategory"><th colspan="2">Propulsion</th></tr>
+							<tr>
+								<td class="attrKeyEntry" onmouseover="displayAttachedPopup(this, event)" onmouseout="removeAttachedPopups(this)">
+									<div class="attrKeyDiv">
+										<img class="attrKeyImg" src="https://image.eveonline.com/type/10998_32.png">
+										<span class="attrKeyText">Warp Speed</span>
+									</div>
+								</td>
+								<td class="attrValue">3.15 <span class="bonusunit">AU/s</span></td>
+							</tr>
+							<tr>
+								<td class="attrKeyEntry" onmouseover="displayAttachedPopup(this, event)" onmouseout="removeAttachedPopups(this)">
+									<div class="attrKeyDiv">
+										<img class="attrKeyImg" src="https://image.eveonline.com/type/1244_32.png">
+										<span class="attrKeyText">Velocity</span>
+									</div>
+								</td>
+								<td class="attrValue">311 <span class="bonusunit">m/s</span></td>
+							</tr>
+							<tr>
+								<td class="attrKeyEntry" onmouseover="displayAttachedPopup(this, event)" onmouseout="removeAttachedPopups(this)">
+									<div class="attrKeyDiv">
+										<img class="attrKeyImg" src="https://image.eveonline.com/type/442_32.png">
+										<span class="attrKeyText">Some Bonus</span>
+									</div>
+								</td>
+								<td class="attrValue">40 <span class="bonusunit">%</span></td>
+							</tr>
+<tr class="attrCategory"><th colspan="2">Structure</th></tr>
+							<tr>
+								<td class="attrKeyEntry" onmouseover="displayAttachedPopup(this, event, 'The maximum volume of items that can be carried in the cargo hold')" onmouseout="removeAttachedPopups(this)">
+									<div class="attrKeyDiv">
+										<img class="attrKeyImg" src="https://image.eveonline.com/type/2603_32.png">
+										<span class="attrKeyText">Capacity</span>
+									</div>
+								</td>
+								<td class="attrValue">500 <span class="bonusunit">m3</span></td>
+							</tr>
+							<tr>
+								<td class="attrKeyEntry" onmouseover="displayAttachedPopup(this, event,'Hello I am special!')" onmouseout="removeAttachedPopups(this)">
+									<div class="attrKeyDiv">
+										<img class="attrKeyImg" src="https://image.eveonline.com/type/40520_32.png">
+										<span class="attrKeyText">Test</span>
+									</div>
+								</td>
+								<td class="attrValue">231 <span class="bonusunit">units</span></td>
+							</tr>
+							<tr class="attrCategory"><th colspan="2">Propulsion</th></tr>
+							<tr>
+								<td class="attrKeyEntry" onmouseover="displayAttachedPopup(this, event)" onmouseout="removeAttachedPopups(this)">
+									<div class="attrKeyDiv">
+										<img class="attrKeyImg" src="https://image.eveonline.com/type/10998_32.png">
+										<span class="attrKeyText">Warp Speed</span>
+									</div>
+								</td>
+								<td class="attrValue">3.15 <span class="bonusunit">AU/s</span></td>
+							</tr>
+							<tr>
+								<td class="attrKeyEntry" onmouseover="displayAttachedPopup(this, event)" onmouseout="removeAttachedPopups(this)">
+									<div class="attrKeyDiv">
+										<img class="attrKeyImg" src="https://image.eveonline.com/type/1244_32.png">
+										<span class="attrKeyText">Velocity</span>
+									</div>
+								</td>
+								<td class="attrValue">311 <span class="bonusunit">m/s</span></td>
+							</tr>
+							<tr>
+								<td class="attrKeyEntry" onmouseover="displayAttachedPopup(this, event)" onmouseout="removeAttachedPopups(this)">
+									<div class="attrKeyDiv">
+										<img class="attrKeyImg" src="https://image.eveonline.com/type/442_32.png">
+										<span class="attrKeyText">Some Bonus</span>
+									</div>
+								</td>
+								<td class="attrValue">40 <span class="bonusunit">%</span></td>
+							</tr>
+							<tr class="attrCategory"><th colspan="2">Structure</th></tr>
+							<tr>
+								<td class="attrKeyEntry" onmouseover="displayAttachedPopup(this, event, 'The maximum volume of items that can be carried in the cargo hold')" onmouseout="removeAttachedPopups(this)">
+									<div class="attrKeyDiv">
+										<img class="attrKeyImg" src="https://image.eveonline.com/type/2603_32.png">
+										<span class="attrKeyText">Capacity</span>
+									</div>
+								</td>
+								<td class="attrValue">500 <span class="bonusunit">m3</span></td>
+							</tr>
+							<tr>
+								<td class="attrKeyEntry" onmouseover="displayAttachedPopup(this, event,'Hello I am special!')" onmouseout="removeAttachedPopups(this)">
+									<div class="attrKeyDiv">
+										<img class="attrKeyImg" src="https://image.eveonline.com/type/40520_32.png">
+										<span class="attrKeyText">Test</span>
+									</div>
+								</td>
+								<td class="attrValue">231 <span class="bonusunit">units</span></td>
+							</tr>
+							<tr class="attrCategory"><th colspan="2">Propulsion</th></tr>
+							<tr>
+								<td class="attrKeyEntry" onmouseover="displayAttachedPopup(this, event)" onmouseout="removeAttachedPopups(this)">
+									<div class="attrKeyDiv">
+										<img class="attrKeyImg" src="https://image.eveonline.com/type/10998_32.png">
+										<span class="attrKeyText">Warp Speed</span>
+									</div>
+								</td>
+								<td class="attrValue">3.15 <span class="bonusunit">AU/s</span></td>
+							</tr>
+							<tr>
+								<td class="attrKeyEntry" onmouseover="displayAttachedPopup(this, event)" onmouseout="removeAttachedPopups(this)">
+									<div class="attrKeyDiv">
+										<img class="attrKeyImg" src="https://image.eveonline.com/type/1244_32.png">
+										<span class="attrKeyText">Velocity</span>
+									</div>
+								</td>
+								<td class="attrValue">311 <span class="bonusunit">m/s</span></td>
+							</tr>
+							<tr>
+								<td class="attrKeyEntry" onmouseover="displayAttachedPopup(this, event)" onmouseout="removeAttachedPopups(this)">
+									<div class="attrKeyDiv">
+										<img class="attrKeyImg" src="https://image.eveonline.com/type/442_32.png">
+										<span class="attrKeyText">Some Bonus</span>
+									</div>
+								</td>
+								<td class="attrValue">40 <span class="bonusunit">%</span></td>
+							</tr>
+							<tr class="attrCategory"><th colspan="2">Structure</th></tr>
+							<tr>
+								<td class="attrKeyEntry" onmouseover="displayAttachedPopup(this, event, 'The maximum volume of items that can be carried in the cargo hold')" onmouseout="removeAttachedPopups(this)">
+									<div class="attrKeyDiv">
+										<img class="attrKeyImg" src="https://image.eveonline.com/type/2603_32.png">
+										<span class="attrKeyText">Capacity</span>
+									</div>
+								</td>
+								<td class="attrValue">500 <span class="bonusunit">m3</span></td>
+							</tr>
+							<tr>
+								<td class="attrKeyEntry" onmouseover="displayAttachedPopup(this, event,'Hello I am special!')" onmouseout="removeAttachedPopups(this)">
+									<div class="attrKeyDiv">
+										<img class="attrKeyImg" src="https://image.eveonline.com/type/40520_32.png">
+										<span class="attrKeyText">Test</span>
+									</div>
+								</td>
+								<td class="attrValue">231 <span class="bonusunit">units</span></td>
+							</tr>
+							<tr class="attrCategory"><th colspan="2">Propulsion</th></tr>
+							<tr>
+								<td class="attrKeyEntry" onmouseover="displayAttachedPopup(this, event)" onmouseout="removeAttachedPopups(this)">
+									<div class="attrKeyDiv">
+										<img class="attrKeyImg" src="https://image.eveonline.com/type/10998_32.png">
+										<span class="attrKeyText">Warp Speed</span>
+									</div>
+								</td>
+								<td class="attrValue">3.15 <span class="bonusunit">AU/s</span></td>
+							</tr>
+							<tr>
+								<td class="attrKeyEntry" onmouseover="displayAttachedPopup(this, event)" onmouseout="removeAttachedPopups(this)">
+									<div class="attrKeyDiv">
+										<img class="attrKeyImg" src="https://image.eveonline.com/type/1244_32.png">
+										<span class="attrKeyText">Velocity</span>
+									</div>
+								</td>
+								<td class="attrValue">311 <span class="bonusunit">m/s</span></td>
+							</tr>
+							<tr>
+								<td class="attrKeyEntry" onmouseover="displayAttachedPopup(this, event)" onmouseout="removeAttachedPopups(this)">
+									<div class="attrKeyDiv">
+										<img class="attrKeyImg" src="https://image.eveonline.com/type/442_32.png">
+										<span class="attrKeyText">Some Bonus</span>
+									</div>
+								</td>
+								<td class="attrValue">40 <span class="bonusunit">%</span></td>
+							</tr>
+						</table>
+					</div>
+					<div class="inactive content" id="requirements">
+						
+					</div>
+					<div class="inactive content" id="industry">
+						<div class="buildInfo">
+							<p>Time per run: <span class="bonusunit">23D 03H 33M 20S</span></p>
+						</div>
+						<div class="industryMaterials">
+							<h2>Materials</h2>
+							<table>
+								<tr>
+									<td>
+										<div class="materialDiv">
+											<img class="materialImage" src="https://image.eveonline.com/type/35_32.png">
+											<p>
+												<span class="materialValue">35x</span> <span class="materialType">Pyerite</span>
+											</p>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="materialDiv">
+											<img class="materialImage" src="https://image.eveonline.com/type/23915_32.png">
+											<p>
+												<span class="materialValue">50x</span> <span class="materialType">Chimera</span>
+											</p>
+										</div>
+									</td>
+									
+								</tr>
+								<tr>
+									<td>
+										<div class="materialDiv">
+											<img class="materialImage" src="https://image.eveonline.com/type/34_32.png">
+											<p>
+												<span class="materialValue">12830x</span> <span class="materialType">Tritanium</span>
+											</p>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="materialDiv">
+											<img class="materialImage" src="https://image.eveonline.com/type/37_32.png">
+											<p>
+												<span class="materialValue">999x</span> <span class="materialType">Isogen</span>
+											</p>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="materialDiv">
+											<img class="materialImage" src="https://image.eveonline.com/type/39_32.png">
+											<p>
+												<span class="materialValue">10000x</span> <span class="materialType">Zydrine</span>
+											</p>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="materialDiv">
+											<img class="materialImage" src="https://image.eveonline.com/type/34434_32.png">
+											<p>
+												<span class="materialValue">5x</span> <span class="materialType">Alice Saki's Good Posting Guide</span>
+											</p>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="materialDiv">
+											<img class="materialImage" src="https://image.eveonline.com/type/34436_32.png">
+											<p>
+												<span class="materialValue">1x</span> <span class="materialType">The Friend Ship</span>
+											</p>
+										</div>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div class="industrySkills">
+							<h2>Skills</h2>
+							<ul>
+								<li>
+									<a class="skillLink" href="unone.html">Advanced Industry <span class="skillLevel">V</span></a>
+								</li>
+
+								<ul>
+									<li>
+										<a class="skillLink" href="unone.html">Industry <span class="skillLevel">III</span></a>
+									</li>
+
+								</ul>
+								<li>
+									<a class="skillLink" href="unone.html">Industry <span class="skillLevel">V</span></a>
+								</li>
+
+								<li>
+									<a class="skillLink" href="unone.html">Mechanics <span class="skillLevel">V</span></a>
+								</li>
+
+							</ul>
+						</div>
+					</div>
+					<div class="inactive content" id="skins">
+						
+					</div>
+				</div>
+			</div>
+			<footer>
+				<div class="footerText">
+					<p class="footerP footer1">Made by Inomares. I don't want your donations. I don't read EVE mails. Leave me alone.</p>
+					<p class="footerP footer2">I guess contact me on <a href="https://tweetfleet.slack.com/messages/@inomares/">Tweetfleet Slack</a> if you really need to.</p>
+				</div>
+				<div class="footerButtons">
+					<img class="settingsButton" src="http://www.freeiconspng.com/uploads/gear-11-icon--free-icons-4.png" onclick="alert('Welcome to the settings menu!\n\nUhh... press OK to enable normal use of the website.')" alt="Placeholder Icon" />
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>

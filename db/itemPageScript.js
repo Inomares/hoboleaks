@@ -94,7 +94,7 @@ function getAttributeIcon(attrID) {
 function getTypeURL(typeID) {
 	let type = dynamicData.types[typeID]
 	if (type != null) {
-		"/db/type/" + type.url
+		return "/db/type/" + type.url
 	}
 	return null
 }
