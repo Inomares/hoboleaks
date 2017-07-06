@@ -19,14 +19,16 @@ permalink: /404.html
 		<script src="../dynamicData.js"></script>
 		<script src="../itemPageScript.js"></script>
 		<script>
-			let path = window.location.pathname.split("/").splice(1)
-			if (path[0] == "db") {
-				let subCategory = path[1]
-				let typeID = path[2].split("-")[0]
-				if (subCategory.toLowerCase() == "type") {
-					let url = getTypeURL(typeID)
-					if (url != null) {
-						window.location = url
+			if (!window.location.href.includes("?redirect")) {
+				let path = window.location.pathname.split("/").splice(1)
+				if (path[0] == "db") {
+					let subCategory = path[1]
+					let typeID = path[2].split("-")[0]
+					if (subCategory.toLowerCase() == "type") {
+						let url = getTypeURL(typeID)
+						if (url != null) {
+							window.location = url + "?redirect"
+						}
 					}
 				}
 			}
