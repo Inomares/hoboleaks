@@ -152,18 +152,24 @@ div.footerButtons {
 	display:flex;
 }
 
-img.settingsButton {
+img.settingsImage {
 	height:32px;
 	width:32px;
 	-webkit-filter:invert(95%);
 	filter:invert(95%);
-	cursor: pointer;
 	transition:0.2s;
 }
 
-img.settingsButton:hover {
+button:hover img.settingsImage, img.settingsImageActive {
 	-webkit-filter:invert(95%) drop-shadow(0px 0px 5px #AAAAAA);
 	filter:invert(95%) drop-shadow(0px 0px 5px #AAAAAA);
+}
+
+button.settingsButton {
+	border: none; 
+	background:transparent;
+	cursor: pointer;
+	outline:none;
 }
 
 img.headerIcon, h1.headerName, p.headerID {
@@ -175,6 +181,7 @@ img.headerIcon, h1.headerName, p.headerID {
 img.headerIcon {
 	max-width: 64px;
 	max-height: 64px;
+	border: 1px solid var(--siteHeader-borderColor);
 }
 
 div.itemHeader {
@@ -230,6 +237,10 @@ div.inactive {
 	display: none;
 }
 
+.dynamicDisabled {
+	display: none;
+}
+
 p .description {
 	margin:0px;
 }
@@ -250,28 +261,29 @@ a.skillLink {
 	color:#D6D6D6;
 }
 
-#requirements ul {
-	padding-left: 30px;
+#content_requirements ul {
+	padding-left: 0px;
 }
 
-#requirements li {
+#content_requirements li {
 	list-style: none;
 }
 
-#requirements ul {
+#content_requirements ul {
 	margin: 0px;
 }
 
-#requirements ul ul, .industrySkills ul ul {
+#content_requirements ul ul, .industrySkills ul ul {
 	opacity: 0.75;
+	padding-left: 30px;
 }
 
-#attributes table {
+#content_attributes table {
 	border-spacing: 0;
 	border-collapse: collapse;
 }
 
-#attributes .attrCategory {
+#content_attributes .attrCategory {
 	text-align:center;
 	background-color:#282828;
 	background: linear-gradient(to right, var(--contentBackground-color), #2D3C4A, var(--contentBackground-color));
@@ -280,21 +292,21 @@ a.skillLink {
 	/* border-bottom:2px solid #404040; */
 }
 
-#attributes tr{
+#content_attributes tr{
 	color:white;
 	border-right:3px solid transparent;
 	border-left:3px solid transparent;
 	transition:0.1s;
 }
 
-#attributes tr:hover:not(.attrCategory){
+#content_attributes tr:hover:not(.attrCategory){
 	background-color:#454545;
 	border-right:3px solid #CCF2FF;
 	border-left:3px solid #CCF2FF;
 }
 
 
-#attributes td.attrValue {
+#content_attributes td.attrValue {
 	text-align: right;
 }
 
@@ -358,13 +370,18 @@ div.skinbox {
 	border:1px solid #424242;
 	vertical-align: center;
 	transition:var(--skin-transition-time);
-	font-size: 20pt;
+	font-size: 12pt;
 	display: flex;
 	align-items: center;
 	padding:12px;
 }
 
-#skins a {
+img.skinIcon {
+	width:32px;
+	height:32px;
+}
+
+#content_skins a {
 	text-decoration: none;	
 }
 
@@ -415,7 +432,7 @@ span.materialValue {
 	text-decoration: none;
 }
 
-#industry h2 {
+#content_industry h2 {
 	margin-bottom: 3px;
 }
 
