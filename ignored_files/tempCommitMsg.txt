@@ -1,2 +1,0 @@
-Auto generated update for page(s): (Force-rebuilt all client comparisons with reason: "Cloud test #3")
-Client comparison @ index.html updated to diff Tranquility:1195932 -> Singularity:1196821
