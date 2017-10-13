@@ -1,69 +1,69 @@
-<!-- Generated at 1507898542.68 / 2017-10-13 12:42:22 / 2017-10-13 14:42:22.685000 -->
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="cache-control" content="max-age=0" />
-		<meta http-equiv="cache-control" content="no-cache" />
-		<meta http-equiv="expires" content="0" />
-		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
-		<meta http-equiv="pragma" content="no-cache" />
-	</head>
-
-	<body>
-		<script>
-			function getParameterByName(name) {
-				var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
-				return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
-			}
-			
-			function getCurrentPageName() {
-				return getParameterByName("curPage") || "noPageName"
-			}
-			
-			function getStrippedPageName(pageName) {
-				dot = pageName.indexOf(".")
-				if (dot != -1) {
-					pageName = pageName.slice(0, dot)
-				}
-				slash = pageName.indexOf("/")
-				if (slash == 0) {
-					pageName = pageName.slice(1)
-				}
-				return pageName
-			}
-			
-			function navigateIfNotEmpty(toPage) {
-				if (toPage != "") {
-					parent.location = toPage
-				}
-			}
-			
-			window.onload = function() {
-				menus = ["formclients", "formtqrevs", "formsisirevs", "formchaosrevs"]
-				curPage = getCurrentPageName()
-				for (i=0; i < menus.length; i++) {
-					curMenu = document.getElementsByName(menus[i])[0]
-					if (curMenu == null) {
-						continue
-					}
-					for (childID=0; childID < curMenu.children.length; childID++) {
-						curChild = curMenu.children[childID]
-						if (getStrippedPageName(curChild.getAttribute("value")) == curPage) {
-							curChild.setAttribute("disabled", "disabled")
-						}
-					}
-				}
-			}
-		</script>
-
-		<select name="formclients" onchange="navigateIfNotEmpty(this.value);">
-		 <option value="">Client Comparisons</option>
-			<option value="index.html" title="Generated @ 2017-10-13 12:42:22">Tranquility -> Singularity</option>
-	<option value="chaos.html" title="Generated @ 2017-05-18 12:02:07">Singularity -> Chaos</option>
-		</select>
-		<select name="formtqrevs" onchange="navigateIfNotEmpty(this.value);">
-		 <option value="">TQ Revisions</option>
+<!-- Generated at 1507900356.07 / 2017-10-13 13:12:36 / 2017-10-13 13:12:36.071415 -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="cache-control" content="max-age=0" />
+		<meta http-equiv="cache-control" content="no-cache" />
+		<meta http-equiv="expires" content="0" />
+		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+		<meta http-equiv="pragma" content="no-cache" />
+	</head>
+
+	<body>
+		<script>
+			function getParameterByName(name) {
+				var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+				return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+			}
+			
+			function getCurrentPageName() {
+				return getParameterByName("curPage") || "noPageName"
+			}
+			
+			function getStrippedPageName(pageName) {
+				dot = pageName.indexOf(".")
+				if (dot != -1) {
+					pageName = pageName.slice(0, dot)
+				}
+				slash = pageName.indexOf("/")
+				if (slash == 0) {
+					pageName = pageName.slice(1)
+				}
+				return pageName
+			}
+			
+			function navigateIfNotEmpty(toPage) {
+				if (toPage != "") {
+					parent.location = toPage
+				}
+			}
+			
+			window.onload = function() {
+				menus = ["formclients", "formtqrevs", "formsisirevs", "formchaosrevs"]
+				curPage = getCurrentPageName()
+				for (i=0; i < menus.length; i++) {
+					curMenu = document.getElementsByName(menus[i])[0]
+					if (curMenu == null) {
+						continue
+					}
+					for (childID=0; childID < curMenu.children.length; childID++) {
+						curChild = curMenu.children[childID]
+						if (getStrippedPageName(curChild.getAttribute("value")) == curPage) {
+							curChild.setAttribute("disabled", "disabled")
+						}
+					}
+				}
+			}
+		</script>
+
+		<select name="formclients" onchange="navigateIfNotEmpty(this.value);">
+		 <option value="">Client Comparisons</option>
+			<option value="index.html" title="Generated @ 2017-10-13 13:12:35">Tranquility -> Singularity</option>
+	<option value="chaos.html" title="Generated @ 2017-05-18 12:02:07">Singularity -> Chaos</option>
+		</select>
+		<select name="formtqrevs" onchange="navigateIfNotEmpty(this.value);">
+		 <option value="">TQ Revisions</option>
 			<option value="Tranquility_1195932-1198275.html" title="Generated @ 2017-10-12 11:09:40">1195932 -> 1198275</option>
 	<option value="Tranquility_1194289-1195932.html" title="Generated @ 2017-10-05 18:08:00">1194289 -> 1195932</option>
 	<option value="Tranquility_1193222-1194289.html" title="Generated @ 2017-10-03 16:27:55">1193222 -> 1194289</option>
@@ -73,10 +73,10 @@
 	<option value="Tranquility_1186828-1189283.html" title="Generated @ 2017-09-19 11:06:57">1186828 -> 1189283</option>
 	<option value="Tranquility_1185929-1186828.html" title="Generated @ 2017-09-13 11:13:27">1185929 -> 1186828</option>
 	<option value="Tranquility_1184119-1185929.html" title="Generated @ 2017-09-12 11:05:36">1184119 -> 1185929</option>
-	<option value="Tranquility_1180438-1184119.html" title="Generated @ 2017-09-07 11:11:57">1180438 -> 1184119</option>
-		</select>
-		<select name="formsisirevs" onchange="navigateIfNotEmpty(this.value);">
-		 <option value="">Singularity Revisions</option>
+	<option value="Tranquility_1180438-1184119.html" title="Generated @ 2017-09-07 11:11:57">1180438 -> 1184119</option>
+		</select>
+		<select name="formsisirevs" onchange="navigateIfNotEmpty(this.value);">
+		 <option value="">Singularity Revisions</option>
 			<option value="Singularity_1198752-1199141.html" title="Generated @ 2017-10-13 12:05:39">1198752 -> 1199141</option>
 	<option value="Singularity_1198103-1198752.html" title="Generated @ 2017-10-12 14:13:04">1198103 -> 1198752</option>
 	<option value="Singularity_1197846-1198103.html" title="Generated @ 2017-10-11 14:06:03">1197846 -> 1198103</option>
@@ -86,10 +86,10 @@
 	<option value="Singularity_1195329-1195940.html" title="Generated @ 2017-10-05 18:08:00">1195329 -> 1195940</option>
 	<option value="Singularity_1194911-1195329.html" title="Generated @ 2017-10-03 16:43:59">1194911 -> 1195329</option>
 	<option value="Singularity_1194064-1194911.html" title="Generated @ 2017-10-02 18:58:17">1194064 -> 1194911</option>
-	<option value="Singularity_1193488-1194064.html" title="Generated @ 2017-09-29 14:34:39">1193488 -> 1194064</option>
-		</select>
-		<select name="formchaosrevs" onchange="navigateIfNotEmpty(this.value);">
-		 <option value="">Chaos Revisions</option>
+	<option value="Singularity_1193488-1194064.html" title="Generated @ 2017-09-29 14:34:39">1193488 -> 1194064</option>
+		</select>
+		<select name="formchaosrevs" onchange="navigateIfNotEmpty(this.value);">
+		 <option value="">Chaos Revisions</option>
 			<option value="chaos.html" title="Generated @ 2017-05-18 17:25:00">Not RIP -> RIP</option>
 	<option value="Chaos_1142708-1143786.html" title="Generated @ 2017-05-12 11:23:04">1142708 -> 1143786</option>
 	<option value="Chaos_1142360-1142708.html" title="Generated @ 2017-05-09 16:29:40">1142360 -> 1142708</option>
@@ -99,23 +99,23 @@
 	<option value="Chaos_1138379-1139308.html" title="Generated @ 2017-04-28 14:32:00">1138379 -> 1139308</option>
 	<option value="Chaos_1132818-1138379.html" title="Generated @ 2017-04-26 09:37:21">1132818 -> 1138379</option>
 	<option value="Chaos_1132520-1132818.html" title="Generated @ 2017-03-29 16:35:33">1132520 -> 1132818</option>
-	<option value="Chaos_1131995-1132520.html" title="Generated @ 2017-03-29 10:04:28">1131995 -> 1132520</option>
-		</select>
-		<!--
-		<select name="dualityrevs" onchange="parent.location = this.value;">
-		 <option value="">Duality Revisions</option>
-		[[dualityRevisionNavigation]]
-		</select>
-
-		[[thunderdomeRevisionNavigation]]
-
-		[[pulsarRevisionNavigation]]
-
-		[[fractalRevisionNavigation]]
-
-		[[multiplicityRevisionNavigation]]
-
-		[[quantumRevisionNavigation]]
-		</select> -->
-	</body>
+	<option value="Chaos_1131995-1132520.html" title="Generated @ 2017-03-29 10:04:28">1131995 -> 1132520</option>
+		</select>
+		<!--
+		<select name="dualityrevs" onchange="parent.location = this.value;">
+		 <option value="">Duality Revisions</option>
+		[[dualityRevisionNavigation]]
+		</select>
+
+		[[thunderdomeRevisionNavigation]]
+
+		[[pulsarRevisionNavigation]]
+
+		[[fractalRevisionNavigation]]
+
+		[[multiplicityRevisionNavigation]]
+
+		[[quantumRevisionNavigation]]
+		</select> -->
+	</body>
 </html>
