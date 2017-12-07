@@ -1,21 +1,31 @@
 ---
-permalink: /404.html
+permalink: /404.html 
 ---
 <!-- [[revision]]:[[dbFormat]]:[[timeRaw]] -->
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<!-- Google analytics -->
-		<script>
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-			ga('create', 'UA-101504388-1', 'auto');
-			ga('send', 'pageview');
-		</script>
+<head>
+    <meta charset="UTF-8">
+    <!-- Google analytics -->
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-101504388-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    <!--
 		<script src="/db/dynamicData.js"></script>
 		<script src="/db/itemPageScript.js"></script>
 		<script>
@@ -33,25 +43,30 @@ permalink: /404.html
 				}
 			}
 		</script>
-		<style>
-			body {
-				height: 250px;
-				background-image:url("http://static-cdn.jtvnw.net/emoticons/v1/151586/3.0");
-				background-position:center center;
-				background-repeat: no-repeat;
-				text-align: center;
-			}
-			p,h2,h3,ul {
-				font-family: arial, tahoma, sans-serif;
-			}
-			p.kindasmall {
-				font-family: arial, tahoma, sans-serif;
-				font-size: 10pt;
-				margin: 5px 0px 5px 0px;
-			}
-		</style>
-	</head>
-	<body>
-		<p>404 - Page not found!</p>
-	</body>
+		-->
+    <style>
+        body {
+            text-align: center;
+        }
+
+        p,
+        h2,
+        h3,
+        ul {
+            font-family: arial, tahoma, sans-serif;
+        }
+
+        p.kindasmall {
+            font-family: arial, tahoma, sans-serif;
+            font-size: 10pt;
+            margin: 5px 0px 5px 0px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <p>404 - Page not found!<br><br>If you're certain you followed a valid link, you may want to check back in a few minutes.</p>
+</body>
+
 </html>
