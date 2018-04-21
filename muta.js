@@ -220,7 +220,7 @@ function parseAttributes(attributesString) {
                 var attributeValueNew = attributeValue
             }
             //Dude idk how to deal with unicode in this shit language ok, don't judge me.
-            attributeValueNew = attributeValueNew.replace(RegExp(String.fromCharCode(160) + " ?", "g"), "") //Remove spaces for things like mass addition (50 000 000 kg)
+            attributeValueNew = attributeValueNew.replace(RegExp("[" + String.fromCharCode(160) + " ,]", "g"), "") //Remove spaces for things like mass addition (50 000 000 kg)
             console.log(attributeValueNew)
             let attributeID = getAttributeIDFromName(attributeName, typeData.attributeIDs)
 
