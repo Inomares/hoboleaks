@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="muta.css" />
+
+    <script src="mutaData.js"></script>
+    <script src="muta.js"></script>
+    <title>Hoboleaks: Mutation Reverse Calculator</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <!-- Google analytics -->
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-101504388-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+</head>
+
+<body>
+    <a href="/">
+        <p class="backHome">Back to Hoboleaks</p>
+    </a>
+    <header>
+        <div class="hDiv">
+            <div class="simpleFlex">
+                <p class="titleText">Mutation Reverse Calculator</p>
+                <p class="betaText">BETA</p>
+            </div>
+        </div>
+    </header>
+    <div class="mainAllContent">
+        <div class="step" id="step1">
+            <p class="instructionalStep">Step 1: Select Original Module</p>
+            <div id="modulesContainer">
+                <div id="step1Cont">
+                    <input type="text" id="moduleSearch" placeholder="Enter Partial Module Name...">
+                    <div class="modulesScroller" id="modScroller">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="step filtered" id="step2Cont">
+            <p class="instructionalStep">Step 2: Copy the module's attributes, and paste them below.</p>
+            <textarea id="attributeInput" placeholder="Paste attributes here.&#10;&#10;Tip: To easily copy the attributes, open the attributes of an item in the game, use CTRL+A to select them all, and then CTRL+C to copy them.&#10;&#10;The fitting attributes such as CPU and Power Grid are in a different tab, just paste them on a new line before or after the other attributes.&#10;&#10;IMPORTANT: The module must NOT be fitted to your ship, or it will display bonused attributes from your skills and ship."></textarea>
+        </div>
+        <div id="step3Cont" class="filtered">
+            <p class="resultHeader">Modified Stats:</p>
+            <table id="resultTable">
+                <tr>
+                    <th>
+                        Attribute Name
+                    </th>
+                    <th>
+                        Original Value
+                    </th>
+                    <th>
+                        New Value
+                    </th>
+                    <th>
+                        Difference
+                    </th>
+                </tr>
+            </table>
+        </div>
+        <p class="filtered" id="invalidInput">Not all expected attributes were parsed. Please ensure you copied all attributes with CTRL+A and CTRL+C from inside the client. Note that this page only supports attributes in English at this time.</p>
+    </div>
+</body>
+
+</html>
