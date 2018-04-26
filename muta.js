@@ -2,8 +2,65 @@ var attributeMultipliers = {
     54: 1000,
 }
 
+
+//b64 encode & decode unicode functions taken from https://developer.mozilla.org/en-US/docs/Web/API/WindowBase64/Base64_encoding_and_decoding#The_Unicode_Problem
+//Not used yet, considering encoding attribute data in the future so you can share links to a "finished" module with attributes and all
+function b64EncodeUnicode(str) {
+    // first we use encodeURIComponent to get percent-encoded UTF-8,
+    // then we convert the percent encodings into raw bytes which
+    // can be fed into btoa.
+    return btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g,
+        function toSolidBytes(match, p1) {
+            return String.fromCharCode('0x' + p1);
+        }));
+}
+
+function b64DecodeUnicode(str) {
+    // Going backwards: from bytestream, to percent-encoding, to original string.
+    return decodeURIComponent(atob(str).split('').map(function (c) {
+        return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+    }).join(''));
+}
+
+
+function getParameterByName(name) {
+    var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+    return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+}
+
+function selectModuleByTypeID(typeID) {
+    for (var moduleEntry of document.getElementsByClassName("moduleEntry")) {
+        if (moduleEntry.getAttribute("typeID") == typeID) {
+            moduleEntry.onclick()
+        }
+    }
+}
+
+function processParameters() {
+    /*
+    var typeID = getParameterByName("typeID")
+    if (typeID == null) {
+        return
+    }
+    selectModuleByTypeID(typeID)
+*/
+}
+
+function processHash() {
+    var hashValues = window.location.hash.slice(1).split(",")
+    var typeID = hashValues[0]
+    if (typeID != null && !isNaN(typeID)) {
+        selectModuleByTypeID(typeID)
+    }
+}
+
 function selectModule(target) {
+    if (document.getElementById("itemClone") != null) {
+        //For some reason we have an old clone. Click it!
+        document.getElementById("itemClone").onclick()
+    }
     var typeID = target.getAttribute("typeID")
+    window.location.hash = typeID
     var clone = target.cloneNode(true)
     clone.id = "itemClone"
     clone.classList.remove("moduleEntry")
@@ -256,6 +313,8 @@ function setupWatchers() {
 }
 
 window.onload = function (e) {
-    populateModuleList()
     setupWatchers()
+    populateModuleList()
+    processParameters()
+    processHash()
 }
