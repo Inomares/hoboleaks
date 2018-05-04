@@ -1,5 +1,7 @@
 var attributeMultipliers = {
     54: 1000,
+    73: 1000,
+    1795: 1000,
 }
 
 
