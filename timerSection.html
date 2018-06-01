@@ -100,7 +100,7 @@
 	var genTime = parseInt(getParameterByName("timer") || parseInt(hashValues[1]))
 	var version = getParameterByName("version") || parseInt(hashValues[0])
 	var genDate = new Date(genTime)
-	if (version <= 1) {
+	if (version <= 1 || version == 2) {
 		console.log("Initializing timer version 1. genDate:")
 		console.log(genDate)
 		document.getElementById("staticTimer").innerHTML = generateDateString(genDate)
