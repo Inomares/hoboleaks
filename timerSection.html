@@ -32,7 +32,7 @@
 	}
 	
 	function _generateDateString(year, month, day, hours, minutes, seconds) {
-		dateStr = ""
+		var dateStr = ""
 		dateStr += year + "-"
 		dateStr += pad(month, 2) + "-"
 		dateStr += pad(day, 2) + " "
@@ -43,32 +43,32 @@
 	}
 	
 	function generateDateString(dateObject) {
-		year = dateObject.getUTCFullYear()
-		month = dateObject.getUTCMonth() + 1
-		day = dateObject.getUTCDate()
-		hours = dateObject.getUTCHours()
-		minutes = dateObject.getUTCMinutes()
-		seconds = dateObject.getUTCSeconds()
+		var year = dateObject.getUTCFullYear()
+		var month = dateObject.getUTCMonth() + 1
+		var day = dateObject.getUTCDate()
+		var hours = dateObject.getUTCHours()
+		var minutes = dateObject.getUTCMinutes()
+		var seconds = dateObject.getUTCSeconds()
 		return _generateDateString(year, month, day, hours, minutes, seconds)
 	}
 	
 	function getDeltaTimeUsingTimestamp(timeDelta) {
 		timeDelta = Math.abs(timeDelta)
-		secLength = 1000
-		minuteLength = secLength * 60
-		hourLength = minuteLength * 60
-		dayLength = hourLength * 24
+		var secLength = 1000
+		var minuteLength = secLength * 60
+		var hourLength = minuteLength * 60
+		var dayLength = hourLength * 24
 		
-		numDays = Math.floor(timeDelta / dayLength)
+		var numDays = Math.floor(timeDelta / dayLength)
 		timeDelta -= numDays * dayLength
 		
-		numHours = Math.floor(timeDelta / hourLength)
+		var numHours = Math.floor(timeDelta / hourLength)
 		timeDelta -= numHours * hourLength
 		
-		numMinutes = Math.floor(timeDelta / minuteLength)
+		var numMinutes = Math.floor(timeDelta / minuteLength)
 		timeDelta -= numMinutes * minuteLength
 		
-		numSeconds = Math.floor(timeDelta / secLength)
+		var numSeconds = Math.floor(timeDelta / secLength)
 		timeDelta -= numSeconds * secLength
 		return {numDays:numDays, numHours:numHours, numMinutes:numMinutes, numSeconds:numSeconds}
 	}
@@ -78,7 +78,7 @@
 	}
 	
 	function _generateDeltaString(numDays, numHours, numMinutes, numSeconds) {
-		deltaStr = "("
+		var deltaStr = "("
 		deltaStr += numDays + "d, "
 		deltaStr += numHours + "h, "
 		deltaStr += numMinutes + "m ago)"
@@ -92,13 +92,14 @@
 	}
 	
 	function v1TimerLoop(genDate) {
-		now = new Date(Date.now())
+		var now = new Date(Date.now())
 		document.getElementById("dynamicTimer").innerHTML = generateDeltaString(genDate, now)
 	}
 	
-	genTime = Number(getParameterByName("timer") || 0)
-	version = getParameterByName("version") || 0
-	genDate = new Date(genTime)
+	var hashValues = window.location.hash.slice(1).split(",")
+	var genTime = parseInt(getParameterByName("timer") || parseInt(hashValues[1]))
+	var version = getParameterByName("version") || parseInt(hashValues[0])
+	var genDate = new Date(genTime)
 	if (version <= 1) {
 		console.log("Initializing timer version 1. genDate:")
 		console.log(genDate)
