@@ -250,6 +250,7 @@ blockquote p {
 .cdiv {
     cursor: pointer;
     user-select: none;
+    -moz-user-select: -moz-none;
 }
 
 .cdiv input {
