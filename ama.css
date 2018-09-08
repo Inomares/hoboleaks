@@ -139,7 +139,10 @@ blockquote p {
 }
 
 .smilie {
-    height: 1rem;
+    max-height: 1rem;
+    max-width: 1rem;
+    height: auto;
+    width: auto;
 }
 
 .menucontainer {
@@ -298,6 +301,7 @@ h3 {
 
 .posterimage {
     height: 64px;
+    width: auto;
 }
 
 @media (min-width: 860px) {
@@ -310,4 +314,11 @@ h3 {
     .nosmall {
         display: none;
     }
+}
+
+.userimg {
+    max-width: 320px;
+    max-height: 320px;
+    height: auto;
+    width: auto;
 }
