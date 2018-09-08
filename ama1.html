@@ -29,7 +29,6 @@
         ga('create', 'UA-101504388-1', 'auto');
         ga('set', 'anonymizeIp', true);
         ga('send', 'pageview');
-
     </script>
 </head>
 
@@ -63,22 +62,17 @@
                 <input id="mainsearch" type="text" placeholder="Search...">
                 <button class="col2" id="searchbutton" type="button"><span class="fas fa-search" id="mainsearch-icon"></span></button>
                 <div class="fullcol cdiv research" onclick="toggleQ(event)">
-                    <input type="checkbox" id="searchQCheck">
+                    <input type="checkbox" id="searchQCheck" checked>
                     <span class="smaller nosmall">Include search results in Questions</span>
                     <span class="smaller onlysmall">Questions</span>
                 </div>
                 <div class="fullcol cdiv" onclick="toggleA(event)">
-                    <input type="checkbox" id="searchACheck">
+                    <input type="checkbox" id="searchACheck" checked>
                     <span class="smaller nosmall">Include search results in Answers</span>
                     <span class="smaller onlysmall">Answers</span>
                 </div>
             </div>
-            <div class="collapsers">
-                <a class="cdiv" onclick="collapseAll()">Collapse All</a>
-                <span>|</span>
-                <a class="cdiv" onclick="uncollapseAll()">Uncollapse All</a>
-            </div>
-            <div class="row3 fullcol" id="posters">
+            <div class="fullcol" id="posters">
                 <!--
                 <div class="poster">
                     <img class="posterimage col1 fullrow" src="https://forums.eveonline.com//user_avatar/forums.eveonline.com/ccp_falcon/32/11836_1.png">
@@ -87,6 +81,12 @@
                 </div>
                 -->
             </div>
+            <div class="collapsers">
+                <a class="cdiv" onclick="collapseAll()">Collapse All</a>
+                <span>|</span>
+                <a class="cdiv" onclick="uncollapseAll()">Uncollapse All</a>
+            </div>
+            <span id="filteredstats"></span>
         </div>
         <div id="allpostscont">
             <div id="allposts">

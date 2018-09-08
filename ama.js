@@ -89,6 +89,8 @@ function createPost(postData, userData, canCollapse, hasAvatar, prefix) {
         for (let img of postContent.getElementsByTagName("img")) {
             if (img.hasAttribute("alt") && img.getAttribute("alt").startsWith(":")) {
                 img.classList.add("smilie")
+            } else {
+                img.classList.add("userimg")
             }
         }
     }
@@ -222,9 +224,13 @@ function loadPosts(j, fullRebuild) {
     let allPosts = document.createElement("div")
     let oldAllPosts = document.getElementById("allposts")
     let sortedPostNumbers = getOrder(j.posts)
+    let numPosts = 0
+    let filteredPosts = 0
     for (let postNum of sortedPostNumbers) {
+        numPosts++
         let tempPost = j.posts[postNum]
         if (!shouldIncludePost(tempPost)) {
+            filteredPosts++
             continue
         }
         let postGroup = createPostGroup()
@@ -242,6 +248,7 @@ function loadPosts(j, fullRebuild) {
         allPosts.appendChild(postGroup)
     }
 
+    document.getElementById("filteredstats").innerText = "Showing " + (numPosts - filteredPosts) + " / " + numPosts + " entries."
     oldAllPosts.parentElement.removeChild(oldAllPosts)
     allPosts.id = "allposts"
     document.getElementById("allpostscont").appendChild(allPosts)
