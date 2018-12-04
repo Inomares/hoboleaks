@@ -22,6 +22,37 @@
 	<meta name="genDate" content="">
 	<!-- Who needs css files lol -->
 	<style>
+		table {
+			width:1280px;
+			font-family: arial, tahoma, sans-serif;
+			font-size: 10pt;
+			border-collapse: collapse;
+		}
+
+		td, th {
+			border: 1px solid black;
+			text-align: left;
+			padding: 8px;
+			word-break: break-word;
+		}
+
+		tr:nth-child(even) {
+			background-color: #DBDBDB;
+		}
+		
+		tr.unimportant {
+			opacity: 0.5;
+			font-size: 8pt;
+		}
+		
+		.hidden {
+			display: none;
+		}
+
+		td.mini {
+			font-size: 8pt;
+		}
+
 		p.mini {
 			font-family: arial, tahoma, sans-serif;
 			font-size: 8pt;
@@ -30,6 +61,7 @@
 		p {
 			font-family: arial, tahoma, sans-serif;
 		}
+		
 		
 		p.mini2 {
 			font-family: arial, tahoma, sans-serif;
@@ -42,6 +74,14 @@
 			color: gray;
 		}
 		
+		.no-bottom-margin {
+			margin-bottom: 0px;
+		}
+		
+		.no-top-margin {
+			margin-top: 0px;
+		}
+				
 		p.kindasmall {
 			font-family: arial, tahoma, sans-serif;
 			font-size: 10pt;
@@ -51,11 +91,240 @@
 		h1, h2, h3 {
 			font-family: arial, tahoma, sans-serif;
 		}
+
+		summary.bigsum {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 15pt;
+			cursor:pointer;
+		}		
+
+		summary.bigsum_disabled {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 15pt;
+			color: #9E9E9E;
+		}
+		
+		summary.mediumsum {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 12pt;
+			cursor:pointer;
+		}		
+
+		summary.mediumsum_disabled {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 12pt;
+			color: #9E9E9E;
+		}
+		
+		
+		summary.smallsum {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 10pt;
+			cursor:pointer;
+		}
+		
+		summary.smallsum_disabled {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 10pt;
+			color: #9E9E9E;
+		}
+		
+		.indent10 {
+			margin-left: 10px;
+		}
+		
+		.indent15 {
+			margin-left: 15px;
+		}
+		
+		.indent20 {
+			margin-left: 20px;
+		}
+		
+		.indent30 {
+			margin-left: 30px;
+		}
+		
+		.smallinput {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 10pt;
+		}
+		
+		p.scriptnotify {
+			font-family: arial, tahoma, sans-serif;
+			color: red;
+			font-size: 12pt;
+		}
+		
+		p.scriptnotifysmall {
+			font-family: arial, tahoma, sans-serif;
+			color: red;
+			font-size: 9pt;
+		}
+		
+		p.scriptnotifysmaller {
+			font-family: arial, tahoma, sans-serif;
+			color: red;
+			font-size: 5pt;
+		}
+		
+		div.simplebox {
+			font-family: arial, tahoma, sans-serif;
+			font-size: 10pt;
+			padding: 5px;
+			margin: 2px;
+			border-left-style: dotted;
+		}
+		
+		ul {
+			padding-left:20px;
+		}
+		
+		div.footer {
+		   position: fixed;
+		   bottom: 20px;
+		   height: 20px;
+		   width: 20px;
+		   border-style: none;
+		}
+		
+		div.footer1 {
+		   right: 20px;
+		}
+		
+		div.footer2 {
+		   left: 20px;
+		   visibility: hidden;
+		}
+		
+		div.footer:hover {
+			border-style: dotted;
+			border-color: #F2F2F2;
+		}
+		
+		.selected {
+			background-color: #C4F0FF;
+		}
+		
+		tr.selected:nth-child(even) {
+			background-color: #C4F0FF;
+		}
 		
 		.noscripthidden {
 			display: none;
 		}
+		
+		
+		span.quote {
+			position:absolute;
+			float:right;
+			top:5px;
+			right:5px;
+			font-family: arial, tahoma, sans-serif;
+			font-style: italic;
+			font-size: 11pt;
+			opacity:0.4;
+		}
+		
+		img.homeButton {
+			position:absolute;
+			float:left;
+			top:0px;
+			left:5px;
+			height:20px;
+		}
+		
+		p.about {
+			position:absolute;
+			float:left;
+			top:-15px;
+			left:85px;
+			height:0px;
+			
+		}
+		
+		p.sde {
+			position:absolute;
+			float:left;
+			top:-15px;
+			left:135px;
+			height:0px;
+			
+		}
+		
+		a.about {
+			color: green;
+		}
+		
+		a.sde {
+			color: blue;
+		}
 
+		/* IE 6 */
+		* html #footer {
+		   position:absolute;
+		   top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
+		}
+		
+		#buildMsg {
+			font-family: arial, tahoma, sans-serif;
+			color: black;
+			font-size: 8pt;
+			margin: 0;
+			border-bottom: 1px dotted;
+			width: 137px;
+		}
+		
+		.imageWrapper {
+			position: relative;
+			height: 64px;
+			width: 64px;
+		}
+		.overlayImage {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		
+		.selectable.filtered {
+			display: none;
+		}
+		
+		.displayFilterHit {
+			color: green;
+		}
+		
+		.onlyFirefox {
+			display: none;
+		}
+		
+		.combinatorAdded::before {
+			padding:3px;
+			content:"+";
+			color:green;
+			font-weight: bold;
+		}
+		
+		.combinatorRemoved::before {
+			padding:3px;
+			content:"-";
+			color:red;
+			font-weight: bold;
+		}
+		
+		.mutatorFirstColDiv {
+			display:flex;
+			flex-direction:column;
+			align-items: center;
+			text-align: center;
+		}
+		
+		.mutatorIcon {
+			margin-right: 5px;
+			height: 64px;
+			width: 64px;
+		}
+		
 	</style>
 	<!-- Google analytics -->
 	<script>
@@ -65,10 +334,12 @@
 		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
 		ga('create', 'UA-101504388-1', 'auto');
+		ga('set', 'anonymizeIp', true);
 		ga('send', 'pageview');
 	</script>
-	<script type="text/javascript">
-		genBaseHash = "highlight" + "ripchaos"
+	<script>
+		genBaseHash = "highlight" + [[timeRaw]]
+		isManual = [[isManual]]
 	
 	    function selectText(containerid, hasWaited) {
 			hasWaited = hasWaited || false
@@ -191,6 +462,100 @@
 			return getSelectableNode(node.parentNode)			
 		}
 		
+		function getEVEPraisalLinkForLines(lineArray) {
+		/* Expects an array of materials in an EVEPraisal friendly format. Returns the full URL. */
+			if (lineArray.length == 0) {
+				return ""
+			}
+			
+			var lineData = lineArray.join("\n")
+			
+			const req = async() => {
+				var jsonURL = "https://evepraisal.com/appraisal.json?market=jita&raw_textarea=" + lineData
+				var responseData = await fetch(jsonURL, {method: "POST"})
+				var responseJSON = await response.json()
+			}
+			return req()
+		}
+		
+		function insertEVEPraisalInCell(cellNode) {
+			var cellContents = cellNode.innerHTML.split("<br>")
+			getEVEPraisalLinkForLines(cellContents)
+		}
+		
+		function filterSelectables(searchTerm, caseSensitive) {
+			//console.log("firing")
+			let selectables = document.getElementsByClassName("selectable")
+			if (caseSensitive === undefined) {
+				caseSensitive = false
+			}
+			if (!caseSensitive) {
+				searchTerm = searchTerm.toLowerCase()
+			}
+			
+			for (var i=0; i < selectables.length; i++) {
+				let node = selectables[i]
+				if (caseSensitive) {
+					var contents = node.textContent
+				} else {
+					var contents = node.textContent.toLowerCase()
+				}
+				if (contents.indexOf(searchTerm) == -1) {
+					node.classList.add("filtered")
+				} else {
+					node.classList.remove("filtered")
+				}
+			}
+		}
+		
+		function getNumVisibleNodes(node) {
+			let count = 0
+			let children = node.children
+			for (var i=0; i < children.length; i++) { //Iterate through child nodes
+				let childNode = children[i]
+				if (childNode.classList.contains("selectable") && !childNode.classList.contains("filtered")) {
+					count += 1
+				} 
+				count += getNumVisibleNodes(childNode) //Let child node iterate through its own child node
+			}
+			return count;
+		}
+		
+		function updateParentsFilter(clear) {
+			let parents = document.getElementsByClassName("selectParent")
+			for (let node of parents) {
+				let childNode = node.getElementsByClassName("displayFilter")[0]
+				if (clear) {
+					if (childNode) {
+						node.removeChild(childNode)
+					}
+				}
+				else {
+					let numVisible = getNumVisibleNodes(node.parentNode) //We check its parent because the summary tags have the "selectParent" but they are on the same level as the "sub" details.
+					if (childNode === undefined) {
+						childNode = document.createElement("span")
+						childNode.classList.add("displayFilter")
+						node.appendChild(childNode)
+					}
+					if (numVisible > 0) {
+						childNode.classList.add("displayFilterHit")
+					} else {
+						childNode.classList.remove("displayFilterHit")
+					}
+					childNode.innerText = " - " + numVisible + " Results"
+				}
+			}
+		}
+		
+		function filter(searchTerm, caseSensitive) {
+			filterSelectables(searchTerm, caseSensitive)
+			if (searchTerm === undefined || searchTerm.length == 0) {
+				updateParentsFilter(true)
+			} else {
+				updateParentsFilter()
+			}
+		}
+		
 		window.onhashchange = function() {
 			updateSelectablesFromHash()
 		}
@@ -213,10 +578,19 @@
 				}
 			}
 			updateSelectablesFromHash()
+			/*if (isManual == true) {
+				document.getElementById("buildMsg").style.display = "inline";
+			}*/
+			
 		}
 	</script>
 </head>
 <body>
+<a href="/">
+	<img class="homeButton" src="sitehome.jpg"/>
+</a>
+<p class="about"><a class="about" href="/about">About</a></p>
+<p class="sde"><a class="sde" href="http://sde.hoboleaks.space/">TQ SDE Complements</a></p>
 <h1>RIP Chaos</h1>
 <noscript>
 	<nobr>
@@ -226,7 +600,7 @@
 	</nobr>
 	<p class="scriptnotifysmall">This page should still kinda work though.</p>
 </noscript>
-<iframe id="timer" src="timerSection.html?version=1&timer=1495123136141" style="border:none; display:none;" height="40px" width="800px"> </iframe>
+<iframe id="timer" src="timerSection.html#2,1495123136141" style="border:none; display:none;" height="30px" width="800px"> </iframe>
 <iframe id="navMenu" src="" style="border:none; display:none;" height="40px" width="800px"> </iframe>
 <script>
 	function getStrippedPageName(pageName) {
@@ -242,7 +616,7 @@
 	}
 	
 	document.getElementById("navMenu").style.display = "block";
-	document.getElementById("navMenu").src = "nav.html?curPage=" + getStrippedPageName(window.location.pathname);
+	document.getElementById("navMenu").src = "nav.html#" + getStrippedPageName(window.location.pathname);
 	document.getElementById("timer").style.display = "block";
 </script>
 
@@ -255,8 +629,9 @@ Chaos' files being public often meant that CCP had to delay QA & development eff
 Singularity remains open for all your early speculation needs.
 </p>
 
-<p class="mini2">Made by Inomares. I don't want your donations. I don't read EVE mails. Leave me alone.</p>
-<p class="mini3">I guess contact me on <a href="https://tweetfleet.slack.com/messages/@inomares/">Tweetfleet Slack</a> if you really need to.</p>
+<p class="mini">All patch data and media listed or linked on this page is the property of CCP hf. All rights reserved. This website is not in any way endorsed by, or affiliated with CCP Games.</p>
+<div class="footer1 footer" id="footer1" onClick="test123();"></div>
+<div class="footer2 footer" id="footer2"></div>
 
 <script>
 	var nodes = document.getElementsByClassName("noscripthidden")
