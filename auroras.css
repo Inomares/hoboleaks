@@ -1,0 +1,215 @@
+/* BEGIN SHARED */
+
+html,
+body {
+    height: 100vh;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0 min-content 1fr;
+    background-color: #121314;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url("forumBackground2.jpg");
+    color: white;
+    font-family: 'Open Sans', arial, tahoma, sans-serif;
+}
+
+img {
+    object-fit: cover;
+}
+
+.hDiv {
+    background-color: rgba(0, 0, 0, 0.7);
+    max-height: 75px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-bottom: 1px solid transparent;
+    border-image: linear-gradient(to right, transparent 0%, white 50%, transparent 100%);
+    box-shadow: 0px 0px 10px 6px rgba(180, 235, 255, 0.8);
+    border-image-slice: 1;
+}
+
+
+.mainAllContent {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1rem;
+    height: auto;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    grid-template-columns: 1fr;
+}
+
+.backHome {
+    position: absolute;
+    margin: 4px;
+    font-size: 10pt;
+    color: lightblue;
+}
+
+.titleText {
+    padding-left: 1rem;
+    font-size: 24pt;
+    font-size: calc(100% + 1vw);
+    display: inline-flex;
+}
+
+.betaText {
+    padding: 10px;
+    color: lightcoral;
+    font-size: 11pt;
+    vertical-align: super;
+}
+
+.simpleFlex {
+    display: flex;
+    align-items: center;
+}
+
+a {
+    color: lightblue;
+    text-decoration: none;
+}
+
+.p-0 {
+    padding: 0;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.smaller {
+    font-size: 0.7rem;
+    color: lightgray;
+}
+
+.auroraList {
+    border: 2px solid rgba(55, 200, 255, 0.2);
+    box-shadow: 0px 0px 5px 2px rgba(55, 205, 255, 0.2);
+    border-collapse: collapse;
+    border-radius: 0.5rem;
+}
+
+.columns {
+    display: grid;
+    grid-template: 1fr / 1fr 0.8fr 16rem;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.column {
+    display: flex;
+    justify-content: center;
+    padding: 0.8rem;
+    cursor: pointer;
+    background-image: linear-gradient(to top, transparent 0%, rgba(180, 235, 255, 0.1) 100%);
+}
+
+#sortName {
+    border-top-left-radius: 5px;
+}
+
+#sortDuration {
+    border-top-right-radius: 5px;
+}
+
+.column.active-asc,
+.column.active-desc {
+    background-image: linear-gradient(to bottom, transparent 30%, rgba(180, 235, 255, 0.2) 100%);
+}
+
+.planet {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-collapse: collapse;
+    transition: all 0.5s;
+}
+
+.planet:hover {
+    background-color: rgba(30, 150, 255, 0.1);
+    border-top: 1px solid rgba(30, 150, 255, 0.2);
+}
+
+.planetInfo {
+    display: flex;
+    align-items: center;
+}
+
+.planetName {
+    margin: 0;
+    margin-left: 1rem;
+    font-size: 1rem;
+}
+
+.filters {
+    margin-bottom: 0.5rem;
+}
+
+#mainsearch {
+    box-sizing: border-box;
+    border: 2px solid rgba(255, 255, 255, 1);
+    border-radius: 5px;
+    width: 100%;
+    padding: .5rem;
+    font-size: 1rem;
+    font-family: 'Open Sans', arial, tahoma, sans-serif;
+    margin-bottom: 0.5rem;
+}
+
+#mainsearch:active {
+    border: 2px solid rgba(200, 200, 255, 1);
+}
+
+
+#typeFilters {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink:
+}
+
+.typeFilter {
+    display: flex;
+    border-radius: 40px;
+    padding: 0;
+    align-items: center;
+    margin: 10px;
+    box-shadow: 0px 0px 10px 2px rgba(55, 235, 255, 0.8);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.typeFilter:hover {
+    box-shadow: 0px 0px 10px 3px rgba(55, 235, 255, 1);
+}
+
+.typeFilter.disabled {
+    color: gray;
+    box-shadow: 0px 0px 10px 3px rgba(255, 255, 255, 0.3);
+}
+
+.typeFilter span {
+    margin: 0.5rem;
+}
+
+.typeFilter img {
+    border-radius: 50px;
+}
+
+#sortNext {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+.column .fas {
+    margin-left: auto;
+}
+
+/* END SHARED */
