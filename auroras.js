@@ -205,7 +205,6 @@ function updateColumns(sortKey) {
     let iconClass = "fa-sort-up"
     console.log(sortKey)
     if (sortKey < 0) {
-        console.log("uh")
         className = "active-desc"
         iconClass = "fa-sort-down"
     }
