@@ -13,11 +13,12 @@ function initData(j, fullRebuild) {
     if (fullRebuild) {
         auroraData = j
         setupTypes(auroraData["types"])
-        sortByNext(false)
+        sortByNext() //THIS ALSO RELOADS!!!!
         //filterPlanets = Object.keys(j.types)
         //buildPosters(j.types)
+    } else {
+        reloadPlanets()
     }
-    reloadPlanets()
 }
 
 function getEnabledPlanets() {
@@ -205,7 +206,6 @@ function updateColumns(sortKey) {
     }
     let className = "active-asc"
     let iconClass = "fa-sort-up"
-    console.log(sortKey)
     if (sortKey < 0) {
         className = "active-desc"
         iconClass = "fa-sort-down"
