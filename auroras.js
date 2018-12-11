@@ -30,7 +30,7 @@ function getSearchTerm() {
 
 
 function getMaxPlanets() {
-    return 50 //TODO
+    return 100 //TODO
 }
 
 function getDelta(d) {
@@ -154,12 +154,14 @@ function loadPlanets(data) {
 }
 
 function reloadPlanets() {
+    updateStatusText(true)
     if (auroraData == null) {
         $.getJSON("auroras.json", function (j) {
             initData(j, true)
         })
     } else {
         loadPlanets(auroraData["entries"])
+        updateStatusText()
     }
 }
 
@@ -228,19 +230,22 @@ function doSort(sortKey, cmp, reload) {
     /*console.log(sortKey)
 console.log(cmp)
 console.log(reload)*/
-    if (sortMethod != sortKey) {
-        auroraData["entries"].sort(cmp)
-        sortMethod = sortKey
-    } else {
-        auroraData["entries"].sort(function (a, b) {
-            return cmp(b, a)
-        })
-        sortMethod = -sortKey
-    }
-    if (reload || reload === undefined) {
-        reloadPlanets()
-    }
-    updateColumns(sortMethod)
+    updateStatusText(true)
+    setTimeout(function () {
+        if (sortMethod != sortKey) {
+            auroraData["entries"].sort(cmp)
+            sortMethod = sortKey
+        } else {
+            auroraData["entries"].sort(function (a, b) {
+                return cmp(b, a)
+            })
+            sortMethod = -sortKey
+        }
+        if (reload || reload === undefined) {
+            reloadPlanets()
+        }
+        updateColumns(sortMethod)
+    }, 0)
 }
 
 function setupTypes(types) {
@@ -274,8 +279,24 @@ function onToggleType(e) {
     reloadPlanets()
 }
 
+function updateStatusText(loading) {
+    let statusText = document.getElementById("statusText")
+    if (loading) {
+        document.getElementById("refresh").classList.add("disabled")
+        statusText.innerText = "Loading..."
+    } else {
+        document.getElementById("refresh").classList.remove("disabled")
+        let numPlanets = document.getElementsByClassName("planet").length
+        statusText.innerText = "Showing " + numPlanets + " entries."
+        if (numPlanets == getMaxPlanets()) {
+            statusText.innerText += " Try applying more specific filters!"
+        }
+    }
+}
+
 reloadPlanets()
 $("#mainsearch").change(reloadPlanets)
 $("#sortName").click(sortByName)
 $("#sortNext").click(sortByNext)
 $("#sortDuration").click(sortByDuration)
+$("#refresh").click(reloadPlanets)
