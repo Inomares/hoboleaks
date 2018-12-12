@@ -59,7 +59,9 @@ img {
     font-size: 24pt;
     font-size: calc(100% + 1vw);
     display: inline-flex;
+    margin: auto;
 }
+
 
 .betaText {
     padding: 10px;
