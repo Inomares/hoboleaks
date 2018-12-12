@@ -157,7 +157,7 @@ function loadPlanets(data) {
 function reloadPlanets() {
     updateStatusText(true)
     if (auroraData == null) {
-        $.getJSON("auroras.json", function (j) {
+        $.getJSON("https://beta1.hoboleaks.space/auroras.json", function (j) {
             initData(j, true)
         })
     } else {
