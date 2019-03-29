@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Hoboleaks: AMA with CCP Hellmar (Hilmar)</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+    <link rel=" stylesheet " href="ama.css " />
+
+
+    <!-- Google analytics -->
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-101504388-1', 'auto');
+        ga('set', 'anonymizeIp', true);
+        ga('send', 'pageview');
+    </script>
+	<script>
+		amaURL = "ama2.json"
+	</script>
+</head>
+
+<body>
+    <a href="http://hoboleaks.space ">
+        <p class="backHome ">Back to Hoboleaks</p>
+    </a>
+    <header>
+        <div class="hDiv ">
+            <div class="simpleFlex ">
+                <p class="titleText ">AMA with CCP Hellmar (Hilmar)</p>
+            </div>
+        </div>
+    </header>
+    <div class="mainAllContent ">
+        <p class="smaller m-0" id="fetchtime"></p>
+        <a href="https://forums.eveonline.com/t/concluded-2019-03-28-live-ama-with-ccp-hellmar/149100/">
+            <h3>Original AMA here!</h3>
+        </a>
+        <div class="menucontainer">
+            <div class="sortingcont">
+                <span>Sort: </span>
+                <select id="sorting">
+                    <option value="sortOldest">Oldest First</option>
+                    <option value="sortNewest">Newest First</option>
+                    <option value="sortLikedQuestion">Most Liked Question</option>
+                    <option value="sortLikedAnswer">Most Liked Answer</option>
+                </select>
+            </div>
+            <div class="searchCont">
+                <input id="mainsearch" type="text" placeholder="Search...">
+                <button class="col2" id="searchbutton" type="button"><span class="fas fa-search" id="mainsearch-icon"></span></button>
+                <div class="fullcol cdiv research" onclick="toggleQ(event)">
+                    <input type="checkbox" id="searchQCheck" checked>
+                    <span class="smaller nosmall">Include search results in Questions</span>
+                    <span class="smaller onlysmall">Questions</span>
+                </div>
+                <div class="fullcol cdiv" onclick="toggleA(event)">
+                    <input type="checkbox" id="searchACheck" checked>
+                    <span class="smaller nosmall">Include search results in Answers</span>
+                    <span class="smaller onlysmall">Answers</span>
+                </div>
+            </div>
+            <div class="fullcol" id="posters">
+                <!--
+                <div class="poster">
+                    <img class="posterimage col1 fullrow" src="https://forums.eveonline.com//user_avatar/forums.eveonline.com/ccp_falcon/32/11836_1.png">
+                    <span class="postername col2 row1">CCP Falcon</span>
+                    <span class="postertitle smaller col2 row2">Senior EVE Universe Community Manager</span>
+                </div>
+                -->
+            </div>
+            <div class="collapsers">
+                <a class="cdiv" onclick="collapseAll()">Collapse All</a>
+                <span>|</span>
+                <a class="cdiv" onclick="uncollapseAll()">Uncollapse All</a>
+            </div>
+            <span id="filteredstats"></span>
+        </div>
+        <div id="allpostscont">
+            <div id="allposts">
+                <h3>Loading...</h3>
+                <!--<div class="postgroup">
+                    <div class="post question">
+                        <div class="postheader">
+                            <button class="expando">
+                            <a>
+                                <span class="far fa-minus-square"></span>
+                            </a>
+                        </button>
+                            <span class="vertdelim">|</span>
+                            <a href=" ">Original post by Blabla Bla, July 8th 19:25</a> (5 likes)
+                        </div>
+                        <p class="postcontent collapsed">
+                            This is a test. Wouldn't you also like to test? Test test test. REEE. <br><br>Test. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec tincidunt dolor. Maecenas a nisi tempus, sollicitudin elit quis, auctor enim. Suspendisse purus neque, interdum ac interdum faucibus, cursus sit amet justo. Aliquam eget accumsan turpis, sed faucibus nisl. Praesent eget ultricies sapien, nec varius nunc. Aliquam scelerisque facilisis purus sodales lobortis. Etiam sodales neque in odio rhoncus, vitae ultrices erat scelerisque. Aliquam a sem dui. Proin aliquam lorem eget blandit pulvinar. Sed ac leo eu lorem consequat mattis vitae quis leo. Integer sollicitudin bibendum enim, in imperdiet felis hendrerit a. Nam maximus nisl vitae laoreet tincidunt. <br><br>Nulla enim erat, iaculis a lectus auctor, iaculis faucibus ipsum. Duis sed lectus euismod, suscipit lacus in, congue erat. Fusce vulputate magna eget ante pulvinar, at maximus nibh finibus. Phasellus vel ligula molestie, aliquam turpis ut, tristique nulla. Suspendisse scelerisque odio sed est fermentum dictum. Nullam vel sapien eu nibh rhoncus sagittis eget id tortor. Sed pharetra vel massa eu molestie. Duis iaculis sollicitudin tincidunt. <br><br>Aenean aliquet suscipit est. Quisque ut vulputate tellus, vitae vulputate arcu. Ut feugiat nisl sapien, sed luctus velit suscipit molestie. Curabitur ultrices vehicula gravida. Nulla non sollicitudin ante. Curabitur dui mi, ultricies ac bibendum id, luctus quis ipsum. Ut viverra congue diam et iaculis. Etiam non est libero. Sed congue scelerisque vehicula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis urna est, sollicitudin non viverra id, scelerisque at nulla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas sapien neque, feugiat in mauris et, iaculis elementum nibh. In convallis sem lorem, sed blandit orci sollicitudin in. Cras eget lorem in metus tincidunt hendrerit in pellentesque purus. Cras vitae libero elementum, consequat augue vel, ornare urna. Nam pretium, tellus sit amet imperdiet semper, mi erat feugiat dolor, nec laoreet libero nisi ut odio. Vestibulum ullamcorper metus nisl. Donec vel nulla est. Suspendisse lorem odio, molestie in accumsan et, lobortis non ante. <br><br>Pellentesque et erat maximus, porta arcu in, fermentum sapien.
+                        </p>
+                    </div>
+                    <div class="post answer">
+                        <div class="postavatar">
+                            <img src="https://forums.eveonline.com/user_avatar/forums.eveonline.com/ccp_falcon/100/11836_1.png ">
+                        </div>
+                        <div class="postmain">
+                            <div class="postheader ">
+                                <a href=" ">Original post by CCP Falcon, July 8th 19:25</a> (50 likes)
+                                <p>
+                                    This is a test. Wouldn't you also like to test? Test test test. REEE. <br><br>Test. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec tincidunt dolor. Maecenas a nisi tempus, sollicitudin elit quis, auctor enim. Suspendisse purus neque, interdum ac interdum faucibus, cursus sit amet justo. Aliquam eget accumsan turpis, sed faucibus nisl. Praesent eget ultricies sapien, nec varius nunc. Aliquam scelerisque facilisis purus sodales lobortis. Etiam sodales neque in odio rhoncus, vitae ultrices erat scelerisque. Aliquam a sem dui. Proin aliquam lorem eget blandit pulvinar. Sed ac leo eu lorem consequat mattis vitae quis leo. Integer sollicitudin bibendum enim, in imperdiet felis hendrerit a. Nam maximus nisl vitae laoreet tincidunt. <br><br>Nulla enim erat, iaculis a lectus auctor, iaculis faucibus ipsum. Duis sed lectus euismod, suscipit lacus in, congue erat. Fusce vulputate magna eget ante pulvinar, at maximus nibh finibus. Phasellus vel ligula molestie, aliquam turpis ut, tristique nulla. Suspendisse scelerisque odio sed est fermentum dictum. Nullam vel sapien eu nibh rhoncus sagittis eget id tortor. Sed pharetra vel massa eu molestie. Duis iaculis sollicitudin tincidunt. <br><br>Aenean aliquet suscipit est. Quisque ut vulputate tellus, vitae vulputate arcu. Ut feugiat nisl sapien, sed luctus velit suscipit molestie. Curabitur ultrices vehicula gravida. Nulla non sollicitudin ante. Curabitur dui mi, ultricies ac bibendum id, luctus quis ipsum. Ut viverra congue diam et iaculis. Etiam non est libero. Sed congue scelerisque vehicula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis urna est, sollicitudin non viverra id, scelerisque at nulla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas sapien neque, feugiat in mauris et, iaculis elementum nibh. In convallis sem lorem, sed blandit orci sollicitudin in. Cras eget lorem in metus tincidunt hendrerit in pellentesque purus. Cras vitae libero elementum, consequat augue vel, ornare urna. Nam pretium, tellus sit amet imperdiet semper, mi erat feugiat dolor, nec laoreet libero nisi ut odio. Vestibulum ullamcorper metus nisl. Donec vel nulla est. Suspendisse lorem odio, molestie in accumsan et, lobortis non ante. <br><br>Pellentesque et erat maximus, porta arcu in, fermentum sapien.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <script src="ama.js"></script>
+</body>
+
+</html>
