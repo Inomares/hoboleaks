@@ -259,7 +259,7 @@ function loadPosts(j, fullRebuild) {
 
 function reloadPosts() {
     if (jPosts == null) {
-        $.getJSON("ama1.json", function (j) {
+        $.getJSON(amaURL, function (j) {
             loadPosts(j, true)
         })
     } else {
