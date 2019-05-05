@@ -4,21 +4,21 @@
 	<title>Hoboleaks: Singularity (Build: 1500277) to Duality (Build: 1481286)</title>
 	<meta charset="UTF-8">
 	<meta name="title" content="Client Comparison: Singularity (Build: 1500277) to Duality (Build: 1481286) | Hoboleaks">
-	<meta name="description" content="Generated @ 2019-05-05 18:08:15 EVE Time">
+	<meta name="description" content="Generated @ 2019-05-05 18:15:01 EVE Time">
 	
 	<meta name="og:title" content="Hoboleaks: Singularity (Build: 1500277) -> Duality (Build: 1481286)">
 	<meta name="og:type" content="website">
-	<meta name="og:description" content="Generated @ 2019-05-05 18:08:15 EVE Time">
+	<meta name="og:description" content="Generated @ 2019-05-05 18:15:01 EVE Time">
 	<meta name="og:image" content="/hobo128.png">
 	<meta name="og:url" content="http://hoboleaks.space/">
 	<meta name="og:site_name" content="Hoboleaks">
 	
 	<meta name="twitter:title" content="Hoboleaks: Singularity (Build: 1500277) -> Duality (Build: 1481286)">
-	<meta name="twitter:description" content="Generated @ 2019-05-05 18:08:15 EVE Time">
+	<meta name="twitter:description" content="Generated @ 2019-05-05 18:15:01 EVE Time">
 	<!-- <meta name="twitter:image" content="/sitepreview.png"> -->
 	<meta name="twitter:image" content="/hobo128.png">
-	<meta name="genTime" content="1557079695043">
-	<meta name="genDate" content="2019-05-05 18:08:15">
+	<meta name="genTime" content="1557080101871">
+	<meta name="genDate" content="2019-05-05 18:15:01">
 	<!-- Who needs css files lol -->
 	<style>
 		table {
@@ -338,7 +338,7 @@
 		ga('send', 'pageview');
 	</script>
 	<script>
-		genBaseHash = "highlight" + 1557079695043
+		genBaseHash = "highlight" + 1557080101871
 		isManual = true
 	
 	    function selectText(containerid, hasWaited) {
@@ -484,7 +484,6 @@
 		}
 		
 		function filterSelectables(searchTerm, caseSensitive) {
-			//console.log("firing")
 			let selectables = document.getElementsByClassName("selectable")
 			if (caseSensitive === undefined) {
 				caseSensitive = false
@@ -501,9 +500,11 @@
 					var contents = node.textContent.toLowerCase()
 				}
 				if (contents.indexOf(searchTerm) == -1) {
-					node.classList.add("filtered")
+					node.setAttribute("filtered", 1)
+					node.style.display = "none"
 				} else {
-					node.classList.remove("filtered")
+					node.setAttribute("filtered", 0)
+					node.style.display = ""
 				}
 			}
 		}
@@ -513,7 +514,7 @@
 			let children = node.children
 			for (var i=0; i < children.length; i++) { //Iterate through child nodes
 				let childNode = children[i]
-				if (childNode.classList.contains("selectable") && !childNode.classList.contains("filtered")) {
+				if (childNode.classList.contains("selectable") && childNode.getAttribute('filtered') != 1) {
 					count += 1
 				} 
 				count += getNumVisibleNodes(childNode) //Let child node iterate through its own child node
@@ -591,17 +592,17 @@
 </a>
 <p class="about"><a class="about" href="/about">About</a></p>
 <p class="sde"><a class="sde" href="http://sde.hoboleaks.space/">TQ SDE Complements</a></p>
-<span class="quote">"cheesy pickup lines are always the primary goal of any EVE game design choices" - CCP Falcon</span>
+<span class="quote">"jin brings that pre-teen experience that we need if we want to modernise and remain relevant in 2017" - CCP Pointy Bits</span>
 <h1 class="no-bottom-margin">Comparing <span title="Release Name: EVE-2019-ETTIN&#013;Build Date: Timestamp not available">Singularity (Build: 1500277)</span> to <span title="Release Name: EVE-2019-CENTAUR&#013;Build Date: Timestamp not available">Duality (Build: 1481286)</span> </h1>
 <noscript>
 	<nobr>
-		<p class="mini">Generated @ 2019-05-05 18:08:15 EVE Time (UTC)</p>
+		<p class="mini">Generated @ 2019-05-05 18:15:01 EVE Time (UTC)</p>
 		<p class="scriptnotify" style="display:inline;">You've disabled javascript. This made the menu so sad that it self-destructed. I hope you're happy now.</p>
 		<p class="scriptnotifysmaller" style="display:inline;">You monster.</p>
 	</nobr>
 	<p class="scriptnotifysmall">This page should still kinda work though.</p>
 </noscript>
-<iframe id="timer" src="timerSection#2,1557079695043" style="border:none; display:none;" height="30px" width="800px"> </iframe>
+<iframe id="timer" src="timerSection#2,1557080101871" style="border:none; display:none;" height="30px" width="800px"> </iframe>
 
 <div id="buildMsg" title="Page generation was triggered manually rather than by a new EVE patch. 
 
@@ -630,7 +631,7 @@ Note: Duality is only temporarily tracked, as it normally only contains very del
 <p class="mini" style="margin-top: 5px; margin-bottom: 3px;">Est. patch size: 1158mb</p>
 <!--<p class="kindasmall">Click the categories below to expand them! ALT-click entries to highlight for sharing.</p>-->
 
-<input type="text" placeholder="Filter (BETA)..." name="search" onchange="filter(this.value)" class="onlyFirefox">
+<input type="text" placeholder="Filter (BETA)..." name="search" onchange="filter(this.value)" class="">
 <!--<button type="button">Search</button>-->
 
 
@@ -35579,8 +35580,6 @@ Note: Duality is only temporarily tracked, as it normally only contains very del
 		}
 	}	
 </script>
-
-</script>
-<script src="1557079695043.js" defer></script>
+<script src="1557080101871.js" defer></script>
 </body>
 </html>
