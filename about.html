@@ -70,17 +70,17 @@
 	<a href="/">
 		<img class="homeButton" src="sitehome.jpg"/>
 	</a>
-	<h1>What is Hoboleaks?</h1>
+	<h1 id="what">What is Hoboleaks?</h1>
 	<div class="indented">
 		<p>Hoboleaks is a website designed to show new content and changes in EVE Online patches.<br><br>You can either look at everything new on the test server by comparing Tranquility to Singularity (the public test server), or you can see what changed in each incremental patch. This is done by navigating the menus at the top of the page, or by clicking the "Home" button in the top left corner.</p>
 	</div>
-	<h1>How does Hoboleaks work?</h1>
+	<h1 id="how">How does Hoboleaks work?</h1>
 	<div class="indented">
 		<p>Hoboleaks extracts data similar to that found in the <a href="https://eveonline-third-party-documentation.readthedocs.io/en/latest/sde/">SDE</a> from the client game files, and uses this to compare each version. The website will automatically update itself when new EVE Online patches are published. It usually* takes anywhere from 5-10 minutes after a new patch is released for the changes to be visible on the website.<br><br>After changes to the website is made, you may have to do a cacheless refresh (CTRL+F5) to see the new version immediately.</p>
 		<p class="kindasmall">* Unlike similar websites for other games, Hoboleaks is almost entirely automated. The nature of datamining a game in active development is that this process inevitably may break when internal data/file structures are changed. In these fairly rare cases, patches may not be immediately visible until I have investigated and rectified the issue. If a patch isn't on the website after ~10 minutes, feel free to message/ping <a href="https://tweetfleet.slack.com/team/U0SEZLGQG">@inomares</a> in Tweetfleet Slack either via PM or through the <a href="https://tweetfleet.slack.com/messages/C87SP5AQ1">#hoboleaks</a> channel. Instructions on how to join Tweetfleet Slack can be found <a href="https://www.fuzzwork.co.uk/tweetfleet-slack-invites/">here</a>.</p>
 	</div>
 
-	<h1>How do I send in issues or suggestions?</h1>
+	<h1 id="feedback">How do I send in issues or suggestions?</h1>
 	<div class="indented">
 		<p>This can be done <a href="https://github.com/Inomares/hoboleaks/issues">via GitHub.</a><br><br>However, before reporting, please consider the following:
 		</p>
@@ -100,16 +100,16 @@
 		</ul>
 	</div>
 
-	<h1>Other FAQ:</h1>
+	<h1 id="faq">Other FAQ:</h1>
 	<div class="indented">
-		<h3>
+		<h3 id="opensource">
 			Is Hoboleaks open source?
 		</h3>
 		<p class="indented">
 			No. Among other reasons, since reverse engineering relies on replicating the methods and code used by the official game client, some of the code is simply not mine to release.
 			<br><br>There are however other open source libraries out there which may be of use depending on what you're looking to do.
 		</p>
-		<h3>
+		<h3 id="resistances">
 			What's up with resistances on Hoboleaks? They don't look the same as they do in-game!
 		</h3>
 		<p class="indented">
@@ -123,25 +123,25 @@
 			<br>4) A default: "Unnamed attribute 268"
 			<br><br>The first valid name is used in this order, as it is usually the most human readable one. However, in the case of resistances, it is actually the internal name (#3) which best describes its purpose. The EVE client makes a special exception when displaying these resistance attributes by subtracting their value from 1, and then converting them to percentages, to make them simpler for us humans to interpret. Hoboleaks generally tries to avoid hardcoded exceptions or conversions when displaying the underlying data, so we do not currently replicate this behaviour.
 		</p>
-		<h3>
+		<h3 id="chaos">
 			What happened to Chaos?
 		</h3>
 		<p class="indented">
 			See <a href="/chaos">this page </a> for details.
 		</p>
-		<h3>
+		<h3 id="delays">
 			Do you ever delay publishing patch diffs in order to benefit from market speculations before others can see them?
 		</h3>
 		<p class="indented">
 			No. I am too lazy and impatient to dabble in industry and/or the market.<br><br>I do not see patches before they are published to the website. If there is a delay, it's most likely because the most recent patch changed the internal data structure used, and the Hoboleaks update generator had to be manually tweaked to account for this.
 		</p>
-		<h3>
+		<h3 id="compensation">
 			How do I compensate you?
 		</h3>
 		<p class="indented">
 			This is a hobby project I enjoy working on. No further compensation is needed. Seeing people enjoy the service I created is enough for me. :)
 		</p>
-		<h3>
+		<h3 id="slack">
 			I have some other question that isn't listed here. How do I reach you?
 		</h3>
 		<p class="indented">
