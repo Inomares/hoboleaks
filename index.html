@@ -4,21 +4,21 @@
 	<title>Hoboleaks: Tranquility (Build: 1741465) to Singularity (Build: 1742848)</title>
 	<meta charset="UTF-8">
 	<meta name="title" content="Client Comparison: Tranquility (Build: 1741465) to Singularity (Build: 1742848) | Hoboleaks">
-	<meta name="description" content="Generated @ 2020-06-05 17:17:01 EVE Time">
+	<meta name="description" content="Generated @ 2020-06-07 16:42:43 EVE Time">
 	
 	<meta name="og:title" content="Hoboleaks: Tranquility (Build: 1741465) -> Singularity (Build: 1742848)">
 	<meta name="og:type" content="website">
-	<meta name="og:description" content="Generated @ 2020-06-05 17:17:01 EVE Time">
+	<meta name="og:description" content="Generated @ 2020-06-07 16:42:43 EVE Time">
 	<meta name="og:image" content="/hobo128.png">
 	<meta name="og:url" content="https://hoboleaks.space/">
 	<meta name="og:site_name" content="Hoboleaks">
 	
 	<meta name="twitter:title" content="Hoboleaks: Tranquility (Build: 1741465) -> Singularity (Build: 1742848)">
-	<meta name="twitter:description" content="Generated @ 2020-06-05 17:17:01 EVE Time">
+	<meta name="twitter:description" content="Generated @ 2020-06-07 16:42:43 EVE Time">
 	<!-- <meta name="twitter:image" content="/sitepreview.png"> -->
 	<meta name="twitter:image" content="/hobo128.png">
-	<meta name="genTime" content="1591377421411">
-	<meta name="genDate" content="2020-06-05 17:17:01">
+	<meta name="genTime" content="1591548163367">
+	<meta name="genDate" content="2020-06-07 16:42:43">
 	<!-- Who needs css files lol -->
 	<style>
 		table {
@@ -327,6 +327,19 @@
 			width: 64px;
 		}
 		
+		input.filterInvalid,
+		input.toggleable.filterInvalid {
+			background-color: red;
+		}
+		
+		input.toggled {
+			background-color: lightblue
+		}
+		
+		.mainSearch {
+			width: 400px;
+		}
+		
 	</style>
 	<!-- Google analytics -->
 	<script>
@@ -340,8 +353,8 @@
 		ga('send', 'pageview');
 	</script>
 	<script>
-		genBaseHash = "highlight" + 1591377421411
-		isManual = false
+		genBaseHash = "highlight" + 1591548163367
+		isManual = true
 	
 	    function selectText(containerid, hasWaited) {
 			hasWaited = hasWaited || false
@@ -485,23 +498,12 @@
 			getEVEPraisalLinkForLines(cellContents)
 		}
 		
-		function filterSelectables(searchTerm, caseSensitive) {
+		function filterSelectablesRegex(regex, exclusions) {
 			let selectables = document.getElementsByClassName("selectable")
-			if (caseSensitive === undefined) {
-				caseSensitive = false
-			}
-			if (!caseSensitive) {
-				searchTerm = searchTerm.toLowerCase()
-			}
-			
 			for (var i=0; i < selectables.length; i++) {
 				let node = selectables[i]
-				if (caseSensitive) {
-					var contents = node.textContent
-				} else {
-					var contents = node.textContent.toLowerCase()
-				}
-				if (contents.indexOf(searchTerm) == -1) {
+				let contents = node.textContent.toLowerCase()
+				if (!regex.test(contents) || exclusions.some((excl) => contents.indexOf(excl) != -1)) {
 					node.setAttribute("filtered", 1)
 					node.style.display = "none"
 				} else {
@@ -509,6 +511,23 @@
 					node.style.display = ""
 				}
 			}
+			return true;
+		}
+		
+		function filterSelectables(searchTerm, exclusions) {
+			let selectables = document.getElementsByClassName("selectable")
+			for (var i=0; i < selectables.length; i++) {
+				let node = selectables[i]
+				var contents = node.textContent.toLowerCase()
+				if (contents.indexOf(searchTerm) == -1 || exclusions.some((excl) => contents.indexOf(excl) != -1)) {
+					node.setAttribute("filtered", 1)
+					node.style.display = "none"
+				} else {
+					node.setAttribute("filtered", 0)
+					node.style.display = ""
+				}
+			}
+			return true;
 		}
 		
 		function getNumVisibleNodes(node) {
@@ -550,8 +569,54 @@
 			}
 		}
 		
-		function filter(searchTerm, caseSensitive) {
-			filterSelectables(searchTerm, caseSensitive)
+		function doSearch(searchTerm) {
+			//let r = new RegExp(/(without|regex):"(.+?)"/, "gi");
+			let r = new RegExp(/(without|regex):(?:"(.+?)"|(.+?)(?: |$))/, "gi")
+			let exclusions = []
+			let useRegex = null;
+			for (group of searchTerm.matchAll(r)) {
+				let prefix = group[1].toLowerCase()
+				let value = (group[2] || group[3]).toLowerCase()
+				console.log(group)
+				console.log(prefix)
+				console.log(value)
+				switch(prefix) {
+					case "without":
+						exclusions.push(value)
+						break;
+					case "regex":
+						if (useRegex) {
+							return false; //One regex at a time!
+						}
+						try {
+							useRegex = new RegExp(value, "i")
+						} catch (_) {
+							return false;
+						}
+						break;
+				}
+			}
+			
+			let strippedTerm = searchTerm.replace(r, "").trim().toLowerCase()
+			console.log("Exclusions: " + exclusions)
+			console.log("UseRegex: ")
+			console.log(useRegex)
+			console.log("Stripped: " + strippedTerm)
+			if (useRegex != null) {
+				if (strippedTerm.length != 0) { // regex OR normal search... not both!
+					return false;
+				}
+				return filterSelectablesRegex(useRegex, exclusions)
+			}
+			return filterSelectables(strippedTerm, exclusions)
+		}
+		
+		function filter(src, searchTerm) {
+			src.classList.remove("filterInvalid")
+			if (!doSearch(searchTerm)) {
+				src.classList.add("filterInvalid")
+				return
+			}
 			if (searchTerm === undefined || searchTerm.length == 0) {
 				updateParentsFilter(true)
 			} else {
@@ -566,18 +631,22 @@
 		window.onload = function() {
 			document.body.onclick = function(e){
 				if (!e.altKey) {
-					return
+					return;
 				}
 				if (window.event) {
 					clickedNode = event.srcElement;
 				}
 				else {
-					clickedNode = e.target
+					clickedNode = e.target;
 				}
-				selectableNode = getSelectableNode(clickedNode)
+				selectableNode = getSelectableNode(clickedNode);
 				if (selectableNode != null) {
-					toggleNodeHash(selectableNode)
-					return false
+					toggleNodeHash(selectableNode);
+					return false;
+				}
+				if (clickedNode.classList.contains("toggleable")) {
+					//clickedNode.classList.toggle("toggled");
+					//return false;
 				}
 			}
 			updateSelectablesFromHash()
@@ -594,20 +663,20 @@
 </a>
 <p class="about"><a class="about" href="/about">About & FAQ</a></p>
 <p class="sde"><a class="sde" href="https://sde.hoboleaks.space/">TQ SDE Complements</a></p>
-<span class="quote">"MAKOTO PRIANO CONFIRMED TO BE A TURD" - CCP Falcon</span>
+<span class="quote">"I need reddit karma!" - CCP Larrikin</span>
 <h1 class="no-bottom-margin">Comparing <span title="Release Name: EVE-RELEASE&#013;Build Date: Timestamp not available&#013;Version: 18.05">Tranquility (Build: 1741465)</span> to <span title="Release Name: EVE-2020-FILBERT&#013;Build Date: Timestamp not available&#013;Version: 18.06">Singularity (Build: 1742848)</span> </h1>
 <noscript>
-		<p class="mini">Generated @ 2020-06-05 17:17:01 EVE Time (UTC)</p>
+		<p class="mini">Generated @ 2020-06-07 16:42:43 EVE Time (UTC)</p>
 		<p class="scriptnotify" style="display:inline;">You've disabled javascript. This made the menu so sad that it self-destructed. I hope you're happy now.</p>
 		<p class="scriptnotifysmaller" style="display:inline;">You monster.</p>
 	<p class="scriptnotifysmall">This page should still kinda work though.</p>
 </noscript>
-<iframe id="timer" src="timerSection#2,1591377421411" style="border:none; display:none;" height="30px" width="800px"> </iframe>
-<!-- buildMsgStart
+<iframe id="timer" src="timerSection#2,1591548163367" style="border:none; display:none;" height="30px" width="800px"> </iframe>
+
 <div id="buildMsg" title="Page generation was triggered manually rather than by a new EVE patch. 
 
 Usually (but not always) this just means an update to the website itself, without any updated patch data.">Manual build (hover for info)</div>
-buildMsgEnd -->
+
 <iframe id="navMenu" src="" style="border:none; display:none;" height="40px" width="800px"> </iframe>
 <script>
 	function getStrippedPageName(pageName) {
@@ -630,7 +699,7 @@ buildMsgEnd -->
 <p class="mini" style="margin-top: 5px; margin-bottom: 3px;">Est. patch size: 295mb</p>
 <!--<p class="kindasmall">Click the categories below to expand them! ALT-click entries to highlight for sharing.</p>-->
 
-<input type="text" placeholder="Filter (BETA)..." name="search" onchange="filter(this.value)" class="">
+<input type="text" placeholder="Filter (BETA - updated, see about page)..." name="search" onchange="filter(this, this.value)" class="toggleable mainSearch">
 <!--<button type="button">Search</button>-->
 
 
@@ -23951,6 +24020,6 @@ buildMsgEnd -->
 		}
 	}	
 </script>
-<script src="1591377421411.js" defer></script>
+<script src="1591548163367.js" defer></script>
 </body>
 </html>
