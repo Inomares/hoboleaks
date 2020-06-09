@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<meta charset="UTF-8">
 		<!-- Google analytics -->
 		<script>
 			(function(i, s, o, g, r, a, m) {
@@ -72,7 +73,7 @@
 	</head>
 
 	<a href="/">
-		<img class="homeButton" src="sitehome.jpg"/>
+		<img class="homeButton" src="sitehome.jpg" alt="Home"/>
 	</a>
 	<p class="kindasmall topDown20">Last about update: 2020-06-07 17:15</p>
 	<h1 id="what">What is Hoboleaks?</h1>
@@ -94,16 +95,25 @@
 			<li>
 				The filter bar supports simple text searching, regex, and negation. Filtering is case-insensitive. Examples:
 				<ul>
-					<li>Test 123</li>
-					(Shows all entries which contain the phrase "test 123")
-					<li>Test 123 without:4</li>
-					(Shows all entries which contain "Test 123" but not "4". Examples: Shows <i>"test 1235"</i>, but <b>not</b> <i>"Test 1234"</i>, <i>"4bla Test 123"</i>, nor "123 Test")
-					<li>without:SKIN without:Blueprint</li>
-					(Shows all entries except those with the words "SKIN" <b>or</b> "blueprint" anywhere in them)
-					<li>regex:(Marshal|Pacifier)</li>
-					(Shows entries containing the words Marshal or Pacifier, if they do not contain the word "Skin")
-					<li>regex:"Name of item.*Shield" without:Thermal</li>
-					(Shows entries matching this regex which do not contain the word Thermal. Example: <i>"Basic EM Ward Amplifier - Name of item 1798 (Shield Resistance Amplifier)"</i> but will <b>not</b> match for instance <i>"Basic Thermal Dissipation Amplifier - Name of item 1800 (Shield Resistance Amplifier)"</i>)
+					<li>Test 123
+					<br>(Shows all entries which contain the phrase "test 123")
+					</li>
+					
+					<li>Test 123 without:4
+					<br>(Shows all entries which contain "Test 123" but not "4". Examples: Shows <i>"test 1235"</i>, but <b>not</b> <i>"Test 1234"</i>, <i>"4bla Test 123"</i>, nor "123 Test")
+					</li>
+					
+					<li>without:SKIN without:Blueprint
+					<br>(Shows all entries except those with the words "SKIN" <b>or</b> "blueprint" anywhere in them)
+					</li>
+					
+					<li>regex:(Marshal|Pacifier)
+					<br>(Shows entries containing the words Marshal or Pacifier, if they do not contain the word "Skin")
+					</li>
+					
+					<li>regex:"Name of item.*Shield" without:Thermal
+					<br>(Shows entries matching this regex which do not contain the word Thermal. Example: <i>"Basic EM Ward Amplifier - Name of item 1798 (Shield Resistance Amplifier)"</i> but will <b>not</b> match for instance <i>"Basic Thermal Dissipation Amplifier - Name of item 1800 (Shield Resistance Amplifier)"</i>)
+					</li>
 				</ul>
 				You can use either regex or normal filtering, but not both at the same time. The 'without' keyword can be used with either, and you can use the 'without' keyword multiple times in the same search. For multi-word, encapsulate in quotations, such as: <i>without:"Permanent Skin"</i>.
 				If the search bar turns red, it means the regex was invalid, there are multiple regexes, or you used both regex and normal search at the same time.
