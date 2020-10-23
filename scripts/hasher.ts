@@ -19,7 +19,7 @@ function serialize(obj: Serializable): string {
 }
 
 function deserialize(s: string, typeName: Array<String>): Serializable {
-    if (typeName.length == 0) {
+    if (!typeName || typeName.length == 0) {
         throw "Tried to deserialize without any valid type."
     }
     if (s.length == 0) {
@@ -50,15 +50,30 @@ function getRawHash(): string {
 
 function getParams(): URLSearchParams {
     if (!isHashValid()) {
-        return null;
+        return new URLSearchParams();
     }
     return new URLSearchParams(getRawHash().slice(genBaseHash.length));
 }
 
-function updateHashData() {
-    //TODO: Set _hashData from actual hash here
+function getParam(paramName: string, typeName: Array<String>): Serializable {
+    try {
+        deserialize(getParams().get(paramName), typeName);
+    } catch (e) {
+        console.log(e);
+        return null;
+    }
 }
 
+function setParam(paramName: string, value: any) {
+    let params = getParams();
+    params.delete(paramName);
+    params.append(paramName, serialize(value));
+    updateHashWithParams(params);
+}
+
+function updateHashWithParams(params: URLSearchParams) {
+    window.location.hash = genBaseHash + params;
+}
 
 /**
  * Determines whether the current hash is valid for the document (i.e. timestamp).
@@ -68,13 +83,11 @@ function isHashValid(): boolean {
     return getRawHash().startsWith(genBaseHash);
 }
 
-window.addEventListener("hashchange", updateHashData);
-
 if (typeof module != "undefined") {
     module.exports = {
         serialize,
         deserialize,
-        isHashValid,
-        updateHashData
+        setParam,
+        getParam,
     };
 }

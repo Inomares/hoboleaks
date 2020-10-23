@@ -55,3 +55,13 @@ test("deserialize simple array", () => {
 test("deserialize set", () => {
     expect(hasher.deserialize("7_1,2,3,4", ["Set", "Number"])).toStrictEqual(new Set([1, 2, 3, 4]));
 });
+
+test("2-way string (de)serialization", () => {
+    let target = "regex:\"T.*1\" without:;a\\öö<\\n";
+    expect(hasher.deserialize(hasher.serialize(target), ["String"])).toBe(target);
+});
+
+test("2-way array (de)serialization", () => {
+    let target = [1, 2, 3, 4];
+    expect(hasher.deserialize(hasher.serialize(target), ["Array", "Number"])).toStrictEqual(target);
+});
