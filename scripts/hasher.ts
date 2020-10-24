@@ -24,6 +24,7 @@ function isHashValid(): boolean {
 
 function getParams(): URLSearchParams {
     if (!isHashValid()) {
+        updateHashWithParams(new URLSearchParams());
         return new URLSearchParams();
     }
     return new URLSearchParams(getRawHash().slice(genBaseHash.length));
