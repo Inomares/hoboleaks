@@ -1,5 +1,7 @@
 declare function setParam(paramName: string, value: any);
 declare function getParam(paramName: string);
+declare function deleteParam(paramName: string);
+declare function subscribeToHashChange(paramName: string, callback: CallableFunction);
 
 const PARAM_NAME_HIGHLIGHT = "highlight";
 
@@ -9,7 +11,6 @@ function getHighlightedIDs(force = false): Set<Number> {
     if (!force && _highlightedIDs) {
         return _highlightedIDs;
     } else {
-        console.log("sdfsd");
         _highlightedIDs = new Set(getParam(PARAM_NAME_HIGHLIGHT));
         return _highlightedIDs;
     }
@@ -90,11 +91,15 @@ function toggleNode(node) {
     } else {
         highlighted.add(nodeID);
     }
-    setParam(PARAM_NAME_HIGHLIGHT, Array.from(highlighted));
+    if (highlighted.size > 0) {
+        setParam(PARAM_NAME_HIGHLIGHT, Array.from(highlighted));
+    } else {
+        deleteParam(PARAM_NAME_HIGHLIGHT);
+    }
 }
 
-window.onhashchange = updateSelectablesFromHash;
-window.onload = function() {
+subscribeToHashChange(PARAM_NAME_HIGHLIGHT, updateSelectablesFromHash);
+window.addEventListener("load", function() {
     document.body.onclick = function(e){
         if (!e.altKey) {
             return;
@@ -112,5 +117,5 @@ window.onload = function() {
             return false;
         }
     }
-    updateSelectablesFromHash()
-}
+    // updateSelectablesFromHash()
+});
