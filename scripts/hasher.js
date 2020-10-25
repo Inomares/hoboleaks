@@ -26,8 +26,8 @@ function clearHash() {
     if (window.location.hash == "") {
         return;
     }
-    window.location.hash = "";
     history.replaceState(null, document.title, window.location.pathname + window.location.search);
+    broadcastHashChange();
 }
 function getParams() {
     if (!isHashValid()) {
@@ -59,10 +59,13 @@ function getParam(paramName) {
  * @param params
  */
 function updateHashWithParams(params) {
-    window.location.hash = genBaseHash + params;
+    const fullHash = genBaseHash + params;
+    //window.location.hash = fullHash;
+    history.replaceState(null, document.title, "#" + fullHash);
+    broadcastHashChange();
 }
 function broadcastHashChange() {
-    console.log("Broadcasting.");
+    // console.log("Broadcasting.");
     const newParams = getParams();
     const allKeys = new Set(Array.from(oldParams.keys()).concat(Array.from(newParams.keys()))); //Pretty, I know.
     for (const paramName of allKeys) {
@@ -71,7 +74,7 @@ function broadcastHashChange() {
         const newValue = newParams.get(paramName);
         if (oldValue != newValue) {
             for (const callback of _subscriptions.get(paramName)) {
-                console.log("Callback: " + paramName);
+                // console.log("Callback: " + paramName);
                 callback(getParam(paramName));
             }
         }
