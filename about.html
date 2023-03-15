@@ -102,14 +102,14 @@
 <p class="homeButton menuButton"><a class="homeButton" href="/">Home</a></p>
 <p class="about menuButton"><a class="about" href="/about">About & FAQ</a></p>
 <p class="sde menuButton"><a class="sde" href="https://sde.hoboleaks.space/">TQ SDE Complements</a></p>
-	<p class="kindasmall topDown20">Last about update: 2020-06-07 17:15</p>
+	<p class="kindasmall topDown20">Last about update: 2023-03-15 12:00</p>
 	<h1 id="what">What is Hoboleaks?</h1>
 	<div class="indented">
 		<p>Hoboleaks is a website designed to show new content and changes in EVE Online patches.<br><br>You can either look at everything new on the test server by comparing Tranquility to Singularity (the public test server), or you can see what changed in each incremental patch. This is done by navigating the menus at the top of the page, or by clicking the "Home" button in the top left corner.</p>
 	</div>
 	<h1 id="how">How does Hoboleaks work?</h1>
 	<div class="indented">
-		<p>Hoboleaks extracts data similar to that found in the <a href="https://eveonline-third-party-documentation.readthedocs.io/en/latest/sde/">SDE</a> from the client game files, and uses this to compare each version. The website will automatically update itself when new EVE Online patches are published. It usually* takes anywhere from 5-10 minutes after a new patch is released for the changes to be visible on the website.<br><br>After changes to the website is made, you may have to do a cacheless refresh (CTRL+F5) to see the new version immediately.</p>
+		<p>Hoboleaks extracts data similar to that found in the <a href="https://docs.esi.evetech.net/docs/sde_introduction.html">SDE</a> from the client game files, and uses this to compare each version. The website will automatically update itself when new EVE Online patches are published. It usually* takes anywhere from 5-10 minutes after a new patch is released for the changes to be visible on the website.<br><br>After changes to the website is made, you may have to do a cacheless refresh (CTRL+F5) to see the new version immediately.</p>
 		<p class="kindasmall">* Unlike similar websites for other games, Hoboleaks is almost entirely automated. The nature of datamining a game in active development is that this process inevitably may break when internal data/file structures are changed. In these fairly rare cases, patches may not be immediately visible until I have investigated and rectified the issue. If a patch isn't on the website after ~10 minutes, feel free to message/ping <a href="https://tweetfleet.slack.com/team/U0SEZLGQG">@inomares</a> in Tweetfleet Slack either via PM or through the <a href="https://tweetfleet.slack.com/messages/C87SP5AQ1">#hoboleaks</a> channel. Instructions on how to join Tweetfleet Slack can be found <a href="https://www.fuzzwork.co.uk/tweetfleet-slack-invites/">here</a>.</p>
 	</div>
 
@@ -150,17 +150,17 @@
 	</div>
 	<h1 id="feedback">How do I send in issues or suggestions?</h1>
 	<div class="indented">
-		<p>This can be done <a href="https://github.com/Inomares/hoboleaks/issues">via GitHub.</a><br><br>However, before reporting, please consider the following:
+		<p>This can be done through <a href="https://tweetfleet.slack.com/archives/C87SP5AQ1">#hoboleaks</a> on <a href="https://www.fuzzwork.co.uk/tweetfleet-slack-invites/">Tweetfleet Slack!</a> or <a href="https://github.com/Inomares/hoboleaks/issues">via GitHub.</a><br><br>However, before reporting, please consider the following:
 		</p>
 		<ul>
 			<li>
 				<b>Search first!</b> There probably won't be that many issues (I doubt more than 5 people are going to read this far down anyway), so it shouldn't take very long to make sure there isn't already an issue on what you wish to report.
 			</li>
 			<li>
-				Basic website functionality is only expected in modern browsers such as Chrome or Firefox. Please do not report issues with Internet Explorer/Edge or similar.
+				Basic website functionality is only expected in modern browsers such as Chrome, Firefox, or Edge. Please do not report issues with Internet Explorer/Netscape or similar.
 			</li>
 			<li>
-				The website is meant to be kept simple. I am not a web dev, and I have no interest in trying to become one either. Yes, I know it's not the most aesthetically pleasing interface in the world. You're playing EVE Online. You should be used to it.
+				The website is meant to be kept simple. Yes, I know it's not the most aesthetically pleasing interface in the world. You're playing EVE Online. You should be used to it.
 			</li>
 			<li>
 				It is not possible to compare data not found in the client. Hoboleaks operates independently of the status of Tranquility and Singularity, and does not currently compare any data found in the API. This unfortunately excludes involving things like Loyalty Points store diffs, but allows the website to start building patch diffs before the EVE Online servers have even come back up (at CCP's leisure, as they still decide when a patch is put "live"). <b>With a few exceptions, a good rule of thumb is that if something isn't in the SDE, then Hoboleaks can't access it.</b> If there is a very good reason to include something from the API, this may change, but I would like to avoid it unless there are considerable benefits.
